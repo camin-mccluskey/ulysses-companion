@@ -19,7 +19,7 @@ const DetailBar = ({noteId, closeNote}) => {
 
   return (
     <div className="flex flex-col w-1/4 overflow-y-auto">
-      {noteId ?
+      {noteId &&
       <>
       <button
         className="w-full rounded-md bg-red-400"
@@ -37,7 +37,6 @@ const DetailBar = ({noteId, closeNote}) => {
       <button onClick={() => fetchMore(noteId)}>Expand</button>
       }
       </>
-      : null
       }
     </div>
   );

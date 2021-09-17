@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="flex w-screen h-screen">
       <SideBar chapters={data.chapters} selectChapter={(e) => setChapter(e)} currentChapter={currentChapter}/>
-      <ContentWindow chapter={currentChapter} openNote={setNoteId}/>
+      <ContentWindow chapter={currentChapter} openNote={setNoteId} currentNoteId={noteId}/>
       {noteId
       ? <DetailBar noteId={noteId} closeNote={() => setNoteId(null)}/> : null 
       }

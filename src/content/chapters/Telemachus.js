@@ -1,8 +1,24 @@
-const ChapterTest = ({openNote}) => {
+import Annotation from "../../components/Annotation";
+
+const Telemachus = ({openNote, currentNoteId}) => {
   return (
     <div>
     <p></p>
-    <center><button className="bg-gray-200 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010000telemachus")}><font size="+2">[1]</font></button></center>
+    <center>
+      {/* <button 
+        className="bg-gray-200 bg-center bg-cover hover:bg-green-300" 
+        onClick={() => openNote("010000telemachus")}
+      >
+        <font size="+2">[1]</font>
+      </button> */}
+      <Annotation 
+        annotationId="010000telemachus"
+        annotationSelect={() => openNote("010000telemachus")}
+        activeAnnotationId={currentNoteId}
+      >
+        <font size="+2">[1]</font>
+      </Annotation>  
+    </center>
     <br/>
     Stately, plump <button className="bg-gray-200 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010001buckmulligan")}>Buck Mulligan</button> <button className="bg-gray-200 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010002stairhead")}>came from the stairhead</button>, bearing a bowl of
     lather on which <button className="bg-gray-200 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010003mirrorrazor")}>a mirror and a razor lay crossed</button>. A <button className="bg-gray-200 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010004yellowdressinggown")}>yellow dressinggown</button>,
@@ -1536,4 +1552,4 @@ const ChapterTest = ({openNote}) => {
   );
 }
 
-export default ChapterTest;
+export default Telemachus;

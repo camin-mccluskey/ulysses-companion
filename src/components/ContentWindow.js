@@ -1,10 +1,10 @@
 import data from '../data';
 
 
-const ContentWindow = ({chapter, openNote}) => {
+const ContentWindow = ({chapter, openNote, currentNoteId}) => {
   return (
     <div className="flex flex-col w-2/4 flex-grow overflow-y-auto">
-      {loadChapter(chapter, {openNote})}
+      {loadChapter(chapter, {openNote, currentNoteId})}
     </div>
   );
 }
