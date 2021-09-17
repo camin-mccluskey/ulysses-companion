@@ -12,12 +12,10 @@ function App() {
   const [noteId, setNoteId] = useState(null);
 
   return (
-    <div className="flex w-screen h-screen  gap-x-4">
+    <div className="flex w-screen h-screen p-2 gap-x-4">
       <SideBar chapters={data.chapters} selectChapter={(e) => setChapter(e)} currentChapter={currentChapter}/>
       <ContentWindow chapter={currentChapter} openNote={setNoteId} currentNoteId={noteId}/>
-      {noteId
-      ? <DetailBar noteId={noteId} closeNote={() => setNoteId(null)}/> : null 
-      }
+      <DetailBar noteId={noteId} closeNote={() => setNoteId(null)}/>
     </div>
   );
 }
