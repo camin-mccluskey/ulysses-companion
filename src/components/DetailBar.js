@@ -18,25 +18,32 @@ const DetailBar = ({noteId, closeNote}) => {
   }
 
   return (
-    <div className="flex flex-col w-1/4 overflow-y-auto">
+    <div className="flex flex-col w-1/4 pt-4 pr-4 overflow-y-auto">
       {noteId &&
-      <>
-      <button
-        className="w-full rounded-md bg-red-400"
-        onClick={() => closeNote()}
-      >
-        Close
-      </button>
-      <p>
+      <div>
+      <div className="flex justify-end">
+        <button onClick={() => closeNote()}>
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 stroke-current hover:text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <p className="pt-2">
         {fetchNote(noteId)}
       </p>
       <br/>
       {expandedNote ?
       <p>{expandedNote}</p>
       :
-      <button onClick={() => fetchMore(noteId)}>Expand</button>
+      <div className="flex justify-center">
+      <button onClick={() => fetchMore(noteId)}>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 stroke-current hover:text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      </div>
       }
-      </>
+      </div>
       }
     </div>
   );
