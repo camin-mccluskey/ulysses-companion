@@ -1,21 +1,21 @@
 import Annotation from "../../components/Annotation";
 
 
-const Calypso = ({openNote, currentNoteId}) => {
+const Calypso = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
   return (
     <div>
       <p></p>
-      <center><Annotation annotationId="040000calypso" annotationSelect={() => openNote("040000calypso")} activeAnnotationId={currentNoteId}><font size="+2">[4]</font></Annotation></center>
+      <center><Annotation annotationId="040000calypso" visited={visitedNotes.has("040000calypso")} annotationSelect={() => {openNote("040000calypso"); addToVisited("040000calypso")}} activeAnnotationId={currentNoteId}><font size="+2">[4]</font></Annotation></center>
       <br/>
-      <Annotation annotationId="040030leopoldbloom" annotationSelect={() => openNote("040030leopoldbloom")} activeAnnotationId={currentNoteId}>Mr Leopold Bloom</Annotation> ate with relish the inner organs of beasts and fowls.
+      <Annotation annotationId="040030leopoldbloom" visited={visitedNotes.has("040030leopoldbloom")} annotationSelect={() => {openNote("040030leopoldbloom"); addToVisited("040030leopoldbloom")}} activeAnnotationId={currentNoteId}>Mr Leopold Bloom</Annotation> ate with relish the inner organs of beasts and fowls.
       He liked thick giblet soup, nutty gizzards, a stuffed roast heart,
       liverslices fried with crustcrumbs, fried hencods' roes. Most of all
       he liked grilled mutton kidneys which gave to his palate a fine tang of
       faintly scented urine.
       <p></p>
       <p>
-        <Annotation annotationId="040009kidneys" annotationSelect={() => openNote("040009kidneys")} activeAnnotationId={currentNoteId}>Kidneys were in his mind</Annotation> as he moved about the kitchen softly, righting
-        her breakfast things on the humpy tray. <Annotation annotationId="040063happywarmth" annotationSelect={() => openNote("040063happywarmth")} activeAnnotationId={currentNoteId}>Gelid light and air were in the
+        <Annotation annotationId="040009kidneys" visited={visitedNotes.has("040009kidneys")} annotationSelect={() => {openNote("040009kidneys"); addToVisited("040009kidneys")}} activeAnnotationId={currentNoteId}>Kidneys were in his mind</Annotation> as he moved about the kitchen softly, righting
+        her breakfast things on the humpy tray. <Annotation annotationId="040063happywarmth" visited={visitedNotes.has("040063happywarmth")} annotationSelect={() => {openNote("040063happywarmth"); addToVisited("040063happywarmth")}} activeAnnotationId={currentNoteId}>Gelid light and air were in the
         kitchen but out of doors gentle summer morning everywhere. Made him feel
         a bit peckish.</Annotation>
       </p>
@@ -23,14 +23,14 @@ const Calypso = ({openNote, currentNoteId}) => {
         The coals were reddening.
       </p>
       <p>
-        Another slice of bread and butter : <Annotation annotationId="040011rightright" annotationSelect={() => openNote("040011rightright")} activeAnnotationId={currentNoteId}>three, four : right. She didn't like
+        Another slice of bread and butter : <Annotation annotationId="040011rightright" visited={visitedNotes.has("040011rightright")} annotationSelect={() => {openNote("040011rightright"); addToVisited("040011rightright")}} activeAnnotationId={currentNoteId}>three, four : right. She didn't like
         her plate full. Right.</Annotation> He turned from the tray, lifted the kettle off
-        the hob and set it sideways on the fire. It sat there, <Annotation annotationId="040022lickingclean" annotationSelect={() => openNote("040022lickingclean")} activeAnnotationId={currentNoteId}>dull and squat,
+        the hob and set it sideways on the fire. It sat there, <Annotation annotationId="040022lickingclean" visited={visitedNotes.has("040022lickingclean")} annotationSelect={() => {openNote("040022lickingclean"); addToVisited("040022lickingclean")}} activeAnnotationId={currentNoteId}>dull and squat,
         its spout stuck out</Annotation>. Cup of tea soon. Good. Mouth dry. The cat walked
         stiffly round a leg of the table with tail on high.
       </p>
       <p>
-        <Annotation annotationId="040070mrkgnao" annotationSelect={() => openNote("040070mrkgnao")} activeAnnotationId={currentNoteId}>—{" "}Mkgnao!</Annotation>
+        <Annotation annotationId="040070mrkgnao" visited={visitedNotes.has("040070mrkgnao")} annotationSelect={() => {openNote("040070mrkgnao"); addToVisited("040070mrkgnao")}} activeAnnotationId={currentNoteId}>—{" "}Mkgnao!</Annotation>
       </p>
       <p>
         —{" "}O, there you are, Mr Bloom said, turning from the fire.
@@ -42,7 +42,7 @@ const Calypso = ({openNote, currentNoteId}) => {
       </p>
       <p>
         Mr Bloom watched curiously, kindly, the lithe black form. Clean to see:
-        the gloss of her sleek hide, the white <Annotation annotationId="040015whitebutton" annotationSelect={() => openNote("040015whitebutton")} activeAnnotationId={currentNoteId}>button under the butt</Annotation> of her
+        the gloss of her sleek hide, the white <Annotation annotationId="040015whitebutton" visited={visitedNotes.has("040015whitebutton")} annotationSelect={() => {openNote("040015whitebutton"); addToVisited("040015whitebutton")}} activeAnnotationId={currentNoteId}>button under the butt</Annotation> of her
         tail, the green flashing eyes. He bent down to her, his hands on his
         knees.
       </p>
@@ -53,7 +53,7 @@ const Calypso = ({openNote, currentNoteId}) => {
         —{" "}Mrkgnao! the cat cried.
       </p>
       <p>
-        <Annotation annotationId="040071theyunderstand" annotationSelect={() => openNote("040071theyunderstand")} activeAnnotationId={currentNoteId}>They call them stupid. They understand what we say better than we
+        <Annotation annotationId="040071theyunderstand" visited={visitedNotes.has("040071theyunderstand")} annotationSelect={() => {openNote("040071theyunderstand"); addToVisited("040071theyunderstand")}} activeAnnotationId={currentNoteId}>They call them stupid. They understand what we say better than we
         understand them.</Annotation> She understands all she wants to. Vindictive too. Wonder
         what I look like to her. Height of a tower? No, she can jump me.
       </p>
@@ -64,7 +64,7 @@ const Calypso = ({openNote, currentNoteId}) => {
       </p>
       <span data-edition="ed1932" data-page="48"></span>
       <p>
-        Cruel. Her nature. Curious mice never squeal. <Annotation annotationId="040017seemtolikeit" annotationSelect={() => openNote("040017seemtolikeit")} activeAnnotationId={currentNoteId}>Seem to like it.</Annotation>
+        Cruel. Her nature. Curious mice never squeal. <Annotation annotationId="040017seemtolikeit" visited={visitedNotes.has("040017seemtolikeit")} annotationSelect={() => {openNote("040017seemtolikeit"); addToVisited("040017seemtolikeit")}} activeAnnotationId={currentNoteId}>Seem to like it.</Annotation>
       </p>
       <p>
         —{" "}Mrkrgnao! the cat said loudly.
@@ -72,8 +72,8 @@ const Calypso = ({openNote, currentNoteId}) => {
       <p>
         She blinked up out of her avid shameclosing eyes, mewing plaintively
         and long, showing him her milkwhite teeth. He watched the dark eyeslits
-        narrowing with greed till her eyes were <Annotation annotationId="010142greenstone" annotationSelect={() => openNote("010142greenstone")} activeAnnotationId={currentNoteId}>green stones</Annotation>. Then he went to
-        the<span data-edition="ed1986" data-page="45"></span> dresser, took the jug<span data-edition="ed1961" data-page="55"></span> <Annotation annotationId="040062bolandsbread" annotationSelect={() => openNote("040062bolandsbread")} activeAnnotationId={currentNoteId}>Hanlon's milkman</Annotation> had just filled for him,
+        narrowing with greed till her eyes were <Annotation annotationId="010142greenstone" visited={visitedNotes.has("010142greenstone")} annotationSelect={() => {openNote("010142greenstone"); addToVisited("010142greenstone")}} activeAnnotationId={currentNoteId}>green stones</Annotation>. Then he went to
+        the<span data-edition="ed1986" data-page="45"></span> dresser, took the jug<span data-edition="ed1961" data-page="55"></span> <Annotation annotationId="040062bolandsbread" visited={visitedNotes.has("040062bolandsbread")} annotationSelect={() => {openNote("040062bolandsbread"); addToVisited("040062bolandsbread")}} activeAnnotationId={currentNoteId}>Hanlon's milkman</Annotation> had just filled for him,
         poured warmbubbled milk on a saucer and set it slowly on the floor.
       </p>
       <p>
@@ -81,24 +81,24 @@ const Calypso = ({openNote, currentNoteId}) => {
       </p>
       <p>
         He watched the bristles shining wirily in the weak light as she tipped
-        three times and licked lightly. <Annotation annotationId="040013wonderisittrue" annotationSelect={() => openNote("040013wonderisittrue")} activeAnnotationId={currentNoteId}>Wonder is it true if you clip them they
+        three times and licked lightly. <Annotation annotationId="040013wonderisittrue" visited={visitedNotes.has("040013wonderisittrue")} annotationSelect={() => {openNote("040013wonderisittrue"); addToVisited("040013wonderisittrue")}} activeAnnotationId={currentNoteId}>Wonder is it true if you clip them they
         can't mouse after. </Annotation>
         <span data-edition="ed1939" data-page="43"> </span>
-        <Annotation annotationId="040013wonderisittrue" annotationSelect={() => openNote("040013wonderisittrue")} activeAnnotationId={currentNoteId}>Why? They shine in the dark, perhaps, the tips. Or
+        <Annotation annotationId="040013wonderisittrue" visited={visitedNotes.has("040013wonderisittrue")} annotationSelect={() => {openNote("040013wonderisittrue"); addToVisited("040013wonderisittrue")}} activeAnnotationId={currentNoteId}>Why? They shine in the dark, perhaps, the tips. Or
         kind of feelers in the dark, perhaps.</Annotation>
       </p>
       <p>
         He listened to her licking lap. Ham and eggs, no. No good eggs with this
         drouth. Want pure fresh water. Thursday: not a good day either for a
-        mutton kidney at <Annotation annotationId="040062bolandsbread" annotationSelect={() => openNote("040062bolandsbread")} activeAnnotationId={currentNoteId}>Buckley's</Annotation>. Fried with butter, a shake of pepper. <Annotation annotationId="040083hewasajew" annotationSelect={() => openNote("040083hewasajew")} activeAnnotationId={currentNoteId}>Better
-        a pork kidney</Annotation> at <Annotation annotationId="040007dorsetstreet" annotationSelect={() => openNote("040007dorsetstreet")} activeAnnotationId={currentNoteId}>Dlugacz's</Annotation>. While the kettle is boiling. She lapped
-        slower, then <Annotation annotationId="040022lickingclean" annotationSelect={() => openNote("040022lickingclean")} activeAnnotationId={currentNoteId}>licking the saucer clean</Annotation>. Why are their tongues so rough?
+        mutton kidney at <Annotation annotationId="040062bolandsbread" visited={visitedNotes.has("040062bolandsbread")} annotationSelect={() => {openNote("040062bolandsbread"); addToVisited("040062bolandsbread")}} activeAnnotationId={currentNoteId}>Buckley's</Annotation>. Fried with butter, a shake of pepper. <Annotation annotationId="040083hewasajew" visited={visitedNotes.has("040083hewasajew")} annotationSelect={() => {openNote("040083hewasajew"); addToVisited("040083hewasajew")}} activeAnnotationId={currentNoteId}>Better
+        a pork kidney</Annotation> at <Annotation annotationId="040007dorsetstreet" visited={visitedNotes.has("040007dorsetstreet")} annotationSelect={() => {openNote("040007dorsetstreet"); addToVisited("040007dorsetstreet")}} activeAnnotationId={currentNoteId}>Dlugacz's</Annotation>. While the kettle is boiling. She lapped
+        slower, then <Annotation annotationId="040022lickingclean" visited={visitedNotes.has("040022lickingclean")} annotationSelect={() => {openNote("040022lickingclean"); addToVisited("040022lickingclean")}} activeAnnotationId={currentNoteId}>licking the saucer clean</Annotation>. Why are their tongues so rough?
         To lap better, all porous holes. Nothing she can eat? He glanced round
         him. No.
       </p>
       <p>
         On quietly creaky boots he went up the staircase to the hall, paused by
-        the bedroom door. She might like something tasty. <Annotation annotationId="040022lickingclean" annotationSelect={() => openNote("040022lickingclean")} activeAnnotationId={currentNoteId}>Thin bread and butter</Annotation>
+        the bedroom door. She might like something tasty. <Annotation annotationId="040022lickingclean" visited={visitedNotes.has("040022lickingclean")} annotationSelect={() => {openNote("040022lickingclean"); addToVisited("040022lickingclean")}} activeAnnotationId={currentNoteId}>Thin bread and butter</Annotation>
         she likes in the morning. Still perhaps: once in a way.
       </p>
       <p>
@@ -117,95 +117,95 @@ const Calypso = ({openNote, currentNoteId}) => {
         A sleepy soft grunt answered:
       </p>
       <p>
-        <Annotation annotationId="040070mrkgnao" annotationSelect={() => openNote("040070mrkgnao")} activeAnnotationId={currentNoteId}>—{" "}Mn.</Annotation>
+        <Annotation annotationId="040070mrkgnao" visited={visitedNotes.has("040070mrkgnao")} annotationSelect={() => {openNote("040070mrkgnao"); addToVisited("040070mrkgnao")}} activeAnnotationId={currentNoteId}>—{" "}Mn.</Annotation>
       </p>
       <p>
         No. She did not want anything. He heard then a warm heavy sigh, softer,
-        as she turned over and <Annotation annotationId="040085brassquoits" annotationSelect={() => openNote("040085brassquoits")} activeAnnotationId={currentNoteId}>the loose brass quoits</Annotation> of the bedstead <Annotation annotationId="040091jingle" annotationSelect={() => openNote("040091jingle")} activeAnnotationId={currentNoteId}>jingled</Annotation>.
+        as she turned over and <Annotation annotationId="040085brassquoits" visited={visitedNotes.has("040085brassquoits")} annotationSelect={() => {openNote("040085brassquoits"); addToVisited("040085brassquoits")}} activeAnnotationId={currentNoteId}>the loose brass quoits</Annotation> of the bedstead <Annotation annotationId="040091jingle" visited={visitedNotes.has("040091jingle")} annotationSelect={() => {openNote("040091jingle"); addToVisited("040091jingle")}} activeAnnotationId={currentNoteId}>jingled</Annotation>.
         Must get those settled really. Pity. All the way from Gibraltar.
         Forgotten any little Spanish she knew. Wonder what her father gave for
         it. Old style. Ah yes! of course. Bought it at the governor's auction.
-        <Annotation annotationId="040059shortknock" annotationSelect={() => openNote("040059shortknock")} activeAnnotationId={currentNoteId}>Got a short knock.</Annotation> Hard as nails at a bargain, <Annotation annotationId="040018oldtweedy" annotationSelect={() => openNote("040018oldtweedy")} activeAnnotationId={currentNoteId}>old Tweedy. Yes, sir. At
+        <Annotation annotationId="040059shortknock" visited={visitedNotes.has("040059shortknock")} annotationSelect={() => {openNote("040059shortknock"); addToVisited("040059shortknock")}} activeAnnotationId={currentNoteId}>Got a short knock.</Annotation> Hard as nails at a bargain, <Annotation annotationId="040018oldtweedy" visited={visitedNotes.has("040018oldtweedy")} annotationSelect={() => {openNote("040018oldtweedy"); addToVisited("040018oldtweedy")}} activeAnnotationId={currentNoteId}>old Tweedy. Yes, sir. At
         Plevna that was. I rose from the ranks, sir, and I'm proud of it.</Annotation>
-        Still he had brains enough to <Annotation annotationId="040059shortknock" annotationSelect={() => openNote("040059shortknock")} activeAnnotationId={currentNoteId}>make that corner in stamps</Annotation>. Now that was
+        Still he had brains enough to <Annotation annotationId="040059shortknock" visited={visitedNotes.has("040059shortknock")} annotationSelect={() => {openNote("040059shortknock"); addToVisited("040059shortknock")}} activeAnnotationId={currentNoteId}>make that corner in stamps</Annotation>. Now that was
         farseeing.
       </p>
       <span data-edition="ed1922" data-page="54"></span>
       <p>
         His hand took his hat from the peg over his initialled heavy overcoat
-        and his <Annotation annotationId="040059shortknock" annotationSelect={() => openNote("040059shortknock")} activeAnnotationId={currentNoteId}>lost property office</Annotation> secondhand waterproof. Stamps: stickyback<span data-edition="ed1932" data-page="49"></span>
-        pictures. Daresay lots of officers are <Annotation annotationId="040059shortknock" annotationSelect={() => openNote("040059shortknock")} activeAnnotationId={currentNoteId}>in the swim</Annotation> too. Course they do.
-        The sweated legend in the crown of his hat told him mutely: <Annotation annotationId="040062bolandsbread" annotationSelect={() => openNote("040062bolandsbread")} activeAnnotationId={currentNoteId}>Plasto's</Annotation>
-        <Annotation annotationId="040082highgradeha" annotationSelect={() => openNote("040082highgradeha")} activeAnnotationId={currentNoteId}>high grade ha</Annotation>. He peeped quickly inside the leather headband. <Annotation annotationId="050015thecard" annotationSelect={() => openNote("050015thecard")} activeAnnotationId={currentNoteId}>White slip
+        and his <Annotation annotationId="040059shortknock" visited={visitedNotes.has("040059shortknock")} annotationSelect={() => {openNote("040059shortknock"); addToVisited("040059shortknock")}} activeAnnotationId={currentNoteId}>lost property office</Annotation> secondhand waterproof. Stamps: stickyback<span data-edition="ed1932" data-page="49"></span>
+        pictures. Daresay lots of officers are <Annotation annotationId="040059shortknock" visited={visitedNotes.has("040059shortknock")} annotationSelect={() => {openNote("040059shortknock"); addToVisited("040059shortknock")}} activeAnnotationId={currentNoteId}>in the swim</Annotation> too. Course they do.
+        The sweated legend in the crown of his hat told him mutely: <Annotation annotationId="040062bolandsbread" visited={visitedNotes.has("040062bolandsbread")} annotationSelect={() => {openNote("040062bolandsbread"); addToVisited("040062bolandsbread")}} activeAnnotationId={currentNoteId}>Plasto's</Annotation>
+        <Annotation annotationId="040082highgradeha" visited={visitedNotes.has("040082highgradeha")} annotationSelect={() => {openNote("040082highgradeha"); addToVisited("040082highgradeha")}} activeAnnotationId={currentNoteId}>high grade ha</Annotation>. He peeped quickly inside the leather headband. <Annotation annotationId="050015thecard" visited={visitedNotes.has("050015thecard")} annotationSelect={() => {openNote("050015thecard"); addToVisited("050015thecard")}} activeAnnotationId={currentNoteId}>White slip
         of paper. Quite safe.</Annotation>
       </p>
       <span data-edition="ed1961" data-page="56"></span>
       <p>
-        <Annotation annotationId="040005seveneccles" annotationSelect={() => openNote("040005seveneccles")} activeAnnotationId={currentNoteId}>On the doorstep</Annotation> he felt in his hip pocket for the latchkey. Not there.
-        In the trousers I left off. Must get it. <Annotation annotationId="040047potato" annotationSelect={() => openNote("040047potato")} activeAnnotationId={currentNoteId}>Potato I have.</Annotation> Creaky wardrobe.
+        <Annotation annotationId="040005seveneccles" visited={visitedNotes.has("040005seveneccles")} annotationSelect={() => {openNote("040005seveneccles"); addToVisited("040005seveneccles")}} activeAnnotationId={currentNoteId}>On the doorstep</Annotation> he felt in his hip pocket for the latchkey. Not there.
+        In the trousers I left off. Must get it. <Annotation annotationId="040047potato" visited={visitedNotes.has("040047potato")} annotationSelect={() => {openNote("040047potato"); addToVisited("040047potato")}} activeAnnotationId={currentNoteId}>Potato I have.</Annotation> Creaky wardrobe.
         No use disturbing her. She turned over sleepily that time. He pulled
-        the halldoor to after him very quietly, more, <Annotation annotationId="040051footleaf" annotationSelect={() => openNote("040051footleaf")} activeAnnotationId={currentNoteId}>till the footleaf dropped
+        the halldoor to after him very quietly, more, <Annotation annotationId="040051footleaf" visited={visitedNotes.has("040051footleaf")} annotationSelect={() => {openNote("040051footleaf"); addToVisited("040051footleaf")}} activeAnnotationId={currentNoteId}>till the footleaf dropped
         gently over the threshold, a limp lid</Annotation>. Looked shut. All right till I
         come back anyhow.
       </p>
       <p>
-        He crossed to the bright side, avoiding the loose cellarflap of <Annotation annotationId="040075seventyfive" annotationSelect={() => openNote("040075seventyfive")} activeAnnotationId={currentNoteId}>number
-        seventyfive</Annotation>. The sun was nearing <Annotation annotationId="040008georgeschurch" annotationSelect={() => openNote("040008georgeschurch")} activeAnnotationId={currentNoteId}>the steeple of George's church</Annotation>. Be a
-        warm day I fancy. Specially in <Annotation annotationId="010048greypants" annotationSelect={() => openNote("010048greypants")} activeAnnotationId={currentNoteId}>these black clothes</Annotation> feel it more. <Annotation annotationId="040013wonderisittrue" annotationSelect={() => openNote("040013wonderisittrue")} activeAnnotationId={currentNoteId}>Black
+        He crossed to the bright side, avoiding the loose cellarflap of <Annotation annotationId="040075seventyfive" visited={visitedNotes.has("040075seventyfive")} annotationSelect={() => {openNote("040075seventyfive"); addToVisited("040075seventyfive")}} activeAnnotationId={currentNoteId}>number
+        seventyfive</Annotation>. The sun was nearing <Annotation annotationId="040008georgeschurch" visited={visitedNotes.has("040008georgeschurch")} annotationSelect={() => {openNote("040008georgeschurch"); addToVisited("040008georgeschurch")}} activeAnnotationId={currentNoteId}>the steeple of George's church</Annotation>. Be a
+        warm day I fancy. Specially in <Annotation annotationId="010048greypants" visited={visitedNotes.has("010048greypants")} annotationSelect={() => {openNote("010048greypants"); addToVisited("010048greypants")}} activeAnnotationId={currentNoteId}>these black clothes</Annotation> feel it more. <Annotation annotationId="040013wonderisittrue" visited={visitedNotes.has("040013wonderisittrue")} annotationSelect={() => {openNote("040013wonderisittrue"); addToVisited("040013wonderisittrue")}} activeAnnotationId={currentNoteId}>Black
         conducts, reflects, (refracts is it?), the heat.</Annotation> But I couldn't go in
         that light suit. Make a<span data-edition="ed1986" data-page="46"></span> picnic of it. His eyelids sank quietly often as
-        he walked in happy warmth. <Annotation annotationId="040062bolandsbread" annotationSelect={() => openNote("040062bolandsbread")} activeAnnotationId={currentNoteId}>Boland's breadvan</Annotation> delivering with trays <Annotation annotationId="040077ourfather" annotationSelect={() => openNote("040077ourfather")} activeAnnotationId={currentNoteId}>our
+        he walked in happy warmth. <Annotation annotationId="040062bolandsbread" visited={visitedNotes.has("040062bolandsbread")} annotationSelect={() => {openNote("040062bolandsbread"); addToVisited("040062bolandsbread")}} activeAnnotationId={currentNoteId}>Boland's breadvan</Annotation> delivering with trays <Annotation annotationId="040077ourfather" visited={visitedNotes.has("040077ourfather")} annotationSelect={() => {openNote("040077ourfather"); addToVisited("040077ourfather")}} activeAnnotationId={currentNoteId}>our
         daily</Annotation> but she prefers yesterday's loaves turnovers crisp crowns hot.
         Makes you feel young. Somewhere in the east: early morning: set off at
         dawn. Travel round in front of the sun, steal a day's march on him. Keep
         it up for ever never grow a day older technically. Walk along a strand,
-        strange land, come to a city gate, sentry there, <Annotation annotationId="040018oldtweedy" annotationSelect={() => openNote("040018oldtweedy")} activeAnnotationId={currentNoteId}>old ranker too, old
+        strange land, come to a city gate, sentry there, <Annotation annotationId="040018oldtweedy" visited={visitedNotes.has("040018oldtweedy")} annotationSelect={() => {openNote("040018oldtweedy"); addToVisited("040018oldtweedy")}} activeAnnotationId={currentNoteId}>old ranker too, old
         Tweedy's big moustaches</Annotation>, leaning on a long kind of a spear. Wander
         through awned streets. Turbaned faces going by. Dark caves of carpet
-        shops, big man, <Annotation annotationId="010077pantomime" annotationSelect={() => openNote("010077pantomime")} activeAnnotationId={currentNoteId}>Turko the terrible</Annotation>, seated crosslegged, smoking a coiled
+        shops, big man, <Annotation annotationId="010077pantomime" visited={visitedNotes.has("010077pantomime")} annotationSelect={() => {openNote("010077pantomime"); addToVisited("010077pantomime")}} activeAnnotationId={currentNoteId}>Turko the terrible</Annotation>, seated crosslegged, smoking a coiled
         pipe. Cries of sellers in the 
         <span data-edition="ed1939" data-page="44"> </span>
-        streets. Drink water scented with fennel, <Annotation annotationId="040012sherbet" annotationSelect={() => openNote("040012sherbet")} activeAnnotationId={currentNoteId}>sherbet</Annotation>. Dander along all day. Might meet a robber or two. Well,
+        streets. Drink water scented with fennel, <Annotation annotationId="040012sherbet" visited={visitedNotes.has("040012sherbet")} annotationSelect={() => {openNote("040012sherbet"); addToVisited("040012sherbet")}} activeAnnotationId={currentNoteId}>sherbet</Annotation>. Dander along all day. Might meet a robber or two. Well,
         meet him. Getting on to sundown. The shadows of the mosques among the
         pillars: priest with a scroll rolled up. A shiver of the trees, signal,
         the evening wind. I pass on. Fading gold sky. A mother watches me from
         her doorway. She calls her children home in their dark language. High
-        wall: beyond strings twanged. <Annotation annotationId="020080mauve" annotationSelect={() => openNote("020080mauve")} activeAnnotationId={currentNoteId}>Night sky, moon, violet, colour of Molly's
+        wall: beyond strings twanged. <Annotation annotationId="020080mauve" visited={visitedNotes.has("020080mauve")} annotationSelect={() => {openNote("020080mauve"); addToVisited("020080mauve")}} activeAnnotationId={currentNoteId}>Night sky, moon, violet, colour of Molly's
         new garters.</Annotation> Strings. Listen. A girl playing one of those instruments
         what do you call them: dulcimers. I pass.
       </p>
       <p>
-        Probably not a bit like it really. <Annotation annotationId="040026trackofthesun" annotationSelect={() => openNote("040026trackofthesun")} activeAnnotationId={currentNoteId}>Kind of stuff you read: in the track
+        Probably not a bit like it really. <Annotation annotationId="040026trackofthesun" visited={visitedNotes.has("040026trackofthesun")} annotationSelect={() => {openNote("040026trackofthesun"); addToVisited("040026trackofthesun")}} activeAnnotationId={currentNoteId}>Kind of stuff you read: in the track
         of the sun</Annotation>. Sunburst on the titlepage. He smiled, pleasing himself. What
-        <Annotation annotationId="030037griffith" annotationSelect={() => openNote("030037griffith")} activeAnnotationId={currentNoteId}>Arthur Griffith</Annotation> said about <Annotation annotationId="040006homerulesun" annotationSelect={() => openNote("040006homerulesun")} activeAnnotationId={currentNoteId}>the headpiece over the <i>Freeman</i> leader: a
+        <Annotation annotationId="030037griffith" visited={visitedNotes.has("030037griffith")} annotationSelect={() => {openNote("030037griffith"); addToVisited("030037griffith")}} activeAnnotationId={currentNoteId}>Arthur Griffith</Annotation> said about <Annotation annotationId="040006homerulesun" visited={visitedNotes.has("040006homerulesun")} annotationSelect={() => {openNote("040006homerulesun"); addToVisited("040006homerulesun")}} activeAnnotationId={currentNoteId}>the headpiece over the <i>Freeman</i> leader: a
         homerule sun rising up in the northwest from the laneway behind the bank
-        of Ireland</Annotation>. He prolonged his pleased smile. <Annotation annotationId="040050ikeymo" annotationSelect={() => openNote("040050ikeymo")} activeAnnotationId={currentNoteId}>Ikey touch that</Annotation>: homerule
+        of Ireland</Annotation>. He prolonged his pleased smile. <Annotation annotationId="040050ikeymo" visited={visitedNotes.has("040050ikeymo")} annotationSelect={() => {openNote("040050ikeymo"); addToVisited("040050ikeymo")}} activeAnnotationId={currentNoteId}>Ikey touch that</Annotation>: homerule
         sun rising up in the northwest.
       </p>
       <span data-edition="ed1922" data-page="55"></span>
       <p>
-        He approached <Annotation annotationId="040007dorsetstreet" annotationSelect={() => openNote("040007dorsetstreet")} activeAnnotationId={currentNoteId}>Larry O'Rourke's</Annotation>. From the cellar grating floated up<span data-edition="ed1932" data-page="50"></span> the
+        He approached <Annotation annotationId="040007dorsetstreet" visited={visitedNotes.has("040007dorsetstreet")} annotationSelect={() => {openNote("040007dorsetstreet"); addToVisited("040007dorsetstreet")}} activeAnnotationId={currentNoteId}>Larry O'Rourke's</Annotation>. From the cellar grating floated up<span data-edition="ed1932" data-page="50"></span> the
         flabby gush of porter. Through the open doorway the bar squirted out
         whiffs of ginger, teadust, biscuitmush.<span data-edition="ed1961" data-page="57"></span> Good house, however: just the
-        end of the city traffic. For instance <Annotation annotationId="040062bolandsbread" annotationSelect={() => openNote("040062bolandsbread")} activeAnnotationId={currentNoteId}>M'Auley's down there</Annotation>: <Annotation annotationId="040082highgradeha" annotationSelect={() => openNote("040082highgradeha")} activeAnnotationId={currentNoteId}>n. g.</Annotation> as
-        position. Of course if they ran <Annotation annotationId="040037cattlemarket" annotationSelect={() => openNote("040037cattlemarket")} activeAnnotationId={currentNoteId}>a tramline along the North Circular from
+        end of the city traffic. For instance <Annotation annotationId="040062bolandsbread" visited={visitedNotes.has("040062bolandsbread")} annotationSelect={() => {openNote("040062bolandsbread"); addToVisited("040062bolandsbread")}} activeAnnotationId={currentNoteId}>M'Auley's down there</Annotation>: <Annotation annotationId="040082highgradeha" visited={visitedNotes.has("040082highgradeha")} annotationSelect={() => {openNote("040082highgradeha"); addToVisited("040082highgradeha")}} activeAnnotationId={currentNoteId}>n. g.</Annotation> as
+        position. Of course if they ran <Annotation annotationId="040037cattlemarket" visited={visitedNotes.has("040037cattlemarket")} annotationSelect={() => {openNote("040037cattlemarket"); addToVisited("040037cattlemarket")}} activeAnnotationId={currentNoteId}>a tramline along the North Circular from
         the cattlemarket to the quays</Annotation> value would go up like a shot.
       </p>
       <p>
         Baldhead over the blind. Cute old codger. No use canvassing him for an
-        ad. Still he knows his own business best. There he is, sure enough, <Annotation annotationId="040081boldlarry" annotationSelect={() => openNote("040081boldlarry")} activeAnnotationId={currentNoteId}>my
+        ad. Still he knows his own business best. There he is, sure enough, <Annotation annotationId="040081boldlarry" visited={visitedNotes.has("040081boldlarry")} annotationSelect={() => {openNote("040081boldlarry"); addToVisited("040081boldlarry")}} activeAnnotationId={currentNoteId}>my
         bold Larry</Annotation>, leaning against the sugarbin in his shirtsleeves watching
-        the aproned <Annotation annotationId="040044curate" annotationSelect={() => openNote("040044curate")} activeAnnotationId={currentNoteId}>curate</Annotation> swab up with mop and bucket. Simon Dedalus takes him
+        the aproned <Annotation annotationId="040044curate" visited={visitedNotes.has("040044curate")} annotationSelect={() => {openNote("040044curate"); addToVisited("040044curate")}} activeAnnotationId={currentNoteId}>curate</Annotation> swab up with mop and bucket. Simon Dedalus takes him
         off to a tee with his eyes screwed up. Do you know what I'm going to
         tell you? What's that, Mr O'Rourke? Do you know what? The Russians,
         they'd only be an eight o'clock breakfast for the Japanese.
       </p>
       <p>
-        Stop and say a word: about the funeral perhaps. <Annotation annotationId="040067poordignam" annotationSelect={() => openNote("040067poordignam")} activeAnnotationId={currentNoteId}>Sad thing about poor
+        Stop and say a word: about the funeral perhaps. <Annotation annotationId="040067poordignam" visited={visitedNotes.has("040067poordignam")} annotationSelect={() => {openNote("040067poordignam"); addToVisited("040067poordignam")}} activeAnnotationId={currentNoteId}>Sad thing about poor
         Dignam</Annotation>, Mr O'Rourke.
       </p>
       <p>
-        Turning into <Annotation annotationId="040007dorsetstreet" annotationSelect={() => openNote("040007dorsetstreet")} activeAnnotationId={currentNoteId}>Dorset street</Annotation> he said freshly in greeting through the
+        Turning into <Annotation annotationId="040007dorsetstreet" visited={visitedNotes.has("040007dorsetstreet")} annotationSelect={() => {openNote("040007dorsetstreet"); addToVisited("040007dorsetstreet")}} activeAnnotationId={currentNoteId}>Dorset street</Annotation> he said freshly in greeting through the
         doorway:
       </p>
       <p>
@@ -222,27 +222,27 @@ const Calypso = ({openNote, currentNoteId}) => {
       </p>
       <span data-edition="ed1986" data-page="47"></span>
       <p>
-        Where do they get the money? Coming up <Annotation annotationId="040046countyleitrim" annotationSelect={() => openNote("040046countyleitrim")} activeAnnotationId={currentNoteId}>redheaded curates from the county
-        Leitrim</Annotation>, rinsing empties and <Annotation annotationId="040095oldman" annotationSelect={() => openNote("040095oldman")} activeAnnotationId={currentNoteId}> old man in the cellar</Annotation>. Then, lo and behold,
-        they blossom out as <Annotation annotationId="040045dantallons" annotationSelect={() => openNote("040045dantallons")} activeAnnotationId={currentNoteId}>Adam Findlaters or Dan Tallons</Annotation>. Then think of the
-        competition. General thirst. <Annotation annotationId="040032passingapub" annotationSelect={() => openNote("040032passingapub")} activeAnnotationId={currentNoteId}>Good puzzle would be cross Dublin without
+        Where do they get the money? Coming up <Annotation annotationId="040046countyleitrim" visited={visitedNotes.has("040046countyleitrim")} annotationSelect={() => {openNote("040046countyleitrim"); addToVisited("040046countyleitrim")}} activeAnnotationId={currentNoteId}>redheaded curates from the county
+        Leitrim</Annotation>, rinsing empties and <Annotation annotationId="040095oldman" visited={visitedNotes.has("040095oldman")} annotationSelect={() => {openNote("040095oldman"); addToVisited("040095oldman")}} activeAnnotationId={currentNoteId}> old man in the cellar</Annotation>. Then, lo and behold,
+        they blossom out as <Annotation annotationId="040045dantallons" visited={visitedNotes.has("040045dantallons")} annotationSelect={() => {openNote("040045dantallons"); addToVisited("040045dantallons")}} activeAnnotationId={currentNoteId}>Adam Findlaters or Dan Tallons</Annotation>. Then think of the
+        competition. General thirst. <Annotation annotationId="040032passingapub" visited={visitedNotes.has("040032passingapub")} annotationSelect={() => {openNote("040032passingapub"); addToVisited("040032passingapub")}} activeAnnotationId={currentNoteId}>Good puzzle would be cross Dublin without
         passing a pub</Annotation>. Save it they can't. Off the drunks perhaps. Put down
         three and carry five. What is that, a bob here and there, dribs and
-        drabs. On the wholesale orders perhaps. <Annotation annotationId="040059shortknock" annotationSelect={() => openNote("040059shortknock")} activeAnnotationId={currentNoteId}>Doing a double shuffle with the
+        drabs. On the wholesale orders perhaps. <Annotation annotationId="040059shortknock" visited={visitedNotes.has("040059shortknock")} annotationSelect={() => {openNote("040059shortknock"); addToVisited("040059shortknock")}} activeAnnotationId={currentNoteId}>Doing a double shuffle with the
         town travellers.</Annotation> Square it with the boss and we'll split the job,
         see?
       </p>
       <p>
         How much would that tot to off the porter in the month? Say ten barrels
-        of stuff. Say he got ten per cent off. O more. Ten. Fifteen. He passed <Annotation annotationId="040002nationalschool" annotationSelect={() => openNote("040002nationalschool")} activeAnnotationId={currentNoteId}>Saint
+        of stuff. Say he got ten per cent off. O more. Ten. Fifteen. He passed <Annotation annotationId="040002nationalschool" visited={visitedNotes.has("040002nationalschool")} annotationSelect={() => {openNote("040002nationalschool"); addToVisited("040002nationalschool")}} activeAnnotationId={currentNoteId}>Saint
         Joseph's National school</Annotation>. Brats' clamour. Windows open. Fresh air
         helps memory. Or a lilt. Ahbeesee defeegee kelomen opeecue rustyouvee
-        doubleyou. Boys are they? Yes. <Annotation annotationId="040020inish" annotationSelect={() => openNote("040020inish")} activeAnnotationId={currentNoteId}>Inishturk. Inishark. Inishboffin.</Annotation> At
-        their joggerfry. Mine. <Annotation annotationId="040073slieve" annotationSelect={() => openNote("040073slieve")} activeAnnotationId={currentNoteId}>Slieve Bloom.</Annotation>
+        doubleyou. Boys are they? Yes. <Annotation annotationId="040020inish" visited={visitedNotes.has("040020inish")} annotationSelect={() => {openNote("040020inish"); addToVisited("040020inish")}} activeAnnotationId={currentNoteId}>Inishturk. Inishark. Inishboffin.</Annotation> At
+        their joggerfry. Mine. <Annotation annotationId="040073slieve" visited={visitedNotes.has("040073slieve")} annotationSelect={() => {openNote("040073slieve"); addToVisited("040073slieve")}} activeAnnotationId={currentNoteId}>Slieve Bloom.</Annotation>
       </p>
       <span data-edition="ed1939" data-page="45"> </span>
       <p>
-        He halted before <Annotation annotationId="040060dlugacz" annotationSelect={() => openNote("040060dlugacz")} activeAnnotationId={currentNoteId}>Dlugacz's window</Annotation>, staring at the hanks of sausages,
+        He halted before <Annotation annotationId="040060dlugacz" visited={visitedNotes.has("040060dlugacz")} annotationSelect={() => {openNote("040060dlugacz"); addToVisited("040060dlugacz")}} activeAnnotationId={currentNoteId}>Dlugacz's window</Annotation>, staring at the hanks of sausages,
         polonies, black and white. Fifteen multiplied by. The figures whitened
         in his mind, unsolved: displeased, he let them fade. The shiny links
         packed with 
@@ -255,7 +255,7 @@ const Calypso = ({openNote, currentNoteId}) => {
         A kidney oozed bloodgouts on the willowpatterned dish: the last. He
         stood by the nextdoor girl at the counter. Would she buy it too, calling
         the items from a slip in her hand? Chapped: washingsoda. And a pound and
-        a half of Denny's sausages. His eyes rested on her vigorous hips. <Annotation annotationId="040072woods" annotationSelect={() => openNote("040072woods")} activeAnnotationId={currentNoteId}>Woods his name is. Wonder what he does. Wife is oldish. New blood.
+        a half of Denny's sausages. His eyes rested on her vigorous hips. <Annotation annotationId="040072woods" visited={visitedNotes.has("040072woods")} annotationSelect={() => {openNote("040072woods"); addToVisited("040072woods")}} activeAnnotationId={currentNoteId}>Woods his name is. Wonder what he does. Wife is oldish. New blood.
         No followers allowed.</Annotation> Strong pair of arms. Whacking a carpet on the
         clothesline. She does whack it, by George. The way her crooked skirt
         swings at each whack.
@@ -265,16 +265,16 @@ const Calypso = ({openNote, currentNoteId}) => {
         blotchy fingers, sausagepink. Sound meat there: like a stallfed heifer.
       </p>
       <p>
-        He took a page up from the pile of cut sheets: <Annotation annotationId="040061agendath" annotationSelect={() => openNote("040061agendath")} activeAnnotationId={currentNoteId}>the model farm at
+        He took a page up from the pile of cut sheets: <Annotation annotationId="040061agendath" visited={visitedNotes.has("040061agendath")} annotationSelect={() => {openNote("040061agendath"); addToVisited("040061agendath")}} activeAnnotationId={currentNoteId}>the model farm at
         Kinnereth on the lakeshore of Tiberias. Can become ideal winter
         sanatorium. Moses Montefiore.</Annotation> I thought he was. Farmhouse, wall round
         it, blurred cattle cropping. He held the page from him: interesting:
         read it nearer, the title, the blurred cropping cattle, the page
-        rustling. A young white heifer. <Annotation annotationId="040037cattlemarket" annotationSelect={() => openNote("040037cattlemarket")} activeAnnotationId={currentNoteId}>Those mornings in the cattlemarket</Annotation>, the
+        rustling. A young white heifer. <Annotation annotationId="040037cattlemarket" visited={visitedNotes.has("040037cattlemarket")} annotationSelect={() => {openNote("040037cattlemarket"); addToVisited("040037cattlemarket")}} activeAnnotationId={currentNoteId}>Those mornings in the cattlemarket</Annotation>, the
         beasts lowing in their pens, branded sheep, flop and fall of dung, the
         breeders in hobnailed boots trudging through the litter, slapping a palm
         on a ripemeated hindquarter, there's a prime one, unpeeled switches in
-        their hands. He held the page aslant patiently, <Annotation annotationId="040017seemtolikeit" annotationSelect={() => openNote("040017seemtolikeit")} activeAnnotationId={currentNoteId}>bending his senses and
+        their hands. He held the page aslant patiently, <Annotation annotationId="040017seemtolikeit" visited={visitedNotes.has("040017seemtolikeit")} annotationSelect={() => {openNote("040017seemtolikeit"); addToVisited("040017seemtolikeit")}} activeAnnotationId={currentNoteId}>bending his senses and
         his will, his soft subject gaze at rest. The crooked skirt swinging,
         whack by whack by whack.</Annotation>
       </p>
@@ -299,10 +299,10 @@ const Calypso = ({openNote, currentNoteId}) => {
         morning. Hurry up, damn it. Make hay while the sun shines. She stood
         outside the shop in sunlight and sauntered lazily to the right. He
         sighed down his nose: they never understand. Sodachapped hands. Crusted
-        toenails too. <Annotation annotationId="040036scapulars" annotationSelect={() => openNote("040036scapulars")} activeAnnotationId={currentNoteId}>Brown scapulars</Annotation> in tatters, defending her both ways.
+        toenails too. <Annotation annotationId="040036scapulars" visited={visitedNotes.has("040036scapulars")} annotationSelect={() => {openNote("040036scapulars"); addToVisited("040036scapulars")}} activeAnnotationId={currentNoteId}>Brown scapulars</Annotation> in tatters, defending her both ways.
         The sting<span data-edition="ed1961" data-page="59"></span> of disregard glowed to weak pleasure within his breast. For
-        another: a constable off duty cuddled her in <Annotation annotationId="040072woods" annotationSelect={() => openNote("040072woods")} activeAnnotationId={currentNoteId}>Eccles lane</Annotation>. They like
-        them <Annotation annotationId="040084sizeable" annotationSelect={() => openNote("040084sizeable")} activeAnnotationId={currentNoteId}>sizeable</Annotation>. Prime sausage. <Annotation annotationId="040088lostinthewood" annotationSelect={() => openNote("040088lostinthewood")} activeAnnotationId={currentNoteId}>O please, Mr Policeman, I'm lost in the
+        another: a constable off duty cuddled her in <Annotation annotationId="040072woods" visited={visitedNotes.has("040072woods")} annotationSelect={() => {openNote("040072woods"); addToVisited("040072woods")}} activeAnnotationId={currentNoteId}>Eccles lane</Annotation>. They like
+        them <Annotation annotationId="040084sizeable" visited={visitedNotes.has("040084sizeable")} annotationSelect={() => {openNote("040084sizeable"); addToVisited("040084sizeable")}} activeAnnotationId={currentNoteId}>sizeable</Annotation>. Prime sausage. <Annotation annotationId="040088lostinthewood" visited={visitedNotes.has("040088lostinthewood")} annotationSelect={() => {openNote("040088lostinthewood"); addToVisited("040088lostinthewood")}} activeAnnotationId={currentNoteId}>O please, Mr Policeman, I'm lost in the
         wood.</Annotation>
       </p>
       <p>
@@ -333,15 +333,15 @@ const Calypso = ({openNote, currentNoteId}) => {
       </p>
       <span data-edition="ed1939" data-page="46"> </span>
       <p>
-        He walked back along Dorset street, reading gravely. <Annotation annotationId="040061agendath" annotationSelect={() => openNote("040061agendath")} activeAnnotationId={currentNoteId}>Agendath Netaim:
+        He walked back along Dorset street, reading gravely. <Annotation annotationId="040061agendath" visited={visitedNotes.has("040061agendath")} annotationSelect={() => {openNote("040061agendath"); addToVisited("040061agendath")}} activeAnnotationId={currentNoteId}>Agendath Netaim:
         planters' company. To purchase waste sandy tracts from Turkish
         government and plant with eucalyptus trees.</Annotation> Excellent for shade, fuel
         and construction. Orangegroves and immense melonfields north of Jaffa.
         You pay eighty marks and they plant a dunam of land for you with olives,
-        oranges, almonds or <Annotation annotationId="040074citrons" annotationSelect={() => openNote("040074citrons")} activeAnnotationId={currentNoteId}>citrons</Annotation>. Olives cheaper: oranges need artificial
+        oranges, almonds or <Annotation annotationId="040074citrons" visited={visitedNotes.has("040074citrons")} annotationSelect={() => {openNote("040074citrons"); addToVisited("040074citrons")}} activeAnnotationId={currentNoteId}>citrons</Annotation>. Olives cheaper: oranges need artificial
         irrigation. Every year you get a sending of the crop. Your name entered
         for life as owner in the book of the union. Can pay ten down and the
-        balance in yearly instalments. <Annotation annotationId="040064bleibtreustrasse" annotationSelect={() => openNote("040064bleibtreustrasse")} activeAnnotationId={currentNoteId}>Bleibtreustrasse 34, Berlin, W. 15.</Annotation>
+        balance in yearly instalments. <Annotation annotationId="040064bleibtreustrasse" visited={visitedNotes.has("040064bleibtreustrasse")} annotationSelect={() => {openNote("040064bleibtreustrasse"); addToVisited("040064bleibtreustrasse")}} activeAnnotationId={currentNoteId}>Bleibtreustrasse 34, Berlin, W. 15.</Annotation>
       </p>
       <p>
         Nothing doing. Still an idea behind it.
@@ -349,34 +349,34 @@ const Calypso = ({openNote, currentNoteId}) => {
       <p>
         He looked at the cattle, blurred in silver heat. Silverpowdered
         olivetrees. Quiet long days: pruning, ripening. Olives are packed in
-        jars, eh? I have a few left from <Annotation annotationId="040062bolandsbread" annotationSelect={() => openNote("040062bolandsbread")} activeAnnotationId={currentNoteId}>Andrews</Annotation>. Molly spitting them out. Knows
+        jars, eh? I have a few left from <Annotation annotationId="040062bolandsbread" visited={visitedNotes.has("040062bolandsbread")} annotationSelect={() => {openNote("040062bolandsbread"); addToVisited("040062bolandsbread")}} activeAnnotationId={currentNoteId}>Andrews</Annotation>. Molly spitting them out. Knows
         the taste of them now. Oranges in tissue paper packed in crates. Citrons
-        too. <Annotation annotationId="040049pleasantoldtimes" annotationSelect={() => openNote("040049pleasantoldtimes")} activeAnnotationId={currentNoteId}>Wonder is poor Citron still alive in Saint Kevin's parade. And Mastiansky
+        too. <Annotation annotationId="040049pleasantoldtimes" visited={visitedNotes.has("040049pleasantoldtimes")} annotationSelect={() => {openNote("040049pleasantoldtimes"); addToVisited("040049pleasantoldtimes")}} activeAnnotationId={currentNoteId}>Wonder is poor Citron still alive in Saint Kevin's parade. And Mastiansky
         with the old cither. Pleasant evenings we had then. Molly in Citron's
         basketchair.</Annotation> Nice to hold, cool waxen fruit, hold in the hand, lift it
         to the nostrils and smell the perfume. Like that, heavy, sweet, wild
         perfume. Always the same, year after year. They fetched high prices too,
-        <Annotation annotationId="040049pleasantoldtimes" annotationSelect={() => openNote("040049pleasantoldtimes")} activeAnnotationId={currentNoteId}>Moisel told me. Arbutus place: Pleasants street: pleasant old times.</Annotation>
-        <Annotation annotationId="040074citrons" annotationSelect={() => openNote("040074citrons")} activeAnnotationId={currentNoteId}>Must be without a flaw</Annotation>, he said. Coming all that way: Spain, Gibraltar,
+        <Annotation annotationId="040049pleasantoldtimes" visited={visitedNotes.has("040049pleasantoldtimes")} annotationSelect={() => {openNote("040049pleasantoldtimes"); addToVisited("040049pleasantoldtimes")}} activeAnnotationId={currentNoteId}>Moisel told me. Arbutus place: Pleasants street: pleasant old times.</Annotation>
+        <Annotation annotationId="040074citrons" visited={visitedNotes.has("040074citrons")} annotationSelect={() => {openNote("040074citrons"); addToVisited("040074citrons")}} activeAnnotationId={currentNoteId}>Must be without a flaw</Annotation>, he said. Coming all that way: Spain, Gibraltar,
         Mediterranean, the Levant. Crates lined up on the quayside at Jaffa,
         chap<span data-edition="ed1961" data-page="60"></span> ticking them off in a book, navvies handling them in
-        soiled dungarees. There's whatdoyoucallhim out of. <Annotation annotationId="060026allofus" annotationSelect={() => openNote("060026allofus")} activeAnnotationId={currentNoteId}>How do you? Doesn't
-        see.</Annotation> Chap you know just to salute bit of a bore. His back is like <Annotation annotationId="040078norwegiancaptain" annotationSelect={() => openNote("040078norwegiancaptain")} activeAnnotationId={currentNoteId}>that
+        soiled dungarees. There's whatdoyoucallhim out of. <Annotation annotationId="060026allofus" visited={visitedNotes.has("060026allofus")} annotationSelect={() => {openNote("060026allofus"); addToVisited("060026allofus")}} activeAnnotationId={currentNoteId}>How do you? Doesn't
+        see.</Annotation> Chap you know just to salute bit of a bore. His back is like <Annotation annotationId="040078norwegiancaptain" visited={visitedNotes.has("040078norwegiancaptain")} annotationSelect={() => {openNote("040078norwegiancaptain"); addToVisited("040078norwegiancaptain")}} activeAnnotationId={currentNoteId}>that
         Norwegian captain's</Annotation>. Wonder if<span data-edition="ed1986" data-page="49"></span> I'll meet him today. Watering cart. To
-        provoke the rain. <Annotation annotationId="040077ourfather" annotationSelect={() => openNote("040077ourfather")} activeAnnotationId={currentNoteId}>On earth as it is in heaven.</Annotation>
+        provoke the rain. <Annotation annotationId="040077ourfather" visited={visitedNotes.has("040077ourfather")} annotationSelect={() => {openNote("040077ourfather"); addToVisited("040077ourfather")}} activeAnnotationId={currentNoteId}>On earth as it is in heaven.</Annotation>
       </p>
       <p>
-        <Annotation annotationId="010074cloudcover" annotationSelect={() => openNote("010074cloudcover")} activeAnnotationId={currentNoteId}>A cloud began to cover the sun</Annotation> slowly, wholly. Grey. Far.
+        <Annotation annotationId="010074cloudcover" visited={visitedNotes.has("010074cloudcover")} annotationSelect={() => {openNote("010074cloudcover"); addToVisited("010074cloudcover")}} activeAnnotationId={currentNoteId}>A cloud began to cover the sun</Annotation> slowly, wholly. Grey. Far.
       </p>
       <span data-edition="ed1922" data-page="58"></span>
       <p>
         No, not like that. A barren land, bare waste. Vulcanic lake, the dead
         sea: no fish, weedless, sunk deep in the earth. No wind would lift those<span data-edition="ed1932" data-page="53"></span>
-        waves, grey metal, poisonous foggy waters. <Annotation annotationId="040053deadsea" annotationSelect={() => openNote("040053deadsea")} activeAnnotationId={currentNoteId}>Brimstone they called it
+        waves, grey metal, poisonous foggy waters. <Annotation annotationId="040053deadsea" visited={visitedNotes.has("040053deadsea")} annotationSelect={() => {openNote("040053deadsea"); addToVisited("040053deadsea")}} activeAnnotationId={currentNoteId}>Brimstone they called it
         raining down: the cities of the plain: Sodom, Gomorrah, Edom.</Annotation> All dead
         names. A dead sea in a dead land, grey and old. Old now. It bore the
-        oldest, the first race. A bent hag <Annotation annotationId="040007dorsetstreet" annotationSelect={() => openNote("040007dorsetstreet")} activeAnnotationId={currentNoteId}>crossed from Cassidy's</Annotation>, clutching <Annotation annotationId="040090naggin" annotationSelect={() => openNote("040090naggin")} activeAnnotationId={currentNoteId}>a naggin bottle</Annotation> by the neck. The oldest people. <Annotation annotationId="020061wanderers" annotationSelect={() => openNote("020061wanderers")} activeAnnotationId={currentNoteId}>Wandered far away over
-        all the earth, captivity to captivity</Annotation>, <Annotation annotationId="080028multiply" annotationSelect={() => openNote("080028multiply")} activeAnnotationId={currentNoteId}>multiplying, dying, being born</Annotation>
+        oldest, the first race. A bent hag <Annotation annotationId="040007dorsetstreet" visited={visitedNotes.has("040007dorsetstreet")} annotationSelect={() => {openNote("040007dorsetstreet"); addToVisited("040007dorsetstreet")}} activeAnnotationId={currentNoteId}>crossed from Cassidy's</Annotation>, clutching <Annotation annotationId="040090naggin" visited={visitedNotes.has("040090naggin")} annotationSelect={() => {openNote("040090naggin"); addToVisited("040090naggin")}} activeAnnotationId={currentNoteId}>a naggin bottle</Annotation> by the neck. The oldest people. <Annotation annotationId="020061wanderers" visited={visitedNotes.has("020061wanderers")} annotationSelect={() => {openNote("020061wanderers"); addToVisited("020061wanderers")}} activeAnnotationId={currentNoteId}>Wandered far away over
+        all the earth, captivity to captivity</Annotation>, <Annotation annotationId="080028multiply" visited={visitedNotes.has("080028multiply")} annotationSelect={() => {openNote("080028multiply"); addToVisited("080028multiply")}} activeAnnotationId={currentNoteId}>multiplying, dying, being born</Annotation>
         everywhere. It lay there now. Now it could bear no more. Dead: an old
         woman's: the grey sunken cunt of the world.
       </p>
@@ -384,26 +384,26 @@ const Calypso = ({openNote, currentNoteId}) => {
         Desolation.
       </p>
       <p>
-        Grey horror seared his flesh. Folding the page into his pocket <Annotation annotationId="040005seveneccles" annotationSelect={() => openNote("040005seveneccles")} activeAnnotationId={currentNoteId}>he turned
-        into Eccles street, hurrying homeward</Annotation>. <Annotation annotationId="040063happywarmth" annotationSelect={() => openNote("040063happywarmth")} activeAnnotationId={currentNoteId}>Cold oils slid along his veins,
-        chilling his blood</Annotation>: <Annotation annotationId="040054saltcloak" annotationSelect={() => openNote("040054saltcloak")} activeAnnotationId={currentNoteId}>age crusting him with a salt cloak</Annotation>. Well, I am here
+        Grey horror seared his flesh. Folding the page into his pocket <Annotation annotationId="040005seveneccles" visited={visitedNotes.has("040005seveneccles")} annotationSelect={() => {openNote("040005seveneccles"); addToVisited("040005seveneccles")}} activeAnnotationId={currentNoteId}>he turned
+        into Eccles street, hurrying homeward</Annotation>. <Annotation annotationId="040063happywarmth" visited={visitedNotes.has("040063happywarmth")} annotationSelect={() => {openNote("040063happywarmth"); addToVisited("040063happywarmth")}} activeAnnotationId={currentNoteId}>Cold oils slid along his veins,
+        chilling his blood</Annotation>: <Annotation annotationId="040054saltcloak" visited={visitedNotes.has("040054saltcloak")} annotationSelect={() => {openNote("040054saltcloak"); addToVisited("040054saltcloak")}} activeAnnotationId={currentNoteId}>age crusting him with a salt cloak</Annotation>. Well, I am here
         now. Morning mouth bad images. Got up wrong side of
-        the bed. Must begin again those <Annotation annotationId="040024sandow" annotationSelect={() => openNote("040024sandow")} activeAnnotationId={currentNoteId}>Sandow's exercises</Annotation>. On the hands down.
-        Blotchy brown brick houses. <Annotation annotationId="040080eighty" annotationSelect={() => openNote("040080eighty")} activeAnnotationId={currentNoteId}>Number eighty still unlet. Why is that?
+        the bed. Must begin again those <Annotation annotationId="040024sandow" visited={visitedNotes.has("040024sandow")} annotationSelect={() => {openNote("040024sandow"); addToVisited("040024sandow")}} activeAnnotationId={currentNoteId}>Sandow's exercises</Annotation>. On the hands down.
+        Blotchy brown brick houses. <Annotation annotationId="040080eighty" visited={visitedNotes.has("040080eighty")} annotationSelect={() => {openNote("040080eighty"); addToVisited("040080eighty")}} activeAnnotationId={currentNoteId}>Number eighty still unlet. Why is that?
         Valuation is only twenty-eight. Towers, Battersby, North, MacArthur:
-        parlour windows plastered with bills.</Annotation> Plasters on a sore eye. <Annotation annotationId="040028smokeoftea" annotationSelect={() => openNote("040028smokeoftea")} activeAnnotationId={currentNoteId}>To smell
+        parlour windows plastered with bills.</Annotation> Plasters on a sore eye. <Annotation annotationId="040028smokeoftea" visited={visitedNotes.has("040028smokeoftea")} annotationSelect={() => {openNote("040028smokeoftea"); addToVisited("040028smokeoftea")}} activeAnnotationId={currentNoteId}>To smell
         the gentle smoke of tea, fume of the pan, sizzling butter. Be near her
-        ample bedwarmed flesh.</Annotation> <Annotation annotationId="180005yesyes" annotationSelect={() => openNote("180005yesyes")} activeAnnotationId={currentNoteId}>Yes, yes.</Annotation>
+        ample bedwarmed flesh.</Annotation> <Annotation annotationId="180005yesyes" visited={visitedNotes.has("180005yesyes")} annotationSelect={() => {openNote("180005yesyes"); addToVisited("180005yesyes")}} activeAnnotationId={currentNoteId}>Yes, yes.</Annotation>
       </p>
       <p>
-        <Annotation annotationId="010074cloudcover" annotationSelect={() => openNote("010074cloudcover")} activeAnnotationId={currentNoteId}>Quick warm sunlight came running</Annotation> <Annotation annotationId="060002berkeleystreet" annotationSelect={() => openNote("060002berkeleystreet")} activeAnnotationId={currentNoteId}>from Berkeley road</Annotation>, swiftly, in slim
+        <Annotation annotationId="010074cloudcover" visited={visitedNotes.has("010074cloudcover")} annotationSelect={() => {openNote("010074cloudcover"); addToVisited("010074cloudcover")}} activeAnnotationId={currentNoteId}>Quick warm sunlight came running</Annotation> <Annotation annotationId="060002berkeleystreet" visited={visitedNotes.has("060002berkeleystreet")} annotationSelect={() => {openNote("060002berkeleystreet"); addToVisited("060002berkeleystreet")}} activeAnnotationId={currentNoteId}>from Berkeley road</Annotation>, swiftly, in slim
         sandals, along the brightening footpath. Runs, she runs to meet me, a
         girl with gold hair on the wind.
       </p>
       <span data-edition="ed1939" data-page="47"> </span>
       <p>
         Two letters and a card lay on the hallfloor. He stooped and gathered
-        them. <Annotation annotationId="040056mrsmarion" annotationSelect={() => openNote("040056mrsmarion")} activeAnnotationId={currentNoteId}>Mrs Marion Bloom.</Annotation> His quickened heart slowed at once. Bold hand.
+        them. <Annotation annotationId="040056mrsmarion" visited={visitedNotes.has("040056mrsmarion")} annotationSelect={() => {openNote("040056mrsmarion"); addToVisited("040056mrsmarion")}} activeAnnotationId={currentNoteId}>Mrs Marion Bloom.</Annotation> His quickened heart slowed at once. Bold hand.
         Mrs Marion.
       </p>
       <p>
@@ -418,7 +418,7 @@ const Calypso = ({openNote, currentNoteId}) => {
       </p>
       <span data-edition="ed1961" data-page="61"></span>
       <p>
-        He looked at them. <Annotation annotationId="010126mullingar" annotationSelect={() => openNote("010126mullingar")} activeAnnotationId={currentNoteId}>Mullingar.</Annotation> Milly.
+        He looked at them. <Annotation annotationId="010126mullingar" visited={visitedNotes.has("010126mullingar")} annotationSelect={() => {openNote("010126mullingar"); addToVisited("010126mullingar")}} activeAnnotationId={currentNoteId}>Mullingar.</Annotation> Milly.
       </p>
       <p>
         —{" "}A letter for me from Milly, he said carefully, and a card to you. And
@@ -432,7 +432,7 @@ const Calypso = ({openNote, currentNoteId}) => {
         —{" "}Do you want the blind up?
       </p>
       <p>
-        Letting the blind up by gentle tugs halfway<Annotation annotationId="040042backwardeye" annotationSelect={() => openNote("040042backwardeye")} activeAnnotationId={currentNoteId}> his backward eye</Annotation> saw her
+        Letting the blind up by gentle tugs halfway<Annotation annotationId="040042backwardeye" visited={visitedNotes.has("040042backwardeye")} annotationSelect={() => {openNote("040042backwardeye"); addToVisited("040042backwardeye")}} activeAnnotationId={currentNoteId}> his backward eye</Annotation> saw her
         glance at the letter and tuck it under her pillow.
       </p>
       <p>
@@ -480,7 +480,7 @@ const Calypso = ({openNote, currentNoteId}) => {
         the kettle, crushed the pan flat on the live coals and watched the lump
         of butter slide and melt. While he unwrapped the kidney the cat mewed
         hungrily against him. Give her too much meat she won't mouse. Say they
-        won't eat pork. <Annotation annotationId="040083hewasajew" annotationSelect={() => openNote("040083hewasajew")} activeAnnotationId={currentNoteId}>Kosher.</Annotation> Here. He let the bloodsmeared paper fall to
+        won't eat pork. <Annotation annotationId="040083hewasajew" visited={visitedNotes.has("040083hewasajew")} annotationSelect={() => {openNote("040083hewasajew"); addToVisited("040083hewasajew")}} activeAnnotationId={currentNoteId}>Kosher.</Annotation> Here. He let the bloodsmeared paper fall to
         her and dropped the kidney amid the sizzling butter sauce. Pepper. He
         sprinkled it through his fingers ringwise from the chipped eggcup.
       </p>
@@ -490,18 +490,18 @@ const Calypso = ({openNote, currentNoteId}) => {
         seaside girls.
       </p>
       <p>
-        The tea was drawn. He filled his own <Annotation annotationId="040055moustachecup" annotationSelect={() => openNote("040055moustachecup")} activeAnnotationId={currentNoteId}>moustachecup, sham crown Derby</Annotation>, smiling. Silly Milly's birthday gift. Only five she was then. No, wait: four. I gave her the amberoid necklace she broke. Putting pieces
+        The tea was drawn. He filled his own <Annotation annotationId="040055moustachecup" visited={visitedNotes.has("040055moustachecup")} annotationSelect={() => {openNote("040055moustachecup"); addToVisited("040055moustachecup")}} activeAnnotationId={currentNoteId}>moustachecup, sham crown Derby</Annotation>, smiling. Silly Milly's birthday gift. Only five she was then. No, wait: four. I gave her the amberoid necklace she broke. Putting pieces
         of folded brown paper in the letterbox for her. He smiled, pouring.
       </p>
       <span data-edition="ed1961" data-page="62"></span>
-      <p><Annotation annotationId="040052mydarling" annotationSelect={() => openNote("040052mydarling")} activeAnnotationId={currentNoteId}><i>O, Milly Bloom, you are my darling. <br/>
+      <p><Annotation annotationId="040052mydarling" visited={visitedNotes.has("040052mydarling")} annotationSelect={() => {openNote("040052mydarling"); addToVisited("040052mydarling")}} activeAnnotationId={currentNoteId}><i>O, Milly Bloom, you are my darling. <br/>
         You are my lookingglass from night to morning. <br/>
         I'd rather have you without a farthing <br/>
         Than Katey Keogh with her ass and garden.</i></Annotation>
       </p>
       <span data-edition="ed1939" data-page="48"> </span>
       <p>
-        <Annotation annotationId="040092professorgoodwin" annotationSelect={() => openNote("040092professorgoodwin")} activeAnnotationId={currentNoteId}>Poor old professor Goodwin. Dreadful old case.</Annotation> Still he was a courteous
+        <Annotation annotationId="040092professorgoodwin" visited={visitedNotes.has("040092professorgoodwin")} annotationSelect={() => {openNote("040092professorgoodwin"); addToVisited("040092professorgoodwin")}} activeAnnotationId={currentNoteId}>Poor old professor Goodwin. Dreadful old case.</Annotation> Still he was a courteous
         old chap. Oldfashioned way he used to bow Molly off the platform. And
         the little mirror in his silk hat. The night Milly brought it into
         the parlour. O, 
@@ -525,8 +525,8 @@ const Calypso = ({openNote, currentNoteId}) => {
       </p>
       <p>
         She set the brasses jingling as she raised herself briskly, an elbow on
-        the pillow. He looked calmly down on her bulk and between <Annotation annotationId="040058shegoatsudder" annotationSelect={() => openNote("040058shegoatsudder")} activeAnnotationId={currentNoteId}>her large soft<span data-edition="ed1986" data-page="51"></span>
-        bubs, sloping within her nightdress like a shegoat's udder</Annotation>. <Annotation annotationId="040028smokeoftea" annotationSelect={() => openNote("040028smokeoftea")} activeAnnotationId={currentNoteId}>The warmth
+        the pillow. He looked calmly down on her bulk and between <Annotation annotationId="040058shegoatsudder" visited={visitedNotes.has("040058shegoatsudder")} annotationSelect={() => {openNote("040058shegoatsudder"); addToVisited("040058shegoatsudder")}} activeAnnotationId={currentNoteId}>her large soft<span data-edition="ed1986" data-page="51"></span>
+        bubs, sloping within her nightdress like a shegoat's udder</Annotation>. <Annotation annotationId="040028smokeoftea" visited={visitedNotes.has("040028smokeoftea")} annotationSelect={() => {openNote("040028smokeoftea"); addToVisited("040028smokeoftea")}} activeAnnotationId={currentNoteId}>The warmth
         of her couched body rose on the air, mingling with the fragrance of the
         tea she poured.</Annotation>
       </p>
@@ -547,7 +547,7 @@ const Calypso = ({openNote, currentNoteId}) => {
         —{" "}What are you singing?
       </p>
       <p>
-        —{" "}<Annotation annotationId="040025lacidarem" annotationSelect={() => openNote("040025lacidarem")} activeAnnotationId={currentNoteId}><i>Là ci darem</i></Annotation> with <Annotation annotationId="040094jcdoyle" annotationSelect={() => openNote("040094jcdoyle")} activeAnnotationId={currentNoteId}>J. C. Doyle</Annotation>, she said, and <Annotation annotationId="040035oldsweetsong" annotationSelect={() => openNote("040035oldsweetsong")} activeAnnotationId={currentNoteId}><i>Love's Old Sweet Song</i></Annotation>.
+        —{" "}<Annotation annotationId="040025lacidarem" visited={visitedNotes.has("040025lacidarem")} annotationSelect={() => {openNote("040025lacidarem"); addToVisited("040025lacidarem")}} activeAnnotationId={currentNoteId}><i>Là ci darem</i></Annotation> with <Annotation annotationId="040094jcdoyle" visited={visitedNotes.has("040094jcdoyle")} annotationSelect={() => {openNote("040094jcdoyle"); addToVisited("040094jcdoyle")}} activeAnnotationId={currentNoteId}>J. C. Doyle</Annotation>, she said, and <Annotation annotationId="040035oldsweetsong" visited={visitedNotes.has("040035oldsweetsong")} annotationSelect={() => {openNote("040035oldsweetsong"); addToVisited("040035oldsweetsong")}} activeAnnotationId={currentNoteId}><i>Love's Old Sweet Song</i></Annotation>.
       </p>
       <p>
         Her full lips, drinking, smiled. Rather stale smell that incense leaves
@@ -581,10 +581,10 @@ const Calypso = ({openNote, currentNoteId}) => {
         —{" "}It must have fell down, she said.
       </p>
       <p>
-        He felt here and there. <Annotation annotationId="040025lacidarem" annotationSelect={() => openNote("040025lacidarem")} activeAnnotationId={currentNoteId}><i>Voglio e non vorrei</i>.</Annotation> Wonder if she pronounces
+        He felt here and there. <Annotation annotationId="040025lacidarem" visited={visitedNotes.has("040025lacidarem")} annotationSelect={() => {openNote("040025lacidarem"); addToVisited("040025lacidarem")}} activeAnnotationId={currentNoteId}><i>Voglio e non vorrei</i>.</Annotation> Wonder if she pronounces
         that right: <i>voglio</i>. Not in the bed. Must have slid down. He stooped
         and lifted the valance. The book, fallen, sprawled against the bulge of
-        <Annotation annotationId="040057orangekeyed" annotationSelect={() => openNote("040057orangekeyed")} activeAnnotationId={currentNoteId}>the orangekeyed chamberpot</Annotation>.
+        <Annotation annotationId="040057orangekeyed" visited={visitedNotes.has("040057orangekeyed")} annotationSelect={() => {openNote("040057orangekeyed"); addToVisited("040057orangekeyed")}} activeAnnotationId={currentNoteId}>the orangekeyed chamberpot</Annotation>.
       </p>
       <span data-edition="ed1922" data-page="61"></span>
       <p>
@@ -614,7 +614,7 @@ const Calypso = ({openNote, currentNoteId}) => {
       </p>
       <span data-edition="ed1939" data-page="49"> </span>
       <p>
-        —{" "}<Annotation annotationId="030087pastlife" annotationSelect={() => openNote("030087pastlife")} activeAnnotationId={currentNoteId}>Metempsychosis, he said, frowning. It's Greek: from the Greek. That
+        —{" "}<Annotation annotationId="030087pastlife" visited={visitedNotes.has("030087pastlife")} annotationSelect={() => {openNote("030087pastlife"); addToVisited("030087pastlife")}} activeAnnotationId={currentNoteId}>Metempsychosis, he said, frowning. It's Greek: from the Greek. That
         means the transmigration of souls.</Annotation>
       </p>
       <p>
@@ -622,12 +622,12 @@ const Calypso = ({openNote, currentNoteId}) => {
       </p>
       <p>
         He smiled, glancing askance at her mocking eyes. The same young eyes.
-        <Annotation annotationId="040041dolphinsbarn" annotationSelect={() => openNote("040041dolphinsbarn")} activeAnnotationId={currentNoteId}>The first night after the charades. Dolphin's Barn.</Annotation> He turned over
-        the smudged pages. <Annotation annotationId="040021ruby" annotationSelect={() => openNote("040021ruby")} activeAnnotationId={currentNoteId}><i>Ruby: the Pride of the Ring</i>.</Annotation> Hello. Illustration.
+        <Annotation annotationId="040041dolphinsbarn" visited={visitedNotes.has("040041dolphinsbarn")} annotationSelect={() => {openNote("040041dolphinsbarn"); addToVisited("040041dolphinsbarn")}} activeAnnotationId={currentNoteId}>The first night after the charades. Dolphin's Barn.</Annotation> He turned over
+        the smudged pages. <Annotation annotationId="040021ruby" visited={visitedNotes.has("040021ruby")} annotationSelect={() => {openNote("040021ruby"); addToVisited("040021ruby")}} activeAnnotationId={currentNoteId}><i>Ruby: the Pride of the Ring</i>.</Annotation> Hello. Illustration.
         Fierce Italian with carriagewhip. Must be Ruby pride of the on the floor
-        naked. <Annotation annotationId="040068kindlylight" annotationSelect={() => openNote("040068kindlylight")} activeAnnotationId={currentNoteId}>Sheet kindly lent.</Annotation> <i>The monster Maffei desisted and flung his
+        naked. <Annotation annotationId="040068kindlylight" visited={visitedNotes.has("040068kindlylight")} annotationSelect={() => {openNote("040068kindlylight"); addToVisited("040068kindlylight")}} activeAnnotationId={currentNoteId}>Sheet kindly lent.</Annotation> <i>The monster Maffei desisted and flung his
         victim from him with an oath</i>. Cruelty behind it all. Doped animals.
-        <Annotation annotationId="040066bonethemyoung" annotationSelect={() => openNote("040066bonethemyoung")} activeAnnotationId={currentNoteId}>Trapeze at Hengler's.</Annotation><span data-edition="ed1986" data-page="52"></span> <Annotation annotationId="040066bonethemyoung" annotationSelect={() => openNote("040066bonethemyoung")} activeAnnotationId={currentNoteId}>Had to look the other way. Mob gaping. Break your
+        <Annotation annotationId="040066bonethemyoung" visited={visitedNotes.has("040066bonethemyoung")} annotationSelect={() => {openNote("040066bonethemyoung"); addToVisited("040066bonethemyoung")}} activeAnnotationId={currentNoteId}>Trapeze at Hengler's.</Annotation><span data-edition="ed1986" data-page="52"></span> <Annotation annotationId="040066bonethemyoung" visited={visitedNotes.has("040066bonethemyoung")} annotationSelect={() => {openNote("040066bonethemyoung"); addToVisited("040066bonethemyoung")}} activeAnnotationId={currentNoteId}>Had to look the other way. Mob gaping. Break your
         neck and we'll break our sides. Families of them. Bone them young so
         they metempsychosis.</Annotation> That we live after death. Our souls. That a man's
         soul after he dies. Dignam's soul...
@@ -643,13 +643,13 @@ const Calypso = ({openNote, currentNoteId}) => {
         —{" "}Never read it. Do you want another?
       </p>
       <p>
-        —{" "}Yes. Get another of <Annotation annotationId="040003nicename" annotationSelect={() => openNote("040003nicename")} activeAnnotationId={currentNoteId}>Paul de Kock's. Nice name</Annotation> he has.
+        —{" "}Yes. Get another of <Annotation annotationId="040003nicename" visited={visitedNotes.has("040003nicename")} annotationSelect={() => {openNote("040003nicename"); addToVisited("040003nicename")}} activeAnnotationId={currentNoteId}>Paul de Kock's. Nice name</Annotation> he has.
       </p>
       <p>
         She poured more tea into her cup, watching it flow sideways.
       </p>
       <p>
-        <Annotation annotationId="040043capelstreet" annotationSelect={() => openNote("040043capelstreet")} activeAnnotationId={currentNoteId}>Must get that Capel street library book renewed or they'll</Annotation><span data-edition="ed1961" data-page="64"></span><Annotation annotationId="040043capelstreet" annotationSelect={() => openNote("040043capelstreet")} activeAnnotationId={currentNoteId}> write to
+        <Annotation annotationId="040043capelstreet" visited={visitedNotes.has("040043capelstreet")} annotationSelect={() => {openNote("040043capelstreet"); addToVisited("040043capelstreet")}} activeAnnotationId={currentNoteId}>Must get that Capel street library book renewed or they'll</Annotation><span data-edition="ed1961" data-page="64"></span><Annotation annotationId="040043capelstreet" visited={visitedNotes.has("040043capelstreet")} annotationSelect={() => {openNote("040043capelstreet"); addToVisited("040043capelstreet")}} activeAnnotationId={currentNoteId}> write to
         Kearney, my guarantor.</Annotation> Reincarnation: that's the word.
       </p>
       <p>
@@ -666,8 +666,8 @@ const Calypso = ({openNote, currentNoteId}) => {
       <p>
         The <i>Bath of the Nymph</i> over the bed. Given away with the Easter number 
         <span data-edition="ed1922" data-page="62"></span>
-        of <Annotation annotationId="040034photobits" annotationSelect={() => openNote("040034photobits")} activeAnnotationId={currentNoteId}><i>Photo Bits</i></Annotation>: Splendid masterpiece in art colours. Tea before you
-        put milk in. <Annotation annotationId="040048slimmer" annotationSelect={() => openNote("040048slimmer")} activeAnnotationId={currentNoteId}>Not unlike her with her hair down: slimmer.</Annotation> Three and six
+        of <Annotation annotationId="040034photobits" visited={visitedNotes.has("040034photobits")} annotationSelect={() => {openNote("040034photobits"); addToVisited("040034photobits")}} activeAnnotationId={currentNoteId}><i>Photo Bits</i></Annotation>: Splendid masterpiece in art colours. Tea before you
+        put milk in. <Annotation annotationId="040048slimmer" visited={visitedNotes.has("040048slimmer")} annotationSelect={() => {openNote("040048slimmer"); addToVisited("040048slimmer")}} activeAnnotationId={currentNoteId}>Not unlike her with her hair down: slimmer.</Annotation> Three and six
         I gave for the frame. She said it would look nice over the bed. Naked
         nymphs: Greece: and for instance all the people that lived then.
       </p>
@@ -721,15 +721,15 @@ const Calypso = ({openNote, currentNoteId}) => {
         splendid. Everyone says I'm quite the belle in my new tam. I got
         mummy's lovely box of creams and am writing. They are lovely. I am
         getting on swimming in the photo business now. Mr Coghlan took one of me
-        and Mrs will send when developed. We did great biz yesterday. <Annotation annotationId="040001fairday" annotationSelect={() => openNote("040001fairday")} activeAnnotationId={currentNoteId}>Fair day</Annotation> and all the <Annotation annotationId="040004beefheels" annotationSelect={() => openNote("040004beefheels")} activeAnnotationId={currentNoteId}>beef to the heels</Annotation> were in. We are going to <Annotation annotationId="040033loughowel" annotationSelect={() => openNote("040033loughowel")} activeAnnotationId={currentNoteId}>lough Owel</Annotation> on
+        and Mrs will send when developed. We did great biz yesterday. <Annotation annotationId="040001fairday" visited={visitedNotes.has("040001fairday")} annotationSelect={() => {openNote("040001fairday"); addToVisited("040001fairday")}} activeAnnotationId={currentNoteId}>Fair day</Annotation> and all the <Annotation annotationId="040004beefheels" visited={visitedNotes.has("040004beefheels")} annotationSelect={() => {openNote("040004beefheels"); addToVisited("040004beefheels")}} activeAnnotationId={currentNoteId}>beef to the heels</Annotation> were in. We are going to <Annotation annotationId="040033loughowel" visited={visitedNotes.has("040033loughowel")} annotationSelect={() => {openNote("040033loughowel"); addToVisited("040033loughowel")}} activeAnnotationId={currentNoteId}>lough Owel</Annotation> on
         Monday with a few friends to make a scrap picnic. Give my love to
         mummy and to yourself a big kiss and thanks. I hear them at the piano
         downstairs. There is to be a concert in the 
         <span data-edition="ed1922" data-page="63"></span>
-        <Annotation annotationId="040033loughowel" annotationSelect={() => openNote("040033loughowel")} activeAnnotationId={currentNoteId}>Greville Arms</Annotation> on Saturday.
+        <Annotation annotationId="040033loughowel" visited={visitedNotes.has("040033loughowel")} annotationSelect={() => {openNote("040033loughowel"); addToVisited("040033loughowel")}} activeAnnotationId={currentNoteId}>Greville Arms</Annotation> on Saturday.
         There is a young student comes here some evenings named Bannon his
         cousins or something are big swells he sings Boylan's (I was on the
-        pop of writing Blazes Boylan's) <Annotation annotationId="040069seasidegirls" annotationSelect={() => openNote("040069seasidegirls")} activeAnnotationId={currentNoteId}>song about those seaside girls</Annotation>. Tell him
+        pop of writing Blazes Boylan's) <Annotation annotationId="040069seasidegirls" visited={visitedNotes.has("040069seasidegirls")} annotationSelect={() => {openNote("040069seasidegirls"); addToVisited("040069seasidegirls")}} activeAnnotationId={currentNoteId}>song about those seaside girls</Annotation>. Tell him
         silly Milly sends my best respects. I must now close with fondest love.
       </p>
       <p>
@@ -747,18 +747,18 @@ const Calypso = ({openNote, currentNoteId}) => {
       <p>
         Fifteen yesterday. Curious, fifteenth of the month too. Her first
         birthday away from home. Separation. Remember the summer morning she
-        was born, running to knock up <Annotation annotationId="040086mrsthornton" annotationSelect={() => openNote("040086mrsthornton")} activeAnnotationId={currentNoteId}>Mrs Thornton</Annotation> in <Annotation annotationId="040089denzille" annotationSelect={() => openNote("040089denzille")} activeAnnotationId={currentNoteId}>Denzille street</Annotation>.<span data-edition="ed1932" data-page="58"></span> Jolly old
+        was born, running to knock up <Annotation annotationId="040086mrsthornton" visited={visitedNotes.has("040086mrsthornton")} annotationSelect={() => {openNote("040086mrsthornton"); addToVisited("040086mrsthornton")}} activeAnnotationId={currentNoteId}>Mrs Thornton</Annotation> in <Annotation annotationId="040089denzille" visited={visitedNotes.has("040089denzille")} annotationSelect={() => {openNote("040089denzille"); addToVisited("040089denzille")}} activeAnnotationId={currentNoteId}>Denzille street</Annotation>.<span data-edition="ed1932" data-page="58"></span> Jolly old
         woman. Lots of babies she must have helped into the world. She knew from
-        the first <Annotation annotationId="040087poorlittlerudy" annotationSelect={() => openNote("040087poorlittlerudy")} activeAnnotationId={currentNoteId}>poor little Rudy</Annotation> wouldn't live. Well, <Annotation annotationId="040023godisgood" annotationSelect={() => openNote("040023godisgood")} activeAnnotationId={currentNoteId}>God is good</Annotation>, sir. <Annotation annotationId="040096sheknew" annotationSelect={() => openNote("040096sheknew")} activeAnnotationId={currentNoteId}>She
+        the first <Annotation annotationId="040087poorlittlerudy" visited={visitedNotes.has("040087poorlittlerudy")} annotationSelect={() => {openNote("040087poorlittlerudy"); addToVisited("040087poorlittlerudy")}} activeAnnotationId={currentNoteId}>poor little Rudy</Annotation> wouldn't live. Well, <Annotation annotationId="040023godisgood" visited={visitedNotes.has("040023godisgood")} annotationSelect={() => {openNote("040023godisgood"); addToVisited("040023godisgood")}} activeAnnotationId={currentNoteId}>God is good</Annotation>, sir. <Annotation annotationId="040096sheknew" visited={visitedNotes.has("040096sheknew")} annotationSelect={() => {openNote("040096sheknew"); addToVisited("040096sheknew")}} activeAnnotationId={currentNoteId}>She
         knew at once.</Annotation> He would be eleven now if he had lived.
       </p>
       <p>
         His vacant face stared pitying at the postscript. Excuse bad writing.
         Hurry. Piano downstairs. Coming out of her shell. Row with her in the
-        <Annotation annotationId="040062bolandsbread" annotationSelect={() => openNote("040062bolandsbread")} activeAnnotationId={currentNoteId}>XL Cafe</Annotation> about the bracelet. Wouldn't eat her cakes or speak or look.
+        <Annotation annotationId="040062bolandsbread" visited={visitedNotes.has("040062bolandsbread")} annotationSelect={() => {openNote("040062bolandsbread"); addToVisited("040062bolandsbread")}} activeAnnotationId={currentNoteId}>XL Cafe</Annotation> about the bracelet. Wouldn't eat her cakes or speak or look.
         Saucebox. He sopped other dies of bread in the gravy and ate piece after
         piece of kidney. Twelve and six a week. Not much. Still, she might do
-        worse. <Annotation annotationId="040076musichall" annotationSelect={() => openNote("040076musichall")} activeAnnotationId={currentNoteId}>Music hall stage.</Annotation> Young student. He drank a draught of cooler tea
+        worse. <Annotation annotationId="040076musichall" visited={visitedNotes.has("040076musichall")} annotationSelect={() => {openNote("040076musichall"); addToVisited("040076musichall")}} activeAnnotationId={currentNoteId}>Music hall stage.</Annotation> Young student. He drank a draught of cooler tea
         to wash down his meal. Then he read the letter again: twice.
       </p>
       <p>
@@ -773,8 +773,8 @@ const Calypso = ({openNote, currentNoteId}) => {
       <p>
         He smiled with troubled affection at the kitchen window.<span data-edition="ed1961" data-page="66"></span> Day I caught
         her in the street pinching her cheeks to make them red. Anemic a little.
-        Was given milk too long. <Annotation annotationId="030013kishlightship" annotationSelect={() => openNote("030013kishlightship")} activeAnnotationId={currentNoteId}>On the <i>Erin's King</i> that day round the Kish.</Annotation>
-        Damned old tub pitching about. <Annotation annotationId="040069seasidegirls" annotationSelect={() => openNote("040069seasidegirls")} activeAnnotationId={currentNoteId}>Not a bit funky. Her pale blue scarf
+        Was given milk too long. <Annotation annotationId="030013kishlightship" visited={visitedNotes.has("030013kishlightship")} annotationSelect={() => {openNote("030013kishlightship"); addToVisited("030013kishlightship")}} activeAnnotationId={currentNoteId}>On the <i>Erin's King</i> that day round the Kish.</Annotation>
+        Damned old tub pitching about. <Annotation annotationId="040069seasidegirls" visited={visitedNotes.has("040069seasidegirls")} annotationSelect={() => {openNote("040069seasidegirls"); addToVisited("040069seasidegirls")}} activeAnnotationId={currentNoteId}>Not a bit funky. Her pale blue scarf
         loose in the wind with her hair.</Annotation>
       </p>
       <span data-edition="ed1986" data-page="54"></span>
@@ -786,7 +786,7 @@ const Calypso = ({openNote, currentNoteId}) => {
       <p>
         Seaside girls. Torn envelope. Hands stuck in his trousers' pockets,
         jarvey off for the day, singing. Friend of the family. Swurls, he says.
-        <Annotation annotationId="040069seasidegirls" annotationSelect={() => openNote("040069seasidegirls")} activeAnnotationId={currentNoteId}>Pier with lamps, summer evening, band</Annotation>,
+        <Annotation annotationId="040069seasidegirls" visited={visitedNotes.has("040069seasidegirls")} annotationSelect={() => {openNote("040069seasidegirls"); addToVisited("040069seasidegirls")}} activeAnnotationId={currentNoteId}>Pier with lamps, summer evening, band</Annotation>,
       </p>
       <span data-edition="ed1922" data-page="64"></span>
       <p>  <i>Those girls, those girls, <br/>
@@ -798,16 +798,16 @@ const Calypso = ({openNote, currentNoteId}) => {
         braiding.
       </p>
       <p>
-        <Annotation annotationId="040017seemtolikeit" annotationSelect={() => openNote("040017seemtolikeit")} activeAnnotationId={currentNoteId}>A soft qualm, regret, flowed down his backbone, increasing. Will happen,
+        <Annotation annotationId="040017seemtolikeit" visited={visitedNotes.has("040017seemtolikeit")} annotationSelect={() => {openNote("040017seemtolikeit"); addToVisited("040017seemtolikeit")}} activeAnnotationId={currentNoteId}>A soft qualm, regret, flowed down his backbone, increasing. Will happen,
         yes. Prevent. Useless: can't move.</Annotation> Girl's sweet light lips. Will happen
         too. He felt the flowing qualm spread over him. Useless to move now.
         Lips kissed, kissing, kissed. Full gluey woman's lips.
       </p>
       <p>
         Better where she is down there: away. Occupy her. Wanted a dog to pass
-        the time. <Annotation annotationId="010126mullingar" annotationSelect={() => openNote("010126mullingar")} activeAnnotationId={currentNoteId}>Might take a trip down there.</Annotation> August <Annotation annotationId="040029bankholiday" annotationSelect={() => openNote("040029bankholiday")} activeAnnotationId={currentNoteId}>bank holiday</Annotation>, only two
+        the time. <Annotation annotationId="010126mullingar" visited={visitedNotes.has("010126mullingar")} annotationSelect={() => {openNote("010126mullingar"); addToVisited("010126mullingar")}} activeAnnotationId={currentNoteId}>Might take a trip down there.</Annotation> August <Annotation annotationId="040029bankholiday" visited={visitedNotes.has("040029bankholiday")} annotationSelect={() => {openNote("040029bankholiday"); addToVisited("040029bankholiday")}} activeAnnotationId={currentNoteId}>bank holiday</Annotation>, only two
         and six return. Six weeks off, however. Might work a press pass. Or
-        through <Annotation annotationId="040079mcoy" annotationSelect={() => openNote("040079mcoy")} activeAnnotationId={currentNoteId}>M'Coy.</Annotation>
+        through <Annotation annotationId="040079mcoy" visited={visitedNotes.has("040079mcoy")} annotationSelect={() => {openNote("040079mcoy"); addToVisited("040079mcoy")}} activeAnnotationId={currentNoteId}>M'Coy.</Annotation>
       </p>
       <p>
         The cat, having cleaned all her fur, returned to the meatstained paper,<span data-edition="ed1932" data-page="59"></span>
@@ -832,7 +832,7 @@ const Calypso = ({openNote, currentNoteId}) => {
         I'm.
       </p>
       <p>
-        In the tabledrawer he found <Annotation annotationId="040019titbits" annotationSelect={() => openNote("040019titbits")} activeAnnotationId={currentNoteId}>an old number of <i>Titbits</i></Annotation>. He folded it
+        In the tabledrawer he found <Annotation annotationId="040019titbits" visited={visitedNotes.has("040019titbits")} annotationSelect={() => {openNote("040019titbits"); addToVisited("040019titbits")}} activeAnnotationId={currentNoteId}>an old number of <i>Titbits</i></Annotation>. He folded it
         under his armpit, went to the door and opened<span data-edition="ed1961" data-page="67"></span> it. The cat went up in
         soft bounds. Ah, wanted to go upstairs, curl up in a ball on the bed.
       </p>
@@ -845,7 +845,7 @@ const Calypso = ({openNote, currentNoteId}) => {
       <p>
         He went out through the backdoor into the garden: stood to listen
         towards the next garden. No sound. Perhaps hanging clothes out to dry.
-        <Annotation annotationId="040014singasong" annotationSelect={() => openNote("040014singasong")} activeAnnotationId={currentNoteId}>The maid was in the garden.</Annotation> Fine morning.
+        <Annotation annotationId="040014singasong" visited={visitedNotes.has("040014singasong")} annotationSelect={() => {openNote("040014singasong"); addToVisited("040014singasong")}} activeAnnotationId={currentNoteId}>The maid was in the garden.</Annotation> Fine morning.
       </p>
       <p>
         He bent down to regard a lean file of spearmint growing by the wall.
@@ -859,35 +859,35 @@ const Calypso = ({openNote, currentNoteId}) => {
         fed on those oilcakes. Mulch of dung. Best thing to clean ladies' kid
         gloves. Dirty cleans. Ashes too. Reclaim the whole place. Grow peas in
         that corner there. Lettuce. Always have fresh greens then. Still gardens
-        have their drawbacks. <Annotation annotationId="040040bluebottle" annotationSelect={() => openNote("040040bluebottle")} activeAnnotationId={currentNoteId}>That bee or bluebottle here Whitmonday.</Annotation>
+        have their drawbacks. <Annotation annotationId="040040bluebottle" visited={visitedNotes.has("040040bluebottle")} annotationSelect={() => {openNote("040040bluebottle"); addToVisited("040040bluebottle")}} activeAnnotationId={currentNoteId}>That bee or bluebottle here Whitmonday.</Annotation>
       </p>
       <p>
         He walked on. Where is my hat, by the way? Must have put it back on the
-        peg. Or hanging up on the floor. <Annotation annotationId="040010myhat" annotationSelect={() => openNote("040010myhat")} activeAnnotationId={currentNoteId}>Funny, I don't remember that.</Annotation> Hallstand
+        peg. Or hanging up on the floor. <Annotation annotationId="040010myhat" visited={visitedNotes.has("040010myhat")} annotationSelect={() => {openNote("040010myhat"); addToVisited("040010myhat")}} activeAnnotationId={currentNoteId}>Funny, I don't remember that.</Annotation> Hallstand
         too full. Four umbrellas, her raincloak. Picking up the letters.
-        <Annotation annotationId="040062bolandsbread" annotationSelect={() => openNote("040062bolandsbread")} activeAnnotationId={currentNoteId}>Drago's</Annotation> shopbell ringing. Queer I was just thinking that moment. Brown
+        <Annotation annotationId="040062bolandsbread" visited={visitedNotes.has("040062bolandsbread")} annotationSelect={() => {openNote("040062bolandsbread"); addToVisited("040062bolandsbread")}} activeAnnotationId={currentNoteId}>Drago's</Annotation> shopbell ringing. Queer I was just thinking that moment. Brown
         brillantined hair over his collar. Just had a wash and brushup. Wonder
         have I time for a bath this 
         <span data-edition="ed1939" data-page="52"> </span>
-        morning. <Annotation annotationId="050010mosquebaths" annotationSelect={() => openNote("050010mosquebaths")} activeAnnotationId={currentNoteId}>Tara street.</Annotation> Chap in the paybox
-        there <Annotation annotationId="020073fenians" annotationSelect={() => openNote("020073fenians")} activeAnnotationId={currentNoteId}>got away James Stephens</Annotation>, they say. <Annotation annotationId="040031smithobrien" annotationSelect={() => openNote("040031smithobrien")} activeAnnotationId={currentNoteId}>O'Brien.</Annotation>
+        morning. <Annotation annotationId="050010mosquebaths" visited={visitedNotes.has("050010mosquebaths")} annotationSelect={() => {openNote("050010mosquebaths"); addToVisited("050010mosquebaths")}} activeAnnotationId={currentNoteId}>Tara street.</Annotation> Chap in the paybox
+        there <Annotation annotationId="020073fenians" visited={visitedNotes.has("020073fenians")} annotationSelect={() => {openNote("020073fenians"); addToVisited("020073fenians")}} activeAnnotationId={currentNoteId}>got away James Stephens</Annotation>, they say. <Annotation annotationId="040031smithobrien" visited={visitedNotes.has("040031smithobrien")} annotationSelect={() => {openNote("040031smithobrien"); addToVisited("040031smithobrien")}} activeAnnotationId={currentNoteId}>O'Brien.</Annotation>
       </p>
       <p>
         Deep voice that fellow Dlugacz has. Agenda what is it? Now, my miss.
-        <Annotation annotationId="040060dlugacz" annotationSelect={() => openNote("040060dlugacz")} activeAnnotationId={currentNoteId}>Enthusiast.</Annotation>
+        <Annotation annotationId="040060dlugacz" visited={visitedNotes.has("040060dlugacz")} annotationSelect={() => {openNote("040060dlugacz"); addToVisited("040060dlugacz")}} activeAnnotationId={currentNoteId}>Enthusiast.</Annotation>
       </p>
       <p>
         He kicked open the crazy door of the jakes. Better be careful not to get
-        these trousers dirty for the funeral. He went in, <Annotation annotationId="040038lowlintel" annotationSelect={() => openNote("040038lowlintel")} activeAnnotationId={currentNoteId}>bowing his head</Annotation><span data-edition="ed1932" data-page="60"></span>
-        <Annotation annotationId="040038lowlintel" annotationSelect={() => openNote("040038lowlintel")} activeAnnotationId={currentNoteId}>under the low lintel</Annotation>. Leaving the door ajar, amid the stench of mouldy
+        these trousers dirty for the funeral. He went in, <Annotation annotationId="040038lowlintel" visited={visitedNotes.has("040038lowlintel")} annotationSelect={() => {openNote("040038lowlintel"); addToVisited("040038lowlintel")}} activeAnnotationId={currentNoteId}>bowing his head</Annotation><span data-edition="ed1932" data-page="60"></span>
+        <Annotation annotationId="040038lowlintel" visited={visitedNotes.has("040038lowlintel")} annotationSelect={() => {openNote("040038lowlintel"); addToVisited("040038lowlintel")}} activeAnnotationId={currentNoteId}>under the low lintel</Annotation>. Leaving the door ajar, amid the stench of mouldy
         limewash and stale cobwebs he undid his braces. Before sitting down he
-        peered through a chink up at the nextdoor window. <Annotation annotationId="040014singasong" annotationSelect={() => openNote("040014singasong")} activeAnnotationId={currentNoteId}>The king was in his
+        peered through a chink up at the nextdoor window. <Annotation annotationId="040014singasong" visited={visitedNotes.has("040014singasong")} annotationSelect={() => {openNote("040014singasong"); addToVisited("040014singasong")}} activeAnnotationId={currentNoteId}>The king was in his
         countinghouse.</Annotation> Nobody.
       </p>
       <p>
-        Asquat on the <Annotation annotationId="040093cuckstool" annotationSelect={() => openNote("040093cuckstool")} activeAnnotationId={currentNoteId}>cuckstool</Annotation> he folded out his paper, turning its pages over
+        Asquat on the <Annotation annotationId="040093cuckstool" visited={visitedNotes.has("040093cuckstool")} annotationSelect={() => {openNote("040093cuckstool"); addToVisited("040093cuckstool")}} activeAnnotationId={currentNoteId}>cuckstool</Annotation> he folded out his paper, turning its pages over
         on his bared knees. Something new and easy. No great hurry. Keep it a
-        bit. <Annotation annotationId="040019titbits" annotationSelect={() => openNote("040019titbits")} activeAnnotationId={currentNoteId}>Our prize titbit</Annotation>: <i>Matcham's Masterstroke</i>. Written by Mr Philip
+        bit. <Annotation annotationId="040019titbits" visited={visitedNotes.has("040019titbits")} annotationSelect={() => {openNote("040019titbits"); addToVisited("040019titbits")}} activeAnnotationId={currentNoteId}>Our prize titbit</Annotation>: <i>Matcham's Masterstroke</i>. Written by Mr Philip
         Beaufoy, Playgoers' Club, London. Payment at the rate of one guinea
         a column has been<span data-edition="ed1961" data-page="68"></span> made to the writer. Three and a half. Three pounds
         three. Three pounds, thirteen and six.
@@ -897,11 +897,11 @@ const Calypso = ({openNote, currentNoteId}) => {
         resisting, began the second. Midway, his last resistance yielding, he
         allowed his bowels to ease themselves quietly as he read, reading still
         patiently, that slight constipation of yesterday quite gone. Hope it's
-        not too big bring on piles again. No, just right. So. Ah! <Annotation annotationId="040039cascara" annotationSelect={() => openNote("040039cascara")} activeAnnotationId={currentNoteId}>Costive. One
+        not too big bring on piles again. No, just right. So. Ah! <Annotation annotationId="040039cascara" visited={visitedNotes.has("040039cascara")} annotationSelect={() => {openNote("040039cascara"); addToVisited("040039cascara")}} activeAnnotationId={currentNoteId}>Costive. One
         tabloid of cascara sagrada.</Annotation> Life might be so. It did not move or touch
         him but it was something quick and neat. Print anything now. Silly
         season. He read on, seated calm above his own rising smell. Neat
-        certainly. <Annotation annotationId="040065matcham" annotationSelect={() => openNote("040065matcham")} activeAnnotationId={currentNoteId}><i>Matcham often thinks of the masterstroke by which he won the
+        certainly. <Annotation annotationId="040065matcham" visited={visitedNotes.has("040065matcham")} annotationSelect={() => {openNote("040065matcham"); addToVisited("040065matcham")}} activeAnnotationId={currentNoteId}><i>Matcham often thinks of the masterstroke by which he won the
         laughing witch who now</i>. Begins and ends morally. <i>Hand in hand</i>.</Annotation> Smart.
         He glanced back through what he had read and, while feeling 
         <span data-edition="ed1922" data-page="66"></span>
@@ -914,13 +914,13 @@ const Calypso = ({openNote, currentNoteId}) => {
         some proverb. Which? Time I used to try jotting down on my cuff what she
         said dressing. Dislike dressing together. Nicked myself shaving. Biting
         her nether lip, hooking the placket of her skirt. Timing her. 9.l5.
-        Did Roberts pay you yet? 9.20. What had <Annotation annotationId="040027conroy" annotationSelect={() => openNote("040027conroy")} activeAnnotationId={currentNoteId}>Gretta Conroy</Annotation> on? 9.23. What
+        Did Roberts pay you yet? 9.20. What had <Annotation annotationId="040027conroy" visited={visitedNotes.has("040027conroy")} annotationSelect={() => {openNote("040027conroy"); addToVisited("040027conroy")}} activeAnnotationId={currentNoteId}>Gretta Conroy</Annotation> on? 9.23. What
         possessed me to buy this comb? 9.24. I'm swelled after that cabbage. A
         speck of dust on the patent leather of her boot.
       </p>
       <p>
         Rubbing smartly in turn<span data-edition="ed1986" data-page="56"></span> each welt against her stockinged calf. Morning
-        after the bazaar dance when <Annotation annotationId="040062bolandsbread" annotationSelect={() => openNote("040062bolandsbread")} activeAnnotationId={currentNoteId}>May's band</Annotation> played <Annotation annotationId="040016danceofthehours" annotationSelect={() => openNote("040016danceofthehours")} activeAnnotationId={currentNoteId}>Ponchielli's dance of the
+        after the bazaar dance when <Annotation annotationId="040062bolandsbread" visited={visitedNotes.has("040062bolandsbread")} annotationSelect={() => {openNote("040062bolandsbread"); addToVisited("040062bolandsbread")}} activeAnnotationId={currentNoteId}>May's band</Annotation> played <Annotation annotationId="040016danceofthehours" visited={visitedNotes.has("040016danceofthehours")} annotationSelect={() => {openNote("040016danceofthehours"); addToVisited("040016danceofthehours")}} activeAnnotationId={currentNoteId}>Ponchielli's dance of the
         hours</Annotation>. Explain that: morning hours, noon, then evening coming on, then
         night hours. Washing her teeth. That was the first night. Her head
         dancing. Her fansticks clicking. Is that Boylan well off? He has money.
@@ -950,14 +950,14 @@ const Calypso = ({openNote, currentNoteId}) => {
         is the funeral? Better find out in the paper.
       </p>
       <p>
-        A creak and a dark whirr in the air high up. <Annotation annotationId="040008georgeschurch" annotationSelect={() => openNote("040008georgeschurch")} activeAnnotationId={currentNoteId}>The bells of George's
+        A creak and a dark whirr in the air high up. <Annotation annotationId="040008georgeschurch" visited={visitedNotes.has("040008georgeschurch")} annotationSelect={() => {openNote("040008georgeschurch"); addToVisited("040008georgeschurch")}} activeAnnotationId={currentNoteId}>The bells of George's
         church.</Annotation> They tolled the hour: loud dark iron.
       </p>
-      <p><Annotation annotationId="010012quarterto" annotationSelect={() => openNote("010012quarterto")} activeAnnotationId={currentNoteId}><i>Heigho! Heigho! <br/>
+      <p><Annotation annotationId="010012quarterto" visited={visitedNotes.has("010012quarterto")} annotationSelect={() => {openNote("010012quarterto"); addToVisited("010012quarterto")}} activeAnnotationId={currentNoteId}><i>Heigho! Heigho! <br/>
         Heigho! Heigho! <br/>
         Heigho! Heigho!</i></Annotation>
       </p>
-      <p><Annotation annotationId="010012quarterto" annotationSelect={() => openNote("010012quarterto")} activeAnnotationId={currentNoteId}>
+      <p><Annotation annotationId="010012quarterto" visited={visitedNotes.has("010012quarterto")} annotationSelect={() => {openNote("010012quarterto"); addToVisited("010012quarterto")}} activeAnnotationId={currentNoteId}>
         Quarter to.</Annotation> There again: the overtone following through the air, third.
       </p>
       <p>

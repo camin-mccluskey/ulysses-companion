@@ -1,79 +1,79 @@
 import Annotation from "../../components/Annotation";
 
-const Telemachus = ({openNote, currentNoteId}) => {
+const Telemachus = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
   return (
     <div>
     <p></p>
     <center>
       <Annotation 
-        annotationId="010000telemachus"
-        annotationSelect={() => openNote("010000telemachus")}
+        annotationId="010000telemachus" visited={visitedNotes.has("010000telemachus")}
+        annotationSelect={() => {openNote("010000telemachus"); addToVisited("010000telemachus")}}
         activeAnnotationId={currentNoteId}
       >
         <font size="+2">[1]</font>
       </Annotation>  
     </center>
     <br/>
-    Stately, plump <Annotation annotationId="010001buckmulligan" annotationSelect={() => openNote("010001buckmulligan")} activeAnnotationId={currentNoteId}>Buck Mulligan</Annotation> <Annotation annotationId="010002stairhead" annotationSelect={() => openNote("010002stairhead")} activeAnnotationId={currentNoteId}>came from the stairhead</Annotation>, bearing a bowl of
-    lather on which <Annotation annotationId="010003mirrorrazor" annotationSelect={() => openNote("010003mirrorrazor")} activeAnnotationId={currentNoteId}>a mirror and a razor lay crossed</Annotation>. A <Annotation annotationId="010004yellowdressinggown" annotationSelect={() => openNote("010004yellowdressinggown")} activeAnnotationId={currentNoteId}>yellow dressinggown</Annotation>,
-    <Annotation annotationId="010005ungirdled" annotationSelect={() => openNote("010005ungirdled")} activeAnnotationId={currentNoteId}>ungirdled</Annotation>, was sustained gently behind him by the mild morning air. He
+    Stately, plump <Annotation annotationId="010001buckmulligan" visited={visitedNotes.has("010001buckmulligan")} annotationSelect={() => {openNote("010001buckmulligan"); addToVisited("010001buckmulligan")}} activeAnnotationId={currentNoteId}>Buck Mulligan</Annotation> <Annotation annotationId="010002stairhead" visited={visitedNotes.has("010002stairhead")} annotationSelect={() => {openNote("010002stairhead"); addToVisited("010002stairhead")}} activeAnnotationId={currentNoteId}>came from the stairhead</Annotation>, bearing a bowl of
+    lather on which <Annotation annotationId="010003mirrorrazor" visited={visitedNotes.has("010003mirrorrazor")} annotationSelect={() => {openNote("010003mirrorrazor"); addToVisited("010003mirrorrazor")}} activeAnnotationId={currentNoteId}>a mirror and a razor lay crossed</Annotation>. A <Annotation annotationId="010004yellowdressinggown" visited={visitedNotes.has("010004yellowdressinggown")} annotationSelect={() => {openNote("010004yellowdressinggown"); addToVisited("010004yellowdressinggown")}} activeAnnotationId={currentNoteId}>yellow dressinggown</Annotation>,
+    <Annotation annotationId="010005ungirdled" visited={visitedNotes.has("010005ungirdled")} annotationSelect={() => {openNote("010005ungirdled"); addToVisited("010005ungirdled")}} activeAnnotationId={currentNoteId}>ungirdled</Annotation>, was sustained gently behind him by the mild morning air. He
     held the bowl aloft and intoned:
     <p></p>
     <p>
-      —{" "}<Annotation annotationId="010006introibo" annotationSelect={() => openNote("010006introibo")} activeAnnotationId={currentNoteId}><i>Introibo ad altare Dei</i></Annotation>.
+      —{" "}<Annotation annotationId="010006introibo" visited={visitedNotes.has("010006introibo")} annotationSelect={() => {openNote("010006introibo"); addToVisited("010006introibo")}} activeAnnotationId={currentNoteId}><i>Introibo ad altare Dei</i></Annotation>.
     </p>
     <p>
       Halted, he peered down the dark winding stairs and called up coarsely:
     </p>
     <p>
-      —{" "}Come up, <Annotation annotationId="010007kinch" annotationSelect={() => openNote("010007kinch")} activeAnnotationId={currentNoteId}>Kinch</Annotation>! Come up, you fearful <Annotation annotationId="010008jesuit" annotationSelect={() => openNote("010008jesuit")} activeAnnotationId={currentNoteId}>jesuit</Annotation>.
+      —{" "}Come up, <Annotation annotationId="010007kinch" visited={visitedNotes.has("010007kinch")} annotationSelect={() => {openNote("010007kinch"); addToVisited("010007kinch")}} activeAnnotationId={currentNoteId}>Kinch</Annotation>! Come up, you fearful <Annotation annotationId="010008jesuit" visited={visitedNotes.has("010008jesuit")} annotationSelect={() => {openNote("010008jesuit"); addToVisited("010008jesuit")}} activeAnnotationId={currentNoteId}>jesuit</Annotation>.
     </p>
     <p>
-      Solemnly he came forward and <Annotation annotationId="010002stairhead" annotationSelect={() => openNote("010002stairhead")} activeAnnotationId={currentNoteId}>mounted the round gunrest</Annotation>. He faced about
-      and blessed gravely thrice the <Annotation annotationId="010009tower" annotationSelect={() => openNote("010009tower")} activeAnnotationId={currentNoteId}>tower</Annotation>, the surrounding country and the <Annotation annotationId="010010mountains" annotationSelect={() => openNote("010010mountains")} activeAnnotationId={currentNoteId}>awaking mountains</Annotation>. Then, catching sight of <Annotation annotationId="010011stephendedalus" annotationSelect={() => openNote("010011stephendedalus")} activeAnnotationId={currentNoteId}>Stephen Dedalus</Annotation>, he bent
+      Solemnly he came forward and <Annotation annotationId="010002stairhead" visited={visitedNotes.has("010002stairhead")} annotationSelect={() => {openNote("010002stairhead"); addToVisited("010002stairhead")}} activeAnnotationId={currentNoteId}>mounted the round gunrest</Annotation>. He faced about
+      and blessed gravely thrice the <Annotation annotationId="010009tower" visited={visitedNotes.has("010009tower")} annotationSelect={() => {openNote("010009tower"); addToVisited("010009tower")}} activeAnnotationId={currentNoteId}>tower</Annotation>, the surrounding country and the <Annotation annotationId="010010mountains" visited={visitedNotes.has("010010mountains")} annotationSelect={() => {openNote("010010mountains"); addToVisited("010010mountains")}} activeAnnotationId={currentNoteId}>awaking mountains</Annotation>. Then, catching sight of <Annotation annotationId="010011stephendedalus" visited={visitedNotes.has("010011stephendedalus")} annotationSelect={() => {openNote("010011stephendedalus"); addToVisited("010011stephendedalus")}} activeAnnotationId={currentNoteId}>Stephen Dedalus</Annotation>, he bent
       towards him and made rapid crosses in the air, gurgling in his throat
       and shaking his head. Stephen Dedalus, displeased and sleepy, leaned
       his arms on the top of the staircase and looked coldly at the shaking
       gurgling face that blessed him, equine in its length, and at the light
-      <Annotation annotationId="010005ungirdled" annotationSelect={() => openNote("010005ungirdled")} activeAnnotationId={currentNoteId}>untonsured</Annotation> hair, grained and hued like pale oak.
+      <Annotation annotationId="010005ungirdled" visited={visitedNotes.has("010005ungirdled")} annotationSelect={() => {openNote("010005ungirdled"); addToVisited("010005ungirdled")}} activeAnnotationId={currentNoteId}>untonsured</Annotation> hair, grained and hued like pale oak.
     </p>
     <p>
       Buck Mulligan peeped an instant under the mirror and then covered the
       bowl smartly.
     </p>
     <p>
-      —{" "}<Annotation annotationId="010013barracks" annotationSelect={() => openNote("010013barracks")} activeAnnotationId={currentNoteId}>Back to barracks</Annotation>! he said sternly.
+      —{" "}<Annotation annotationId="010013barracks" visited={visitedNotes.has("010013barracks")} annotationSelect={() => {openNote("010013barracks"); addToVisited("010013barracks")}} activeAnnotationId={currentNoteId}>Back to barracks</Annotation>! he said sternly.
     </p>
     <p>
       He added in a preacher's tone:
     </p>
     <p>
-      —{" "}<Annotation annotationId="010014genuinechristine" annotationSelect={() => openNote("010014genuinechristine")} activeAnnotationId={currentNoteId}>For this, O dearly beloved, is the genuine Christine: body and soul
+      —{" "}<Annotation annotationId="010014genuinechristine" visited={visitedNotes.has("010014genuinechristine")} annotationSelect={() => {openNote("010014genuinechristine"); addToVisited("010014genuinechristine")}} activeAnnotationId={currentNoteId}>For this, O dearly beloved, is the genuine Christine: body and soul
       and blood and ouns.</Annotation> Slow music, please. Shut your eyes, gents. One
-      moment. <Annotation annotationId="010015whitecorpuscles" annotationSelect={() => openNote("010015whitecorpuscles")} activeAnnotationId={currentNoteId}>A little trouble about those white corpuscles</Annotation>. Silence, all.
+      moment. <Annotation annotationId="010015whitecorpuscles" visited={visitedNotes.has("010015whitecorpuscles")} annotationSelect={() => {openNote("010015whitecorpuscles"); addToVisited("010015whitecorpuscles")}} activeAnnotationId={currentNoteId}>A little trouble about those white corpuscles</Annotation>. Silence, all.
     </p>
     <p>
       He peered sideways up and gave a long low whistle of call, then paused
       awhile in rapt attention, his even white teeth glistening here and there
-      with gold points. <Annotation annotationId="010017chrysostomos" annotationSelect={() => openNote("010017chrysostomos")} activeAnnotationId={currentNoteId}>Chrysostomos</Annotation>. <Annotation annotationId="010016shrillwhistles" annotationSelect={() => openNote("010016shrillwhistles")} activeAnnotationId={currentNoteId}>Two strong shrill whistles answered</Annotation>
+      with gold points. <Annotation annotationId="010017chrysostomos" visited={visitedNotes.has("010017chrysostomos")} annotationSelect={() => {openNote("010017chrysostomos"); addToVisited("010017chrysostomos")}} activeAnnotationId={currentNoteId}>Chrysostomos</Annotation>. <Annotation annotationId="010016shrillwhistles" visited={visitedNotes.has("010016shrillwhistles")} annotationSelect={() => {openNote("010016shrillwhistles"); addToVisited("010016shrillwhistles")}} activeAnnotationId={currentNoteId}>Two strong shrill whistles answered</Annotation>
       through the calm.
     </p>
     <p>
-      —{" "}Thanks, old chap, he cried briskly. That will do nicely. <Annotation annotationId="010015whitecorpuscles" annotationSelect={() => openNote("010015whitecorpuscles")} activeAnnotationId={currentNoteId}>Switch off the current</Annotation>, will you?
+      —{" "}Thanks, old chap, he cried briskly. That will do nicely. <Annotation annotationId="010015whitecorpuscles" visited={visitedNotes.has("010015whitecorpuscles")} annotationSelect={() => {openNote("010015whitecorpuscles"); addToVisited("010015whitecorpuscles")}} activeAnnotationId={currentNoteId}>Switch off the current</Annotation>, will you?
     </p>
     <span data-edition="ed1922" data-page="3"></span>
     <p>
       He skipped off the gunrest and looked gravely at his watcher, gathering
-      about his legs the loose folds of his gown. <Annotation annotationId="010153plumpface" annotationSelect={() => openNote("010153plumpface")} activeAnnotationId={currentNoteId}>The plump</Annotation><span data-edition="ed1932" data-page="3"> </span><Annotation annotationId="010153plumpface" annotationSelect={() => openNote("010153plumpface")} activeAnnotationId={currentNoteId}>shadowed face and
+      about his legs the loose folds of his gown. <Annotation annotationId="010153plumpface" visited={visitedNotes.has("010153plumpface")} annotationSelect={() => {openNote("010153plumpface"); addToVisited("010153plumpface")}} activeAnnotationId={currentNoteId}>The plump</Annotation><span data-edition="ed1932" data-page="3"> </span><Annotation annotationId="010153plumpface" visited={visitedNotes.has("010153plumpface")} annotationSelect={() => {openNote("010153plumpface"); addToVisited("010153plumpface")}} activeAnnotationId={currentNoteId}>shadowed face and
       sullen oval jowl recalled a prelate, patron of arts in the middle ages.</Annotation>
       A pleasant smile broke quietly over his lips. 
     </p>
     <p>
-      —{" "}<Annotation annotationId="010154mockery" annotationSelect={() => openNote("010154mockery")} activeAnnotationId={currentNoteId}>The mockery of it!</Annotation> he said gaily. <Annotation annotationId="010020ancientgreek" annotationSelect={() => openNote("010020ancientgreek")} activeAnnotationId={currentNoteId}>Your absurd name, an ancient Greek!</Annotation>
+      —{" "}<Annotation annotationId="010154mockery" visited={visitedNotes.has("010154mockery")} annotationSelect={() => {openNote("010154mockery"); addToVisited("010154mockery")}} activeAnnotationId={currentNoteId}>The mockery of it!</Annotation> he said gaily. <Annotation annotationId="010020ancientgreek" visited={visitedNotes.has("010020ancientgreek")} annotationSelect={() => {openNote("010020ancientgreek"); addToVisited("010020ancientgreek")}} activeAnnotationId={currentNoteId}>Your absurd name, an ancient Greek!</Annotation>
     </p>
     <span data-edition="ed1986" data-page="3"> </span>
     <p>
-      He pointed his finger in friendly jest and went over to the <Annotation annotationId="010002stairhead" annotationSelect={() => openNote("010002stairhead")} activeAnnotationId={currentNoteId}>parapet</Annotation>,
+      He pointed his finger in friendly jest and went over to the <Annotation annotationId="010002stairhead" visited={visitedNotes.has("010002stairhead")} annotationSelect={() => {openNote("010002stairhead"); addToVisited("010002stairhead")}} activeAnnotationId={currentNoteId}>parapet</Annotation>,
       laughing to himself. Stephen Dedalus stepped up, followed him wearily
       halfway and sat down on the edge of the gunrest, watching him still as he propped his mirror on the <span data-edition="ed1961" data-page="3"> </span>parapet, dipped the brush in the bowl and
       lathered cheeks and neck. 
@@ -83,10 +83,10 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <span data-edition="ed1939" data-page="5"> </span>
     <p>
-      —{" "}My name is absurd too: <Annotation annotationId="010021malachi" annotationSelect={() => openNote("010021malachi")} activeAnnotationId={currentNoteId}>Malachi Mulligan, two dactyls</Annotation>. But it has a
-      <Annotation annotationId="010022hellenise" annotationSelect={() => openNote("010022hellenise")} activeAnnotationId={currentNoteId}>Hellenic</Annotation> ring, hasn't it? Tripping and sunny like the buck himself.
+      —{" "}My name is absurd too: <Annotation annotationId="010021malachi" visited={visitedNotes.has("010021malachi")} annotationSelect={() => {openNote("010021malachi"); addToVisited("010021malachi")}} activeAnnotationId={currentNoteId}>Malachi Mulligan, two dactyls</Annotation>. But it has a
+      <Annotation annotationId="010022hellenise" visited={visitedNotes.has("010022hellenise")} annotationSelect={() => {openNote("010022hellenise"); addToVisited("010022hellenise")}} activeAnnotationId={currentNoteId}>Hellenic</Annotation> ring, hasn't it? Tripping and sunny like the buck himself.
       We must go to Athens. Will you come if I can get the aunt to fork out
-      twenty <Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}>quid</Annotation>?
+      twenty <Annotation annotationId="010019money" visited={visitedNotes.has("010019money")} annotationSelect={() => {openNote("010019money"); addToVisited("010019money")}} activeAnnotationId={currentNoteId}>quid</Annotation>?
     </p>
     <p>
       He laid the brush aside and, laughing with delight, cried:
@@ -104,33 +104,33 @@ const Telemachus = ({openNote, currentNoteId}) => {
       —{" "}Yes, my love?
     </p>
     <p>
-      —{" "}How long is <Annotation annotationId="010023haines" annotationSelect={() => openNote("010023haines")} activeAnnotationId={currentNoteId}>Haines</Annotation> going to stay in this tower?
+      —{" "}How long is <Annotation annotationId="010023haines" visited={visitedNotes.has("010023haines")} annotationSelect={() => {openNote("010023haines"); addToVisited("010023haines")}} activeAnnotationId={currentNoteId}>Haines</Annotation> going to stay in this tower?
     </p>
     <p>
       Buck Mulligan showed a shaven cheek over his right shoulder.
     </p>
     <p>
-      —{" "}God, isn't he dreadful? he said frankly. A ponderous <Annotation annotationId="010024stranger" annotationSelect={() => openNote("010024stranger")} activeAnnotationId={currentNoteId}>Saxon</Annotation>. He thinks
+      —{" "}God, isn't he dreadful? he said frankly. A ponderous <Annotation annotationId="010024stranger" visited={visitedNotes.has("010024stranger")} annotationSelect={() => {openNote("010024stranger"); addToVisited("010024stranger")}} activeAnnotationId={currentNoteId}>Saxon</Annotation>. He thinks
       you're not a gentleman. God, these bloody English! Bursting with money
       and indigestion.  Because he comes from Oxford. You know, Dedalus, you
       have the real Oxford manner. He can't make you out. O, my name for you
-      is the best: <Annotation annotationId="010007kinch" annotationSelect={() => openNote("010007kinch")} activeAnnotationId={currentNoteId}>Kinch, the knife-blade.</Annotation>
+      is the best: <Annotation annotationId="010007kinch" visited={visitedNotes.has("010007kinch")} annotationSelect={() => {openNote("010007kinch"); addToVisited("010007kinch")}} activeAnnotationId={currentNoteId}>Kinch, the knife-blade.</Annotation>
     </p>
     <p>
       He shaved warily over his chin.
     </p>
     <p>
-      —{" "}<Annotation annotationId="010025blackpanther" annotationSelect={() => openNote("010025blackpanther")} activeAnnotationId={currentNoteId}>He was raving all night about a black panther, Stephen said. Where is
+      —{" "}<Annotation annotationId="010025blackpanther" visited={visitedNotes.has("010025blackpanther")} annotationSelect={() => {openNote("010025blackpanther"); addToVisited("010025blackpanther")}} activeAnnotationId={currentNoteId}>He was raving all night about a black panther, Stephen said. Where is
       his guncase?</Annotation>
     </p>
     <p>
-      —{" "}A woful <Annotation annotationId="010051paresis" annotationSelect={() => openNote("010051paresis")} activeAnnotationId={currentNoteId}>lunatic</Annotation>! Mulligan said. Were you in a funk?
+      —{" "}A woful <Annotation annotationId="010051paresis" visited={visitedNotes.has("010051paresis")} annotationSelect={() => {openNote("010051paresis"); addToVisited("010051paresis")}} activeAnnotationId={currentNoteId}>lunatic</Annotation>! Mulligan said. Were you in a funk?
     </p>
     <p>
       —{" "}I was, Stephen said with energy and growing fear. Out here in the dark
       with a man I don't know raving and moaning to himself about shooting a
-      black panther. You <Annotation annotationId="010026lifeguard" annotationSelect={() => openNote("010026lifeguard")} activeAnnotationId={currentNoteId}>saved men from drowning.</Annotation> I'm not <Annotation annotationId="010027hero" annotationSelect={() => openNote("010027hero")} activeAnnotationId={currentNoteId}>a hero,</Annotation> however. If
-      he stays on here <Annotation annotationId="010028iamoff" annotationSelect={() => openNote("010028iamoff")} activeAnnotationId={currentNoteId}>I am off.</Annotation>
+      black panther. You <Annotation annotationId="010026lifeguard" visited={visitedNotes.has("010026lifeguard")} annotationSelect={() => {openNote("010026lifeguard"); addToVisited("010026lifeguard")}} activeAnnotationId={currentNoteId}>saved men from drowning.</Annotation> I'm not <Annotation annotationId="010027hero" visited={visitedNotes.has("010027hero")} annotationSelect={() => {openNote("010027hero"); addToVisited("010027hero")}} activeAnnotationId={currentNoteId}>a hero,</Annotation> however. If
+      he stays on here <Annotation annotationId="010028iamoff" visited={visitedNotes.has("010028iamoff")} annotationSelect={() => {openNote("010028iamoff"); addToVisited("010028iamoff")}} activeAnnotationId={currentNoteId}>I am off.</Annotation>
     </p>
     <p>
       Buck Mulligan frowned at the lather on his razorblade. He hopped down
@@ -138,14 +138,14 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <span data-edition="ed1922" data-page="4"> </span>
     <p>
-      —{" "}<Annotation annotationId="010128bowsy" annotationSelect={() => openNote("010128bowsy")} activeAnnotationId={currentNoteId}>Scutter</Annotation>! he cried thickly.
+      —{" "}<Annotation annotationId="010128bowsy" visited={visitedNotes.has("010128bowsy")} annotationSelect={() => {openNote("010128bowsy"); addToVisited("010128bowsy")}} activeAnnotationId={currentNoteId}>Scutter</Annotation>! he cried thickly.
     </p>
     <p>
       He came over to the gunrest and, thrusting a hand into Stephen's upper
       pocket, said:
     </p>
     <p>
-      —{" "}Lend us a loan of your <Annotation annotationId="010030noserag" annotationSelect={() => openNote("010030noserag")} activeAnnotationId={currentNoteId}>noserag</Annotation> to wipe my razor.
+      —{" "}Lend us a loan of your <Annotation annotationId="010030noserag" visited={visitedNotes.has("010030noserag")} annotationSelect={() => {openNote("010030noserag"); addToVisited("010030noserag")}} activeAnnotationId={currentNoteId}>noserag</Annotation> to wipe my razor.
     </p>
     <span data-edition="ed1932" data-page="4"> </span>
     <p>
@@ -155,45 +155,45 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <span data-edition="ed1961" data-page="4"> </span>
     <p>
-      —{" "}The bard's noserag! A new art colour for <Annotation annotationId="010031snotgreen" annotationSelect={() => openNote("010031snotgreen")} activeAnnotationId={currentNoteId}>our Irish poets</Annotation>: snotgreen.
+      —{" "}The bard's noserag! A new art colour for <Annotation annotationId="010031snotgreen" visited={visitedNotes.has("010031snotgreen")} annotationSelect={() => {openNote("010031snotgreen"); addToVisited("010031snotgreen")}} activeAnnotationId={currentNoteId}>our Irish poets</Annotation>: snotgreen.
       You can almost taste it, can't you?
     </p>
     <p>
-      He mounted to the parapet again and gazed out over <Annotation annotationId="010123dublinbay" annotationSelect={() => openNote("010123dublinbay")} activeAnnotationId={currentNoteId}>Dublin bay</Annotation>, his fair
+      He mounted to the parapet again and gazed out over <Annotation annotationId="010123dublinbay" visited={visitedNotes.has("010123dublinbay")} annotationSelect={() => {openNote("010123dublinbay"); addToVisited("010123dublinbay")}} activeAnnotationId={currentNoteId}>Dublin bay</Annotation>, his fair
       oakpale hair stirring slightly.
     </p>
     <p>
-      —{" "}God! he said quietly. Isn't the sea <Annotation annotationId="010032sweetmother" annotationSelect={() => openNote("010032sweetmother")} activeAnnotationId={currentNoteId}>what Algy calls it: a great
-      sweet mother</Annotation>? The snotgreen sea. The scrotumtightening sea. <Annotation annotationId="010033epioinopaponton" annotationSelect={() => openNote("010033epioinopaponton")} activeAnnotationId={currentNoteId}><i>Epi oinopa
-      ponton</i>.</Annotation> Ah, Dedalus, the Greeks! I must teach you. You must <Annotation annotationId="010034theoriginal" annotationSelect={() => openNote("010034theoriginal")} activeAnnotationId={currentNoteId}>read them
-      in the</Annotation><span data-edition="ed1986" data-page="4"> </span> <Annotation annotationId="010034theoriginal" annotationSelect={() => openNote("010034theoriginal")} activeAnnotationId={currentNoteId}>original.</Annotation> <Annotation annotationId="010035thalatta" annotationSelect={() => openNote("010035thalatta")} activeAnnotationId={currentNoteId}><i>Thalatta! Thalatta</i>!</Annotation> She is our great sweet mother.
+      —{" "}God! he said quietly. Isn't the sea <Annotation annotationId="010032sweetmother" visited={visitedNotes.has("010032sweetmother")} annotationSelect={() => {openNote("010032sweetmother"); addToVisited("010032sweetmother")}} activeAnnotationId={currentNoteId}>what Algy calls it: a great
+      sweet mother</Annotation>? The snotgreen sea. The scrotumtightening sea. <Annotation annotationId="010033epioinopaponton" visited={visitedNotes.has("010033epioinopaponton")} annotationSelect={() => {openNote("010033epioinopaponton"); addToVisited("010033epioinopaponton")}} activeAnnotationId={currentNoteId}><i>Epi oinopa
+      ponton</i>.</Annotation> Ah, Dedalus, the Greeks! I must teach you. You must <Annotation annotationId="010034theoriginal" visited={visitedNotes.has("010034theoriginal")} annotationSelect={() => {openNote("010034theoriginal"); addToVisited("010034theoriginal")}} activeAnnotationId={currentNoteId}>read them
+      in the</Annotation><span data-edition="ed1986" data-page="4"> </span> <Annotation annotationId="010034theoriginal" visited={visitedNotes.has("010034theoriginal")} annotationSelect={() => {openNote("010034theoriginal"); addToVisited("010034theoriginal")}} activeAnnotationId={currentNoteId}>original.</Annotation> <Annotation annotationId="010035thalatta" visited={visitedNotes.has("010035thalatta")} annotationSelect={() => {openNote("010035thalatta"); addToVisited("010035thalatta")}} activeAnnotationId={currentNoteId}><i>Thalatta! Thalatta</i>!</Annotation> She is our great sweet mother.
       Come and look.
     </p>
     <p>
       Stephen stood up and went over to the parapet. Leaning on it he looked
-      down on the water and on the <Annotation annotationId="010036mailboat" annotationSelect={() => openNote("010036mailboat")} activeAnnotationId={currentNoteId}>mailboat</Annotation> clearing the <Annotation annotationId="010037harbourmouth" annotationSelect={() => openNote("010037harbourmouth")} activeAnnotationId={currentNoteId}>harbourmouth of
+      down on the water and on the <Annotation annotationId="010036mailboat" visited={visitedNotes.has("010036mailboat")} annotationSelect={() => {openNote("010036mailboat"); addToVisited("010036mailboat")}} activeAnnotationId={currentNoteId}>mailboat</Annotation> clearing the <Annotation annotationId="010037harbourmouth" visited={visitedNotes.has("010037harbourmouth")} annotationSelect={() => {openNote("010037harbourmouth"); addToVisited("010037harbourmouth")}} activeAnnotationId={currentNoteId}>harbourmouth of
       Kingstown</Annotation>.
     </p>
     <p>
-      —{" "}<Annotation annotationId="010039mightymother" annotationSelect={() => openNote("010039mightymother")} activeAnnotationId={currentNoteId}>Our mighty mother</Annotation>! Buck Mulligan said.
+      —{" "}<Annotation annotationId="010039mightymother" visited={visitedNotes.has("010039mightymother")} annotationSelect={() => {openNote("010039mightymother"); addToVisited("010039mightymother")}} activeAnnotationId={currentNoteId}>Our mighty mother</Annotation>! Buck Mulligan said.
     </p>
     <p>
-      He turned abruptly <Annotation annotationId="010038greateyes" annotationSelect={() => openNote("010038greateyes")} activeAnnotationId={currentNoteId}>his great searching eyes</Annotation> from the sea to Stephen's
+      He turned abruptly <Annotation annotationId="010038greateyes" visited={visitedNotes.has("010038greateyes")} annotationSelect={() => {openNote("010038greateyes"); addToVisited("010038greateyes")}} activeAnnotationId={currentNoteId}>his great searching eyes</Annotation> from the sea to Stephen's
       face.
     </p>
     <p>
-      —{" "}The aunt thinks <Annotation annotationId="010042prayforme" annotationSelect={() => openNote("010042prayforme")} activeAnnotationId={currentNoteId}>you killed your mother</Annotation>, he said. That's why she won't
+      —{" "}The aunt thinks <Annotation annotationId="010042prayforme" visited={visitedNotes.has("010042prayforme")} annotationSelect={() => {openNote("010042prayforme"); addToVisited("010042prayforme")}} activeAnnotationId={currentNoteId}>you killed your mother</Annotation>, he said. That's why she won't
       let me have anything to do with you.
     </p>
     <p>
-      —{" "}<Annotation annotationId="010041killergod" annotationSelect={() => openNote("010041killergod")} activeAnnotationId={currentNoteId}>Someone killed her</Annotation>, Stephen said gloomily.
+      —{" "}<Annotation annotationId="010041killergod" visited={visitedNotes.has("010041killergod")} annotationSelect={() => {openNote("010041killergod"); addToVisited("010041killergod")}} activeAnnotationId={currentNoteId}>Someone killed her</Annotation>, Stephen said gloomily.
     </p>
     <p>
       —{" "}You could have knelt down, damn it, Kinch, when your dying mother
-      asked you, Buck Mulligan said. I'm <Annotation annotationId="010040hyperborean" annotationSelect={() => openNote("010040hyperborean")} activeAnnotationId={currentNoteId}>hyperborean</Annotation> as much as you. But to
+      asked you, Buck Mulligan said. I'm <Annotation annotationId="010040hyperborean" visited={visitedNotes.has("010040hyperborean")} annotationSelect={() => {openNote("010040hyperborean"); addToVisited("010040hyperborean")}} activeAnnotationId={currentNoteId}>hyperborean</Annotation> as much as you. But to
       think of your 
       <span data-edition="ed1939" data-page="6"> </span>
-      mother <Annotation annotationId="010042prayforme" annotationSelect={() => openNote("010042prayforme")} activeAnnotationId={currentNoteId}>begging you with her last breath to kneel down and
+      mother <Annotation annotationId="010042prayforme" visited={visitedNotes.has("010042prayforme")} annotationSelect={() => {openNote("010042prayforme"); addToVisited("010042prayforme")}} activeAnnotationId={currentNoteId}>begging you with her last breath to kneel down and
       pray for her. And you refused.</Annotation> There is something sinister in you...
     </p>
     <p>
@@ -201,7 +201,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
       smile curled his lips.
     </p>
     <p>
-      —{" "}But a lovely <Annotation annotationId="010043mummer" annotationSelect={() => openNote("010043mummer")} activeAnnotationId={currentNoteId}>mummer</Annotation>! he murmured to himself. Kinch, the loveliest
+      —{" "}But a lovely <Annotation annotationId="010043mummer" visited={visitedNotes.has("010043mummer")} annotationSelect={() => {openNote("010043mummer"); addToVisited("010043mummer")}} activeAnnotationId={currentNoteId}>mummer</Annotation>! he murmured to himself. Kinch, the loveliest
       mummer of them all!
     </p>
     <p>
@@ -210,14 +210,14 @@ const Telemachus = ({openNote, currentNoteId}) => {
     <p>
       Stephen, an elbow rested on the jagged granite, leaned his palm against
       his brow and gazed at the fraying edge of his shiny black coat-sleeve.
-      Pain, that was not yet the <Annotation annotationId="010044painfretted" annotationSelect={() => openNote("010044painfretted")} activeAnnotationId={currentNoteId}>pain of love</Annotation>, fretted his heart. <Annotation annotationId="010045waxandrosewood" annotationSelect={() => openNote("010045waxandrosewood")} activeAnnotationId={currentNoteId}>Silently, in
+      Pain, that was not yet the <Annotation annotationId="010044painfretted" visited={visitedNotes.has("010044painfretted")} annotationSelect={() => {openNote("010044painfretted"); addToVisited("010044painfretted")}} activeAnnotationId={currentNoteId}>pain of love</Annotation>, fretted his heart. <Annotation annotationId="010045waxandrosewood" visited={visitedNotes.has("010045waxandrosewood")} annotationSelect={() => {openNote("010045waxandrosewood"); addToVisited("010045waxandrosewood")}} activeAnnotationId={currentNoteId}>Silently, in
       a dream she had come to him after her death</Annotation>, her wasted body within its
       loose brown graveclothes giving off an odour of wax and rosewood, her
       breath, that had bent upon him, mute, reproachful, a faint odour of
       wetted ashes. Across the 
       <span data-edition="ed1922" data-page="5"> </span>
       threadbare cuffedge he saw the sea hailed as a
-      great sweet mother by the wellfed voice beside him. The <Annotation annotationId="010123dublinbay" annotationSelect={() => openNote("010123dublinbay")} activeAnnotationId={currentNoteId}>ring of bay
+      great sweet mother by the wellfed voice beside him. The <Annotation annotationId="010123dublinbay" visited={visitedNotes.has("010123dublinbay")} annotationSelect={() => {openNote("010123dublinbay"); addToVisited("010123dublinbay")}} activeAnnotationId={currentNoteId}>ring of bay
       and skyline</Annotation> held a dull green mass of liquid. A bowl of white<span data-edition="ed1932" data-page="5"> </span> china had
       stood beside her deathbed holding the green sluggish bile which she had
       torn up from her rotting liver by fits of loud groaning vomiting.
@@ -227,8 +227,8 @@ const Telemachus = ({openNote, currentNoteId}) => {
       Buck Mulligan wiped again his razorblade.
     </p>
     <p>
-      —{" "}Ah, poor <Annotation annotationId="010047dogsbody" annotationSelect={() => openNote("010047dogsbody")} activeAnnotationId={currentNoteId}>dogsbody</Annotation>! he said in a kind voice. I must give you a shirt
-      and a few noserags. How are the secondhand <Annotation annotationId="010128bowsy" annotationSelect={() => openNote("010128bowsy")} activeAnnotationId={currentNoteId}>breeks</Annotation>?
+      —{" "}Ah, poor <Annotation annotationId="010047dogsbody" visited={visitedNotes.has("010047dogsbody")} annotationSelect={() => {openNote("010047dogsbody"); addToVisited("010047dogsbody")}} activeAnnotationId={currentNoteId}>dogsbody</Annotation>! he said in a kind voice. I must give you a shirt
+      and a few noserags. How are the secondhand <Annotation annotationId="010128bowsy" visited={visitedNotes.has("010128bowsy")} annotationSelect={() => {openNote("010128bowsy"); addToVisited("010128bowsy")}} activeAnnotationId={currentNoteId}>breeks</Annotation>?
     </p>
     <p>
       —{" "}They fit well enough, Stephen answered.
@@ -238,12 +238,12 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <p>
       —{" "}The mockery of it, he said contentedly. Secondleg they should be. God
-      knows what poxy <Annotation annotationId="010128bowsy" annotationSelect={() => openNote("010128bowsy")} activeAnnotationId={currentNoteId}>bowsy</Annotation> left them off. I have a lovely pair with a hair
+      knows what poxy <Annotation annotationId="010128bowsy" visited={visitedNotes.has("010128bowsy")} annotationSelect={() => {openNote("010128bowsy"); addToVisited("010128bowsy")}} activeAnnotationId={currentNoteId}>bowsy</Annotation> left them off. I have a lovely pair with a hair
       stripe, grey. You'll look spiffing in them. I'm not joking, Kinch. You
       look damn well when you're dressed.
     </p>
     <p>
-      —{" "}Thanks, Stephen said. <Annotation annotationId="010048greypants" annotationSelect={() => openNote("010048greypants")} activeAnnotationId={currentNoteId}>I can't wear them if they are grey.</Annotation>
+      —{" "}Thanks, Stephen said. <Annotation annotationId="010048greypants" visited={visitedNotes.has("010048greypants")} annotationSelect={() => {openNote("010048greypants"); addToVisited("010048greypants")}} activeAnnotationId={currentNoteId}>I can't wear them if they are grey.</Annotation>
     </p>
     <p>
       —{" "}He can't wear them, Buck Mulligan told his face in the mirror.
@@ -260,12 +260,12 @@ const Telemachus = ({openNote, currentNoteId}) => {
       smokeblue mobile eyes.
     </p>
     <p>
-      —{" "}That fellow I was with in <Annotation annotationId="010049shiptavern" annotationSelect={() => openNote("010049shiptavern")} activeAnnotationId={currentNoteId}>the Ship</Annotation> last night, said Buck Mulligan,
-      says you have g.p.i. He's <Annotation annotationId="010050dottyville" annotationSelect={() => openNote("010050dottyville")} activeAnnotationId={currentNoteId}>up in Dottyville with Conolly Norman</Annotation>. <Annotation annotationId="010051paresis" annotationSelect={() => openNote("010051paresis")} activeAnnotationId={currentNoteId}>General
+      —{" "}That fellow I was with in <Annotation annotationId="010049shiptavern" visited={visitedNotes.has("010049shiptavern")} annotationSelect={() => {openNote("010049shiptavern"); addToVisited("010049shiptavern")}} activeAnnotationId={currentNoteId}>the Ship</Annotation> last night, said Buck Mulligan,
+      says you have g.p.i. He's <Annotation annotationId="010050dottyville" visited={visitedNotes.has("010050dottyville")} annotationSelect={() => {openNote("010050dottyville"); addToVisited("010050dottyville")}} activeAnnotationId={currentNoteId}>up in Dottyville with Conolly Norman</Annotation>. <Annotation annotationId="010051paresis" visited={visitedNotes.has("010051paresis")} annotationSelect={() => {openNote("010051paresis"); addToVisited("010051paresis")}} activeAnnotationId={currentNoteId}>General
       paralysis of the insane!</Annotation>
     </p>
     <p>
-      He swept the mirror a half circle in the air <Annotation annotationId="010021malachi" annotationSelect={() => openNote("010021malachi")} activeAnnotationId={currentNoteId}>to flash the tidings abroad</Annotation>
+      He swept the mirror a half circle in the air <Annotation annotationId="010021malachi" visited={visitedNotes.has("010021malachi")} annotationSelect={() => {openNote("010021malachi"); addToVisited("010021malachi")}} activeAnnotationId={currentNoteId}>to flash the tidings abroad</Annotation>
       in sunlight now radiant on the sea. His curling shaven lips laughed and
       the edges of his white glittering teeth. Laughter seized all his strong
       wellknit trunk.
@@ -275,19 +275,19 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <p>
       Stephen bent forward and peered at the mirror held out to him, cleft by
-      a crooked crack, hair on end. <Annotation annotationId="010052otherssee" annotationSelect={() => openNote("010052otherssee")} activeAnnotationId={currentNoteId}>As he and others see me.</Annotation> Who chose this
+      a crooked crack, hair on end. <Annotation annotationId="010052otherssee" visited={visitedNotes.has("010052otherssee")} annotationSelect={() => {openNote("010052otherssee"); addToVisited("010052otherssee")}} activeAnnotationId={currentNoteId}>As he and others see me.</Annotation> Who chose this
       face for me? This dogsbody to rid of vermin. It asks me too.
     </p>
     <p>
       —{" "}I pinched it out of the skivvy's room, Buck Mulligan said. It does her
-      all right. The aunt always keeps plainlooking servants for Malachi. <Annotation annotationId="040077ourfather" annotationSelect={() => openNote("040077ourfather")} activeAnnotationId={currentNoteId}>Lead
-      him not into temptation.</Annotation> And her name is <Annotation annotationId="010054ursula" annotationSelect={() => openNote("010054ursula")} activeAnnotationId={currentNoteId}>Ursula.</Annotation>
+      all right. The aunt always keeps plainlooking servants for Malachi. <Annotation annotationId="040077ourfather" visited={visitedNotes.has("040077ourfather")} annotationSelect={() => {openNote("040077ourfather"); addToVisited("040077ourfather")}} activeAnnotationId={currentNoteId}>Lead
+      him not into temptation.</Annotation> And her name is <Annotation annotationId="010054ursula" visited={visitedNotes.has("010054ursula")} annotationSelect={() => {openNote("010054ursula"); addToVisited("010054ursula")}} activeAnnotationId={currentNoteId}>Ursula.</Annotation>
     </p>
     <p>
       Laughing again, he brought the mirror away from Stephen's peering eyes.
     </p>
     <p>
-      —{" "}<Annotation annotationId="010055calibanmirror" annotationSelect={() => openNote("010055calibanmirror")} activeAnnotationId={currentNoteId}>The rage of Caliban at not seeing his face in a mirror</Annotation>, he said. If
+      —{" "}<Annotation annotationId="010055calibanmirror" visited={visitedNotes.has("010055calibanmirror")} annotationSelect={() => {openNote("010055calibanmirror"); addToVisited("010055calibanmirror")}} activeAnnotationId={currentNoteId}>The rage of Caliban at not seeing his face in a mirror</Annotation>, he said. If
       Wilde were only alive to see you!
     </p>
     <span data-edition="ed1922" data-page="6"> </span>
@@ -296,12 +296,12 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <span data-edition="ed1939" data-page="7"> </span>
     <p>
-      —{" "}It is <Annotation annotationId="010056crackedlookingglass" annotationSelect={() => openNote("010056crackedlookingglass")} activeAnnotationId={currentNoteId}>a symbol of Irish art. The cracked lookingglass of a servant.</Annotation>
+      —{" "}It is <Annotation annotationId="010056crackedlookingglass" visited={visitedNotes.has("010056crackedlookingglass")} annotationSelect={() => {openNote("010056crackedlookingglass"); addToVisited("010056crackedlookingglass")}} activeAnnotationId={currentNoteId}>a symbol of Irish art. The cracked lookingglass of a servant.</Annotation>
     </p>
     <span data-edition="ed1961" data-page="6"> </span>
     <span data-edition="ed1932" data-page="6"> </span>
     <p>
-      Buck Mulligan suddenly <Annotation annotationId="010152linkedarm" annotationSelect={() => openNote("010152linkedarm")} activeAnnotationId={currentNoteId}>linked his arm</Annotation> in Stephen's and walked with him
+      Buck Mulligan suddenly <Annotation annotationId="010152linkedarm" visited={visitedNotes.has("010152linkedarm")} annotationSelect={() => {openNote("010152linkedarm"); addToVisited("010152linkedarm")}} activeAnnotationId={currentNoteId}>linked his arm</Annotation> in Stephen's and walked with him
       round the tower, his razor and mirror clacking in the pocket where he
       had thrust them.
     </p>
@@ -310,42 +310,42 @@ const Telemachus = ({openNote, currentNoteId}) => {
       God knows you have more spirit than any of them.
     </p>
     <p>
-      Parried again. <Annotation annotationId="010003mirrorrazor" annotationSelect={() => openNote("010003mirrorrazor")} activeAnnotationId={currentNoteId}>He fears the lancet of my art as I fear that of his.</Annotation> The
+      Parried again. <Annotation annotationId="010003mirrorrazor" visited={visitedNotes.has("010003mirrorrazor")} annotationSelect={() => {openNote("010003mirrorrazor"); addToVisited("010003mirrorrazor")}} activeAnnotationId={currentNoteId}>He fears the lancet of my art as I fear that of his.</Annotation> The
       cold steelpen.
     </p>
     <p>
-      —{" "}Cracked lookingglass of a servant! Tell that to the <Annotation annotationId="010023haines" annotationSelect={() => openNote("010023haines")} activeAnnotationId={currentNoteId}>oxy chap</Annotation>
-      downstairs and touch him for a <Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}>guinea</Annotation>. He's stinking with money and
-      thinks you're not a gentleman. His old fellow made his tin by <Annotation annotationId="010058bloodyswindle" annotationSelect={() => openNote("010058bloodyswindle")} activeAnnotationId={currentNoteId}>selling
+      —{" "}Cracked lookingglass of a servant! Tell that to the <Annotation annotationId="010023haines" visited={visitedNotes.has("010023haines")} annotationSelect={() => {openNote("010023haines"); addToVisited("010023haines")}} activeAnnotationId={currentNoteId}>oxy chap</Annotation>
+      downstairs and touch him for a <Annotation annotationId="010019money" visited={visitedNotes.has("010019money")} annotationSelect={() => {openNote("010019money"); addToVisited("010019money")}} activeAnnotationId={currentNoteId}>guinea</Annotation>. He's stinking with money and
+      thinks you're not a gentleman. His old fellow made his tin by <Annotation annotationId="010058bloodyswindle" visited={visitedNotes.has("010058bloodyswindle")} annotationSelect={() => {openNote("010058bloodyswindle"); addToVisited("010058bloodyswindle")}} activeAnnotationId={currentNoteId}>selling
       jalap to Zulus or some bloody swindle</Annotation> or other. God, Kinch, if you and I
-      could only work together we might do something for the island. <Annotation annotationId="010022hellenise" annotationSelect={() => openNote("010022hellenise")} activeAnnotationId={currentNoteId}>Hellenise it.</Annotation>
+      could only work together we might do something for the island. <Annotation annotationId="010022hellenise" visited={visitedNotes.has("010022hellenise")} annotationSelect={() => {openNote("010022hellenise"); addToVisited("010022hellenise")}} activeAnnotationId={currentNoteId}>Hellenise it.</Annotation>
     </p>
     <p>
-      <Annotation annotationId="010060cranlysarm" annotationSelect={() => openNote("010060cranlysarm")} activeAnnotationId={currentNoteId}>Cranly's arm.</Annotation> His arm.
+      <Annotation annotationId="010060cranlysarm" visited={visitedNotes.has("010060cranlysarm")} annotationSelect={() => {openNote("010060cranlysarm"); addToVisited("010060cranlysarm")}} activeAnnotationId={currentNoteId}>Cranly's arm.</Annotation> His arm.
     </p>
     <p>
       —{" "}And to think of your having to beg from these swine. I'm the only one
       that knows what you are. Why don't you trust me more? What have you
       up your nose against me? Is it Haines? If he makes any noise here I'll
-      bring down Seymour and we'll give him <Annotation annotationId="010063ragging" annotationSelect={() => openNote("010063ragging")} activeAnnotationId={currentNoteId}>a ragging worse than they gave
+      bring down Seymour and we'll give him <Annotation annotationId="010063ragging" visited={visitedNotes.has("010063ragging")} annotationSelect={() => {openNote("010063ragging"); addToVisited("010063ragging")}} activeAnnotationId={currentNoteId}>a ragging worse than they gave
       Clive Kempthorpe.</Annotation>
     </p>
     <p>
-      Young shouts of moneyed voices in Clive Kempthorpe's rooms. <Annotation annotationId="010024stranger" annotationSelect={() => openNote("010024stranger")} activeAnnotationId={currentNoteId}>Palefaces</Annotation>:
+      Young shouts of moneyed voices in Clive Kempthorpe's rooms. <Annotation annotationId="010024stranger" visited={visitedNotes.has("010024stranger")} annotationSelect={() => {openNote("010024stranger"); addToVisited("010024stranger")}} activeAnnotationId={currentNoteId}>Palefaces</Annotation>:
       they hold their ribs with laughter, one clasping another. O, I shall
-      expire! <Annotation annotationId="010061breaknews" annotationSelect={() => openNote("010061breaknews")} activeAnnotationId={currentNoteId}>Break the news to her gently</Annotation>, Aubrey! I shall die! With slit
+      expire! <Annotation annotationId="010061breaknews" visited={visitedNotes.has("010061breaknews")} annotationSelect={() => {openNote("010061breaknews"); addToVisited("010061breaknews")}} activeAnnotationId={currentNoteId}>Break the news to her gently</Annotation>, Aubrey! I shall die! With slit
       ribbons of his shirt whipping the air he hops and hobbles round the
-      table, with trousers down at heels, chased by Ades of <Annotation annotationId="010063ragging" annotationSelect={() => openNote("010063ragging")} activeAnnotationId={currentNoteId}>Magdalen</Annotation> with the
-      tailor's<span data-edition="ed1986" data-page="6"> </span> shears. <Annotation annotationId="010063ragging" annotationSelect={() => openNote("010063ragging")} activeAnnotationId={currentNoteId}>A scared calf's face gilded with marmalade. I don't
+      table, with trousers down at heels, chased by Ades of <Annotation annotationId="010063ragging" visited={visitedNotes.has("010063ragging")} annotationSelect={() => {openNote("010063ragging"); addToVisited("010063ragging")}} activeAnnotationId={currentNoteId}>Magdalen</Annotation> with the
+      tailor's<span data-edition="ed1986" data-page="6"> </span> shears. <Annotation annotationId="010063ragging" visited={visitedNotes.has("010063ragging")} annotationSelect={() => {openNote("010063ragging"); addToVisited("010063ragging")}} activeAnnotationId={currentNoteId}>A scared calf's face gilded with marmalade. I don't
       want to be debagged!</Annotation> Don't you play the giddy ox with me!
     </p>
     <p>
       Shouts from the open window startling evening in the quadrangle. A deaf
-      gardener, aproned, masked with <Annotation annotationId="010022hellenise" annotationSelect={() => openNote("010022hellenise")} activeAnnotationId={currentNoteId}>Matthew Arnold</Annotation>'s face, pushes his mower
+      gardener, aproned, masked with <Annotation annotationId="010022hellenise" visited={visitedNotes.has("010022hellenise")} annotationSelect={() => {openNote("010022hellenise"); addToVisited("010022hellenise")}} activeAnnotationId={currentNoteId}>Matthew Arnold</Annotation>'s face, pushes his mower
       on the sombre lawn watching narrowly the dancing motes of grasshalms.
     </p>
     <p>
-      <Annotation annotationId="010065omphalos" annotationSelect={() => openNote("010065omphalos")} activeAnnotationId={currentNoteId}>To ourselves... new paganism... omphalos.</Annotation>
+      <Annotation annotationId="010065omphalos" visited={visitedNotes.has("010065omphalos")} annotationSelect={() => {openNote("010065omphalos"); addToVisited("010065omphalos")}} activeAnnotationId={currentNoteId}>To ourselves... new paganism... omphalos.</Annotation>
     </p>
     <p>
       —{" "}Let him stay, Stephen said. There's nothing wrong with him except at
@@ -356,8 +356,8 @@ const Telemachus = ({openNote, currentNoteId}) => {
       quite frank with you. What have you against me now?
     </p>
     <p>
-      They halted, looking towards the blunt cape of <Annotation annotationId="010066brayhead" annotationSelect={() => openNote("010066brayhead")} activeAnnotationId={currentNoteId}>Bray Head</Annotation> that lay on the
-      water like the snout of a sleeping whale. Stephen <Annotation annotationId="010152linkedarm" annotationSelect={() => openNote("010152linkedarm")} activeAnnotationId={currentNoteId}>freed his arm</Annotation> quietly.
+      They halted, looking towards the blunt cape of <Annotation annotationId="010066brayhead" visited={visitedNotes.has("010066brayhead")} annotationSelect={() => {openNote("010066brayhead"); addToVisited("010066brayhead")}} activeAnnotationId={currentNoteId}>Bray Head</Annotation> that lay on the
+      water like the snout of a sleeping whale. Stephen <Annotation annotationId="010152linkedarm" visited={visitedNotes.has("010152linkedarm")} annotationSelect={() => {openNote("010152linkedarm"); addToVisited("010152linkedarm")}} activeAnnotationId={currentNoteId}>freed his arm</Annotation> quietly.
     </p>
     <span data-edition="ed1961" data-page="7"> </span>
     <span data-edition="ed1922" data-page="7"> </span>
@@ -383,7 +383,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
       Buck Mulligan frowned quickly and said:
     </p>
     <p>
-      —{" "}What? Where? I can't remember anything. <Annotation annotationId="010067hartley" annotationSelect={() => openNote("010067hartley")} activeAnnotationId={currentNoteId}>I remember only ideas and
+      —{" "}What? Where? I can't remember anything. <Annotation annotationId="010067hartley" visited={visitedNotes.has("010067hartley")} annotationSelect={() => {openNote("010067hartley"); addToVisited("010067hartley")}} activeAnnotationId={currentNoteId}>I remember only ideas and
       sensations.</Annotation> Why? What happened in the name of God?
     </p>
     <p>
@@ -395,11 +395,11 @@ const Telemachus = ({openNote, currentNoteId}) => {
       —{" "}Yes? Buck Mulligan said. What did I say? I forget.
     </p>
     <p>
-      —{" "}You said, Stephen answered, <Annotation annotationId="010059pulsesbeating" annotationSelect={() => openNote("010059pulsesbeating")} activeAnnotationId={currentNoteId}><i>O, it's only Dedalus whose mother is
+      —{" "}You said, Stephen answered, <Annotation annotationId="010059pulsesbeating" visited={visitedNotes.has("010059pulsesbeating")} annotationSelect={() => {openNote("010059pulsesbeating"); addToVisited("010059pulsesbeating")}} activeAnnotationId={currentNoteId}><i>O, it's only Dedalus whose mother is
       beastly dead.</i></Annotation>
     </p>
     <p>
-      A <Annotation annotationId="010059pulsesbeating" annotationSelect={() => openNote("010059pulsesbeating")} activeAnnotationId={currentNoteId}>flush</Annotation> which made him seem younger and more engaging rose to Buck
+      A <Annotation annotationId="010059pulsesbeating" visited={visitedNotes.has("010059pulsesbeating")} annotationSelect={() => {openNote("010059pulsesbeating"); addToVisited("010059pulsesbeating")}} activeAnnotationId={currentNoteId}>flush</Annotation> which made him seem younger and more engaging rose to Buck
       Mulligan's cheek.
     </p>
     <span data-edition="ed1939" data-page="8"> </span>
@@ -411,20 +411,20 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <p>
       —{" "}And what is death, he asked, your mother's or yours or my own? You
-      saw only your mother die. I see them pop off every day in <Annotation annotationId="010068themater" annotationSelect={() => openNote("010068themater")} activeAnnotationId={currentNoteId}>the Mater and
+      saw only your mother die. I see them pop off every day in <Annotation annotationId="010068themater" visited={visitedNotes.has("010068themater")} annotationSelect={() => {openNote("010068themater"); addToVisited("010068themater")}} activeAnnotationId={currentNoteId}>the Mater and
       Richmond</Annotation> and cut up into tripes in the dissectingroom. It's a beastly
       thing and nothing else. It simply doesn't matter. You wouldn't kneel
       down to pray for your mother on her deathbed when she asked you. Why?
-      Because you have the cursed <Annotation annotationId="010008jesuit" annotationSelect={() => openNote("010008jesuit")} activeAnnotationId={currentNoteId}>jesuit</Annotation> strain in you, only it's injected the
+      Because you have the cursed <Annotation annotationId="010008jesuit" visited={visitedNotes.has("010008jesuit")} annotationSelect={() => {openNote("010008jesuit"); addToVisited("010008jesuit")}} activeAnnotationId={currentNoteId}>jesuit</Annotation> strain in you, only it's injected the
       wrong way. To me it's all a mockery and beastly. Her cerebral lobes
-      are not functioning. She calls the doctor <Annotation annotationId="010069teazle" annotationSelect={() => openNote("010069teazle")} activeAnnotationId={currentNoteId}>sir Peter Teazle</Annotation> and picks
+      are not functioning. She calls the doctor <Annotation annotationId="010069teazle" visited={visitedNotes.has("010069teazle")} annotationSelect={() => {openNote("010069teazle"); addToVisited("010069teazle")}} activeAnnotationId={currentNoteId}>sir Peter Teazle</Annotation> and picks
       buttercups off the quilt. Humour her till it's over. You crossed her
       last wish in death and yet you sulk with me because I don't whinge like
-      some <Annotation annotationId="010070mutes" annotationSelect={() => openNote("010070mutes")} activeAnnotationId={currentNoteId}>hired mute</Annotation><span data-edition="ed1986" data-page="7"> </span><Annotation annotationId="010070mutes" annotationSelect={() => openNote("010070mutes")} activeAnnotationId={currentNoteId}>from Lalouette's</Annotation>. Absurd! I suppose I did say it. I
+      some <Annotation annotationId="010070mutes" visited={visitedNotes.has("010070mutes")} annotationSelect={() => {openNote("010070mutes"); addToVisited("010070mutes")}} activeAnnotationId={currentNoteId}>hired mute</Annotation><span data-edition="ed1986" data-page="7"> </span><Annotation annotationId="010070mutes" visited={visitedNotes.has("010070mutes")} annotationSelect={() => {openNote("010070mutes"); addToVisited("010070mutes")}} activeAnnotationId={currentNoteId}>from Lalouette's</Annotation>. Absurd! I suppose I did say it. I
       didn't mean to offend the memory of your mother.
     </p>
     <p>
-      He had spoken himself into boldness. Stephen, shielding the <Annotation annotationId="010059pulsesbeating" annotationSelect={() => openNote("010059pulsesbeating")} activeAnnotationId={currentNoteId}>gaping
+      He had spoken himself into boldness. Stephen, shielding the <Annotation annotationId="010059pulsesbeating" visited={visitedNotes.has("010059pulsesbeating")} annotationSelect={() => {openNote("010059pulsesbeating"); addToVisited("010059pulsesbeating")}} activeAnnotationId={currentNoteId}>gaping
       wounds</Annotation> which the words had left in his heart, said very coldly:
     </p>
     <p>
@@ -445,9 +445,9 @@ const Telemachus = ({openNote, currentNoteId}) => {
       —{" "}O, an impossible person! he exclaimed.
     </p>
     <p>
-      He walked off quickly round the parapet. Stephen stood at <Annotation annotationId="010009tower" annotationSelect={() => openNote("010009tower")} activeAnnotationId={currentNoteId}>his post</Annotation>,
+      He walked off quickly round the parapet. Stephen stood at <Annotation annotationId="010009tower" visited={visitedNotes.has("010009tower")} annotationSelect={() => {openNote("010009tower"); addToVisited("010009tower")}} activeAnnotationId={currentNoteId}>his post</Annotation>,
       gazing over the calm sea towards the headland. Sea and headland now grew
-      dim. <span data-edition="ed1932" data-page="8"> </span><Annotation annotationId="010059pulsesbeating" annotationSelect={() => openNote("010059pulsesbeating")} activeAnnotationId={currentNoteId}>Pulses were beating in his eyes, veiling their sight, and he felt
+      dim. <span data-edition="ed1932" data-page="8"> </span><Annotation annotationId="010059pulsesbeating" visited={visitedNotes.has("010059pulsesbeating")} annotationSelect={() => {openNote("010059pulsesbeating"); addToVisited("010059pulsesbeating")}} activeAnnotationId={currentNoteId}>Pulses were beating in his eyes, veiling their sight, and he felt
       the fever of his cheeks.</Annotation>
     </p>
     <p>
@@ -463,8 +463,8 @@ const Telemachus = ({openNote, currentNoteId}) => {
       He turned towards Stephen and said:
     </p>
     <p>
-      —{" "}Look at the sea. What does it care about offences? Chuck <Annotation annotationId="010008jesuit" annotationSelect={() => openNote("010008jesuit")} activeAnnotationId={currentNoteId}>Loyola</Annotation>,
-      Kinch, and come on down. The <Annotation annotationId="010024stranger" annotationSelect={() => openNote("010024stranger")} activeAnnotationId={currentNoteId}>Sassenach</Annotation> wants his morning rashers.
+      —{" "}Look at the sea. What does it care about offences? Chuck <Annotation annotationId="010008jesuit" visited={visitedNotes.has("010008jesuit")} annotationSelect={() => {openNote("010008jesuit"); addToVisited("010008jesuit")}} activeAnnotationId={currentNoteId}>Loyola</Annotation>,
+      Kinch, and come on down. The <Annotation annotationId="010024stranger" visited={visitedNotes.has("010024stranger")} annotationSelect={() => {openNote("010024stranger"); addToVisited("010024stranger")}} activeAnnotationId={currentNoteId}>Sassenach</Annotation> wants his morning rashers.
     </p>
     <p>
       His head halted again for a moment at the top of the staircase, level
@@ -472,30 +472,30 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <p>
       —{" "}Don't mope over it all day, he said. I'm inconsequent. Give up the
-      <Annotation annotationId="010071moodybrooding" annotationSelect={() => openNote("010071moodybrooding")} activeAnnotationId={currentNoteId}>moody brooding</Annotation>.
+      <Annotation annotationId="010071moodybrooding" visited={visitedNotes.has("010071moodybrooding")} annotationSelect={() => {openNote("010071moodybrooding"); addToVisited("010071moodybrooding")}} activeAnnotationId={currentNoteId}>moody brooding</Annotation>.
     </p>
     <p>
       His head vanished but the drone of his descending voice boomed out of
-      the <Annotation annotationId="010002stairhead" annotationSelect={() => openNote("010002stairhead")} activeAnnotationId={currentNoteId}>stairhead</Annotation>:
+      the <Annotation annotationId="010002stairhead" visited={visitedNotes.has("010002stairhead")} annotationSelect={() => {openNote("010002stairhead"); addToVisited("010002stairhead")}} activeAnnotationId={currentNoteId}>stairhead</Annotation>:
     </p>
     <i></i>
-    <p><i><Annotation annotationId="010072bittermystery" annotationSelect={() => openNote("010072bittermystery")} activeAnnotationId={currentNoteId}>And no more turn aside and brood <br/>
+    <p><i><Annotation annotationId="010072bittermystery" visited={visitedNotes.has("010072bittermystery")} annotationSelect={() => {openNote("010072bittermystery"); addToVisited("010072bittermystery")}} activeAnnotationId={currentNoteId}>And no more turn aside and brood <br/>
       Upon love's bitter mystery<br/>
       For Fergus rules the brazen cars.</Annotation></i>
     </p>
     <p>
-      <Annotation annotationId="010072bittermystery" annotationSelect={() => openNote("010072bittermystery")} activeAnnotationId={currentNoteId}>Woodshadows</Annotation> floated silently by through the morning peace from the
+      <Annotation annotationId="010072bittermystery" visited={visitedNotes.has("010072bittermystery")} annotationSelect={() => {openNote("010072bittermystery"); addToVisited("010072bittermystery")}} activeAnnotationId={currentNoteId}>Woodshadows</Annotation> floated silently by through the morning peace from the
       stairhead seaward where he gazed. Inshore and farther out the mirror of
-      water whitened, spurned by lightshod hurrying feet. <Annotation annotationId="010072bittermystery" annotationSelect={() => openNote("010072bittermystery")} activeAnnotationId={currentNoteId}>White breast of
-      the dim sea.</Annotation> The <Annotation annotationId="010073twiningstresses" annotationSelect={() => openNote("010073twiningstresses")} activeAnnotationId={currentNoteId}>twining stresses,</Annotation> two by two. A hand plucking the
+      water whitened, spurned by lightshod hurrying feet. <Annotation annotationId="010072bittermystery" visited={visitedNotes.has("010072bittermystery")} annotationSelect={() => {openNote("010072bittermystery"); addToVisited("010072bittermystery")}} activeAnnotationId={currentNoteId}>White breast of
+      the dim sea.</Annotation> The <Annotation annotationId="010073twiningstresses" visited={visitedNotes.has("010073twiningstresses")} annotationSelect={() => {openNote("010073twiningstresses"); addToVisited("010073twiningstresses")}} activeAnnotationId={currentNoteId}>twining stresses,</Annotation> two by two. A hand plucking the
       harpstrings merging their twining chords. Wavewhite wedded words
       shimmering on the dim tide.
     </p>
     <p>
-      <Annotation annotationId="010074cloudcover" annotationSelect={() => openNote("010074cloudcover")} activeAnnotationId={currentNoteId}>A cloud began to cover the sun slowly,</Annotation> shadowing the bay in
-      deeper green. It lay behind him, <Annotation annotationId="010159bitterwaters" annotationSelect={() => openNote("010159bitterwaters")} activeAnnotationId={currentNoteId}>a bowl of bitter waters. </Annotation><Annotation annotationId="010072bittermystery" annotationSelect={() => openNote("010072bittermystery")} activeAnnotationId={currentNoteId}>Fergus' song</Annotation>:
+      <Annotation annotationId="010074cloudcover" visited={visitedNotes.has("010074cloudcover")} annotationSelect={() => {openNote("010074cloudcover"); addToVisited("010074cloudcover")}} activeAnnotationId={currentNoteId}>A cloud began to cover the sun slowly,</Annotation> shadowing the bay in
+      deeper green. It lay behind him, <Annotation annotationId="010159bitterwaters" visited={visitedNotes.has("010159bitterwaters")} annotationSelect={() => {openNote("010159bitterwaters"); addToVisited("010159bitterwaters")}} activeAnnotationId={currentNoteId}>a bowl of bitter waters. </Annotation><Annotation annotationId="010072bittermystery" visited={visitedNotes.has("010072bittermystery")} annotationSelect={() => {openNote("010072bittermystery"); addToVisited("010072bittermystery")}} activeAnnotationId={currentNoteId}>Fergus' song</Annotation>:
       I sang it alone in the house, holding down the long dark chords. Her
-      door was open: she wanted to hear my music. <Annotation annotationId="010042prayforme" annotationSelect={() => openNote("010042prayforme")} activeAnnotationId={currentNoteId}>Silent with awe and pity
+      door was open: she wanted to hear my music. <Annotation annotationId="010042prayforme" visited={visitedNotes.has("010042prayforme")} annotationSelect={() => {openNote("010042prayforme"); addToVisited("010042prayforme")}} activeAnnotationId={currentNoteId}>Silent with awe and pity
       I went to her bedside.</Annotation> She was crying in her wretched bed. For those
       words, Stephen: love's bitter mystery.
     </p>
@@ -505,12 +505,12 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <span data-edition="ed1922" data-page="9"> </span>
     <p> 
-      Her secrets: old <Annotation annotationId="010075featherfans" annotationSelect={() => openNote("010075featherfans")} activeAnnotationId={currentNoteId}>feather fans</Annotation>, tasselled <Annotation annotationId="010076dancecards" annotationSelect={() => openNote("010076dancecards")} activeAnnotationId={currentNoteId}>dancecards</Annotation>, powdered with musk,
+      Her secrets: old <Annotation annotationId="010075featherfans" visited={visitedNotes.has("010075featherfans")} annotationSelect={() => {openNote("010075featherfans"); addToVisited("010075featherfans")}} activeAnnotationId={currentNoteId}>feather fans</Annotation>, tasselled <Annotation annotationId="010076dancecards" visited={visitedNotes.has("010076dancecards")} annotationSelect={() => {openNote("010076dancecards"); addToVisited("010076dancecards")}} activeAnnotationId={currentNoteId}>dancecards</Annotation>, powdered with musk,
       a gaud of amber beads in her locked drawer. A <span data-edition="ed1961" data-page="9"> </span>birdcage hung in the sunny
-      window of her house when she was a girl. She heard <Annotation annotationId="010077pantomime" annotationSelect={() => openNote("010077pantomime")} activeAnnotationId={currentNoteId}>old Royce sing</Annotation><span data-edition="ed1986" data-page="8"> </span><Annotation annotationId="010077pantomime" annotationSelect={() => openNote("010077pantomime")} activeAnnotationId={currentNoteId}>{" "}in the
+      window of her house when she was a girl. She heard <Annotation annotationId="010077pantomime" visited={visitedNotes.has("010077pantomime")} annotationSelect={() => {openNote("010077pantomime"); addToVisited("010077pantomime")}} activeAnnotationId={currentNoteId}>old Royce sing</Annotation><span data-edition="ed1986" data-page="8"> </span><Annotation annotationId="010077pantomime" visited={visitedNotes.has("010077pantomime")} annotationSelect={() => {openNote("010077pantomime"); addToVisited("010077pantomime")}} activeAnnotationId={currentNoteId}>{" "}in the
       pantomime of Turko the terrible</Annotation> and laughed with others when he sang:
     </p>
-    <p><i><Annotation annotationId="010078invisibility" annotationSelect={() => openNote("010078invisibility")} activeAnnotationId={currentNoteId}>I am the boy <br/>
+    <p><i><Annotation annotationId="010078invisibility" visited={visitedNotes.has("010078invisibility")} annotationSelect={() => {openNote("010078invisibility"); addToVisited("010078invisibility")}} activeAnnotationId={currentNoteId}>I am the boy <br/>
       That can enjoy <br/>
       Invisibility.</Annotation></i>
     </p>
@@ -522,30 +522,30 @@ const Telemachus = ({openNote, currentNoteId}) => {
       <i>And no more turn aside and brood.</i>
     </p>
     <p>
-      Folded away in the <Annotation annotationId="010079akasicrecords" annotationSelect={() => openNote("010079akasicrecords")} activeAnnotationId={currentNoteId}>memory of nature</Annotation> with her toys. Memories beset his
+      Folded away in the <Annotation annotationId="010079akasicrecords" visited={visitedNotes.has("010079akasicrecords")} annotationSelect={() => {openNote("010079akasicrecords"); addToVisited("010079akasicrecords")}} activeAnnotationId={currentNoteId}>memory of nature</Annotation> with her toys. Memories beset his
       brooding brain. Her glass of water from the kitchen tap when she had
       approached the sacrament. A cored apple, filled with brown sugar,
       roasting for her at the hob on a dark autumn evening. Her shapely
-      fingernails reddened by the <Annotation annotationId="010080squashedlice" annotationSelect={() => openNote("010080squashedlice")} activeAnnotationId={currentNoteId}>blood of squashed lice</Annotation> from the children's
+      fingernails reddened by the <Annotation annotationId="010080squashedlice" visited={visitedNotes.has("010080squashedlice")} annotationSelect={() => {openNote("010080squashedlice"); addToVisited("010080squashedlice")}} activeAnnotationId={currentNoteId}>blood of squashed lice</Annotation> from the children's
       shirts.
     </p>
     <p>
-      <Annotation annotationId="010045waxandrosewood" annotationSelect={() => openNote("010045waxandrosewood")} activeAnnotationId={currentNoteId}>In a dream, silently, she had come to him</Annotation>, her wasted body within its
+      <Annotation annotationId="010045waxandrosewood" visited={visitedNotes.has("010045waxandrosewood")} annotationSelect={() => {openNote("010045waxandrosewood"); addToVisited("010045waxandrosewood")}} activeAnnotationId={currentNoteId}>In a dream, silently, she had come to him</Annotation>, her wasted body within its
       loose graveclothes giving off an odour of wax and rosewood, her breath,
       bent over him with mute secret words, a faint odour of wetted ashes.
     </p>
     <p>
-      Her glazing eyes, staring out of death, to shake and bend my soul. <Annotation annotationId="010081staringoutofdeath" annotationSelect={() => openNote("010081staringoutofdeath")} activeAnnotationId={currentNoteId}>On me
+      Her glazing eyes, staring out of death, to shake and bend my soul. <Annotation annotationId="010081staringoutofdeath" visited={visitedNotes.has("010081staringoutofdeath")} annotationSelect={() => {openNote("010081staringoutofdeath"); addToVisited("010081staringoutofdeath")}} activeAnnotationId={currentNoteId}>On me
       alone.</Annotation> The ghostcandle to light her agony. Ghostly light on the tortured
       face. Her hoarse loud breath rattling in horror, while all prayed on
-      their knees. Her eyes on me to strike me down. <Annotation annotationId="010082liliatarutilantium" annotationSelect={() => openNote("010082liliatarutilantium")} activeAnnotationId={currentNoteId}><i>Liliata rutilantium te
+      their knees. Her eyes on me to strike me down. <Annotation annotationId="010082liliatarutilantium" visited={visitedNotes.has("010082liliatarutilantium")} annotationSelect={() => {openNote("010082liliatarutilantium"); addToVisited("010082liliatarutilantium")}} activeAnnotationId={currentNoteId}><i>Liliata rutilantium te
       confessorum turma circumdet: iubilantium te virginum chorus excipiat.</i></Annotation>
     </p>
     <p>
-      <Annotation annotationId="010062ghoul" annotationSelect={() => openNote("010062ghoul")} activeAnnotationId={currentNoteId}>Ghoul! Chewer of corpses!</Annotation>
+      <Annotation annotationId="010062ghoul" visited={visitedNotes.has("010062ghoul")} annotationSelect={() => {openNote("010062ghoul"); addToVisited("010062ghoul")}} activeAnnotationId={currentNoteId}>Ghoul! Chewer of corpses!</Annotation>
     </p>
     <p>
-      <Annotation annotationId="010083nomother" annotationSelect={() => openNote("010083nomother")} activeAnnotationId={currentNoteId}>No, mother.</Annotation> Let me be and let me live.
+      <Annotation annotationId="010083nomother" visited={visitedNotes.has("010083nomother")} annotationSelect={() => {openNote("010083nomother"); addToVisited("010083nomother")}} activeAnnotationId={currentNoteId}>No, mother.</Annotation> Let me be and let me live.
     </p>
     <p>
       —{" "}Kinch ahoy!
@@ -553,10 +553,10 @@ const Telemachus = ({openNote, currentNoteId}) => {
     <p>
       Buck Mulligan's voice sang from within the tower. It came nearer up the
       staircase, calling again. Stephen, still trembling at his soul's cry,
-      heard <Annotation annotationId="010074cloudcover" annotationSelect={() => openNote("010074cloudcover")} activeAnnotationId={currentNoteId}>warm running sunlight</Annotation> and in the air behind him friendly words.
+      heard <Annotation annotationId="010074cloudcover" visited={visitedNotes.has("010074cloudcover")} annotationSelect={() => {openNote("010074cloudcover"); addToVisited("010074cloudcover")}} activeAnnotationId={currentNoteId}>warm running sunlight</Annotation> and in the air behind him friendly words.
     </p>
     <p>
-      —{" "}Dedalus, come down, like a good <Annotation annotationId="010128bowsy" annotationSelect={() => openNote("010128bowsy")} activeAnnotationId={currentNoteId}>mosey</Annotation>. Breakfast is ready. Haines is
+      —{" "}Dedalus, come down, like a good <Annotation annotationId="010128bowsy" visited={visitedNotes.has("010128bowsy")} annotationSelect={() => {openNote("010128bowsy"); addToVisited("010128bowsy")}} activeAnnotationId={currentNoteId}>mosey</Annotation>. Breakfast is ready. Haines is
       apologising for waking us last night. It's all right.
     </p>
     <p>
@@ -572,7 +572,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <p>
       —{" "}I told him your symbol of Irish art. He says it's very clever. Touch
-      him for a quid, will you? A <Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}>guinea</Annotation>, I mean.
+      him for a quid, will you? A <Annotation annotationId="010019money" visited={visitedNotes.has("010019money")} annotationSelect={() => {openNote("010019money"); addToVisited("010019money")}} activeAnnotationId={currentNoteId}>guinea</Annotation>, I mean.
     </p>
     <span data-edition="ed1961" data-page="10"> </span>
     <p>
@@ -585,8 +585,8 @@ const Telemachus = ({openNote, currentNoteId}) => {
       —{" "}If you want it, Stephen said.
     </p>
     <p>
-      —{" "}Four shining <Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}>sovereigns</Annotation>, Buck Mulligan cried with delight. We'll
-      have a glorious drunk to astonish the druidy <Annotation annotationId="010018druids" annotationSelect={() => openNote("010018druids")} activeAnnotationId={currentNoteId}>druids</Annotation>. Four omnipotent
+      —{" "}Four shining <Annotation annotationId="010019money" visited={visitedNotes.has("010019money")} annotationSelect={() => {openNote("010019money"); addToVisited("010019money")}} activeAnnotationId={currentNoteId}>sovereigns</Annotation>, Buck Mulligan cried with delight. We'll
+      have a glorious drunk to astonish the druidy <Annotation annotationId="010018druids" visited={visitedNotes.has("010018druids")} annotationSelect={() => {openNote("010018druids"); addToVisited("010018druids")}} activeAnnotationId={currentNoteId}>druids</Annotation>. Four omnipotent
       sovereigns.
     </p>
     <p>
@@ -596,7 +596,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
     <span data-edition="ed1939" data-page="10"> </span>
     <span data-edition="ed1932" data-page="10"> </span>
     <span data-edition="ed1986" data-page="9"> </span>
-    <p><Annotation annotationId="010029coronation" annotationSelect={() => openNote("010029coronation")} activeAnnotationId={currentNoteId}><i>O, won't we have a merry time, <br/>
+    <p><Annotation annotationId="010029coronation" visited={visitedNotes.has("010029coronation")} annotationSelect={() => {openNote("010029coronation"); addToVisited("010029coronation")}} activeAnnotationId={currentNoteId}><i>O, won't we have a merry time, <br/>
       Drinking whisky, beer and wine! <br/>
       On coronation, <br/>
       Coronation day! <br/>
@@ -604,17 +604,17 @@ const Telemachus = ({openNote, currentNoteId}) => {
       On coronation day! <br/></i></Annotation>
     </p>
     <p>
-      <Annotation annotationId="010074cloudcover" annotationSelect={() => openNote("010074cloudcover")} activeAnnotationId={currentNoteId}>Warm sunshine merrying over the sea</Annotation>. The nickel shavingbowl shone,
+      <Annotation annotationId="010074cloudcover" visited={visitedNotes.has("010074cloudcover")} annotationSelect={() => {openNote("010074cloudcover"); addToVisited("010074cloudcover")}} activeAnnotationId={currentNoteId}>Warm sunshine merrying over the sea</Annotation>. The nickel shavingbowl shone,
       forgotten, on the parapet. Why should I bring it down? Or leave it there
       all day, forgotten friendship?
     </p>
     <p>
       He went over to it, held it in his hands awhile, feeling its coolness,
-      smelling the clammy slaver of the lather in which the brush was stuck. So I carried the boat of incense then at <Annotation annotationId="010157clongowes" annotationSelect={() => openNote("010157clongowes")} activeAnnotationId={currentNoteId}>Clongowes</Annotation>. I am another now and
-      yet the same. A servant too. <Annotation annotationId="010084server" annotationSelect={() => openNote("010084server")} activeAnnotationId={currentNoteId}>A server of a servant.</Annotation>
+      smelling the clammy slaver of the lather in which the brush was stuck. So I carried the boat of incense then at <Annotation annotationId="010157clongowes" visited={visitedNotes.has("010157clongowes")} annotationSelect={() => {openNote("010157clongowes"); addToVisited("010157clongowes")}} activeAnnotationId={currentNoteId}>Clongowes</Annotation>. I am another now and
+      yet the same. A servant too. <Annotation annotationId="010084server" visited={visitedNotes.has("010084server")} annotationSelect={() => {openNote("010084server"); addToVisited("010084server")}} activeAnnotationId={currentNoteId}>A server of a servant.</Annotation>
     </p>
     <p>
-      <Annotation annotationId="010085towerlivingroom" annotationSelect={() => openNote("010085towerlivingroom")} activeAnnotationId={currentNoteId}>In the gloomy domed livingroom of the tower Buck Mulligan's gowned form
+      <Annotation annotationId="010085towerlivingroom" visited={visitedNotes.has("010085towerlivingroom")} annotationSelect={() => {openNote("010085towerlivingroom"); addToVisited("010085towerlivingroom")}} activeAnnotationId={currentNoteId}>In the gloomy domed livingroom of the tower Buck Mulligan's gowned form
       moved briskly about the hearth to and fro, hiding and revealing its
       yellow glow. Two shafts of soft daylight fell across the flagged floor
       from the high barbacans</Annotation>: and at the meeting of their rays a cloud of
@@ -624,15 +624,15 @@ const Telemachus = ({openNote, currentNoteId}) => {
       —{" "}We'll be choked, Buck Mulligan said. Haines, open that door, will you?
     </p>
     <p>
-      Stephen laid the shavingbowl on the locker. A tall figure <Annotation annotationId="010085towerlivingroom" annotationSelect={() => openNote("010085towerlivingroom")} activeAnnotationId={currentNoteId}>rose from the
+      Stephen laid the shavingbowl on the locker. A tall figure <Annotation annotationId="010085towerlivingroom" visited={visitedNotes.has("010085towerlivingroom")} annotationSelect={() => {openNote("010085towerlivingroom"); addToVisited("010085towerlivingroom")}} activeAnnotationId={currentNoteId}>rose from the
       hammock where it had been sitting, went to the doorway and pulled open
       the inner doors.</Annotation>
     </p>
     <p>
-      —{" "}Have you <Annotation annotationId="010146hugekey" annotationSelect={() => openNote("010146hugekey")} activeAnnotationId={currentNoteId}>the key</Annotation>? a voice asked.
+      —{" "}Have you <Annotation annotationId="010146hugekey" visited={visitedNotes.has("010146hugekey")} annotationSelect={() => {openNote("010146hugekey"); addToVisited("010146hugekey")}} activeAnnotationId={currentNoteId}>the key</Annotation>? a voice asked.
     </p>
     <p>
-      —{" "}Dedalus has it, Buck Mulligan said. <Annotation annotationId="010128bowsy" annotationSelect={() => openNote("010128bowsy")} activeAnnotationId={currentNoteId}>Janey Mack</Annotation>, I'm choked!
+      —{" "}Dedalus has it, Buck Mulligan said. <Annotation annotationId="010128bowsy" visited={visitedNotes.has("010128bowsy")} annotationSelect={() => {openNote("010128bowsy"); addToVisited("010128bowsy")}} activeAnnotationId={currentNoteId}>Janey Mack</Annotation>, I'm choked!
     </p>
     <span data-edition="ed1922" data-page="11"> </span>
     <p>
@@ -653,10 +653,10 @@ const Telemachus = ({openNote, currentNoteId}) => {
       them down heavily and sighed with relief.
     </p>
     <p>
-      —{" "}I'm melting, he said, <Annotation annotationId="010053candledildo" annotationSelect={() => openNote("010053candledildo")} activeAnnotationId={currentNoteId}>as the candle remarked when... </Annotation>But, hush! Not a
+      —{" "}I'm melting, he said, <Annotation annotationId="010053candledildo" visited={visitedNotes.has("010053candledildo")} annotationSelect={() => {openNote("010053candledildo"); addToVisited("010053candledildo")}} activeAnnotationId={currentNoteId}>as the candle remarked when... </Annotation>But, hush! Not a
       word more on that subject! Kinch, wake up! Bread, butter, honey. Haines,
       come in. The grub is ready. Bless us, O Lord, and these thy gifts.
-      Where's the sugar? O, <Annotation annotationId="010128bowsy" annotationSelect={() => openNote("010128bowsy")} activeAnnotationId={currentNoteId}>jay</Annotation>, there's no milk.
+      Where's the sugar? O, <Annotation annotationId="010128bowsy" visited={visitedNotes.has("010128bowsy")} annotationSelect={() => {openNote("010128bowsy"); addToVisited("010128bowsy")}} activeAnnotationId={currentNoteId}>jay</Annotation>, there's no milk.
     </p>
     <p>
       Stephen fetched the loaf and the pot of honey and the buttercooler <span data-edition="ed1932" data-page="11">{" "}</span>from
@@ -687,7 +687,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
       and slapped it out on three plates, saying:
     </p>
     <p>
-      —{" "}<Annotation annotationId="010057crossed" annotationSelect={() => openNote("010057crossed")} activeAnnotationId={currentNoteId}><i>In nomine Patris et Filii et Spiritus Sancti.</i></Annotation>
+      —{" "}<Annotation annotationId="010057crossed" visited={visitedNotes.has("010057crossed")} annotationSelect={() => {openNote("010057crossed"); addToVisited("010057crossed")}} activeAnnotationId={currentNoteId}><i>In nomine Patris et Filii et Spiritus Sancti.</i></Annotation>
     </p>
     <span data-edition="ed1939" data-page="11"> </span>
     <p>
@@ -702,7 +702,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
       wheedling voice:
     </p>
     <p>
-      —{" "}When I makes tea I makes tea, as <Annotation annotationId="010134mothergrogan" annotationSelect={() => openNote("010134mothergrogan")} activeAnnotationId={currentNoteId}>old mother Grogan</Annotation> said. And when I
+      —{" "}When I makes tea I makes tea, as <Annotation annotationId="010134mothergrogan" visited={visitedNotes.has("010134mothergrogan")} annotationSelect={() => {openNote("010134mothergrogan"); addToVisited("010134mothergrogan")}} activeAnnotationId={currentNoteId}>old mother Grogan</Annotation> said. And when I
       makes water I makes water.
     </p>
     <p>
@@ -717,12 +717,12 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <span data-edition="ed1922" data-page="12"> </span>
     <p>
-      He lunged towards his messmates in turn a thick slice of bread, <Annotation annotationId="010009tower" annotationSelect={() => openNote("010009tower")} activeAnnotationId={currentNoteId}>impaled
+      He lunged towards his messmates in turn a thick slice of bread, <Annotation annotationId="010009tower" visited={visitedNotes.has("010009tower")} annotationSelect={() => {openNote("010009tower"); addToVisited("010009tower")}} activeAnnotationId={currentNoteId}>impaled
       on his knife.</Annotation>
     </p>
     <p>
-      —{" "}<Annotation annotationId="010064dundrum" annotationSelect={() => openNote("010064dundrum")} activeAnnotationId={currentNoteId}>That's folk, he said very earnestly, for your book, Haines. Five
-      lines of text and ten pages of notes about the folk and</Annotation><span data-edition="ed1961" data-page="12"> </span><Annotation annotationId="010064dundrum" annotationSelect={() => openNote("010064dundrum")} activeAnnotationId={currentNoteId}> the fishgods of
+      —{" "}<Annotation annotationId="010064dundrum" visited={visitedNotes.has("010064dundrum")} annotationSelect={() => {openNote("010064dundrum"); addToVisited("010064dundrum")}} activeAnnotationId={currentNoteId}>That's folk, he said very earnestly, for your book, Haines. Five
+      lines of text and ten pages of notes about the folk and</Annotation><span data-edition="ed1961" data-page="12"> </span><Annotation annotationId="010064dundrum" visited={visitedNotes.has("010064dundrum")} annotationSelect={() => {openNote("010064dundrum"); addToVisited("010064dundrum")}} activeAnnotationId={currentNoteId}> the fishgods of
       Dundrum. Printed by the weird sisters in the year of the big wind.</Annotation>
     </p>
     <p>
@@ -731,7 +731,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <p>
       —{" "}Can you recall, brother, is mother Grogan's tea and water pot spoken
-      of <Annotation annotationId="010064dundrum" annotationSelect={() => openNote("010064dundrum")} activeAnnotationId={currentNoteId}>in the Mabinogion or is it in the Upanishads?</Annotation> 
+      of <Annotation annotationId="010064dundrum" visited={visitedNotes.has("010064dundrum")} annotationSelect={() => {openNote("010064dundrum"); addToVisited("010064dundrum")}} activeAnnotationId={currentNoteId}>in the Mabinogion or is it in the Upanishads?</Annotation> 
     </p>
     <p>
       —{" "}I doubt it, said Stephen gravely.
@@ -741,7 +741,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <p>
       —{" "}I fancy, Stephen said as he ate, it did not exist in or out of the
-      Mabinogion. Mother Grogan was, one imagines, a kinswoman of <Annotation annotationId="010086maryann" annotationSelect={() => openNote("010086maryann")} activeAnnotationId={currentNoteId}>Mary Ann.</Annotation>
+      Mabinogion. Mother Grogan was, one imagines, a kinswoman of <Annotation annotationId="010086maryann" visited={visitedNotes.has("010086maryann")} annotationSelect={() => {openNote("010086maryann"); addToVisited("010086maryann")}} activeAnnotationId={currentNoteId}>Mary Ann.</Annotation>
     </p>
     <p>
       Buck Mulligan's face smiled with delight.
@@ -754,7 +754,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
       Then, suddenly overclouding all his features, he growled in a hoarsened
       rasping voice as he hewed again vigorously at the loaf:
     </p>
-    <p><i>—{" "}{" "}<Annotation annotationId="010086maryann" annotationSelect={() => openNote("010086maryann")} activeAnnotationId={currentNoteId}>For old Mary Ann <br/>
+    <p><i>—{" "}{" "}<Annotation annotationId="010086maryann" visited={visitedNotes.has("010086maryann")} annotationSelect={() => {openNote("010086maryann"); addToVisited("010086maryann")}} activeAnnotationId={currentNoteId}>For old Mary Ann <br/>
       She doesn't care a damn. <br/>
       But, hising up her petticoats... <br/></Annotation></i>
     </p>
@@ -785,7 +785,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <p>
       —{" "}The islanders, Mulligan said to Haines casually, speak frequently of
-      the <Annotation annotationId="010087prepuces" annotationSelect={() => openNote("010087prepuces")} activeAnnotationId={currentNoteId}>collector of prepuces.</Annotation>
+      the <Annotation annotationId="010087prepuces" visited={visitedNotes.has("010087prepuces")} annotationSelect={() => {openNote("010087prepuces"); addToVisited("010087prepuces")}} activeAnnotationId={currentNoteId}>collector of prepuces.</Annotation>
     </p>
     <p>
       —{" "}How much, sir? asked the old woman.
@@ -796,15 +796,15 @@ const Telemachus = ({openNote, currentNoteId}) => {
     <p>
       He watched her pour into the measure and thence into the jug rich white
       <span data-edition="ed1922" data-page="13"> </span>
-      milk, <Annotation annotationId="040058shegoatsudder" annotationSelect={() => openNote("040058shegoatsudder")} activeAnnotationId={currentNoteId}>not hers. Old shrunken paps.</Annotation> She poured again a measureful and
-      a <Annotation annotationId="010108tilly" annotationSelect={() => openNote("010108tilly")} activeAnnotationId={currentNoteId}>tilly</Annotation>. Old and 
+      milk, <Annotation annotationId="040058shegoatsudder" visited={visitedNotes.has("040058shegoatsudder")} annotationSelect={() => {openNote("040058shegoatsudder"); addToVisited("040058shegoatsudder")}} activeAnnotationId={currentNoteId}>not hers. Old shrunken paps.</Annotation> She poured again a measureful and
+      a <Annotation annotationId="010108tilly" visited={visitedNotes.has("010108tilly")} annotationSelect={() => {openNote("010108tilly"); addToVisited("010108tilly")}} activeAnnotationId={currentNoteId}>tilly</Annotation>. Old and 
       <span data-edition="ed1939" data-page="12"> </span>
-      secret she had entered from a morning world, <Annotation annotationId="010089maybemessenger" annotationSelect={() => openNote("010089maybemessenger")} activeAnnotationId={currentNoteId}>maybe
+      secret she had entered from a morning world, <Annotation annotationId="010089maybemessenger" visited={visitedNotes.has("010089maybemessenger")} annotationSelect={() => {openNote("010089maybemessenger"); addToVisited("010089maybemessenger")}} activeAnnotationId={currentNoteId}>maybe
       a messenger.</Annotation> She praised the goodness of the milk, pouring it out.
       Crouching by a patient cow at daybreak in the lush field, a witch on her
       toadstool, her <span data-edition="ed1961" data-page="13"> </span>wrinkled fingers quick at the squirting dugs. They lowed
-      about her whom they knew, dewsilky cattle. <Annotation annotationId="010090shanvanvocht" annotationSelect={() => openNote("010090shanvanvocht")} activeAnnotationId={currentNoteId}>Silk of the kine and poor old
-      woman</Annotation>, names given her in old times. A wandering crone, <Annotation annotationId="010089maybemessenger" annotationSelect={() => openNote("010089maybemessenger")} activeAnnotationId={currentNoteId}>lowly form of
+      about her whom they knew, dewsilky cattle. <Annotation annotationId="010090shanvanvocht" visited={visitedNotes.has("010090shanvanvocht")} annotationSelect={() => {openNote("010090shanvanvocht"); addToVisited("010090shanvanvocht")}} activeAnnotationId={currentNoteId}>Silk of the kine and poor old
+      woman</Annotation>, names given her in old times. A wandering crone, <Annotation annotationId="010089maybemessenger" visited={visitedNotes.has("010089maybemessenger")} annotationSelect={() => {openNote("010089maybemessenger"); addToVisited("010089maybemessenger")}} activeAnnotationId={currentNoteId}>lowly form of
       an immortal</Annotation> serving her conqueror and her gay betrayer, their common
       cuckquean, a messenger from the secret morning. To serve or to upbraid,
       whether he could not tell: but scorned to beg her favour.
@@ -821,7 +821,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
     <p>
       —{" "}If we could only live on good food like that, he said to her somewhat
       loudly, we wouldn't have the country full of rotten teeth and rotten
-      guts. <Annotation annotationId="060036bogs" annotationSelect={() => openNote("060036bogs")} activeAnnotationId={currentNoteId}>Living in a bogswamp</Annotation>, eating cheap food and the streets paved with
+      guts. <Annotation annotationId="060036bogs" visited={visitedNotes.has("060036bogs")} annotationSelect={() => {openNote("060036bogs"); addToVisited("060036bogs")}} activeAnnotationId={currentNoteId}>Living in a bogswamp</Annotation>, eating cheap food and the streets paved with
       dust, horsedung and consumptives' spits.
     </p>
     <p>
@@ -834,8 +834,8 @@ const Telemachus = ({openNote, currentNoteId}) => {
     <p>
       Stephen listened in scornful silence. She bows her old head to a voice
       that speaks to her loudly, her bonesetter, her medicineman: me she
-      slights. To the voice that will <Annotation annotationId="010155shriveandoil" annotationSelect={() => openNote("010155shriveandoil")} activeAnnotationId={currentNoteId}>shrive and oil for the grave</Annotation> all there
-      is of her but her <Annotation annotationId="010148uncleanloins" annotationSelect={() => openNote("010148uncleanloins")} activeAnnotationId={currentNoteId}>woman's unclean loins</Annotation>, of man's flesh made not in
+      slights. To the voice that will <Annotation annotationId="010155shriveandoil" visited={visitedNotes.has("010155shriveandoil")} annotationSelect={() => {openNote("010155shriveandoil"); addToVisited("010155shriveandoil")}} activeAnnotationId={currentNoteId}>shrive and oil for the grave</Annotation> all there
+      is of her but her <Annotation annotationId="010148uncleanloins" visited={visitedNotes.has("010148uncleanloins")} annotationSelect={() => {openNote("010148uncleanloins"); addToVisited("010148uncleanloins")}} activeAnnotationId={currentNoteId}>woman's unclean loins</Annotation>, of man's flesh made not in
       God's likeness, the serpent's prey. And to the loud voice that now bids
       her be silent with wondering unsteady eyes.
     </p>
@@ -849,10 +849,10 @@ const Telemachus = ({openNote, currentNoteId}) => {
       Haines spoke to her again a longer speech, confidently.
     </p>
     <p>
-      <Annotation annotationId="010091speakirish" annotationSelect={() => openNote("010091speakirish")} activeAnnotationId={currentNoteId}>—{" "}Irish, Buck Mulligan said. Is there Gaelic on you?</Annotation>
+      <Annotation annotationId="010091speakirish" visited={visitedNotes.has("010091speakirish")} annotationSelect={() => {openNote("010091speakirish"); addToVisited("010091speakirish")}} activeAnnotationId={currentNoteId}>—{" "}Irish, Buck Mulligan said. Is there Gaelic on you?</Annotation>
     </p>
     <p>
-      <Annotation annotationId="010091speakirish" annotationSelect={() => openNote("010091speakirish")} activeAnnotationId={currentNoteId}>—{" "}I thought it was Irish, she said, by the sound of it. Are you from the
+      <Annotation annotationId="010091speakirish" visited={visitedNotes.has("010091speakirish")} annotationSelect={() => {openNote("010091speakirish"); addToVisited("010091speakirish")}} activeAnnotationId={currentNoteId}>—{" "}I thought it was Irish, she said, by the sound of it. Are you from the
       west, sir?</Annotation>
     </p>
     <p>
@@ -887,7 +887,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
       Stephen filled again the three cups.
     </p>
     <p>
-      —{" "}Bill, sir? she said, halting. Well, <Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}>it's seven mornings a pint at
+      —{" "}Bill, sir? she said, halting. Well, <Annotation annotationId="010019money" visited={visitedNotes.has("010019money")} annotationSelect={() => {openNote("010019money"); addToVisited("010019money")}} activeAnnotationId={currentNoteId}>it's seven mornings a pint at
       twopence is seven twos is a shilling and twopence over and these three
       mornings a quart at fourpence is three quarts is a shilling and one and two is two and two</Annotation>, sir.
     </p>
@@ -901,7 +901,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <p>
       Stephen filled a third cup, a spoonful of tea colouring faintly the
-      thick rich milk. Buck Mulligan brought up a <Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}>florin</Annotation>, twisted it round in
+      thick rich milk. Buck Mulligan brought up a <Annotation annotationId="010019money" visited={visitedNotes.has("010019money")} annotationSelect={() => {openNote("010019money"); addToVisited("010019money")}} activeAnnotationId={currentNoteId}>florin</Annotation>, twisted it round in
       his fingers and cried:
     </p>
     <p>
@@ -912,7 +912,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
       He passed it along the table towards the old woman, saying:
     </p>
     <p>
-      —{" "}<Annotation annotationId="010092oblation" annotationSelect={() => openNote("010092oblation")} activeAnnotationId={currentNoteId}>Ask nothing more of me, sweet. All I can give you I give.</Annotation>
+      —{" "}<Annotation annotationId="010092oblation" visited={visitedNotes.has("010092oblation")} annotationSelect={() => {openNote("010092oblation"); addToVisited("010092oblation")}} activeAnnotationId={currentNoteId}>Ask nothing more of me, sweet. All I can give you I give.</Annotation>
     </p>
     <p>
       Stephen laid the coin in her uneager hand.
@@ -922,13 +922,13 @@ const Telemachus = ({openNote, currentNoteId}) => {
       —{" "}We'll owe twopence, he said.
     </p>
     <p>
-      —{" "}<Annotation annotationId="010143timeenough" annotationSelect={() => openNote("010143timeenough")} activeAnnotationId={currentNoteId}>Time enough</Annotation>, sir, she said, taking the coin. Time enough. Good
+      —{" "}<Annotation annotationId="010143timeenough" visited={visitedNotes.has("010143timeenough")} annotationSelect={() => {openNote("010143timeenough"); addToVisited("010143timeenough")}} activeAnnotationId={currentNoteId}>Time enough</Annotation>, sir, she said, taking the coin. Time enough. Good
       morning, sir.
     </p>
     <p>
       She curtseyed and went out, followed by Buck Mulligan's tender chant:
     </p>
-    <p><i>—{" "}{" "}<Annotation annotationId="010092oblation" annotationSelect={() => openNote("010092oblation")} activeAnnotationId={currentNoteId}>Heart of my heart, were it more, <br/>
+    <p><i>—{" "}{" "}<Annotation annotationId="010092oblation" visited={visitedNotes.has("010092oblation")} annotationSelect={() => {openNote("010092oblation"); addToVisited("010092oblation")}} activeAnnotationId={currentNoteId}>Heart of my heart, were it more, <br/>
       More would be laid at your feet.</Annotation></i>
     </p>
     <p>
@@ -936,11 +936,11 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <p>
       —{" "}Seriously, Dedalus. I'm stony. Hurry out to your school kip and bring
-      us back some money. Today the bards must drink and junket. <Annotation annotationId="010093doduty" annotationSelect={() => openNote("010093doduty")} activeAnnotationId={currentNoteId}>Ireland
+      us back some money. Today the bards must drink and junket. <Annotation annotationId="010093doduty" visited={visitedNotes.has("010093doduty")} annotationSelect={() => {openNote("010093doduty"); addToVisited("010093doduty")}} activeAnnotationId={currentNoteId}>Ireland
       expects that every man this day will do his duty.</Annotation>
     </p>
     <p>
-      —{" "}That reminds me, Haines said, rising, that I have to visit your <Annotation annotationId="010144nationallibrary" annotationSelect={() => openNote("010144nationallibrary")} activeAnnotationId={currentNoteId}>national library</Annotation> today.
+      —{" "}That reminds me, Haines said, rising, that I have to visit your <Annotation annotationId="010144nationallibrary" visited={visitedNotes.has("010144nationallibrary")} annotationSelect={() => {openNote("010144nationallibrary"); addToVisited("010144nationallibrary")}} activeAnnotationId={currentNoteId}>national library</Annotation> today.
     </p>
     <p>
       —{" "}Our swim first, Buck Mulligan said.
@@ -955,12 +955,12 @@ const Telemachus = ({openNote, currentNoteId}) => {
       Then he said to Haines:
     </p>
     <p>—{" "}The unclean bard makes a point of 
-      <Annotation annotationId="010133monthlywash" annotationSelect={() => openNote("010133monthlywash")} activeAnnotationId={currentNoteId}>washing once a month</Annotation>.
+      <Annotation annotationId="010133monthlywash" visited={visitedNotes.has("010133monthlywash")} annotationSelect={() => {openNote("010133monthlywash"); addToVisited("010133monthlywash")}} activeAnnotationId={currentNoteId}>washing once a month</Annotation>.
     </p>
     <span data-edition="ed1922" data-page="15"> </span>
     <span data-edition="ed1961" data-page="15"> </span>
     <p>
-      —{" "}<Annotation annotationId="010116gulfstream" annotationSelect={() => openNote("010116gulfstream")} activeAnnotationId={currentNoteId}>All Ireland is washed by the gulfstream</Annotation>, Stephen said as he let honey
+      —{" "}<Annotation annotationId="010116gulfstream" visited={visitedNotes.has("010116gulfstream")} annotationSelect={() => {openNote("010116gulfstream"); addToVisited("010116gulfstream")}} activeAnnotationId={currentNoteId}>All Ireland is washed by the gulfstream</Annotation>, Stephen said as he let honey
       trickle over a slice of the loaf.
     </p>
     <span data-edition="ed1986" data-page="13"> </span>
@@ -969,10 +969,10 @@ const Telemachus = ({openNote, currentNoteId}) => {
       loose collar of his tennis shirt spoke:
     </p>
     <p>
-      —{" "}<Annotation annotationId="020006chapbook" annotationSelect={() => openNote("020006chapbook")} activeAnnotationId={currentNoteId}>I intend to make a collection of your sayings</Annotation> if you will let me.
+      —{" "}<Annotation annotationId="020006chapbook" visited={visitedNotes.has("020006chapbook")} annotationSelect={() => {openNote("020006chapbook"); addToVisited("020006chapbook")}} activeAnnotationId={currentNoteId}>I intend to make a collection of your sayings</Annotation> if you will let me.
     </p>
     <p>
-      Speaking to me. <Annotation annotationId="010094agenbite" annotationSelect={() => openNote("010094agenbite")} activeAnnotationId={currentNoteId}>They wash and tub and scrub. Agenbite of inwit.
+      Speaking to me. <Annotation annotationId="010094agenbite" visited={visitedNotes.has("010094agenbite")} annotationSelect={() => {openNote("010094agenbite"); addToVisited("010094agenbite")}} activeAnnotationId={currentNoteId}>They wash and tub and scrub. Agenbite of inwit.
       Conscience. Yet here's a spot.</Annotation>
     </p>
     <p>
@@ -984,7 +984,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
       of tone:
     </p>
     <p>
-      —{" "}Wait till you <Annotation annotationId="010139hearhim" annotationSelect={() => openNote("010139hearhim")} activeAnnotationId={currentNoteId}>hear him on Hamlet</Annotation>, Haines.
+      —{" "}Wait till you <Annotation annotationId="010139hearhim" visited={visitedNotes.has("010139hearhim")} annotationSelect={() => {openNote("010139hearhim"); addToVisited("010139hearhim")}} activeAnnotationId={currentNoteId}>hear him on Hamlet</Annotation>, Haines.
     </p>
     <p>
       —{" "}Well, I mean it, Haines said, still speaking to Stephen. I was just
@@ -994,7 +994,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
       —{" "}Would I make money by it? Stephen asked.
     </p>
     <p>
-      Haines laughed and, as he took his soft grey hat from the <Annotation annotationId="010085towerlivingroom" annotationSelect={() => openNote("010085towerlivingroom")} activeAnnotationId={currentNoteId}>holdfast of
+      Haines laughed and, as he took his soft grey hat from the <Annotation annotationId="010085towerlivingroom" visited={visitedNotes.has("010085towerlivingroom")} annotationSelect={() => {openNote("010085towerlivingroom"); addToVisited("010085towerlivingroom")}} activeAnnotationId={currentNoteId}>holdfast of
       the hammock</Annotation>, said:
     </p>
     <p>
@@ -1005,7 +1005,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
       said with coarse vigour:
     </p>
     <p>
-      —{" "}You put <Annotation annotationId="010020ancientgreek" annotationSelect={() => openNote("010020ancientgreek")} activeAnnotationId={currentNoteId}>your hoof</Annotation> in it now. What did you say that for?
+      —{" "}You put <Annotation annotationId="010020ancientgreek" visited={visitedNotes.has("010020ancientgreek")} annotationSelect={() => {openNote("010020ancientgreek"); addToVisited("010020ancientgreek")}} activeAnnotationId={currentNoteId}>your hoof</Annotation> in it now. What did you say that for?
     </p>
     <span data-edition="ed1932" data-page="15"> </span>
     <p>
@@ -1031,7 +1031,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <p>
       —{" "}To tell you the God's truth I think you're right. Damn all else they
-      are good for. <Annotation annotationId="010137usurper" annotationSelect={() => openNote("010137usurper")} activeAnnotationId={currentNoteId}>Why don't you play them as I do?</Annotation> To hell with them all.
+      are good for. <Annotation annotationId="010137usurper" visited={visitedNotes.has("010137usurper")} annotationSelect={() => {openNote("010137usurper"); addToVisited("010137usurper")}} activeAnnotationId={currentNoteId}>Why don't you play them as I do?</Annotation> To hell with them all.
       Let us get out of the kip.
     </p>
     <p>
@@ -1039,7 +1039,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
       resignedly:
     </p>
     <p>
-      —{" "}Mulligan is <Annotation annotationId="010095stripped" annotationSelect={() => openNote("010095stripped")} activeAnnotationId={currentNoteId}>stripped of his garments.</Annotation>
+      —{" "}Mulligan is <Annotation annotationId="010095stripped" visited={visitedNotes.has("010095stripped")} annotationSelect={() => {openNote("010095stripped"); addToVisited("010095stripped")}} activeAnnotationId={currentNoteId}>stripped of his garments.</Annotation>
     </p>
     <p>
       He emptied his pockets on to the table.
@@ -1053,15 +1053,15 @@ const Telemachus = ({openNote, currentNoteId}) => {
       chiding them, and to his dangling watchchain. His hands plunged and
       rummaged in his trunk while he called for a clean handkerchief. God,
       we'll simply have to dress the character. I want puce gloves and
-      green boots. <Annotation annotationId="010096contradictmyself" annotationSelect={() => openNote("010096contradictmyself")} activeAnnotationId={currentNoteId}>Contradiction. Do I contradict myself? Very well then</Annotation>, I
-      contradict myself. <Annotation annotationId="010021malachi" annotationSelect={() => openNote("010021malachi")} activeAnnotationId={currentNoteId}>Mercurial Malachi</Annotation>. A limp black missile flew out of
+      green boots. <Annotation annotationId="010096contradictmyself" visited={visitedNotes.has("010096contradictmyself")} annotationSelect={() => {openNote("010096contradictmyself"); addToVisited("010096contradictmyself")}} activeAnnotationId={currentNoteId}>Contradiction. Do I contradict myself? Very well then</Annotation>, I
+      contradict myself. <Annotation annotationId="010021malachi" visited={visitedNotes.has("010021malachi")} annotationSelect={() => {openNote("010021malachi"); addToVisited("010021malachi")}} activeAnnotationId={currentNoteId}>Mercurial Malachi</Annotation>. A limp black missile flew out of
       his talking hands.
     </p>
     <p>
-      —{" "}And there's your <Annotation annotationId="010097latinquarterhat" annotationSelect={() => openNote("010097latinquarterhat")} activeAnnotationId={currentNoteId}>Latin quarter hat</Annotation>, he said.
+      —{" "}And there's your <Annotation annotationId="010097latinquarterhat" visited={visitedNotes.has("010097latinquarterhat")} annotationSelect={() => {openNote("010097latinquarterhat"); addToVisited("010097latinquarterhat")}} activeAnnotationId={currentNoteId}>Latin quarter hat</Annotation>, he said.
     </p>
     <p>
-      <Annotation annotationId="030147takeitup" annotationSelect={() => openNote("030147takeitup")} activeAnnotationId={currentNoteId}>Stephen picked it up and put it on.</Annotation> Haines called to them from the
+      <Annotation annotationId="030147takeitup" visited={visitedNotes.has("030147takeitup")} annotationSelect={() => {openNote("030147takeitup"); addToVisited("030147takeitup")}} activeAnnotationId={currentNoteId}>Stephen picked it up and put it on.</Annotation> Haines called to them from the
       doorway:
     </p>
     <p>
@@ -1070,16 +1070,16 @@ const Telemachus = ({openNote, currentNoteId}) => {
     <span data-edition="ed1986" data-page="14"> </span>
     <p>
       —{" "}I'm ready, Buck Mulligan answered, going towards the door. Come out,
-      Kinch. <Annotation annotationId="010138eatenall" annotationSelect={() => openNote("010138eatenall")} activeAnnotationId={currentNoteId}>You have eaten all we left, I suppose.</Annotation> Resigned he passed out
+      Kinch. <Annotation annotationId="010138eatenall" visited={visitedNotes.has("010138eatenall")} annotationSelect={() => {openNote("010138eatenall"); addToVisited("010138eatenall")}} activeAnnotationId={currentNoteId}>You have eaten all we left, I suppose.</Annotation> Resigned he passed out
       with grave words and gait, saying, wellnigh with sorrow:
     </p>
     <p>
-      —{" "}<Annotation annotationId="010098metbutterly" annotationSelect={() => openNote("010098metbutterly")} activeAnnotationId={currentNoteId}>And going forth he met Butterly.</Annotation>
+      —{" "}<Annotation annotationId="010098metbutterly" visited={visitedNotes.has("010098metbutterly")} annotationSelect={() => {openNote("010098metbutterly"); addToVisited("010098metbutterly")}} activeAnnotationId={currentNoteId}>And going forth he met Butterly.</Annotation>
     </p>
     <p>
-      Stephen, taking his <Annotation annotationId="010099ashplant" annotationSelect={() => openNote("010099ashplant")} activeAnnotationId={currentNoteId}>ashplant</Annotation> from its leaningplace, followed them out
-      and, as they went <Annotation annotationId="010085towerlivingroom" annotationSelect={() => openNote("010085towerlivingroom")} activeAnnotationId={currentNoteId}>down the ladder</Annotation>, pulled to the slow iron door and
-      locked it. He put <Annotation annotationId="010146hugekey" annotationSelect={() => openNote("010146hugekey")} activeAnnotationId={currentNoteId}>the huge key</Annotation> in his inner pocket.
+      Stephen, taking his <Annotation annotationId="010099ashplant" visited={visitedNotes.has("010099ashplant")} annotationSelect={() => {openNote("010099ashplant"); addToVisited("010099ashplant")}} activeAnnotationId={currentNoteId}>ashplant</Annotation> from its leaningplace, followed them out
+      and, as they went <Annotation annotationId="010085towerlivingroom" visited={visitedNotes.has("010085towerlivingroom")} annotationSelect={() => {openNote("010085towerlivingroom"); addToVisited("010085towerlivingroom")}} activeAnnotationId={currentNoteId}>down the ladder</Annotation>, pulled to the slow iron door and
+      locked it. He put <Annotation annotationId="010146hugekey" visited={visitedNotes.has("010146hugekey")} annotationSelect={() => {openNote("010146hugekey"); addToVisited("010146hugekey")}} activeAnnotationId={currentNoteId}>the huge key</Annotation> in his inner pocket.
     </p>
     <p>
       At the foot of the ladder Buck Mulligan asked:
@@ -1114,24 +1114,24 @@ const Telemachus = ({openNote, currentNoteId}) => {
       They halted while Haines surveyed the tower and said at last:
     </p>
     <p>
-      —{" "}Rather bleak in wintertime, I should say. <Annotation annotationId="010100martellos" annotationSelect={() => openNote("010100martellos")} activeAnnotationId={currentNoteId}>Martello you call it?</Annotation>
+      —{" "}Rather bleak in wintertime, I should say. <Annotation annotationId="010100martellos" visited={visitedNotes.has("010100martellos")} annotationSelect={() => {openNote("010100martellos"); addToVisited("010100martellos")}} activeAnnotationId={currentNoteId}>Martello you call it?</Annotation>
     </p>
     <p>
-      —{" "}<Annotation annotationId="010100martellos" annotationSelect={() => openNote("010100martellos")} activeAnnotationId={currentNoteId}>Billy Pitt had them built</Annotation>, Buck Mulligan said, when the <Annotation annotationId="010101frenchonsea" annotationSelect={() => openNote("010101frenchonsea")} activeAnnotationId={currentNoteId}>French were on
-      the sea</Annotation>. But ours is the <Annotation annotationId="010100martellos" annotationSelect={() => openNote("010100martellos")} activeAnnotationId={currentNoteId}><i>omphalos</i>.</Annotation>
+      —{" "}<Annotation annotationId="010100martellos" visited={visitedNotes.has("010100martellos")} annotationSelect={() => {openNote("010100martellos"); addToVisited("010100martellos")}} activeAnnotationId={currentNoteId}>Billy Pitt had them built</Annotation>, Buck Mulligan said, when the <Annotation annotationId="010101frenchonsea" visited={visitedNotes.has("010101frenchonsea")} annotationSelect={() => {openNote("010101frenchonsea"); addToVisited("010101frenchonsea")}} activeAnnotationId={currentNoteId}>French were on
+      the sea</Annotation>. But ours is the <Annotation annotationId="010100martellos" visited={visitedNotes.has("010100martellos")} annotationSelect={() => {openNote("010100martellos"); addToVisited("010100martellos")}} activeAnnotationId={currentNoteId}><i>omphalos</i>.</Annotation>
     </p>
     <p>
-      —{" "}What is <Annotation annotationId="010139hearhim" annotationSelect={() => openNote("010139hearhim")} activeAnnotationId={currentNoteId}>your idea of Hamlet</Annotation>? Haines asked Stephen.
+      —{" "}What is <Annotation annotationId="010139hearhim" visited={visitedNotes.has("010139hearhim")} annotationSelect={() => {openNote("010139hearhim"); addToVisited("010139hearhim")}} activeAnnotationId={currentNoteId}>your idea of Hamlet</Annotation>? Haines asked Stephen.
     </p>
     <p>
-      —{" "}No, no, Buck Mulligan shouted in pain. I'm not equal to <Annotation annotationId="010102aquinas" annotationSelect={() => openNote("010102aquinas")} activeAnnotationId={currentNoteId}>Thomas Aquinas
+      —{" "}No, no, Buck Mulligan shouted in pain. I'm not equal to <Annotation annotationId="010102aquinas" visited={visitedNotes.has("010102aquinas")} annotationSelect={() => {openNote("010102aquinas"); addToVisited("010102aquinas")}} activeAnnotationId={currentNoteId}>Thomas Aquinas
       and the fiftyfive reasons</Annotation> he has made to prop it up. Wait till I
       have a few pints in me first.
     </p>
     <span data-edition="ed1961" data-page="17"> </span>
     <p>
       He turned to Stephen, saying, as he pulled down neatly the peaks of his
-      <Annotation annotationId="010103waistcoat" annotationSelect={() => openNote("010103waistcoat")} activeAnnotationId={currentNoteId}>primrose waistcoat</Annotation>:
+      <Annotation annotationId="010103waistcoat" visited={visitedNotes.has("010103waistcoat")} annotationSelect={() => {openNote("010103waistcoat"); addToVisited("010103waistcoat")}} activeAnnotationId={currentNoteId}>primrose waistcoat</Annotation>:
     </p>
     <span data-edition="ed1922" data-page="17"> </span>
     <p>
@@ -1145,7 +1145,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
       —{" "}You pique my curiosity, Haines said amiably. Is it some paradox?
     </p>
     <p>
-      —{" "}Pooh! Buck Mulligan said. We have grown out of <Annotation annotationId="010145wildeparadoxes" annotationSelect={() => openNote("010145wildeparadoxes")} activeAnnotationId={currentNoteId}>Wilde and paradoxes</Annotation>.
+      —{" "}Pooh! Buck Mulligan said. We have grown out of <Annotation annotationId="010145wildeparadoxes" visited={visitedNotes.has("010145wildeparadoxes")} annotationSelect={() => {openNote("010145wildeparadoxes"); addToVisited("010145wildeparadoxes")}} activeAnnotationId={currentNoteId}>Wilde and paradoxes</Annotation>.
       It's quite simple. He proves by algebra that Hamlet's grandson is
       Shakespeare's grandfather and that he himself is the ghost of his own
       father.
@@ -1154,11 +1154,11 @@ const Telemachus = ({openNote, currentNoteId}) => {
       —{" "}What? Haines said, beginning to point at Stephen. He himself?
     </p>
     <p>
-      Buck Mulligan slung his towel <Annotation annotationId="010104stole" annotationSelect={() => openNote("010104stole")} activeAnnotationId={currentNoteId}>stolewise</Annotation> round his neck and, bending in
+      Buck Mulligan slung his towel <Annotation annotationId="010104stole" visited={visitedNotes.has("010104stole")} annotationSelect={() => {openNote("010104stole"); addToVisited("010104stole")}} activeAnnotationId={currentNoteId}>stolewise</Annotation> round his neck and, bending in
       loose laughter, said to Stephen's ear:
     </p>
     <p>
-      —{" "}O, shade of Kinch the elder! <Annotation annotationId="010105japhet" annotationSelect={() => openNote("010105japhet")} activeAnnotationId={currentNoteId}>Japhet in search of a father!</Annotation>
+      —{" "}O, shade of Kinch the elder! <Annotation annotationId="010105japhet" visited={visitedNotes.has("010105japhet")} annotationSelect={() => {openNote("010105japhet"); addToVisited("010105japhet")}} activeAnnotationId={currentNoteId}>Japhet in search of a father!</Annotation>
     </p>
     <p>
       —{" "}We're always tired in the morning, Stephen said to Haines. And it is
@@ -1168,43 +1168,43 @@ const Telemachus = ({openNote, currentNoteId}) => {
       Buck Mulligan, walking forward again, raised his hands.
     </p>
     <p>
-      —{" "}<Annotation annotationId="010106sacredpint" annotationSelect={() => openNote("010106sacredpint")} activeAnnotationId={currentNoteId}>The sacred pint alone can unbind the tongue of Dedalus</Annotation>, he said.
+      —{" "}<Annotation annotationId="010106sacredpint" visited={visitedNotes.has("010106sacredpint")} annotationSelect={() => {openNote("010106sacredpint"); addToVisited("010106sacredpint")}} activeAnnotationId={currentNoteId}>The sacred pint alone can unbind the tongue of Dedalus</Annotation>, he said.
     </p>
     <p>
       —{" "}I mean to say, Haines explained to Stephen as they followed, this
-      tower and these cliffs here remind me somehow of <Annotation annotationId="010009tower" annotationSelect={() => openNote("010009tower")} activeAnnotationId={currentNoteId}>Elsinore. <i>That beetles
+      tower and these cliffs here remind me somehow of <Annotation annotationId="010009tower" visited={visitedNotes.has("010009tower")} annotationSelect={() => {openNote("010009tower"); addToVisited("010009tower")}} activeAnnotationId={currentNoteId}>Elsinore. <i>That beetles
       o'er his base into the sea</i></Annotation>, isn't it?
     </p>
     <span data-edition="ed1986" data-page="15"> </span>
     <p>
       Buck Mulligan turned suddenly for an instant towards Stephen but did
       not speak. In the bright silent instant Stephen saw his own image in
-      <Annotation annotationId="010048greypants" annotationSelect={() => openNote("010048greypants")} activeAnnotationId={currentNoteId}>cheap dusty mourning between their gay attires</Annotation>.
+      <Annotation annotationId="010048greypants" visited={visitedNotes.has("010048greypants")} annotationSelect={() => {openNote("010048greypants"); addToVisited("010048greypants")}} activeAnnotationId={currentNoteId}>cheap dusty mourning between their gay attires</Annotation>.
     </p>
     <p>
       —{" "}It's a wonderful tale, Haines said, bringing them to halt again.
     </p>
     <p>
       Eyes, pale as the sea the wind had freshened, paler, firm and prudent.
-      The <Annotation annotationId="010107seasruler" annotationSelect={() => openNote("010107seasruler")} activeAnnotationId={currentNoteId}>seas' ruler</Annotation>, he gazed southward over the bay, empty save for the
-      smokeplume of the <Annotation annotationId="010036mailboat" annotationSelect={() => openNote("010036mailboat")} activeAnnotationId={currentNoteId}>mailboat</Annotation> vague on the bright skyline and a sail
-      tacking by <Annotation annotationId="010135bullockharbour" annotationSelect={() => openNote("010135bullockharbour")} activeAnnotationId={currentNoteId}>the Muglins</Annotation>.
+      The <Annotation annotationId="010107seasruler" visited={visitedNotes.has("010107seasruler")} annotationSelect={() => {openNote("010107seasruler"); addToVisited("010107seasruler")}} activeAnnotationId={currentNoteId}>seas' ruler</Annotation>, he gazed southward over the bay, empty save for the
+      smokeplume of the <Annotation annotationId="010036mailboat" visited={visitedNotes.has("010036mailboat")} annotationSelect={() => {openNote("010036mailboat"); addToVisited("010036mailboat")}} activeAnnotationId={currentNoteId}>mailboat</Annotation> vague on the bright skyline and a sail
+      tacking by <Annotation annotationId="010135bullockharbour" visited={visitedNotes.has("010135bullockharbour")} annotationSelect={() => {openNote("010135bullockharbour"); addToVisited("010135bullockharbour")}} activeAnnotationId={currentNoteId}>the Muglins</Annotation>.
     </p>
     <span data-edition="ed1932" data-page="17"> </span>
     <p>
       —{" "}I read a theological interpretation of it somewhere, he said bemused.
-      <Annotation annotationId="010119trinity" annotationSelect={() => openNote("010119trinity")} activeAnnotationId={currentNoteId}>The Father and the Son idea.</Annotation> The Son striving to be atoned with the
+      <Annotation annotationId="010119trinity" visited={visitedNotes.has("010119trinity")} annotationSelect={() => {openNote("010119trinity"); addToVisited("010119trinity")}} activeAnnotationId={currentNoteId}>The Father and the Son idea.</Annotation> The Son striving to be atoned with the
       Father.
     </p>
     <p>
       Buck Mulligan at once put on a blithe broadly smiling face. He looked
       at them, his wellshaped mouth open happily, his eyes, from which he had
       suddenly withdrawn all shrewd sense, blinking with mad gaiety. He moved
-      a doll's head to and fro, <span data-edition="ed1961" data-page="18"> </span>the brims of his <Annotation annotationId="010109panamahat" annotationSelect={() => openNote("010109panamahat")} activeAnnotationId={currentNoteId}>Panama hat</Annotation> quivering, and
+      a doll's head to and fro, <span data-edition="ed1961" data-page="18"> </span>the brims of his <Annotation annotationId="010109panamahat" visited={visitedNotes.has("010109panamahat")} annotationSelect={() => {openNote("010109panamahat"); addToVisited("010109panamahat")}} activeAnnotationId={currentNoteId}>Panama hat</Annotation> quivering, and
       began to chant in a quiet happy foolish voice:
     </p>
     <p><i>—{" "}{" "}I'm the queerest young fellow that ever you heard. <br/>
-      <Annotation annotationId="010150fatherbird" annotationSelect={() => openNote("010150fatherbird")} activeAnnotationId={currentNoteId}>My mother's a jew, my father's a bird</Annotation>. <br/>
+      <Annotation annotationId="010150fatherbird" visited={visitedNotes.has("010150fatherbird")} annotationSelect={() => {openNote("010150fatherbird"); addToVisited("010150fatherbird")}} activeAnnotationId={currentNoteId}>My mother's a jew, my father's a bird</Annotation>. <br/>
       With Joseph the joiner I cannot agree. <br/>
       So here's to disciples and Calvary.</i>
     </p>
@@ -1213,7 +1213,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
       He held up a forefinger of warning.
     </p>
     <p><i>—{" "}{" "}
-      <Annotation annotationId="010151drinkwater" annotationSelect={() => openNote("010151drinkwater")} activeAnnotationId={currentNoteId}>If anyone thinks that I amn't divine<br/>He'll get no free drinks when I'm making the wine <br/>
+      <Annotation annotationId="010151drinkwater" visited={visitedNotes.has("010151drinkwater")} annotationSelect={() => {openNote("010151drinkwater"); addToVisited("010151drinkwater")}} activeAnnotationId={currentNoteId}>If anyone thinks that I amn't divine<br/>He'll get no free drinks when I'm making the wine <br/>
       But have to drink water and wish it were plain <br/>
       That I make when the wine becomes water again.</Annotation></i>
     </p>
@@ -1226,11 +1226,11 @@ const Telemachus = ({openNote, currentNoteId}) => {
     <p><i>—{" "}{" "}Goodbye, now, goodbye! Write down all I said <br/>
       And tell Tom, Dick and Harry I rose from the dead. <br/>
       What's bred in the bone cannot fail me to fly <br/>
-      And <Annotation annotationId="010149olivet" annotationSelect={() => openNote("010149olivet")} activeAnnotationId={currentNoteId}>Olivet's breezy</Annotation>... Goodbye, now, goodbye!</i>
+      And <Annotation annotationId="010149olivet" visited={visitedNotes.has("010149olivet")} annotationSelect={() => {openNote("010149olivet"); addToVisited("010149olivet")}} activeAnnotationId={currentNoteId}>Olivet's breezy</Annotation>... Goodbye, now, goodbye!</i>
     </p>
     <p>
-      He capered before them <Annotation annotationId="010111fortyfoot" annotationSelect={() => openNote("010111fortyfoot")} activeAnnotationId={currentNoteId}>down towards the fortyfoot hole</Annotation>, fluttering his
-      winglike hands, leaping nimbly, <Annotation annotationId="010021malachi" annotationSelect={() => openNote("010021malachi")} activeAnnotationId={currentNoteId}>Mercury's hat</Annotation> quivering in the fresh
+      He capered before them <Annotation annotationId="010111fortyfoot" visited={visitedNotes.has("010111fortyfoot")} annotationSelect={() => {openNote("010111fortyfoot"); addToVisited("010111fortyfoot")}} activeAnnotationId={currentNoteId}>down towards the fortyfoot hole</Annotation>, fluttering his
+      winglike hands, leaping nimbly, <Annotation annotationId="010021malachi" visited={visitedNotes.has("010021malachi")} annotationSelect={() => {openNote("010021malachi"); addToVisited("010021malachi")}} activeAnnotationId={currentNoteId}>Mercury's hat</Annotation> quivering in the fresh
       wind that bore back to them his brief birdlike cries.
     </p>
     <p>
@@ -1243,7 +1243,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
       it somehow, doesn't it? What did he call it? Joseph the Joiner?
     </p>
     <p>
-      —{" "}<Annotation annotationId="010110jokingjesus" annotationSelect={() => openNote("010110jokingjesus")} activeAnnotationId={currentNoteId}>The ballad of joking Jesus</Annotation>, Stephen answered.
+      —{" "}<Annotation annotationId="010110jokingjesus" visited={visitedNotes.has("010110jokingjesus")} annotationSelect={() => {openNote("010110jokingjesus"); addToVisited("010110jokingjesus")}} activeAnnotationId={currentNoteId}>The ballad of joking Jesus</Annotation>, Stephen answered.
     </p>
     <p>
       —{" "}O, Haines said, you have heard it before?
@@ -1261,7 +1261,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <span data-edition="ed1986" data-page="16"> </span>
     <p>
-      Haines stopped to take out <Annotation annotationId="010142greenstone" annotationSelect={() => openNote("010142greenstone")} activeAnnotationId={currentNoteId}>a smooth silver case in which</Annotation><span data-edition="ed1961" data-page="19"> </span><Annotation annotationId="010142greenstone" annotationSelect={() => openNote("010142greenstone")} activeAnnotationId={currentNoteId}> twinkled a
+      Haines stopped to take out <Annotation annotationId="010142greenstone" visited={visitedNotes.has("010142greenstone")} annotationSelect={() => {openNote("010142greenstone"); addToVisited("010142greenstone")}} activeAnnotationId={currentNoteId}>a smooth silver case in which</Annotation><span data-edition="ed1961" data-page="19"> </span><Annotation annotationId="010142greenstone" visited={visitedNotes.has("010142greenstone")} annotationSelect={() => {openNote("010142greenstone"); addToVisited("010142greenstone")}} activeAnnotationId={currentNoteId}> twinkled a
       green stone</Annotation>. He sprang it open with his thumb and offered it.
     </p>
     <p>
@@ -1285,10 +1285,10 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <p>
       He walked on, waiting to be spoken to, trailing his ashplant by his
-      side. <Annotation annotationId="010099ashplant" annotationSelect={() => openNote("010099ashplant")} activeAnnotationId={currentNoteId}>Its ferrule followed lightly on the path, squealing at his heels.
+      side. <Annotation annotationId="010099ashplant" visited={visitedNotes.has("010099ashplant")} annotationSelect={() => {openNote("010099ashplant"); addToVisited("010099ashplant")}} activeAnnotationId={currentNoteId}>Its ferrule followed lightly on the path, squealing at his heels.
       My familiar,</Annotation> after me, calling, Steeeeeeeeeeeephen! A wavering line
       along the path. They will walk on it tonight, coming here in the dark.
-      He wants that key. It is mine. <Annotation annotationId="010001buckmulligan" annotationSelect={() => openNote("010001buckmulligan")} activeAnnotationId={currentNoteId}>I paid the rent.</Annotation> <Annotation annotationId="010112saltbread" annotationSelect={() => openNote("010112saltbread")} activeAnnotationId={currentNoteId}>Now I eat his salt
+      He wants that key. It is mine. <Annotation annotationId="010001buckmulligan" visited={visitedNotes.has("010001buckmulligan")} annotationSelect={() => {openNote("010001buckmulligan"); addToVisited("010001buckmulligan")}} activeAnnotationId={currentNoteId}>I paid the rent.</Annotation> <Annotation annotationId="010112saltbread" visited={visitedNotes.has("010112saltbread")} annotationSelect={() => {openNote("010112saltbread"); addToVisited("010112saltbread")}} activeAnnotationId={currentNoteId}>Now I eat his salt
       bread.</Annotation> Give him the key too. All. He will ask for it. That was in his
       eyes.
     </p>
@@ -1300,18 +1300,18 @@ const Telemachus = ({openNote, currentNoteId}) => {
       all unkind.
     </p>
     <p>
-      —{" "}After all, I should think you are able to free yourself. <Annotation annotationId="010113ownmaster" annotationSelect={() => openNote("010113ownmaster")} activeAnnotationId={currentNoteId}>You are your
+      —{" "}After all, I should think you are able to free yourself. <Annotation annotationId="010113ownmaster" visited={visitedNotes.has("010113ownmaster")} annotationSelect={() => {openNote("010113ownmaster"); addToVisited("010113ownmaster")}} activeAnnotationId={currentNoteId}>You are your
       own master</Annotation>, it seems to me.
     </p>
     <p>
-      —{" "}<Annotation annotationId="010114stateandchurch" annotationSelect={() => openNote("010114stateandchurch")} activeAnnotationId={currentNoteId}>I am the servant of two masters, Stephen said, an English and an
+      —{" "}<Annotation annotationId="010114stateandchurch" visited={visitedNotes.has("010114stateandchurch")} annotationSelect={() => {openNote("010114stateandchurch"); addToVisited("010114stateandchurch")}} activeAnnotationId={currentNoteId}>I am the servant of two masters, Stephen said, an English and an
       Italian.</Annotation>
     </p>
     <p>
       —{" "}Italian? Haines said.
     </p>
     <p>
-      <Annotation annotationId="010156crazyqueen" annotationSelect={() => openNote("010156crazyqueen")} activeAnnotationId={currentNoteId}>A crazy queen, old and jealous. Kneel down before me.</Annotation>
+      <Annotation annotationId="010156crazyqueen" visited={visitedNotes.has("010156crazyqueen")} annotationSelect={() => {openNote("010156crazyqueen"); addToVisited("010156crazyqueen")}} activeAnnotationId={currentNoteId}>A crazy queen, old and jealous. Kneel down before me.</Annotation>
     </p>
     <p>
       —{" "}And a third, Stephen said, there is who wants me for odd jobs.
@@ -1331,48 +1331,48 @@ const Telemachus = ({openNote, currentNoteId}) => {
     <p>
       —{" "}I can quite understand that, he said calmly. An Irishman must think
       like that, I daresay. We feel in England that we have treated you rather
-      unfairly. <Annotation annotationId="010141blamehistory" annotationSelect={() => openNote("010141blamehistory")} activeAnnotationId={currentNoteId}>It seems history is to blame.</Annotation>
+      unfairly. <Annotation annotationId="010141blamehistory" visited={visitedNotes.has("010141blamehistory")} annotationSelect={() => {openNote("010141blamehistory"); addToVisited("010141blamehistory")}} activeAnnotationId={currentNoteId}>It seems history is to blame.</Annotation>
     </p>
     <p>
       The proud potent titles clanged over Stephen's memory the triumph<span data-edition="ed1932" data-page="19"> </span>
-      of their brazen bells: <Annotation annotationId="010115creed" annotationSelect={() => openNote("010115creed")} activeAnnotationId={currentNoteId}><i>et unam sanctam catholicam</i></Annotation><span data-edition="ed1961" data-page="20"> </span><Annotation annotationId="010115creed" annotationSelect={() => openNote("010115creed")} activeAnnotationId={currentNoteId}><i> et apostolicam
+      of their brazen bells: <Annotation annotationId="010115creed" visited={visitedNotes.has("010115creed")} annotationSelect={() => {openNote("010115creed"); addToVisited("010115creed")}} activeAnnotationId={currentNoteId}><i>et unam sanctam catholicam</i></Annotation><span data-edition="ed1961" data-page="20"> </span><Annotation annotationId="010115creed" visited={visitedNotes.has("010115creed")} annotationSelect={() => {openNote("010115creed"); addToVisited("010115creed")}} activeAnnotationId={currentNoteId}><i> et apostolicam
       ecclesiam</i></Annotation>: the slow growth and change of rite and dogma like his own
-      rare thoughts, a chemistry of stars. <Annotation annotationId="010117symbolapostles" annotationSelect={() => openNote("010117symbolapostles")} activeAnnotationId={currentNoteId}>Symbol of the apostles</Annotation> in the<Annotation annotationId="010118masspopemarcellus" annotationSelect={() => openNote("010118masspopemarcellus")} activeAnnotationId={currentNoteId}>
+      rare thoughts, a chemistry of stars. <Annotation annotationId="010117symbolapostles" visited={visitedNotes.has("010117symbolapostles")} annotationSelect={() => {openNote("010117symbolapostles"); addToVisited("010117symbolapostles")}} activeAnnotationId={currentNoteId}>Symbol of the apostles</Annotation> in the<Annotation annotationId="010118masspopemarcellus" visited={visitedNotes.has("010118masspopemarcellus")} annotationSelect={() => {openNote("010118masspopemarcellus"); addToVisited("010118masspopemarcellus")}} activeAnnotationId={currentNoteId}>
       mass for pope Marcellus</Annotation>, the voices blended, singing alone loud in
-      affirmation: and behind their chant <Annotation annotationId="010088archangelmichael" annotationSelect={() => openNote("010088archangelmichael")} activeAnnotationId={currentNoteId}>the vigilant angel of the church
+      affirmation: and behind their chant <Annotation annotationId="010088archangelmichael" visited={visitedNotes.has("010088archangelmichael")} annotationSelect={() => {openNote("010088archangelmichael"); addToVisited("010088archangelmichael")}} activeAnnotationId={currentNoteId}>the vigilant angel of the church
       militant</Annotation>disarmed and menaced her heresiarchs. A horde of heresies
       fleeing with mitres awry: Photius and the brood of mockers
       <span data-edition="ed1922" data-page="20"> </span>
-      of whom Mulligan was one, and Arius, warring his life long upon<Annotation annotationId="010119trinity" annotationSelect={() => openNote("010119trinity")} activeAnnotationId={currentNoteId}>the
+      of whom Mulligan was one, and Arius, warring his life long upon<Annotation annotationId="010119trinity" visited={visitedNotes.has("010119trinity")} annotationSelect={() => {openNote("010119trinity"); addToVisited("010119trinity")}} activeAnnotationId={currentNoteId}>the
       consubstantiality of the Son with the Father</Annotation>, and Valentine, spurning
       Christ's terrene body, and the subtle African heresiarch Sabellius<span data-edition="ed1986" data-page="17"> </span> who
       held that the Father was Himself His own Son. Words Mulligan had spoken
-      a moment since in mockery to the <Annotation annotationId="010024stranger" annotationSelect={() => openNote("010024stranger")} activeAnnotationId={currentNoteId}>stranger</Annotation>. Idle mockery. The void
-      awaits surely all them that <Annotation annotationId="010120weavewind" annotationSelect={() => openNote("010120weavewind")} activeAnnotationId={currentNoteId}>weave the wind</Annotation>: a menace, a disarming and a
-      worsting from those embattled angels of the church, <Annotation annotationId="010088archangelmichael" annotationSelect={() => openNote("010088archangelmichael")} activeAnnotationId={currentNoteId}>Michael's host,</Annotation>
+      a moment since in mockery to the <Annotation annotationId="010024stranger" visited={visitedNotes.has("010024stranger")} annotationSelect={() => {openNote("010024stranger"); addToVisited("010024stranger")}} activeAnnotationId={currentNoteId}>stranger</Annotation>. Idle mockery. The void
+      awaits surely all them that <Annotation annotationId="010120weavewind" visited={visitedNotes.has("010120weavewind")} annotationSelect={() => {openNote("010120weavewind"); addToVisited("010120weavewind")}} activeAnnotationId={currentNoteId}>weave the wind</Annotation>: a menace, a disarming and a
+      worsting from those embattled angels of the church, <Annotation annotationId="010088archangelmichael" visited={visitedNotes.has("010088archangelmichael")} annotationSelect={() => {openNote("010088archangelmichael"); addToVisited("010088archangelmichael")}} activeAnnotationId={currentNoteId}>Michael's host,</Annotation>
       who defend her ever in the hour of conflict with their lances and their
       shields.
     </p>
     <p>
-      <Annotation annotationId="010121applause" annotationSelect={() => openNote("010121applause")} activeAnnotationId={currentNoteId}>Hear, hear! Prolonged applause. <i>Zut! Nom de Dieu!</i></Annotation>
+      <Annotation annotationId="010121applause" visited={visitedNotes.has("010121applause")} annotationSelect={() => {openNote("010121applause"); addToVisited("010121applause")}} activeAnnotationId={currentNoteId}>Hear, hear! Prolonged applause. <i>Zut! Nom de Dieu!</i></Annotation>
     </p>
     <p>
       —{" "}Of course I'm a Britisher, Haines' voice said, and I feel as one. I
-      don't want to see my country fall into the hands of <Annotation annotationId="010122germanjews" annotationSelect={() => openNote("010122germanjews")} activeAnnotationId={currentNoteId}>German jews</Annotation> either.
+      don't want to see my country fall into the hands of <Annotation annotationId="010122germanjews" visited={visitedNotes.has("010122germanjews")} annotationSelect={() => {openNote("010122germanjews"); addToVisited("010122germanjews")}} activeAnnotationId={currentNoteId}>German jews</Annotation> either.
       That's our national problem, I'm afraid, just now.
     </p>
     <p>
       Two men stood at the verge of the cliff, watching: businessman, boatman.
     </p>
     <p>
-      —{" "}She's making for <Annotation annotationId="010135bullockharbour" annotationSelect={() => openNote("010135bullockharbour")} activeAnnotationId={currentNoteId}>Bullock harbour</Annotation>.
+      —{" "}She's making for <Annotation annotationId="010135bullockharbour" visited={visitedNotes.has("010135bullockharbour")} annotationSelect={() => {openNote("010135bullockharbour"); addToVisited("010135bullockharbour")}} activeAnnotationId={currentNoteId}>Bullock harbour</Annotation>.
     </p>
     <p>
       The boatman nodded towards the north of the bay with some disdain.
     </p>
     <p>
-      —{" "}There's <Annotation annotationId="010124fivefathoms" annotationSelect={() => openNote("010124fivefathoms")} activeAnnotationId={currentNoteId}>five fathoms</Annotation> out there, he said. It'll be swept up that way
-      when <Annotation annotationId="010125hightide" annotationSelect={() => openNote("010125hightide")} activeAnnotationId={currentNoteId}>the tide comes in about one</Annotation>. It's nine days today.
+      —{" "}There's <Annotation annotationId="010124fivefathoms" visited={visitedNotes.has("010124fivefathoms")} annotationSelect={() => {openNote("010124fivefathoms"); addToVisited("010124fivefathoms")}} activeAnnotationId={currentNoteId}>five fathoms</Annotation> out there, he said. It'll be swept up that way
+      when <Annotation annotationId="010125hightide" visited={visitedNotes.has("010125hightide")} annotationSelect={() => {openNote("010125hightide"); addToVisited("010125hightide")}} activeAnnotationId={currentNoteId}>the tide comes in about one</Annotation>. It's nine days today.
     </p>
     <p>
       The man that was drowned. A sail veering about the blank bay waiting
@@ -1380,20 +1380,20 @@ const Telemachus = ({openNote, currentNoteId}) => {
       saltwhite. Here I am.
     </p>
     <p>
-      They followed the winding path down to the <Annotation annotationId="010111fortyfoot" annotationSelect={() => openNote("010111fortyfoot")} activeAnnotationId={currentNoteId}>creek</Annotation>. Buck Mulligan stood on
+      They followed the winding path down to the <Annotation annotationId="010111fortyfoot" visited={visitedNotes.has("010111fortyfoot")} annotationSelect={() => {openNote("010111fortyfoot"); addToVisited("010111fortyfoot")}} activeAnnotationId={currentNoteId}>creek</Annotation>. Buck Mulligan stood on
       a stone, in shirtsleeves, his unclipped tie rippling over his shoulder.
-      A young man clinging to a spur of rock near him, <Annotation annotationId="010147sealshead" annotationSelect={() => openNote("010147sealshead")} activeAnnotationId={currentNoteId}>moved slowly frogwise
+      A young man clinging to a spur of rock near him, <Annotation annotationId="010147sealshead" visited={visitedNotes.has("010147sealshead")} annotationSelect={() => {openNote("010147sealshead"); addToVisited("010147sealshead")}} activeAnnotationId={currentNoteId}>moved slowly frogwise
       his green legs in the deep jelly of the water</Annotation>.
     </p>
     <p>
       —{" "}Is the brother with you, Malachi?
     </p>
     <p>
-      —{" "}Down in <Annotation annotationId="010126mullingar" annotationSelect={() => openNote("010126mullingar")} activeAnnotationId={currentNoteId}>Westmeath.</Annotation> With the Bannons.
+      —{" "}Down in <Annotation annotationId="010126mullingar" visited={visitedNotes.has("010126mullingar")} annotationSelect={() => {openNote("010126mullingar"); addToVisited("010126mullingar")}} activeAnnotationId={currentNoteId}>Westmeath.</Annotation> With the Bannons.
     </p>
     <p>
       —{" "}Still there? I got a card from Bannon. Says he found a sweet young
-      thing down there. <Annotation annotationId="010127photogirl" annotationSelect={() => openNote("010127photogirl")} activeAnnotationId={currentNoteId}>Photo girl</Annotation> he calls her.
+      thing down there. <Annotation annotationId="010127photogirl" visited={visitedNotes.has("010127photogirl")} annotationSelect={() => {openNote("010127photogirl"); addToVisited("010127photogirl")}} activeAnnotationId={currentNoteId}>Photo girl</Annotation> he calls her.
     </p>
     <span data-edition="ed1961" data-page="21"> </span>
     <p>
@@ -1402,19 +1402,19 @@ const Telemachus = ({openNote, currentNoteId}) => {
     <p>
       Buck Mulligan sat down to unlace his boots. An elderly man shot up near
       the spur of rock a blowing red face. He scrambled up by the stones,
-      water glistening on his pate and on its <Annotation annotationId="010136nimbus" annotationSelect={() => openNote("010136nimbus")} activeAnnotationId={currentNoteId}>garland of grey hair</Annotation>,<span data-edition="ed1932" data-page="20"> </span>water
+      water glistening on his pate and on its <Annotation annotationId="010136nimbus" visited={visitedNotes.has("010136nimbus")} annotationSelect={() => {openNote("010136nimbus"); addToVisited("010136nimbus")}} activeAnnotationId={currentNoteId}>garland of grey hair</Annotation>,<span data-edition="ed1932" data-page="20"> </span>water
       rilling over his chest and paunch and spilling jets out of his black
       sagging loincloth.
     </p>
     <p>
       Buck Mulligan made way for him to scramble past and, glancing at Haines
-      and Stephen, <Annotation annotationId="010057crossed" annotationSelect={() => openNote("010057crossed")} activeAnnotationId={currentNoteId}>crossed himself piously</Annotation> with his thumbnail at brow and lips
+      and Stephen, <Annotation annotationId="010057crossed" visited={visitedNotes.has("010057crossed")} annotationSelect={() => {openNote("010057crossed"); addToVisited("010057crossed")}} activeAnnotationId={currentNoteId}>crossed himself piously</Annotation> with his thumbnail at brow and lips
       and breastbone.
     </p>
     <span data-edition="ed1922" data-page="21"> </span>
     <p>
       —{" "}Seymour's back in town, the young man said, grasping again his spur of
-      rock. Chucked medicine and <Annotation annotationId="010058bloodyswindle" annotationSelect={() => openNote("010058bloodyswindle")} activeAnnotationId={currentNoteId}>going in for the army.</Annotation> 
+      rock. Chucked medicine and <Annotation annotationId="010058bloodyswindle" visited={visitedNotes.has("010058bloodyswindle")} annotationSelect={() => {openNote("010058bloodyswindle"); addToVisited("010058bloodyswindle")}} activeAnnotationId={currentNoteId}>going in for the army.</Annotation> 
     </p>
     <span data-edition="ed1939" data-page="18"> </span>
     <p>
@@ -1427,11 +1427,11 @@ const Telemachus = ({openNote, currentNoteId}) => {
       —{" "}Yes.
     </p>
     <p>
-      —{" "}Spooning with him last night <Annotation annotationId="010037harbourmouth" annotationSelect={() => openNote("010037harbourmouth")} activeAnnotationId={currentNoteId}>on the pier</Annotation>. The father is rotto with
+      —{" "}Spooning with him last night <Annotation annotationId="010037harbourmouth" visited={visitedNotes.has("010037harbourmouth")} annotationSelect={() => {openNote("010037harbourmouth"); addToVisited("010037harbourmouth")}} activeAnnotationId={currentNoteId}>on the pier</Annotation>. The father is rotto with
       money.
     </p>
     <p>
-      —{" "}Is she <Annotation annotationId="010058bloodyswindle" annotationSelect={() => openNote("010058bloodyswindle")} activeAnnotationId={currentNoteId}>up the pole?</Annotation>
+      —{" "}Is she <Annotation annotationId="010058bloodyswindle" visited={visitedNotes.has("010058bloodyswindle")} annotationSelect={() => {openNote("010058bloodyswindle"); addToVisited("010058bloodyswindle")}} activeAnnotationId={currentNoteId}>up the pole?</Annotation>
     </p>
     <p>
       —{" "}Better ask Seymour that.
@@ -1451,7 +1451,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
       He broke off in alarm, feeling his side under his flapping shirt.
     </p>
     <p>
-      —{" "}<Annotation annotationId="010129ubermensch" annotationSelect={() => openNote("010129ubermensch")} activeAnnotationId={currentNoteId}>My twelfth rib is gone, he cried. I'm the <i>Uebermensch.</i></Annotation> <Annotation annotationId="010130toothless" annotationSelect={() => openNote("010130toothless")} activeAnnotationId={currentNoteId}>Toothless
+      —{" "}<Annotation annotationId="010129ubermensch" visited={visitedNotes.has("010129ubermensch")} annotationSelect={() => {openNote("010129ubermensch"); addToVisited("010129ubermensch")}} activeAnnotationId={currentNoteId}>My twelfth rib is gone, he cried. I'm the <i>Uebermensch.</i></Annotation> <Annotation annotationId="010130toothless" visited={visitedNotes.has("010130toothless")} annotationSelect={() => {openNote("010130toothless"); addToVisited("010130toothless")}} activeAnnotationId={currentNoteId}>Toothless
       Kinch</Annotation> and I, the supermen.
     </p>
     <p>
@@ -1466,7 +1466,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <p>
       The young man shoved himself backward through the water and reached
-      <Annotation annotationId="010111fortyfoot" annotationSelect={() => openNote("010111fortyfoot")} activeAnnotationId={currentNoteId}>the middle of the creek</Annotation> in two long clean strokes. Haines sat down on a
+      <Annotation annotationId="010111fortyfoot" visited={visitedNotes.has("010111fortyfoot")} annotationSelect={() => {openNote("010111fortyfoot"); addToVisited("010111fortyfoot")}} activeAnnotationId={currentNoteId}>the middle of the creek</Annotation> in two long clean strokes. Haines sat down on a
       stone, smoking.
     </p>
     <p>
@@ -1490,7 +1490,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
       clothes.
     </p>
     <p>
-      —{" "}And <Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}>twopence</Annotation>, he said, for a pint. Throw it there.
+      —{" "}And <Annotation annotationId="010019money" visited={visitedNotes.has("010019money")} annotationSelect={() => {openNote("010019money"); addToVisited("010019money")}} activeAnnotationId={currentNoteId}>twopence</Annotation>, he said, for a pint. Throw it there.
     </p>
     <p>
       Stephen threw two pennies on the soft heap. Dressing, undressing. Buck
@@ -1498,7 +1498,7 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <span data-edition="ed1932" data-page="21"> </span>
     <p>
-      —{" "}<Annotation annotationId="010129ubermensch" annotationSelect={() => openNote("010129ubermensch")} activeAnnotationId={currentNoteId}>He who stealeth from the poor lendeth to the Lord. Thus spake
+      —{" "}<Annotation annotationId="010129ubermensch" visited={visitedNotes.has("010129ubermensch")} annotationSelect={() => {openNote("010129ubermensch"); addToVisited("010129ubermensch")}} activeAnnotationId={currentNoteId}>He who stealeth from the poor lendeth to the Lord. Thus spake
       Zarathustra.</Annotation>
     </p>
     <span data-edition="ed1922" data-page="22"> </span>
@@ -1507,13 +1507,13 @@ const Telemachus = ({openNote, currentNoteId}) => {
     </p>
     <p>
       —{" "}We'll see you again, Haines said, turning as Stephen walked up the
-      path and smiling at <Annotation annotationId="010132wildirish" annotationSelect={() => openNote("010132wildirish")} activeAnnotationId={currentNoteId}>wild Irish</Annotation>.
+      path and smiling at <Annotation annotationId="010132wildirish" visited={visitedNotes.has("010132wildirish")} annotationSelect={() => {openNote("010132wildirish"); addToVisited("010132wildirish")}} activeAnnotationId={currentNoteId}>wild Irish</Annotation>.
     </p>
     <p>
-      Horn of a bull, hoof of a horse, <Annotation annotationId="010024stranger" annotationSelect={() => openNote("010024stranger")} activeAnnotationId={currentNoteId}>smile of a Saxon.</Annotation>
+      Horn of a bull, hoof of a horse, <Annotation annotationId="010024stranger" visited={visitedNotes.has("010024stranger")} annotationSelect={() => {openNote("010024stranger"); addToVisited("010024stranger")}} activeAnnotationId={currentNoteId}>smile of a Saxon.</Annotation>
     </p>
     <p>
-      —{" "}<Annotation annotationId="010049shiptavern" annotationSelect={() => openNote("010049shiptavern")} activeAnnotationId={currentNoteId}>The Ship, Buck Mulligan cried. Half twelve.</Annotation>
+      —{" "}<Annotation annotationId="010049shiptavern" visited={visitedNotes.has("010049shiptavern")} annotationSelect={() => {openNote("010049shiptavern"); addToVisited("010049shiptavern")}} activeAnnotationId={currentNoteId}>The Ship, Buck Mulligan cried. Half twelve.</Annotation>
     </p>
     <p>
       —{" "}Good, Stephen said.
@@ -1521,21 +1521,21 @@ const Telemachus = ({openNote, currentNoteId}) => {
     <p>
       He walked along the upwardcurving path.
     </p>
-    <p><Annotation annotationId="010012quarterto" annotationSelect={() => openNote("010012quarterto")} activeAnnotationId={currentNoteId}><i>Liliata rutilantium. <br/>
+    <p><Annotation annotationId="010012quarterto" visited={visitedNotes.has("010012quarterto")} annotationSelect={() => {openNote("010012quarterto"); addToVisited("010012quarterto")}} activeAnnotationId={currentNoteId}><i>Liliata rutilantium. <br/>
       Turma circumdet. <br/>
       Iubilantium te virginum.</i></Annotation>
     </p>
     <p>
-      The priest's grey <Annotation annotationId="010136nimbus" annotationSelect={() => openNote("010136nimbus")} activeAnnotationId={currentNoteId}>nimbus in a niche</Annotation> where he dressed discreetly. I will
+      The priest's grey <Annotation annotationId="010136nimbus" visited={visitedNotes.has("010136nimbus")} annotationSelect={() => {openNote("010136nimbus"); addToVisited("010136nimbus")}} activeAnnotationId={currentNoteId}>nimbus in a niche</Annotation> where he dressed discreetly. I will
       not sleep here tonight. Home also I cannot go.
     </p>
     <p>
       A voice, sweettoned and sustained, called to him from the sea. Turning
-      the curve he waved his hand. It called again. <Annotation annotationId="010147sealshead" annotationSelect={() => openNote("010147sealshead")} activeAnnotationId={currentNoteId}>A sleek brown head, a
+      the curve he waved his hand. It called again. <Annotation annotationId="010147sealshead" visited={visitedNotes.has("010147sealshead")} annotationSelect={() => {openNote("010147sealshead"); addToVisited("010147sealshead")}} activeAnnotationId={currentNoteId}>A sleek brown head, a
       seal's</Annotation>, far out on the water, round.
     </p>
     <p>
-      <Annotation annotationId="010137usurper" annotationSelect={() => openNote("010137usurper")} activeAnnotationId={currentNoteId}>Usurper.</Annotation>
+      <Annotation annotationId="010137usurper" visited={visitedNotes.has("010137usurper")} annotationSelect={() => {openNote("010137usurper"); addToVisited("010137usurper")}} activeAnnotationId={currentNoteId}>Usurper.</Annotation>
     </p>
     <br/><br/><br/>
     <span data-edition="ed1961" data-page="23"> </span>

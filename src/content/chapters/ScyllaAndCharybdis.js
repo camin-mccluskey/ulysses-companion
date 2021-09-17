@@ -2,13 +2,13 @@ import gloria from '../../assets/images/gloria.jpeg';
 import Annotation from "../../components/Annotation";
 
 
-const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
+const ScyllaAndCharybdis = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
   return (
     <div>
       <p></p>
       <center><font size="+2">[9]</font></center>
       <br/>
-      Urbane, to comfort them, <Annotation annotationId="090004quakerlibrarian" annotationSelect={() => openNote("090004quakerlibrarian")} activeAnnotationId={currentNoteId}>the quaker librarian</Annotation> purred:
+      Urbane, to comfort them, <Annotation annotationId="090004quakerlibrarian" visited={visitedNotes.has("090004quakerlibrarian")} annotationSelect={() => {openNote("090004quakerlibrarian"); addToVisited("090004quakerlibrarian")}} activeAnnotationId={currentNoteId}>the quaker librarian</Annotation> purred:
       <p></p>
       <p>
         —{" "}And we have, have we not, those priceless pages of <i>Wilhelm Meister</i>?
@@ -77,7 +77,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       </p>
       <p>
         Cranly's eleven true Wicklowmen to free their sireland. Gaptoothed
-        Kathleen, her four beautiful green fields, <Annotation annotationId="010024stranger" annotationSelect={() => openNote("010024stranger")} activeAnnotationId={currentNoteId}>the stranger</Annotation> <span data-edition="ed1961" data-page="184">  </span>in her house.
+        Kathleen, her four beautiful green fields, <Annotation annotationId="010024stranger" visited={visitedNotes.has("010024stranger")} annotationSelect={() => {openNote("010024stranger"); addToVisited("010024stranger")}} activeAnnotationId={currentNoteId}>the stranger</Annotation> <span data-edition="ed1961" data-page="184">  </span>in her house.
         And one more to hail him: <i>ave, rabbi</i>: the Tinahely twelve. In the
         shadow of the glen he cooees for them. My soul's youth I gave him, night
         by night. Godspeed. Good hunting.
@@ -164,7 +164,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       <span data-edition="ed1939" data-page="136"> </span>
       <p>
         Unsheathe your dagger definitions. Horseness is the whatness of
-        allhorse. Streams of tendency and <Annotation annotationId="010039mightymother" annotationSelect={() => openNote("010039mightymother")} activeAnnotationId={currentNoteId}>eons</Annotation> they worship. <Annotation annotationId="020069streetshout" annotationSelect={() => openNote("020069streetshout")} activeAnnotationId={currentNoteId}>God: noise in the
+        allhorse. Streams of tendency and <Annotation annotationId="010039mightymother" visited={visitedNotes.has("010039mightymother")} annotationSelect={() => {openNote("010039mightymother"); addToVisited("010039mightymother")}} activeAnnotationId={currentNoteId}>eons</Annotation> they worship. <Annotation annotationId="020069streetshout" visited={visitedNotes.has("020069streetshout")} annotationSelect={() => {openNote("020069streetshout"); addToVisited("020069streetshout")}} activeAnnotationId={currentNoteId}>God: noise in the
         street</Annotation>: very peripatetic. Space: what you damn well have to see. Through
         spaces smaller than red globules of man's blood they creepycrawl after
         Blake's buttocks into eternity of which this vegetable world is but a
@@ -183,29 +183,29 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       </p>
       <p>
         —{" "}I was showing him Jubainville's book. He's quite enthusiastic, don't
-        you know, about <Annotation annotationId="090003hyde" annotationSelect={() => openNote("090003hyde")} activeAnnotationId={currentNoteId}>Hyde's <i>Lovesongs of Connacht.</i></Annotation> I couldn't bring him in
+        you know, about <Annotation annotationId="090003hyde" visited={visitedNotes.has("090003hyde")} annotationSelect={() => {openNote("090003hyde"); addToVisited("090003hyde")}} activeAnnotationId={currentNoteId}>Hyde's <i>Lovesongs of Connacht.</i></Annotation> I couldn't bring him in
         to hear the discussion. He's gone to Gill's to buy it.
       </p>
       <span data-edition="ed1922" data-page="178"> </span>
-      <p> <Annotation annotationId="090003hyde" annotationSelect={() => openNote("090003hyde")} activeAnnotationId={currentNoteId}> <i>Bound thee forth, my booklet, quick <br/>
+      <p> <Annotation annotationId="090003hyde" visited={visitedNotes.has("090003hyde")} annotationSelect={() => {openNote("090003hyde"); addToVisited("090003hyde")}} activeAnnotationId={currentNoteId}> <i>Bound thee forth, my booklet, quick <br/>
         To greet the callous public. <br/>
         Writ, I ween, 'twas not my wish <br/>
         In lean unlovely English.</i></Annotation>
       </p>
       <p>
-        —{" "}The <Annotation annotationId="060036bogs" annotationSelect={() => openNote("060036bogs")} activeAnnotationId={currentNoteId}>peatsmoke</Annotation> is going to his head, John Eglinton opined.
+        —{" "}The <Annotation annotationId="060036bogs" visited={visitedNotes.has("060036bogs")} annotationSelect={() => {openNote("060036bogs"); addToVisited("060036bogs")}} activeAnnotationId={currentNoteId}>peatsmoke</Annotation> is going to his head, John Eglinton opined.
       </p>
       <p>
-        <Annotation annotationId="010141blamehistory" annotationSelect={() => openNote("010141blamehistory")} activeAnnotationId={currentNoteId}>We feel in England. Penitent thief.</Annotation> Gone. <Annotation annotationId="010142greenstone" annotationSelect={() => openNote("010142greenstone")} activeAnnotationId={currentNoteId}>I smoked his baccy. Green
+        <Annotation annotationId="010141blamehistory" visited={visitedNotes.has("010141blamehistory")} annotationSelect={() => {openNote("010141blamehistory"); addToVisited("010141blamehistory")}} activeAnnotationId={currentNoteId}>We feel in England. Penitent thief.</Annotation> Gone. <Annotation annotationId="010142greenstone" visited={visitedNotes.has("010142greenstone")} annotationSelect={() => {openNote("010142greenstone"); addToVisited("010142greenstone")}} activeAnnotationId={currentNoteId}>I smoked his baccy. Green
         twinkling stone. An emerald set in the ring of the sea.</Annotation>
       </p>
       <p>
         —{" "}People do not know how dangerous lovesongs can be, the auric egg of
         Russell warned occultly. The movements which work revolutions in the
         world are born out of the dreams and visions in a peasant's heart on the
-        hillside. For them the earth <span data-edition="ed1961" data-page="186">  </span>is not an exploitable ground but <Annotation annotationId="010039mightymother" annotationSelect={() => openNote("010039mightymother")} activeAnnotationId={currentNoteId}>the
+        hillside. For them the earth <span data-edition="ed1961" data-page="186">  </span>is not an exploitable ground but <Annotation annotationId="010039mightymother" visited={visitedNotes.has("010039mightymother")} annotationSelect={() => {openNote("010039mightymother"); addToVisited("010039mightymother")}} activeAnnotationId={currentNoteId}>the
         living mother</Annotation>. The rarefied air of the academy and the arena produce the
-        sixshilling novel, <Annotation annotationId="040076musichall" annotationSelect={() => openNote("040076musichall")} activeAnnotationId={currentNoteId}>the musichall song</Annotation>. France produces the finest flower
+        sixshilling novel, <Annotation annotationId="040076musichall" visited={visitedNotes.has("040076musichall")} annotationSelect={() => {openNote("040076musichall"); addToVisited("040076musichall")}} activeAnnotationId={currentNoteId}>the musichall song</Annotation>. France produces the finest flower
         of corruption in Mallarmé but the desirable life is revealed only to the
         poor of heart, the life of Homer's Phæacians.
       </p>
@@ -237,7 +237,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         point of view. <i>Hamlet ou</i>...
       </p>
       <p>
-        —{" "}The <Annotation annotationId="090001absentminded" annotationSelect={() => openNote("090001absentminded")} activeAnnotationId={currentNoteId}>absentminded beggar</Annotation>, Stephen ended.
+        —{" "}The <Annotation annotationId="090001absentminded" visited={visitedNotes.has("090001absentminded")} annotationSelect={() => {openNote("090001absentminded"); addToVisited("090001absentminded")}} activeAnnotationId={currentNoteId}>absentminded beggar</Annotation>, Stephen ended.
       </p>
       <p>
         John Eglinton laughed.
@@ -249,14 +249,14 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       </p>
       <span data-edition="ed1932" data-page="167">  </span>
       <p>
-        <Annotation annotationId="090001absentminded" annotationSelect={() => openNote("090001absentminded")} activeAnnotationId={currentNoteId}>Sumptuous and stagnant exaggeration of murder.</Annotation>
+        <Annotation annotationId="090001absentminded" visited={visitedNotes.has("090001absentminded")} annotationSelect={() => {openNote("090001absentminded"); addToVisited("090001absentminded")}} activeAnnotationId={currentNoteId}>Sumptuous and stagnant exaggeration of murder.</Annotation>
       </p>
       <span data-edition="ed1922" data-page="179"> </span>
       <p>
         —{" "}A deathsman of the soul Robert Greene called him, Stephen said. Not
         for nothing was he a butcher's son, wielding the sledded poleaxe and
         spitting in his palm. Nine lives are taken off for his father's one.
-        <Annotation annotationId="040077ourfather" annotationSelect={() => openNote("040077ourfather")} activeAnnotationId={currentNoteId}>Our Father who art in purgatory.</Annotation> Khaki Hamlets don't hesitate to
+        <Annotation annotationId="040077ourfather" visited={visitedNotes.has("040077ourfather")} annotationSelect={() => {openNote("040077ourfather"); addToVisited("040077ourfather")}} activeAnnotationId={currentNoteId}>Our Father who art in purgatory.</Annotation> Khaki Hamlets don't hesitate to
         shoot. The bloodboltered shambles in act five is a forecast of the
         concentration camp sung by Mr Swinburne.
       </p>
@@ -264,7 +264,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         Cranly, I his mute orderly, following battles from afar.
       </p>
       <p>
-        <Annotation annotationId="090008whelpsdams" annotationSelect={() => openNote("090008whelpsdams")} activeAnnotationId={currentNoteId}> <i>Whelps and dams of murderous foes whom none<br/> 
+        <Annotation annotationId="090008whelpsdams" visited={visitedNotes.has("090008whelpsdams")} annotationSelect={() => {openNote("090008whelpsdams"); addToVisited("090008whelpsdams")}} activeAnnotationId={currentNoteId}> <i>Whelps and dams of murderous foes whom none<br/> 
         But we had spared...</i></Annotation>
       </p>
       <p>
@@ -314,7 +314,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         has other thoughts.
       </p>
       <p>
-        <Annotation annotationId="090013composition" annotationSelect={() => openNote("090013composition")} activeAnnotationId={currentNoteId}>Composition of place.</Annotation> <Annotation annotationId="010008jesuit" annotationSelect={() => openNote("010008jesuit")} activeAnnotationId={currentNoteId}>Ignatius Loyola</Annotation>, make haste to help me!
+        <Annotation annotationId="090013composition" visited={visitedNotes.has("090013composition")} annotationSelect={() => {openNote("090013composition"); addToVisited("090013composition")}} activeAnnotationId={currentNoteId}>Composition of place.</Annotation> <Annotation annotationId="010008jesuit" visited={visitedNotes.has("010008jesuit")} annotationSelect={() => {openNote("010008jesuit"); addToVisited("010008jesuit")}} activeAnnotationId={currentNoteId}>Ignatius Loyola</Annotation>, make haste to help me!
       </p>
       <span data-edition="ed1922" data-page="180"> </span>
       <p>
@@ -362,7 +362,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       <p>
         Mr Best's face, appealed to, agreed.
       </p>
-      <p style={{textIndent:"0px"}}> <Annotation annotationId="030042mananaan" annotationSelect={() => openNote("030042mananaan")} activeAnnotationId={currentNoteId}><i>Flow over them with your waves and with your waters, Mananaan,</i><br/>
+      <p style={{textIndent:"0px"}}> <Annotation annotationId="030042mananaan" visited={visitedNotes.has("030042mananaan")} annotationSelect={() => {openNote("030042mananaan"); addToVisited("030042mananaan")}} activeAnnotationId={currentNoteId}><i>Flow over them with your waves and with your waters, Mananaan,</i><br/>
         <i>Mananaan MacLir...</i></Annotation>
       </p>
       <p>
@@ -376,7 +376,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       </p>
       <p>
         Go to! You spent most of it in Georgina Johnson's bed, clergyman's
-        daughter. <Annotation annotationId="010094agenbite" annotationSelect={() => openNote("010094agenbite")} activeAnnotationId={currentNoteId}>Agenbite of inwit.</Annotation>
+        daughter. <Annotation annotationId="010094agenbite" visited={visitedNotes.has("010094agenbite")} annotationSelect={() => {openNote("010094agenbite"); addToVisited("010094agenbite")}} activeAnnotationId={currentNoteId}>Agenbite of inwit.</Annotation>
       </p>
       <span data-edition="ed1922" data-page="181"> </span>
       <p>
@@ -418,10 +418,10 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       </p>
       <span data-edition="ed1961" data-page="189">  </span>
       <p>
-        <Annotation annotationId="050052conmee" annotationSelect={() => openNote("050052conmee")} activeAnnotationId={currentNoteId}>A child Conmee saved from pandies.</Annotation>
+        <Annotation annotationId="050052conmee" visited={visitedNotes.has("050052conmee")} annotationSelect={() => {openNote("050052conmee"); addToVisited("050052conmee")}} activeAnnotationId={currentNoteId}>A child Conmee saved from pandies.</Annotation>
       </p>
       <p>
-        <Annotation annotationId="090002iiandi" annotationSelect={() => openNote("090002iiandi")} activeAnnotationId={currentNoteId}>I, I and I. I.</Annotation>
+        <Annotation annotationId="090002iiandi" visited={visitedNotes.has("090002iiandi")} annotationSelect={() => {openNote("090002iiandi"); addToVisited("090002iiandi")}} activeAnnotationId={currentNoteId}>I, I and I. I.</Annotation>
       </p>
       <p>
         A.E.I.O.U.
@@ -440,7 +440,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       <span data-edition="ed1939" data-page="139"> </span>
       <p>
         Mother's deathbed. Candle. The sheeted mirror. Who brought me into
-        this world lies there, bronzelidded, under few cheap flowers. <Annotation annotationId="010082liliatarutilantium" annotationSelect={() => openNote("010082liliatarutilantium")} activeAnnotationId={currentNoteId}><i>Liliata
+        this world lies there, bronzelidded, under few cheap flowers. <Annotation annotationId="010082liliatarutilantium" visited={visitedNotes.has("010082liliatarutilantium")} annotationSelect={() => {openNote("010082liliatarutilantium"); addToVisited("010082liliatarutilantium")}} activeAnnotationId={currentNoteId}><i>Liliata
         rutilantium.</i></Annotation>
       </p>
       <p>
@@ -458,13 +458,13 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         errors are volitional and are the portals of discovery.
       </p>
       <p>
-        <Annotation annotationId="060006toadeyes" annotationSelect={() => openNote("060006toadeyes")} activeAnnotationId={currentNoteId}>Portals of discovery opened</Annotation> to let in the quaker librarian,
+        <Annotation annotationId="060006toadeyes" visited={visitedNotes.has("060006toadeyes")} annotationSelect={() => {openNote("060006toadeyes"); addToVisited("060006toadeyes")}} activeAnnotationId={currentNoteId}>Portals of discovery opened</Annotation> to let in the quaker librarian,
         softcreakfooted, bald, eared and assiduous.
       </p>
       <p>
         —{" "}A shrew, John Eglinton said shrewdly, is not a useful portal of
         discovery, one should imagine. What useful discovery did Socrates learn
-        from <Annotation annotationId="090005shrewridden" annotationSelect={() => openNote("090005shrewridden")} activeAnnotationId={currentNoteId}>Xanthippe?</Annotation>
+        from <Annotation annotationId="090005shrewridden" visited={visitedNotes.has("090005shrewridden")} annotationSelect={() => {openNote("090005shrewridden"); addToVisited("090005shrewridden")}} activeAnnotationId={currentNoteId}>Xanthippe?</Annotation>
       </p>
       <span data-edition="ed1922" data-page="182"> </span>
       <p>
@@ -472,7 +472,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         into the world. What he learnt from his other wife Myrto (<i>absit
         nomen!</i>), Socratididion's Epipsychidion, no man, not a woman, will ever
         know. But neither the midwife's lore nor the caudlelectures saved him
-        from the archons of Sinn Fein and their <Annotation annotationId="040090naggin" annotationSelect={() => openNote("040090naggin")} activeAnnotationId={currentNoteId}>naggin</Annotation> of hemlock.
+        from the archons of Sinn Fein and their <Annotation annotationId="040090naggin" visited={visitedNotes.has("040090naggin")} annotationSelect={() => {openNote("040090naggin"); addToVisited("040090naggin")}} activeAnnotationId={currentNoteId}>naggin</Annotation> of hemlock.
       </p>
       <p>
         —{" "}But Ann Hathaway? Mr Best's quiet voice said forgetfully. Yes, we seem
@@ -490,7 +490,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         <i>The</i> <span data-edition="ed1986" data-page="156"> </span><i>girl I left behind me.</i> If the earthquake did not time it we should
         know where to place poor Wat, sitting in his form, the cry of hounds,
         the studded bridle and her blue windows. That memory, <i>Venus and
-        Adonis</i>, lay in the bedchamber of every <Annotation annotationId="090006lightoflove" annotationSelect={() => openNote("090006lightoflove")} activeAnnotationId={currentNoteId}>light-of-love</Annotation> in London.
+        Adonis</i>, lay in the bedchamber of every <Annotation annotationId="090006lightoflove" visited={visitedNotes.has("090006lightoflove")} annotationSelect={() => {openNote("090006lightoflove"); addToVisited("090006lightoflove")}} activeAnnotationId={currentNoteId}>light-of-love</Annotation> in London.
         Is Katharine the shrew illfavoured? Hortensio calls her young and
         beautiful. Do you think the writer of <i>Antony and Cleopatra</i>, a
         passionate pilgrim, had his eyes in the back of his head that he chose
@@ -529,7 +529,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         cooperative watch.
       </p>
       <p>
-        —{" "}I am afraid I am due at the <Annotation annotationId="020077homestead" annotationSelect={() => openNote("020077homestead")} activeAnnotationId={currentNoteId}><i>Homestead</i></Annotation>.
+        —{" "}I am afraid I am due at the <Annotation annotationId="020077homestead" visited={visitedNotes.has("020077homestead")} annotationSelect={() => {openNote("020077homestead"); addToVisited("020077homestead")}} activeAnnotationId={currentNoteId}><i>Homestead</i></Annotation>.
       </p>
       <span data-edition="ed1939" data-page="140"> </span>
       <p>
@@ -598,7 +598,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         I hope you'll be able to come tonight. Malachi
         Mulligan is coming too. Moore asked him to bring Haines. Did you hear
         Miss Mitchell's joke about Moore and Martyn? That Moore is Martyn's
-        wild oats? Awfully clever, isn't it? <Annotation annotationId="090009donquixote" annotationSelect={() => openNote("090009donquixote")} activeAnnotationId={currentNoteId}>They remind one of Don Quixote and
+        wild oats? Awfully clever, isn't it? <Annotation annotationId="090009donquixote" visited={visitedNotes.has("090009donquixote")} annotationSelect={() => {openNote("090009donquixote"); addToVisited("090009donquixote")}} activeAnnotationId={currentNoteId}>They remind one of Don Quixote and
         Sancho Panza. Our national epic has yet to be written</Annotation>, Dr Sigerson says.
         Moore is the man for it. A knight of the rueful countenance here in
         Dublin. With a saffron kilt? O'Neill Russell? O, yes, he must speak the
@@ -613,7 +613,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       </p>
       <p>
         —{" "}Thank you very much, Mr Russell, Stephen said, rising. If you will be
-        so kind as to give the letter to <Annotation annotationId="020077homestead" annotationSelect={() => openNote("020077homestead")} activeAnnotationId={currentNoteId}>Mr Norman</Annotation>...
+        so kind as to give the letter to <Annotation annotationId="020077homestead" visited={visitedNotes.has("020077homestead")} annotationSelect={() => {openNote("020077homestead"); addToVisited("020077homestead")}} activeAnnotationId={currentNoteId}>Mr Norman</Annotation>...
       </p>
       <span data-edition="ed1932" data-page="172">  </span>
       <p>
@@ -625,11 +625,11 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         —{" "}I understand, Stephen said. Thanks.
       </p>
       <p>
-        God ild you. The pigs' paper. <Annotation annotationId="020065bullockbefriending" annotationSelect={() => openNote("020065bullockbefriending")} activeAnnotationId={currentNoteId}>Bullockbefriending.</Annotation>
+        God ild you. The pigs' paper. <Annotation annotationId="020065bullockbefriending" visited={visitedNotes.has("020065bullockbefriending")} annotationSelect={() => {openNote("020065bullockbefriending"); addToVisited("020065bullockbefriending")}} activeAnnotationId={currentNoteId}>Bullockbefriending.</Annotation>
       </p>
       <span data-edition="ed1939" data-page="141"> </span>
       <p>
-        <Annotation annotationId="090011synge" annotationSelect={() => openNote("090011synge")} activeAnnotationId={currentNoteId}>Synge</Annotation> has promised me an article for <i>Dana</i> too. Are we going to be
+        <Annotation annotationId="090011synge" visited={visitedNotes.has("090011synge")} annotationSelect={() => {openNote("090011synge"); addToVisited("090011synge")}} activeAnnotationId={currentNoteId}>Synge</Annotation> has promised me an article for <i>Dana</i> too. Are we going to be
         read? I feel we are. The Gaelic league wants something in Irish. I hope
         you will come round tonight. Bring Starkey.
       </p>
@@ -867,7 +867,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         <i>Romeo and Juliet</i>. Why? Belief in himself has been untimely killed. He
         was overborne in a cornfield first (ryefield, I should say) and he will
         never be a victor in his own eyes after nor play victoriously the game
-        of laugh and lie down. <Annotation annotationId="040025lacidarem" annotationSelect={() => openNote("040025lacidarem")} activeAnnotationId={currentNoteId}>Assumed dongiovannism</Annotation> will not save him. No later
+        of laugh and lie down. <Annotation annotationId="040025lacidarem" visited={visitedNotes.has("040025lacidarem")} annotationSelect={() => {openNote("040025lacidarem"); addToVisited("040025lacidarem")}} activeAnnotationId={currentNoteId}>Assumed dongiovannism</Annotation> will not save him. No later
         undoing will undo the first undoing. The tusk of the boar has wounded
         him there where love lies ableeding. If the shrew is worsted yet there
         remains to her woman's invisible weapon. There is, I feel in the words,
@@ -903,7 +903,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       </p>
       <span data-edition="ed1939" data-page="144"> </span>
       <p>
-        Hast thou found me, <Annotation annotationId="010049shiptavern" annotationSelect={() => openNote("010049shiptavern")} activeAnnotationId={currentNoteId}>O mine enemy</Annotation>?
+        Hast thou found me, <Annotation annotationId="010049shiptavern" visited={visitedNotes.has("010049shiptavern")} annotationSelect={() => {openNote("010049shiptavern"); addToVisited("010049shiptavern")}} activeAnnotationId={currentNoteId}>O mine enemy</Annotation>?
       </p>
       <p>
         <i>Entr'acte</i>.
@@ -917,18 +917,18 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         asked of Stephen.
       </p>
       <p>
-        <Annotation annotationId="010103waistcoat" annotationSelect={() => openNote("010103waistcoat")} activeAnnotationId={currentNoteId}>Primrosevested</Annotation> he greeted gaily with his doffed Panama as with a bauble.
+        <Annotation annotationId="010103waistcoat" visited={visitedNotes.has("010103waistcoat")} annotationSelect={() => {openNote("010103waistcoat"); addToVisited("010103waistcoat")}} activeAnnotationId={currentNoteId}>Primrosevested</Annotation> he greeted gaily with his doffed Panama as with a bauble.
       </p>
       <p>
         They make him welcome. <i>Was Du verlachst wirst Du noch dienen.</i>
       </p>
       <p>
-        <Annotation annotationId="010119trinity" annotationSelect={() => openNote("010119trinity")} activeAnnotationId={currentNoteId}>Brood of mockers: Photius</Annotation>, pseudomalachi, Johann Most.
+        <Annotation annotationId="010119trinity" visited={visitedNotes.has("010119trinity")} annotationSelect={() => {openNote("010119trinity"); addToVisited("010119trinity")}} activeAnnotationId={currentNoteId}>Brood of mockers: Photius</Annotation>, pseudomalachi, Johann Most.
       </p>
       <p>
         He Who Himself begot middler the Holy Ghost and Himself sent Himself,
         Agenbuyer, between Himself and others, Who, put upon by His fiends,
-        <Annotation annotationId="010095stripped" annotationSelect={() => openNote("010095stripped")} activeAnnotationId={currentNoteId}>stripped and whipped</Annotation>, was nailed like bat to barndoor, starved on
+        <Annotation annotationId="010095stripped" visited={visitedNotes.has("010095stripped")} annotationSelect={() => {openNote("010095stripped"); addToVisited("010095stripped")}} activeAnnotationId={currentNoteId}>stripped and whipped</Annotation>, was nailed like bat to barndoor, starved on
         crosstree, Who let Him bury, stood up, harrowed hell, fared into heaven
         and there <span data-edition="ed1961" data-page="197">  </span>these nineteen hundred years sitteth on the right hand of His
         Own Self but yet shall come in the latter day to doom the quick and dead
@@ -963,7 +963,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       </p>
       <span data-edition="ed1932" data-page="177">  </span>
       <p>
-        —{" "}To be sure, he said, remembering brightly. <Annotation annotationId="090011synge" annotationSelect={() => openNote("090011synge")} activeAnnotationId={currentNoteId}>The chap that writes like
+        —{" "}To be sure, he said, remembering brightly. <Annotation annotationId="090011synge" visited={visitedNotes.has("090011synge")} annotationSelect={() => {openNote("090011synge"); addToVisited("090011synge")}} activeAnnotationId={currentNoteId}>The chap that writes like
         Synge.</Annotation>
       </p>
       <p>
@@ -1054,25 +1054,25 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         immense debtorship for a thing done.</i> Signed: Dedalus. Where did you
         launch it from? The kips? No. College Green. Have you drunk the four
         quid? The aunt is going to call on your unsubstantial father. Telegram!
-        Malachi Mulligan, <Annotation annotationId="010049shiptavern" annotationSelect={() => openNote("010049shiptavern")} activeAnnotationId={currentNoteId}>The Ship, lower Abbey street</Annotation>. <Annotation annotationId="010043mummer" annotationSelect={() => openNote("010043mummer")} activeAnnotationId={currentNoteId}>O, you peerless mummer!</Annotation>
+        Malachi Mulligan, <Annotation annotationId="010049shiptavern" visited={visitedNotes.has("010049shiptavern")} annotationSelect={() => {openNote("010049shiptavern"); addToVisited("010049shiptavern")}} activeAnnotationId={currentNoteId}>The Ship, lower Abbey street</Annotation>. <Annotation annotationId="010043mummer" visited={visitedNotes.has("010043mummer")} annotationSelect={() => {openNote("010043mummer"); addToVisited("010043mummer")}} activeAnnotationId={currentNoteId}>O, you peerless mummer!</Annotation>
         O, you priestified kinchite!
       </p>
       <p>
-        Joyfully he thrust message and envelope into a pocket but <Annotation annotationId="090012brogue" annotationSelect={() => openNote("090012brogue")} activeAnnotationId={currentNoteId}>keened</Annotation> <Annotation annotationId="090012brogue" annotationSelect={() => openNote("090012brogue")} activeAnnotationId={currentNoteId}>in a
+        Joyfully he thrust message and envelope into a pocket but <Annotation annotationId="090012brogue" visited={visitedNotes.has("090012brogue")} annotationSelect={() => {openNote("090012brogue"); addToVisited("090012brogue")}} activeAnnotationId={currentNoteId}>keened</Annotation> <Annotation annotationId="090012brogue" visited={visitedNotes.has("090012brogue")} annotationSelect={() => {openNote("090012brogue"); addToVisited("090012brogue")}} activeAnnotationId={currentNoteId}>in a
         querulous brogue:</Annotation>
       </p>
       <p>
-        <Annotation annotationId="090012brogue" annotationSelect={() => openNote("090012brogue")} activeAnnotationId={currentNoteId}>—{" "}It's what I'm telling you, mister honey, it's queer and sick we were,
+        <Annotation annotationId="090012brogue" visited={visitedNotes.has("090012brogue")} annotationSelect={() => {openNote("090012brogue"); addToVisited("090012brogue")}} activeAnnotationId={currentNoteId}>—{" "}It's what I'm telling you, mister honey, it's queer and sick we were,
         Haines and myself, the time himself brought it in. 'Twas murmur we did
         for a gallus potion</Annotation> would rouse a friar, I'm thinking, and he limp with
-        leching. And we one hour and two hours and three hours in <Annotation annotationId="010049shiptavern" annotationSelect={() => openNote("010049shiptavern")} activeAnnotationId={currentNoteId}>Connery's</Annotation>
+        leching. And we one hour and two hours and three hours in <Annotation annotationId="010049shiptavern" visited={visitedNotes.has("010049shiptavern")} annotationSelect={() => {openNote("010049shiptavern"); addToVisited("010049shiptavern")}} activeAnnotationId={currentNoteId}>Connery's</Annotation>
         sitting civil waiting for pints apiece.
       </p>
       <p>
         He wailed:
       </p>
       <p>
-        <Annotation annotationId="090012brogue" annotationSelect={() => openNote("090012brogue")} activeAnnotationId={currentNoteId}>—{" "}And we to be there, mavrone, and you to be unbeknownst sending us your
+        <Annotation annotationId="090012brogue" visited={visitedNotes.has("090012brogue")} annotationSelect={() => {openNote("090012brogue"); addToVisited("090012brogue")}} activeAnnotationId={currentNoteId}>—{" "}And we to be there, mavrone, and you to be unbeknownst sending us your
         conglomerations the way we to have our tongues out a yard long like the
         drouthy clerics do be fainting for a pussful.</Annotation>
       </p>
@@ -1084,7 +1084,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         Quickly, warningfully Buck Mulligan bent down.
       </p>
       <p>
-        —{" "}<Annotation annotationId="090011synge" annotationSelect={() => openNote("090011synge")} activeAnnotationId={currentNoteId}>The tramper Synge is looking for you, he said, to murder you. He
+        —{" "}<Annotation annotationId="090011synge" visited={visitedNotes.has("090011synge")} annotationSelect={() => {openNote("090011synge"); addToVisited("090011synge")}} activeAnnotationId={currentNoteId}>The tramper Synge is looking for you, he said, to murder you. He
         heard you pissed on his halldoor in Glasthule. He's out in pampooties to
         murder you.</Annotation>
       </p>
@@ -1100,11 +1100,11 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       </p>
       <span data-edition="ed1939" data-page="146"> </span>
       <p>
-        <Annotation annotationId="090011synge" annotationSelect={() => openNote("090011synge")} activeAnnotationId={currentNoteId}>Harsh gargoyle face that warred against me over our mess of hash of</Annotation> 
-        <Annotation annotationId="090011synge" annotationSelect={() => openNote("090011synge")} activeAnnotationId={currentNoteId}> <span data-edition="ed1922" data-page="191"> </span>
+        <Annotation annotationId="090011synge" visited={visitedNotes.has("090011synge")} annotationSelect={() => {openNote("090011synge"); addToVisited("090011synge")}} activeAnnotationId={currentNoteId}>Harsh gargoyle face that warred against me over our mess of hash of</Annotation> 
+        <Annotation annotationId="090011synge" visited={visitedNotes.has("090011synge")} annotationSelect={() => {openNote("090011synge"); addToVisited("090011synge")}} activeAnnotationId={currentNoteId}> <span data-edition="ed1922" data-page="191"> </span>
         lights in rue Saint-André-des-Arts.</Annotation> In words of words for words,
-        palabras. <Annotation annotationId="050036saintpatrick" annotationSelect={() => openNote("050036saintpatrick")} activeAnnotationId={currentNoteId}>Oisin with Patrick.</Annotation> Faunman he met in Clamart woods,
-        brandishing a winebottle. <i>C'est vendredi saint!</i> Murthering Irish. <Annotation annotationId="090011synge" annotationSelect={() => openNote("090011synge")} activeAnnotationId={currentNoteId}>His
+        palabras. <Annotation annotationId="050036saintpatrick" visited={visitedNotes.has("050036saintpatrick")} annotationSelect={() => {openNote("050036saintpatrick"); addToVisited("050036saintpatrick")}} activeAnnotationId={currentNoteId}>Oisin with Patrick.</Annotation> Faunman he met in Clamart woods,
+        brandishing a winebottle. <i>C'est vendredi saint!</i> Murthering Irish. <Annotation annotationId="090011synge" visited={visitedNotes.has("090011synge")} annotationSelect={() => {openNote("090011synge"); addToVisited("090011synge")}} activeAnnotationId={currentNoteId}>His
         image, wandering, he met. I mine.</Annotation> I met a fool i'the forest.
       </p>
       <p>
@@ -1165,14 +1165,14 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       </p>
       <span data-edition="ed1961" data-page="200">  </span>
       <p>
-        —{" "}What's his name? <Annotation annotationId="040050ikeymo" annotationSelect={() => openNote("040050ikeymo")} activeAnnotationId={currentNoteId}>Ikey Moses?</Annotation> Bloom.
+        —{" "}What's his name? <Annotation annotationId="040050ikeymo" visited={visitedNotes.has("040050ikeymo")} annotationSelect={() => {openNote("040050ikeymo"); addToVisited("040050ikeymo")}} activeAnnotationId={currentNoteId}>Ikey Moses?</Annotation> Bloom.
       </p>
       <p>
         He rattled on:
       </p>
       <p>
-        —{" "}<Annotation annotationId="010087prepuces" annotationSelect={() => openNote("010087prepuces")} activeAnnotationId={currentNoteId}>Jehovah, collector of prepuces</Annotation>, is no more. <Annotation annotationId="010144nationallibrary" annotationSelect={() => openNote("010144nationallibrary")} activeAnnotationId={currentNoteId}>I found him over in the
-        museum</Annotation> where I went to hail the foamborn Aphrodite. <Annotation annotationId="010022hellenise" annotationSelect={() => openNote("010022hellenise")} activeAnnotationId={currentNoteId}>The Greek mouth that
+        —{" "}<Annotation annotationId="010087prepuces" visited={visitedNotes.has("010087prepuces")} annotationSelect={() => {openNote("010087prepuces"); addToVisited("010087prepuces")}} activeAnnotationId={currentNoteId}>Jehovah, collector of prepuces</Annotation>, is no more. <Annotation annotationId="010144nationallibrary" visited={visitedNotes.has("010144nationallibrary")} annotationSelect={() => {openNote("010144nationallibrary"); addToVisited("010144nationallibrary")}} activeAnnotationId={currentNoteId}>I found him over in the
+        museum</Annotation> where I went to hail the foamborn Aphrodite. <Annotation annotationId="010022hellenise" visited={visitedNotes.has("010022hellenise")} annotationSelect={() => {openNote("010022hellenise"); addToVisited("010022hellenise")}} activeAnnotationId={currentNoteId}>The Greek mouth that
         has never been twisted in prayer.</Annotation> Every day we must do homage to her.
         <i>Life of life, thy lips enkindle.</i>
       </p>
@@ -1180,10 +1180,10 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         Suddenly he turned to Stephen:
       </p>
       <p>
-        —{" "}He knows you. He knows your old fellow. O, I fear me, he is <Annotation annotationId="010022hellenise" annotationSelect={() => openNote("010022hellenise")} activeAnnotationId={currentNoteId}>Greeker
+        —{" "}He knows you. He knows your old fellow. O, I fear me, he is <Annotation annotationId="010022hellenise" visited={visitedNotes.has("010022hellenise")} annotationSelect={() => {openNote("010022hellenise"); addToVisited("010022hellenise")}} activeAnnotationId={currentNoteId}>Greeker
         than the Greeks. His pale Galilean eyes were upon her mesial groove.</Annotation>
         Venus <span data-edition="ed1922" data-page="192"> </span>
-        <Annotation annotationId="080005venus" annotationSelect={() => openNote("080005venus")} activeAnnotationId={currentNoteId}>Kallipyge.</Annotation> O, the thunder of those loins! <i>The god pursuing the
+        <Annotation annotationId="080005venus" visited={visitedNotes.has("080005venus")} annotationSelect={() => {openNote("080005venus"); addToVisited("080005venus")}} activeAnnotationId={currentNoteId}>Kallipyge.</Annotation> O, the thunder of those loins! <i>The god pursuing the
         maiden hid</i>.
       </p>
       <p>
@@ -1231,7 +1231,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         —{" "}Blessed Margaret Mary Anycock!
       </p>
       <p>
-        —{" "}And Harry of six wives' daughter. And other <Annotation annotationId="030088tennyson" annotationSelect={() => openNote("030088tennyson")} activeAnnotationId={currentNoteId}>lady friends from
+        —{" "}And Harry of six wives' daughter. And other <Annotation annotationId="030088tennyson" visited={visitedNotes.has("030088tennyson")} annotationSelect={() => {openNote("030088tennyson"); addToVisited("030088tennyson")}} activeAnnotationId={currentNoteId}>lady friends from
         neighbour seats as Lawn Tennyson, gentleman poet, sings.</Annotation> But all those
         twenty years what do you suppose poor Penelope in Stratford was doing
         behind the diamond panes?
@@ -1254,7 +1254,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         spurned. But the court wanton spurned him for a lord, his dearmylove.
       </p>
       <p>
-        <Annotation annotationId="030114darenotspeak" annotationSelect={() => openNote("030114darenotspeak")} activeAnnotationId={currentNoteId}>Love that dare not speak its name.</Annotation>
+        <Annotation annotationId="030114darenotspeak" visited={visitedNotes.has("030114darenotspeak")} annotationSelect={() => {openNote("030114darenotspeak"); addToVisited("030114darenotspeak")}} activeAnnotationId={currentNoteId}>Love that dare not speak its name.</Annotation>
       </p>
       <p>
         —{" "}As an Englishman, you mean, John sturdy Eglinton put in, he loved a
@@ -1360,7 +1360,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         —{" "}Antiquity mentions that Stagyrite schoolurchin and bald heathen sage,
         Stephen said, who when dying in exile frees and endows his slaves, pays
         tribute to his elders, wills to be laid in earth near the bones of his
-        dead wife and <Annotation annotationId="090005shrewridden" annotationSelect={() => openNote("090005shrewridden")} activeAnnotationId={currentNoteId}>bids his friends be kind to an old mistress (don't forget
+        dead wife and <Annotation annotationId="090005shrewridden" visited={visitedNotes.has("090005shrewridden")} annotationSelect={() => {openNote("090005shrewridden"); addToVisited("090005shrewridden")}} activeAnnotationId={currentNoteId}>bids his friends be kind to an old mistress (don't forget
         Nell Gwynn Herpyllis) and let her live in his villa</Annotation>.
       </p>
       <span data-edition="ed1922" data-page="195"> </span><span data-edition="ed1986" data-page="167"> </span>
@@ -1386,7 +1386,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         Lovely!
       </p>
       <p>
-        <Annotation annotationId="010152linkedarm" annotationSelect={() => openNote("010152linkedarm")} activeAnnotationId={currentNoteId}>Catamite.</Annotation>
+        <Annotation annotationId="010152linkedarm" visited={visitedNotes.has("010152linkedarm")} annotationSelect={() => {openNote("010152linkedarm"); addToVisited("010152linkedarm")}} activeAnnotationId={currentNoteId}>Catamite.</Annotation>
       </p>
       <p>
         —{" "}The sense of beauty leads us astray, said beautifulinsadness Best to
@@ -1413,11 +1413,11 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         Aubrey's ostler and callboy get rich quick? All events brought grist to
         his mill. Shylock chimes with the jewbaiting that followed the hanging
         and quartering of the queen's leech Lopez, his jew's heart being plucked
-        forth while <Annotation annotationId="040050ikeymo" annotationSelect={() => openNote("040050ikeymo")} activeAnnotationId={currentNoteId}>the sheeny</Annotation> was yet alive: <i>Hamlet</i> and <i>Macbeth</i> with
+        forth while <Annotation annotationId="040050ikeymo" visited={visitedNotes.has("040050ikeymo")} annotationSelect={() => {openNote("040050ikeymo"); addToVisited("040050ikeymo")}} activeAnnotationId={currentNoteId}>the sheeny</Annotation> was yet alive: <i>Hamlet</i> and <i>Macbeth</i> with
         the coming <span data-edition="ed1961" data-page="204">  </span>to the throne of a Scotch philosophaster with a turn for
         witchroasting. The lost armada is his jeer in <i>Love's Labour Lost</i>.
         His pageants, the histories, sail fullbellied on a tide of Mafeking
-        enthusiasm. <Annotation annotationId="010008jesuit" annotationSelect={() => openNote("010008jesuit")} activeAnnotationId={currentNoteId}>Warwickshire jesuits are tried and we have a porter's theory
+        enthusiasm. <Annotation annotationId="010008jesuit" visited={visitedNotes.has("010008jesuit")} annotationSelect={() => {openNote("010008jesuit"); addToVisited("010008jesuit")}} activeAnnotationId={currentNoteId}>Warwickshire jesuits are tried and we have a porter's theory
         of equivocation.</Annotation> The <i>Sea Venture</i> comes home from Bermudas and the play
         Renan admired is written with Patsy Caliban, our American cousin.
         The sugared sonnets follow Sidney's. As for fay Elizabeth, otherwise
@@ -1426,7 +1426,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         meanings in the depths of the buckbasket.
       </p>
       <p>
-        I think you're getting on very nicely. <Annotation annotationId="090010nothoughts" annotationSelect={() => openNote("090010nothoughts")} activeAnnotationId={currentNoteId}>Just mix up a mixture of
+        I think you're getting on very nicely. <Annotation annotationId="090010nothoughts" visited={visitedNotes.has("090010nothoughts")} annotationSelect={() => {openNote("090010nothoughts"); addToVisited("090010nothoughts")}} activeAnnotationId={currentNoteId}>Just mix up a mixture of
         theolologicophilolological. <i>Mingo, minxi, mictum, mingere.</i></Annotation>
       </p>
       <span data-edition="ed1922" data-page="196"> </span>
@@ -1460,7 +1460,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         There he keened a wailing rune.
       </p>
       <p>
-        —{" "}<i>Pogue mahone! Acushla machree!</i> <Annotation annotationId="090012brogue" annotationSelect={() => openNote("090012brogue")} activeAnnotationId={currentNoteId}>It's destroyed we are from this day!
+        —{" "}<i>Pogue mahone! Acushla machree!</i> <Annotation annotationId="090012brogue" visited={visitedNotes.has("090012brogue")} annotationSelect={() => {openNote("090012brogue"); addToVisited("090012brogue")}} activeAnnotationId={currentNoteId}>It's destroyed we are from this day!
         It's destroyed we are surely!</Annotation>
       </p>
       <p>
@@ -1468,7 +1468,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       </p>
       <span data-edition="ed1939" data-page="150"> </span>
       <p>
-        —{" "}Saint Thomas, Stephen smiling said, whose <Annotation annotationId="010102aquinas" annotationSelect={() => openNote("010102aquinas")} activeAnnotationId={currentNoteId}>gorbellied works</Annotation> I enjoy
+        —{" "}Saint Thomas, Stephen smiling said, whose <Annotation annotationId="010102aquinas" visited={visitedNotes.has("010102aquinas")} annotationSelect={() => {openNote("010102aquinas"); addToVisited("010102aquinas")}} activeAnnotationId={currentNoteId}>gorbellied works</Annotation> I enjoy
         reading in the original, writing of incest from a standpoint different
         from that of the new Viennese school Mr Magee spoke of, likens it in his
         wise and curious way to an avarice of the emotions. He means that the
@@ -1515,7 +1515,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         Wives</i> and, loosing her nightly waters on the jordan, she thought
         over <i>Hooks and Eyes for Believers' Breeches</i> and <i>The most Spiritual
         Snuffbox to Make the Most Devout Souls Sneeze</i>. Venus has twisted her
-        lips in prayer. <Annotation annotationId="010094agenbite" annotationSelect={() => openNote("010094agenbite")} activeAnnotationId={currentNoteId}>Agenbite of inwit: remorse of conscience.</Annotation> It is an age
+        lips in prayer. <Annotation annotationId="010094agenbite" visited={visitedNotes.has("010094agenbite")} annotationSelect={() => {openNote("010094agenbite"); addToVisited("010094agenbite")}} activeAnnotationId={currentNoteId}>Agenbite of inwit: remorse of conscience.</Annotation> It is an age
         of exhausted whoredom groping for its god.
       </p>
       <p>
@@ -1562,7 +1562,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         mystery and not on the madonna which the cunning Italian intellect
         flung to the mob of Europe the church is founded and founded irremovably
         because founded, like the world, macro and microcosm, upon the void.
-        Upon incertitude, upon unlikelihood. <Annotation annotationId="020024amormatris" annotationSelect={() => openNote("020024amormatris")} activeAnnotationId={currentNoteId}><i>Amor matris</i>, subjective and
+        Upon incertitude, upon unlikelihood. <Annotation annotationId="020024amormatris" visited={visitedNotes.has("020024amormatris")} annotationSelect={() => {openNote("020024amormatris"); addToVisited("020024amormatris")}} activeAnnotationId={currentNoteId}><i>Amor matris</i>, subjective and
         objective genitive, may be the only true thing in life</Annotation>. Paternity may be
         a legal fiction. Who is the father of any son that any son should love
         him or he any son?
@@ -1574,7 +1574,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         I know. Shut up. Blast you. I have reasons.
       </p>
       <p>
-        <Annotation annotationId="090010nothoughts" annotationSelect={() => openNote("090010nothoughts")} activeAnnotationId={currentNoteId}>Just <i>Amplius. Adhuc. Iterum. Postea.</i></Annotation>
+        <Annotation annotationId="090010nothoughts" visited={visitedNotes.has("090010nothoughts")} annotationSelect={() => {openNote("090010nothoughts"); addToVisited("090010nothoughts")}} activeAnnotationId={currentNoteId}>Just <i>Amplius. Adhuc. Iterum. Postea.</i></Annotation>
       </p>
       <p>
         Are you condemned to do this?
@@ -1584,7 +1584,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         annals of the world, stained with all other incests and bestialities,
         hardly record its breach. Sons with mothers, sires with daughters,
         lesbic sisters, loves that dare not speak their name, nephews with
-        grandmothers, jailbirds with keyholes, <Annotation annotationId="010020ancientgreek" annotationSelect={() => openNote("010020ancientgreek")} activeAnnotationId={currentNoteId}>queens with prize bulls</Annotation>. The son
+        grandmothers, jailbirds with keyholes, <Annotation annotationId="010020ancientgreek" visited={visitedNotes.has("010020ancientgreek")} annotationSelect={() => {openNote("010020ancientgreek"); addToVisited("010020ancientgreek")}} activeAnnotationId={currentNoteId}>queens with prize bulls</Annotation>. The son
         unborn mars beauty: born, he brings pain, divides affection, increases
         care. He is a <span data-edition="ed1961" data-page="207">  </span>male: his growth is his father's decline, his youth
         his father's envy, his friend his father's enemy.
@@ -1737,9 +1737,9 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         sable a spear or steeled argent, honorificabilitudinitatibus, dearer
         than his glory of greatest shakescene in the country. What's in a name?
         That is what we ask ourselves in childhood when we write the name that
-        we are told is ours. <Annotation annotationId="030152delta" annotationSelect={() => openNote("030152delta")} activeAnnotationId={currentNoteId}>A star, a daystar, a firedrake, rose at his birth.
+        we are told is ours. <Annotation annotationId="030152delta" visited={visitedNotes.has("030152delta")} annotationSelect={() => {openNote("030152delta"); addToVisited("030152delta")}} activeAnnotationId={currentNoteId}>A star, a daystar, a firedrake, rose at his birth.
         It shone by day in the heavens alone, brighter than Venus in the
-        night, and by night it shone</Annotation> <span data-edition="ed1932" data-page="188">  </span><Annotation annotationId="030152delta" annotationSelect={() => openNote("030152delta")} activeAnnotationId={currentNoteId}>over delta in Cassiopeia, the recumbent
+        night, and by night it shone</Annotation> <span data-edition="ed1932" data-page="188">  </span><Annotation annotationId="030152delta" visited={visitedNotes.has("030152delta")} annotationSelect={() => {openNote("030152delta"); addToVisited("030152delta")}} activeAnnotationId={currentNoteId}>over delta in Cassiopeia, the recumbent
         constellation which is the signature of his initial among the stars.</Annotation> His
         eyes watched it, lowlying on the horizon, eastward of the bear, as
         he walked by the slumberous summer fields at midnight returning from
@@ -1769,7 +1769,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         celestial phenomenon?
       </p>
       <p>
-        —{" "}<Annotation annotationId="030152delta" annotationSelect={() => openNote("030152delta")} activeAnnotationId={currentNoteId}>A star by night, Stephen said. A pillar of the cloud by day.</Annotation>
+        —{" "}<Annotation annotationId="030152delta" visited={visitedNotes.has("030152delta")} annotationSelect={() => {openNote("030152delta"); addToVisited("030152delta")}} activeAnnotationId={currentNoteId}>A star by night, Stephen said. A pillar of the cloud by day.</Annotation>
       </p>
       <p>
         What more's to speak?
@@ -1789,7 +1789,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         Me, Magee and Mulligan.
       </p>
       <p>
-        <Annotation annotationId="010020ancientgreek" annotationSelect={() => openNote("010020ancientgreek")} activeAnnotationId={currentNoteId}>Fabulous artificer. The hawklike man. You flew. Whereto?
+        <Annotation annotationId="010020ancientgreek" visited={visitedNotes.has("010020ancientgreek")} annotationSelect={() => {openNote("010020ancientgreek"); addToVisited("010020ancientgreek")}} activeAnnotationId={currentNoteId}>Fabulous artificer. The hawklike man. You flew. Whereto?
         Newhaven-Dieppe, steerage passenger. Paris and back. Lapwing. Icarus.
         <i>Pater, ait.</i> Seabedabbled, fallen, weltering. Lapwing you are. Lapwing
         be.</Annotation>
@@ -1907,7 +1907,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       </p>
       <span data-edition="ed1939" data-page="155"> </span>
       <p>
-        <Annotation annotationId="090010nothoughts" annotationSelect={() => openNote("090010nothoughts")} activeAnnotationId={currentNoteId}>He laughed to free his mind from his mind's bondage.</Annotation>
+        <Annotation annotationId="090010nothoughts" visited={visitedNotes.has("090010nothoughts")} annotationSelect={() => {openNote("090010nothoughts"); addToVisited("090010nothoughts")}} activeAnnotationId={currentNoteId}>He laughed to free his mind from his mind's bondage.</Annotation>
       </p>
       <p>
         Judge Eglinton summed up.
@@ -1925,7 +1925,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       </p>
       <span data-edition="ed1986" data-page="174"> </span>
       <p>
-        —{" "} <Annotation annotationId="130005cuckoo" annotationSelect={() => openNote("130005cuckoo")} activeAnnotationId={currentNoteId}> Cuckoo! Cuckoo! Cuck Mulligan clucked lewdly. O word of fear!</Annotation>
+        —{" "} <Annotation annotationId="130005cuckoo" visited={visitedNotes.has("130005cuckoo")} annotationSelect={() => {openNote("130005cuckoo"); addToVisited("130005cuckoo")}} activeAnnotationId={currentNoteId}> Cuckoo! Cuckoo! Cuck Mulligan clucked lewdly. O word of fear!</Annotation>
       </p>
       <p>
         Dark dome received, reverbed.
@@ -1956,8 +1956,8 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         widows, brothers-in-love, but always meeting ourselves. The playwright
         who wrote the folio of this world and wrote it badly (He gave us light
         first <span data-edition="ed1932" data-page="191">  </span>and the sun two days later), the lord of things as they are whom
-        the most Roman of catholics call <Annotation annotationId="010041killergod" annotationSelect={() => openNote("010041killergod")} activeAnnotationId={currentNoteId}><i>dio boia</i>, hangman god</Annotation>, is doubtless
-        <Annotation annotationId="020069streetshout" annotationSelect={() => openNote("020069streetshout")} activeAnnotationId={currentNoteId}>all in all in all of us</Annotation>, ostler and butcher, and would be bawd and
+        the most Roman of catholics call <Annotation annotationId="010041killergod" visited={visitedNotes.has("010041killergod")} annotationSelect={() => {openNote("010041killergod"); addToVisited("010041killergod")}} activeAnnotationId={currentNoteId}><i>dio boia</i>, hangman god</Annotation>, is doubtless
+        <Annotation annotationId="020069streetshout" visited={visitedNotes.has("020069streetshout")} annotationSelect={() => {openNote("020069streetshout"); addToVisited("020069streetshout")}} activeAnnotationId={currentNoteId}>all in all in all of us</Annotation>, ostler and butcher, and would be bawd and
         <span data-edition="ed1922" data-page="204"> </span>
         cuckold too but that in the economy of heaven, foretold by Hamlet, there
         are no more marriages, glorified man, an androgynous angel, being a wife
@@ -1971,7 +1971,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         desk.
       </p>
       <p>
-        —{" "}May I? he said. <Annotation annotationId="010021malachi" annotationSelect={() => openNote("010021malachi")} activeAnnotationId={currentNoteId}>The Lord has spoken to Malachi.</Annotation>
+        —{" "}May I? he said. <Annotation annotationId="010021malachi" visited={visitedNotes.has("010021malachi")} annotationSelect={() => {openNote("010021malachi"); addToVisited("010021malachi")}} activeAnnotationId={currentNoteId}>The Lord has spoken to Malachi.</Annotation>
       </p>
       <p>
         He began to scribble on a slip of paper.
@@ -2019,7 +2019,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         believes his theory.
       </p>
       <p>
-        <Annotation annotationId="090010nothoughts" annotationSelect={() => openNote("090010nothoughts")} activeAnnotationId={currentNoteId}>I believe, O Lord, help my unbelief. That is, help me to believe or help
+        <Annotation annotationId="090010nothoughts" visited={visitedNotes.has("090010nothoughts")} annotationSelect={() => {openNote("090010nothoughts"); addToVisited("090010nothoughts")}} activeAnnotationId={currentNoteId}>I believe, O Lord, help my unbelief. That is, help me to believe or help
         me to unbelieve? Who helps to believe? <i>Egomen.</i> Who to unbelieve? Other
         chap.</Annotation>
       </p>
@@ -2041,8 +2041,8 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       </p>
       <span data-edition="ed1922" data-page="205"> </span>
       <p>
-        —{" "}I called upon the bard Kinch at his summer residence in <Annotation annotationId="150005nighttown" annotationSelect={() => openNote("150005nighttown")} activeAnnotationId={currentNoteId}>upper
-        Mecklenburgh street</Annotation> and found him deep in the study of the <Annotation annotationId="010102aquinas" annotationSelect={() => openNote("010102aquinas")} activeAnnotationId={currentNoteId}><i>Summa contra
+        —{" "}I called upon the bard Kinch at his summer residence in <Annotation annotationId="150005nighttown" visited={visitedNotes.has("150005nighttown")} annotationSelect={() => {openNote("150005nighttown"); addToVisited("150005nighttown")}} activeAnnotationId={currentNoteId}>upper
+        Mecklenburgh street</Annotation> and found him deep in the study of the <Annotation annotationId="010102aquinas" visited={visitedNotes.has("010102aquinas")} annotationSelect={() => {openNote("010102aquinas"); addToVisited("010102aquinas")}} activeAnnotationId={currentNoteId}><i>Summa contra
         Gentiles</i></Annotation> in the company of two gonorrheal ladies, Fresh Nelly and
         Rosalie, the coalquay whore.
       </p>
@@ -2053,7 +2053,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         —{" "}Come, Kinch. Come, wandering Ængus of the birds.
       </p>
       <p>
-        <Annotation annotationId="010138eatenall" annotationSelect={() => openNote("010138eatenall")} activeAnnotationId={currentNoteId}>Come, Kinch. You have eaten all we left. Ay. I will serve you your orts and offals.</Annotation>
+        <Annotation annotationId="010138eatenall" visited={visitedNotes.has("010138eatenall")} annotationSelect={() => {openNote("010138eatenall"); addToVisited("010138eatenall")}} activeAnnotationId={currentNoteId}>Come, Kinch. You have eaten all we left. Ay. I will serve you your orts and offals.</Annotation>
       </p>
       <p>
         Stephen rose.
@@ -2091,7 +2091,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       </p>
       <p>
         Stephen, greeting, then all amort, followed a lubber jester, a wellkempt
-        head, newbarbered, out of the vaulted cell into <Annotation annotationId="090010nothoughts" annotationSelect={() => openNote("090010nothoughts")} activeAnnotationId={currentNoteId}>a shattering daylight of
+        head, newbarbered, out of the vaulted cell into <Annotation annotationId="090010nothoughts" visited={visitedNotes.has("090010nothoughts")} annotationSelect={() => {openNote("090010nothoughts"); addToVisited("090010nothoughts")}} activeAnnotationId={currentNoteId}>a shattering daylight of
         no thoughts</Annotation>.
       </p>
       <p>
@@ -2102,7 +2102,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       </p>
       <span data-edition="ed1986" data-page="176"> </span>
       <p>
-        The constant <Annotation annotationId="010144nationallibrary" annotationSelect={() => openNote("010144nationallibrary")} activeAnnotationId={currentNoteId}>readers' room</Annotation>. In the readers' book Cashel Boyle O'Connor
+        The constant <Annotation annotationId="010144nationallibrary" visited={visitedNotes.has("010144nationallibrary")} annotationSelect={() => {openNote("010144nationallibrary"); addToVisited("010144nationallibrary")}} activeAnnotationId={currentNoteId}>readers' room</Annotation>. In the readers' book Cashel Boyle O'Connor
         Fitzmaurice Tisdall Farrell parafes his polysyllables. Item: was Hamlet
         mad? The quaker's pate godlily with a priesteen in booktalk.
       </p>
@@ -2123,7 +2123,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         Is that?... Blueribboned hat... Idly writing... What? Looked?...
       </p>
       <p>
-        The curving balustrade:  <Annotation annotationId="020010lycidas" annotationSelect={() => openNote("020010lycidas")} activeAnnotationId={currentNoteId}>smoothsliding Mincius</Annotation>.
+        The curving balustrade:  <Annotation annotationId="020010lycidas" visited={visitedNotes.has("020010lycidas")} annotationSelect={() => {openNote("020010lycidas"); addToVisited("020010lycidas")}} activeAnnotationId={currentNoteId}>smoothsliding Mincius</Annotation>.
       </p>
       <span data-edition="ed1922" data-page="206"> </span>
       <p>
@@ -2186,7 +2186,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         Halted, below me, a quizzer looks at me. I halt.
       </p>
       <p>
-        —{" "}Mournful mummer, Buck Mulligan moaned. <Annotation annotationId="090011synge" annotationSelect={() => openNote("090011synge")} activeAnnotationId={currentNoteId}>Synge has left off wearing
+        —{" "}Mournful mummer, Buck Mulligan moaned. <Annotation annotationId="090011synge" visited={visitedNotes.has("090011synge")} annotationSelect={() => {openNote("090011synge"); addToVisited("090011synge")}} activeAnnotationId={currentNoteId}>Synge has left off wearing
         black</Annotation> to be like nature. Only crows, priests and English coal are black.
       </p>
       <p>
@@ -2211,11 +2211,11 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         He stopped at the stairfoot.
       </p>
       <p>
-        —{" "}I have conceived <Annotation annotationId="010043mummer" annotationSelect={() => openNote("010043mummer")} activeAnnotationId={currentNoteId}>a play for the mummers</Annotation>, he said solemnly.
+        —{" "}I have conceived <Annotation annotationId="010043mummer" visited={visitedNotes.has("010043mummer")} annotationSelect={() => {openNote("010043mummer"); addToVisited("010043mummer")}} activeAnnotationId={currentNoteId}>a play for the mummers</Annotation>, he said solemnly.
       </p>
       <span data-edition="ed1939" data-page="158"> </span>
       <p>
-        <Annotation annotationId="010144nationallibrary" annotationSelect={() => openNote("010144nationallibrary")} activeAnnotationId={currentNoteId}>The pillared Moorish hall</Annotation>, shadows entwined. Gone <Annotation annotationId="020020morrice" annotationSelect={() => openNote("020020morrice")} activeAnnotationId={currentNoteId}>the nine men's morrice
+        <Annotation annotationId="010144nationallibrary" visited={visitedNotes.has("010144nationallibrary")} annotationSelect={() => {openNote("010144nationallibrary"); addToVisited("010144nationallibrary")}} activeAnnotationId={currentNoteId}>The pillared Moorish hall</Annotation>, shadows entwined. Gone <Annotation annotationId="020020morrice" visited={visitedNotes.has("020020morrice")} annotationSelect={() => {openNote("020020morrice"); addToVisited("020020morrice")}} activeAnnotationId={currentNoteId}>the nine men's morrice
         with caps of indices</Annotation>.
       </p>
       <p>
@@ -2249,7 +2249,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         {" "}{" "}{" "}{" "}{" "}{" "}{" "}{" "}and
         {" "}{" "}{" "}{" "}{" "}{" "}{" "}{" "}{" "}{" "}{" "}{" "}{" "}{" "}){" "} (two birds with one stone).<br/>
         <span style={{fontVariant:"small-caps"}}>Medical Davy</span>{" "}{" "} )<br/>
-        <span style={{fontVariant:"small-caps"}}><Annotation annotationId="010134mothergrogan" annotationSelect={() => openNote("010134mothergrogan")} activeAnnotationId={currentNoteId}>Mother Grogan</Annotation></span> (a watercarrier)<br/>
+        <span style={{fontVariant:"small-caps"}}><Annotation annotationId="010134mothergrogan" visited={visitedNotes.has("010134mothergrogan")} annotationSelect={() => {openNote("010134mothergrogan"); addToVisited("010134mothergrogan")}} activeAnnotationId={currentNoteId}>Mother Grogan</Annotation></span> (a watercarrier)<br/>
         <span style={{fontVariant:"small-caps"}}>Fresh Nelly</span> <br/>
         {" "}{" "}{" "}{" "}{" "}{" "}{" "}and<br/>
         <span style={{fontVariant:"small-caps"}}>Rosalie</span> (the coalquay whore).
@@ -2259,9 +2259,9 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         and mirthfully he told the shadows, souls of men:
       </p>
       <p>
-        —{" "}<Annotation annotationId="090011synge" annotationSelect={() => openNote("090011synge")} activeAnnotationId={currentNoteId}>O, the night in the Camden hall when the daughters of Erin had to lift</Annotation> 
+        —{" "}<Annotation annotationId="090011synge" visited={visitedNotes.has("090011synge")} annotationSelect={() => {openNote("090011synge"); addToVisited("090011synge")}} activeAnnotationId={currentNoteId}>O, the night in the Camden hall when the daughters of Erin had to lift</Annotation> 
         <span data-edition="ed1922" data-page="208"> </span>
-        <Annotation annotationId="090011synge" annotationSelect={() => openNote("090011synge")} activeAnnotationId={currentNoteId}> their skirts to step over you as you lay in your mulberrycoloured,
+        <Annotation annotationId="090011synge" visited={visitedNotes.has("090011synge")} annotationSelect={() => {openNote("090011synge"); addToVisited("090011synge")}} activeAnnotationId={currentNoteId}> their skirts to step over you as you lay in your mulberrycoloured,
         multicoloured, multitudinous vomit!</Annotation>
       </p>
       <p>
@@ -2287,15 +2287,15 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         —{" "}Good day again, Buck Mulligan said.
       </p>
       <p>
-        <Annotation annotationId="010144nationallibrary" annotationSelect={() => openNote("010144nationallibrary")} activeAnnotationId={currentNoteId}>The portico.</Annotation>
+        <Annotation annotationId="010144nationallibrary" visited={visitedNotes.has("010144nationallibrary")} annotationSelect={() => {openNote("010144nationallibrary"); addToVisited("010144nationallibrary")}} activeAnnotationId={currentNoteId}>The portico.</Annotation>
       </p>
       <p>
-        Here <Annotation annotationId="030145augursrod" annotationSelect={() => openNote("030145augursrod")} activeAnnotationId={currentNoteId}>I watched the birds for augury</Annotation>. Ængus of the birds. They go, they
-        come. <Annotation annotationId="030055samedream" annotationSelect={() => openNote("030055samedream")} activeAnnotationId={currentNoteId}>Last night I flew. Easily flew. Men wondered. Street of harlots
+        Here <Annotation annotationId="030145augursrod" visited={visitedNotes.has("030145augursrod")} annotationSelect={() => {openNote("030145augursrod"); addToVisited("030145augursrod")}} activeAnnotationId={currentNoteId}>I watched the birds for augury</Annotation>. Ængus of the birds. They go, they
+        come. <Annotation annotationId="030055samedream" visited={visitedNotes.has("030055samedream")} annotationSelect={() => {openNote("030055samedream"); addToVisited("030055samedream")}} activeAnnotationId={currentNoteId}>Last night I flew. Easily flew. Men wondered. Street of harlots
         after.</Annotation> A creamfruit melon he held to me. In. You will see.
       </p>
       <p>
-        —{" "}<Annotation annotationId="020061wanderers" annotationSelect={() => openNote("020061wanderers")} activeAnnotationId={currentNoteId}>The wandering jew</Annotation>, Buck Mulligan whispered with clown's awe. Did you
+        —{" "}<Annotation annotationId="020061wanderers" visited={visitedNotes.has("020061wanderers")} annotationSelect={() => {openNote("020061wanderers"); addToVisited("020061wanderers")}} activeAnnotationId={currentNoteId}>The wandering jew</Annotation>, Buck Mulligan whispered with clown's awe. Did you
         see his eye? He looked upon you to lust after you. I fear thee, ancient
         mariner. O, Kinch, thou art in peril. Get thee a breechpad.
       </p>
@@ -2308,7 +2308,7 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
       <span data-edition="ed1939" data-page="159"> </span>
       <span data-edition="ed1961" data-page="217">  </span>
       <p>
-        A dark back went before them, step of a pard, down, <Annotation annotationId="010144nationallibrary" annotationSelect={() => openNote("010144nationallibrary")} activeAnnotationId={currentNoteId}>out by the gateway,
+        A dark back went before them, step of a pard, down, <Annotation annotationId="010144nationallibrary" visited={visitedNotes.has("010144nationallibrary")} annotationSelect={() => {openNote("010144nationallibrary"); addToVisited("010144nationallibrary")}} activeAnnotationId={currentNoteId}>out by the gateway,
         under portcullis barbs</Annotation>.
       </p>
       <p>
@@ -2318,12 +2318,12 @@ const ScyllaAndCharybdis = ({openNote, currentNoteId}) => {
         Offend me still. Speak on.
       </p>
       <p>
-        <Annotation annotationId="030016coignofvantage" annotationSelect={() => openNote("030016coignofvantage")} activeAnnotationId={currentNoteId}>Kind air defined the coigns of houses in Kildare street. No birds.</Annotation> Frail
+        <Annotation annotationId="030016coignofvantage" visited={visitedNotes.has("030016coignofvantage")} annotationSelect={() => {openNote("030016coignofvantage"); addToVisited("030016coignofvantage")}} activeAnnotationId={currentNoteId}>Kind air defined the coigns of houses in Kildare street. No birds.</Annotation> Frail
         from the housetops two plumes of smoke ascended, pluming, and in a flaw
         of softness softly were blown.
       </p>
       <p>
-        Cease to strive. Peace of the <Annotation annotationId="010018druids" annotationSelect={() => openNote("010018druids")} activeAnnotationId={currentNoteId}>druid priests</Annotation> of Cymbeline, hierophantic:
+        Cease to strive. Peace of the <Annotation annotationId="010018druids" visited={visitedNotes.has("010018druids")} annotationSelect={() => {openNote("010018druids"); addToVisited("010018druids")}} activeAnnotationId={currentNoteId}>druid priests</Annotation> of Cymbeline, hierophantic:
         from wide earth an altar.
       </p>
       <p style={{textIndent:"85px"}}> <i>Laud we the gods <br/>
