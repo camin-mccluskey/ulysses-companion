@@ -1,5 +1,6 @@
 {
   "name": "ulysses-companion",
+  "homepage": "https://camin.xyz/ulysses-companion",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,6 +17,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
