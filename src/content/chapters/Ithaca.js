@@ -1,10 +1,13 @@
-const Ithaca = ({openNote}) => {
+import Annotation from "../../components/Annotation";
+
+
+const Ithaca = ({openNote, currentNoteId}) => {
   return (
     <div>
       <p></p>
       <center><font size="+2">[17]</font></center>
       <br/>
-      <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170003parallelcourses")}>What parallel courses</button> did Bloom and Stephen follow <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170007returning")}>returning</button>?
+      <Annotation annotationId="170003parallelcourses" annotationSelect={() => openNote("170003parallelcourses")} activeAnnotationId={currentNoteId}>What parallel courses</Annotation> did Bloom and Stephen follow <Annotation annotationId="170007returning" annotationSelect={() => openNote("170007returning")} activeAnnotationId={currentNoteId}>returning</Annotation>?
       <p></p>
       <p>
         Starting united both at normal walking pace from Beresford place they
@@ -14,19 +17,19 @@ const Ithaca = ({openNote}) => {
         Temple street, north: then, at reduced pace with interruptions of halt, bearing
         right, Temple street, north, as far as Hardwicke place. Approaching,
         disparate, at relaxed walking pace they crossed both the circus before
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040008georgeschurch")}>George's church</button> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170003parallelcourses")}>diametrically, the chord in any circle being less than
-        the arc which it subtends</button>.
+        <Annotation annotationId="040008georgeschurch" annotationSelect={() => openNote("040008georgeschurch")} activeAnnotationId={currentNoteId}>George's church</Annotation> <Annotation annotationId="170003parallelcourses" annotationSelect={() => openNote("170003parallelcourses")} activeAnnotationId={currentNoteId}>diametrically, the chord in any circle being less than
+        the arc which it subtends</Annotation>.
       </p>
       <p>
-        Of what <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170004duumvirate")}>did the duumvirate deliberate during their itinerary</button>?
+        Of what <Annotation annotationId="170004duumvirate" annotationSelect={() => openNote("170004duumvirate")} activeAnnotationId={currentNoteId}>did the duumvirate deliberate during their itinerary</Annotation>?
       </p>
       <span data-edition="ed1932" data-page="572"></span>
       <p>
         Music, literature, Ireland, Dublin, Paris, friendship, woman,
         prostitution, diet, the influence of gaslight or the light of arc and
-        glowlamps on the growth of adjoining paraheliotropic trees, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060033corporation")}>corporation</button> exposed <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170005dustbuckets")}>
-        emergency dustbuckets</button>, the Roman catholic church,
-        ecclesiastical celibacy, the Irish nation, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010008jesuit")}>jesuit education</button>, careers,
+        glowlamps on the growth of adjoining paraheliotropic trees, <Annotation annotationId="060033corporation" annotationSelect={() => openNote("060033corporation")} activeAnnotationId={currentNoteId}>corporation</Annotation> exposed <Annotation annotationId="170005dustbuckets" annotationSelect={() => openNote("170005dustbuckets")} activeAnnotationId={currentNoteId}>
+        emergency dustbuckets</Annotation>, the Roman catholic church,
+        ecclesiastical celibacy, the Irish nation, <Annotation annotationId="010008jesuit" annotationSelect={() => openNote("010008jesuit")} activeAnnotationId={currentNoteId}>jesuit education</Annotation>, careers,
         the study of medicine, the past day, the maleficent influence of the
         presabbath, Stephen's collapse.
       </p>
@@ -51,12 +54,12 @@ const Ithaca = ({openNote}) => {
       <p>
         Stephen dissented openly from Bloom's views on the importance of dietary
         and civic selfhelp while Bloom dissented tacitly from Stephen's views
-        on <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170010spiritofman")}>the eternal affirmation of the spirit of man in literature</button>. Bloom
-        assented <span data-edition="ed1986" data-page="544"></span>covertly to <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050036saintpatrick")}>Stephen's rectification of the anachronism
+        on <Annotation annotationId="170010spiritofman" annotationSelect={() => openNote("170010spiritofman")} activeAnnotationId={currentNoteId}>the eternal affirmation of the spirit of man in literature</Annotation>. Bloom
+        assented <span data-edition="ed1986" data-page="544"></span>covertly to <Annotation annotationId="050036saintpatrick" annotationSelect={() => openNote("050036saintpatrick")} activeAnnotationId={currentNoteId}>Stephen's rectification of the anachronism
         involved in assigning the date of the conversion of the Irish nation to
         christianity from druidism by Patrick son of Calpornus, son of Potitus,
-        son of Odyssus, sent by pope Celestine I in the year 432 in the</button> <span data-edition="ed1961" data-page="666"></span><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050036saintpatrick")}>reign of
-        Leary to the year 260 or thereabouts in the reign of Cormac MacArt</button> (†
+        son of Odyssus, sent by pope Celestine I in the year 432 in the</Annotation> <span data-edition="ed1961" data-page="666"></span><Annotation annotationId="050036saintpatrick" annotationSelect={() => openNote("050036saintpatrick")} activeAnnotationId={currentNoteId}>reign of
+        Leary to the year 260 or thereabouts in the reign of Cormac MacArt</Annotation> (†
         266 A.D.), suffocated by imperfect deglutition of aliment at Sletty
         and 
         <span data-edition="ed1939" data-page="468"> </span>
@@ -65,8 +68,8 @@ const Ithaca = ({openNote}) => {
         adulteration and alcoholic strength, accelerated by mental exertion and
         the velocity of rapid circular motion in a relaxing atmosphere, Stephen
         attributed to the reapparition of a matutinal cloud (perceived by both
-        from two different points of observation, Sandycove and Dublin) <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170001womanshand")}>at first
-        no bigger than a woman's hand</button>.
+        from two different points of observation, Sandycove and Dublin) <Annotation annotationId="170001womanshand" annotationSelect={() => openNote("170001womanshand")} activeAnnotationId={currentNoteId}>at first
+        no bigger than a woman's hand</Annotation>.
       </p>
       <p>
         Was there one point on which their views were equal and negative?
@@ -88,11 +91,11 @@ const Ithaca = ({openNote}) => {
         between Gibraltar villa and Bloomfield house in Crumlin, barony
         of Uppercross. In 1886 occasionally with casual acquaintances and
         prospective purchasers on doorsteps, in front parlours, in third class
-        railway carriages of suburban lines. In 1888 frequently with <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040018oldtweedy")}>major Brian
-        Tweedy</button> and his daughter Miss Marion Tweedy, together and separately on
+        railway carriages of suburban lines. In 1888 frequently with <Annotation annotationId="040018oldtweedy" annotationSelect={() => openNote("040018oldtweedy")} activeAnnotationId={currentNoteId}>major Brian
+        Tweedy</Annotation> and his daughter Miss Marion Tweedy, together and separately on
         the lounge in Matthew Dillon's house in Roundtown. Once in 1892 and once
         in 1893 with Julius Mastiansky, on both occasions in the parlour
-        of his (Bloom's) house <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040049pleasantoldtimes")}>in Lombard street, west</button>.
+        of his (Bloom's) house <Annotation annotationId="040049pleasantoldtimes" annotationSelect={() => openNote("040049pleasantoldtimes")} activeAnnotationId={currentNoteId}>in Lombard street, west</Annotation>.
       </p>
       <p>
         What reflection concerning the irregular sequence of dates 1884, 1885,
@@ -118,8 +121,8 @@ const Ithaca = ({openNote}) => {
         What action did Bloom make on their arrival at their destination?
       </p>
       <p>
-        At the housesteps of the 4th of the equidifferent uneven numbers, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040005seveneccles")}>number
-        7 Eccles street</button>, he inserted his hand mechanically into the back pocket
+        At the housesteps of the 4th of the equidifferent uneven numbers, <Annotation annotationId="040005seveneccles" annotationSelect={() => openNote("040005seveneccles")} activeAnnotationId={currentNoteId}>number
+        7 Eccles street</Annotation>, he inserted his hand mechanically into the back pocket
         of his trousers to obtain his latchkey.
       </p>
       <p>
@@ -210,7 +213,7 @@ const Ithaca = ({openNote}) => {
       </p>
       <p>
         Yes, entering softly, he helped to close and chain the door and followed
-        softly along the hallway the man's back and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170020listedfeet")}>listed feet</button> and lighted
+        softly along the hallway the man's back and <Annotation annotationId="170020listedfeet" annotationSelect={() => openNote("170020listedfeet")} activeAnnotationId={currentNoteId}>listed feet</Annotation> and lighted
         candle past a lighted crevice of doorway on the left and carefully down
         a turning staircase of more than five steps into the kitchen of Bloom's
         house.
@@ -228,8 +231,8 @@ const Ithaca = ({openNote}) => {
         of best Abram coal <span data-edition="ed1961" data-page="669"></span>at twentyone shillings a ton from the yard of Messrs
         Flower and M'Donald of 14 D'Olier 
         <span data-edition="ed1922" data-page="622"></span>
-        street, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150013matches")}>kindled it at three projecting
-        points of paper with one ignited lucifer match</button>, thereby releasing
+        street, <Annotation annotationId="150013matches" annotationSelect={() => openNote("150013matches")} activeAnnotationId={currentNoteId}>kindled it at three projecting
+        points of paper with one ignited lucifer match</Annotation>, thereby releasing
         the potential energy contained in the fuel by allowing its carbon and
         hydrogen elements to enter into free union with the oxygen of the air.
       </p>
@@ -239,11 +242,11 @@ const Ithaca = ({openNote}) => {
       <p>
         Of others elsewhere in other times who, kneeling on one knee or on two,
         had kindled fires for him, of Brother Michael in the infirmary of the
-        college of the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010008jesuit")}>Society of Jesus</button> at <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010157clongowes")}>Clongowes Wood, Sallins, in the
-        county of Kildare</button>: of his father, Simon Dedalus, in an unfurnished room
+        college of the <Annotation annotationId="010008jesuit" annotationSelect={() => openNote("010008jesuit")} activeAnnotationId={currentNoteId}>Society of Jesus</Annotation> at <Annotation annotationId="010157clongowes" annotationSelect={() => openNote("010157clongowes")} activeAnnotationId={currentNoteId}>Clongowes Wood, Sallins, in the
+        county of Kildare</Annotation>: of his father, Simon Dedalus, in an unfurnished room
         of his first residence in Dublin, number thirteen Fitzgibbon street:
-        of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040027conroy")}>his godmother Miss Kate Morkan in the house of her dying sister Miss
-        Julia Morkan at 15 Usher's Island</button>: of his mother Mary, wife of Simon Dedalus, in the kitchen of
+        of <Annotation annotationId="040027conroy" annotationSelect={() => openNote("040027conroy")} activeAnnotationId={currentNoteId}>his godmother Miss Kate Morkan in the house of her dying sister Miss
+        Julia Morkan at 15 Usher's Island</Annotation>: of his mother Mary, wife of Simon Dedalus, in the kitchen of
         number twelve North Richmond street <span data-edition="ed1986" data-page="547"></span>on the morning of the feast of
         Saint Francis Xavier 1898: of the dean of studies, Father Butt, in the
         physics' theatre of university College, 16 Stephen's Green, north: of
@@ -299,12 +302,12 @@ const Ithaca = ({openNote}) => {
         waterworks engineer, Mr Spencer Harty, C. E., on the instructions of
         the waterworks committee had prohibited the use of municipal water for
         purposes other than those of consumption (envisaging the possibility of
-        recourse being had to <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060016canals")}>the impotable water of the Grand and Royal canals</button>
+        recourse being had to <Annotation annotationId="060016canals" annotationSelect={() => openNote("060016canals")} activeAnnotationId={currentNoteId}>the impotable water of the Grand and Royal canals</Annotation>
         as in 1893) particularly as the South Dublin Guardians, notwithstanding
         their ration of 15 gallons per day per pauper supplied through a 6 inch
         meter, had been convicted of a wastage of 20,000 gallons per night by
-        a reading of their meter on the affirmation of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060033corporation")}>the law agent of
-        the corporation</button>, Mr Ignatius Rice, solicitor, thereby acting to the
+        a reading of their meter on the affirmation of <Annotation annotationId="060033corporation" annotationSelect={() => openNote("060033corporation")} activeAnnotationId={currentNoteId}>the law agent of
+        the corporation</Annotation>, Mr Ignatius Rice, solicitor, thereby acting to the
         detriment of another section of the public, selfsupporting taxpayers,
         solvent, sound.
       </p>
@@ -337,7 +340,7 @@ const Ithaca = ({openNote}) => {
         <span data-edition="ed1922" data-page="624"></span>
         lakecontained streams and
         confluent oceanflowing rivers with their tributaries and transoceanic
-        currents, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010116gulfstream")}>gulfstream</button>, north and south equatorial courses: its violence
+        currents, <Annotation annotationId="010116gulfstream" annotationSelect={() => openNote("010116gulfstream")} activeAnnotationId={currentNoteId}>gulfstream</Annotation>, north and south equatorial courses: its violence
         in seaquakes, waterspouts, Artesian wells, eruptions, torrents, eddies,
         freshets, spates, groundswells, watersheds, waterpartings, geysers,
         cataracts, whirlpools, maelstroms, inundations, deluges, cloudbursts:
@@ -363,8 +366,8 @@ const Ithaca = ({openNote}) => {
         derivable from harnessed tides or watercourses falling from level
         to level: its submarine fauna and flora (anacoustic, photophobe),
         numerically, if not literally, the inhabitants of the globe: its
-        ubiquity as constituting 90% of the human <span data-edition="ed1986" data-page="549"></span>body: <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060036bogs")}>the noxiousness
-        of its effluvia in lacustrine marshes, pestilential fens</button>, faded
+        ubiquity as constituting 90% of the human <span data-edition="ed1986" data-page="549"></span>body: <Annotation annotationId="060036bogs" annotationSelect={() => openNote("060036bogs")} activeAnnotationId={currentNoteId}>the noxiousness
+        of its effluvia in lacustrine marshes, pestilential fens</Annotation>, faded
         flowerwater, stagnant pools in the waning moon.
       </p>
       <p>
@@ -497,23 +500,23 @@ const Ithaca = ({openNote}) => {
         goldrimmed eggcups, <span data-edition="ed1986" data-page="551"></span>an open shammy purse displaying coins, mostly
         copper, and a phial of aromatic violet comfits. On the middle shelf
         a chipped eggcup containing pepper, a drum of table salt, four
-        conglomerated black olives in oleaginous paper, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050016pottedmeat")}>an empty pot of</button>
+        conglomerated black olives in oleaginous paper, <Annotation annotationId="050016pottedmeat" annotationSelect={() => openNote("050016pottedmeat")} activeAnnotationId={currentNoteId}>an empty pot of</Annotation>
         <span data-edition="ed1922" data-page="627"></span>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050016pottedmeat")}>Plumtree's potted meat</button>, an oval wicker basket bedded with fibre and
+        <Annotation annotationId="050016pottedmeat" annotationSelect={() => openNote("050016pottedmeat")} activeAnnotationId={currentNoteId}>Plumtree's potted meat</Annotation>, an oval wicker basket bedded with fibre and
         containing one Jersey pear, a halfempty bottle of William Gilbey and
         Co's white invalid port, half disrobed of its swathe of coralpink tissue
-        paper, a packet of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170006eppscocoa")}>Epps's soluble cocoa</button>, five ounces of Anne Lynch's
+        paper, a packet of <Annotation annotationId="170006eppscocoa" annotationSelect={() => openNote("170006eppscocoa")} activeAnnotationId={currentNoteId}>Epps's soluble cocoa</Annotation>, five ounces of Anne Lynch's
         choice tea at 2/- per lb. in a crinkled leadpaper bag, a cylindrical
         canister containing the best crystallised lump sugar, two onions, one,
         the larger, Spanish, 
         <span data-edition="ed1939" data-page="474"> </span>
         entire, the other, smaller, Irish, bisected with
         augmented surface and more redolent, a jar of Irish Model Dairy's cream,
-        a jug of brown crockery containing <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040090naggin")}>a naggin and a quarter</button> of soured
+        a jug of brown crockery containing <Annotation annotationId="040090naggin" annotationSelect={() => openNote("040090naggin")} activeAnnotationId={currentNoteId}>a naggin and a quarter</Annotation> of soured
         adulterated milk, converted by heat into water, acidulous serum and
         semisolidified curds, which added to the quantity subtracted for Mr
         Bloom's and Mrs Fleming's breakfasts, made one imperial pint, the total
-        quantity originally delivered, two cloves, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010019money")}>a halfpenny</button> and a small dish
+        quantity originally delivered, two cloves, <Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}>a halfpenny</Annotation> and a small dish
         containing a slice of fresh ribsteak. On the upper shelf a battery of
         jamjars of various sizes and proveniences.
       </p>
@@ -530,8 +533,8 @@ const Ithaca = ({openNote}) => {
       <p>
         Reminiscences of coincidences, truth stranger than fiction,
         preindicative of the result of the Gold Cup flat handicap, the official
-        and definitive result of which he had read in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020064telegraph")}>the <i>Evening Telegraph</i>,
-        late pink edition</button>, in the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050012cabstands")}>cabman's shelter</button>, at <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070015buttbridge")}>Butt bridge</button>.
+        and definitive result of which he had read in <Annotation annotationId="020064telegraph" annotationSelect={() => openNote("020064telegraph")} activeAnnotationId={currentNoteId}>the <i>Evening Telegraph</i>,
+        late pink edition</Annotation>, in the <Annotation annotationId="050012cabstands" annotationSelect={() => openNote("050012cabstands")} activeAnnotationId={currentNoteId}>cabman's shelter</Annotation>, at <Annotation annotationId="070015buttbridge" annotationSelect={() => openNote("070015buttbridge")} activeAnnotationId={currentNoteId}>Butt bridge</Annotation>.
       </p>
       <span data-edition="ed1961" data-page="675"></span><span data-edition="ed1932" data-page="581"></span>
       <p>
@@ -540,16 +543,16 @@ const Ithaca = ({openNote}) => {
       </p>
       <p>
         In Bernard Kiernan's licensed premises 8, 9 and 10 little Britain
-        street: in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080024davybyrnes")}>David Byrne's licensed premises, 14 Duke street</button>: in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060012liberatorsform")}>O'Connell
-        street lower</button>, outside Graham Lemon's when a dark man had placed in
+        street: in <Annotation annotationId="080024davybyrnes" annotationSelect={() => openNote("080024davybyrnes")} activeAnnotationId={currentNoteId}>David Byrne's licensed premises, 14 Duke street</Annotation>: in <Annotation annotationId="060012liberatorsform" annotationSelect={() => openNote("060012liberatorsform")} activeAnnotationId={currentNoteId}>O'Connell
+        street lower</Annotation>, outside Graham Lemon's when a dark man had placed in
         his hand a throwaway (subsequently thrown away), advertising Elijah,
         restorer of the church in Zion: in Lincoln place outside the premises of
         F. W. Sweny and Co (Limited), dispensing chemists, when, when Frederick
         M. (Bantam) Lyons had rapidly and successively requested, perused and
-        restituted the copy of the current issue of the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050021freeman")}><i>Freeman's Journal and
-        National Press</i></button> which he had been about to throw away (subsequently
-        thrown away), he had proceeded towards <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050010mosquebaths")}>the oriental edifice of
-        the Turkish and Warm Baths, 11 Leinster street</button>, with the light of
+        restituted the copy of the current issue of the <Annotation annotationId="050021freeman" annotationSelect={() => openNote("050021freeman")} activeAnnotationId={currentNoteId}><i>Freeman's Journal and
+        National Press</i></Annotation> which he had been about to throw away (subsequently
+        thrown away), he had proceeded towards <Annotation annotationId="050010mosquebaths" annotationSelect={() => openNote("050010mosquebaths")} activeAnnotationId={currentNoteId}>the oriental edifice of
+        the Turkish and Warm Baths, 11 Leinster street</Annotation>, with the light of
         <span data-edition="ed1922" data-page="628"></span>
         inspiration shining in his countenance and bearing in his arms the
         secret of the race, graven in the language of prediction.
@@ -640,9 +643,9 @@ const Ithaca = ({openNote}) => {
       <p>
         Concluding by inspection but erroneously that his silent companion was
         engaged in mental composition he reflected on the pleasures derived from
-        literature of instruction rather than of amusement as <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020033mademoney")}>he himself had
+        literature of instruction rather than of amusement as <Annotation annotationId="020033mademoney" annotationSelect={() => openNote("020033mademoney")} activeAnnotationId={currentNoteId}>he himself had
         applied to the works of William Shakespeare more than once for the
-        solution of difficult problems in imaginary or real life</button>.
+        solution of difficult problems in imaginary or real life</Annotation>.
       </p>
       <p>
         Had he found their solution?
@@ -655,8 +658,8 @@ const Ithaca = ({openNote}) => {
       <p>
         What lines concluded his first piece of original verse written by him,
         potential poet, at the age of 11 in 1877 on the occasion <span data-edition="ed1961" data-page="677"></span>of the offering
-        <span data-edition="ed1932" data-page="583"></span>of three prizes of 10/-, 5/- and 2/6 respectively for competition by <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("160004newspapers")}>the
-        <i>Shamrock</i>, a weekly newspaper</button>?
+        <span data-edition="ed1932" data-page="583"></span>of three prizes of 10/-, 5/- and 2/6 respectively for competition by <Annotation annotationId="160004newspapers" annotationSelect={() => openNote("160004newspapers")} activeAnnotationId={currentNoteId}>the
+        <i>Shamrock</i>, a weekly newspaper</Annotation>?
       </p>
       <p><i>An ambition to squint <br/>
         At my verses in print <br/>
@@ -696,10 +699,10 @@ const Ithaca = ({openNote}) => {
         What had prevented him from completing a topical song (music by R. G.
         Johnston) on the events of the past, or fixtures for the actual, years,
         entitled <i>If Brian Boru could but come back and see old Dublin now</i>,
-        commissioned by <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060040gaietytheatre")}>Michael Gunn, lessee of the Gaiety Theatre, 46, 47, 48,
-        49 South King street</button>, and to be introduced into <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010077pantomime")}>the sixth scene, the
+        commissioned by <Annotation annotationId="060040gaietytheatre" annotationSelect={() => openNote("060040gaietytheatre")} activeAnnotationId={currentNoteId}>Michael Gunn, lessee of the Gaiety Theatre, 46, 47, 48,
+        49 South King street</Annotation>, and to be introduced into <Annotation annotationId="010077pantomime" annotationSelect={() => openNote("010077pantomime")} activeAnnotationId={currentNoteId}>the sixth scene, the
         valley of diamonds, of the second edition (30 January 1893) of the grand
-        annual Christmas pantomime <i>Sinbad the Sailor</i></button> (produced by R Shelton
+        annual Christmas pantomime <i>Sinbad the Sailor</i></Annotation> (produced by R Shelton
         26 December 1892, written by Greenleaf Whittier, scenery by George
         A. Jackson and Cecil Hicks, costumes by Mrs and Miss Whelan under
         the personal supervision of Mrs Michael Gunn, ballets by Jessie Noir,
@@ -713,10 +716,10 @@ const Ithaca = ({openNote}) => {
         1837) and the posticipated opening of the new municipal fish market:
         secondly, apprehension of opposition from extreme circles on the
         questions of the respective visits of Their Royal Highnesses the
-        duke and duchess of York (real) and of His Majesty <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030086dalcassians")}>King Brian Boru</button>
+        duke and duchess of York (real) and of His Majesty <Annotation annotationId="030086dalcassians" annotationSelect={() => openNote("030086dalcassians")} activeAnnotationId={currentNoteId}>King Brian Boru</Annotation>
         (imaginary): thirdly, a conflict between professional etiquette and
         professional emulation concerning the recent erections of the Grand
-        Lyric Hall on Burgh Quay and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110005theatreroyal")}> the Theatre Royal in Hawkins street</button>:
+        Lyric Hall on Burgh Quay and <Annotation annotationId="110005theatreroyal" annotationSelect={() => openNote("110005theatreroyal")} activeAnnotationId={currentNoteId}> the Theatre Royal in Hawkins street</Annotation>:
         fourthly, distraction resultant from compassion for Nelly Bouverist's
         non-intellectual, non-political, non-topical expression of countenance
         and concupiscence caused by Nelly 
@@ -729,7 +732,7 @@ const Ithaca = ({openNote}) => {
         every one): sixthly, the rhymes, homophonous and cacophonous, associated
         with 
         <span data-edition="ed1939" data-page="477"> </span>
-        the names of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060033corporation")}>the new lord mayor, Daniel Tallon</button>, the new high
+        the names of <Annotation annotationId="060033corporation" annotationSelect={() => openNote("060033corporation")} activeAnnotationId={currentNoteId}>the new lord mayor, Daniel Tallon</Annotation>, the new high
         sheriff, Thomas Pile and the new solicitorgeneral, Dunbar Plunket
         Barton.
       </p>
@@ -786,10 +789,10 @@ const Ithaca = ({openNote}) => {
         third connecting link between them?
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060015riordan")}>Mrs Riordan (Dante)</button>, a widow of independent means, had resided in the
+        <Annotation annotationId="060015riordan" annotationSelect={() => openNote("060015riordan")} activeAnnotationId={currentNoteId}>Mrs Riordan (Dante)</Annotation>, a widow of independent means, had resided in the
         house of Stephen's parents from 1 September 1888 to 29 December 1891 and
-        had also resided during the years 1892, 1893 and 1894 in the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020066cityarms")}>City Arms
-        Hotel</button> owned by Elizabeth O'Dowd of 54 Prussia street where, during parts
+        had also resided during the years 1892, 1893 and 1894 in the <Annotation annotationId="020066cityarms" annotationSelect={() => openNote("020066cityarms")} activeAnnotationId={currentNoteId}>City Arms
+        Hotel</Annotation> owned by Elizabeth O'Dowd of 54 Prussia street where, during parts
         of the years 1893 and 1894, she had been a constant informant of Bloom
         who resided also in the same hotel, being at that time a clerk in the
         employment of Joseph Cuffe of 5 Smithfield for the superintendence of
@@ -841,8 +844,8 @@ const Ithaca = ({openNote}) => {
       </p>
       <p>
         The indoor exercises, formerly intermittently practised, subsequently
-        abandoned, prescribed in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040024sandow")}>Eugen Sandow's <i>Physical Strength and How to
-        Obtain It</i></button> which, designed particularly for commercial men engaged in
+        abandoned, prescribed in <Annotation annotationId="040024sandow" annotationSelect={() => openNote("040024sandow")} activeAnnotationId={currentNoteId}>Eugen Sandow's <i>Physical Strength and How to
+        Obtain It</i></Annotation> which, designed particularly for commercial men engaged in
         sedentary occupations, were to be made with mental concentration in
         front of a mirror so as to bring into play the various families of
         muscles and produce successively a pleasant rigidity, a more pleasant
@@ -853,7 +856,7 @@ const Ithaca = ({openNote}) => {
       </p>
       <p>
         Though ringweight lifting had been beyond his strength and the full
-        circle gyration beyond his courage yet as a <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050020highschool")}>High school</button> scholar he
+        circle gyration beyond his courage yet as a <Annotation annotationId="050020highschool" annotationSelect={() => openNote("050020highschool")} activeAnnotationId={currentNoteId}>High school</Annotation> scholar he
         had excelled in his stable and protracted execution of the half lever
         movement on the parallel bars in consequence of his abnormally developed
         abdominal muscles.
@@ -872,7 +875,7 @@ const Ithaca = ({openNote}) => {
       </p>
       <p>
         He thought that he thought that he was a jew whereas he knew that he
-        knew that <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040083hewasajew")}>he knew that he was not</button>.
+        knew that <Annotation annotationId="040083hewasajew" annotationSelect={() => openNote("040083hewasajew")} activeAnnotationId={currentNoteId}>he knew that he was not</Annotation>.
       </p>
       <span data-edition="ed1939" data-page="479"> </span>
       <span data-edition="ed1932" data-page="587"></span>
@@ -881,8 +884,8 @@ const Ithaca = ({openNote}) => {
         parentages?
       </p>
       <p>
-        Bloom, only born male transubstantial heir of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050026henryflower")}>Rudolf Virag (subsequently
-        Rudolph Bloom)</button> of Szombathely, Vienna, Budapest, Milan, London and
+        Bloom, only born male transubstantial heir of <Annotation annotationId="050026henryflower" annotationSelect={() => openNote("050026henryflower")} activeAnnotationId={currentNoteId}>Rudolf Virag (subsequently
+        Rudolph Bloom)</Annotation> of Szombathely, Vienna, Budapest, Milan, London and
         Dublin and of Ellen Higgins, second daughter of Julius Higgins (born
         Karoly) and Fanny Higgins (born Hegarty). Stephen, eldest surviving male
         consubstantial heir of Simon Dedalus of Cork and Dublin and of Mary,
@@ -895,7 +898,7 @@ const Ithaca = ({openNote}) => {
       </p>
       <p>
         Bloom (three times), by the reverend Mr Gilmer Johnston M. A., alone,
-        in the protestant church of Saint Nicholas Without, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050014thecoombe")}>Coombe</button>, by James
+        in the protestant church of Saint Nicholas Without, <Annotation annotationId="050014thecoombe" annotationSelect={() => openNote("050014thecoombe")} activeAnnotationId={currentNoteId}>Coombe</Annotation>, by James
         O'Connor, Philip Gilligan and James Fitzpatrick, together, under a pump
         in the village of Swords, and by the reverend Charles Malone C. C., in
         the church of the Three Patrons, Rathgar. Stephen (once) by the reverend
@@ -946,7 +949,7 @@ const Ithaca = ({openNote}) => {
         kindergarten?
       </p>
       <p>
-        Yes, rendering obsolete popguns, elastic airbladders, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050012cabstands")}>games of hazard</button>,
+        Yes, rendering obsolete popguns, elastic airbladders, <Annotation annotationId="050012cabstands" annotationSelect={() => openNote("050012cabstands")} activeAnnotationId={currentNoteId}>games of hazard</Annotation>,
         catapults. They comprised astronomical kaleidoscopes exhibiting the twelve 
         <span data-edition="ed1922" data-page="635"></span>
         constellations of the zodiac from Aries to Pisces, miniature
@@ -1012,9 +1015,9 @@ const Ithaca = ({openNote}) => {
         With it an abode of bliss.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050016pottedmeat")}>Manufactured by George Plumtree, 23 Merchants' quay, Dublin</button>, put up in
-        4 oz. pots, and inserted by <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070019nannetti")}>Councillor Joseph P. Nannetti, M. P., Rotunda
-        Ward, 19 Hardwicke street</button>, under the obituary notices and anniversaries
+        <Annotation annotationId="050016pottedmeat" annotationSelect={() => openNote("050016pottedmeat")} activeAnnotationId={currentNoteId}>Manufactured by George Plumtree, 23 Merchants' quay, Dublin</Annotation>, put up in
+        4 oz. pots, and inserted by <Annotation annotationId="070019nannetti" annotationSelect={() => openNote("070019nannetti")} activeAnnotationId={currentNoteId}>Councillor Joseph P. Nannetti, M. P., Rotunda
+        Ward, 19 Hardwicke street</Annotation>, under the obituary notices and anniversaries
         of deceases. The name on the label is Plumtree. A plumtree in a meatpot,
         registered trade mark. Beware of imitations. Peatmot. Trumplee. Moutpat.
         Plamtroo.
@@ -1055,7 +1058,7 @@ const Ithaca = ({openNote}) => {
       <p>
         The Queen's Hotel, Ennis, County Clare, where Rudolph Bloom (Rudolf
         Virag) died on the evening of the 27 June 1886, at some hour unstated,
-        in consequence of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150007aconite")}>an overdose of monkshood (aconite)</button> selfadministered in
+        in consequence of <Annotation annotationId="150007aconite" annotationSelect={() => openNote("150007aconite")} activeAnnotationId={currentNoteId}>an overdose of monkshood (aconite)</Annotation> selfadministered in
         the form of a neuralgic liniment composed of 2 parts of aconite liniment
         to 1 of chloroform liniment (purchased by him at 10.20 a.m. on the
         <span data-edition="ed1961" data-page="684"></span>morning of 27 June 1886 at the medical hall of Francis Dennehy, 17
@@ -1152,7 +1155,7 @@ const Ithaca = ({openNote}) => {
         the implement of calligraphy in the encaustic pigment, exposed to
         the corrosive action of copperas, green vitriol and nutgall. Unusual
         polysyllables of foreign origin she interpreted phonetically or by false
-        analogy or by both: <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030087pastlife")}>metempsychosis (met him pike hoses)</button>, <i>alias</i> (a
+        analogy or by both: <Annotation annotationId="030087pastlife" annotationSelect={() => openNote("030087pastlife")} activeAnnotationId={currentNoteId}>metempsychosis (met him pike hoses)</Annotation>, <i>alias</i> (a
         mendacious person mentioned in sacred scripture).
       </p>
       <p>
@@ -1221,8 +1224,8 @@ const Ithaca = ({openNote}) => {
         name uncertain.
       </p>
       <p>
-        Were other anapocryphal illustrious sons of the law and children of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040083hewasajew")}>a
-        selected or rejected race</button> mentioned?
+        Were other anapocryphal illustrious sons of the law and children of <Annotation annotationId="040083hewasajew" annotationSelect={() => openNote("040083hewasajew")} activeAnnotationId={currentNoteId}>a
+        selected or rejected race</Annotation> mentioned?
       </p>
       <p>
         Felix Bartholdy Mendelssohn (composer), Baruch Spinoza (philosopher),
@@ -1282,7 +1285,7 @@ const Ithaca = ({openNote}) => {
         isolation of their synagogical and 
         <span data-edition="ed1939" data-page="484"> </span>
         ecclesiastical rites in ghetto (S.
-        Mary's Abbey) and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070024differentchurches")}>masshouse (Adam and Eve's tavern)</button>: the proscription
+        Mary's Abbey) and <Annotation annotationId="070024differentchurches" annotationSelect={() => openNote("070024differentchurches")} activeAnnotationId={currentNoteId}>masshouse (Adam and Eve's tavern)</Annotation>: the proscription
         of their national costumes in penal laws and jewish dress acts: the
         <span data-edition="ed1961" data-page="688"></span>restoration in Chanah David of Zion and the possibility of Irish
         political autonomy or devolution.
@@ -1345,7 +1348,7 @@ const Ithaca = ({openNote}) => {
       <p>
         Visually, Stephen's: The traditional figure of hypostasis, depicted
         by Johannes Damascenus, Lentulus Romanus and Epiphanius Monachus as
-        leucodermic, sesquipedalian with <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010033epioinopaponton")}>winedark hair</button>. 
+        leucodermic, sesquipedalian with <Annotation annotationId="010033epioinopaponton" annotationSelect={() => openNote("010033epioinopaponton")} activeAnnotationId={currentNoteId}>winedark hair</Annotation>. 
       </p>
       <p>
         Auditively, Bloom's: The
@@ -1358,7 +1361,7 @@ const Ithaca = ({openNote}) => {
       </p>
       <p>
         In the church, Roman, Anglican or Nonconformist: exemplars, the very
-        reverend <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050052conmee")}>John Conmee S. J.</button>, the reverend T. Salmon, D. D., provost of
+        reverend <Annotation annotationId="050052conmee" annotationSelect={() => openNote("050052conmee")} activeAnnotationId={currentNoteId}>John Conmee S. J.</Annotation>, the reverend T. Salmon, D. D., provost of
         Trinity college, Dr Alexander J. Dowie. At the bar, English or Irish:
         exemplars, Seymour Bushe, K. C., Rufus Isaacs, K. C. On the stage modern
         or Shakespearean: exemplars, Charles Wyndham, high comedian Osmond
@@ -1466,7 +1469,7 @@ const Ithaca = ({openNote}) => {
         continued fraction of veridicity, the envy of
         opulence, the influence of retaliation, the sporadic reappearance of
         atavistic delinquency, the mitigating circumstances of fanaticism,
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170021hypnotic")}>hypnotic suggestion and somnambulism</button>.
+        <Annotation annotationId="170021hypnotic" annotationSelect={() => openNote("170021hypnotic")} activeAnnotationId={currentNoteId}>hypnotic suggestion and somnambulism</Annotation>.
       </p>
       <span data-edition="ed1986" data-page="567"></span>
       <p>
@@ -1488,9 +1491,9 @@ const Ithaca = ({openNote}) => {
       </p>
       <p>
         Twice, in Holles street and in Ontario terrace, his daughter Millicent
-        (Milly) <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170021hypnotic")}>at the ages of 6 and 8 years had uttered in sleep an exclamation
+        (Milly) <Annotation annotationId="170021hypnotic" annotationSelect={() => openNote("170021hypnotic")} activeAnnotationId={currentNoteId}>at the ages of 6 and 8 years had uttered in sleep an exclamation
         of terror and had replied to the interrogations of two figures in night
-        attire with a vacant mute expression.</button>
+        attire with a vacant mute expression.</Annotation>
       </p>
       <span data-edition="ed1961" data-page="692"></span>
       <span data-edition="ed1922" data-page="645"></span>
@@ -1525,8 +1528,8 @@ const Ithaca = ({openNote}) => {
         Circular road in the company of Elsa Potter, followed by an individual
         of sinister aspect, she went half way down Stamer street and turned
         abruptly back (reason of change not stated). On the vigil of the 15th
-        anniversary of her birth she wrote a letter from <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010126mullingar")}>Mullingar, county
-        Westmeath</button>, making a brief allusion to a local student (faculty and year
+        anniversary of her birth she wrote a letter from <Annotation annotationId="010126mullingar" annotationSelect={() => openNote("010126mullingar")} activeAnnotationId={currentNoteId}>Mullingar, county
+        Westmeath</Annotation>, making a brief allusion to a local student (faculty and year
         not stated).
       </p>
       <p>
@@ -1647,8 +1650,8 @@ const Ithaca = ({openNote}) => {
         return a monosyllabic negative answer?
       </p>
       <p>
-        If he had known <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060038emilysinico")}>the late Mrs Emily Sinico, accidentally killed at Sydney
-        Parade railway station, 14 October 1903</button>.
+        If he had known <Annotation annotationId="060038emilysinico" annotationSelect={() => openNote("060038emilysinico")} activeAnnotationId={currentNoteId}>the late Mrs Emily Sinico, accidentally killed at Sydney
+        Parade railway station, 14 October 1903</Annotation>.
       </p>
       <p>
         What inchoate corollary statement was consequently suppressed by the
@@ -1686,9 +1689,9 @@ const Ithaca = ({openNote}) => {
         instruction, place the residence of the instructress. To inaugurate
         a series of static semistatic and peripatetic intellectual dialogues,
         places the residence of both speakers (if both speakers were resident in
-        the same place), the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010049shiptavern")}><em>Ship</em> hotel and tavern, 6 Lower Abbey street (W. and
-        E. Connery, proprietors)</button>, the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010144nationallibrary")}>National Library of Ireland, 10 Kildare
-        street</button>, the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("140035holles")}>National Maternity Hospital, 29, 30 and 31 Holles street</button>, a
+        the same place), the <Annotation annotationId="010049shiptavern" annotationSelect={() => openNote("010049shiptavern")} activeAnnotationId={currentNoteId}><em>Ship</em> hotel and tavern, 6 Lower Abbey street (W. and
+        E. Connery, proprietors)</Annotation>, the <Annotation annotationId="010144nationallibrary" annotationSelect={() => openNote("010144nationallibrary")} activeAnnotationId={currentNoteId}>National Library of Ireland, 10 Kildare
+        street</Annotation>, the <Annotation annotationId="140035holles" annotationSelect={() => openNote("140035holles")} activeAnnotationId={currentNoteId}>National Maternity Hospital, 29, 30 and 31 Holles street</Annotation>, a
         public garden, the vicinity of a place of worship, a conjunction of two
         or more public thoroughfares, the point of bisection of a right line
         drawn between their residences (if both speakers were resident in
@@ -1700,16 +1703,16 @@ const Ithaca = ({openNote}) => {
       </p>
       <p>
         The irreparability of the past: once at a performance of Albert
-        Hengler's circus in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060011therotunda")}>the Rotunda, Rutland square,</button> Dublin, an intuitive
+        Hengler's circus in <Annotation annotationId="060011therotunda" annotationSelect={() => openNote("060011therotunda")} activeAnnotationId={currentNoteId}>the Rotunda, Rutland square,</Annotation> Dublin, an intuitive
         particoloured clown in quest of paternity had penetrated from the ring
         to a place in the auditorium where 
         <span data-edition="ed1939" data-page="490"> </span>
         Bloom, solitary, was<span data-edition="ed1932" data-page="601"></span> publicly declared to an exhilarated audience that he (Bloom) was his
         (the clown's) papa. The imprevidibility of the future: once in the
-        summer of 1898 he (Bloom) had marked<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010019money")}> a florin (2/-)</button> with three notches
+        summer of 1898 he (Bloom) had marked<Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}> a florin (2/-)</Annotation> with three notches
         on the milled edge and tendered it in payment of an account due to and
-        received by J. and T. Davy, family grocers, 1 Charlemont Mall, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060016canals")}>Grand
-        Canal</button>, for circulation on the waters of civic finance, for possible,
+        received by J. and T. Davy, family grocers, 1 Charlemont Mall, <Annotation annotationId="060016canals" annotationSelect={() => openNote("060016canals")} activeAnnotationId={currentNoteId}>Grand
+        Canal</Annotation>, for circulation on the waters of civic finance, for possible,
         circuitous or direct, return.
       </p>
       <p>
@@ -1782,7 +1785,7 @@ const Ithaca = ({openNote}) => {
         What comforted his misapprehension?
       </p>
       <p>
-        That as a <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010146hugekey")}>competent keyless citizen</button> he had proceeded energetically from
+        That as a <Annotation annotationId="010146hugekey" annotationSelect={() => openNote("010146hugekey")} activeAnnotationId={currentNoteId}>competent keyless citizen</Annotation> he had proceeded energetically from
         the unknown to the known through the incertitude of the void.
       </p>
       <p>
@@ -1847,8 +1850,8 @@ const Ithaca = ({openNote}) => {
         precession of equinoxes: of Orion with belt and sextuple sun theta and
         nebula in which 100 of our solar systems could be contained: of moribund
         and of nascent new stars such as Nova in 1901: of our system plunging
-        towards the constellation of Hercules: of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080008parallax")}>the parallax or parallactic
-        drift of socalled fixed stars, in reality evermoving wanderers</button> from
+        towards the constellation of Hercules: of <Annotation annotationId="080008parallax" annotationSelect={() => openNote("080008parallax")} activeAnnotationId={currentNoteId}>the parallax or parallactic
+        drift of socalled fixed stars, in reality evermoving wanderers</Annotation> from
         immeasurably remote eons to infinitely remote futures in comparison with
         which the years, threescore and ten, of allotted human life formed a
         parenthesis of infinitesimal brevity.
@@ -1927,10 +1930,10 @@ const Ithaca = ({openNote}) => {
       <p>
         The various colours significant of various degrees of vitality (white,
         yellow, crimson, vermilion, cinnabar): their degrees of brilliancy:
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030152delta")}>their magnitudes</button> <span data-edition="ed1986" data-page="574"></span><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030152delta")}>revealed up to and including the 7th</button>: their positions:
+        <Annotation annotationId="030152delta" annotationSelect={() => openNote("030152delta")} activeAnnotationId={currentNoteId}>their magnitudes</Annotation> <span data-edition="ed1986" data-page="574"></span><Annotation annotationId="030152delta" annotationSelect={() => openNote("030152delta")} activeAnnotationId={currentNoteId}>revealed up to and including the 7th</Annotation>: their positions:
         the waggoner's star: Walsingham way: the chariot of David: the annular
-        cinctures of Saturn: the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080031gasthensolid")}>condensation of spiral nebulae into suns</button>: the
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030152delta")}>interdependent gyrations of double suns</button>: the independent synchronous
+        cinctures of Saturn: the <Annotation annotationId="080031gasthensolid" annotationSelect={() => openNote("080031gasthensolid")} activeAnnotationId={currentNoteId}>condensation of spiral nebulae into suns</Annotation>: the
+        <Annotation annotationId="030152delta" annotationSelect={() => openNote("030152delta")} activeAnnotationId={currentNoteId}>interdependent gyrations of double suns</Annotation>: the independent synchronous
         discoveries of Galileo, Simon Marius, Piazzi, Le Verrier, Herschel,
         Galle: the systematisations attempted by Bode and Kepler of cubes
         of distances and squares of times of revolution: the almost infinite
@@ -1942,12 +1945,12 @@ const Ithaca = ({openNote}) => {
         of the younger astroscopist: the annual recurrence of meteoric <span data-edition="ed1932" data-page="605"></span>showers
         about the period of the feast of S. Lawrence (martyr, l0 August): the
         monthly recurrence known as the new moon with the old moon in her arms:
-        the posited influence of celestial on human bodies: <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030152delta")}>the appearance of a
+        the posited influence of celestial on human bodies: <Annotation annotationId="030152delta" annotationSelect={() => openNote("030152delta")} activeAnnotationId={currentNoteId}>the appearance of a
         star (1st magnitude) of exceeding brilliancy dominating by night and
         day (a new luminous sun generated by the collision and amalgamation in
         incandescence of two nonluminous exsuns) about the period of the
         birth of William Shakespeare over delta in the recumbent neversetting
-        constellation of Cassiopeia and of a star (2nd magnitude) of</button> <span data-edition="ed1961" data-page="700"></span><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030152delta")}>similar
+        constellation of Cassiopeia and of a star (2nd magnitude) of</Annotation> <span data-edition="ed1961" data-page="700"></span><Annotation annotationId="030152delta" annotationSelect={() => openNote("030152delta")} activeAnnotationId={currentNoteId}>similar
         origin but of lesser brilliancy which had appeared in and disappeared
         from the constellation of the Corona Septentrionalis about the period
         of the birth of Leopold Bloom and of other stars of (presumably) similar
@@ -1956,7 +1959,7 @@ const Ithaca = ({openNote}) => {
         Stephen Dedalus, and in and from the constellation of Auriga some years
         after the birth and death of Rudolph Bloom, junior, and in and from
         other constellations some years before or after the birth or death of
-        other persons</button>: the attendant phenomena of eclipses, solar and lunar,
+        other persons</Annotation>: the attendant phenomena of eclipses, solar and lunar,
         from immersion to emersion, abatement of wind, transit of shadow,
         taciturnity of winged creatures, emergence of nocturnal or crepuscular
         animals, persistence of infernal light, obscurity of terrestrial waters,
@@ -2029,7 +2032,7 @@ const Ithaca = ({openNote}) => {
         In the second storey (rere) of his (Bloom's) house the light of a
         paraffin oil lamp with oblique shade projected on a screen of roller
         blind supplied by Frank O'Hara, window blind, curtain pole and revolving
-        shutter manufacturer, 16 <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170002aungierstreet")}>Aungier street</button>.
+        shutter manufacturer, 16 <Annotation annotationId="170002aungierstreet" annotationSelect={() => openNote("170002aungierstreet")} activeAnnotationId={currentNoteId}>Aungier street</Annotation>.
       </p>
       <p>
         How did he elucidate the mystery of an invisible attractive person, his
@@ -2065,8 +2068,8 @@ const Ithaca = ({openNote}) => {
       <p>
         The trajectories of their, first sequent, then simultaneous, urinations
         were dissimilar: Bloom's longer, less irruent, in the incomplete form of
-        the bifurcated penultimate alphabetical letter, who in his <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050020highschool")}>ultimate
-        year at High School (1880)</button> had been capable of attaining the point
+        the bifurcated penultimate alphabetical letter, who in his <Annotation annotationId="050020highschool" annotationSelect={() => openNote("050020highschool")} activeAnnotationId={currentNoteId}>ultimate
+        year at High School (1880)</Annotation> had been capable of attaining the point
         of greatest altitude against the whole concurrent strength of the
         institution, 210 scholars: Stephen's higher, more sibilant, who in the
         ultimate hours of the previous day had augmented by diuretic consumption
@@ -2083,10 +2086,10 @@ const Ithaca = ({openNote}) => {
         (1st January, holiday of obligation to hear mass 
         <span data-edition="ed1922" data-page="655"></span>
         and abstain from
-        unnecessary servile work) and the problem as to <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010087prepuces")}>whether the divine
+        unnecessary servile work) and the problem as to <Annotation annotationId="010087prepuces" annotationSelect={() => openNote("010087prepuces")} activeAnnotationId={currentNoteId}>whether the divine
         prepuce, the carnal bridal ring of the holy Roman catholic apostolic
         church, conserved in Calcata, were deserving of simple hyperduly or of
-        the fourth degree of latria</button> accorded to the abscission of such divine
+        the fourth degree of latria</Annotation> accorded to the abscission of such divine
         excrescences as hair and toenails.
       </p>
       <span data-edition="ed1939" data-page="495"> </span>
@@ -2123,8 +2126,8 @@ const Ithaca = ({openNote}) => {
         (respectively) centrifugal and centripetal hands?
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010012quarterto")}>The sound of the peal of the hour of the night by the chime of the bells
-        in the church</button> of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040008georgeschurch")}>Saint George.</button>
+        <Annotation annotationId="010012quarterto" annotationSelect={() => openNote("010012quarterto")} activeAnnotationId={currentNoteId}>The sound of the peal of the hour of the night by the chime of the bells
+        in the church</Annotation> of <Annotation annotationId="040008georgeschurch" annotationSelect={() => openNote("040008georgeschurch")} activeAnnotationId={currentNoteId}>Saint George.</Annotation>
       </p>
       <p>
         What echoes of that sound were by both and each heard?
@@ -2133,14 +2136,14 @@ const Ithaca = ({openNote}) => {
         By Stephen:
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010012quarterto")}><i>Liliata rutilantium. Turma circumdet.</i> <br/>
-        <i>Iubilantium te virginum. Chorus excipiat.</i></button>
+        <Annotation annotationId="010012quarterto" annotationSelect={() => openNote("010012quarterto")} activeAnnotationId={currentNoteId}><i>Liliata rutilantium. Turma circumdet.</i> <br/>
+        <i>Iubilantium te virginum. Chorus excipiat.</i></Annotation>
       </p>
       <p>
         By Bloom:
       </p>
-      <p><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010012quarterto")}><i>Heigho, heigho, <br/>
-        Heigho, heigho.</i></button>
+      <p><Annotation annotationId="010012quarterto" annotationSelect={() => openNote("010012quarterto")} activeAnnotationId={currentNoteId}><i>Heigho, heigho, <br/>
+        Heigho, heigho.</i></Annotation>
       </p>
       <span data-edition="ed1922" data-page="656"></span>
       <p>
@@ -2149,8 +2152,8 @@ const Ithaca = ({openNote}) => {
         to Glasnevin in the north?
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060034martincunningham")}>Martin Cunningham</button> (in bed), Jack Power (in bed), Simon Dedalus (in bed),
-        Ned Lambert (in bed), <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050037tomkernan")}>Tom Kernan</button> (in bed), Joe Hynes (in bed), John
+        <Annotation annotationId="060034martincunningham" annotationSelect={() => openNote("060034martincunningham")} activeAnnotationId={currentNoteId}>Martin Cunningham</Annotation> (in bed), Jack Power (in bed), Simon Dedalus (in bed),
+        Ned Lambert (in bed), <Annotation annotationId="050037tomkernan" annotationSelect={() => openNote("050037tomkernan")} activeAnnotationId={currentNoteId}>Tom Kernan</Annotation> (in bed), Joe Hynes (in bed), John
         Henry Menton (in bed), Bernard Corrigan (in bed), Patsy Dignam (in bed),
         Paddy Dignam (in the grave).
       </p>
@@ -2171,15 +2174,15 @@ const Ithaca = ({openNote}) => {
       </p>
       <span data-edition="ed1939" data-page="496"> </span>
       <p>
-        Of what did bellchime and handtouch and footstep and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040063happywarmth")}>lonechill</button> remind
+        Of what did bellchime and handtouch and footstep and <Annotation annotationId="040063happywarmth" annotationSelect={() => openNote("040063happywarmth")} activeAnnotationId={currentNoteId}>lonechill</Annotation> remind
         him?
       </p>
       <p>
         Of companions now in various manners in different places defunct: Percy
-        Apjohn (<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010058bloodyswindle")}>killed in action, Modder River</button>), Philip Gilligan (phthisis,
-        Jervis <span data-edition="ed1986" data-page="578"></span>Street hospital), <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060034martincunningham")}>Matthew F.</button> <span data-edition="ed1961" data-page="704"></span><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060034martincunningham")}>Kane (accidental drowning, Dublin
-        Bay)</button>, Philip Moisel (pyemia, Heytesbury street), Michael Hart (phthisis,
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010068themater")}>Mater Misericordiae hospital</button>), Patrick Dignam (<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040067poordignam")}>apoplexy</button>, Sandymount).
+        Apjohn (<Annotation annotationId="010058bloodyswindle" annotationSelect={() => openNote("010058bloodyswindle")} activeAnnotationId={currentNoteId}>killed in action, Modder River</Annotation>), Philip Gilligan (phthisis,
+        Jervis <span data-edition="ed1986" data-page="578"></span>Street hospital), <Annotation annotationId="060034martincunningham" annotationSelect={() => openNote("060034martincunningham")} activeAnnotationId={currentNoteId}>Matthew F.</Annotation> <span data-edition="ed1961" data-page="704"></span><Annotation annotationId="060034martincunningham" annotationSelect={() => openNote("060034martincunningham")} activeAnnotationId={currentNoteId}>Kane (accidental drowning, Dublin
+        Bay)</Annotation>, Philip Moisel (pyemia, Heytesbury street), Michael Hart (phthisis,
+        <Annotation annotationId="010068themater" annotationSelect={() => openNote("010068themater")} activeAnnotationId={currentNoteId}>Mater Misericordiae hospital</Annotation>), Patrick Dignam (<Annotation annotationId="040067poordignam" annotationSelect={() => openNote("040067poordignam")} activeAnnotationId={currentNoteId}>apoplexy</Annotation>, Sandymount).
       </p>
       <span data-edition="ed1932" data-page="609"></span>
       <p>
@@ -2193,8 +2196,8 @@ const Ithaca = ({openNote}) => {
         Had he ever been a spectator of those phenomena?
       </p>
       <p>
-        Once, in 1887, after a protracted performance of charades in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040041dolphinsbarn")}>the house
-        of Luke Doyle, Kimmage</button>, he had awaited with patience the apparition
+        Once, in 1887, after a protracted performance of charades in <Annotation annotationId="040041dolphinsbarn" annotationSelect={() => openNote("040041dolphinsbarn")} activeAnnotationId={currentNoteId}>the house
+        of Luke Doyle, Kimmage</Annotation>, he had awaited with patience the apparition
         of the diurnal phenomenon, seated on a wall, his gaze turned in the
         direction of Mizrach, the east.
       </p>
@@ -2236,7 +2239,7 @@ const Ithaca = ({openNote}) => {
         the door to the ingleside near the compactly furled Union Jack (an
         alteration which he had frequently intended to execute): the blue and
         white checker inlaid majolicatopped table had been placed opposite the
-        door in the place vacated by the prune plush sofa: the walnut <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020027sideboard")}>sideboard</button>
+        door in the place vacated by the prune plush sofa: the walnut <Annotation annotationId="020027sideboard" annotationSelect={() => openNote("020027sideboard")} activeAnnotationId={currentNoteId}>sideboard</Annotation>
         (a projecting angle of which had momentarily arrested his ingress) <span data-edition="ed1961" data-page="705"></span>had
         been moved from its position beside the door to a more advantageous but
         more perilous position <span data-edition="ed1986" data-page="579"></span>in front of the door: two chairs had been moved
@@ -2274,10 +2277,10 @@ const Ithaca = ({openNote}) => {
         A vertical piano (Cadby) with exposed keyboard, its closed coffin
         supporting a pair of long yellow ladies' gloves and an emerald ashtray
         containing four consumed matches, a partly consumed cigarette and two
-        discoloured ends of cigarettes, its musicrest supporting the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040035oldsweetsong")}>music in
+        discoloured ends of cigarettes, its musicrest supporting the <Annotation annotationId="040035oldsweetsong" annotationSelect={() => openNote("040035oldsweetsong")} activeAnnotationId={currentNoteId}>music in
         the key of G natural for voice and piano of <i>Love's Old Sweet Song</i>
         (words by G. Clifton Bingham, composed by J. L. Molloy, sung by Madam
-        Antoinette Sterling)</button> open at the last page with the final indications
+        Antoinette Sterling)</Annotation> open at the last page with the final indications
         <i>ad libitum, forte</i>, pedal, <i>animato</i>, sustained, pedal, <i>ritirando</i>,
         close.
       </p>
@@ -2289,8 +2292,8 @@ const Ithaca = ({openNote}) => {
         temple a contused tumescence: with attention, focussing his gaze on
         a large dull passive and a slender bright active: with solicitation,
         bending and downturning the upturned rugfringe: with amusement,
-        remembering <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010031snotgreen")}>Dr Malachi Mulligan's scheme of colour containing the
-        gradation of green</button>: with pleasure, repeating the words and antecedent
+        remembering <Annotation annotationId="010031snotgreen" annotationSelect={() => openNote("010031snotgreen")} activeAnnotationId={currentNoteId}>Dr Malachi Mulligan's scheme of colour containing the
+        gradation of green</Annotation>: with pleasure, repeating the words and antecedent
         act and perceiving <span data-edition="ed1961" data-page="706"></span>through various channels of internal sensibility
         the consequent and concomitant tepid pleasant diffusion of gradual
         discolouration.
@@ -2302,8 +2305,8 @@ const Ithaca = ({openNote}) => {
         From an open box on the majolicatopped table he extracted a black
         diminutive cone, one inch in height, placed it on its circular base on
         a small tin plate, placed his candlestick on the right corner of the
-        mantelpiece, produced from his waistcoat <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040061agendath")}>a folded page of prospectus
-        (illustrated) entitled Agendath Netaim</button>, unfolded the same, examined
+        mantelpiece, produced from his waistcoat <Annotation annotationId="040061agendath" annotationSelect={() => openNote("040061agendath")} activeAnnotationId={currentNoteId}>a folded page of prospectus
+        (illustrated) entitled Agendath Netaim</Annotation>, unfolded the same, examined
         it <span data-edition="ed1932" data-page="611"></span>superficially, <span data-edition="ed1986" data-page="580"></span>rolled it into a thin cylinder, ignited it in the
         candleflame, applied it when ignited to the apex of the cone till the
         latter reached the stage of rutilance, placed the cylinder in the basin
@@ -2324,10 +2327,10 @@ const Ithaca = ({openNote}) => {
       <span data-edition="ed1922" data-page="659"></span>
       <p>
         A timepiece of striated Connemara marble, stopped at the hour of 4.46
-        a.m. on the 21 March 1896, matrimonial gift of<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}> Matthew Dillon</button>: a dwarf
+        a.m. on the 21 March 1896, matrimonial gift of<Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}> Matthew Dillon</Annotation>: a dwarf
         tree of glacial arborescence under a transparent bellshade, matrimonial
-        gift of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040041dolphinsbarn")}>Luke and Caroline Doyle</button>: an embalmed owl, matrimonial gift of
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>Alderman John Hooper</button>.
+        gift of <Annotation annotationId="040041dolphinsbarn" annotationSelect={() => openNote("040041dolphinsbarn")} activeAnnotationId={currentNoteId}>Luke and Caroline Doyle</Annotation>: an embalmed owl, matrimonial gift of
+        <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>Alderman John Hooper</Annotation>.
       </p>
       <span data-edition="ed1939" data-page="498"> </span>
       <p>
@@ -2407,14 +2410,14 @@ const Ithaca = ({openNote}) => {
         <i>Thoughts from Spinoza</i> (maroon leather).
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080008parallax")}><i>The Story of the Heavens</i> by Sir Robert Ball (blue cloth).</button> 
+        <Annotation annotationId="080008parallax" annotationSelect={() => openNote("080008parallax")} activeAnnotationId={currentNoteId}><i>The Story of the Heavens</i> by Sir Robert Ball (blue cloth).</Annotation> 
       </p>
       <p>
         Ellis's <i>Three Trips to Madagascar</i> (brown cloth, title obliterated).
       </p>
       <p>
-        <i>The Stark-Munro Letters</i> by A. Conan Doyle, property of the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040043capelstreet")}>City of
-        Dublin Public Library, 106 Capel street</button>, lent 21 May (Whitsun Eve) 1904,
+        <i>The Stark-Munro Letters</i> by A. Conan Doyle, property of the <Annotation annotationId="040043capelstreet" annotationSelect={() => openNote("040043capelstreet")} activeAnnotationId={currentNoteId}>City of
+        Dublin Public Library, 106 Capel street</Annotation>, lent 21 May (Whitsun Eve) 1904,
         due 4 June 1904, 13 days overdue (black cloth binding, bearing white
         letternumber ticket).
       </p>
@@ -2456,11 +2459,11 @@ const Ithaca = ({openNote}) => {
       <span data-edition="ed1932" data-page="613"></span>
       <span data-edition="ed1922" data-page="661"></span>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040026trackofthesun")}><i>In the Track of the Sun</i></button> (yellow cloth, titlepage missing, recurrent
+        <Annotation annotationId="040026trackofthesun" annotationSelect={() => openNote("040026trackofthesun")} activeAnnotationId={currentNoteId}><i>In the Track of the Sun</i></Annotation> (yellow cloth, titlepage missing, recurrent
         title intestation).
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040024sandow")}><i>Physical Strength and How to Obtain It</i></button> by Eugen Sandow (red cloth).
+        <Annotation annotationId="040024sandow" annotationSelect={() => openNote("040024sandow")} activeAnnotationId={currentNoteId}><i>Physical Strength and How to Obtain It</i></Annotation> by Eugen Sandow (red cloth).
       </p>
       <p>
         <i>Short but yet Plain Elements of Geometry</i> written in French by F.
@@ -2497,8 +2500,8 @@ const Ithaca = ({openNote}) => {
         contain?
       </p>
       <p>
-        The <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040018oldtweedy")}>name of a decisive battle (forgotten), frequently remembered by a
-        decisive officer, major Brian Cooper Tweedy (remembered)</button>.
+        The <Annotation annotationId="040018oldtweedy" annotationSelect={() => openNote("040018oldtweedy")} activeAnnotationId={currentNoteId}>name of a decisive battle (forgotten), frequently remembered by a
+        decisive officer, major Brian Cooper Tweedy (remembered)</Annotation>.
       </p>
       <p>
         Why, firstly and secondly, did he not consult the work in question?
@@ -2516,7 +2519,7 @@ const Ithaca = ({openNote}) => {
       </p>
       <p>
         The candour, nudity, pose, tranquility, youth, grace, sex, counsel of a
-        statue erect in the centre of the table, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080005venus")}>an image of Narcissus</button> purchased
+        statue erect in the centre of the table, <Annotation annotationId="080005venus" annotationSelect={() => openNote("080005venus")} activeAnnotationId={currentNoteId}>an image of Narcissus</Annotation> purchased
         by auction from P. A. Wren, 9 Bachelor's Walk.
       </p>
       <span data-edition="ed1932" data-page="614"></span>
@@ -2557,8 +2560,8 @@ const Ithaca = ({openNote}) => {
         prurition, various points and surfaces of his partly exposed, wholly
         abluted skin. He inserted his left hand into the left lower pocket of
         his waistcoat and extracted and replaced a silver coin (1 shilling),
-        placed there (presumably) on <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060038emilysinico")}>the occasion (17 October 1903) of the
-        interment of Mrs Emily Sinico, Sydney Parade</button>.
+        placed there (presumably) on <Annotation annotationId="060038emilysinico" annotationSelect={() => openNote("060038emilysinico")} activeAnnotationId={currentNoteId}>the occasion (17 October 1903) of the
+        interment of Mrs Emily Sinico, Sydney Parade</Annotation>.
       </p>
       <span data-edition="ed1922" data-page="663"></span>
       <p>
@@ -2802,14 +2805,14 @@ const Ithaca = ({openNote}) => {
         What additional attractions might the grounds contain?
       </p>
       <p>
-        As addenda, a tennis and fives court, a shrubbery, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050025botanicgardens")}>a glass summerhouse
-        with tropical palms, equipped in the best botanical manner,</button> a rockery
+        As addenda, a tennis and fives court, a shrubbery, <Annotation annotationId="050025botanicgardens" annotationSelect={() => openNote("050025botanicgardens")} activeAnnotationId={currentNoteId}>a glass summerhouse
+        with tropical palms, equipped in the best botanical manner,</Annotation> a rockery
         with waterspray, a beehive arranged <span data-edition="ed1961" data-page="713"></span>on humane principles, oval
         flowerbeds in rectangular grassplots set with eccentric ellipses of
         scarlet and chrome tulips, blue scillas, crocuses, polyanthus, sweet
-        William, sweet pea, lily of the valley <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170011jamesmackey")}>(bulbs obtainable from sir James
+        William, sweet pea, lily of the valley <Annotation annotationId="170011jamesmackey" annotationSelect={() => openNote("170011jamesmackey")} activeAnnotationId={currentNoteId}>(bulbs obtainable from sir James
         W. Mackey Limited, wholesale and retail seed and bulb merchants and
-        nurserymen, agents for chemical manures, 23 Sackville street, upper)</button>, an
+        nurserymen, agents for chemical manures, 23 Sackville street, upper)</Annotation>, an
         orchard, kitchen garden and vinery protected against illegal trespassers
         by glasstopped mural enclosures, a lumbershed with padlock for various
         inventoried implements.
@@ -2854,7 +2857,7 @@ const Ithaca = ({openNote}) => {
         Bloom Cottage. Saint Leopold's. Flowerville.
       </p>
       <p>
-        Could <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040005seveneccles")}>Bloom of 7 Eccles street</button> foresee Bloom of Flowerville?
+        Could <Annotation annotationId="040005seveneccles" annotationSelect={() => openNote("040005seveneccles")} activeAnnotationId={currentNoteId}>Bloom of 7 Eccles street</Annotation> foresee Bloom of Flowerville?
       </p>
       <p>
         In loose allwool garments with Harris tweed cap, price 8/6, and useful
@@ -2881,8 +2884,8 @@ const Ithaca = ({openNote}) => {
         unmolested river boating in secure wherry or light curricle with kedge
         anchor on reaches free from weirs and rapids (period of estivation),
         vespertinal perambulation or equestrian circumprocession with inspection
-        of sterile landscape and contrastingly agreeable <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060036bogs")}>cottagers' fires of
-        smoking peat turves</button> (period of hibernation). Indoor: discussion in
+        of sterile landscape and contrastingly agreeable <Annotation annotationId="060036bogs" annotationSelect={() => openNote("060036bogs")} activeAnnotationId={currentNoteId}>cottagers' fires of
+        smoking peat turves</Annotation> (period of hibernation). Indoor: discussion in
         tepid security of unsolved historical and 
         <span data-edition="ed1922" data-page="667"></span>
         criminal problems: lecture of
@@ -2924,7 +2927,7 @@ const Ithaca = ({openNote}) => {
         <span data-edition="ed1939" data-page="504"> </span>
         of greater and lesser social inequality,
         of unbiassed homogeneous indisputable justice, tempered with mitigants
-        of the widest possible latitude but exactable <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010019money")}>to the uttermost farthing</button>
+        of the widest possible latitude but exactable <Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}>to the uttermost farthing</Annotation>
         with confiscation of estate, real and personal, to the crown. Loyal to
         the highest constituted power in the land, actuated by an innate love of
         rectitude his aims would be the strict maintenance of public order,
@@ -2944,7 +2947,7 @@ const Ithaca = ({openNote}) => {
         Prove that he had loved rectitude from his earliest youth.
       </p>
       <p>
-        To Master Percy Apjohn <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050020highschool")}>at High School in 1880</button> he had divulged his
+        To Master Percy Apjohn <Annotation annotationId="050020highschool" annotationSelect={() => openNote("050020highschool")} activeAnnotationId={currentNoteId}>at High School in 1880</Annotation> he had divulged his
         disbelief in the tenets of the Irish (protestant) church (to which his
         father Rudolf Virag (later Rudolph Bloom) had been converted from the
         Israelitic faith and communion in 1865 by the Society for promoting
@@ -3003,12 +3006,12 @@ const Ithaca = ({openNote}) => {
         8 m. p.m. at Ascot (Greenwich time), the message being received and
         available for betting purposes in Dublin at 2.59 p.m. (Dunsink time).
         The unexpected discovery of an object of great monetary value (precious
-        stone, valuable adhesive or impressed <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020080mauve")}>postage stamps (7 shilling,
-        mauve, imperforate, Hamburg, 1866</button>: 4 pence, rose, blue paper, perforate,
+        stone, valuable adhesive or impressed <Annotation annotationId="020080mauve" annotationSelect={() => openNote("020080mauve")} activeAnnotationId={currentNoteId}>postage stamps (7 shilling,
+        mauve, imperforate, Hamburg, 1866</Annotation>: 4 pence, rose, blue paper, perforate,
         Great Britain, 1855: 1 franc, stone, official, rouletted, diagonal
         surcharge, Luxemburg, 1878), antique dynastical ring, unique relic in
-        unusual <span data-edition="ed1932" data-page="621"></span>repositories or by unusual means: from the air (<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170009sinbadsailor")}>dropped by an
-        eagle</button> in <span data-edition="ed1986" data-page="589"></span>flight), by fire (amid the carbonised remains of an incendiated
+        unusual <span data-edition="ed1932" data-page="621"></span>repositories or by unusual means: from the air (<Annotation annotationId="170009sinbadsailor" annotationSelect={() => openNote("170009sinbadsailor")} activeAnnotationId={currentNoteId}>dropped by an
+        eagle</Annotation> in <span data-edition="ed1986" data-page="589"></span>flight), by fire (amid the carbonised remains of an incendiated
         edifice), in the sea (amid flotsam, jetsam, lagan and derelict), on
         <span data-edition="ed1961" data-page="717"></span>earth (in the gizzard of a comestible fowl). A Spanish prisoner's
         donation of a distant treasure of valuables or specie or bullion lodged
@@ -3017,7 +3020,7 @@ const Ithaca = ({openNote}) => {
         pounds sterling). A contract with an inconsiderate contractee for the
         delivery of 32 consignments of some given commodity in consideration of
         cash payment on delivery per delivery at the initial rate of ¼d. to be
-        increased constantly in the geometrical progression of 2 (¼d., ½d., 1d., 2d., 4d., 8d., 1s. 4d., 2s. 8d. to 32 terms). A prepared <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040059shortknock")}>scheme</button>
+        increased constantly in the geometrical progression of 2 (¼d., ½d., 1d., 2d., 4d., 8d., 1s. 4d., 2s. 8d. to 32 terms). A prepared <Annotation annotationId="040059shortknock" annotationSelect={() => openNote("040059shortknock")} activeAnnotationId={currentNoteId}>scheme</Annotation>
         based on a study of the laws of probability to break the bank at Monte
         Carlo. A solution of the secular problem of the quadrature of the
         circle, government premium £1,000,000 sterling.
@@ -3026,8 +3029,8 @@ const Ithaca = ({openNote}) => {
         Was vast wealth acquirable through industrial channels?
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040061agendath")}>The reclamation of dunams of waste arenary soil, proposed in the
-        prospectus of Agendath Netaim</button>, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040064bleibtreustrasse")}>Bleibtreustrasse, Berlin, W. 15</button>, by the
+        <Annotation annotationId="040061agendath" annotationSelect={() => openNote("040061agendath")} activeAnnotationId={currentNoteId}>The reclamation of dunams of waste arenary soil, proposed in the
+        prospectus of Agendath Netaim</Annotation>, <Annotation annotationId="040064bleibtreustrasse" annotationSelect={() => openNote("040064bleibtreustrasse")} activeAnnotationId={currentNoteId}>Bleibtreustrasse, Berlin, W. 15</Annotation>, by the
         cultivation of orange plantations and melonfields and reafforestation.
         The utilisation of waste paper, fells of sewer rodents, human excrement
         possessing chemical properties, in view of the vast production of the
@@ -3057,12 +3060,12 @@ const Ithaca = ({openNote}) => {
         A scheme for the use of dogvans and goatvans for the delivery of early
         morning milk. A scheme for the development of Irish tourist <span data-edition="ed1932" data-page="622"></span>traffic in
         and around Dublin by means of petrolpropelled riverboats, <span data-edition="ed1961" data-page="718"></span>plying in the
-        fluvial fairway between Island bridge and  <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030099ringsend")}>Ringsend</button>, charabancs, narrow
+        fluvial fairway between Island bridge and  <Annotation annotationId="030099ringsend" annotationSelect={() => openNote("030099ringsend")} activeAnnotationId={currentNoteId}>Ringsend</Annotation>, charabancs, narrow
         gauge local railways, and pleasure steamers for coastwise navigation
         (10/- per person per day, guide (trilingual) included). A scheme for
         the repristination of passenger and goods traffics over Irish waterways,
-        when freed from weedbeds. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040037cattlemarket")}>A scheme to connect by tramline the Cattle
-        Market (North</button> <span data-edition="ed1986" data-page="590"></span><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040037cattlemarket")}>Circular road and Prussia street) with the quays</button> (Sheriff
+        when freed from weedbeds. <Annotation annotationId="040037cattlemarket" annotationSelect={() => openNote("040037cattlemarket")} activeAnnotationId={currentNoteId}>A scheme to connect by tramline the Cattle
+        Market (North</Annotation> <span data-edition="ed1986" data-page="590"></span><Annotation annotationId="040037cattlemarket" annotationSelect={() => openNote("040037cattlemarket")} activeAnnotationId={currentNoteId}>Circular road and Prussia street) with the quays</Annotation> (Sheriff
         street, lower, and East Wall), parallel with the Link line railway
         laid (in conjunction with the Great Southern and Western railway line)
         between the cattle park, Liffey junction, and terminus of Midland Great
@@ -3077,8 +3080,8 @@ const Ithaca = ({openNote}) => {
         and Company, steamship owners, agents for steamers from Mediterranean,
         Spain, Portugal, France, Belgium and Holland and for Liverpool
         Underwriters' Association, the cost of acquired rolling stock for
-        animal transport and of additional mileage operated by the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070003tramwaycompany")}>Dublin United
-        Tramways Company, limited</button>, to be covered by graziers' fees.
+        animal transport and of additional mileage operated by the <Annotation annotationId="070003tramwaycompany" annotationSelect={() => openNote("070003tramwaycompany")} activeAnnotationId={currentNoteId}>Dublin United
+        Tramways Company, limited</Annotation>, to be covered by graziers' fees.
       </p>
       <span data-edition="ed1922" data-page="671"></span>
       <p>
@@ -3118,8 +3121,8 @@ const Ithaca = ({openNote}) => {
         life at least 2/7ths, viz., 20 years are passed in sleep. As a philosopher
         he knew that at the termination of any allotted life only an
         infinitesimal part of any person's desires has been realised. As a
-        physiologist he believed in the artificial placation of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170021hypnotic")}>malignant
-        agencies chiefly operative during somnolence</button>.
+        physiologist he believed in the artificial placation of <Annotation annotationId="170021hypnotic" annotationSelect={() => openNote("170021hypnotic")} activeAnnotationId={currentNoteId}>malignant
+        agencies chiefly operative during somnolence</Annotation>.
       </p>
       <span data-edition="ed1939" data-page="507"> </span>
       <span data-edition="ed1986" data-page="591"></span>
@@ -3160,25 +3163,25 @@ const Ithaca = ({openNote}) => {
         from same department of same firm: an old sandglass which rolled
         <span data-edition="ed1961" data-page="720"></span>containing sand which rolled: a sealed prophecy (never unsealed) written
         by Leopold Bloom in 1886 concerning the consequences of the passing into
-        law of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020037oldtory")}>William Ewart Gladstone's Home Rule bill of 1886</button> (never passed
+        law of <Annotation annotationId="020037oldtory" annotationSelect={() => openNote("020037oldtory")} activeAnnotationId={currentNoteId}>William Ewart Gladstone's Home Rule bill of 1886</Annotation> (never passed
         into law): a bazaar ticket, N° 2004, of S. Kevin's Charity Fair, <span data-edition="ed1932" data-page="624"></span>price
         6d. 100 prizes: an infantile epistle, dated, small em monday, reading:
         capital pee Papli comma capital aitch How are you note of interrogation
         capital eye I am very well full stop new paragraph signature with
         flourishes capital em Milly no stop: a cameo brooch, property of Ellen
         Bloom (born Higgins), deceased: 3 typewritten letters, addressee, Henry
-        Flower, c/o P. O. Westland Row, addresser, Martha Clifford, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040041dolphinsbarn")}>c/o P. O.
-        Dolphin's Barn</button>: <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170012boustrophedontic")}>the transliterated name and address of the addresser
+        Flower, c/o P. O. Westland Row, addresser, Martha Clifford, <Annotation annotationId="040041dolphinsbarn" annotationSelect={() => openNote("040041dolphinsbarn")} activeAnnotationId={currentNoteId}>c/o P. O.
+        Dolphin's Barn</Annotation>: <Annotation annotationId="170012boustrophedontic" annotationSelect={() => openNote("170012boustrophedontic")} activeAnnotationId={currentNoteId}>the transliterated name and address of the addresser
         of the 3 letters in reversed alphabetic boustrophedontic punctated
         quadrilinear cryptogram (vowels suppressed) N. IGS. /WI. UU. OX/W. OKS.
-        MH/Y. IM</button>: a press cutting from <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("160004newspapers")}>an English weekly periodical <i>Modern
-        Society</i></button>, subject corporal chastisement in girls' schools: a pink ribbon
+        MH/Y. IM</Annotation>: a press cutting from <Annotation annotationId="160004newspapers" annotationSelect={() => openNote("160004newspapers")} activeAnnotationId={currentNoteId}>an English weekly periodical <i>Modern
+        Society</i></Annotation>, subject corporal chastisement in girls' schools: a pink ribbon
         which had festooned an Easter egg in the year 1899: two partly uncoiled
         rubber preservatives with reserve pockets, purchased by post from Box
         32, P. O., Charing Cross, London, W. C.: <span data-edition="ed1986" data-page="592"></span>1 pack of 1 dozen creamlaid
         envelopes and feintruled notepaper, watermarked, now reduced by 3: some
         assorted Austrian-Hungarian coins: 2 coupons of the Royal and Privileged
-        Hungarian Lottery: a lowpower magnifying glass: 2 <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010127photogirl")}>erotic photocards</button>
+        Hungarian Lottery: a lowpower magnifying glass: 2 <Annotation annotationId="010127photogirl" annotationSelect={() => openNote("010127photogirl")} activeAnnotationId={currentNoteId}>erotic photocards</Annotation>
         showing a) buccal coition between nude señorita (rere presentation,
         superior position) and nude torero (fore presentation, inferior
         position) b) anal violation by male religious (fully clothed, eyes
@@ -3190,7 +3193,7 @@ const Ithaca = ({openNote}) => {
         <span data-edition="ed1939" data-page="508"> </span>
         of Queen Victoria: a chart of the measurements
         of Leopold Bloom compiled before, during and after 2 months' consecutive
-        use of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040024sandow")}>Sandow-Whiteley's pulley exerciser</button> (men's 15/-, athlete's 20/-)
+        use of <Annotation annotationId="040024sandow" annotationSelect={() => openNote("040024sandow")} activeAnnotationId={currentNoteId}>Sandow-Whiteley's pulley exerciser</Annotation> (men's 15/-, athlete's 20/-)
         viz., chest 28 in. and 29½ in., biceps 9 in. and 10 in., forearm 8½
         and 9 in., thigh 10 in. and 12 in., calf 11 in. and 12 in.: 1 prospectus of
         the Wonderworker, the world's greatest remedy for rectal complaints,
@@ -3218,7 +3221,7 @@ const Ithaca = ({openNote}) => {
       </p>
       <p>
         Numerous. From clergyman, British naval officer, wellknown author, city
-        man, hospital nurse, lady, mother of five, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("090001absentminded")}>absentminded beggar</button>. 
+        man, hospital nurse, lady, mother of five, <Annotation annotationId="090001absentminded" annotationSelect={() => openNote("090001absentminded")} activeAnnotationId={currentNoteId}>absentminded beggar</Annotation>. 
       </p>
       <p>
         How did absentminded beggar's concluding testimonial conclude?
@@ -3260,9 +3263,9 @@ const Ithaca = ({openNote}) => {
       </p>
       <span data-edition="ed1961" data-page="722"></span>
       <p>
-        Documents: <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040030leopoldbloom")}>the birth certificate of Leopold Paula Bloom</button>: <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("130007scottishwidows")}>an endowment
+        Documents: <Annotation annotationId="040030leopoldbloom" annotationSelect={() => openNote("040030leopoldbloom")} activeAnnotationId={currentNoteId}>the birth certificate of Leopold Paula Bloom</Annotation>: <Annotation annotationId="130007scottishwidows" annotationSelect={() => openNote("130007scottishwidows")} activeAnnotationId={currentNoteId}>an endowment
         assurance policy of £500 in the Scottish Widows' Assurance
-        Society</button>, intestated Millicent (Milly) Bloom, coming into force at 25
+        Society</Annotation>, intestated Millicent (Milly) Bloom, coming into force at 25
         years as with profit policy of £430, £462-10-0 and £500 at
         60 years or death, 65 years or death and death, respectively, or
         with 
@@ -3294,9 +3297,9 @@ const Ithaca = ({openNote}) => {
         An indistinct daguerreotype of Rudolph Virag and his father Leopold
         Virag executed in the year 1852 in the portrait atelier of their
         (respectively) 1st and 2nd cousin, Stefan Virag of Szesfehervar,
-        Hungary. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060043passover")}>An ancient hagadah book in which a pair of hornrimmed convex
+        Hungary. <Annotation annotationId="060043passover" annotationSelect={() => openNote("060043passover")} activeAnnotationId={currentNoteId}>An ancient hagadah book in which a pair of hornrimmed convex
         spectacles inserted marked the passage of thanksgiving in the ritual
-        prayers for Pessach (Passover)</button>: a photocard of the Queen's Hotel,
+        prayers for Pessach (Passover)</Annotation>: a photocard of the Queen's Hotel,
         Ennis, proprietor, Rudolph Bloom: an envelope addressed: <i>To My Dear Son
         Leopold</i>.
       </p>
@@ -3309,7 +3312,7 @@ const Ithaca = ({openNote}) => {
       <p>
         Tomorrow will be a week that I received... it is no use Leopold to be
         ... with your dear mother... that is not more to stand... to her...
-        all for me is out... be kind to <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060004athos")}>Athos</button>, Leopold... my dear son...
+        all for me is out... be kind to <Annotation annotationId="060004athos" annotationSelect={() => openNote("060004athos")} activeAnnotationId={currentNoteId}>Athos</Annotation>, Leopold... my dear son...
         always... of me... <i>das Herz... Gott... dein</i>...
       </p>
       <span data-edition="ed1961" data-page="723"></span>
@@ -3319,8 +3322,8 @@ const Ithaca = ({openNote}) => {
       </p>
       <p>
         An old man, widower, unkempt of hair, in bed, with head covered,
-        sighing: an infirm dog, Athos: <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150007aconite")}>aconite, resorted to by increasing doses
-        of grains and scruples as a palliative of recrudescent neuralgia</button>: the
+        sighing: an infirm dog, Athos: <Annotation annotationId="150007aconite" annotationSelect={() => openNote("150007aconite")} activeAnnotationId={currentNoteId}>aconite, resorted to by increasing doses
+        of grains and scruples as a palliative of recrudescent neuralgia</Annotation>: the
         face in death of a septuagenarian suicide by poison.
       </p>
       <p>
@@ -3353,8 +3356,8 @@ const Ithaca = ({openNote}) => {
         What first reminiscence had he of Rudolph Bloom (deceased)?
       </p>
       <p>
-        Rudolph Bloom (deceased) narrated to his son Leopold Bloom (aged 6) <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060030retrospective")}>a
-        retrospective arrangement</button> of migrations and settlements in and between
+        Rudolph Bloom (deceased) narrated to his son Leopold Bloom (aged 6) <Annotation annotationId="060030retrospective" annotationSelect={() => openNote("060030retrospective")} activeAnnotationId={currentNoteId}>a
+        retrospective arrangement</Annotation> of migrations and settlements in and between
         Dublin, London, Florence, Milan, Vienna, Budapest, Szombathely with
         statements of satisfaction (his grandfather having seen Maria Theresia,
         empress of Austria, queen of Hungary), with commercial advice (having
@@ -3459,7 +3462,7 @@ const Ithaca = ({openNote}) => {
         What considerations rendered it not irrational?
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080028multiply")}>The parties concerned, uniting, had increased and multiplied</button>, which
+        <Annotation annotationId="080028multiply" annotationSelect={() => openNote("080028multiply")} activeAnnotationId={currentNoteId}>The parties concerned, uniting, had increased and multiplied</Annotation>, which
         being done, offspring produced and educed to maturity, the parties, if
         not disunited were obliged to reunite for increase and multiplication,
         which was absurd, to form by reunion the original couple of uniting
@@ -3478,20 +3481,20 @@ const Ithaca = ({openNote}) => {
         In Ireland?
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170019localities")}>The cliffs of Moher, the windy wilds of Connemara, lough Neagh with
+        <Annotation annotationId="170019localities" annotationSelect={() => openNote("170019localities")} activeAnnotationId={currentNoteId}>The cliffs of Moher, the windy wilds of Connemara, lough Neagh with
         submerged petrified city, the Giant's Causeway, Fort Camden and Fort
         Carlisle, the Golden Vale of Tipperary, the islands of Aran, the
         pastures of royal Meath, Brigid's elm in Kildare, the Queen's Island
-        shipyard in Belfast, the Salmon Leap, the lakes of Killarney.</button>
+        shipyard in Belfast, the Salmon Leap, the lakes of Killarney.</Annotation>
       </p>
       <span data-edition="ed1922" data-page="678"></span>
       <p>
         Abroad?
       </p>
       <p>
-        Ceylon (with spicegardens supplying tea to <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050037tomkernan")}>Thomas Kernan, agent for
+        Ceylon (with spicegardens supplying tea to <Annotation annotationId="050037tomkernan" annotationSelect={() => openNote("050037tomkernan")} activeAnnotationId={currentNoteId}>Thomas Kernan, agent for
         Pulbrook, Robertson and Co, 2 Mincing Lane, London, E. C., 5 Dame
-        street, Dublin)</button>, Jerusalem, the holy city <span data-edition="ed1961" data-page="726"></span>(with mosque of Omar and gate
+        street, Dublin)</Annotation>, Jerusalem, the holy city <span data-edition="ed1961" data-page="726"></span>(with mosque of Omar and gate
         of Damascus, goal of aspiration), the straits of Gibraltar (the unique
         birthplace of Marion Tweedy), the Parthenon (containing statues, nude
         Grecian divinities), the Wall street money market (which controlled
@@ -3519,8 +3522,8 @@ const Ithaca = ({openNote}) => {
         What public advertisement would divulge the occultation of the departed?
       </p>
       <p>
-        £5 reward, lost, stolen or strayed from <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040005seveneccles")}>his residence 7 Eccles
-        street</button>, missing gent about 40, answering to the name of Bloom, Leopold
+        £5 reward, lost, stolen or strayed from <Annotation annotationId="040005seveneccles" annotationSelect={() => openNote("040005seveneccles")} activeAnnotationId={currentNoteId}>his residence 7 Eccles
+        street</Annotation>, missing gent about 40, answering to the name of Bloom, Leopold
         (Poldy), height 5 ft. 9½ inches, full build, olive complexion, may
         have since grown a beard, when last seen was wearing a black suit. Above
         sum will be paid for information leading to his discovery.
@@ -3574,7 +3577,7 @@ const Ithaca = ({openNote}) => {
         <span data-edition="ed1932" data-page="631"></span>rendering perilous: the necessity for repose, obviating movement: the
         proximity of an occupied bed, obviating research: the anticipation of
         warmth (human) tempered with coolness (linen), obviating desire and
-        rendering desirable: <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080005venus")}>the statue of Narcissus</button>, sound without echo,
+        rendering desirable: <Annotation annotationId="080005venus" annotationSelect={() => openNote("080005venus")} activeAnnotationId={currentNoteId}>the statue of Narcissus</Annotation>, sound without echo,
         desired desire.
       </p>
       <p>
@@ -3599,15 +3602,15 @@ const Ithaca = ({openNote}) => {
         funeral (rite of Samuel): the advertisement of Alexander Keyes (Urim and
         <span data-edition="ed1922" data-page="680"></span>
         Thummim): the <span data-edition="ed1961" data-page="728"></span>unsubstantial lunch (rite of Melchisedek): the visit to
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010144nationallibrary")}>museum and national library</button> (holy place): the bookhunt along Bedford
+        <Annotation annotationId="010144nationallibrary" annotationSelect={() => openNote("010144nationallibrary")} activeAnnotationId={currentNoteId}>museum and national library</Annotation> (holy place): the bookhunt along Bedford
         row, Merchants' Arch, Wellington Quay (Simchath Torah): the music in the
         Ormond Hotel (Shira Shirim): the altercation with a truculent troglodyte
         in Bernard Kiernan's premises (holocaust): a blank period of time
         including a cardrive, a visit to a house of mourning, a leavetaking
         (wilderness): the eroticism produced by feminine exhibitionism (rite of
         Onan): the prolonged delivery of Mrs Mina Purefoy (heave offering):
-        the visit to the disorderly house of Mrs Bella Cohen, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150005nighttown")}>82 Tyrone
-        street, lower</button> and subsequent brawl and chance medley in Beaver street
+        the visit to the disorderly house of Mrs Bella Cohen, <Annotation annotationId="150005nighttown" annotationSelect={() => openNote("150005nighttown")} activeAnnotationId={currentNoteId}>82 Tyrone
+        street, lower</Annotation> and subsequent brawl and chance medley in Beaver street
         (Armageddon): nocturnal perambulation to and from the cabman's shelter,
         Butt Bridge (atonement).
       </p>
@@ -3616,7 +3619,7 @@ const Ithaca = ({openNote}) => {
         conclude lest he should not conclude involuntarily apprehend?
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170017loudlonecrack")}>The cause of a brief sharp unforeseen heard loud lone crack</button> emitted by
+        <Annotation annotationId="170017loudlonecrack" annotationSelect={() => openNote("170017loudlonecrack")} activeAnnotationId={currentNoteId}>The cause of a brief sharp unforeseen heard loud lone crack</Annotation> emitted by
         the insentient material of a strainveined timber table.
       </p>
       <span data-edition="ed1986" data-page="599"></span>
@@ -3635,7 +3638,7 @@ const Ithaca = ({openNote}) => {
         of artificial light, silently suddenly comprehend?
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170016wherewasmoses")}>Where was Moses when the candle went out?</button>
+        <Annotation annotationId="170016wherewasmoses" annotationSelect={() => openNote("170016wherewasmoses")} activeAnnotationId={currentNoteId}>Where was Moses when the candle went out?</Annotation>
       </p>
       <p>
         What imperfections in a perfect day did Bloom, walking, charged with
@@ -3648,8 +3651,8 @@ const Ithaca = ({openNote}) => {
         Robertson and Co, 5 Dame Street, Dublin, and 2 Mincing Lane, London E.
         C.): to certify the presence or absence of posterior rectal orifice in
         the case of Hellenic female divinities: to obtain admission (gratuitous
-        or paid) to the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050032leah")}>performance of <em>Leah</em></button> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060040gaietytheatre")}>by Mrs Bandmann Palmer at the Gaiety
-        Theatre</button>, 46, 47, 48, 49 South King street. 
+        or paid) to the <Annotation annotationId="050032leah" annotationSelect={() => openNote("050032leah")} activeAnnotationId={currentNoteId}>performance of <em>Leah</em></Annotation> <Annotation annotationId="060040gaietytheatre" annotationSelect={() => openNote("060040gaietytheatre")} activeAnnotationId={currentNoteId}>by Mrs Bandmann Palmer at the Gaiety
+        Theatre</Annotation>, 46, 47, 48, 49 South King street. 
       </p>
       <span data-edition="ed1922" data-page="681"></span><span data-edition="ed1961" data-page="729"></span>
       <p>
@@ -3657,8 +3660,8 @@ const Ithaca = ({openNote}) => {
       </p>
       <span data-edition="ed1939" data-page="514"> </span>
       <p>
-        The face of her father, the late Major Brian Cooper Tweedy, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030118royaldublins")}>Royal Dublin
-        Fusiliers</button>, of Gibraltar and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040041dolphinsbarn")}>Rehoboth, Dolphin's Barn</button>.
+        The face of her father, the late Major Brian Cooper Tweedy, <Annotation annotationId="030118royaldublins" annotationSelect={() => openNote("030118royaldublins")} activeAnnotationId={currentNoteId}>Royal Dublin
+        Fusiliers</Annotation>, of Gibraltar and <Annotation annotationId="040041dolphinsbarn" annotationSelect={() => openNote("040041dolphinsbarn")} activeAnnotationId={currentNoteId}>Rehoboth, Dolphin's Barn</Annotation>.
       </p>
       <p>
         What recurrent impressions of the same were possible by hypothesis?
@@ -3675,10 +3678,10 @@ const Ithaca = ({openNote}) => {
         perceived by him?
       </p>
       <p>
-        A pair of new inodorous halfsilk black ladies' hose, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020080mauve")}>a pair of new
-        violet garters</button>, a pair of outsize ladies' drawers of India mull, cut on
-        generous lines, redolent of opoponax, jessamine and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("100002tobacco")}>Muratti's Turkish
-        cigarettes</button> and containing a long bright steel safety pin, folded
+        A pair of new inodorous halfsilk black ladies' hose, <Annotation annotationId="020080mauve" annotationSelect={() => openNote("020080mauve")} activeAnnotationId={currentNoteId}>a pair of new
+        violet garters</Annotation>, a pair of outsize ladies' drawers of India mull, cut on
+        generous lines, redolent of opoponax, jessamine and <Annotation annotationId="100002tobacco" annotationSelect={() => openNote("100002tobacco")} activeAnnotationId={currentNoteId}>Muratti's Turkish
+        cigarettes</Annotation> and containing a long bright steel safety pin, folded
         curvilinear, a camisole of batiste with thin lace border, an accordion
         underskirt of blue silk moirette, all these objects being disposed
         irregularly on the top of a rectangular <span data-edition="ed1986" data-page="600"></span>trunk, quadruple battened,
@@ -3691,8 +3694,8 @@ const Ithaca = ({openNote}) => {
       <p>
         A commode, one leg fractured, totally covered by square cretonne
         <span data-edition="ed1932" data-page="633"></span>cutting, apple design, on which rested a lady's black straw hat.
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040057orangekeyed")}>Orangekeyed ware</button>, bought of Henry Price, basket, fancy goods, chinaware
-        and ironmongery manufacturer, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080003moorestreet")}>21, 22, 23 Moore Street</button>, disposed
+        <Annotation annotationId="040057orangekeyed" annotationSelect={() => openNote("040057orangekeyed")} activeAnnotationId={currentNoteId}>Orangekeyed ware</Annotation>, bought of Henry Price, basket, fancy goods, chinaware
+        and ironmongery manufacturer, <Annotation annotationId="080003moorestreet" annotationSelect={() => openNote("080003moorestreet")} activeAnnotationId={currentNoteId}>21, 22, 23 Moore Street</Annotation>, disposed
         irregularly on the washstand and floor and consisting of basin, soapdish
         and brushtray (on the washstand, together), pitcher and night article
         (on the floor, separate).
@@ -3715,7 +3718,7 @@ const Ithaca = ({openNote}) => {
       <p>
         With circumspection, as invariably when entering an abode (his own or
         not his own): with solicitude, the snakespiral springs of the mattress
-        being old, the  <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040085brassquoits")}>brass quoits</button> and pendent viper radii loose and tremulous
+        being old, the  <Annotation annotationId="040085brassquoits" annotationSelect={() => openNote("040085brassquoits")} activeAnnotationId={currentNoteId}>brass quoits</Annotation> and pendent viper radii loose and tremulous
         under stress and strain: prudently, as entering a lair or ambush of
         lust or adders: lightly, the less to disturb: reverently, the bed of
         conception and of birth, of consummation of marriage and of breach of
@@ -3727,7 +3730,7 @@ const Ithaca = ({openNote}) => {
       <p>
         New clean bedlinen, additional odours, the presence of a human form,
         female, hers, the imprint of a human form, male, not his, some crumbs,
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050016pottedmeat")}>some flakes of potted meat</button>, recooked, which he removed.
+        <Annotation annotationId="050016pottedmeat" annotationSelect={() => openNote("050016pottedmeat")} activeAnnotationId={currentNoteId}>some flakes of potted meat</Annotation>, recooked, which he removed.
       </p>
       <span data-edition="ed1939" data-page="515"> </span>
       <p>
@@ -3741,15 +3744,15 @@ const Ithaca = ({openNote}) => {
         alone in a series originating in and repeated to infinity.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>What preceding series?</button>
+        <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>What preceding series?</Annotation>
       </p>
       <p>
         Assuming Mulvey to be the first term of his series, Penrose, Bartell
-        d'Arcy, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040092professorgoodwin")}>professor Goodwin</button>, Julius Mastiansky, John Henry Menton, Father
+        d'Arcy, <Annotation annotationId="040092professorgoodwin" annotationSelect={() => openNote("040092professorgoodwin")} activeAnnotationId={currentNoteId}>professor Goodwin</Annotation>, Julius Mastiansky, John Henry Menton, Father
         <span data-edition="ed1986" data-page="601"></span>Bernard Corrigan, a farmer at the Royal Dublin Society's Horse <span data-edition="ed1932" data-page="634"></span>Show,
         Maggot O'Reilly, Matthew Dillon, Valentine Blake Dillon (Lord Mayor
         of Dublin), Christopher Callinan, Lenehan, an Italian organgrinder,
-        an unknown gentleman in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060040gaietytheatre")}>the Gaiety Theatre</button>, Benjamin Dollard, Simon
+        an unknown gentleman in <Annotation annotationId="060040gaietytheatre" annotationSelect={() => openNote("060040gaietytheatre")} activeAnnotationId={currentNoteId}>the Gaiety Theatre</Annotation>, Benjamin Dollard, Simon
         Dedalus, Andrew (Pisser) Burke, Joseph Cuffe, Wisdom Hely, Alderman John
         Hooper, Dr Francis Brady, Father Sebastian of Mount Argus, a bootblack
         at the General Post Office, Hugh E. (Blazes) Boylan and so each and so
@@ -3858,8 +3861,8 @@ const Ithaca = ({openNote}) => {
         What retribution, if any?
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080030cenarteco")}>Assassination, never, as two wrongs did not make one right. Duel by
-        combat, no.</button> Divorce, not now. Exposure by mechanical artifice (automatic
+        <Annotation annotationId="080030cenarteco" annotationSelect={() => openNote("080030cenarteco")} activeAnnotationId={currentNoteId}>Assassination, never, as two wrongs did not make one right. Duel by
+        combat, no.</Annotation> Divorce, not now. Exposure by mechanical artifice (automatic
         bed) or individual testimony (concealed ocular witnesses), not <span data-edition="ed1932" data-page="636"></span>yet. Suit
         for damages by legal influence or simulation of assault with evidence of
         injuries sustained (selfinflicted), not impossibly. If any, positively, connivance, introduction of
@@ -3890,8 +3893,8 @@ const Ithaca = ({openNote}) => {
         proposition (parsed as feminine subject, auxiliary verb
         and quasimonosyllabic onomatopoeic past participle with complementary
         masculine agent) in the passive voice: the continued product of
-        seminators by generation: the continual <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180010dewy")}>production of semen by
-        distillation</button>: the futility of triumph or protest or vindication: the
+        seminators by generation: the continual <Annotation annotationId="180010dewy" annotationSelect={() => openNote("180010dewy")} activeAnnotationId={currentNoteId}>production of semen by
+        distillation</Annotation>: the futility of triumph or protest or vindication: the
         inanity of extolled virtue: the lethargy of nescient matter: the apathy
         of the stars.
       </p>
@@ -3904,8 +3907,8 @@ const Ithaca = ({openNote}) => {
         hemispheres, in all habitable lands and islands explored or unexplored
         (the land of the midnight sun, the islands of the blessed, the isles of
         Greece, the land of promise), of adipose anterior and posterior female
-        hemispheres, redolent of milk and honey and of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040063happywarmth")}>excretory sanguine and
-        seminal warmth</button>, reminiscent of secular families of curves of amplitude,
+        hemispheres, redolent of milk and honey and of <Annotation annotationId="040063happywarmth" annotationSelect={() => openNote("040063happywarmth")} activeAnnotationId={currentNoteId}>excretory sanguine and
+        seminal warmth</Annotation>, reminiscent of secular families of curves of amplitude,
         insusceptible of moods of impression or of contrarieties of expression,
         expressive of mute immutable mature animality.
       </p>
@@ -3950,8 +3953,8 @@ const Ithaca = ({openNote}) => {
         in the vicinity of the licensed premises of Bernard Kiernan and Co,
         Limited, 8, 9 and 10 Little Britain street, the erotic provocation
         and response thereto caused by the exhibitionism of Gertrude (Gerty),
-        surname unknown. Positive: <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110002atfourshe")}>he included mention of a performance by Mrs
-        Bandmann Palmer of <i>Leah</i> at the Gaiety Theatre</button>, 46, 47, 48, 49 South King
+        surname unknown. Positive: <Annotation annotationId="110002atfourshe" annotationSelect={() => openNote("110002atfourshe")} activeAnnotationId={currentNoteId}>he included mention of a performance by Mrs
+        Bandmann Palmer of <i>Leah</i> at the Gaiety Theatre</Annotation>, 46, 47, 48, 49 South King
         street, an invitation to supper at Wynn's (Murphy's) Hotel, 35, 36 and
         37 Lower Abbey street, a volume of peccaminous pornographical tendency
         entitled <i>Sweets of Sin</i>, anonymous author a gentleman of fashion, a
@@ -3992,7 +3995,7 @@ const Ithaca = ({openNote}) => {
         with ejaculation of semen within the natural female organ, having last
         taken place 5 weeks previous, viz. 27 November 1893, to the birth on 29
         December 1893 of second (and only male) issue, deceased 9 January 1894,
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040096sheknew")}>aged 11 days</button>, there remained a period of 10 years, 5 months and 18 days
+        <Annotation annotationId="040096sheknew" annotationSelect={() => openNote("040096sheknew")} activeAnnotationId={currentNoteId}>aged 11 days</Annotation>, there remained a period of 10 years, 5 months and 18 days
         during which carnal intercourse had been incomplete, without ejaculation
         of semen within the natural female organ. By the narrator a limitation
         of activity, mental and 
@@ -4053,7 +4056,7 @@ const Ithaca = ({openNote}) => {
         reclined laterally, left, with right and left legs flexed, the index
         finger and thumb of the right hand resting on the bridge of the nose, in
         the attitude depicted in a snapshot photograph made by Percy Apjohn, the
-        childman weary, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050024nakedwomb")}>the manchild in the womb</button>.
+        childman weary, <Annotation annotationId="050024nakedwomb" annotationSelect={() => openNote("050024nakedwomb")} activeAnnotationId={currentNoteId}>the manchild in the womb</Annotation>.
       </p>
       <span data-edition="ed1922" data-page="688"></span>
       <p>
@@ -4067,8 +4070,8 @@ const Ithaca = ({openNote}) => {
         With?
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170009sinbadsailor")}>Sinbad the Sailor and Tinbad the Tailor and Jinbad the Jailer and
-        Whinbad the Whaler</button> and Ninbad the Nailer and Finbad the Failer and
+        <Annotation annotationId="170009sinbadsailor" annotationSelect={() => openNote("170009sinbadsailor")} activeAnnotationId={currentNoteId}>Sinbad the Sailor and Tinbad the Tailor and Jinbad the Jailer and
+        Whinbad the Whaler</Annotation> and Ninbad the Nailer and Finbad the Failer and
         Binbad the Bailer and Pinbad the Pailer and Minbad the Mailer and Hinbad
         the Hailer and Rinbad the Railer and Dinbad the Kailer and Vinbad the
         Quailer and Linbad the Yailer and Xinbad the Phthailer.
@@ -4077,9 +4080,9 @@ const Ithaca = ({openNote}) => {
         When?
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170009sinbadsailor")}>Going to dark bed there was a square round Sinbad the Sailor roc's auk's
+        <Annotation annotationId="170009sinbadsailor" annotationSelect={() => openNote("170009sinbadsailor")} activeAnnotationId={currentNoteId}>Going to dark bed there was a square round Sinbad the Sailor roc's auk's
         egg in the night of the bed of all the auks of the rocs of Darkinbad the
-        Brightdayler.</button>
+        Brightdayler.</Annotation>
       </p>
       <p>
         Where?

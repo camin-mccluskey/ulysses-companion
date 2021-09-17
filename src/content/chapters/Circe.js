@@ -1,15 +1,18 @@
-const Circe = ({openNote}) => {
+import Annotation from "../../components/Annotation";
+
+
+const Circe = ({openNote, currentNoteId}) => {
   return (
     <div>
       <p style={{textIndent:"-.3in", marginLeft:".75in", paddingTop:".2in"}}></p>
       <center><font size="+2">[15]</font></center>
       <br/>
-      <i>(<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150005nighttown")}>The Mabbot street entrance of nighttown</button>, before which stretches
+      <i>(<Annotation annotationId="150005nighttown" annotationSelect={() => openNote("150005nighttown")} activeAnnotationId={currentNoteId}>The Mabbot street entrance of nighttown</Annotation>, before which stretches
       an uncobbled tramsiding set with skeleton tracks, red and green
-      <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150004willowisp")}>will-o'-the-wisps</button> and danger signals. Rows of grimy houses with gaping
-      doors. Rare lamps with faint rainbow fins. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050047hokypoky")}>Round Rabaiotti's halted ice
+      <Annotation annotationId="150004willowisp" annotationSelect={() => openNote("150004willowisp")} activeAnnotationId={currentNoteId}>will-o'-the-wisps</Annotation> and danger signals. Rows of grimy houses with gaping
+      doors. Rare lamps with faint rainbow fins. <Annotation annotationId="050047hokypoky" annotationSelect={() => openNote("050047hokypoky")} activeAnnotationId={currentNoteId}>Round Rabaiotti's halted ice
       gondola stunted men and women squabble. They grab wafers between which
-      are wedged lumps of coral and copper snow.</button> Sucking, they scatter slowly.
+      are wedged lumps of coral and copper snow.</Annotation> Sucking, they scatter slowly.
       Children. The swancomb of the gondola, highreared, forges on through the
       murk, white and blue under a lighthouse. Whistles call and answer.)</i>
       <p></p>
@@ -27,7 +30,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(A deafmute idiot with goggle eyes, his shapeless mouth dribbling,
-        jerks past, shaken in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150003saintvitus")}>Saint Vitus' dance</button>. A chain of children's hands
+        jerks past, shaken in <Annotation annotationId="150003saintvitus" annotationSelect={() => openNote("150003saintvitus")} activeAnnotationId={currentNoteId}>Saint Vitus' dance</Annotation>. A chain of children's hands
         imprisons him.)</i>
       </p>
       <p>
@@ -121,7 +124,7 @@ const Circe = ({openNote}) => {
         PRIVATE COMPTON 
       </p>
       <p>
-        <i>(Jerks his finger.)</i> Way for the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010097latinquarterhat")}>parson</button>.
+        <i>(Jerks his finger.)</i> Way for the <Annotation annotationId="010097latinquarterhat" annotationSelect={() => openNote("010097latinquarterhat")} activeAnnotationId={currentNoteId}>parson</Annotation>.
       </p>
       <p>
         PRIVATE CARR
@@ -189,7 +192,7 @@ const Circe = ({openNote}) => {
         <i>(Bickering.)</i> And says the one: I seen you up Faithful
         place with your squarepusher, the greaser off the railway, in his
         cometobed hat. Did you, says I. That's not for you to say, says I. You
-        never seen me in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150014mantrap")}>the mantrap</button> with a married highlander, says I. The
+        never seen me in <Annotation annotationId="150014mantrap" annotationSelect={() => openNote("150014mantrap")} activeAnnotationId={currentNoteId}>the mantrap</Annotation> with a married highlander, says I. The
         likes of her! Stag that one is! Stubborn as a mule! And her walking with
         two fellows the one time, Kilbride, the enginedriver, and lancecorporal
         Oliphant.
@@ -224,15 +227,15 @@ const Circe = ({openNote}) => {
         LYNCH
       </p>
       <p>
-        Pornosophical philotheology. Metaphysics in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150005nighttown")}>Mecklenburgh street</button>!
+        Pornosophical philotheology. Metaphysics in <Annotation annotationId="150005nighttown" annotationSelect={() => openNote("150005nighttown")} activeAnnotationId={currentNoteId}>Mecklenburgh street</Annotation>!
       </p>
       <p>
         STEPHEN
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("090005shrewridden")}>We have shrewridden Shakespeare and henpecked Socrates. Even
-        the allwisest Stagyrite was bitted, bridled and mounted</button> by a <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("090006lightoflove")}>light of
-        love</button>.
+        <Annotation annotationId="090005shrewridden" annotationSelect={() => openNote("090005shrewridden")} activeAnnotationId={currentNoteId}>We have shrewridden Shakespeare and henpecked Socrates. Even
+        the allwisest Stagyrite was bitted, bridled and mounted</Annotation> by a <Annotation annotationId="090006lightoflove" annotationSelect={() => openNote("090006lightoflove")} activeAnnotationId={currentNoteId}>light of
+        love</Annotation>.
         <span data-edition="ed1922" data-page="411"> </span>
       </p>
       <p>
@@ -261,7 +264,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         Lecherous lynx, to <i>la belle dame sans merci,</i> Georgina
-        Johnson, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010006introibo")}><i>ad deam qui laetificat iuventutem meam.</i></button>
+        Johnson, <Annotation annotationId="010006introibo" annotationSelect={() => openNote("010006introibo")} activeAnnotationId={currentNoteId}><i>ad deam qui laetificat iuventutem meam.</i></Annotation>
       </p>
       <p>
         <i>(Stephen thrusts the ashplant on him and slowly holds out his hands,
@@ -293,10 +296,10 @@ const Circe = ({openNote}) => {
         cleaves the crowd and lurches towards the tramsiding. On the farther side
         under the railway bridge Bloom appears, flushed, panting, cramming bread
         and chocolate into a sidepocket. From Gillen's hairdresser's window a
-        composite portrait shows him <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010093doduty")}>gallant Nelson</button>'s image. A concave mirror</i>
+        composite portrait shows him <Annotation annotationId="010093doduty" annotationSelect={() => openNote("010093doduty")} activeAnnotationId={currentNoteId}>gallant Nelson</Annotation>'s image. A concave mirror</i>
         <span data-edition="ed1922" data-page="412"> </span>
-        <i>at the side presents to him lovelorn</i> <span data-edition="ed1961" data-page="433"> </span><i>longlost lugubru Booloohoom. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010141blamehistory")}>Grave
-        Gladstone</button> sees him level, Bloom for Bloom. He passes, struck by the
+        <i>at the side presents to him lovelorn</i> <span data-edition="ed1961" data-page="433"> </span><i>longlost lugubru Booloohoom. <Annotation annotationId="010141blamehistory" annotationSelect={() => openNote("010141blamehistory")} activeAnnotationId={currentNoteId}>Grave
+        Gladstone</Annotation> sees him level, Bloom for Bloom. He passes, struck by the
         stare of truculent Wellington, but in the convex mirror grin unstruck
         the bonham eyes and fatchuck cheekchops of Jollypoldy the rixdix doldy.</i>
       </p>
@@ -413,9 +416,9 @@ const Circe = ({openNote}) => {
       <br/>
       <p>
         No thoroughfare. Close
-        shave that but cured the stitch. Must take up <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040024sandow")}>Sandow's exercises</button> again.
+        shave that but cured the stitch. Must take up <Annotation annotationId="040024sandow" annotationSelect={() => openNote("040024sandow")} activeAnnotationId={currentNoteId}>Sandow's exercises</Annotation> again.
         On the hands down. Insure against street accident too. The Providential.
-        <i>(He feels his trouser pocket.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040047potato")}>Poor mamma's panacea.</button> Heel easily 
+        <i>(He feels his trouser pocket.)</i> <Annotation annotationId="040047potato" annotationSelect={() => openNote("040047potato")} activeAnnotationId={currentNoteId}>Poor mamma's panacea.</Annotation> Heel easily 
         <span data-edition="ed1939" data-page="312"> </span>
         catch in track or bootlace in a cog. Day the wheel of the black Maria peeled
         off my shoe at Leonard's corner. Third time is the charm. Shoe <span data-edition="ed1961" data-page="435"> </span>trick.
@@ -600,8 +603,8 @@ const Circe = ({openNote}) => {
         <span data-edition="ed1939" data-page="314"> </span>
         <i>and cries out in shrill alarm.)</i> O blessed Redeemer, what have they done
         to him! My smelling salts! <i>(She hauls up a reef of skirt and ransacks
-        the pouch of her striped blay petticoat. A phial, an Agnus Dei, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040047potato")}>a
-        shrivelled potato</button> and a celluloid doll fall out.)</i> Sacred Heart of Mary,
+        the pouch of her striped blay petticoat. A phial, an Agnus Dei, <Annotation annotationId="040047potato" annotationSelect={() => openNote("040047potato")} activeAnnotationId={currentNoteId}>a
+        shrivelled potato</Annotation> and a celluloid doll fall out.)</i> Sacred Heart of Mary,
         where were you at all, at all?
       </p>
       <span data-edition="ed1961" data-page="438"> </span>
@@ -881,7 +884,7 @@ const Circe = ({openNote}) => {
       <p>
         <i>(Looks behind.)</i> She often said she'd like to visit. Slumming.
         The exotic, you see. Negro servants too in livery if she had money.
-        Othello black brute. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060003eugenestratton")}>Eugene Stratton</button>. Even the bones and cornerman at
+        Othello black brute. <Annotation annotationId="060003eugenestratton" annotationSelect={() => openNote("060003eugenestratton")} activeAnnotationId={currentNoteId}>Eugene Stratton</Annotation>. Even the bones and cornerman at
         the Livermore christies. Bohee brothers. Sweep for that matter.
       </p>
       <p>
@@ -945,7 +948,7 @@ const Circe = ({openNote}) => {
       <p>
         <i>(Seizes her wrist with his free hand.)</i> Josie Powell that was,
         prettiest deb in Dublin. How time flies by! Do you remember, harking
-        back in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060030retrospective")}>a retrospective arrangement</button>, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150001oldchristmas")}>Old Christmas</button> night, Georgina
+        back in <Annotation annotationId="060030retrospective" annotationSelect={() => openNote("060030retrospective")} activeAnnotationId={currentNoteId}>a retrospective arrangement</Annotation>, <Annotation annotationId="150001oldchristmas" annotationSelect={() => openNote("150001oldchristmas")} activeAnnotationId={currentNoteId}>Old Christmas</Annotation> night, Georgina
         Simpson's housewarming while they were playing the Irving Bishop game,
         finding the pin blindfold and thoughtreading? Subject, what is in this
         snuffbox?
@@ -974,7 +977,7 @@ const Circe = ({openNote}) => {
         MRS BREEN
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040035oldsweetsong")}>The dear dead days beyond recall. Love's old sweet song.</button>
+        <Annotation annotationId="040035oldsweetsong" annotationSelect={() => openNote("040035oldsweetsong")} activeAnnotationId={currentNoteId}>The dear dead days beyond recall. Love's old sweet song.</Annotation>
       </p>
       <p>
         BLOOM
@@ -998,11 +1001,11 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        <i>(Wearing a <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020080mauve")}>purple Napoleon hat</button> with an amber halfmoon, his
+        <i>(Wearing a <Annotation annotationId="020080mauve" annotationSelect={() => openNote("020080mauve")} activeAnnotationId={currentNoteId}>purple Napoleon hat</Annotation> with an amber halfmoon, his
         fingers and thumb passing slowly down to her soft moist meaty palm which
         she surrenders gently.)</i> The witching hour of night. I took the splinter
         out of this hand, carefully, slowly. <i>(Tenderly, as he slips on her
-        finger <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040021ruby")}>a ruby ring</button>.)</i> <i><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040025lacidarem")}>Là ci darem la mano.</button></i>
+        finger <Annotation annotationId="040021ruby" annotationSelect={() => openNote("040021ruby")} activeAnnotationId={currentNoteId}>a ruby ring</Annotation>.)</i> <i><Annotation annotationId="040025lacidarem" annotationSelect={() => openNote("040025lacidarem")} activeAnnotationId={currentNoteId}>Là ci darem la mano.</Annotation></i>
       </p>
       <p>
         MRS BREEN
@@ -1036,7 +1039,7 @@ const Circe = ({openNote}) => {
         ALF BERGAN
       </p>
       <p>
-        <i>(Points jeering at the sandwich boards.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080010upup")}>U. p.: Up.</button>
+        <i>(Points jeering at the sandwich boards.)</i> <Annotation annotationId="080010upup" annotationSelect={() => openNote("080010upup")} activeAnnotationId={currentNoteId}>U. p.: Up.</Annotation>
       </p>
       <p>
         MRS BREEN
@@ -1065,14 +1068,14 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(Offhandedly.)</i> Kosher. A snack for supper. The home without
-        potted meat is incomplete. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050032leah")}>I was at <i>Leah.</i> Mrs Bandmann Palmer.</button>
+        potted meat is incomplete. <Annotation annotationId="050032leah" annotationSelect={() => openNote("050032leah")} activeAnnotationId={currentNoteId}>I was at <i>Leah.</i> Mrs Bandmann Palmer.</Annotation>
         Trenchant exponent of Shakespeare. Unfortunately threw away the
         programme. Rattling good place round there for pigs' feet. Feel.
       </p>
       <span data-edition="ed1986" data-page="364"> </span>
       <p>
         <i>(Richie Goulding, three ladies' hats pinned on his head, appears
-        weighted to one side by the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030113richiegoulding")}>black legal bag of Collis and Ward</button> on which
+        weighted to one side by the <Annotation annotationId="030113richiegoulding" annotationSelect={() => openNote("030113richiegoulding")} activeAnnotationId={currentNoteId}>black legal bag of Collis and Ward</Annotation> on which
         a skull and crossbones are painted in</i> <span data-edition="ed1961" data-page="446"> </span><i>white limewash. He opens it
         and shows it full of polonies, kippered herrings, Findon haddies and
         tightpacked pills.)</i>
@@ -1081,7 +1084,7 @@ const Circe = ({openNote}) => {
         RICHIE
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110001bestvalue")}>Best value in Dub.</button>
+        <Annotation annotationId="110001bestvalue" annotationSelect={() => openNote("110001bestvalue")} activeAnnotationId={currentNoteId}>Best value in Dub.</Annotation>
       </p>
       <p>
         <i>(Bald Pat, bothered beetle, stands on the curbstone, folding his
@@ -1109,7 +1112,7 @@ const Circe = ({openNote}) => {
         RICHIE
       </p>
       <p>
-        <i>(With a cry of pain, his hand to his back.)</i> Ah! <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030076backachepills")}>Bright's!</button>
+        <i>(With a cry of pain, his hand to his back.)</i> Ah! <Annotation annotationId="030076backachepills" annotationSelect={() => openNote("030076backachepills")} activeAnnotationId={currentNoteId}>Bright's!</Annotation>
         Lights!
       </p>
       <p>
@@ -1173,7 +1176,7 @@ const Circe = ({openNote}) => {
         tony buff shirt, shepherd's plaid Saint Andrew's cross scarftie, white
         spats, fawn dustcoat on his</i> 
         <span data-edition="ed1922" data-page="425"> </span>
-        <i>arm, tawny red <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020076brogues")}>brogues</button>, fieldglasses in
+        <i>arm, tawny red <Annotation annotationId="020076brogues" annotationSelect={() => openNote("020076brogues")} activeAnnotationId={currentNoteId}>brogues</Annotation>, fieldglasses in
         bandolier and a grey billycock hat.)</i> Do you remember a long long time,
         years and years ago, just after Milly, Marionette we called her, was
         weaned when we all went together to Fairyhouse races, was it?
@@ -1208,7 +1211,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         Because it didn't suit you one quarter as well as the other ducky
-        little tammy toque <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010075featherfans")}>with the bird of paradise wing in it</button> that I admired
+        little tammy toque <Annotation annotationId="010075featherfans" annotationSelect={() => openNote("010075featherfans")} activeAnnotationId={currentNoteId}>with the bird of paradise wing in it</Annotation> that I admired
         on you and you honestly looked just too fetching in it though it was a
         pity to kill it, you cruel naughty creature, little mite of a thing with
         a heart the size of a fullstop.
@@ -1240,9 +1243,9 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        Yes. And Molly was laughing <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>because Rogers and Maggot O'Reilly were</button> 
+        Yes. And Molly was laughing <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>because Rogers and Maggot O'Reilly were</Annotation> 
         <span data-edition="ed1922" data-page="426"> </span>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>mimicking a cock</button> as we passed a farmhouse and Marcus Tertius Moses,
+        <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>mimicking a cock</Annotation> as we passed a farmhouse and Marcus Tertius Moses,
         the tea merchant, drove past us in a gig with his daughter, Dancer Moses
         was her name, and the poodle in her lap bridled up and you asked me if I
         ever heard or read or knew or came across...
@@ -1251,12 +1254,12 @@ const Circe = ({openNote}) => {
         MRS BREEN
       </p>
       <p>
-        <i>(Eagerly.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180005yesyes")}>Yes, yes, yes, yes, yes, yes, yes.</button>
+        <i>(Eagerly.)</i> <Annotation annotationId="180005yesyes" annotationSelect={() => openNote("180005yesyes")} activeAnnotationId={currentNoteId}>Yes, yes, yes, yes, yes, yes, yes.</Annotation>
       </p>
       <p>
         <i>(She fades from his side. Followed by the whining dog he walks on
-        towards hellsgates. In <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030024archway")}>an archway</button> a standing</i> <span data-edition="ed1961" data-page="449"> </span><i>woman, bent forward, her
-        feet apart, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010086maryann")}>pisses cowily</button>. Outside a shuttered pub a bunch of loiterers
+        towards hellsgates. In <Annotation annotationId="030024archway" annotationSelect={() => openNote("030024archway")} activeAnnotationId={currentNoteId}>an archway</Annotation> a standing</i> <span data-edition="ed1961" data-page="449"> </span><i>woman, bent forward, her
+        feet apart, <Annotation annotationId="010086maryann" annotationSelect={() => openNote("010086maryann")} activeAnnotationId={currentNoteId}>pisses cowily</Annotation>. Outside a shuttered pub a bunch of loiterers
         listen to a tale which their brokensnouted gaffer rasps out with raucous
         humour. An armless pair of them flop wrestling, growling, in maimed
         sodden playfight.)</i>
@@ -1267,7 +1270,7 @@ const Circe = ({openNote}) => {
       <p>
         <i>(Crouches, his voice twisted in his snout.)</i> And when Cairns
         came down from the scaffolding in Beaver street what was he after doing
-        it into only <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170005dustbuckets")}>into the bucket of porter</button> that was there waiting on the
+        it into only <Annotation annotationId="170005dustbuckets" annotationSelect={() => openNote("170005dustbuckets")} activeAnnotationId={currentNoteId}>into the bucket of porter</Annotation> that was there waiting on the
         shavings for Derwan's plasterers.
       </p>
       <p>
@@ -1354,7 +1357,7 @@ const Circe = ({openNote}) => {
         PRIVATE CARR
       </p>
       <p>
-        <i>(To the navvy.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010013barracks")}>Portobello barracks</button> canteen. You ask for
+        <i>(To the navvy.)</i> <Annotation annotationId="010013barracks" annotationSelect={() => openNote("010013barracks")} activeAnnotationId={currentNoteId}>Portobello barracks</Annotation> canteen. You ask for
         Carr. Just Carr.
       </p>
       <p>
@@ -1402,8 +1405,8 @@ const Circe = ({openNote}) => {
         Wildgoose chase this. Disorderly houses. Lord knows where they
         are gone. Drunks cover distance double quick. Nice mixup. Scene at
         Westland row. Then jump in first class with third ticket. Then too far.
-        Train with engine behind. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030150malahide")}>Might have taken me to Malahide or a siding
-        for the night</button> or collision. Second drink does it. Once is a dose. What
+        Train with engine behind. <Annotation annotationId="030150malahide" annotationSelect={() => openNote("030150malahide")} activeAnnotationId={currentNoteId}>Might have taken me to Malahide or a siding
+        for the night</Annotation> or collision. Second drink does it. Once is a dose. What
         am I following him for? Still, he's the best of that lot. If I hadn't
         heard about Mrs Beaufoy Purefoy I wouldn't have gone and wouldn't have
         met. Kismet. He'll lose that cash. Relieving office here. Good biz for
@@ -1414,17 +1417,17 @@ const Circe = ({openNote}) => {
         <span data-edition="ed1939" data-page="323"> </span>
         later would have been shot.
         Absence of body. Still if bullet only went through my coat get damages
-        for shock, five hundred pounds. What was he? <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050042kildareclub")}>Kildare street club toff.</button>
+        for shock, five hundred pounds. What was he? <Annotation annotationId="050042kildareclub" annotationSelect={() => openNote("050042kildareclub")} activeAnnotationId={currentNoteId}>Kildare street club toff.</Annotation>
         God help his gamekeeper.
       </p>
       <p style={{marginBottom:"8px"}}>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150016writingonthewall")}><i>(He gazes ahead, reading on the wall a scrawled chalk legend</i> Wet Dream
-        <i>and a phallic design.</i>)</button> 
+        <Annotation annotationId="150016writingonthewall" annotationSelect={() => openNote("150016writingonthewall")} activeAnnotationId={currentNoteId}><i>(He gazes ahead, reading on the wall a scrawled chalk legend</i> Wet Dream
+        <i>and a phallic design.</i>)</Annotation> 
       </p>
       <p>
         Odd! Molly drawing on the frosted carriagepane
         at Kingstown. What's that like? <i>(Gaudy dollwomen loll in the lighted
-        doorways, in window embrasures, smoking <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("100002tobacco")}>birdseye cigarettes</button>. The
+        doorways, in window embrasures, smoking <Annotation annotationId="100002tobacco" annotationSelect={() => openNote("100002tobacco")} activeAnnotationId={currentNoteId}>birdseye cigarettes</Annotation>. The
         odour of the sicksweet weed floats towards him in slow round ovalling
         wreaths.)</i>
       </p>
@@ -1502,7 +1505,7 @@ const Circe = ({openNote}) => {
       <span data-edition="ed1939" data-page="324"> </span>
       <span data-edition="ed1961" data-page="453"> </span>
       <p>
-        <i>(He points. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050038bobdoran")}>Bob Doran, toppling from a high barstool</button>, sways over the
+        <i>(He points. <Annotation annotationId="050038bobdoran" annotationSelect={() => openNote("050038bobdoran")} activeAnnotationId={currentNoteId}>Bob Doran, toppling from a high barstool</Annotation>, sways over the
         munching spaniel.)</i>
       </p>
       <span data-edition="ed1922" data-page="430"> </span>
@@ -1534,7 +1537,7 @@ const Circe = ({openNote}) => {
         tram. All tales of circus life are highly demoralising.
       </p>
       <p>
-        <i>(<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040021ruby")}>Signor Maffei</button>, passionpale, in liontamer's costume with diamond studs
+        <i>(<Annotation annotationId="040021ruby" annotationSelect={() => openNote("040021ruby")} activeAnnotationId={currentNoteId}>Signor Maffei</Annotation>, passionpale, in liontamer's costume with diamond studs
         in his shirtfront, steps forward, holding a circus paperhoop, a
         curling carriagewhip and a revolver with which he covers the gorging
         boarhound.)</i>
@@ -1628,14 +1631,14 @@ const Circe = ({openNote}) => {
         THE DARK MERCURY
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080013dublincastle")}>The Castle is looking for him.</button> He was drummed out of
+        <Annotation annotationId="080013dublincastle" annotationSelect={() => openNote("080013dublincastle")} activeAnnotationId={currentNoteId}>The Castle is looking for him.</Annotation> He was drummed out of
         the army.
       </p>
       <p>
         MARTHA
       </p>
       <p>
-        <i>(Thickveiled, a crimson halter round her neck, a copy of the </i><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080012irishtimes")}>Irish Times</button><i> in her hand, in tone of reproach, pointing.)</i> Henry!
+        <i>(Thickveiled, a crimson halter round her neck, a copy of the </i><Annotation annotationId="080012irishtimes" annotationSelect={() => openNote("080012irishtimes")} activeAnnotationId={currentNoteId}>Irish Times</Annotation><i> in her hand, in tone of reproach, pointing.)</i> Henry!
         Leopold! Lionel, thou lost one! Clear my name.
       </p>
       <span data-edition="ed1922" data-page="432"> </span>
@@ -1651,7 +1654,7 @@ const Circe = ({openNote}) => {
       <p>
         <i>(Scared, hats himself, steps back, then, plucking at his heart
         and lifting his right forearm on the square, he gives the sign and
-        dueguard of fellowcraft.)</i> No, no, worshipful master, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("090006lightoflove")}>light of love</button>. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150017mistakenidentity")}>Mistaken identity. The Lyons mail. Lesurques and Dubosc.</button> You remember
+        dueguard of fellowcraft.)</i> No, no, worshipful master, <Annotation annotationId="090006lightoflove" annotationSelect={() => openNote("090006lightoflove")} activeAnnotationId={currentNoteId}>light of love</Annotation>. <Annotation annotationId="150017mistakenidentity" annotationSelect={() => openNote("150017mistakenidentity")} activeAnnotationId={currentNoteId}>Mistaken identity. The Lyons mail. Lesurques and Dubosc.</Annotation> You remember
         the Childs fratricide case. We medical men. By striking him dead with
         a hatchet. I am wrongfully accused. Better one guilty escape than
         ninetynine wrongfully condemned.
@@ -1688,7 +1691,7 @@ const Circe = ({openNote}) => {
         a man misunderstood. I am being made a scapegoat of. I am a respectable
         married man, without a stain on my character. I live in Eccles street.
         <span data-edition="ed1932" data-page="408"> </span>My wife, I am the daughter of a most distinguished commander, a gallant
-        upstanding gentleman, what do you call him, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040018oldtweedy")}>Majorgeneral Brian Tweedy</button>,
+        upstanding gentleman, what do you call him, <Annotation annotationId="040018oldtweedy" annotationSelect={() => openNote("040018oldtweedy")} activeAnnotationId={currentNoteId}>Majorgeneral Brian Tweedy</Annotation>,
         one of Britain's fighting men who helped to win our battles. Got his
         majority for the heroic defence of Rorke's Drift.
       </p>
@@ -1702,19 +1705,19 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        <i>(Turns to the gallery.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030118royaldublins")}>The royal Dublins</button>, boys, the salt of the
+        <i>(Turns to the gallery.)</i> <Annotation annotationId="030118royaldublins" annotationSelect={() => openNote("030118royaldublins")} activeAnnotationId={currentNoteId}>The royal Dublins</Annotation>, boys, the salt of the
         earth, known the world over. I think I see some old comrades in arms
         up there 
         <span data-edition="ed1922" data-page="433"> </span>
         among you. The R. D. F., with our own Metropolitan police,
         guardians of our homes, the pluckiest lads and the finest body of men,
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040084sizeable")}>as physique</button>, in the service of our sovereign.
+        <Annotation annotationId="040084sizeable" annotationSelect={() => openNote("040084sizeable")} activeAnnotationId={currentNoteId}>as physique</Annotation>, in the service of our sovereign.
       </p>
       <p>
         A VOICE
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080021joechamberlain")}>Turncoat! Up the Boers! Who booed Joe Chamberlain?</button>
+        <Annotation annotationId="080021joechamberlain" annotationSelect={() => openNote("080021joechamberlain")} activeAnnotationId={currentNoteId}>Turncoat! Up the Boers! Who booed Joe Chamberlain?</Annotation>
       </p>
       <p>
         BLOOM
@@ -1722,7 +1725,7 @@ const Circe = ({openNote}) => {
       <p>
         <i>(His hand on the shoulder of the first watch.)</i> My old dad too
         was a J. P. I'm as staunch a Britisher as you are, sir. I fought with
-        the colours for king and country in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("090001absentminded")}>the absentminded war</button> under general
+        the colours for king and country in <Annotation annotationId="090001absentminded" annotationSelect={() => openNote("090001absentminded")} activeAnnotationId={currentNoteId}>the absentminded war</Annotation> under general
         Gough in the park and was disabled at <span data-edition="ed1961" data-page="457"> </span>Spion Kop and Bloemfontein, was
         mentioned in dispatches. I did all a white man could. <i>(With quiet
         feeling.)</i> Jim Bludso. Hold her nozzle again the bank.
@@ -1759,12 +1762,12 @@ const Circe = ({openNote}) => {
       </p>
       <span data-edition="ed1932" data-page="409"> </span>
       <p>
-        <i>(Mr Philip Beaufoy, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010024stranger")}>palefaced</button>, stands in the witnessbox, in accurate
+        <i>(Mr Philip Beaufoy, <Annotation annotationId="010024stranger" annotationSelect={() => openNote("010024stranger")} activeAnnotationId={currentNoteId}>palefaced</Annotation>, stands in the witnessbox, in accurate
         morning dress, outbreast pocket with peak of handkerchief showing,
         creased lavender </i>
         <span data-edition="ed1939" data-page="327"> </span>
         <i>trousers and patent boots. He carries a large portfolio
-        labelled</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040065matcham")}>Matcham's Masterstrokes</button>.)
+        labelled</i> <Annotation annotationId="040065matcham" annotationSelect={() => openNote("040065matcham")} activeAnnotationId={currentNoteId}>Matcham's Masterstrokes</Annotation>.)
       </p>
       <span data-edition="ed1922" data-page="434"> </span>
       <p>
@@ -1774,7 +1777,7 @@ const Circe = ({openNote}) => {
         <i>(Drawls.)</i> No, you aren't. Not by a long shot if I know it.
         I don't see it that's all. No born gentleman, no-one with the most
         rudimentary promptings of a gentleman would stoop to such particularly
-        loathsome conduct. One of those, my lord.<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040019titbits")}> A plagiarist.</button> A soapy sneak
+        loathsome conduct. One of those, my lord.<Annotation annotationId="040019titbits" annotationSelect={() => openNote("040019titbits")} activeAnnotationId={currentNoteId}> A plagiarist.</Annotation> A soapy sneak
         masquerading as a litterateur. It's perfectly obvious that with the most
         inherent baseness he has cribbed some of my bestselling copy, really
         gorgeous stuff, a <span data-edition="ed1961" data-page="458"> </span>perfect gem, the love passages in which are beneath
@@ -1821,7 +1824,7 @@ const Circe = ({openNote}) => {
         A VOICE FROM THE GALLERY
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040050ikeymo")}>Moses, Moses, king of the jews,</button> <br/>
+        <Annotation annotationId="040050ikeymo" annotationSelect={() => openNote("040050ikeymo")} activeAnnotationId={currentNoteId}>Moses, Moses, king of the jews,</Annotation> <br/>
         Wiped his arse in the <i>Daily News.</i>
       </p>
       <span data-edition="ed1932" data-page="410"> </span>
@@ -2009,7 +2012,7 @@ const Circe = ({openNote}) => {
         A plasterer's bucket. By walking stifflegged. Suffered untold misery.
         Deadly agony. About noon. Love or burgundy. Yes, some spinach. Crucial
         moment. He did not look in the bucket. Nobody. Rather a mess. Not
-        completely.</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040019titbits")}>A Titbits <i>back number</i>.</button>)
+        completely.</i> <Annotation annotationId="040019titbits" annotationSelect={() => openNote("040019titbits")} activeAnnotationId={currentNoteId}>A Titbits <i>back number</i>.</Annotation>)
       </p>
       <span data-edition="ed1961" data-page="462"> </span>
       <p>
@@ -2082,8 +2085,8 @@ const Circe = ({openNote}) => {
         or cast a stone at a girl who took the wrong turning when some dastard,
         responsible for her condition, had worked his own sweet will on her. He
         wants to go straight. I regard him as the whitest man I know. He is down
-        on his luck at present owing to the mortgaging of his extensive <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040061agendath")}>property
-        at Agendath Netaim in faraway Asia Minor</button>, slides of which will now be
+        on his luck at present owing to the mortgaging of his extensive <Annotation annotationId="040061agendath" annotationSelect={() => openNote("040061agendath")} activeAnnotationId={currentNoteId}>property
+        at Agendath Netaim in faraway Asia Minor</Annotation>, slides of which will now be
         shown. <i>(To Bloom.)</i> I suggest that you will do the handsome thing.
       </p>
       <span data-edition="ed1939" data-page="331"> </span>
@@ -2096,7 +2099,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(The image of the lake of Kinnereth with blurred cattle cropping in
-        silver haze is projected on the wall. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040060dlugacz")}>Moses Dlugacz, ferreteyed</button> albino,
+        silver haze is projected on the wall. <Annotation annotationId="040060dlugacz" annotationSelect={() => openNote("040060dlugacz")} activeAnnotationId={currentNoteId}>Moses Dlugacz, ferreteyed</Annotation> albino,
         in blue dungarees, stands up in the gallery, holding in each hand an
         orange citron and a pork kidney.)</i>
       </p>
@@ -2104,7 +2107,7 @@ const Circe = ({openNote}) => {
         DLUGACZ
       </p>
       <p>
-        <i>(Hoarsely.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040064bleibtreustrasse")}>Bleibtreustrasse, Berlin, W.13.</button>
+        <i>(Hoarsely.)</i> <Annotation annotationId="040064bleibtreustrasse" annotationSelect={() => openNote("040064bleibtreustrasse")} activeAnnotationId={currentNoteId}>Bleibtreustrasse, Berlin, W.13.</Annotation>
       </p>
       <p>
         <i>(J. J. O'Molloy steps on to a low plinth and holds the lapel of his
@@ -2148,13 +2151,13 @@ const Circe = ({openNote}) => {
         brilliants and panache of osprey in her hair.)</i> Arrest him, constable. He
         wrote me an anonymous letter in prentice backhand when my husband was
         in the North Riding of Tipperary on the Munster circuit, signed James
-        Lovebirch. He said that <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110005theatreroyal")}> he had seen from the gods my peerless globes as
-        I sat in a box of the <i>Theatre Royal</i> at a command performance</button> of <i>La
+        Lovebirch. He said that <Annotation annotationId="110005theatreroyal" annotationSelect={() => openNote("110005theatreroyal")} activeAnnotationId={currentNoteId}> he had seen from the gods my peerless globes as
+        I sat in a box of the <i>Theatre Royal</i> at a command performance</Annotation> of <i>La
         Cigale</i>. I deeply inflamed him, he said. He made improper overtures
         to me to misconduct myself at half past <span data-edition="ed1986" data-page="379"> </span>four p.m. on the following
-        Thursday, Dunsink time. He offered to send me through the post <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040003nicename")}>a work
+        Thursday, Dunsink time. He offered to send me through the post <Annotation annotationId="040003nicename" annotationSelect={() => openNote("040003nicename")} activeAnnotationId={currentNoteId}>a work
         of fiction by Monsieur Paul de Kock, entitled <i>The Girl with the Three
-        Pairs of Stays</i></button>.
+        Pairs of Stays</i></Annotation>.
       </p>
       <p>
         MRS BELLINGHAM
@@ -2170,7 +2173,7 @@ const Circe = ({openNote}) => {
         he enclosed a bloom of edelweiss 
         <span data-edition="ed1939" data-page="332"> </span>
         culled on the heights, as he said,
-        in my honour. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050025botanicgardens")}>I had it examined by a botanical expert</button> and
+        in my honour. <Annotation annotationId="050025botanicgardens" annotationSelect={() => openNote("050025botanicgardens")} activeAnnotationId={currentNoteId}>I had it examined by a botanical expert</Annotation> and
         <span data-edition="ed1932" data-page="415"> </span>elicited the
         information that it was a blossom of the homegrown potato plant purloined
         from a forcingcase of the model farm.
@@ -2189,7 +2192,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(Screaming.)</i> Stop thief! Hurrah there,
-        Bluebeard! Three cheers for <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040050ikeymo")}>Ikey Mo</button>!
+        Bluebeard! Three cheers for <Annotation annotationId="040050ikeymo" annotationSelect={() => openNote("040050ikeymo")} activeAnnotationId={currentNoteId}>Ikey Mo</Annotation>!
       </p>
       <p>
         SECOND WATCH
@@ -2218,26 +2221,26 @@ const Circe = ({openNote}) => {
       </p>
       <span data-edition="ed1986" data-page="380"> </span><span data-edition="ed1961" data-page="466"> </span>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050043horseywomen")}>THE HONOURABLE MRS MERVYN TALBOYS</button>
+        <Annotation annotationId="050043horseywomen" annotationSelect={() => openNote("050043horseywomen")} activeAnnotationId={currentNoteId}>THE HONOURABLE MRS MERVYN TALBOYS</Annotation>
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050043horseywomen")}><i>(In amazon costume, hard hat,
+        <Annotation annotationId="050043horseywomen" annotationSelect={() => openNote("050043horseywomen")} activeAnnotationId={currentNoteId}><i>(In amazon costume, hard hat,
         jackboots cockspurred, vermilion waistcoat, fawn musketeer gauntlets
         with braided drums, long train held up and hunting crop with which she
         strikes her welt constantly.)</i> Also me. Because he saw me on the polo
         ground of the Phoenix park at the match All Ireland versus the Rest of
-        Ireland.</button> My eyes, I know, shone divinely as I watched Captain Slogger
+        Ireland.</Annotation> My eyes, I know, shone divinely as I watched Captain Slogger
         Dennehy of the Inniskillings win the final chukkar on his darling cob
-        <i>Centaur.</i> This plebeian Don Juan observed me from behind a <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050013jauntingcar")}>hackney car</button>
-        and sent me in double envelopes an <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010127photogirl")}>obscene photograph</button>, such as are sold
+        <i>Centaur.</i> This plebeian Don Juan observed me from behind a <Annotation annotationId="050013jauntingcar" annotationSelect={() => openNote("050013jauntingcar")} activeAnnotationId={currentNoteId}>hackney car</Annotation>
+        and sent me in double envelopes an <Annotation annotationId="010127photogirl" annotationSelect={() => openNote("010127photogirl")} activeAnnotationId={currentNoteId}>obscene photograph</Annotation>, such as are sold
         after dark on Paris boulevards, insulting to any lady. I have it still.
         It represents a partially nude señorita, frail and lovely (his wife, as
         he solemnly assured me, taken by him from nature), practising illicit
         intercourse with a muscular torero, evidently a blackguard. He urged me
         to do likewise, to misbehave, to sin with officers of<span data-edition="ed1932" data-page="416"> </span> the garrison. He
         implored me to soil his letter in an unspeakable manner, to chastise
-        him as he richly deserves, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050043horseywomen")}>to bestride and ride him, to give him a most
-        vicious horsewhipping</button>.
+        him as he richly deserves, <Annotation annotationId="050043horseywomen" annotationSelect={() => openNote("050043horseywomen")} activeAnnotationId={currentNoteId}>to bestride and ride him, to give him a most
+        vicious horsewhipping</Annotation>.
       </p>
       <p>
         MRS BELLINGHAM
@@ -2359,21 +2362,21 @@ const Circe = ({openNote}) => {
         <i>(Trembling, beginning to obey.)</i> The weather has been so warm.
       </p>
       <p>
-        <i>(<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070013davystephens")}>Davy Stephens, ringletted, passes with a bevy of barefoot newsboys.</button>)</i>
+        <i>(<Annotation annotationId="070013davystephens" annotationSelect={() => openNote("070013davystephens")} activeAnnotationId={currentNoteId}>Davy Stephens, ringletted, passes with a bevy of barefoot newsboys.</Annotation>)</i>
       </p>
       <span data-edition="ed1986" data-page="382"> </span>
       <p>
         DAVY STEPHENS
       </p>
       <p>
-        <i>Messenger of the Sacred Heart</i> and <i><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020064telegraph")}>Evening Telegraph</button></i>
+        <i>Messenger of the Sacred Heart</i> and <i><Annotation annotationId="020064telegraph" annotationSelect={() => openNote("020064telegraph")} activeAnnotationId={currentNoteId}>Evening Telegraph</Annotation></i>
         with Saint Patrick's Day supplement. Containing the new addresses of all
         the cuckolds in Dublin.
       </p>
       <p>
         <i>(The very reverend Canon O'Hanlon in cloth of gold cope elevates and
         exposes a marble timepiece. Before him Father Conroy and the reverend
-        John Hughes <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010008jesuit")}>S.J.</button> bend low.)</i>
+        John Hughes <Annotation annotationId="010008jesuit" annotationSelect={() => openNote("010008jesuit")} activeAnnotationId={currentNoteId}>S.J.</Annotation> bend low.)</i>
       </p>
       <p>
         THE TIMEPIECE
@@ -2381,23 +2384,23 @@ const Circe = ({openNote}) => {
       <p>
         <i>(Unportalling.)</i>
       </p>
-      <p style={{paddingLeft:0, textAlign:"center"}}><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("130005cuckoo")}>Cuckoo.<br/>
-        Cuckoo.<br/>Cuckoo.</button>
+      <p style={{paddingLeft:0, textAlign:"center"}}><Annotation annotationId="130005cuckoo" annotationSelect={() => openNote("130005cuckoo")} activeAnnotationId={currentNoteId}>Cuckoo.<br/>
+        Cuckoo.<br/>Cuckoo.</Annotation>
       </p>
       <p>
-        <i>(The  <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040085brassquoits")}>brass quoits</button> of a bed are heard to jingle.)</i>
+        <i>(The  <Annotation annotationId="040085brassquoits" annotationSelect={() => openNote("040085brassquoits")} activeAnnotationId={currentNoteId}>brass quoits</Annotation> of a bed are heard to jingle.)</i>
       </p>
       <p>
         THE QUOITS
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040091jingle")}>Jigjag. Jigajiga. Jigjag.</button>
+        <Annotation annotationId="040091jingle" annotationSelect={() => openNote("040091jingle")} activeAnnotationId={currentNoteId}>Jigjag. Jigajiga. Jigjag.</Annotation>
       </p>
       <p>
         <i>(A panel of fog rolls back rapidly, revealing rapidly in the jurybox
-        the faces of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060034martincunningham")}>Martin Cunningham, foreman,</button></i> <span data-edition="ed1961" data-page="469"> </span><i><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060034martincunningham")}>silkhatted</button>, Jack Power, Simon
-        Dedalus, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050037tomkernan")}>Tom Kernan</button>, Ned Lambert, John Henry Menton, Myles Crawford,
-        Lenehan, Paddy Leonard, Nosey Flynn, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040079mcoy")}>M'Coy</button> and the featureless face of a
+        the faces of <Annotation annotationId="060034martincunningham" annotationSelect={() => openNote("060034martincunningham")} activeAnnotationId={currentNoteId}>Martin Cunningham, foreman,</Annotation></i> <span data-edition="ed1961" data-page="469"> </span><i><Annotation annotationId="060034martincunningham" annotationSelect={() => openNote("060034martincunningham")} activeAnnotationId={currentNoteId}>silkhatted</Annotation>, Jack Power, Simon
+        Dedalus, <Annotation annotationId="050037tomkernan" annotationSelect={() => openNote("050037tomkernan")} activeAnnotationId={currentNoteId}>Tom Kernan</Annotation>, Ned Lambert, John Henry Menton, Myles Crawford,
+        Lenehan, Paddy Leonard, Nosey Flynn, <Annotation annotationId="040079mcoy" annotationSelect={() => openNote("040079mcoy")} activeAnnotationId={currentNoteId}>M'Coy</Annotation> and the featureless face of a
         Nameless One.)</i>
       </p>
       <p></p>
@@ -2454,9 +2457,9 @@ const Circe = ({openNote}) => {
         assizes the most honourable...
       </p>
       <p>
-        <i>His Honour, (<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080002sirfrederick")}>sir Frederick Falkiner, recorder of Dublin</button>, in judicial
+        <i>His Honour, (<Annotation annotationId="080002sirfrederick" annotationSelect={() => openNote("080002sirfrederick")} activeAnnotationId={currentNoteId}>sir Frederick Falkiner, recorder of Dublin</Annotation>, in judicial
         garb of grey stone rises from the bench, stonebearded. He bears in his
-        arms <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080002sirfrederick")}>an umbrella sceptre</button>. From his forehead arise starkly the Mosaic
+        arms <Annotation annotationId="080002sirfrederick" annotationSelect={() => openNote("080002sirfrederick")} activeAnnotationId={currentNoteId}>an umbrella sceptre</Annotation>. From his forehead arise starkly the Mosaic
         ramshorns.)</i>
       </p>
       <span data-edition="ed1961" data-page="470"> </span>
@@ -2483,7 +2486,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(Scowls and calls with rich rolling utterance.)</i>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080002sirfrederick")}>Who'll hang Judas Iscariot?</button>
+        <Annotation annotationId="080002sirfrederick" annotationSelect={() => openNote("080002sirfrederick")} activeAnnotationId={currentNoteId}>Who'll hang Judas Iscariot?</Annotation>
       </p>
       <p>
         <i>(H. Rumbold, master barber, in a bloodcoloured jerkin and tanner's
@@ -2502,7 +2505,7 @@ const Circe = ({openNote}) => {
         nothing.
       </p>
       <p>
-        <i>(<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040008georgeschurch")}>The bells of George's church toll slowly, loud dark iron.</button>)</i>
+        <i>(<Annotation annotationId="040008georgeschurch" annotationSelect={() => openNote("040008georgeschurch")} activeAnnotationId={currentNoteId}>The bells of George's church toll slowly, loud dark iron.</Annotation>)</i>
       </p>
       <p>
         THE BELLS
@@ -2559,7 +2562,7 @@ const Circe = ({openNote}) => {
         Dignam. He has gnawed all. He exhales a putrid carcasefed breath.
         He grows to human size and shape. His dachshund coat becomes a brown
         mortuary habit. His green eye flashes bloodshot. Half of one ear, all
-        the nose and both thumbs are <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010062ghoul")}>ghouleaten</button>.)</i>
+        the nose and both thumbs are <Annotation annotationId="010062ghoul" annotationSelect={() => openNote("010062ghoul")} activeAnnotationId={currentNoteId}>ghouleaten</Annotation>.)</i>
       </p>
       <p>
         PADDY DIGNAM
@@ -2608,7 +2611,7 @@ const Circe = ({openNote}) => {
         PADDY DIGNAM
       </p>
       <p>
-        By <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030087pastlife")}>metempsychosis</button>. Spooks.
+        By <Annotation annotationId="030087pastlife" annotationSelect={() => openNote("030087pastlife")} activeAnnotationId={currentNoteId}>metempsychosis</Annotation>. Spooks.
       </p>
       <p>
         A VOICE
@@ -2662,7 +2665,7 @@ const Circe = ({openNote}) => {
         JOHN O'CONNELL
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080010upup")}>Burial docket letter number U. P.</button> eightyfive thousand.
+        <Annotation annotationId="080010upup" annotationSelect={() => openNote("080010upup")} activeAnnotationId={currentNoteId}>Burial docket letter number U. P.</Annotation> eightyfive thousand.
         Field seventeen. House of Keys. Plot, one hundred and one.
       </p>
       <span data-edition="ed1986" data-page="386"> </span>
@@ -2680,7 +2683,7 @@ const Circe = ({openNote}) => {
       <span data-edition="ed1932" data-page="421"> </span>
       <p>
         <i>(He worms down through a coalhole, his brown habit trailing its tether
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030038pebbles")}>over rattling pebbles</button>. After him toddles an obese grandfather rat on
+        <Annotation annotationId="030038pebbles" annotationSelect={() => openNote("030038pebbles")} activeAnnotationId={currentNoteId}>over rattling pebbles</Annotation>. After him toddles an obese grandfather rat on
         fungus turtle paws under a grey carapace. Dignam's voice, muffled, is
         heard baying under ground:</i> Dignam's dead and gone below. <i>Tom Rochford,
         robinredbreasted, in cap and breeches, jumps from his twocolumned
@@ -2745,7 +2748,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         No, eightyone. Mrs Cohen's. You might go farther and fare worse.
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060045slipperslapper")}> Mother Slipperslapper.</button> <i>(Familiarly.)</i> She's on the job herself tonight
+        <Annotation annotationId="060045slipperslapper" annotationSelect={() => openNote("060045slipperslapper")} activeAnnotationId={currentNoteId}> Mother Slipperslapper.</Annotation> <i>(Familiarly.)</i> She's on the job herself tonight
         with the vet her tipster that gives her all the winners and pays for
         her son in Oxford. Working overtime but her luck's turned today.
         <i>(Suspiciously.)</i> You're not his father, are you?
@@ -2810,7 +2813,7 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040047potato")}>A talisman. Heirloom.</button>
+        <Annotation annotationId="040047potato" annotationSelect={() => openNote("040047potato")} activeAnnotationId={currentNoteId}>A talisman. Heirloom.</Annotation>
       </p>
       <span data-edition="ed1986" data-page="388"> </span>
       <p>
@@ -2891,7 +2894,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(Catches a stray hair deftly and twists it to her coil.)</i> No bloody
-        fear. I'm English. Have you a <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("100002tobacco")}>swaggerroot</button>?
+        fear. I'm English. Have you a <Annotation annotationId="100002tobacco" annotationSelect={() => openNote("100002tobacco")} activeAnnotationId={currentNoteId}>swaggerroot</Annotation>?
       </p>
       <span data-edition="ed1986" data-page="389"> </span><span data-edition="ed1961" data-page="477"> </span>
       <p>
@@ -2914,9 +2917,9 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(In workman's corduroy overalls, black gansy with red floating
-        tie and apache cap.)</i> Mankind is incorrigible. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150011broughtthepoison")}>Sir Walter Ralegh brought
-        from the new world</button> that potato and that weed, the one <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040047potato")}>a killer of
-        pestilence by absorption</button>, the other a poisoner of the ear, eye, heart,
+        tie and apache cap.)</i> Mankind is incorrigible. <Annotation annotationId="150011broughtthepoison" annotationSelect={() => openNote("150011broughtthepoison")} activeAnnotationId={currentNoteId}>Sir Walter Ralegh brought
+        from the new world</Annotation> that potato and that weed, the one <Annotation annotationId="040047potato" annotationSelect={() => openNote("040047potato")} activeAnnotationId={currentNoteId}>a killer of
+        pestilence by absorption</Annotation>, the other a poisoner of the ear, eye, heart,
         memory, will, understanding, all. That is to say he brought the poison
         a hundred years before another person whose 
         <span data-edition="ed1939" data-page="340"> </span>
@@ -2930,7 +2933,7 @@ const Circe = ({openNote}) => {
         THE CHIMES
       </p>
       <p>
-        Turn again, Leopold! <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060033corporation")}>Lord mayor of Dublin!</button>
+        Turn again, Leopold! <Annotation annotationId="060033corporation" annotationSelect={() => openNote("060033corporation")} activeAnnotationId={currentNoteId}>Lord mayor of Dublin!</Annotation>
       </p>
       <p></p>
       <span data-edition="ed1932" data-page="424"> </span>
@@ -2938,11 +2941,11 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        <i>(In <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060033corporation")}>alderman's gown and chain</button>.)</i> Electors of Arran Quay, Inns
-        Quay, Rotunda, Mountjoy and North Dock, better <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040037cattlemarket")}>run a tramline, I say,
-        from the cattlemarket to the river</button>. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("160009flyingdutchmen")}>That's the music of the future.
+        <i>(In <Annotation annotationId="060033corporation" annotationSelect={() => openNote("060033corporation")} activeAnnotationId={currentNoteId}>alderman's gown and chain</Annotation>.)</i> Electors of Arran Quay, Inns
+        Quay, Rotunda, Mountjoy and North Dock, better <Annotation annotationId="040037cattlemarket" annotationSelect={() => openNote("040037cattlemarket")} activeAnnotationId={currentNoteId}>run a tramline, I say,
+        from the cattlemarket to the river</Annotation>. <Annotation annotationId="160009flyingdutchmen" annotationSelect={() => openNote("160009flyingdutchmen")} activeAnnotationId={currentNoteId}>That's the music of the future.
         That's my programme. <i>Cui bono</i>? But our buccaneering Vanderdeckens in
-        their phantom ship of finance</button>...
+        their phantom ship of finance</Annotation>...
       </p>
       <p>
         AN ELECTOR
@@ -2962,9 +2965,9 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(Several wellknown burgesses, city magnates and freemen of the city
-        shake hands with Bloom and congratulate him. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060033corporation")}>Timothy Harrington, late
+        shake hands with Bloom and congratulate him. <Annotation annotationId="060033corporation" annotationSelect={() => openNote("060033corporation")} activeAnnotationId={currentNoteId}>Timothy Harrington, late
         thrice Lord Mayor of Dublin, imposing in mayoral scarlet, gold chain and
-        white silk tie, confers with councillor Lorcan Sherlock, locum tenens.</button>
+        white silk tie, confers with councillor Lorcan Sherlock, locum tenens.</Annotation>
         They nod vigorously in agreement.)</i>
       </p>
       <span data-edition="ed1986" data-page="390"> </span>
@@ -2990,8 +2993,8 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        <i>(Impassionedly.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("160009flyingdutchmen")}>These flying Dutchmen or lying Dutchmen as
-        they recline in their upholstered poop, casting dice, what reck they?</button>
+        <i>(Impassionedly.)</i> <Annotation annotationId="160009flyingdutchmen" annotationSelect={() => openNote("160009flyingdutchmen")} activeAnnotationId={currentNoteId}>These flying Dutchmen or lying Dutchmen as
+        they recline in their upholstered poop, casting dice, what reck they?</Annotation>
         Machines is their cry, their chimera, their panacea. Laboursaving
         apparatuses, supplanters, bugbears, manufactured monsters for mutual
         murder, hideous hobgoblins produced by a horde of capitalistic lusts
@@ -3004,11 +3007,11 @@ const Circe = ({openNote}) => {
         <i>(Prolonged applause. Venetian masts, maypoles and festal arches spring
         up. A streamer bearing the legends</i> Cead Mile Failte <i>and</i> Mah Ttob
         Melek Israel <i>spans the street. All the windows are thronged with </i><span data-edition="ed1932" data-page="425"> </span><i>sightseers, chiefly ladies. Along the route the regiments of the
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030118royaldublins")}>royal Dublin Fusiliers</button>, the King's own Scottish Borderers, the Cameron
+        <Annotation annotationId="030118royaldublins" annotationSelect={() => openNote("030118royaldublins")} activeAnnotationId={currentNoteId}>royal Dublin Fusiliers</Annotation>, the King's own Scottish Borderers, the Cameron
         Highlanders</i> <span data-edition="ed1961" data-page="479"> </span><i>and the Welsh Fusiliers standing </i>
         <span data-edition="ed1939" data-page="341"> </span>
         <i>to attention, keep back
-        the crowd. Boys from <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050020highschool")}>High school</button> are perched on the lampposts,
+        the crowd. Boys from <Annotation annotationId="050020highschool" annotationSelect={() => openNote("050020highschool")} activeAnnotationId={currentNoteId}>High school</Annotation> are perched on the lampposts,
         telegraph poles, windowsills, cornices, gutters, chimneypots, railings,
         rainspouts, whistling and cheering. The pillar of the cloud appears. A
         fife and drum band is heard in the distance playing the Kol Nidre. The
@@ -3017,8 +3020,8 @@ const Circe = ({openNote}) => {
         surrounded by pennons of the civic flag. The van of the procession
         appears headed by John Howard Parnell, city marshal, in a chessboard
         tabard, the Athlone Poursuivant and Ulster King of Arms. They are
-        followed by <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060033corporation")}>the Right Honourable Joseph Hutchinson, lord mayor of
-        Dublin</button>, his lordship the lord mayor of Cork, their worships the
+        followed by <Annotation annotationId="060033corporation" annotationSelect={() => openNote("060033corporation")} activeAnnotationId={currentNoteId}>the Right Honourable Joseph Hutchinson, lord mayor of
+        Dublin</Annotation>, his lordship the lord mayor of Cork, their worships the
         mayors of Limerick, Galway,</i> 
         <span data-edition="ed1922" data-page="453"> </span>
         <i>Sligo and Waterford, twentyeight Irish
@@ -3038,7 +3041,7 @@ const Circe = ({openNote}) => {
         undertakers, silk mercers, lapidaries, salesmasters, corkcutters,
         assessors of fire losses, dyers and cleaners, export bottlers,
         fellmongers, ticketwriters, heraldic seal engravers, horse repository
-        hands, bullion brokers, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050041cricket")}>cricket</button> and archery outfitters, riddlemakers,
+        hands, bullion brokers, <Annotation annotationId="050041cricket" annotationSelect={() => openNote("050041cricket")} activeAnnotationId={currentNoteId}>cricket</Annotation> and archery outfitters, riddlemakers,
         egg and potato factors, hosiers and glovers, plumbing contractors. After
         them march gentlemen of the bedchamber, Black Rod, Deputy Garter,
         Gold Stick, the master of horse, the lord great chamberlain, the earl
@@ -3060,7 +3063,7 @@ const Circe = ({openNote}) => {
       <p>The wren, the wren, <br/>
         The king of all birds, <br/>
         Saint Stephen's his day <br/>
-        Was caught <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("120008gorse")}>in the furze</button>.
+        Was caught <Annotation annotationId="120008gorse" annotationSelect={() => openNote("120008gorse")} activeAnnotationId={currentNoteId}>in the furze</Annotation>.
       </p>
       <span data-edition="ed1922" data-page="454"> </span>
       <p>
@@ -3108,7 +3111,7 @@ const Circe = ({openNote}) => {
         A classic face! He has the forehead of a thinker.
       </p>
       <p>
-        <i>(Bloom's weather. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040006homerulesun")}>A sunburst appears in the northwest.</button>)</i>
+        <i>(Bloom's weather. <Annotation annotationId="040006homerulesun" annotationSelect={() => openNote("040006homerulesun")} activeAnnotationId={currentNoteId}>A sunburst appears in the northwest.</Annotation>)</i>
       </p>
       <p>
         THE BISHOP OF DOWN AND CONNOR
@@ -3128,7 +3131,7 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        <i>(<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020080mauve")}>In dalmatic and purple mantle</button>, to the bishop of Down and
+        <i>(<Annotation annotationId="020080mauve" annotationSelect={() => openNote("020080mauve")} activeAnnotationId={currentNoteId}>In dalmatic and purple mantle</Annotation>, to the bishop of Down and
         Connor, with dignity.)</i> Thanks, somewhat eminent sir.
       </p>
       <p>
@@ -3158,10 +3161,10 @@ const Circe = ({openNote}) => {
         Patrick, Andrew, David, George, be thou anointed!
       </p>
       <p>
-        <i>(Bloom assumes a mantle of cloth of gold and puts on <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040021ruby")}>a ruby ring</button>. He
+        <i>(Bloom assumes a mantle of cloth of gold and puts on <Annotation annotationId="040021ruby" annotationSelect={() => openNote("040021ruby")} activeAnnotationId={currentNoteId}>a ruby ring</Annotation>. He
         ascends and stands on the stone of destiny. The representative peers put
         on at the same time their twentyeight crowns. Joybells ring in Christ
-        church, Saint Patrick's, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040008georgeschurch")}>George's</button> and gay Malahide.</i> <span data-edition="ed1986" data-page="393"> </span><i>Mirus bazaar
+        church, Saint Patrick's, <Annotation annotationId="040008georgeschurch" annotationSelect={() => openNote("040008georgeschurch")} activeAnnotationId={currentNoteId}>George's</Annotation> and gay Malahide.</i> <span data-edition="ed1986" data-page="393"> </span><i>Mirus bazaar
         fireworks go up from all sides with symbolical phallopyrotechnic
         designs. The peers do homage, one by one, approaching and
         genuflecting.)</i>
@@ -3249,7 +3252,7 @@ const Circe = ({openNote}) => {
         JOHN WYSE NOLAN
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020073fenians")}>There's the man that got away James Stephens.</button>
+        <Annotation annotationId="020073fenians" annotationSelect={() => openNote("020073fenians")} activeAnnotationId={currentNoteId}>There's the man that got away James Stephens.</Annotation>
       </p>
       <p>
         A BLUECOAT SCHOOLBOY
@@ -3381,7 +3384,7 @@ const Circe = ({openNote}) => {
         Peep! Bopeep! <i>(He wheels twins in a perambulator.)</i> Ticktacktwo
         wouldyousetashoe? <i>(He performs juggler's tricks, draws red, orange,
         yellow, green, blue, indigo and violet silk handkerchiefs from his
-        mouth.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040013wonderisittrue")}>Roygbiv. 32 feet per second.</button> <i>(He consoles a widow.)</i> Absence
+        mouth.)</i> <Annotation annotationId="040013wonderisittrue" annotationSelect={() => openNote("040013wonderisittrue")} activeAnnotationId={currentNoteId}>Roygbiv. 32 feet per second.</Annotation> <i>(He consoles a widow.)</i> Absence
         makes the heart grow younger. <i>(He dances the Highland fling with
         grotesque antics.)</i> Leg it, ye devils! <i>(He kisses the bedsores of a
         palsied veteran.</i>) Honourable wounds! <i>(He trips up a fit policeman.)</i>
@@ -3496,7 +3499,7 @@ const Circe = ({openNote}) => {
         CHRIS CALLINAN
       </p>
       <p>
-        What is the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080008parallax")}>parallax</button> of the subsolar ecliptic of
+        What is the <Annotation annotationId="080008parallax" annotationSelect={() => openNote("080008parallax")} activeAnnotationId={currentNoteId}>parallax</Annotation> of the subsolar ecliptic of
         Aldebaran?
       </p>
       <p>
@@ -3592,8 +3595,8 @@ const Circe = ({openNote}) => {
         must now cease. General amnesty, weekly carnival with masked licence,
         <span data-edition="ed1961" data-page="489"> </span>bonuses for all, esperanto the universal language with universal
         brotherhood. No more patriotism of barspongers and dropsical impostors.
-        Free money, free rent, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050045samaritan")}>free love and a free lay church in a free lay
-        state</button>.
+        Free money, free rent, <Annotation annotationId="050045samaritan" annotationSelect={() => openNote("050045samaritan")} activeAnnotationId={currentNoteId}>free love and a free lay church in a free lay
+        state</Annotation>.
       </p>
       <span data-edition="ed1986" data-page="399"> </span>
       <p>
@@ -3603,7 +3606,7 @@ const Circe = ({openNote}) => {
         Free fox in a free henroost.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080024davybyrnes")}>DAVY BYRNE</button>
+        <Annotation annotationId="080024davybyrnes" annotationSelect={() => openNote("080024davybyrnes")} activeAnnotationId={currentNoteId}>DAVY BYRNE</Annotation>
       </p>
       <p>
         <i>(Yawning.)</i> Iiiiiiiiiaaaaaaach!
@@ -3623,10 +3626,10 @@ const Circe = ({openNote}) => {
       <span data-edition="ed1939" data-page="348"> </span>
       <p>
         <i>(Bloom explains to those near him his schemes for social regeneration.
-        All agree with him. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080005venus")}>The keeper of the Kildare Street Museum appears,
-        dragging a lorry on which are the shaking statues of several naked</button></i>
+        All agree with him. <Annotation annotationId="080005venus" annotationSelect={() => openNote("080005venus")} activeAnnotationId={currentNoteId}>The keeper of the Kildare Street Museum appears,
+        dragging a lorry on which are the shaking statues of several naked</Annotation></i>
         <span data-edition="ed1922" data-page="462"> </span>
-        <i><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080005venus")}>goddesses, Venus Callipyge, Venus Pandemos,</button> Venus Metempsychosis, and
+        <i><Annotation annotationId="080005venus" annotationSelect={() => openNote("080005venus")} activeAnnotationId={currentNoteId}>goddesses, Venus Callipyge, Venus Pandemos,</Annotation> Venus Metempsychosis, and
         plaster figures, also naked, representing the new nine muses, Commerce,
         Operatic Music, Amor, Publicity, Manufacture, Liberty of Speech, Plural
         Voting, Gastronomy, Private Hygiene, Seaside Concert Entertainments,
@@ -3641,13 +3644,13 @@ const Circe = ({openNote}) => {
       </p>
       <span data-edition="ed1932" data-page="433"> </span>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060015riordan")}>MRS RIORDAN</button>
+        <Annotation annotationId="060015riordan" annotationSelect={() => openNote("060015riordan")} activeAnnotationId={currentNoteId}>MRS RIORDAN</Annotation>
       </p>
       <p>
         <i>(Tears up her will.)</i> I'm disappointed in you! You bad man!
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010134mothergrogan")}>MOTHER GROGAN</button>
+        <Annotation annotationId="010134mothergrogan" annotationSelect={() => openNote("010134mothergrogan")} activeAnnotationId={currentNoteId}>MOTHER GROGAN</Annotation>
       </p>
       <p>
         <i>(Removes her boot to throw it at Bloom.)</i> You beast! You
@@ -3672,7 +3675,7 @@ const Circe = ({openNote}) => {
       </p>
       <span data-edition="ed1986" data-page="400"> </span>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050028hoppy")}>HOPPY HOLOHAN</button>
+        <Annotation annotationId="050028hoppy" annotationSelect={() => openNote("050028hoppy")} activeAnnotationId={currentNoteId}>HOPPY HOLOHAN</Annotation>
       </p>
       <p>
         Good old Bloom! There's nobody like him after all.
@@ -3728,9 +3731,9 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(Many most attractive and enthusiastic women also commit suicide by
-        stabbing, drowning, drinking prussic acid, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150007aconite")}>aconite</button>, arsenic, opening
+        stabbing, drowning, drinking prussic acid, <Annotation annotationId="150007aconite" annotationSelect={() => openNote("150007aconite")} activeAnnotationId={currentNoteId}>aconite</Annotation>, arsenic, opening
         their veins, refusing food, casting themselves under steamrollers, from
-        the top of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070006nelsonspillar")}>Nelson's Pillar</button>, into the great vat of Guinness's brewery,
+        the top of <Annotation annotationId="070006nelsonspillar" annotationSelect={() => openNote("070006nelsonspillar")} activeAnnotationId={currentNoteId}>Nelson's Pillar</Annotation>, into the great vat of Guinness's brewery,
         asphyxiating</i> <span data-edition="ed1932" data-page="434"> </span><i>themselves by placing their heads in gasovens, hanging
         themselves in stylish garters, leaping from windows of different
         storeys.)</i>
@@ -3757,8 +3760,8 @@ const Circe = ({openNote}) => {
         Lynch him! Roast him! He's as bad as Parnell was. Mr Fox!
       </p>
       <p>
-        <i>(Mother Grogan throws her boot at Bloom. Several <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040007dorsetstreet")}>shopkeepers from upper
-        and lower Dorset street</button> throw objects of little or no commercial value,
+        <i>(Mother Grogan throws her boot at Bloom. Several <Annotation annotationId="040007dorsetstreet" annotationSelect={() => openNote("040007dorsetstreet")} activeAnnotationId={currentNoteId}>shopkeepers from upper
+        and lower Dorset street</Annotation> throw objects of little or no commercial value,
         hambones, condensed milk tins, unsaleable cabbage, stale bread, sheeps'
         tails, odd pieces of fat.)</i>
       </p>
@@ -3853,7 +3856,7 @@ const Circe = ({openNote}) => {
         O, I so want to be a mother.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040086mrsthornton")}>MRS THORNTON</button>
+        <Annotation annotationId="040086mrsthornton" annotationSelect={() => openNote("040086mrsthornton")} activeAnnotationId={currentNoteId}>MRS THORNTON</Annotation>
       </p>
       <p>
         <i>(In nursetender's gown.)</i> Embrace me tight, dear. You'll
@@ -3903,9 +3906,9 @@ const Circe = ({openNote}) => {
       <p>
         <i>(Bloom walks on a net, covers his left eye with his left ear, passes
         through several walls, climbs Nelson's Pillar, hangs from the top ledge
-        by his eyelids, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060020redbank")}>eats twelve dozen oysters</button> (shells included), heals
+        by his eyelids, <Annotation annotationId="060020redbank" annotationSelect={() => openNote("060020redbank")} activeAnnotationId={currentNoteId}>eats twelve dozen oysters</Annotation> (shells included), heals
         several sufferers from king's evil, contracts his face so as to resemble
-        many historical personages, Lord Beaconsfield, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180006lordbyron")}>Lord Byron</button>, Wat Tyler,
+        many historical personages, Lord Beaconsfield, <Annotation annotationId="180006lordbyron" annotationSelect={() => openNote("180006lordbyron")} activeAnnotationId={currentNoteId}>Lord Byron</Annotation>, Wat Tyler,
         Moses of Egypt, Moses Maimonides, Moses Mendelssohn, Henry Irving, Rip
         van Winkle, Kossuth, Jean Jacques Rousseau, Baron Leopold Rothschild,
         Robinson Crusoe, Sherlock Holmes, Pasteur, turns each foot
@@ -3938,10 +3941,10 @@ const Circe = ({openNote}) => {
       </p>
       <span data-edition="ed1922" data-page="467"> </span>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150016writingonthewall")}>A DEADHAND</button>
+        <Annotation annotationId="150016writingonthewall" annotationSelect={() => openNote("150016writingonthewall")} activeAnnotationId={currentNoteId}>A DEADHAND</Annotation>
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150016writingonthewall")}><i>(Writes on the wall.)</i></button> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150016writingonthewall")}>Bloom is a cod.</button>
+        <Annotation annotationId="150016writingonthewall" annotationSelect={() => openNote("150016writingonthewall")} activeAnnotationId={currentNoteId}><i>(Writes on the wall.)</i></Annotation> <Annotation annotationId="150016writingonthewall" annotationSelect={() => openNote("150016writingonthewall")} activeAnnotationId={currentNoteId}>Bloom is a cod.</Annotation>
       </p>
       <span data-edition="ed1986" data-page="404"> </span>
       <p>
@@ -3975,12 +3978,12 @@ const Circe = ({openNote}) => {
         THE IRISH EVICTED TENANTS
       </p>
       <p>
-        <i>(In bodycoats, kneebreeches, with <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050022donnybrook")}>Donnybrook
-        fair shillelaghs</button>.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150018sjambok")}>Sjambok him!</button>
+        <i>(In bodycoats, kneebreeches, with <Annotation annotationId="050022donnybrook" annotationSelect={() => openNote("050022donnybrook")} activeAnnotationId={currentNoteId}>Donnybrook
+        fair shillelaghs</Annotation>.)</i> <Annotation annotationId="150018sjambok" annotationSelect={() => openNote("150018sjambok")} activeAnnotationId={currentNoteId}>Sjambok him!</Annotation>
       </p>
       <p>
         <i>(Bloom with asses' ears seats himself in the pillory with crossed arms,
-        his feet protruding. He whistles</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080030cenarteco")}>Don Giovanni, a cenar teco.</button> <i>Artane
+        his feet protruding. He whistles</i> <Annotation annotationId="080030cenarteco" annotationSelect={() => openNote("080030cenarteco")} activeAnnotationId={currentNoteId}>Don Giovanni, a cenar teco.</Annotation> <i>Artane
         orphans, joining hands, caper round him. Girls of the Prison Gate
         Mission, joining hands, caper round in the opposite direction.)</i>
       </p>
@@ -4065,10 +4068,10 @@ const Circe = ({openNote}) => {
         BROTHER BUZZ
       </p>
       <p>
-        <i>(Invests Bloom in a <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010004yellowdressinggown")}>yellow habit</button> with embroidery of
+        <i>(Invests Bloom in a <Annotation annotationId="010004yellowdressinggown" annotationSelect={() => openNote("010004yellowdressinggown")} activeAnnotationId={currentNoteId}>yellow habit</Annotation> with embroidery of
         painted flames and high pointed hat. He places a bag of gunpowder round
-        his neck and hands him over to the civil power, saying)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040077ourfather")}>Forgive him his
-        trespasses.</button>
+        his neck and hands him over to the civil power, saying)</i> <Annotation annotationId="040077ourfather" annotationSelect={() => openNote("040077ourfather")} activeAnnotationId={currentNoteId}>Forgive him his
+        trespasses.</Annotation>
       </p>
       <p>
         <i>(Lieutenant Myers of the Dublin Fire Brigade by general request sets
@@ -4113,7 +4116,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(A choir of six hundred voices, conducted by Mr Vincent O'Brien, sings
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080004themessiah")}>the Alleluia chorus</button>, accompanied on the organ by Joseph Glynn. Bloom becomes mute,
+        <Annotation annotationId="080004themessiah" annotationSelect={() => openNote("080004themessiah")} activeAnnotationId={currentNoteId}>the Alleluia chorus</Annotation>, accompanied on the organ by Joseph Glynn. Bloom becomes mute,
         shrunken, carbonised.)</i>
       </p>
       <p>
@@ -4126,15 +4129,15 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        <i>(In caubeen with <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150010claypipe")}>clay pipe</button> stuck in the band, dusty <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020076brogues")}>brogues</button>, an
-        emigrant's red handkerchief bundle in his hand, leading a black <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030062bogoak")}>bogoak</button>
+        <i>(In caubeen with <Annotation annotationId="150010claypipe" annotationSelect={() => openNote("150010claypipe")} activeAnnotationId={currentNoteId}>clay pipe</Annotation> stuck in the band, dusty <Annotation annotationId="020076brogues" annotationSelect={() => openNote("020076brogues")} activeAnnotationId={currentNoteId}>brogues</Annotation>, an
+        emigrant's red handkerchief bundle in his hand, leading a black <Annotation annotationId="030062bogoak" annotationSelect={() => openNote("030062bogoak")} activeAnnotationId={currentNoteId}>bogoak</Annotation>
         pig by a sugaun, with a smile in his eye.)</i> Let me be going now, woman of
         the house, for by all the goats in Connemara I'm after having the
         father and mother of a bating. <i>(With a tear in his eye.)</i> All insanity.
         <span data-edition="ed1939" data-page="354"> </span>
         Patriotism, sorrow for the dead, music, future of the race. To be or not
         to be. Life's dream is o'er. End it peacefully. They can live on. <i>(He
-        gazes far away mournfully.)</i> I am ruined. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150007aconite")}>A few pastilles of aconite.</button> The
+        gazes far away mournfully.)</i> I am ruined. <Annotation annotationId="150007aconite" annotationSelect={() => openNote("150007aconite")} activeAnnotationId={currentNoteId}>A few pastilles of aconite.</Annotation> The
         blinds drawn. A letter. Then lie back to rest. <i>(He breathes softly.)</i> No
         more. I have lived. Fare. Farewell.
       </p>
@@ -4184,14 +4187,14 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        <i>(Smiles, nods slowly.)</i> More, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150012houri")}>houri</button>, more.
+        <i>(Smiles, nods slowly.)</i> More, <Annotation annotationId="150012houri" annotationSelect={() => openNote("150012houri")} activeAnnotationId={currentNoteId}>houri</Annotation>, more.
       </p>
       <p>
         ZOE
       </p>
       <p>
         And more's mother? <i>(She pats him offhandedly with velvet paws.)</i>
-        Are you coming <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150019pianola")}>into the musicroom to see our new pianola</button>? Come and I'll
+        Are you coming <Annotation annotationId="150019pianola" annotationSelect={() => openNote("150019pianola")} activeAnnotationId={currentNoteId}>into the musicroom to see our new pianola</Annotation>? Come and I'll
         peel off.
       </p>
       <p>
@@ -4302,7 +4305,7 @@ const Circe = ({openNote}) => {
         full waterjugjar, his twotailed black braces dangling at heels. Averting
         his face quickly Bloom bends to examine on the halltable the spaniel
         eyes of a running fox: then, his lifted head sniffing, follows Zoe
-        into the musicroom. A <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020080mauve")}>shade of mauve tissuepaper</button> dims the light of the
+        into the musicroom. A <Annotation annotationId="020080mauve" annotationSelect={() => openNote("020080mauve")} activeAnnotationId={currentNoteId}>shade of mauve tissuepaper</Annotation> dims the light of the
         chandelier. Round and round a moth flies, colliding, escaping. The
         floor is covered with an oilcloth mosaic of jade and azure and cinnabar
         rhomboids. Footmarks are stamped over it in all senses, heel to heel,
@@ -4406,7 +4409,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(With saturnine spleen.)</i> Bah! It is because it is. Woman's
-        reason. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010022hellenise")}>Jewgreek is greekjew. Extremes meet.</button> Death is the highest form
+        reason. <Annotation annotationId="010022hellenise" annotationSelect={() => openNote("010022hellenise")} activeAnnotationId={currentNoteId}>Jewgreek is greekjew. Extremes meet.</Annotation> Death is the highest form
         of life. Bah!
       </p>
       <span data-edition="ed1922" data-page="474"> </span>
@@ -4462,7 +4465,7 @@ const Circe = ({openNote}) => {
         <i>(Abruptly.)</i> What went forth to the ends of the world to
         traverse not itself, God, the sun, Shakespeare, a commercial traveller,
         having itself traversed in reality itself becomes that self. Wait a
-        moment. Wait a second. Damn that fellow's <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020069streetshout")}>noise in the street</button>. Self
+        moment. Wait a second. Damn that fellow's <Annotation annotationId="020069streetshout" annotationSelect={() => openNote("020069streetshout")} activeAnnotationId={currentNoteId}>noise in the street</Annotation>. Self
         which it itself was ineluctably preconditioned to become. <i>Ecco!</i>
       </p>
       <p>
@@ -4520,7 +4523,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         Stop press edition. Result of the rockinghorse races. Sea
-        serpent in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060016canals")}>the royal canal</button>. Safe arrival of Antichrist.
+        serpent in <Annotation annotationId="060016canals" annotationSelect={() => openNote("060016canals")} activeAnnotationId={currentNoteId}>the royal canal</Annotation>. Safe arrival of Antichrist.
       </p>
       <p>
         <i>(Stephen turns and sees Bloom.)</i>
@@ -4533,14 +4536,14 @@ const Circe = ({openNote}) => {
         A time, times and half a time.
       </p>
       <p>
-        <i>(Reuben J. Antichrist, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020061wanderers")}>wandering jew</button>, a clutching hand open on his
+        <i>(Reuben J. Antichrist, <Annotation annotationId="020061wanderers" annotationSelect={() => openNote("020061wanderers")} activeAnnotationId={currentNoteId}>wandering jew</Annotation>, a clutching hand open on his
         spine, stumps forward. Across his loins is slung a pilgrim's wallet from
         which protrude promissory notes and dishonoured bills. Aloft over his
         shoulder he bears a long boatpole from the hook of which the sodden
         huddled mass of his only son, saved from Liffey waters, hangs from
         the slack of its breeches. A hobgoblin in the image of Punch Costello,
         hipshot, crookbacked, hydrocephalic, prognathic with receding forehead
-        and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040050ikeymo")}>Ally Sloper</button> nose, tumbles in somersaults through the gathering
+        and <Annotation annotationId="040050ikeymo" annotationSelect={() => openNote("040050ikeymo")} activeAnnotationId={currentNoteId}>Ally Sloper</Annotation> nose, tumbles in somersaults through the gathering
         darkness.)</i>
       </p>
       <p>
@@ -4596,8 +4599,8 @@ const Circe = ({openNote}) => {
         <i>(A rocket rushes up the sky and bursts. A white star falls from it,
         proclaiming the consummation of all things and second coming of Elijah.
         Along an infinite invisible tightrope taut from zenith to nadir the End
-        of the World, a twoheaded octopus in gillie's kilts, busby and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020036filibegs")}>tartan
-        filibegs</button>, whirls through the murk, head over heels, in the form of the
+        of the World, a twoheaded octopus in gillie's kilts, busby and <Annotation annotationId="020036filibegs" annotationSelect={() => openNote("020036filibegs")} activeAnnotationId={currentNoteId}>tartan
+        filibegs</Annotation>, whirls through the murk, head over heels, in the form of the
         Three Legs of Man.)</i>
       </p>
       <span data-edition="ed1986" data-page="413"> </span>
@@ -4661,7 +4664,7 @@ const Circe = ({openNote}) => {
         ELIJAH
       </p>
       <p>
-        <i>(In rolledup shirtsleeves, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060003eugenestratton")}>black in the face</button>, shouts at the top
+        <i>(In rolledup shirtsleeves, <Annotation annotationId="060003eugenestratton" annotationSelect={() => openNote("060003eugenestratton")} activeAnnotationId={currentNoteId}>black in the face</Annotation>, shouts at the top
         of his voice, his arms uplifted.)</i> Big Brother up there, Mr President,
         you hear what I done just been saying to you. Certainly, I sort of
         believe strong in you, Mr <span data-edition="ed1986" data-page="414"> </span>President. I certainly am thinking now Miss
@@ -4679,8 +4682,8 @@ const Circe = ({openNote}) => {
       <p>
         I forgot myself. In a weak moment I erred and did what I did on 
         <span data-edition="ed1922" data-page="478"> </span>
-        Constitution hill. I was confirmed by the bishop and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040036scapulars")}>enrolled in
-        the brown scapular</button>. My mother's sister married a Montmorency. It was a
+        Constitution hill. I was confirmed by the bishop and <Annotation annotationId="040036scapulars" annotationSelect={() => openNote("040036scapulars")} activeAnnotationId={currentNoteId}>enrolled in
+        the brown scapular</Annotation>. My mother's sister married a Montmorency. It was a
         working plumber was my ruination when I was pure.
       </p>
       <span data-edition="ed1961" data-page="508"> </span>
@@ -4702,8 +4705,8 @@ const Circe = ({openNote}) => {
         STEPHEN
       </p>
       <p>
-        In the beginning was the word, in the end the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020025asitwas")}>world without
-        end</button>. Blessed be the eight beatitudes.
+        In the beginning was the word, in the end the <Annotation annotationId="020025asitwas" annotationSelect={() => openNote("020025asitwas")} activeAnnotationId={currentNoteId}>world without
+        end</Annotation>. Blessed be the eight beatitudes.
       </p>
       <p>
         <i>(The beatitudes, Dixon, Madden, Crotthers, Costello, Lenehan, Bannon,
@@ -4722,7 +4725,7 @@ const Circe = ({openNote}) => {
         LYSTER
       </p>
       <p>
-        <i>(<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("090004quakerlibrarian")}>In quakergrey kneebreeches</button> and broadbrimmed hat, says
+        <i>(<Annotation annotationId="090004quakerlibrarian" annotationSelect={() => openNote("090004quakerlibrarian")} activeAnnotationId={currentNoteId}>In quakergrey kneebreeches</Annotation> and broadbrimmed hat, says
         discreetly.)</i> He is our friend. I need not mention names. Seek thou the
         light.
       </p>
@@ -4753,10 +4756,10 @@ const Circe = ({openNote}) => {
         Plain truth for a plain man. Tanderagee wants the facts and means to get them.
       </p>
       <p>
-        <i>(<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030042mananaan")}>In the cone of the searchlight behind the coalscuttle, ollave,
+        <i>(<Annotation annotationId="030042mananaan" annotationSelect={() => openNote("030042mananaan")} activeAnnotationId={currentNoteId}>In the cone of the searchlight behind the coalscuttle, ollave,
         holyeyed, the bearded figure of Mananaun Maclir broods, chin on knees.
         He rises slowly. A cold seawind blows from his druid mouth. About his
-        head writhe eels and elvers. He is encrusted with weeds and shells.</button> His
+        head writhe eels and elvers. He is encrusted with weeds and shells.</Annotation> His
         right hand holds a bicycle pump. His left hand grasps a huge crayfish by
         its two talons.)</i>
       </p>
@@ -4771,8 +4774,8 @@ const Circe = ({openNote}) => {
         of Shakti. <i>(With a cry of stormbirds.)</i> Shakti Shiva, darkhidden Father!
         <i>(He smites with his bicycle pump the crayfish in his left hand. On its
         cooperative dial glow the twelve signs of the zodiac. He wails with
-        the vehemence of the ocean.)</i> Aum! Baum! Pyjaum! I am the light of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020077homestead")}>the
-        homestead</button>! I am the dreamery creamery butter.
+        the vehemence of the ocean.)</i> Aum! Baum! Pyjaum! I am the light of <Annotation annotationId="020077homestead" annotationSelect={() => openNote("020077homestead")} activeAnnotationId={currentNoteId}>the
+        homestead</Annotation>! I am the dreamery creamery butter.
       </p>
       <p>
         <i>(A skeleton judashand strangles the light. The green light wanes to
@@ -4832,8 +4835,8 @@ const Circe = ({openNote}) => {
         then twists round towards him, pulling her slip free of the poker. Blue
         fluid again flows over her flesh. Bloom stands, smiling desirously,
         twirling his thumbs. Kitty Ricketts licks her middle finger with her
-        spittle and, gazing in the mirror, smooths both eyebrows. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050026henryflower")}>Lipoti Virag,
-        basilicogrammate,</button> chutes rapidly down through the chimneyflue and struts
+        spittle and, gazing in the mirror, smooths both eyebrows. <Annotation annotationId="050026henryflower" annotationSelect={() => openNote("050026henryflower")} activeAnnotationId={currentNoteId}>Lipoti Virag,
+        basilicogrammate,</Annotation> chutes rapidly down through the chimneyflue and struts
         two steps to the left on gawky pink stilts. He is sausaged into several
         overcoats and wears a brown macintosh under which he holds a roll of
         parchment. In his left eye flashes the monocle of Cashel Boyle O'Connor
@@ -4888,7 +4891,7 @@ const Circe = ({openNote}) => {
         bunchiness of hip. A new purchase at some monster sale for which a gull
         has been mulcted. Meretricious finery to deceive the eye. Observe the
         attention to details of dustspecks. Never put on you tomorrow what you
-        can wear today. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080008parallax")}>Parallax!</button> <i>(With a nervous twitch of his head.)</i> Did you
+        can wear today. <Annotation annotationId="080008parallax" annotationSelect={() => openNote("080008parallax")} activeAnnotationId={currentNoteId}>Parallax!</Annotation> <i>(With a nervous twitch of his head.)</i> Did you
         hear my brain go snap? Pollysyllabax!
       </p>
       <p>
@@ -5001,7 +5004,7 @@ const Circe = ({openNote}) => {
       <p>
         <i>(Excitedly.)</i> I say so. I say so. E'en so. Technic. <i>(He taps his
         parchmentroll energetically.)</i> This book tells you how to act with all
-        descriptive <span data-edition="ed1932" data-page="451"> </span>particulars. Consult index for agitated fear of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150007aconite")}>aconite</button>,
+        descriptive <span data-edition="ed1932" data-page="451"> </span>particulars. Consult index for agitated fear of <Annotation annotationId="150007aconite" annotationSelect={() => openNote("150007aconite")} activeAnnotationId={currentNoteId}>aconite</Annotation>,
         melancholy of muriatic, priapic pulsatilla. Virag is going to talk about
         amputation. Our old friend caustic. 
         <span data-edition="ed1922" data-page="483"> </span>
@@ -5055,7 +5058,7 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040040bluebottle")}>Bee or bluebottle too other day</button> butting shadow on wall dazed self
+        <Annotation annotationId="040040bluebottle" annotationSelect={() => openNote("040040bluebottle")} activeAnnotationId={currentNoteId}>Bee or bluebottle too other day</Annotation> butting shadow on wall dazed self
         then me wandered dazed down shirt good job I...
       </p>
       <span data-edition="ed1932" data-page="452"> </span><span data-edition="ed1961" data-page="515"> </span>
@@ -5069,7 +5072,7 @@ const Circe = ({openNote}) => {
         gluttonously with turkey wattles.)</i> Bubbly jock! Bubbly jock! Where are
         we? Open Sesame! Cometh forth! <i>(He unrolls his parchment rapidly and
         reads, his glowworm's nose running backwards over the letters which he
-        claws.)</i> Stay, good friend. I bring thee thy answer. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060020redbank")}>Redbank oysters</button> will
+        claws.)</i> Stay, good friend. I bring thee thy answer. <Annotation annotationId="060020redbank" annotationSelect={() => openNote("060020redbank")} activeAnnotationId={currentNoteId}>Redbank oysters</Annotation> will
         shortly be upon us. I'm the best o'cook. Those succulent bivalves may
         help us and the truffles of Perigord, tubers dislodged through mister
         omnivorous porker, were unsurpassed in cases of nervous debility or
@@ -5186,7 +5189,7 @@ const Circe = ({openNote}) => {
         FLORRY
       </p>
       <p>
-        Sing us something. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040035oldsweetsong")}>Love's old sweet song.</button>
+        Sing us something. <Annotation annotationId="040035oldsweetsong" annotationSelect={() => openNote("040035oldsweetsong")} activeAnnotationId={currentNoteId}>Love's old sweet song.</Annotation>
       </p>
       <span data-edition="ed1932" data-page="454"> </span>
       <p>
@@ -5203,9 +5206,9 @@ const Circe = ({openNote}) => {
         <i>(Smirking.)</i> The bird that can sing and won't sing.
       </p>
       <p>
-        <i>(The Siamese twins, Philip Drunk and Philip Sober, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010022hellenise")}>two Oxford dons with
+        <i>(The Siamese twins, Philip Drunk and Philip Sober, <Annotation annotationId="010022hellenise" annotationSelect={() => openNote("010022hellenise")} activeAnnotationId={currentNoteId}>two Oxford dons with
         lawnmowers, appear in the window embrasure. Both are masked with Matthew
-        Arnold's face.</button>)</i>
+        Arnold's face.</Annotation>)</i>
       </p>
       <span data-edition="ed1986" data-page="422"> </span>
       <p>
@@ -5214,7 +5217,7 @@ const Circe = ({openNote}) => {
       <p>
         Take a fool's advice. All is not well. Work it out with
         the buttend of a pencil, like a good young idiot. Three pounds twelve
-        you got, two notes, one sovereign, two crowns, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020033mademoney")}>if youth but knew</button>.
+        you got, two notes, one sovereign, two crowns, <Annotation annotationId="020033mademoney" annotationSelect={() => openNote("020033mademoney")} activeAnnotationId={currentNoteId}>if youth but knew</Annotation>.
         Mooney's en ville, Mooney's sur mer, the Moira, Larchet's, Holles street
         hospital, Burke's. Eh? I am watching you.
       </p>
@@ -5351,7 +5354,7 @@ const Circe = ({openNote}) => {
         PHILIP DRUNK
       </p>
       <p>
-        <i>(Gravely.) <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010150fatherbird")}>Qui vous a mis dans cette fichue position</button>,
+        <i>(Gravely.) <Annotation annotationId="010150fatherbird" annotationSelect={() => openNote("010150fatherbird")} activeAnnotationId={currentNoteId}>Qui vous a mis dans cette fichue position</Annotation>,
         Philippe?</i>
       </p>
       <p>
@@ -5445,11 +5448,9 @@ const Circe = ({openNote}) => {
         HENRY
       </p>
       <p>
-        <i><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050026henryflower")}>(Caressing on his breast a severed female head, murmurs.)</button><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300"></button></i><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300"> Thine
+        <i><Annotation annotationId="050026henryflower" annotationSelect={() => openNote("050026henryflower")} activeAnnotationId={currentNoteId}>(Caressing on his breast a severed female head, murmurs.)</Annotation></i>Thine
         heart, mine love. <i>(He plucks his lutestrings.)</i> When first I saw...
-        </button>
       </p>
-      <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300">
         <p>
           VIRAG
         </p>
@@ -5496,12 +5497,11 @@ const Circe = ({openNote}) => {
         <p>
           STEPHEN
         </p>
-      </button>
-      <p><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300">
+      <p>
         <i>(Over his shoulder to Zoe.)</i> You would have preferred
         the fighting parson who founded the protestant error. But beware
-        Antisthenes, the dog sage, and </button><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030040arius")}>the last end of Arius Heresiarchus. The
-        agony in the closet.</button>
+        Antisthenes, the dog sage, and<Annotation annotationId="030040arius" annotationSelect={() => openNote("030040arius")} activeAnnotationId={currentNoteId}>the last end of Arius Heresiarchus. The
+        agony in the closet.</Annotation>
       </p>
       <span data-edition="ed1986" data-page="426"> </span>
       <p>
@@ -5986,7 +5986,7 @@ const Circe = ({openNote}) => {
       <p>
         <i>(With bobbed hair, purple gills, fit moustache rings round his
         shaven mouth, in mountaineer's puttees, green silverbuttoned coat, sport
-        skirt and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010075featherfans")}>alpine hat with moorcock's feather</button>, his hands stuck deep in
+        skirt and <Annotation annotationId="010075featherfans" annotationSelect={() => openNote("010075featherfans")} activeAnnotationId={currentNoteId}>alpine hat with moorcock's feather</Annotation>, his hands stuck deep in
         his breeches pockets, places his heel on her neck and grinds it in.)</i>
         Footstool! Feel my entire weight. Bow, bondslave, before the throne of
         your despot's glorious heels so glistening in their proud erectness.
@@ -6139,7 +6139,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(The brothel cook, Mrs Keogh, wrinkled, greybearded, in a greasy bib,
-        men's grey and green socks and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020076brogues")}>brogues</button>,</i> <span data-edition="ed1961" data-page="533"> </span><i>floursmeared, a rollingpin stuck
+        men's grey and green socks and <Annotation annotationId="020076brogues" annotationSelect={() => openNote("020076brogues")} activeAnnotationId={currentNoteId}>brogues</Annotation>,</i> <span data-edition="ed1961" data-page="533"> </span><i>floursmeared, a rollingpin stuck
         with raw pastry in her bare red arm and hand, appears at the door.)</i>
       </p>
       <p>
@@ -6154,7 +6154,7 @@ const Circe = ({openNote}) => {
       <p>
         <i>(Squats with a grunt on Bloom's upturned face, puffing
         cigarsmoke, nursing a fat leg.)</i> I see Keating Clay is elected
-        vicechairman of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010050dottyville")}>the Richmond asylum</button> and by the by Guinness's preference
+        vicechairman of <Annotation annotationId="010050dottyville" annotationSelect={() => openNote("010050dottyville")} activeAnnotationId={currentNoteId}>the Richmond asylum</Annotation> and by the by Guinness's preference
         shares are at sixteen three quarters. Curse me for a fool that didn't
         buy that lot Craig and Gardner told me about. Just my infernal luck,
         curse it. And that Goddamned outsider <i>Throwaway</i> at twenty 
@@ -6227,7 +6227,7 @@ const Circe = ({openNote}) => {
         <i>(Stands up.)</i> No more blow hot and cold. What you longed for has
         come to pass. Henceforth you are unmanned and mine in earnest, a thing
         under the yoke. Now for your punishment frock. You will shed your male
-        garments, you understand, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040021ruby")}>Ruby Cohen</button>? and don the shot silk luxuriously
+        garments, you understand, <Annotation annotationId="040021ruby" annotationSelect={() => openNote("040021ruby")} activeAnnotationId={currentNoteId}>Ruby Cohen</Annotation>? and don the shot silk luxuriously
         rustling over head and shoulders and quickly too.
       </p>
       <span data-edition="ed1922" data-page="501"> </span>
@@ -6252,7 +6252,7 @@ const Circe = ({openNote}) => {
         pretty two ounce petticoats and fringes and things stamped, of course,
         with my houseflag, creations of lovely lingerie for Alice and 
         <span data-edition="ed1939" data-page="378"> </span>
-        nice scent for Alice. Alice will feel the pullpull. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050027marthamary")}>Martha and</button> <span data-edition="ed1961" data-page="535"> </span><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050027marthamary")}>Mary</button> will be
+        nice scent for Alice. Alice will feel the pullpull. <Annotation annotationId="050027marthamary" annotationSelect={() => openNote("050027marthamary")} activeAnnotationId={currentNoteId}>Martha and</Annotation> <span data-edition="ed1961" data-page="535"> </span><Annotation annotationId="050027marthamary" annotationSelect={() => openNote("050027marthamary")} activeAnnotationId={currentNoteId}>Mary</Annotation> will be
         a little chilly at first in such delicate thighcasing but the frilly
         flimsiness of lace round your bare knees will remind you...
       </p>
@@ -6273,9 +6273,9 @@ const Circe = ({openNote}) => {
         <i>(Jeers.)</i> Little jobs that make mother pleased, eh? And showed
         off coquettishly in your domino at the mirror behind closedrawn blinds
         your unskirted thighs and hegoat's udders in various poses of surrender,
-        eh? Ho! ho! I have to laugh! <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080016shelbourne")}>That secondhand black operatop shift and
+        eh? Ho! ho! I have to laugh! <Annotation annotationId="080016shelbourne" annotationSelect={() => openNote("080016shelbourne")} activeAnnotationId={currentNoteId}>That secondhand black operatop shift and
         short trunkleg naughties all split up the stitches at her last rape that
-        Mrs Miriam Dandrade sold you from the Shelbourne hotel</button>, eh?
+        Mrs Miriam Dandrade sold you from the Shelbourne hotel</Annotation>, eh?
       </p>
       <p>
         BLOOM
@@ -6305,7 +6305,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(Her hands and features working.)</i> It was Gerald converted me to
-        be a true corsetlover when I was female impersonator in the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050020highschool")}>High School</button>
+        be a true corsetlover when I was female impersonator in the <Annotation annotationId="050020highschool" annotationSelect={() => openNote("050020highschool")} activeAnnotationId={currentNoteId}>High School</Annotation>
         play <i>Vice Versa</i>. It was dear Gerald. He got <span data-edition="ed1961" data-page="536"> </span>that kink, fascinated by
         sister's stays. Now dearest Gerald uses pinky greasepaint and gilds his
         eyelids. Cult of the beautiful.
@@ -6315,8 +6315,8 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(With wicked glee.)</i> Beautiful! Give us a breather! When you
-        took your seat with womanish care, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010086maryann")}>lifting your billowy flounces, on the
-        smoothworn throne</button>.
+        took your seat with womanish care, <Annotation annotationId="010086maryann" annotationSelect={() => openNote("010086maryann")} activeAnnotationId={currentNoteId}>lifting your billowy flounces, on the
+        smoothworn throne</Annotation>.
       </p>
       <p>
         BLOOM
@@ -6330,8 +6330,8 @@ const Circe = ({openNote}) => {
         BELLO
       </p>
       <p>
-        <i>(Sternly.)</i> No insubordination! <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080022sawdust")}>The sawdust is there in the
-        corner for you.</button> I gave you strict instructions, didn't I? Do it
+        <i>(Sternly.)</i> No insubordination! <Annotation annotationId="080022sawdust" annotationSelect={() => openNote("080022sawdust")} activeAnnotationId={currentNoteId}>The sawdust is there in the
+        corner for you.</Annotation> I gave you strict instructions, didn't I? Do it
         standing, sir! I'll teach you to behave like a 
         <span data-edition="ed1939" data-page="379"> </span>
         jinkleman! If I catch a
@@ -6368,7 +6368,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(Mute inhuman faces throng forward, leering, vanishing, gibbering,
-        Booloohoom. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040003nicename")}>Poldy Kock</button>, Bootlaces a penny, Cassidy's hag, blind</i>
+        Booloohoom. <Annotation annotationId="040003nicename" annotationSelect={() => openNote("040003nicename")} activeAnnotationId={currentNoteId}>Poldy Kock</Annotation>, Bootlaces a penny, Cassidy's hag, blind</i>
         <span data-edition="ed1986" data-page="438"> </span><i>stripling, Larry Rhinoceros, the girl, the woman, the whore, the other,
         the...)</i>
       </p>
@@ -6420,7 +6420,7 @@ const Circe = ({openNote}) => {
         with dress pinned up and a dishclout 
         <span data-edition="ed1939" data-page="380"> </span>
         tied to your tail. <span data-edition="ed1961" data-page="538"> </span>Won't that be
-        nice? <i>(He places <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040021ruby")}>a ruby ring</button> on her finger.)</i> And there now! With this
+        nice? <i>(He places <Annotation annotationId="040021ruby" annotationSelect={() => openNote("040021ruby")} activeAnnotationId={currentNoteId}>a ruby ring</Annotation> on her finger.)</i> And there now! With this
         ring I thee own. Say, thank you, mistress.
       </p>
       <p>
@@ -6497,7 +6497,7 @@ const Circe = ({openNote}) => {
         stockgetter, due to lay within the hour. His
         sire's milk record was a thousand gallons of whole milk in forty weeks.
         Whoa my jewel! Beg up! Whoa! <i>(He brands his initial C on Bloom's
-        croup.)</i> So! Warranted Cohen! What advance on <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010019money")}>two bob</button>, gentlemen?
+        croup.)</i> So! Warranted Cohen! What advance on <Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}>two bob</Annotation>, gentlemen?
       </p>
       <span data-edition="ed1939" data-page="381"> </span>
       <p>
@@ -6510,7 +6510,7 @@ const Circe = ({openNote}) => {
         VOICES
       </p>
       <p>
-        <i>(Subdued.)</i> For <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030055samedream")}>the Caliph. Haroun Al Raschid.</button>
+        <i>(Subdued.)</i> For <Annotation annotationId="030055samedream" annotationSelect={() => openNote("030055samedream")} activeAnnotationId={currentNoteId}>the Caliph. Haroun Al Raschid.</Annotation>
       </p>
       <p>
         BELLO
@@ -6563,7 +6563,7 @@ const Circe = ({openNote}) => {
         <span data-edition="ed1922" data-page="506"> </span>
         bolt, I can tell you! Foot to foot, knee to knee,
         belly to belly, bubs to breast! He's no eunuch. A shock of red hair he
-        has sticking out of him behind like <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("120008gorse")}>a furzebush</button>! Wait for nine months,
+        has sticking out of him behind like <Annotation annotationId="120008gorse" annotationSelect={() => openNote("120008gorse")} activeAnnotationId={currentNoteId}>a furzebush</Annotation>! Wait for nine months,
         my lad! Holy ginger, it's kicking and coughing up and down in her guts
         already! That makes you wild, don't it? Touches the spot? <i>(He spits in
         contempt.)</i> Spittoon!
@@ -6622,7 +6622,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(Laughs mockingly.)</i> That's your daughter, you owl, with a
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010126mullingar")}>Mullingar student</button>.
+        <Annotation annotationId="010126mullingar" annotationSelect={() => openNote("010126mullingar")} activeAnnotationId={currentNoteId}>Mullingar student</Annotation>.
       </p>
       <span data-edition="ed1932" data-page="472"> </span>
       <p>
@@ -6662,8 +6662,8 @@ const Circe = ({openNote}) => {
       <p>
         <i>(Cuttingly.)</i> Their heelmarks will stamp the Brusselette carpet
         you bought at Wren's auction. In their horseplay with Moll the romp to
-        find the buck flea in her breeches they will deface <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080005venus")}>the little statue
-        you carried home</button> in the rain for art for art's sake. They will violate
+        find the buck flea in her breeches they will deface <Annotation annotationId="080005venus" annotationSelect={() => openNote("080005venus")} activeAnnotationId={currentNoteId}>the little statue
+        you carried home</Annotation> in the rain for art for art's sake. They will violate
         the secrets of your bottom drawer. Pages will be torn from your handbook
         of astronomy to make them pipespills. And they will spit in your ten
         shilling brass fender from Hampton Leedom's.
@@ -6712,8 +6712,8 @@ const Circe = ({openNote}) => {
         about you. I can give you a rare old wine that'll send <span data-edition="ed1961" data-page="543"> </span>you
         skipping to hell and back. Sign a will and leave us any coin you have!
         If you have none see you damn well get it, steal it, rob it! We'll bury
-        you in our shrubbery jakes where you'll be dead and dirty with old <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040093cuckstool")}>Cuck
-        Cohen</button>, my stepnephew I married, the bloody old gouty procurator and
+        you in our shrubbery jakes where you'll be dead and dirty with old <Annotation annotationId="040093cuckstool" annotationSelect={() => openNote("040093cuckstool")} activeAnnotationId={currentNoteId}>Cuck
+        Cohen</Annotation>, my stepnephew I married, the bloody old gouty procurator and
         sodomite with a crick in his neck, and my other ten or eleven husbands,
         whatever the buggers' names were, suffocated in the one cesspool. <i>(He
         explodes in a loud phlegmy laugh.)</i> We'll manure you, Mr Flower! <i>(He
@@ -6724,8 +6724,8 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        <i>(Clasps his head.)</i> My willpower! Memory! <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050033eccehomo")}>I have sinned! I have
-        suff...</button>
+        <i>(Clasps his head.)</i> My willpower! Memory! <Annotation annotationId="050033eccehomo" annotationSelect={() => openNote("050033eccehomo")} activeAnnotationId={currentNoteId}>I have sinned! I have
+        suff...</Annotation>
       </p>
       <p>
         <i>(He weeps tearlessly.)</i>
@@ -6762,8 +6762,8 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(From the suttee pyre the flame of gum camphire ascends. The pall of
-        incense smoke screens and disperses. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040048slimmer")}>Out of her oakframe a nymph with
-        hair unbound, lightly clad in</button></i> <span data-edition="ed1961" data-page="544"> </span><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040048slimmer")}><i>teabrown artcolours</i></button>, <i>descends from her
+        incense smoke screens and disperses. <Annotation annotationId="040048slimmer" annotationSelect={() => openNote("040048slimmer")} activeAnnotationId={currentNoteId}>Out of her oakframe a nymph with
+        hair unbound, lightly clad in</Annotation></i> <span data-edition="ed1961" data-page="544"> </span><Annotation annotationId="040048slimmer" annotationSelect={() => openNote("040048slimmer")} activeAnnotationId={currentNoteId}><i>teabrown artcolours</i></Annotation>, <i>descends from her
         grotto and passing under interlacing yews stands over Bloom.)</i>
       </p>
       <span data-edition="ed1939" data-page="384"> </span>
@@ -6794,7 +6794,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         Mortal! You found me in evil company, highkickers, coster
-        picnicmakers, pugilists, popular generals, immoral <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010077pantomime")}>panto boys</button> in
+        picnicmakers, pugilists, popular generals, immoral <Annotation annotationId="010077pantomime" annotationSelect={() => openNote("010077pantomime")} activeAnnotationId={currentNoteId}>panto boys</Annotation> in
         fleshtights and the nifty shimmy dancers, La Aurora and Karini, musical
         act, the hit of the century. I was hidden in cheap pink paper that smelt
         of rock oil. I was surrounded <span data-edition="ed1986" data-page="444"> </span>by the stale smut of clubmen, stories to
@@ -6823,7 +6823,7 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        You mean <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040034photobits")}><i>Photo Bits?</i></button>
+        You mean <Annotation annotationId="040034photobits" annotationSelect={() => openNote("040034photobits")} activeAnnotationId={currentNoteId}><i>Photo Bits?</i></Annotation>
       </p>
       <p>
         THE NYMPH
@@ -6896,7 +6896,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(Apologetically.)</i> I know. Soiled personal linen, wrong side up
-        with care. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040085brassquoits")}>The quoits are loose. From Gibraltar by long sea long ago.</button>
+        with care. <Annotation annotationId="040085brassquoits" annotationSelect={() => openNote("040085brassquoits")} activeAnnotationId={currentNoteId}>The quoits are loose. From Gibraltar by long sea long ago.</Annotation>
       </p>
       <p>
         THE NYMPH
@@ -6909,9 +6909,9 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(Reflects precautiously.)</i> That antiquated commode. It wasn't her
-        weight. She scaled just eleven stone nine. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040048slimmer")}>She put on nine pounds
-        after weaning.</button> It was a crack and want of glue. Eh? And that absurd
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040057orangekeyed")}>orangekeyed utensil</button> which has only one handle.
+        weight. She scaled just eleven stone nine. <Annotation annotationId="040048slimmer" annotationSelect={() => openNote("040048slimmer")} activeAnnotationId={currentNoteId}>She put on nine pounds
+        after weaning.</Annotation> It was a crack and want of glue. Eh? And that absurd
+        <Annotation annotationId="040057orangekeyed" annotationSelect={() => openNote("040057orangekeyed")} activeAnnotationId={currentNoteId}>orangekeyed utensil</Annotation> which has only one handle.
       </p>
       <p>
         <i>(The sound of a waterfall is heard in bright cascade.)</i>
@@ -6945,8 +6945,8 @@ const Circe = ({openNote}) => {
         THE YEWS
       </p>
       <p>
-        <i>(Murmuring.)</i> Who came to Poulaphouca with the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050020highschool")}>High School
-        excursion</button>? Who left his nutquesting classmates to seek our shade?
+        <i>(Murmuring.)</i> Who came to Poulaphouca with the <Annotation annotationId="050020highschool" annotationSelect={() => openNote("050020highschool")} activeAnnotationId={currentNoteId}>High School
+        excursion</Annotation>? Who left his nutquesting classmates to seek our shade?
       </p>
       <span data-edition="ed1939" data-page="386"> </span>
       <span data-edition="ed1986" data-page="446"> </span>
@@ -7088,7 +7088,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(Hatless, flushed, covered with burrs of thistledown and
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("120008gorse")}>gorsespine</button>.)</i> Regularly 
+        <Annotation annotationId="120008gorse" annotationSelect={() => openNote("120008gorse")} activeAnnotationId={currentNoteId}>gorsespine</Annotation>.)</i> Regularly 
         <span data-edition="ed1922" data-page="513"> </span>
         engaged. Circumstances alter cases. <i>(He gazes
         intently downwards on the water.)</i> Thirtytwo head over heels per second.
@@ -7104,11 +7104,11 @@ const Circe = ({openNote}) => {
         Bbbbblllllblblblblodschbg?
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030013kishlightship")}><i>(Far out in the bay between Bailey and Kish lights the Erin's King sails</i></button><i>, sending a broadening plume of coalsmoke from her funnel towards
+        <Annotation annotationId="030013kishlightship" annotationSelect={() => openNote("030013kishlightship")} activeAnnotationId={currentNoteId}><i>(Far out in the bay between Bailey and Kish lights the Erin's King sails</i></Annotation><i>, sending a broadening plume of coalsmoke from her funnel towards
         the land.)</i>
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070019nannetti")}>COUNCILLOR NANNETTI</button>
+        <Annotation annotationId="070019nannetti" annotationSelect={() => openNote("070019nannetti")} activeAnnotationId={currentNoteId}>COUNCILLOR NANNETTI</Annotation>
       </p>
       <p>
         <i>(Alone on deck, in dark alpaca, yellowkitefaced,
@@ -7127,9 +7127,9 @@ const Circe = ({openNote}) => {
         THE NYMPH
       </p>
       <p>
-        <i>(Loftily.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150015nohairthere")}>We immortals, as you saw today, have not such
+        <i>(Loftily.)</i> <Annotation annotationId="150015nohairthere" annotationSelect={() => openNote("150015nohairthere")} activeAnnotationId={currentNoteId}>We immortals, as you saw today, have not such
         a place and no hair there either. We are stonecold and pure. We eat
-        electric light.</button> <i>(She arches her body in lascivious crispation, placing
+        electric light.</Annotation> <i>(She arches her body in lascivious crispation, placing
         her forefinger in her mouth.)</i> Spoke to me. Heard from behind. How then
         could you...?
       </p>
@@ -7597,7 +7597,7 @@ const Circe = ({openNote}) => {
         STEPHEN
       </p>
       <p>
-        How is that? <i>Le distrait</i> or <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("090001absentminded")}>absentminded beggar</button>. <i>(He
+        How is that? <i>Le distrait</i> or <Annotation annotationId="090001absentminded" annotationSelect={() => openNote("090001absentminded")} activeAnnotationId={currentNoteId}>absentminded beggar</Annotation>. <i>(He
         fumbles again in his pocket and draws out a handful of coins. An object
         falls.)</i> That fell.
       </p>
@@ -7611,7 +7611,7 @@ const Circe = ({openNote}) => {
         STEPHEN
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150013matches")}>Lucifer.</button> Thanks.
+        <Annotation annotationId="150013matches" annotationSelect={() => openNote("150013matches")} activeAnnotationId={currentNoteId}>Lucifer.</Annotation> Thanks.
       </p>
       <span data-edition="ed1986" data-page="455"> </span><span data-edition="ed1961" data-page="558"> </span>
       <p>
@@ -7639,15 +7639,15 @@ const Circe = ({openNote}) => {
         STEPHEN
       </p>
       <p>
-        Why striking eleven? Proparoxyton. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030009laocoon")}>Moment before the next
-        Lessing says.</button> Thirsty fox. <i>(He laughs loudly.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020009ghoststory")}>Burying his grandmother.
-        Probably he killed her.</button>
+        Why striking eleven? Proparoxyton. <Annotation annotationId="030009laocoon" annotationSelect={() => openNote("030009laocoon")} activeAnnotationId={currentNoteId}>Moment before the next
+        Lessing says.</Annotation> Thirsty fox. <i>(He laughs loudly.)</i> <Annotation annotationId="020009ghoststory" annotationSelect={() => openNote("020009ghoststory")} activeAnnotationId={currentNoteId}>Burying his grandmother.
+        Probably he killed her.</Annotation>
       </p>
       <p>
         BLOOM
       </p>
       <p>
-        That is <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020035owenothing")}>one pound six and eleven</button>. One pound seven, say.
+        That is <Annotation annotationId="020035owenothing" annotationSelect={() => openNote("020035owenothing")} activeAnnotationId={currentNoteId}>one pound six and eleven</Annotation>. One pound seven, say.
       </p>
       <p>
         STEPHEN
@@ -7769,8 +7769,8 @@ const Circe = ({openNote}) => {
         ZOE
       </p>
       <p>
-        <i>(Turns.)</i> Ask my ballocks that I haven't got. <i>(To Stephen.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070010seeitin")}>I see
-        it in your face.</button> The eye, like that. <i>(She frowns with lowered head.)</i>
+        <i>(Turns.)</i> Ask my ballocks that I haven't got. <i>(To Stephen.)</i> <Annotation annotationId="070010seeitin" annotationSelect={() => openNote("070010seeitin")} activeAnnotationId={currentNoteId}>I see
+        it in your face.</Annotation> The eye, like that. <i>(She frowns with lowered head.)</i>
       </p>
       <span data-edition="ed1986" data-page="457"> </span>
       <p>
@@ -7787,11 +7787,11 @@ const Circe = ({openNote}) => {
         FATHER DOLAN
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070010seeitin")}>Any boy want flogging? Broke his glasses? Lazy idle little
-        schemer. See it in your eye.</button>
+        <Annotation annotationId="070010seeitin" annotationSelect={() => openNote("070010seeitin")} activeAnnotationId={currentNoteId}>Any boy want flogging? Broke his glasses? Lazy idle little
+        schemer. See it in your eye.</Annotation>
       </p>
       <p>
-        <i>(Mild, benign, rectorial, reproving, the head of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050052conmee")}>Don John Conmee</button> rises
+        <i>(Mild, benign, rectorial, reproving, the head of <Annotation annotationId="050052conmee" annotationSelect={() => openNote("050052conmee")} activeAnnotationId={currentNoteId}>Don John Conmee</Annotation> rises
         from the pianola coffin.)</i>
       </p>
       <p>
@@ -7832,7 +7832,7 @@ const Circe = ({openNote}) => {
         ZOE
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010121applause")}>Thursday's child has far to go.</button> <i>(She traces lines on his hand.)</i>
+        <Annotation annotationId="010121applause" annotationSelect={() => openNote("010121applause")} activeAnnotationId={currentNoteId}>Thursday's child has far to go.</Annotation> <i>(She traces lines on his hand.)</i>
         Line of fate. Influential friends.
       </p>
       <p>
@@ -7918,10 +7918,10 @@ const Circe = ({openNote}) => {
         STEPHEN
       </p>
       <p>
-        See? <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020067onegreatgoal")}>Moves to one great goal.</button> I am twentytwo. Sixteen years ago
+        See? <Annotation annotationId="020067onegreatgoal" annotationSelect={() => openNote("020067onegreatgoal")} activeAnnotationId={currentNoteId}>Moves to one great goal.</Annotation> I am twentytwo. Sixteen years ago
         he was twentytwo too. Sixteen years ago I twentytwo tumbled. Twentytwo
         years ago he sixteen fell off his hobbyhorse. <i>(He winces.)</i> Hurt my hand
-        somewhere. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010130toothless")}>Must see a dentist.</button> Money?
+        somewhere. <Annotation annotationId="010130toothless" annotationSelect={() => openNote("010130toothless")} activeAnnotationId={currentNoteId}>Must see a dentist.</Annotation> Money?
       </p>
       <p>
         <i>(Zoe whispers to Florry. They giggle. Bloom releases his hand and
@@ -7935,9 +7935,9 @@ const Circe = ({openNote}) => {
         What?
       </p>
       <p>
-        <i><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050013jauntingcar")}>A hackneycar, number three hundred and twentyfour</button>, with a
+        <i><Annotation annotationId="050013jauntingcar" annotationSelect={() => openNote("050013jauntingcar")} activeAnnotationId={currentNoteId}>A hackneycar, number three hundred and twentyfour</Annotation>, with a
         gallantbuttocked mare, driven by James Barton, Harmony</i> <span data-edition="ed1961" data-page="563"> </span><i>Avenue,
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050022donnybrook")}>Donnybrook</button>, trots past. Blazes Boylan and Lenehan sprawl swaying on the
+        <Annotation annotationId="050022donnybrook" annotationSelect={() => openNote("050022donnybrook")} activeAnnotationId={currentNoteId}>Donnybrook</Annotation>, trots past. Blazes Boylan and Lenehan sprawl swaying on the
         sideseats. The Ormond boots crouches behind on the axle. Sadly over the
         crossblind Lydia Douce and Mina Kennedy gaze.)</i>
       </p>
@@ -8021,7 +8021,7 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        <i>(<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150002applyeye")}>In flunkey's prune plush coat and kneebreeches</button>, buff stockings
+        <i>(<Annotation annotationId="150002applyeye" annotationSelect={() => openNote("150002applyeye")} activeAnnotationId={currentNoteId}>In flunkey's prune plush coat and kneebreeches</Annotation>, buff stockings
         and powdered wig.)</i> I'm afraid not, sir. The last articles...
       </p>
       <p>
@@ -8036,7 +8036,7 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        Thank you, sir. Yes, sir. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040056mrsmarion")}>Madam Tweedy</button> is in her bath, sir.
+        Thank you, sir. Yes, sir. <Annotation annotationId="040056mrsmarion" annotationSelect={() => openNote("040056mrsmarion")} activeAnnotationId={currentNoteId}>Madam Tweedy</Annotation> is in her bath, sir.
       </p>
       <span data-edition="ed1922" data-page="526"> </span>
       <p>
@@ -8068,7 +8068,7 @@ const Circe = ({openNote}) => {
         MARION
       </p>
       <p>
-        Let him look, the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("120015pishogue")}>pishogue</button>! Pimp! And scourge himself! I'll
+        Let him look, the <Annotation annotationId="120015pishogue" annotationSelect={() => openNote("120015pishogue")} activeAnnotationId={currentNoteId}>pishogue</Annotation>! Pimp! And scourge himself! I'll
         write to a powerful prostitute or Bartholomona, the bearded woman, to
         raise weals out on him an inch thick and make him bring me back a signed
         and stamped receipt.
@@ -8091,15 +8091,15 @@ const Circe = ({openNote}) => {
         BOYLAN
       </p>
       <p>
-        <i>(To Bloom, over his shoulder.)</i> You can <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150002applyeye")}>apply your eye to the
-        keyhole</button> and play with yourself while I just go through her a few times.
+        <i>(To Bloom, over his shoulder.)</i> You can <Annotation annotationId="150002applyeye" annotationSelect={() => openNote("150002applyeye")} activeAnnotationId={currentNoteId}>apply your eye to the
+        keyhole</Annotation> and play with yourself while I just go through her a few times.
       </p>
       <p>
         BLOOM
       </p>
       <p>
         Thank you, sir. I will, sir. May I bring two men chums to witness
-        the deed and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150002applyeye")}>take a snapshot</button>? <i>(He holds out an ointment jar.)</i> Vaseline,
+        the deed and <Annotation annotationId="150002applyeye" annotationSelect={() => openNote("150002applyeye")} activeAnnotationId={currentNoteId}>take a snapshot</Annotation>? <i>(He holds out an ointment jar.)</i> Vaseline,
         sir? Orangeflower...? Lukewarm water...?
       </p>
       <p>
@@ -8154,8 +8154,8 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        <i>(His eyes wildly dilated, clasps himself.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150002applyeye")}>Show! Hide! Show!
-        Plough her! More! Shoot!</button>
+        <i>(His eyes wildly dilated, clasps himself.)</i> <Annotation annotationId="150002applyeye" annotationSelect={() => openNote("150002applyeye")} activeAnnotationId={currentNoteId}>Show! Hide! Show!
+        Plough her! More! Shoot!</Annotation>
       </p>
       <span data-edition="ed1986" data-page="462"> </span>
       <p>
@@ -8182,8 +8182,8 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(In dignified ventriloquy.)</i> 'Tis the loud laugh bespeaks
-        the vacant mind. <i>(To Bloom.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010078invisibility")}>Thou thoughtest as how thou wastest
-        invisible.</button> Gaze. <i>(He crows with a black capon's laugh.)</i> Iagogo! How my
+        the vacant mind. <i>(To Bloom.)</i> <Annotation annotationId="010078invisibility" annotationSelect={() => openNote("010078invisibility")} activeAnnotationId={currentNoteId}>Thou thoughtest as how thou wastest
+        invisible.</Annotation> Gaze. <i>(He crows with a black capon's laugh.)</i> Iagogo! How my
         Oldfellow chokit his Thursdaymornun. Iagogogo!
       </p>
       <span data-edition="ed1961" data-page="567"> </span>
@@ -8214,7 +8214,7 @@ const Circe = ({openNote}) => {
         her bonnet awry, rouging and powdering her cheeks, lips and nose, a
         pen chivvying her brood of cygnets. Beneath her skirt appear her late
         husband's everyday trousers and turnedup boots, large eights. She holds
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("130007scottishwidows")}>a Scottish widows' insurance policy</button> and a large marquee umbrella under
+        <Annotation annotationId="130007scottishwidows" annotationSelect={() => openNote("130007scottishwidows")} activeAnnotationId={currentNoteId}>a Scottish widows' insurance policy</Annotation> and a large marquee umbrella under
         which her brood run with her, Patsy hopping on one shod foot, his collar
         loose, a hank of porksteaks dangling, Freddy whimpering, Susy with a
         crying cod's mouth, Alice struggling with the baby. She cuffs them on,
@@ -8240,8 +8240,8 @@ const Circe = ({openNote}) => {
         <i>(With paralytic rage.)</i> Weda seca whokilla farst.
       </p>
       <p>
-        <i>(<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060034martincunningham")}>The face of Martin Cunningham, bearded, refeatures Shakespeare's
-        beardless face.</button> The marquee umbrella sways drunkenly, the children run
+        <i>(<Annotation annotationId="060034martincunningham" annotationSelect={() => openNote("060034martincunningham")} activeAnnotationId={currentNoteId}>The face of Martin Cunningham, bearded, refeatures Shakespeare's
+        beardless face.</Annotation> The marquee umbrella sways drunkenly, the children run
         aside. Under the umbrella appears Mrs Cunningham in Merry Widow hat and
         kimono gown. She glides sidling and bowing, twirling japanesily.)</i>
       </p>
@@ -8269,11 +8269,11 @@ const Circe = ({openNote}) => {
         STEPHEN
       </p>
       <p>
-        <i>Et exaltabuntur cornua iusti.</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010020ancientgreek")}>Queens lay with prize bulls.
+        <i>Et exaltabuntur cornua iusti.</i> <Annotation annotationId="010020ancientgreek" annotationSelect={() => openNote("010020ancientgreek")} activeAnnotationId={currentNoteId}>Queens lay with prize bulls.
         Remember Pasiphae for whose lust my grandoldgrossfather made the first
-        confessionbox.</button> Forget not Madam Grissel Steevens nor the suine scions
-        of the house of Lambert. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080025musteredandbred")}>And Noah was drunk with wine. And his ark was
-        open.</button>
+        confessionbox.</Annotation> Forget not Madam Grissel Steevens nor the suine scions
+        of the house of Lambert. <Annotation annotationId="080025musteredandbred" annotationSelect={() => openNote("080025musteredandbred")} activeAnnotationId={currentNoteId}>And Noah was drunk with wine. And his ark was
+        open.</Annotation>
       </p>
       <p>
         BELLA
@@ -8320,8 +8320,8 @@ const Circe = ({openNote}) => {
         with mortuary candles and they tears silver which occur every night.
         Perfectly shocking terrific of religion's things mockery seen in
         universal world. All chic womans which arrive full of modesty then
-        disrobe and squeal loud to <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030149vampire")}>see vampire man debauch nun very fresh young
-        with <i>dessous troublants</i></button>. <i>(He clacks his tongue loudly.)</i> <i>Ho, la la!
+        disrobe and squeal loud to <Annotation annotationId="030149vampire" annotationSelect={() => openNote("030149vampire")} activeAnnotationId={currentNoteId}>see vampire man debauch nun very fresh young
+        with <i>dessous troublants</i></Annotation>. <i>(He clacks his tongue loudly.)</i> <i>Ho, la la!
         Ce pif qu'il a!</i>
       </p>
       <p>
@@ -8415,8 +8415,8 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(Extending his arms.)</i> It was here. Street of harlots. In
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030077serpentine")}>Serpentine avenue</button> Beelzebub showed me her, a fubsy widow. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030055samedream")}>Where's the
-        red carpet spread?</button>
+        <Annotation annotationId="030077serpentine" annotationSelect={() => openNote("030077serpentine")} activeAnnotationId={currentNoteId}>Serpentine avenue</Annotation> Beelzebub showed me her, a fubsy widow. <Annotation annotationId="030055samedream" annotationSelect={() => openNote("030055samedream")} activeAnnotationId={currentNoteId}>Where's the
+        red carpet spread?</Annotation>
       </p>
       <p>
         BLOOM
@@ -8429,8 +8429,8 @@ const Circe = ({openNote}) => {
         STEPHEN
       </p>
       <p>
-        No, I flew. My foes beneath me. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020025asitwas")}>And ever shall be. World
-        without end.</button> <i>(He cries.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010020ancientgreek")}><i>Pater! </i> Free!</button>
+        No, I flew. My foes beneath me. <Annotation annotationId="020025asitwas" annotationSelect={() => openNote("020025asitwas")} activeAnnotationId={currentNoteId}>And ever shall be. World
+        without end.</Annotation> <i>(He cries.)</i> <Annotation annotationId="010020ancientgreek" annotationSelect={() => openNote("010020ancientgreek")} activeAnnotationId={currentNoteId}><i>Pater! </i> Free!</Annotation>
       </p>
       <p>
         BLOOM
@@ -8443,7 +8443,7 @@ const Circe = ({openNote}) => {
         STEPHEN
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010001buckmulligan")}>Break my spirit, will he?</button> <i>O merde alors! (He cries, his
+        <Annotation annotationId="010001buckmulligan" annotationSelect={() => openNote("010001buckmulligan")} activeAnnotationId={currentNoteId}>Break my spirit, will he?</Annotation> <i>O merde alors! (He cries, his
         vulture talons sharpened.)</i> Hola! Hillyho!
       </p>
       <p>
@@ -8463,8 +8463,8 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(The fronds and spaces of the wallpaper file rapidly across country.
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020009ghoststory")}>A stout fox, drawn from covert, brush pointed, having buried his
-        grandmother</button>, runs swift for the open, brighteyed, seeking badger earth,
+        <Annotation annotationId="020009ghoststory" annotationSelect={() => openNote("020009ghoststory")} activeAnnotationId={currentNoteId}>A stout fox, drawn from covert, brush pointed, having buried his
+        grandmother</Annotation>, runs swift for the open, brighteyed, seeking badger earth,
         under the leaves. The pack of staghounds follows, nose to the ground,
         sniffing their quarry, beaglebaying, burblbrbling to be blooded. Ward
         Union huntsmen and huntswomen live with them, hot for a kill. From Six
@@ -8495,16 +8495,16 @@ const Circe = ({openNote}) => {
         <i>(A dark horse, riderless, bolts like a phantom past the winningpost,
         his mane moonfoaming, his eyeballs stars. The field follows, a bunch of
         bucking mounts. Skeleton horses, Sceptre, Maximum the Second, Zinfandel,
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020050vanishedhorses")}>the Duke of Westminster's Shotover, Repulse, the Duke of Beaufort's
-        Ceylon, prix de Paris</button>. Dwarfs ride them, rusty armoured, leaping, leaping
+        <Annotation annotationId="020050vanishedhorses" annotationSelect={() => openNote("020050vanishedhorses")} activeAnnotationId={currentNoteId}>the Duke of Westminster's Shotover, Repulse, the Duke of Beaufort's
+        Ceylon, prix de Paris</Annotation>. Dwarfs ride them, rusty armoured, leaping, leaping
         in their saddles. Last in a drizzle of rain on a brokenwinded
         isabelle nag, Cock of the North, the favourite, honey cap, green jacket,
         orange sleeves, Garrett Deasy up, gripping the reins, a hockeystick at
-        the ready. His nag, stumbling on whitegaitered feet jogs along the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020048rockyroad")}>rocky
-        road</button>.)</i>
+        the ready. His nag, stumbling on whitegaitered feet jogs along the <Annotation annotationId="020048rockyroad" annotationSelect={() => openNote("020048rockyroad")} activeAnnotationId={currentNoteId}>rocky
+        road</Annotation>.)</i>
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020040orangelodges")}>THE ORANGE LODGES</button>
+        <Annotation annotationId="020040orangelodges" annotationSelect={() => openNote("020040orangelodges")} activeAnnotationId={currentNoteId}>THE ORANGE LODGES</Annotation>
       </p>
       <p>
         <i>(Jeering.)</i> Get down and push, mister. Last lap!
@@ -8522,7 +8522,7 @@ const Circe = ({openNote}) => {
       </p>
       <br/>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020047johnblackwood")}><i>Per vias rectas!</i></button>
+        <Annotation annotationId="020047johnblackwood" annotationSelect={() => openNote("020047johnblackwood")} activeAnnotationId={currentNoteId}><i>Per vias rectas!</i></Annotation>
       </p>
       <p>
         <i>(A yoke of buckets leopards all over him and his rearing nag a torrent
@@ -8535,7 +8535,7 @@ const Circe = ({openNote}) => {
         THE GREEN LODGES
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020049softday")}>Soft day, sir John!</button> Soft day, your honour! 
+        <Annotation annotationId="020049softday" annotationSelect={() => openNote("020049softday")} activeAnnotationId={currentNoteId}>Soft day, sir John!</Annotation> Soft day, your honour! 
       </p>
       <p>
         <i>(Private Carr, Private Compton and Cissy Caffrey pass beneath the
@@ -8545,7 +8545,7 @@ const Circe = ({openNote}) => {
         STEPHEN
       </p>
       <p>
-        Hark! Our friend <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020069streetshout")}>noise in the street</button>.
+        Hark! Our friend <Annotation annotationId="020069streetshout" annotationSelect={() => openNote("020069streetshout")} activeAnnotationId={currentNoteId}>noise in the street</Annotation>.
       </p>
       <p>
         ZOE
@@ -8557,8 +8557,8 @@ const Circe = ({openNote}) => {
         PRIVATE CARR, PRIVATE COMPTON AND CISSY CAFFREY
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("100004yorkshiregirl")}>Yet I've a sort a <br/>
-        Yorkshire relish for...</button>
+        <Annotation annotationId="100004yorkshiregirl" annotationSelect={() => openNote("100004yorkshiregirl")} activeAnnotationId={currentNoteId}>Yet I've a sort a <br/>
+        Yorkshire relish for...</Annotation>
       </p>
       <p>
         ZOE
@@ -8584,9 +8584,9 @@ const Circe = ({openNote}) => {
         STEPHEN
       </p>
       <p>
-        <i>(Cracking his fingers impatiently.)</i> Quick! Quick! Where's <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010099ashplant")}>my
-        augur's rod</button>? <i>(He runs to the piano and takes his ashplant, beating his
-        foot in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030102viditdeus")}>tripudium</button>.)</i>
+        <i>(Cracking his fingers impatiently.)</i> Quick! Quick! Where's <Annotation annotationId="010099ashplant" annotationSelect={() => openNote("010099ashplant")} activeAnnotationId={currentNoteId}>my
+        augur's rod</Annotation>? <i>(He runs to the piano and takes his ashplant, beating his
+        foot in <Annotation annotationId="030102viditdeus" annotationSelect={() => openNote("030102viditdeus")} activeAnnotationId={currentNoteId}>tripudium</Annotation>.)</i>
       </p>
       <p>
         ZOE
@@ -8596,10 +8596,10 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(She drops two pennies in the slot. Gold, pink and violet lights
-        start forth. The drum turns purring in low hesitation</i> <span data-edition="ed1961" data-page="574"> </span><i>waltz. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040092professorgoodwin")}>Professor</button></i>
-        <span data-edition="ed1986" data-page="468"> </span><i><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040092professorgoodwin")}>Goodwin, in a bowknotted periwig, in court dress, wearing a stained
+        start forth. The drum turns purring in low hesitation</i> <span data-edition="ed1961" data-page="574"> </span><i>waltz. <Annotation annotationId="040092professorgoodwin" annotationSelect={() => openNote("040092professorgoodwin")} activeAnnotationId={currentNoteId}>Professor</Annotation></i>
+        <span data-edition="ed1986" data-page="468"> </span><i><Annotation annotationId="040092professorgoodwin" annotationSelect={() => openNote("040092professorgoodwin")} activeAnnotationId={currentNoteId}>Goodwin, in a bowknotted periwig, in court dress, wearing a stained
         inverness cape, bent in two from incredible age, totters across the
-        room, his hands fluttering.</button> He sits tinily on the pianostool and lifts
+        room, his hands fluttering.</Annotation> He sits tinily on the pianostool and lifts
         and beats handless sticks of arms on the keyboard, nodding with damsel's
         grace, his bowknot bobbing.)</i>
       </p>
@@ -8614,7 +8614,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(The pianola with changing lights plays in waltz time the prelude of</i>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("100004yorkshiregirl")}>My Girl's a Yorkshire Girl</button>. <i>Stephen throws his ashplant on the table
+        <Annotation annotationId="100004yorkshiregirl" annotationSelect={() => openNote("100004yorkshiregirl")} activeAnnotationId={currentNoteId}>My Girl's a Yorkshire Girl</Annotation>. <i>Stephen throws his ashplant on the table
         and seizes Zoe round the waist. Florry and Bella push the table towards
         the fireplace. Stephen, arming Zoe with exaggerated grace, begins to
         waltz her round the room. Bloom stands aside. Her sleeve, falling from
@@ -8902,8 +8902,8 @@ const Circe = ({openNote}) => {
       <p>
         THE CHOIR
       </p>
-      <p><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010082liliatarutilantium")}>Liliata rutilantium te confessorum... <br/>
-        Iubilantium te virginum...</button>
+      <p><Annotation annotationId="010082liliatarutilantium" annotationSelect={() => openNote("010082liliatarutilantium")} activeAnnotationId={currentNoteId}>Liliata rutilantium te confessorum... <br/>
+        Iubilantium te virginum...</Annotation>
       </p>
       <p>
         <i>(From the top of a tower Buck Mulligan, in particoloured jester's dress
@@ -8914,8 +8914,8 @@ const Circe = ({openNote}) => {
         BUCK MULLIGAN
       </p>
       <p>
-        She's <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010059pulsesbeating")}>beastly dead</button>. The pity of it! Mulligan meets the
-        afflicted mother. <i>(He upturns his eyes.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010021malachi")}>Mercurial Malachi!</button>
+        She's <Annotation annotationId="010059pulsesbeating" annotationSelect={() => openNote("010059pulsesbeating")} activeAnnotationId={currentNoteId}>beastly dead</Annotation>. The pity of it! Mulligan meets the
+        afflicted mother. <i>(He upturns his eyes.)</i> <Annotation annotationId="010021malachi" annotationSelect={() => openNote("010021malachi")} activeAnnotationId={currentNoteId}>Mercurial Malachi!</Annotation>
       </p>
       <p>
         THE MOTHER
@@ -8935,18 +8935,18 @@ const Circe = ({openNote}) => {
         BUCK MULLIGAN
       </p>
       <p>
-        <i>(Shakes his curling capbell.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010154mockery")}>The mockery</button> of it! <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010007kinch")}>Kinch</button>
-        killed her <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010047dogsbody")}>dogsbody</button> 
+        <i>(Shakes his curling capbell.)</i> <Annotation annotationId="010154mockery" annotationSelect={() => openNote("010154mockery")} activeAnnotationId={currentNoteId}>The mockery</Annotation> of it! <Annotation annotationId="010007kinch" annotationSelect={() => openNote("010007kinch")} activeAnnotationId={currentNoteId}>Kinch</Annotation>
+        killed her <Annotation annotationId="010047dogsbody" annotationSelect={() => openNote("010047dogsbody")} activeAnnotationId={currentNoteId}>dogsbody</Annotation> 
         <span data-edition="ed1922" data-page="539"> </span>
         bitchbody. She kicked the bucket. <i>(Tears of molten
-        butter fall from his eyes on to the scone.)</i> Our <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010032sweetmother")}>great sweet mother</button>! <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010033epioinopaponton")}><i>Epi
-        oinopa ponton.</i></button>
+        butter fall from his eyes on to the scone.)</i> Our <Annotation annotationId="010032sweetmother" annotationSelect={() => openNote("010032sweetmother")} activeAnnotationId={currentNoteId}>great sweet mother</Annotation>! <Annotation annotationId="010033epioinopaponton" annotationSelect={() => openNote("010033epioinopaponton")} activeAnnotationId={currentNoteId}><i>Epi
+        oinopa ponton.</i></Annotation>
       </p>
       <p>
         THE MOTHER
       </p>
       <p>
-        <i>(Comes nearer, breathing upon him softly <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010045waxandrosewood")}>her breath of wetted ashes</button>.)</i> All must go through it, Stephen. More women than men in
+        <i>(Comes nearer, breathing upon him softly <Annotation annotationId="010045waxandrosewood" annotationSelect={() => openNote("010045waxandrosewood")} activeAnnotationId={currentNoteId}>her breath of wetted ashes</Annotation>.)</i> All must go through it, Stephen. More women than men in
         the world. You too. Time will come.
       </p>
       <span data-edition="ed1986" data-page="473"> </span>
@@ -8954,8 +8954,8 @@ const Circe = ({openNote}) => {
         STEPHEN
       </p>
       <p>
-        <i>(Choking with fright, remorse and horror.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010042prayforme")}>They say I killed
-        you, mother.</button> He offended your memory. Cancer did it, not I. Destiny.
+        <i>(Choking with fright, remorse and horror.)</i> <Annotation annotationId="010042prayforme" annotationSelect={() => openNote("010042prayforme")} activeAnnotationId={currentNoteId}>They say I killed
+        you, mother.</Annotation> He offended your memory. Cancer did it, not I. Destiny.
       </p>
       <span data-edition="ed1939" data-page="408"> </span>
       <span data-edition="ed1961" data-page="580"> </span>
@@ -8964,14 +8964,14 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(A green rill of bile trickling from a side of her mouth.)</i>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010072bittermystery")}>You sang that song to me. <i>Love's bitter mystery.</i></button>
+        <Annotation annotationId="010072bittermystery" annotationSelect={() => openNote("010072bittermystery")} activeAnnotationId={currentNoteId}>You sang that song to me. <i>Love's bitter mystery.</i></Annotation>
       </p>
       <p>
         STEPHEN
       </p>
       <p>
-        <i>(Eagerly.)</i> Tell me the word, mother, if you know now. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010044painfretted")}>The word
-        known to all men.</button>
+        <i>(Eagerly.)</i> Tell me the word, mother, if you know now. <Annotation annotationId="010044painfretted" annotationSelect={() => openNote("010044painfretted")} activeAnnotationId={currentNoteId}>The word
+        known to all men.</Annotation>
       </p>
       <span data-edition="ed1932" data-page="500"> </span>
       <p>
@@ -8981,13 +8981,13 @@ const Circe = ({openNote}) => {
         Who saved you the night you jumped into the train at
         Dalkey with Paddy Lee? Who had pity for you when you were sad among the
         strangers? Prayer is allpowerful. Prayer for the suffering souls in the
-        Ursuline manual and forty days' indulgence. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010042prayforme")}>Repent, Stephen.</button>
+        Ursuline manual and forty days' indulgence. <Annotation annotationId="010042prayforme" annotationSelect={() => openNote("010042prayforme")} activeAnnotationId={currentNoteId}>Repent, Stephen.</Annotation>
       </p>
       <p>
         STEPHEN
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010062ghoul")}>The ghoul! Hyena!</button>
+        <Annotation annotationId="010062ghoul" annotationSelect={() => openNote("010062ghoul")} activeAnnotationId={currentNoteId}>The ghoul! Hyena!</Annotation>
       </p>
       <p>
         THE MOTHER
@@ -9026,7 +9026,7 @@ const Circe = ({openNote}) => {
         STEPHEN
       </p>
       <p>
-        <i>(Panting.)</i> His noncorrosive sublimate! <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010041killergod")}>The corpsechewer!</button> Raw
+        <i>(Panting.)</i> His noncorrosive sublimate! <Annotation annotationId="010041killergod" annotationSelect={() => openNote("010041killergod")} activeAnnotationId={currentNoteId}>The corpsechewer!</Annotation> Raw
         head and bloody bones.
       </p>
       <span data-edition="ed1986" data-page="474"> </span><span data-edition="ed1961" data-page="581"> </span>
@@ -9059,7 +9059,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>Ah non, par exemple!</i> The intellectual imagination! With me
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030115allornotatall")}>all or not at all</button>. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010114stateandchurch")}><i>Non serviam!</i></button>
+        <Annotation annotationId="030115allornotatall" annotationSelect={() => openNote("030115allornotatall")} activeAnnotationId={currentNoteId}>all or not at all</Annotation>. <Annotation annotationId="010114stateandchurch" annotationSelect={() => openNote("010114stateandchurch")} activeAnnotationId={currentNoteId}><i>Non serviam!</i></Annotation>
       </p>
       <p>
         FLORRY
@@ -9102,8 +9102,8 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(He lifts his ashplant high with both hands and smashes the chandelier.
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020003daughtersofmemory")}>Time's livid final flame leaps and, in the following darkness, ruin of
-        all space, shattered glass and toppling masonry.</button>)</i>
+        <Annotation annotationId="020003daughtersofmemory" annotationSelect={() => openNote("020003daughtersofmemory")} activeAnnotationId={currentNoteId}>Time's livid final flame leaps and, in the following darkness, ruin of
+        all space, shattered glass and toppling masonry.</Annotation>)</i>
       </p>
       <span data-edition="ed1986" data-page="475"> </span>
       <p>
@@ -9287,15 +9287,15 @@ const Circe = ({openNote}) => {
         <i>(He hurries out through the hall. The whores point. Florry follows,
         spilling water from her tilted tumbler. On the doorstep all the whores
         clustered talk volubly, pointing to the right where the fog has cleared
-        off. From the left arrives <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050013jauntingcar")}>a jingling hackney car</button>. It slows to in front
+        off. From the left arrives <Annotation annotationId="050013jauntingcar" annotationSelect={() => openNote("050013jauntingcar")} activeAnnotationId={currentNoteId}>a jingling hackney car</Annotation>. It slows to in front
         of the house. Bloom at the halldoor perceives Corny Kelleher who is
         about to dismount from the car with two silent lechers. He averts
         his face. Bella from within the hall urges on her</i> <span data-edition="ed1961" data-page="585"> </span><i>whores. They blow
         ickylickysticky yumyum kisses. Corny Kelleher replies with a ghastly
         lewd smile. The silent lechers turn to pay the jarvey. Zoe and Kitty
-        still point right. Bloom, parting them swiftly, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030055samedream")}>draws his caliph's hood
+        still point right. Bloom, parting them swiftly, <Annotation annotationId="030055samedream" annotationSelect={() => openNote("030055samedream")} activeAnnotationId={currentNoteId}>draws his caliph's hood
         and poncho and hurries down the steps with sideways face. Incog Haroun
-        al Raschid</button> he flits behind the silent lechers and hastens on by the
+        al Raschid</Annotation> he flits behind the silent lechers and hastens on by the
         railings with fleet step of a pard strewing the drag behind him, torn
         envelopes drenched in aniseed. The ashplant marks his stride. A pack
         of bloodhounds, led by Hornblower of Trinity brandishing a dogwhip in
@@ -9305,25 +9305,25 @@ const Circe = ({openNote}) => {
         runs, zigzags,</i> 
         <span data-edition="ed1922" data-page="544"> </span>
         <i>gallops, lugs laid back. He is pelted with gravel,
-        cabbagestumps, biscuitboxes, eggs, potatoes, dead codfish, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060045slipperslapper")}> woman's
-        slipperslappers</button>. After him, freshfound, the hue and cry zigzag gallops
+        cabbagestumps, biscuitboxes, eggs, potatoes, dead codfish, <Annotation annotationId="060045slipperslapper" annotationSelect={() => openNote("060045slipperslapper")} activeAnnotationId={currentNoteId}> woman's
+        slipperslappers</Annotation>. After him, freshfound, the hue and cry zigzag gallops
         in hot pursuit of follow my leader: 65 C 66 C, night watch, John Henry
         Menton, Wisdom Hely, V. B. Dillon, Councillor Nannetti, Alexander Keyes,
         Larry O'Rourke, Joe Cuffe, Mrs O'Dowd, Pisser Burke, The Nameless One,
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060015riordan")}>Mrs Riordan</button>, The Citizen, Garryowen, Whodoyoucallhim, Strangeface,</i>
+        <Annotation annotationId="060015riordan" annotationSelect={() => openNote("060015riordan")} activeAnnotationId={currentNoteId}>Mrs Riordan</Annotation>, The Citizen, Garryowen, Whodoyoucallhim, Strangeface,</i>
         <span data-edition="ed1932" data-page="504"> </span><i>Fellowthatslike, Sawhimbefore, Chapwithawen, Chris Callinan, Sir
         Charles Cameron, Benjamin Dollard, Lenehan, Bartell d'Arcy, Joe Hynes,
         red Murray, editor Brayden, T. M. Healy, Mr Justice Fitzgibbon, John
         Howard Parnell, the reverend Tinned Salmon, Professor Joly, Mrs
         Breen, Denis Breen, Theodore Purefoy, Mina Purefoy, the Westland
-        Row postmistress, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040079mcoy")}>C. P. M'Coy</button>, friend of Lyons, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050028hoppy")}>Hoppy Holohan</button>,
+        Row postmistress, <Annotation annotationId="040079mcoy" annotationSelect={() => openNote("040079mcoy")} activeAnnotationId={currentNoteId}>C. P. M'Coy</Annotation>, friend of Lyons, <Annotation annotationId="050028hoppy" annotationSelect={() => openNote("050028hoppy")} activeAnnotationId={currentNoteId}>Hoppy Holohan</Annotation>,
         maninthestreet, othermaninthestreet, Footballboots, pugnosed driver,
         rich protestant lady, Davy Byrne, Mrs Ellen M'Guinness,</i> <span data-edition="ed1986" data-page="478"> </span><i>Mrs Joe
         Gallaher, </i>
         <span data-edition="ed1939" data-page="412"> </span>
         <i>George Lidwell, Jimmy Henry on corns, Superintendent Laracy,
-        Father Cowley, Crofton out of the Collector General's, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060037dandawson")}>Dan Dawson</button>,
-        dental surgeon Bloom with tweezers, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050038bobdoran")}>Mrs Bob Doran</button>, Mrs Kennefick, Mrs
+        Father Cowley, Crofton out of the Collector General's, <Annotation annotationId="060037dandawson" annotationSelect={() => openNote("060037dandawson")} activeAnnotationId={currentNoteId}>Dan Dawson</Annotation>,
+        dental surgeon Bloom with tweezers, <Annotation annotationId="050038bobdoran" annotationSelect={() => openNote("050038bobdoran")} activeAnnotationId={currentNoteId}>Mrs Bob Doran</Annotation>, Mrs Kennefick, Mrs
         Wyse Nolan, John Wyse Nolan, handsomemarriedwomanrubbedagainstwidebehindinClonskeatram, the bookseller of</i> Sweets of Sin, <i>Miss
         Dubedatandshedidbedad, Mesdames Gerald and Stanislaus Moran of Roebuck,
         the managing clerk of Drimmie's, colonel Hayes, Mastiansky,
@@ -9351,8 +9351,8 @@ const Circe = ({openNote}) => {
         <i>(With elaborate gestures, breathing deeply and slowly.)</i> You
         are my guests. 
         <span data-edition="ed1922" data-page="545"> </span>
-        Uninvited. By virtue of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020079kingedward")}>the fifth of George and seventh
-        of Edward</button>. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010141blamehistory")}>History to blame.</button> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020003daughtersofmemory")}>Fabled by mothers of memory.</button>
+        Uninvited. By virtue of <Annotation annotationId="020079kingedward" annotationSelect={() => openNote("020079kingedward")} activeAnnotationId={currentNoteId}>the fifth of George and seventh
+        of Edward</Annotation>. <Annotation annotationId="010141blamehistory" annotationSelect={() => openNote("010141blamehistory")} activeAnnotationId={currentNoteId}>History to blame.</Annotation> <Annotation annotationId="020003daughtersofmemory" annotationSelect={() => openNote("020003daughtersofmemory")} activeAnnotationId={currentNoteId}>Fabled by mothers of memory.</Annotation>
       </p>
       <p>
         PRIVATE CARR
@@ -9423,8 +9423,8 @@ const Circe = ({openNote}) => {
         LORD TENNYSON
       </p>
       <p>
-        <i>(Gentleman poet in Union Jack blazer and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050041cricket")}>cricket
-        flannels</button>, bareheaded, flowingbearded.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030088tennyson")}>Theirs not to reason why.</button>
+        <i>(Gentleman poet in Union Jack blazer and <Annotation annotationId="050041cricket" annotationSelect={() => openNote("050041cricket")} activeAnnotationId={currentNoteId}>cricket
+        flannels</Annotation>, bareheaded, flowingbearded.)</i> <Annotation annotationId="030088tennyson" annotationSelect={() => openNote("030088tennyson")} activeAnnotationId={currentNoteId}>Theirs not to reason why.</Annotation>
       </p>
       <p>
         PRIVATE COMPTON
@@ -9518,7 +9518,7 @@ const Circe = ({openNote}) => {
         forgotten the trick. Let us sit down somewhere and discuss. Struggle
         for life is the law of existence but human philirenists, notably the
         tsar and the king of England, have invented arbitration. <i>(He taps his
-        brow.)</i> But <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030141masterslave")}>in here it is</button> I must kill <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010114stateandchurch")}>the priest and the king</button>.
+        brow.)</i> But <Annotation annotationId="030141masterslave" annotationSelect={() => openNote("030141masterslave")} activeAnnotationId={currentNoteId}>in here it is</Annotation> I must kill <Annotation annotationId="010114stateandchurch" annotationSelect={() => openNote("010114stateandchurch")} activeAnnotationId={currentNoteId}>the priest and the king</Annotation>.
       </p>
       <span data-edition="ed1961" data-page="589"> </span>
       <p>
@@ -9557,14 +9557,14 @@ const Circe = ({openNote}) => {
       </p>
       <span data-edition="ed1986" data-page="481"> </span><span data-edition="ed1932" data-page="507"> </span>
       <p>
-        <i>(<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020079kingedward")}>Edward the Seventh appears</button> in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030024archway")}>an archway</button>. He wears a white jersey on
+        <i>(<Annotation annotationId="020079kingedward" annotationSelect={() => openNote("020079kingedward")} activeAnnotationId={currentNoteId}>Edward the Seventh appears</Annotation> in <Annotation annotationId="030024archway" annotationSelect={() => openNote("030024archway")} activeAnnotationId={currentNoteId}>an archway</Annotation>. He wears a white jersey on
         which an image of the Sacred Heart is stitched with the insignia of
         Garter and Thistle, Golden Fleece, Elephant of Denmark, Skinner's
         and Probyn's horse, Lincoln's Inns' bencher and ancient and honourable
-        artillery company of Massachusetts. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080017grahamlemons")}>He sucks a red jujube.</button> He is robed
+        artillery company of Massachusetts. <Annotation annotationId="080017grahamlemons" annotationSelect={() => openNote("080017grahamlemons")} activeAnnotationId={currentNoteId}>He sucks a red jujube.</Annotation> He is robed
         as a grand elect perfect and sublime mason with trowel and apron,
-        marked</i> made in Germany. <i>In his left hand he holds</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170005dustbuckets")}><i>a plasterer's bucket
-        on which is printed</i> Défense d'uriner.</button> <i>A roar of welcome greets him.)</i>
+        marked</i> made in Germany. <i>In his left hand he holds</i> <Annotation annotationId="170005dustbuckets" annotationSelect={() => openNote("170005dustbuckets")} activeAnnotationId={currentNoteId}><i>a plasterer's bucket
+        on which is printed</i> Défense d'uriner.</Annotation> <i>A roar of welcome greets him.)</i>
       </p>
       <p>
         EDWARD THE SEVENTH
@@ -9611,8 +9611,8 @@ const Circe = ({openNote}) => {
         face.)</i>
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010110jokingjesus")}>My methods are new and are causing surprise. <br/>
-        To make the blind see I throw dust in their eyes.</button>
+        <Annotation annotationId="010110jokingjesus" annotationSelect={() => openNote("010110jokingjesus")} activeAnnotationId={currentNoteId}>My methods are new and are causing surprise. <br/>
+        To make the blind see I throw dust in their eyes.</Annotation>
       </p>
       <p>
         STEPHEN
@@ -9635,7 +9635,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(To the privates, softly.)</i> He doesn't know what he's saying.
-        Taken a little more than is good for him. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030045absinthe")}>Absinthe. Greeneyed monster.</button> I
+        Taken a little more than is good for him. <Annotation annotationId="030045absinthe" annotationSelect={() => openNote("030045absinthe")} activeAnnotationId={currentNoteId}>Absinthe. Greeneyed monster.</Annotation> I
         know him. He's a gentleman, a poet. It's all right.
       </p>
       <span data-edition="ed1961" data-page="591"> </span>
@@ -9666,33 +9666,33 @@ const Circe = ({openNote}) => {
         I seem to annoy them. Green rag to a bull.
       </p>
       <p>
-        <i>(<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030051kevinegan")}>Kevin Egan of Paris</button> in black Spanish tasselled shirt and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020043corpses")}>peep-o'-day
-        boy's hat</button> signs to Stephen.)</i>
+        <i>(<Annotation annotationId="030051kevinegan" annotationSelect={() => openNote("030051kevinegan")} activeAnnotationId={currentNoteId}>Kevin Egan of Paris</Annotation> in black Spanish tasselled shirt and <Annotation annotationId="020043corpses" annotationSelect={() => openNote("020043corpses")} activeAnnotationId={currentNoteId}>peep-o'-day
+        boy's hat</Annotation> signs to Stephen.)</i>
       </p>
       <p>
         KEVIN EGAN
       </p>
       <p>
-        H'lo! <i>Bonjour!</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030022chaussons")}>The <i>vieille ogresse</i> with the <i>dents
-        jaunes</i>.</button>
+        H'lo! <i>Bonjour!</i> <Annotation annotationId="030022chaussons" annotationSelect={() => openNote("030022chaussons")} activeAnnotationId={currentNoteId}>The <i>vieille ogresse</i> with the <i>dents
+        jaunes</i>.</Annotation>
       </p>
       <p>
-        <i>(Patrice Egan peeps from behind, his <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030005lapped")}>rabbitface</button> nibbling a quince
+        <i>(Patrice Egan peeps from behind, his <Annotation annotationId="030005lapped" annotationSelect={() => openNote("030005lapped")} activeAnnotationId={currentNoteId}>rabbitface</Annotation> nibbling a quince
         leaf.)</i>
       </p>
       <p>
         PATRICE
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030005lapped")}><i>Socialiste!</i></button>
+        <Annotation annotationId="030005lapped" annotationSelect={() => openNote("030005lapped")} activeAnnotationId={currentNoteId}><i>Socialiste!</i></Annotation>
       </p>
       <span data-edition="ed1939" data-page="416"> </span>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030027wildgoose")}>DON EMILE PATRIZIO FRANZ RUPERT POPE HENNESSY</button>
+        <Annotation annotationId="030027wildgoose" annotationSelect={() => openNote("030027wildgoose")} activeAnnotationId={currentNoteId}>DON EMILE PATRIZIO FRANZ RUPERT POPE HENNESSY</Annotation>
       </p>
       <p>
-        <i><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030027wildgoose")}>(In medieval hauberk,
-        two wild geese volant on his helm,</button> with noble indignation points a
+        <i><Annotation annotationId="030027wildgoose" annotationSelect={() => openNote("030027wildgoose")} activeAnnotationId={currentNoteId}>(In medieval hauberk,
+        two wild geese volant on his helm,</Annotation> with noble indignation points a
         mailed hand against the privates.)</i> Werf those eykes to footboden, big
         grand porcos of johnyellows todos covered of gravy!
       </p>
@@ -9735,7 +9735,7 @@ const Circe = ({openNote}) => {
         A ROUGH
       </p>
       <p>
-        <i>(Laughs.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080021joechamberlain")}>Ay! Hands up to De Wet.</button>
+        <i>(Laughs.)</i> <Annotation annotationId="080021joechamberlain" annotationSelect={() => openNote("080021joechamberlain")} activeAnnotationId={currentNoteId}>Ay! Hands up to De Wet.</Annotation>
       </p>
       <p>
         THE CITIZEN
@@ -9751,15 +9751,15 @@ const Circe = ({openNote}) => {
         That hanged our Irish leaders.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>THE CROPPY BOY</button>
+        <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>THE CROPPY BOY</Annotation>
       </p>
       <p>
         <i>(The ropenoose round his neck, gripes in his issuing
         bowels with both hands.)</i>
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>I bear no hate to a living thing, <br/>
-        But I love my country beyond the king.</button>
+        <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>I bear no hate to a living thing, <br/>
+        But I love my country beyond the king.</Annotation>
       </p>
       <p>
         RUMBOLD, DEMON BARBER
@@ -9813,9 +9813,9 @@ const Circe = ({openNote}) => {
         sings with soft contentment.)</i>
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010029coronation")}>On coronation day, on coronation day, <br/>
+        <Annotation annotationId="010029coronation" annotationSelect={() => openNote("010029coronation")} activeAnnotationId={currentNoteId}>On coronation day, on coronation day, <br/>
         O, won't we have a merry time, <br/>
-        Drinking whisky, beer and wine!</button>
+        Drinking whisky, beer and wine!</Annotation>
       </p>
       <p>
         PRIVATE CARR
@@ -9849,7 +9849,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(The women's heads coalesce. Old Gummy Granny in sugarloaf hat appears
-        seated on a toadstool, the deathflower of the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020039famine")}>potato blight</button> on her
+        seated on a toadstool, the deathflower of the <Annotation annotationId="020039famine" annotationSelect={() => openNote("020039famine")} activeAnnotationId={currentNoteId}>potato blight</Annotation> on her
         breast.)</i>
       </p>
       <span data-edition="ed1986" data-page="485"> </span>
@@ -9857,19 +9857,19 @@ const Circe = ({openNote}) => {
         STEPHEN
       </p>
       <p>
-        Aha! I know you, gammer! Hamlet, revenge! <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010156crazyqueen")}>The old sow that eats
-        her farrow!</button>
+        Aha! I know you, gammer! Hamlet, revenge! <Annotation annotationId="010156crazyqueen" annotationSelect={() => openNote("010156crazyqueen")} activeAnnotationId={currentNoteId}>The old sow that eats
+        her farrow!</Annotation>
       </p>
       <p>
         OLD GUMMY GRANNY
       </p>
       <p>
         <i>(Rocking to and fro.)</i> Ireland's sweetheart, the king
-        of Spain's daughter, alanna. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010024stranger")}>Strangers in my house</button>, bad manners to them!
+        of Spain's daughter, alanna. <Annotation annotationId="010024stranger" annotationSelect={() => openNote("010024stranger")} activeAnnotationId={currentNoteId}>Strangers in my house</Annotation>, bad manners to them!
         <i>(She keens with banshee</i> 
         <span data-edition="ed1922" data-page="552"> </span>
-        <i>woe.)</i> Ochone! Ochone! <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010090shanvanvocht")}>Silk of the kine! <i>(She
-        wails.)</i> You met with poor old Ireland</button> and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030106nappertandy")}>how does she stand?</button>
+        <i>woe.)</i> Ochone! Ochone! <Annotation annotationId="010090shanvanvocht" annotationSelect={() => openNote("010090shanvanvocht")} activeAnnotationId={currentNoteId}>Silk of the kine! <i>(She
+        wails.)</i> You met with poor old Ireland</Annotation> and <Annotation annotationId="030106nappertandy" annotationSelect={() => openNote("030106nappertandy")} activeAnnotationId={currentNoteId}>how does she stand?</Annotation>
       </p>
       <span data-edition="ed1939" data-page="418"> </span>
       <p>
@@ -9934,8 +9934,8 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        <i>(To the redcoats.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030118royaldublins")}>We fought for you in South Africa, Irish
-        missile troops. Isn't that history? Royal Dublin Fusiliers.</button> Honoured by
+        <i>(To the redcoats.)</i> <Annotation annotationId="030118royaldublins" annotationSelect={() => openNote("030118royaldublins")} activeAnnotationId={currentNoteId}>We fought for you in South Africa, Irish
+        missile troops. Isn't that history? Royal Dublin Fusiliers.</Annotation> Honoured by
         our monarch.
       </p>
       <p>
@@ -9947,7 +9947,7 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(Casqued halberdiers in armour thrust forward a pentice of gutted
-        spearpoints. Major Tweedy, moustached like <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010077pantomime")}>Turko the terrible</button>, in</i>
+        spearpoints. Major Tweedy, moustached like <Annotation annotationId="010077pantomime" annotationSelect={() => openNote("010077pantomime")} activeAnnotationId={currentNoteId}>Turko the terrible</Annotation>, in</i>
         <span data-edition="ed1986" data-page="486"> </span><i>bearskin</i> 
         <span data-edition="ed1922" data-page="553"> </span>
         <i>cap with hackleplume and accoutrements, with epaulettes, gilt
@@ -10009,8 +10009,8 @@ const Circe = ({openNote}) => {
         STEPHEN
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020059oldengland")}>The harlot's cry from street to street <br/>
-        Shall weave Old Ireland's windingsheet.</button>
+        <Annotation annotationId="020059oldengland" annotationSelect={() => openNote("020059oldengland")} activeAnnotationId={currentNoteId}>The harlot's cry from street to street <br/>
+        Shall weave Old Ireland's windingsheet.</Annotation>
       </p>
       <span data-edition="ed1986" data-page="487"> </span>
       <p>
@@ -10044,8 +10044,8 @@ const Circe = ({openNote}) => {
       <p>
         <i>(Ecstatically, to Cissy Caffrey.)</i>
       </p>
-      <p><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030079strollingmort")}>White thy fambles, red thy gan <br/>
-        And thy quarrons dainty is.</button>
+      <p><Annotation annotationId="030079strollingmort" annotationSelect={() => openNote("030079strollingmort")} activeAnnotationId={currentNoteId}>White thy fambles, red thy gan <br/>
+        And thy quarrons dainty is.</Annotation>
       </p>
       <p>
         VOICES
@@ -10071,7 +10071,7 @@ const Circe = ({openNote}) => {
         cormorants, vultures, goshawks, climbing woodcocks, peregrines, merlins,
         blackgrouse,</i> <span data-edition="ed1932" data-page="513"> </span><i>sea eagles, gulls, albatrosses, barnacle geese. The
         midnight sun is darkened. The earth trembles. The dead of Dublin
-        from <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060035prospect")}>Prospect</button> and Mount Jerome in white sheepskin overcoats and black
+        from <Annotation annotationId="060035prospect" annotationSelect={() => openNote("060035prospect")} activeAnnotationId={currentNoteId}>Prospect</Annotation> and Mount Jerome in white sheepskin overcoats and black
         goatfell cloaks arise and appear to many. A chasm opens with a noiseless
         yawn. Tom Rochford, winner, in athlete's singlet and breeches, arrives
         at the head of the national hurdle handicap and leaps into the void.
@@ -10079,24 +10079,24 @@ const Circe = ({openNote}) => {
         spring from the brink. Their bodies plunge. Factory lasses with fancy
         clothes toss redhot Yorkshire baraabombs. Society ladies lift their
         skirts above their heads to protect themselves. Laughing witches in red
-        cutty sarks ride through the air on broomsticks. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("090004quakerlibrarian")}>Quakerlyster</button> plasters
+        cutty sarks ride through the air on broomsticks. <Annotation annotationId="090004quakerlibrarian" annotationSelect={() => openNote("090004quakerlibrarian")} activeAnnotationId={currentNoteId}>Quakerlyster</Annotation> plasters
         blisters. It rains dragons' teeth.</i> <span data-edition="ed1986" data-page="488"> </span><i>Armed heroes spring up from furrows.
         They exchange</i> <span data-edition="ed1961" data-page="598"> </span><i>in amity</i> 
         <span data-edition="ed1922" data-page="555"> </span>
         <i>the pass of knights of the red cross and fight
-        duels with cavalry sabres: Wolfe Tone against Henry Grattan, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040031smithobrien")}>Smith
-        O'Brien</button> against <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020038oconnell")}>Daniel O'Connell</button>, Michael Davitt against Isaac Butt,
-        Justin M'Carthy against Parnell, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030037griffith")}>Arthur Griffith</button> against John Redmond,
+        duels with cavalry sabres: Wolfe Tone against Henry Grattan, <Annotation annotationId="040031smithobrien" annotationSelect={() => openNote("040031smithobrien")} activeAnnotationId={currentNoteId}>Smith
+        O'Brien</Annotation> against <Annotation annotationId="020038oconnell" annotationSelect={() => openNote("020038oconnell")} activeAnnotationId={currentNoteId}>Daniel O'Connell</Annotation>, Michael Davitt against Isaac Butt,
+        Justin M'Carthy against Parnell, <Annotation annotationId="030037griffith" annotationSelect={() => openNote("030037griffith")} activeAnnotationId={currentNoteId}>Arthur Griffith</Annotation> against John Redmond,
         John O'Leary against Lear O'Johnny, Lord Edward Fitzgerald against Lord
         Gerald Fitzedward, The O'Donoghue of the Glens against The Glens of The
-        O'Donoghue. On an eminence, the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010065omphalos")}>centre of the earth</button>, rises the field altar
+        O'Donoghue. On an eminence, the <Annotation annotationId="010065omphalos" annotationSelect={() => openNote("010065omphalos")} activeAnnotationId={currentNoteId}>centre of the earth</Annotation>, rises the field altar
         of Saint Barbara. Black candles rise from its gospel and epistle horns.
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010085towerlivingroom")}>From the high barbacans of the tower two shafts of light fall on the
-        smokepalled altarstone.</button> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010014genuinechristine")}>On the altarstone Mrs Mina Purefoy, goddess of
-        unreason, lies, naked, fettered, a chalice resting on her swollen belly.</button>
-        Father <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010021malachi")}>Malachi</button> O'Flynn in a lace petticoat and reversed chasuble, his
+        <Annotation annotationId="010085towerlivingroom" annotationSelect={() => openNote("010085towerlivingroom")} activeAnnotationId={currentNoteId}>From the high barbacans of the tower two shafts of light fall on the
+        smokepalled altarstone.</Annotation> <Annotation annotationId="010014genuinechristine" annotationSelect={() => openNote("010014genuinechristine")} activeAnnotationId={currentNoteId}>On the altarstone Mrs Mina Purefoy, goddess of
+        unreason, lies, naked, fettered, a chalice resting on her swollen belly.</Annotation>
+        Father <Annotation annotationId="010021malachi" annotationSelect={() => openNote("010021malachi")} activeAnnotationId={currentNoteId}>Malachi</Annotation> O'Flynn in a lace petticoat and reversed chasuble, his
         two left feet back to the front, celebrates camp mass. The Reverend Mr
-        Hugh C <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010023haines")}>Haines Love</button> M. A. in a plain cassock and mortarboard, his head
+        Hugh C <Annotation annotationId="010023haines" annotationSelect={() => openNote("010023haines")} activeAnnotationId={currentNoteId}>Haines Love</Annotation> M. A. in a plain cassock and mortarboard, his head
         and collar back to the front, holds over the celebrant's head an open
         umbrella.)</i>
       </p>
@@ -10104,20 +10104,20 @@ const Circe = ({openNote}) => {
         FATHER MALACHI O'FLYNN
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010006introibo")}><i>Introibo ad altare diaboli.</i></button>
+        <Annotation annotationId="010006introibo" annotationSelect={() => openNote("010006introibo")} activeAnnotationId={currentNoteId}><i>Introibo ad altare diaboli.</i></Annotation>
       </p>
       <p>
         THE REVEREND MR HAINES LOVE
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010006introibo")}>To the devil which hath made glad my young days.</button>
+        <Annotation annotationId="010006introibo" annotationSelect={() => openNote("010006introibo")} activeAnnotationId={currentNoteId}>To the devil which hath made glad my young days.</Annotation>
       </p>
       <p>
         FATHER MALACHI O'FLYNN
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010014genuinechristine")}><i>(Takes from the chalice and elevates a
-        blooddripping host.) Corpus meum.</i></button>
+        <Annotation annotationId="010014genuinechristine" annotationSelect={() => openNote("010014genuinechristine")} activeAnnotationId={currentNoteId}><i>(Takes from the chalice and elevates a
+        blooddripping host.) Corpus meum.</i></Annotation>
       </p>
       <p>
         THE REVEREND MR HAINES LOVE
@@ -10141,7 +10141,7 @@ const Circe = ({openNote}) => {
         ADONAI
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010047dogsbody")}>Dooooooooooog!</button>
+        <Annotation annotationId="010047dogsbody" annotationSelect={() => openNote("010047dogsbody")} activeAnnotationId={currentNoteId}>Dooooooooooog!</Annotation>
       </p>
       <span data-edition="ed1939" data-page="421"> </span>
       <span data-edition="ed1922" data-page="556"> </span>
@@ -10394,7 +10394,7 @@ const Circe = ({openNote}) => {
         BLOOM
       </p>
       <p>
-        <i>(Peering over the crowd.)</i> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050013jauntingcar")}>I just see a car there.</button> If you give me
+        <i>(Peering over the crowd.)</i> <Annotation annotationId="050013jauntingcar" annotationSelect={() => openNote("050013jauntingcar")} activeAnnotationId={currentNoteId}>I just see a car there.</Annotation> If you give me
         a hand a second, sergeant...
       </p>
       <span data-edition="ed1986" data-page="492"> </span>
@@ -10656,8 +10656,8 @@ const Circe = ({openNote}) => {
         Good night. I'll just wait and take him along in a few...
       </p>
       <p>
-        <i>(Corny Kelleher <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050013jauntingcar")}>returns to the outside car and mounts it. The horse
-        harness jingles.</button>)</i>
+        <i>(Corny Kelleher <Annotation annotationId="050013jauntingcar" annotationSelect={() => openNote("050013jauntingcar")} activeAnnotationId={currentNoteId}>returns to the outside car and mounts it. The horse
+        harness jingles.</Annotation>)</i>
       </p>
       <p>
         CORNY KELLEHER
@@ -10702,11 +10702,11 @@ const Circe = ({openNote}) => {
         STEPHEN
       </p>
       <p>
-        <i>(Groans.)</i> Who? <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030149vampire")}>Black panther. Vampire.</button> <i>(He sighs and
+        <i>(Groans.)</i> Who? <Annotation annotationId="030149vampire" annotationSelect={() => openNote("030149vampire")} activeAnnotationId={currentNoteId}>Black panther. Vampire.</Annotation> <i>(He sighs and
         stretches himself, then murmurs thickly with prolonged vowels.)</i>
       </p>
-      <p><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010072bittermystery")}>Who... drive... Fergus now <br/>
-        And pierce... wood's woven shade?...</button>
+      <p><Annotation annotationId="010072bittermystery" annotationSelect={() => openNote("010072bittermystery")} activeAnnotationId={currentNoteId}>Who... drive... Fergus now <br/>
+        And pierce... wood's woven shade?...</Annotation>
       </p>
       <p>
         <i>(He turns on his left side, sighing, doubling himself together.)</i>
@@ -10745,9 +10745,9 @@ const Circe = ({openNote}) => {
       <p>
         <i>(Communes with the night.)</i> Face reminds me of his poor mother.
         In the shady wood. The deep white breast. Ferguson, I think I caught. A
-        girl. Some girl. Best thing could happen him. <i>(He murmurs.)</i>... <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080026blackandwhite")}>swear
+        girl. Some girl. Best thing could happen him. <i>(He murmurs.)</i>... <Annotation annotationId="080026blackandwhite" annotationSelect={() => openNote("080026blackandwhite")} activeAnnotationId={currentNoteId}>swear
         that I will always hail, ever conceal, never reveal, any part or parts,
-        art or arts...</button> <i>(He murmurs.)</i>... in the rough sands of the sea... a
+        art or arts...</Annotation> <i>(He murmurs.)</i>... in the rough sands of the sea... a
         cabletow's length from the shore... where the tide ebbs... and flows
         ...
       </p>
@@ -10771,8 +10771,8 @@ const Circe = ({openNote}) => {
       </p>
       <p>
         <i>(Gazes, unseeing, into Bloom's eyes and goes on reading, kissing,
-        smiling. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020080mauve")}>He has a delicate mauve face.</button> On his suit he has diamond and
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040021ruby")}>ruby buttons.</button> In his free left hand he holds a slim ivory cane with a
+        smiling. <Annotation annotationId="020080mauve" annotationSelect={() => openNote("020080mauve")} activeAnnotationId={currentNoteId}>He has a delicate mauve face.</Annotation> On his suit he has diamond and
+        <Annotation annotationId="040021ruby" annotationSelect={() => openNote("040021ruby")} activeAnnotationId={currentNoteId}>ruby buttons.</Annotation> In his free left hand he holds a slim ivory cane with a
         violet bowknot. A white lambkin peeps out of his waistcoat pocket.)</i>
       </p>
       <br/><br/><br/>

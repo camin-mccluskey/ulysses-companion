@@ -1,14 +1,17 @@
-const Penelope = ({openNote}) => {
+import Annotation from "../../components/Annotation";
+
+
+const Penelope = ({openNote, currentNoteId}) => {
   return (
     <div>
       <p></p>
       <center><font size="+2">[18]</font></center>
       <br/>
-      <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180005yesyes")}>Yes</button> because he never did a thing like that before as ask to get his
-      breakfast in bed with a couple of eggs since the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020066cityarms")}>City Arms hotel</button>
+      <Annotation annotationId="180005yesyes" annotationSelect={() => openNote("180005yesyes")} activeAnnotationId={currentNoteId}>Yes</Annotation> because he never did a thing like that before as ask to get his
+      breakfast in bed with a couple of eggs since the <Annotation annotationId="020066cityarms" annotationSelect={() => openNote("020066cityarms")} activeAnnotationId={currentNoteId}>City Arms hotel</Annotation>
       when he used to be pretending to be laid up with a sick voice doing his
-      highness to make himself interesting for that old faggot <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060015riordan")}>Mrs Riordan</button>
-      that he thought he had a great leg of and she <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010019money")}>never left us a farthing</button>
+      highness to make himself interesting for that old faggot <Annotation annotationId="060015riordan" annotationSelect={() => openNote("060015riordan")} activeAnnotationId={currentNoteId}>Mrs Riordan</Annotation>
+      that he thought he had a great leg of and she <Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}>never left us a farthing</Annotation>
       all for masses for herself and her soul greatest miser ever was actually
       afraid to lay out 4d for her methylated spirit telling me all her
       ailments she had too much old chat in her about politics and earthquakes
@@ -19,16 +22,16 @@ const Penelope = ({openNote}) => {
       she <span data-edition="ed1932" data-page="640"></span>didnt want us to cover our faces but she was a welleducated woman
       certainly and her gabby talk about Mr Riordan here and Mr Riordan there
       I suppose he was glad to get shut of her and her dog smelling my fur and
-      always edging to get up under my petticoats especially then <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080008parallax")}>still I like
-      that in him</button> polite to old women like that and waiters and beggars too
+      always edging to get up under my petticoats especially then <Annotation annotationId="080008parallax" annotationSelect={() => openNote("080008parallax")} activeAnnotationId={currentNoteId}>still I like
+      that in him</Annotation> polite to old women like that and waiters and beggars too
       hes not proud out of nothing but not always if ever he got anything
       really serious the matter with him its much better for them to go into
       a hospital where everything is clean but I suppose Id have to dring it
       into him for a month yes and then wed have a hospital nurse next thing
       on the carpet have him staying there till they throw him out or a nun
-      maybe like <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010127photogirl")}>the smutty photo he has</button> shes as much a nun as Im not yes
+      maybe like <Annotation annotationId="010127photogirl" annotationSelect={() => openNote("010127photogirl")} activeAnnotationId={currentNoteId}>the smutty photo he has</Annotation> shes as much a nun as Im not yes
       because theyre so weak and puling when theyre sick they want a woman
-      to get well <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040040bluebottle")}>if his nose bleeds youd think it was O tragic</button> and that
+      to get well <Annotation annotationId="040040bluebottle" annotationSelect={() => openNote("040040bluebottle")} activeAnnotationId={currentNoteId}>if his nose bleeds youd think it was O tragic</Annotation> and that
       dyinglooking one off the south circular when he sprained his foot at
       the choir party at the sugarloaf Mountain the day I wore that dress
       Miss Stack bringing him flowers the worst old ones she could find at the
@@ -46,8 +49,8 @@ const Penelope = ({openNote}) => {
       night women if it was <span data-edition="ed1961" data-page="738"></span>down there he was really and the hotel story he
       made up a pack of lies to hide it planning it Hynes kept me who did I
       meet ah yes I met do you remember Menton and who else who let me see
-      <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>that big babbyface I saw him and he not long married flirting with a
-      young girl</button> at Pooles Myriorama and turned my back on him when 
+      <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>that big babbyface I saw him and he not long married flirting with a
+      young girl</Annotation> at Pooles Myriorama and turned my back on him when 
       <span data-edition="ed1939" data-page="521"> </span>
       he slinked
       out looking quite conscious what harm but he had the impudence to make
@@ -93,8 +96,8 @@ const Penelope = ({openNote}) => {
       great squeeze going along by the Tolka in my hand there steals another
       I just pressed the back of his like that with my thumb to squeeze back
       singing the young May moon shes beaming love <span data-edition="ed1986" data-page="609"></span>because he has an idea
-      about him and me hes not such a fool <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110002atfourshe")}>he said Im dining out and going to
-      the Gaiety</button> though Im not going to give him the satisfaction in any case
+      about him and me hes not such a fool <Annotation annotationId="110002atfourshe" annotationSelect={() => openNote("110002atfourshe")} activeAnnotationId={currentNoteId}>he said Im dining out and going to
+      the Gaiety</Annotation> though Im not going to give him the satisfaction in any case
       God knows hes a change in a way not to be always and ever wearing the
       same old hat unless I paid some nicelooking boy to do it since I cant do
       it myself a young boy would like me Id confuse him a little alone with
@@ -115,8 +118,8 @@ const Penelope = ({openNote}) => {
       age of his life simply ruination for any woman and no satisfaction in it
       pretending to like it till he comes and then finish it off myself anyway
       and it makes your lips pale anyhow its done now once and for all with
-      all the talk of the world about it people make <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180006lordbyron")}>its only the first time
-      after that its just the ordinary do it and think no more about it</button> why
+      all the talk of the world about it people make <Annotation annotationId="180006lordbyron" annotationSelect={() => openNote("180006lordbyron")} activeAnnotationId={currentNoteId}>its only the first time
+      after that its just the ordinary do it and think no more about it</Annotation> why
       cant you kiss a man without going and marrying him first you sometimes
       love to wildly when you feel that way so nice all 
       <span data-edition="ed1922" data-page="692"></span>
@@ -124,7 +127,7 @@ const Penelope = ({openNote}) => {
       yourself I wish some man or other would take me sometime when hes there
       and kiss me in his arms theres nothing like a kiss long and hot down to
       your soul <span data-edition="ed1961" data-page="740"></span>almost paralyses you then I hate that confession when I used
-      to go to <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>Father Corrigan he touched me father</button> and what harm if he did
+      to go to <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>Father Corrigan he touched me father</Annotation> and what harm if he did
       where and I said on the canal bank like a fool but whereabouts on your
       person my child on the leg behind high up was it yes rather high up was
       it where you sit down yes O Lord couldnt he say bottom right out and
@@ -170,10 +173,10 @@ const Penelope = ({openNote}) => {
       call it was going to burst though his nose is not so big after I took
       off all my things with the blinds down after my hours dressing and
       perfuming and combing it like iron or some kind of a thick crowbar
-      standing all the time <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060020redbank")}>he must have eaten oysters</button> I think a few dozen <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080030cenarteco")}>he
+      standing all the time <Annotation annotationId="060020redbank" annotationSelect={() => openNote("060020redbank")} activeAnnotationId={currentNoteId}>he must have eaten oysters</Annotation> I think a few dozen <Annotation annotationId="080030cenarteco" annotationSelect={() => openNote("080030cenarteco")} activeAnnotationId={currentNoteId}>he
       was in great singing voice no I never in all my life felt anyone had
       one the size of that to make you feel full up he must have eaten a whole
-      sheep after</button> whats the idea making us like that with a big hole in the
+      sheep after</Annotation> whats the idea making us like that with a big hole in the
       middle of us or like a Stallion driving it up into you because thats all
       they want out of you with that determined vicious look in his eye I had
       to halfshut my eyes still he hasnt such a tremendous amount of spunk in
@@ -210,7 +213,7 @@ const Penelope = ({openNote}) => {
       <span data-edition="ed1922" data-page="694"></span>
       because he
       used to be a bit on the jealous side whenever he asked who are you going
-      to and I said over to Floey and he made me the present of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180006lordbyron")}>Byrons poems</button>
+      to and I said over to Floey and he made me the present of <Annotation annotationId="180006lordbyron" annotationSelect={() => openNote("180006lordbyron")} activeAnnotationId={currentNoteId}>Byrons poems</Annotation>
       and the three pairs of gloves so that finished that I could quite easily
       get him to make it up any time I know how Id even supposing he got in
       with her again and was going out to see her somewhere Id know if he
@@ -237,8 +240,8 @@ const Penelope = ({openNote}) => {
       thick when hes there they know by his sly eye blinking a bit putting on
       the indifferent when they come out with something the kind he is what
       spoils him I dont wonder in the least because he was very handsome at
-      that time <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180006lordbyron")}>trying to look like lord Byron I said I liked though he
-      was too beautiful for a man</button> and he was a little before we got engaged
+      that time <Annotation annotationId="180006lordbyron" annotationSelect={() => openNote("180006lordbyron")} activeAnnotationId={currentNoteId}>trying to look like lord Byron I said I liked though he
+      was too beautiful for a man</Annotation> and he was a little before we got engaged
       afterwards though she didnt like it so much the day I was in fits of
       laughing with the giggles I couldnt stop <span data-edition="ed1961" data-page="743"></span>about all my hairpins falling
       out one after another with the mass of hair I had youre always in great
@@ -258,8 +261,8 @@ const Penelope = ({openNote}) => {
       any moment what a man well its not the one way everyone goes mad Poldy
       anyhow whatever he does always wipes his feet on the mat when he comes
       in wet or shine and always blacks his own boots too and he always takes
-      off his hat when he comes up in the street like then and now hes <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080010upup")}>going
-      about in his slippers to look for £10000 for a postcard up up</button>
+      off his hat when he comes up in the street like then and now hes <Annotation annotationId="080010upup" annotationSelect={() => openNote("080010upup")} activeAnnotationId={currentNoteId}>going
+      about in his slippers to look for £10000 for a postcard up up</Annotation>
       O Sweetheart May wouldnt a thing like that simply bore you stiff to
       extinction actually too stupid even to take his boots off now what
       could you make of a man like that Id rather die 20 times over than marry
@@ -289,7 +292,7 @@ const Penelope = ({openNote}) => {
         he made me buy takes you half an hour to let them down wetting all
         myself always with some brandnew fad every other week such a long one I
         did I forgot my suede gloves on the seat behind that I never got after
-        some robber of a woman and he wanted me to put it in the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080012irishtimes")}>Irish times</button>
+        some robber of a woman and he wanted me to put it in the <Annotation annotationId="080012irishtimes" annotationSelect={() => openNote("080012irishtimes")} activeAnnotationId={currentNoteId}>Irish times</Annotation>
         lost in the ladies lavatory D B C Dame street 
         <span data-edition="ed1922" data-page="696"></span>
         finder return to Mrs
@@ -300,10 +303,10 @@ const Penelope = ({openNote}) => {
         that are too tight to walk in <span data-edition="ed1986" data-page="613"></span>my hand is nice like that if I only had a
         ring with the stone for my month a nice aquamarine Ill stick him for one
         and a gold bracelet I dont like my foot so much still I made him spend
-        once with my foot the night after <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040092professorgoodwin")}>Goodwins botchup of a concert</button> so cold
+        once with my foot the night after <Annotation annotationId="040092professorgoodwin" annotationSelect={() => openNote("040092professorgoodwin")} activeAnnotationId={currentNoteId}>Goodwins botchup of a concert</Annotation> so cold
         and windy it was well we had that rum in the house to mull and the fire
         wasnt black out when he asked to take off my stockings lying on the
-        hearthrug in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040049pleasantoldtimes")}>Lombard street west</button> and another time it was my muddy boots
+        hearthrug in <Annotation annotationId="040049pleasantoldtimes" annotationSelect={() => openNote("040049pleasantoldtimes")} activeAnnotationId={currentNoteId}>Lombard street west</Annotation> and another time it was my muddy boots
         hed like me to walk in all the horses dung I could find but of course
         hes not natural like the rest of the world that I what did he say I
         could give 9 points in 10 to Katty Lanner and beat her what does that
@@ -311,7 +314,7 @@ const Penelope = ({openNote}) => {
         just passed and the man with the curly hair in the Lucan dairy thats so
         polite I think I saw his face before somewhere I noticed him when I was
         tasting the butter so I took my time Bartell dArcy too that he used to
-        make fun of when <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>he commenced kissing me on the choir stairs</button> after I
+        make fun of when <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>he commenced kissing me on the choir stairs</Annotation> after I
         sang Gounods <i>Ave Maria</i> what are we waiting for O my heart kiss me
         straight on the brow and part which is my brown part he was pretty hot
         for all his tinny voice too my low notes he was always raving about if
@@ -336,7 +339,7 @@ const Penelope = ({openNote}) => {
         sun so he could see every atom she had on when he saw me
         from behind following in the rain I saw him before he saw me however
         standing at the corner of the Harolds cross road with a new raincoat on
-        him with the muffler <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050041cricket")}>in the Zingari colours</button> to show off his complexion
+        him with the muffler <Annotation annotationId="050041cricket" annotationSelect={() => openNote("050041cricket")} activeAnnotationId={currentNoteId}>in the Zingari colours</Annotation> to show off his complexion
         and the brown hat looking slyboots 
         <span data-edition="ed1939" data-page="526"> </span>
         as usual what was he doing there
@@ -362,10 +365,10 @@ const Penelope = ({openNote}) => {
         to do everything too quick take all the pleasure out of it and father
         waiting all the <span data-edition="ed1932" data-page="648"></span>time for his dinner he told me to say I left my purse in
         the butchers and had to go back for it what a Deceiver then he <span data-edition="ed1961" data-page="746"></span>wrote me
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050003otherworld")}>that letter with all those words in it</button> how could he have the face to any
+        <Annotation annotationId="050003otherworld" annotationSelect={() => openNote("050003otherworld")} activeAnnotationId={currentNoteId}>that letter with all those words in it</Annotation> how could he have the face to any
         woman after his company manners making it so awkward after when we met
         asking me have I offended you with my eyelids down of course he saw I
-        wasnt he had a few brains not like that other fool <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040041dolphinsbarn")}>Henny Doyle</button> he was
+        wasnt he had a few brains not like that other fool <Annotation annotationId="040041dolphinsbarn" annotationSelect={() => openNote("040041dolphinsbarn")} activeAnnotationId={currentNoteId}>Henny Doyle</Annotation> he was
         always breaking or tearing something in the charades I hate an unlucky
         man and if I knew what it meant of course I had to say no for form sake
         dont understand you I said and wasnt it natural so it is of course
@@ -376,13 +379,13 @@ const Penelope = ({openNote}) => {
         when he sent me the 8 big poppies because mine 
         <span data-edition="ed1922" data-page="698"></span>
         was the 8th then I wrote
-        the night he kissed my heart <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040041dolphinsbarn")}>at Dolphins barn</button> I couldnt describe it
+        the night he kissed my heart <Annotation annotationId="040041dolphinsbarn" annotationSelect={() => openNote("040041dolphinsbarn")} activeAnnotationId={currentNoteId}>at Dolphins barn</Annotation> I couldnt describe it
         simply it makes you feel like nothing on earth but he never knew how to
         embrace well like Gardner I hope hell come on Monday as he said at the
         same time four I hate people who come at all hours answer the door you
         think its the vegetables then its somebody and you all undressed or
-        the door of the filthy sloppy kitchen blows open the day <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>old frostyface
-        Goodwin</button> called about the concert in Lombard street and I just after
+        the door of the filthy sloppy kitchen blows open the day <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>old frostyface
+        Goodwin</Annotation> called about the concert in Lombard street and I just after
         dinner all flushed and tossed with boiling old stew dont look at me
         professor I had to say Im a fright yes but he was a real old gent in his
         way it was impossible to be more respectful nobody to say youre out you
@@ -429,22 +432,22 @@ const Penelope = ({openNote}) => {
         with him that gets you on on the stage the last concert I sang at where
         its over a year ago when was it St Teresas hall Clarendon St little
         chits of missies they have now singing Kathleen Kearney and her like
-        on account of father being in the army and my singing <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("090001absentminded")}>the absentminded
-        beggar</button> and wearing a brooch for Lord Roberts when I had the map of it
+        on account of father being in the army and my singing <Annotation annotationId="090001absentminded" annotationSelect={() => openNote("090001absentminded")} activeAnnotationId={currentNoteId}>the absentminded
+        beggar</Annotation> and wearing a brooch for Lord Roberts when I had the map of it
         all and Poldy not Irish enough was it him managed it this time I wouldnt
         put it past him like he got me on to sing in the <i>Stabat Mater</i> by going
-        around saying he was putting <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040068kindlylight")}>Lead Kindly Light</button> to music I put him up to
-        that till the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010008jesuit")}>jesuits</button> found out he was a freemason thumping the piano
+        around saying he was putting <Annotation annotationId="040068kindlylight" annotationSelect={() => openNote("040068kindlylight")} activeAnnotationId={currentNoteId}>Lead Kindly Light</Annotation> to music I put him up to
+        that till the <Annotation annotationId="010008jesuit" annotationSelect={() => openNote("010008jesuit")} activeAnnotationId={currentNoteId}>jesuits</Annotation> found out he was a freemason thumping the piano
         lead Thou me on copied from some old opera yes and he was going about
         with some of them Sinner Fein lately or whatever they call themselves
-        talking his usual trash and nonsense he says <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030037griffith")}>that little man he showed
-        me without the neck is very intelligent the coming man Griffith is he</button>
+        talking his usual trash and nonsense he says <Annotation annotationId="030037griffith" annotationSelect={() => openNote("030037griffith")} activeAnnotationId={currentNoteId}>that little man he showed
+        me without the neck is very intelligent the coming man Griffith is he</Annotation>
         well he doesnt look it thats all I can say still it must have been him
         he knew there was a boycott I hate the mention of their politics after
-        the war that Pretoria and Ladysmith and Bloemfontein where <span data-edition="ed1961" data-page="748"></span><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010058bloodyswindle")}>Gardner Lieut
-        Stanley G 8th Bn 2nd East Lancs Rgt of enteric fever</button><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010058bloodyswindle")}> he was a lovely
+        the war that Pretoria and Ladysmith and Bloemfontein where <span data-edition="ed1961" data-page="748"></span><Annotation annotationId="010058bloodyswindle" annotationSelect={() => openNote("010058bloodyswindle")} activeAnnotationId={currentNoteId}>Gardner Lieut
+        Stanley G 8th Bn 2nd East Lancs Rgt of enteric fever</Annotation><Annotation annotationId="010058bloodyswindle" annotationSelect={() => openNote("010058bloodyswindle")} activeAnnotationId={currentNoteId}> he was a lovely
         fellow in khaki and just the right height over me Im sure he was brave
-        too he said I was lovely the evening we kissed goodbye </button><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060016canals")}>at the canal lock</button>
+        too he said I was lovely the evening we kissed goodbye </Annotation><Annotation annotationId="060016canals" annotationSelect={() => openNote("060016canals")} activeAnnotationId={currentNoteId}>at the canal lock</Annotation>
         my Irish beauty he was pale with excitement about going <span data-edition="ed1932" data-page="650"></span>away or wed be
         seen from the road he couldnt stand properly and I so hot as I never
         felt they could have made their peace in the beginning or old oom Paul
@@ -459,7 +462,7 @@ const Penelope = ({openNote}) => {
         battles on the 15 acres the Black Watch with their kilts in time at the
         march past the 10th hussars the prince of Wales own or the lancers O the
         lancers theyre grand or the Dublins that won Tugela his father made his
-        money over <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010058bloodyswindle")}>selling the horses for the cavalry</button> well he could buy me a
+        money over <Annotation annotationId="010058bloodyswindle" annotationSelect={() => openNote("010058bloodyswindle")} activeAnnotationId={currentNoteId}>selling the horses for the cavalry</Annotation> well he could buy me a
         nice present up in Belfast after what I gave him theyve 
         <span data-edition="ed1922" data-page="700"></span>
         lovely linen up
@@ -475,8 +478,8 @@ const Penelope = ({openNote}) => {
         close in the handglass powdering a mirror never gives you the expression
         besides scrooching down on me like that all the time with his big
         hipbones hes heavy too with his hairy chest for this heat always having
-        to lie down for them better for him put it into me from behind <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>the way
-        Mrs Mastiansky told me her husband made her</button> like the dogs do it and
+        to lie down for them better for him put it into me from behind <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>the way
+        Mrs Mastiansky told me her husband made her</Annotation> like the dogs do it and
         stick out her tongue as far as ever she could and he so quiet and mild
         with his tingating cither can you ever be up to men the way it takes
         them lovely stuff in that blue suit he had on and stylish tie and socks
@@ -485,10 +488,10 @@ const Penelope = ({openNote}) => {
         devil for a few minutes after he came back with the stoppress tearing up
         the <span data-edition="ed1961" data-page="749"></span>tickets and swearing blazes because he lost 20 quid he said he lost
         over that outsider that won and half he put on for me on account of
-        Lenehans tip cursing him to the lowest pits <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>that sponger he was making
-        free with me</button> after the Glencree dinner coming back that long joult over
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010010mountains")}>the featherbed mountain</button> after <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060033corporation")}>the lord Mayor</button> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>looking at me with his
-        dirty eyes Val Dillon that big heathen</button> I first noticed him at dessert
+        Lenehans tip cursing him to the lowest pits <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>that sponger he was making
+        free with me</Annotation> after the Glencree dinner coming back that long joult over
+        <Annotation annotationId="010010mountains" annotationSelect={() => openNote("010010mountains")} activeAnnotationId={currentNoteId}>the featherbed mountain</Annotation> after <Annotation annotationId="060033corporation" annotationSelect={() => openNote("060033corporation")} activeAnnotationId={currentNoteId}>the lord Mayor</Annotation> <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>looking at me with his
+        dirty eyes Val Dillon that big heathen</Annotation> I first noticed him at dessert
         when I was cracking the nuts with my teeth I wished I could have picked
         every <span data-edition="ed1932" data-page="651"></span>morsel of that chicken out of my fingers it was so tasty
         and browned and as tender as anything only for I didnt want to eat
@@ -521,8 +524,8 @@ const Penelope = ({openNote}) => {
         bottle of hogwash he tried to palm off as claret that he couldnt get
         anyone to drink God spare his spit for fear hed die of the drouth or
         I must do a few breathing exercises I wonder is that antifat any good
-        might overdo it the thin ones are not so much the fashion now <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020080mauve")}>garters
-        that much I have the violet pair I wore today</button> thats all he bought me
+        might overdo it the thin ones are not so much the fashion now <Annotation annotationId="020080mauve" annotationSelect={() => openNote("020080mauve")} activeAnnotationId={currentNoteId}>garters
+        that much I have the violet pair I wore today</Annotation> thats all he bought me
         out of the cheque he got on the first O no there was the face lotion
         I finished the last of yesterday that made <span data-edition="ed1961" data-page="750"></span>my skin like new I told him
         over and over again get that made up in the same place and dont forget
@@ -535,7 +538,7 @@ const Penelope = ({openNote}) => {
         sure you cant get on in this world without style all going in food and
         rent when I get it Ill lash it around I tell you in fine style I always
         want to throw a handful of tea into the pot <span data-edition="ed1932" data-page="652"></span>measuring and mincing if
-        I buy a pair of old <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020076brogues")}>brogues</button> itself do you like those new shoes yes how
+        I buy a pair of old <Annotation annotationId="020076brogues" annotationSelect={() => openNote("020076brogues")} activeAnnotationId={currentNoteId}>brogues</Annotation> itself do you like those new shoes yes how
         much were they Ive no clothes at all the brown costume and the skirt and
         jacket and the one at the cleaners 3 whats that for any woman cutting
         up this old hat and patching up the other the men wont look at you and
@@ -580,8 +583,8 @@ const Penelope = ({openNote}) => {
         the money all the day of course he prefers plottering <span data-edition="ed1932" data-page="653"></span>about the house
         so you cant stir with him any side whats your programme today I wish hed
         even smoke a pipe like father to get the smell of a man or pretending
-        to be mooching about for advertisements when <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040037cattlemarket")}>he could have been in Mr
-        Cuffes still only for what he did</button> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>then sending me to try and patch it up</button>
+        to be mooching about for advertisements when <Annotation annotationId="040037cattlemarket" annotationSelect={() => openNote("040037cattlemarket")} activeAnnotationId={currentNoteId}>he could have been in Mr
+        Cuffes still only for what he did</Annotation> <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>then sending me to try and patch it up</Annotation>
         I could have got him promoted there to be the manager he gave me a great
         mirada once or twice first he was as stiff as the mischief really and
         truly Mrs Bloom only I felt rotten simply with the old rubbishy dress
@@ -611,12 +614,12 @@ const Penelope = ({openNote}) => {
       </p>
       <p>
         yes I think he made them a bit firmer sucking them like that so long he
-        made me thirsty <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040019titbits")}>titties he calls them</button> I had to laugh yes this one anyhow
+        made me thirsty <Annotation annotationId="040019titbits" annotationSelect={() => openNote("040019titbits")} activeAnnotationId={currentNoteId}>titties he calls them</Annotation> I had to laugh yes this one anyhow
         stiff the nipple gets for the least thing Ill get him to keep that up
         and Ill take those eggs beaten up with marsala fatten them out for him
         what are all those veins and things curious the way its made 2 the same
         in case of twins theyre supposed to represent beauty placed up there
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080005venus")}>like those statues in the museum</button> one of them pretending to hide it with
+        <Annotation annotationId="080005venus" annotationSelect={() => openNote("080005venus")} activeAnnotationId={currentNoteId}>like those statues in the museum</Annotation> one of them pretending to hide it with
         her hand are they so beautiful of course compared with what a man looks
         like with his two bags full and his other thing hanging down out of
         him or sticking up at you like a hatrack no wonder they hide it with a
@@ -624,8 +627,8 @@ const Penelope = ({openNote}) => {
         woman is beauty of course thats admitted when <span data-edition="ed1932" data-page="654"></span>he said I could pose for a
         picture naked to some rich fellow in Holles street when he lost the
         job in Helys and I was selling the clothes and strumming in the coffee
-        palace <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040048slimmer")}>would I be like that bath of the nymph with my hair down yes only
-        shes younger</button> or Im a little like that dirty bitch in that Spanish photo
+        palace <Annotation annotationId="040048slimmer" annotationSelect={() => openNote("040048slimmer")} activeAnnotationId={currentNoteId}>would I be like that bath of the nymph with my hair down yes only
+        shes younger</Annotation> or Im a little like that dirty bitch in that Spanish photo
         he has nymphs used they go about like that I asked him that disgusting Cameron highlander behind the meat market or
         that other wretch with the red head behind the tree where the statue
         of the fish used to be when I was passing pretending he was pissing
@@ -635,27 +638,27 @@ const Penelope = ({openNote}) => {
         they were a nice lot its well the Surreys relieved them
         <span data-edition="ed1939" data-page="531"> </span>
         theyre always trying to show it to you every time nearly I passed
-        outside <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080027greenhouses")}>the mens greenhouse</button> near the Harcourt street station just to
+        outside <Annotation annotationId="080027greenhouses" annotationSelect={() => openNote("080027greenhouses")} activeAnnotationId={currentNoteId}>the mens greenhouse</Annotation> near the Harcourt street station just to
         try some fellow or other trying to catch my eye as if it was 1 of the
         7 wonders of the world O and the stink of those rotten places the night
         coming home with Poldy after the Comerfords party oranges and lemonade
         to make you feel nice and watery I went into 1 of them it was so biting
-        cold I couldnt keep it when was that 93 <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060016canals")}>the canal was frozen</button> yes it was
+        cold I couldnt keep it when was that 93 <Annotation annotationId="060016canals" annotationSelect={() => openNote("060016canals")} activeAnnotationId={currentNoteId}>the canal was frozen</Annotation> yes it was
         a few months after a pity a couple of the Camerons werent there to see
         me squatting in the mens place meadero I tried to draw a picture of
         it before I tore it up like a sausage or something I wonder theyre not
         afraid going about of getting a kick or a bang of something there and
         that word <span data-edition="ed1961" data-page="753"></span>met something with hoses in it and he came out with some
-        jawbreakers about the incarnation he never can explain a thing simply <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180001bodycanunderstand")}>the way a body can understand</button> then he goes and burns the bottom out of
+        jawbreakers about the incarnation he never can explain a thing simply <Annotation annotationId="180001bodycanunderstand" annotationSelect={() => openNote("180001bodycanunderstand")} activeAnnotationId={currentNoteId}>the way a body can understand</Annotation> then he goes and burns the bottom out of
         the pan all for his Kidney this one not so much theres the mark of his
         teeth still where he tried to bite the nipple I had to scream out arent
         they fearful trying to hurt you I had a great breast of milk with Milly
         enough for two what was the reason of that he said I could have got a
         pound a week as a wet nurse all swelled out the morning that delicate
-        looking student that stopped in n° 28 with the Citrons <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>Penrose nearly
-        caught me washing through the window</button> only for I snapped up the towel to
+        looking student that stopped in n° 28 with the Citrons <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>Penrose nearly
+        caught me washing through the window</Annotation> only for I snapped up the towel to
         my face that was his studenting hurt me they used to weaning her till he
-        got <span data-edition="ed1986" data-page="620"></span><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>doctor Brady</button> to give me the belladonna prescription I had to get him
+        got <span data-edition="ed1986" data-page="620"></span><Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>doctor Brady</Annotation> to give me the belladonna prescription I had to get him
         to suck them they were so hard he said it was sweeter and thicker than
         cows then he wanted to milk me into the tea well hes beyond everything I
         declare somebody ought to put him in the budget if I only could remember
@@ -681,10 +684,10 @@ const Penelope = ({openNote}) => {
       <p>
         frseeeeeeeefronnnng train somewhere whistling the strength those engines
         have in them like big giants and the water rolling all over and out of
-        them all sides like the end of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040035oldsweetsong")}>Loves old sweeeetsonnnng</button> the poor men
+        them all sides like the end of <Annotation annotationId="040035oldsweetsong" annotationSelect={() => openNote("040035oldsweetsong")} activeAnnotationId={currentNoteId}>Loves old sweeeetsonnnng</Annotation> the poor men
         that have to be out all the night from their wives and families in those
         roasting engines stifling it was today Im glad I burned the half of
-        those old Freemans <span data-edition="ed1961" data-page="754"></span>and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040034photobits")}>Photo Bits</button> leaving things like that lying about
+        those old Freemans <span data-edition="ed1961" data-page="754"></span>and <Annotation annotationId="040034photobits" annotationSelect={() => openNote("040034photobits")} activeAnnotationId={currentNoteId}>Photo Bits</Annotation> leaving things like that lying about
         hes getting very careless and threw the rest of them up in the W C Ill
         get him to cut them tomorrow for me instead of having them there for
         the next year to get a few pence for them have him asking wheres last
@@ -772,7 +775,7 @@ const Penelope = ({openNote}) => {
         waiting always waiting to guiiiide him toooo me waiting nor speeeed
         his flying feet their damn guns bursting and booming all over the shop
         especially the Queens birthday and throwing everything down in all
-        directions if you didnt open the windows when <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180004ulyssesgrant")}>general Ulysses Grant</button>
+        directions if you didnt open the windows when <Annotation annotationId="180004ulyssesgrant" annotationSelect={() => openNote("180004ulyssesgrant")} activeAnnotationId={currentNoteId}>general Ulysses Grant</Annotation>
         whoever he was or did supposed to be some great fellow landed off the
         ship and old Sprague the consul that was there from before the flood
         dressed up poor man and he in mourning for the son then the same old
@@ -805,7 +808,7 @@ const Penelope = ({openNote}) => {
         recognise me either when I half frowned at him outside Westland row
         chapel where does their great intelligence come in Id like to <span data-edition="ed1961" data-page="757"></span>know
         grey matter they have it all in their tail if you ask me those country
-        <span data-edition="ed1986" data-page="623"></span>gougers up in the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020066cityarms")}>City Arms</button> 
+        <span data-edition="ed1986" data-page="623"></span>gougers up in the <Annotation annotationId="020066cityarms" annotationSelect={() => openNote("020066cityarms")} activeAnnotationId={currentNoteId}>City Arms</Annotation> 
         <span data-edition="ed1939" data-page="534"> </span>
         intelligence they had a damn sight less than
         the bulls and cows they were selling the meat and the coalmans bell that
@@ -821,7 +824,7 @@ const Penelope = ({openNote}) => {
         believe all I hear with a villa and eight rooms her father was an
         awfully nice man he was near seventy always goodhumoured well now Miss
         Tweedy or Miss Gillespie theres the pyannyer that was a solid silver
-        coffee service he had too on the mahogany <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020027sideboard")}>sideboard</button> then dying so far
+        coffee service he had too on the mahogany <Annotation annotationId="020027sideboard" annotationSelect={() => openNote("020027sideboard")} activeAnnotationId={currentNoteId}>sideboard</Annotation> then dying so far
         away I hate people that have always their poor story to tell everybody
         has their own troubles that poor Nancy Blake died a month ago of acute
         pneumonia well I didnt know her so well as all that she was Floeys friend
@@ -837,7 +840,7 @@ const Penelope = ({openNote}) => {
         believe love is sighing I am dying still if he wrote it I suppose thered
         be some truth in it true or no it fills up your whole day <span data-edition="ed1932" data-page="659"></span>and life
         always something to think about every moment and see it all round you
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050003otherworld")}>like a new world</button> I could write the answer in bed to let him imagine me
+        <Annotation annotationId="050003otherworld" annotationSelect={() => openNote("050003otherworld")} activeAnnotationId={currentNoteId}>like a new world</Annotation> I could write the answer in bed to let him imagine me
         short just a few words not those long crossed letters Atty Dillon used
         to write to the fellow that was something in the four courts that jilted
         her after out of the ladies letterwriter when I told her to say a few
@@ -871,7 +874,7 @@ const Penelope = ({openNote}) => {
         I saw him following me along the Calle Real in the shop window then
         he tipped me just in passing but I never thought hed write making an
         appointment I had it inside my petticoat bodice all day reading it up
-        in every hole and corner while <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040018oldtweedy")}>father was up at the drill instructing</button> to
+        in every hole and corner while <Annotation annotationId="040018oldtweedy" annotationSelect={() => openNote("040018oldtweedy")} activeAnnotationId={currentNoteId}>father was up at the drill instructing</Annotation> to
         find out by the handwriting or the language of stamps singing I remember
         shall I wear a white rose and I wanted to put on the old stupid clock to
         near the time he was the first man kissed me under the Moorish wall my
@@ -929,7 +932,7 @@ const Penelope = ({openNote}) => {
         when I got over him that way when I unbuttoned him and took his out and
         drew back the skin it had a <span data-edition="ed1961" data-page="760"></span>kind of eye in it theyre all Buttons men
         down the middle on the wrong side of them Molly darling he called me
-        what was his name Jack Joe <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>Harry Mulvey</button> was it yes I think a lieutenant
+        what was his name Jack Joe <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>Harry Mulvey</Annotation> was it yes I think a lieutenant
         he was rather fair he had a laughing kind of a voice so I went round to
         the whatyoucallit everything was whatyoucallit moustache had he he said
         hed come back Lord its just like yesterday to me and if I was married
@@ -957,8 +960,8 @@ const Penelope = ({openNote}) => {
         name Bloom when I used to write it in print to see how it looked on a
         visiting card or practising for the butcher and oblige M Bloom youre
         looking blooming Josie used to say after I married him well its better
-        than Breen or Briggs does brig or <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("120014cockburn")}>those awful names with bottom in them
-        Mrs Ramsbottom or some other kind of a bottom</button> Mulvey I wouldnt go mad
+        than Breen or Briggs does brig or <Annotation annotationId="120014cockburn" annotationSelect={() => openNote("120014cockburn")} activeAnnotationId={currentNoteId}>those awful names with bottom in them
+        Mrs Ramsbottom or some other kind of a bottom</Annotation> Mulvey I wouldnt go mad
         <span data-edition="ed1986" data-page="626"></span>about either or suppose I divorced him Mrs Boylan my mother whoever she
         was might have given me a nicer name the Lord knows after the lovely
         one she had Lunita Laredo the fun we had running along Williss road to
@@ -996,9 +999,9 @@ const Penelope = ({openNote}) => {
           no he hadnt a moustache that was Gardner yes 
         I can see his face
         clean shaven Frseeeeeeeeeeeeeeeeeeeefrong that train again weeping tone
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040035oldsweetsong")}>once in the dear deaead days beyond recall close my eyes breath my lips
+        <Annotation annotationId="040035oldsweetsong" annotationSelect={() => openNote("040035oldsweetsong")} activeAnnotationId={currentNoteId}>once in the dear deaead days beyond recall close my eyes breath my lips
         forward kiss sad look eyes open piano ere oer the world the mists began
-        I hate that istsbeg comes loves sweet sooooooooooong</button> Ill let that out
+        I hate that istsbeg comes loves sweet sooooooooooong</Annotation> Ill let that out
         full when I get in front of the footlights again Kathleen Kearney
         and her lot of squealers Miss This Miss That Miss Theother lot of
         sparrowfarts skitting around talking about politics they know as much
@@ -1018,8 +1021,8 @@ const Penelope = ({openNote}) => {
         first thats fit to <span data-edition="ed1932" data-page="663"></span>be looked at and a daughter like mine or see if they
         can excite a swell with money that can pick and choose whoever he wants
         like Boylan to do it 4 or 5 times locked in each others arms or the
-        voice either I could have been a prima donna only I married him <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040035oldsweetsong")}>comes
-        looooves old deep down chin back not too much make it double</button> My Ladys
+        voice either I could have been a prima donna only I married him <Annotation annotationId="040035oldsweetsong" annotationSelect={() => openNote("040035oldsweetsong")} activeAnnotationId={currentNoteId}>comes
+        looooves old deep down chin back not too much make it double</Annotation> My Ladys
         Bower is too long for an encore about the moated grange at twilight and
         vaunted rooms yes Ill sing Winds that blow from the south that he gave
         after the choirstairs performance Ill change that lace on my black dress
@@ -1058,8 +1061,8 @@ const Penelope = ({openNote}) => {
         Goodbye <span data-edition="ed1961" data-page="763"></span>to my sleep for this night anyhow I hope hes not going to get in
         with those medicals leading him astray to imagine hes young again coming
         in at 4 in the morning it must be if not more still he had the manners
-        not to wake me what do they find to gabber about all night <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050049comehometoma")}>squandering
-        money and getting drunker and drunker couldnt they drink water</button> then he
+        not to wake me what do they find to gabber about all night <Annotation annotationId="050049comehometoma" annotationSelect={() => openNote("050049comehometoma")} activeAnnotationId={currentNoteId}>squandering
+        money and getting drunker and drunker couldnt they drink water</Annotation> then he
         starts giving us his orders for eggs and tea and Findon haddy <span data-edition="ed1932" data-page="664"></span>and hot
         buttered toast I suppose well have him sitting up like the king of
         the country pumping the wrong end of the spoon up and down in his egg
@@ -1076,7 +1079,7 @@ const Penelope = ({openNote}) => {
         and apple from the London and Newcastle Williams and Woods goes twice as
         far only for the bones I hate those eels cod yes Ill get a nice piece
         of cod Im always getting enough for 3 forgetting anyway Im sick of that
-        everlasting butchers meat from <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040007dorsetstreet")}>Buckleys</button> loin chops and leg beef and rib
+        everlasting butchers meat from <Annotation annotationId="040007dorsetstreet" annotationSelect={() => openNote("040007dorsetstreet")} activeAnnotationId={currentNoteId}>Buckleys</Annotation> loin chops and leg beef and rib
         steak and scrag of mutton and calfs pluck the very name is enough or
         a picnic suppose we all gave 5/- each and or let him pay it and invite
         some other woman for him who Mrs Fleming and drove out to the furry glen
@@ -1084,9 +1087,9 @@ const Penelope = ({openNote}) => {
         first like he does with the letters no not with Boylan there yes with
         some cold veal and ham mixed sandwiches there are little houses down
         at the bottom of the banks there on purpose but its as hot as blazes he
-        says not a <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040029bankholiday")}>bank holiday</button> anyhow I hate those ruck of Mary Ann coalboxes
+        says not a <Annotation annotationId="040029bankholiday" annotationSelect={() => openNote("040029bankholiday")} activeAnnotationId={currentNoteId}>bank holiday</Annotation> anyhow I hate those ruck of Mary Ann coalboxes
         out for the day Whit Monday is a cursed day too no wonder that bee bit
-        him better the seaside but Id never again in this life get into a boat with him after him at <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010066brayhead")}>Bray</button> telling the boatman he knew how to row if
+        him better the seaside but Id never again in this life get into a boat with him after him at <Annotation annotationId="010066brayhead" annotationSelect={() => openNote("010066brayhead")} activeAnnotationId={currentNoteId}>Bray</Annotation> telling the boatman he knew how to row if
         anyone asked could he ride the steeplechase for the gold cup hed say
         yes then it came on to get rough the old thing crookeding about and the
         weight all down my side telling me pull the right reins now pull the
@@ -1096,20 +1099,20 @@ const Penelope = ({openNote}) => {
         his flannel trousers Id like to have tattered them down off him before
         all the people and give him what that one calls flagellate till he was
         black and blue do him all the good in the world only for that longnosed
-        chap I dont know who he is with <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>that other beauty Burke</button> out of the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020066cityarms")}>City
-        Arms hotel</button> was there spying around as usual on the slip always where he
+        chap I dont know who he is with <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>that other beauty Burke</Annotation> out of the <Annotation annotationId="020066cityarms" annotationSelect={() => openNote("020066cityarms")} activeAnnotationId={currentNoteId}>City
+        Arms hotel</Annotation> was there spying around as usual on the slip always where he
         wasnt wanted if there was a row on youd vomit a better face there was no
         love lost between us thats 1 consolation I wonder what kind is that book
-        he brought me Sweets of Sin by a gentleman of <span data-edition="ed1932" data-page="665"></span>fashion some other <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040003nicename")}>Mr de
-        Kock I suppose the people gave him that nickname</button> going about with <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("140004anastomosis")}>his
-        tube</button> from one woman to another I couldnt even change my new white shoes
+        he brought me Sweets of Sin by a gentleman of <span data-edition="ed1932" data-page="665"></span>fashion some other <Annotation annotationId="040003nicename" annotationSelect={() => openNote("040003nicename")} activeAnnotationId={currentNoteId}>Mr de
+        Kock I suppose the people gave him that nickname</Annotation> going about with <Annotation annotationId="140004anastomosis" annotationSelect={() => openNote("140004anastomosis")} activeAnnotationId={currentNoteId}>his
+        tube</Annotation> from one woman to another I couldnt even change my new white shoes
         all ruined 
         <span data-edition="ed1939" data-page="539"> </span>
-        with the saltwater and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010075featherfans")}>the hat I had with that feather all
-        blowy and tossed on me how annoying and provoking</button> because the smell of
-        the sea excited me of course <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180008sardines")}>the sardines and the bream in Catalan bay
+        with the saltwater and <Annotation annotationId="010075featherfans" annotationSelect={() => openNote("010075featherfans")} activeAnnotationId={currentNoteId}>the hat I had with that feather all
+        blowy and tossed on me how annoying and provoking</Annotation> because the smell of
+        the sea excited me of course <Annotation annotationId="180008sardines" annotationSelect={() => openNote("180008sardines")} activeAnnotationId={currentNoteId}>the sardines and the bream in Catalan bay
         round the back of the rock they were fine all silver in the fishermens
-        baskets</button> old Luigi near a hundred they said came from Genoa and the tall
+        baskets</Annotation> old Luigi near a hundred they said came from Genoa and the tall
         old chap with 
         <span data-edition="ed1922" data-page="715"></span>
         the earrings I dont like a man you have to climb up to to
@@ -1152,7 +1155,7 @@ const Penelope = ({openNote}) => {
         against the door just as I was washing myself there below with the glove
         get on your nerves then doing the loglady all day put her in a glasscase
         with two at a time to look at her if he knew she broke off the hand off
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080005venus")}>that little gimcrack statue</button> with her roughness and carelessness before
+        <Annotation annotationId="080005venus" annotationSelect={() => openNote("080005venus")} activeAnnotationId={currentNoteId}>that little gimcrack statue</Annotation> with her roughness and carelessness before
         she left that I got that little Italian 
         <span data-edition="ed1922" data-page="716"></span>
         boy to mend so that you cant
@@ -1181,12 +1184,12 @@ const Penelope = ({openNote}) => {
         blackbottom and I had to tell her not to cock her legs up like that on
         show on the windowsill before all the people passing they all look at
         her like me when I was her age of course any old rag looks well on
-        you then a great touchmenot too in her own way at <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("130003martinharvey")}>the Only Way</button> in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110005theatreroyal")}>the
-        Theatre royal</button> take your foot away out of that I hate people touching
+        you then a great touchmenot too in her own way at <Annotation annotationId="130003martinharvey" annotationSelect={() => openNote("130003martinharvey")} activeAnnotationId={currentNoteId}>the Only Way</Annotation> in <Annotation annotationId="110005theatreroyal" annotationSelect={() => openNote("110005theatreroyal")} activeAnnotationId={currentNoteId}>the
+        Theatre royal</Annotation> take your foot away out of that I hate people touching
         me afraid of her life Id crush her skirt with the pleats a lot of that
         touching must go on in theatres in the crush in the dark theyre always
-        trying to wiggle up to you that fellow <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060040gaietytheatre")}>in the pit at the Gaiety for
-        Beerbohm Tree</button> in Trilby the last time Ill ever go there to be squashed
+        trying to wiggle up to you that fellow <Annotation annotationId="060040gaietytheatre" annotationSelect={() => openNote("060040gaietytheatre")} activeAnnotationId={currentNoteId}>in the pit at the Gaiety for
+        Beerbohm Tree</Annotation> in Trilby the last time Ill ever go there to be squashed
         like that for any Trilby or her barebum every two minutes tipping me
         there and looking away hes a bit daft I think I saw him <span data-edition="ed1932" data-page="667"></span>after trying to
         get near two stylishdressed ladies outside Switzers window at the same
@@ -1201,7 +1204,7 @@ const Penelope = ({openNote}) => {
         sealingwax though she clapped 
         <span data-edition="ed1922" data-page="717"></span>
         when the curtain came down because he
-        looked so handsome then we had <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("130003martinharvey")}>Martin Harvey</button> for breakfast dinner and
+        looked so handsome then we had <Annotation annotationId="130003martinharvey" annotationSelect={() => openNote("130003martinharvey")} activeAnnotationId={currentNoteId}>Martin Harvey</Annotation> for breakfast dinner and
         supper I thought to myself afterwards it must be real love if a man
         gives up his life for her that way for nothing I suppose there are a
         few men like that left its hard to believe in it though unless it really
@@ -1239,7 +1242,7 @@ const Penelope = ({openNote}) => {
         the smell bringing in his friends to entertain them like the night he
         walked home with a dog if you please that might have been mad especially
         Simon Dedalus son his father such a criticiser with his glasses up with
-        his tall hat on him at <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050041cricket")}>the cricket match</button> and a great big hole in his
+        his tall hat on him at <Annotation annotationId="050041cricket" annotationSelect={() => openNote("050041cricket")} activeAnnotationId={currentNoteId}>the cricket match</Annotation> and a great big hole in his
         sock one thing laughing at the other and his son that got all those
         prizes for whatever he won them in the intermediate imagine climbing
         over the railings if 
@@ -1257,16 +1260,16 @@ const Penelope = ({openNote}) => {
         drink and he beats her Ill have to hunt around again for someone every
         day I get up theres some new thing on sweet God <span data-edition="ed1961" data-page="768"></span>sweet God well when Im
         stretched out dead in my grave I suppose Ill have some peace I want to
-        get up a minute if Im let wait O Jesus wait yes <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180003waterscomedown")}>that thing has come on
-        me</button> yes now wouldnt that afflict you of course all the poking and rooting
+        get up a minute if Im let wait O Jesus wait yes <Annotation annotationId="180003waterscomedown" annotationSelect={() => openNote("180003waterscomedown")} activeAnnotationId={currentNoteId}>that thing has come on
+        me</Annotation> yes now wouldnt that afflict you of course all the poking and rooting
         and ploughing he had up in me now what am I to do Friday Saturday Sunday
         wouldnt that pester the soul out of a body unless he likes it some men
         do God knows theres always something wrong with us 5 days every 3 or 4
         weeks usual monthly auction isnt it simply sickening that night it came
-        on me like that the one and only time we were in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060040gaietytheatre")}>a box that Michael Gunn
-        gave him to see Mrs Kendal and her husband at the Gaiety</button> something he
+        on me like that the one and only time we were in <Annotation annotationId="060040gaietytheatre" annotationSelect={() => openNote("060040gaietytheatre")} activeAnnotationId={currentNoteId}>a box that Michael Gunn
+        gave him to see Mrs Kendal and her husband at the Gaiety</Annotation> something he
         did about insurance for him in Drimmies I was fit to be tied though I
-        wouldnt give in with <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>that gentleman of fashion staring down at me</button> with
+        wouldnt give in with <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>that gentleman of fashion staring down at me</Annotation> with
         his glasses and him the other side of me talking about Spinoza and his
         soul thats dead I suppose millions of years <span data-edition="ed1986" data-page="632"></span>ago I smiled the best I
         could all in a swamp leaning forward as if I was interested having to
@@ -1283,17 +1286,17 @@ const Penelope = ({openNote}) => {
         <span data-edition="ed1939" data-page="542"> </span>
         such fools too you could be a
         widow or divorced 40 times over a daub of red ink would do or blackberry
-        juice no thats too purply <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180003waterscomedown")}>O Jamesy let me up out of this pooh</button> sweets of
+        juice no thats too purply <Annotation annotationId="180003waterscomedown" annotationSelect={() => openNote("180003waterscomedown")} activeAnnotationId={currentNoteId}>O Jamesy let me up out of this pooh</Annotation> sweets of
         sin whoever suggested that business for women what between clothes and
         cooking and children this 
         <span data-edition="ed1922" data-page="719"></span>
-        damned old bed too <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040091jingle")}>jingling like the dickens</button>
+        damned old bed too <Annotation annotationId="040091jingle" annotationSelect={() => openNote("040091jingle")} activeAnnotationId={currentNoteId}>jingling like the dickens</Annotation>
         I suppose they could hear us away over the other side of the park till I
         suggested to put the quilt on the floor with the pillow under my bottom
         I wonder is it nicer in the day I think it is easy I think Ill cut
         all this hair off me there scalding me I might look like a young girl
         wouldnt he get the great suckin the next time he turned up my clothes on
-        me Id give anything to see his face wheres <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040057orangekeyed")}>the chamber</button> gone easy Ive a
+        me Id give anything to see his face wheres <Annotation annotationId="040057orangekeyed" annotationSelect={() => openNote("040057orangekeyed")} activeAnnotationId={currentNoteId}>the chamber</Annotation> gone easy Ive a
         holy horror of its breaking under me after that old commode I wonder
         was I too heavy sitting on his knee I made him sit on the <span data-edition="ed1961" data-page="769"></span>easychair
         purposely when I took off only my blouse and skirt first in the other
@@ -1305,8 +1308,8 @@ const Penelope = ({openNote}) => {
         never saw a better pair of thighs than that look how white they are the
         smoothest place is right there between this bit here how soft like a
         peach easy God I wouldnt mind being a man and get up on a lovely woman
-        O Lord what a row youre making like the jersey lily easy easy <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180003waterscomedown")}>O how the
-        waters come down at Lahore</button>
+        O Lord what a row youre making like the jersey lily easy easy <Annotation annotationId="180003waterscomedown" annotationSelect={() => openNote("180003waterscomedown")} activeAnnotationId={currentNoteId}>O how the
+        waters come down at Lahore</Annotation>
       </p>
       <p>
         who knows is there anything the matter with my insides or have I
@@ -1340,14 +1343,14 @@ const Penelope = ({openNote}) => {
         severe his nose intelligent like that you be damned you lying strap O
         anything no matter who except an idiot he was clever enough to spot
         that of course that was all thinking of him and his mad crazy letters
-        my Precious one <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040015whitebutton")}>everything connected with your glorious Body everything
-        underlined that comes from it</button> is a thing of beauty and of joy for ever
+        my Precious one <Annotation annotationId="040015whitebutton" annotationSelect={() => openNote("040015whitebutton")} activeAnnotationId={currentNoteId}>everything connected with your glorious Body everything
+        underlined that comes from it</Annotation> is a thing of beauty and of joy for ever
         <span data-edition="ed1939" data-page="543"> </span>
         something he got out of some nonsensical book that he had me always at
         myself 4 and 5 times a day sometimes and I said I hadnt are you sure
         O yes I said I am quite sure in a way that shut him up I knew what was
         coming next only natural weakness it was he excited me I dont know how
-        the first night ever we met when I was living in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040041dolphinsbarn")}>Rehoboth terrace</button> we
+        the first night ever we met when I was living in <Annotation annotationId="040041dolphinsbarn" annotationSelect={() => openNote("040041dolphinsbarn")} activeAnnotationId={currentNoteId}>Rehoboth terrace</Annotation> we
         stood staring at one another for about 10 minutes as if we met somewhere
         I suppose on account of my being jewess looking after my mother he used
         to amuse me the things he said with the half sloothering smile on him
@@ -1366,11 +1369,11 @@ const Penelope = ({openNote}) => {
         do it I suppose there isnt in all creation another man with the habits
         he has look at the way hes sleeping at the foot of the bed how can he
         without a hard bolster its well he doesnt kick or he might knock out
-        all my teeth breathing <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050031buddhagod")}>with his hand on his nose like that Indian god
+        all my teeth breathing <Annotation annotationId="050031buddhagod" annotationSelect={() => openNote("050031buddhagod")} activeAnnotationId={currentNoteId}>with his hand on his nose like that Indian god
         he took me to show one wet Sunday in the museum in Kildare street all
         yellow in a pinafore lying on his side on his hand with his ten toes
         sticking out that he said was a bigger religion than the jews and
-        Our Lords both put together all over Asia</button> imitating him as hes always
+        Our Lords both put together all over Asia</Annotation> imitating him as hes always
         imitating everybody I suppose he used to sleep at the foot of the bed
         <span data-edition="ed1986" data-page="634"></span>too with his big square feet up in his wifes mouth damn this stinking
         thing anyway wheres this those napkins 
@@ -1385,15 +1388,15 @@ const Penelope = ({openNote}) => {
         often enough and he thinks father bought it from Lord Napier that I used
         to admire when I was a little girl because I told him easy piano O
         I like my bed God here we are as bad as ever after 16 years how many
-        houses were we in at all <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040049pleasantoldtimes")}>Raymond terrace</button> and Ontario terrace and Lombard
+        houses were we in at all <Annotation annotationId="040049pleasantoldtimes" annotationSelect={() => openNote("040049pleasantoldtimes")} activeAnnotationId={currentNoteId}>Raymond terrace</Annotation> and Ontario terrace and Lombard
         street and Holles street and he goes about whistling every time were on
         the run again his huguenots or the frogs march pretending to help the
-        men with our 4 sticks of furniture and then the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020066cityarms")}>City Arms hotel</button> worse
+        men with our 4 sticks of furniture and then the <Annotation annotationId="020066cityarms" annotationSelect={() => openNote("020066cityarms")} activeAnnotationId={currentNoteId}>City Arms hotel</Annotation> worse
         and worse says Warden Daly that charming place on the landing always
         somebody inside praying then leaving all their stinks after them
         always know who was in there last every time were just getting on right
-        something happens or he puts his big foot in it Thoms and Helys and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040037cattlemarket")}>Mr
-        Cuffes</button> and Drimmies either hes going to be run into prison over his old
+        something happens or he puts his big foot in it Thoms and Helys and <Annotation annotationId="040037cattlemarket" annotationSelect={() => openNote("040037cattlemarket")} activeAnnotationId={currentNoteId}>Mr
+        Cuffes</Annotation> and Drimmies either hes going to be run into prison over his old
         lottery tickets that was to be all our salvations or he goes and gives
         impudence well have him coming home with the sack soon out of the
         Freeman too like the rest on account of those Sinner Fein or the
@@ -1402,8 +1405,8 @@ const Penelope = ({openNote}) => {
         consolation that he 
         <span data-edition="ed1939" data-page="544"> </span>
         says is so capable and sincerely Irish he is indeed
-        judging by the sincerity of the trousers I saw on him wait <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040008georgeschurch")}>theres
-        Georges church bells wait 3 quarters the hour wait 2 oclock</button> well
+        judging by the sincerity of the trousers I saw on him wait <Annotation annotationId="040008georgeschurch" annotationSelect={() => openNote("040008georgeschurch")} activeAnnotationId={currentNoteId}>theres
+        Georges church bells wait 3 quarters the hour wait 2 oclock</Annotation> well
         thats a nice hour of the night for him to be coming home at to anybody
         climbing down into the area if anybody saw him Ill knock him off that
         little habit tomorrow first Ill look at his shirt to see <span data-edition="ed1932" data-page="672"></span>or Ill see if
@@ -1439,9 +1442,9 @@ const Penelope = ({openNote}) => {
         is the fruits of Mr Paddy Dignam yes they were all in great style at the
         grand funeral in the paper Boylan brought in if they saw a real officers
         funeral thatd be something reversed arms muffled drums the poor horse
-        walking behind in black L Boom and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050037tomkernan")}>Tom Kernan that drunken little
-        barrelly man that bit his tongue off falling down the mens W C drunk</button>
-        in some place or other and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060034martincunningham")}>Martin Cunningham</button> and the two Dedaluses and
+        walking behind in black L Boom and <Annotation annotationId="050037tomkernan" annotationSelect={() => openNote("050037tomkernan")} activeAnnotationId={currentNoteId}>Tom Kernan that drunken little
+        barrelly man that bit his tongue off falling down the mens W C drunk</Annotation>
+        in some place or other and <Annotation annotationId="060034martincunningham" annotationSelect={() => openNote("060034martincunningham")} activeAnnotationId={currentNoteId}>Martin Cunningham</Annotation> and the two Dedaluses and
         Fanny MCoys husband white head of cabbage skinny thing with a turn in
         her eye trying to sing my songs shed want to be born all over again and
         her old green dress with the lowneck as she cant attract them any other
@@ -1453,30 +1456,30 @@ const Penelope = ({openNote}) => {
         hes getting a bit grey over the ears theyre a nice lot all of them well
         theyre not going to get my husband again into their clutches if I can
         help it making fun of him then behind his back I know well when he goes
-        on with his idiotics because <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050049comehometoma")}>he has sense enough not to squander every
-        penny piece he earns down their gullets and looks after his</button> <span data-edition="ed1961" data-page="773"></span> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050049comehometoma")}>wife and
-        family goodfornothings</button> poor Paddy Dignam all the same Im sorry in a
+        on with his idiotics because <Annotation annotationId="050049comehometoma" annotationSelect={() => openNote("050049comehometoma")} activeAnnotationId={currentNoteId}>he has sense enough not to squander every
+        penny piece he earns down their gullets and looks after his</Annotation> <span data-edition="ed1961" data-page="773"></span> <Annotation annotationId="050049comehometoma" annotationSelect={() => openNote("050049comehometoma")} activeAnnotationId={currentNoteId}>wife and
+        family goodfornothings</Annotation> poor Paddy Dignam all the same Im sorry in a
         way for him what are his wife and 5 children going to do unless he was
         insured comical little teetotum 
         <span data-edition="ed1939" data-page="545"> </span>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040067poordignam")}>always stuck up in some pub corner</button> and
+        <Annotation annotationId="040067poordignam" annotationSelect={() => openNote("040067poordignam")} activeAnnotationId={currentNoteId}>always stuck up in some pub corner</Annotation> and
         her or her son waiting Bill
         <span data-edition="ed1922" data-page="723"></span>
         Bailey wont you please come home her widows
         weeds wont improve her appearance theyre awfully becoming though if
         youre goodlooking what men wasnt he yes he was at the Glencree dinner
         and Ben Dollard base barreltone the night he borrowed the swallowtail
-        to sing out of in Holles street <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>squeezed and squashed into them</button> and
+        to sing out of in Holles street <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>squeezed and squashed into them</Annotation> and
         grinning all over his big Dolly face like a wellwhipped childs botty
         didnt he look a balmy ballocks sure enough that must have been a
         spectacle on the stage imagine paying 5/- in the preserved seats for
-        that to see him and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>Simon Dedalus too he
-        was always turning up half screwed</button> singing the second verse first the
+        that to see him and <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>Simon Dedalus too he
+        was always turning up half screwed</Annotation> singing the second verse first the
         old love is the new was one of his so sweetly sang the maiden on the
         hawthorn bough he was always on for flirtyfying too when I sang Maritana
         with him at Freddy Mayers private opera he had a delicious glorious
-        voice Phoebe dearest <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110006goodbyesweetheart")}>goodbye sweetheart <i>sweet</i>heart he always sang it
-        not like Bartell Darcy</button> <span data-edition="ed1986" data-page="636"></span><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110006goodbyesweetheart")}>sweet <i>tart</i> goodbye</button> of course he had the gift of
+        voice Phoebe dearest <Annotation annotationId="110006goodbyesweetheart" annotationSelect={() => openNote("110006goodbyesweetheart")} activeAnnotationId={currentNoteId}>goodbye sweetheart <i>sweet</i>heart he always sang it
+        not like Bartell Darcy</Annotation> <span data-edition="ed1986" data-page="636"></span><Annotation annotationId="110006goodbyesweetheart" annotationSelect={() => openNote("110006goodbyesweetheart")} activeAnnotationId={currentNoteId}>sweet <i>tart</i> goodbye</Annotation> of course he had the gift of
         the voice so there was no art in it all over you like a warm showerbath
         O Maritana wildwood flower we sang splendidly though it was a bit too
         high for my register even transposed and he was married at the time to
@@ -1486,9 +1489,9 @@ const Penelope = ({openNote}) => {
         what is he driving at now showing him my photo its not good of me I
         ought to have got it taken in drapery that never looks out of fashion
         still I look young in it I wonder he didnt make him a present of it
-        altogether and me too after all why not <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180007kingsbridge")}>I saw him driving down to the
+        altogether and me too after all why not <Annotation annotationId="180007kingsbridge" annotationSelect={() => openNote("180007kingsbridge")} activeAnnotationId={currentNoteId}>I saw him driving down to the
         Kingsbridge station with his father and mother I was in mourning thats
-        11 years ago now yes hed be 11</button> though what was the good in going into
+        11 years ago now yes hed be 11</Annotation> though what was the good in going into
         mourning for what was neither one thing nor the other the first cry was
         enough for me I heard the deathwatch too ticking in the wall 
         of course
@@ -1509,7 +1512,7 @@ const Penelope = ({openNote}) => {
         into his eyes or
         standing up like a red Indian what do they go about like that for only
         getting themselves and their poetry laughed at I always liked poetry
-        when I was a girl first <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180006lordbyron")}>I thought he was a poet like lord Byron</button> and not
+        when I was a girl first <Annotation annotationId="180006lordbyron" annotationSelect={() => openNote("180006lordbyron")} activeAnnotationId={currentNoteId}>I thought he was a poet like lord Byron</Annotation> and not
         an ounce of it in his composition I thought he was quite different I
         wonder is he too young hes about wait 88 I was married 88 Milly is 15
         yesterday 89 what age was he then at Dillons 5 or 6 about 88 I suppose
@@ -1518,7 +1521,7 @@ const Penelope = ({openNote}) => {
         down in the old kitchen with him taking Eppss cocoa and talking of
         course he pretended to understand it all probably he told him he was
         out of Trinity college hes very young to be a professor I hope hes not
-        a professor like <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>Goodwin was he was a patent professor of John Jameson</button>
+        a professor like <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>Goodwin was he was a patent professor of John Jameson</Annotation>
         they all write about some woman in their poetry well I suppose he wont
         find many like 
         <span data-edition="ed1939" data-page="546"> </span>
@@ -1534,17 +1537,17 @@ const Penelope = ({openNote}) => {
         and Keyess ad and Tom the Devils ad then if anything goes wrong in their
         business we have to suffer Im sure hes very distinguished Id like to
         meet a man like that God not those other ruck besides hes young those
-        fine young men I could see <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180002margate")}>down in Margate strand bathing place</button> from the
+        fine young men I could see <Annotation annotationId="180002margate" annotationSelect={() => openNote("180002margate")} activeAnnotationId={currentNoteId}>down in Margate strand bathing place</Annotation> from the
         side of the rock standing up in the sun naked like a God or something
         and then plunging into the sea with them why arent all men like that
-        thered be some consolation for a woman like <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080005venus")}>that lovely little statue he
-        bought</button> I <span data-edition="ed1932" data-page="675"></span>could look at him all day long curly head and his shoulders
+        thered be some consolation for a woman like <Annotation annotationId="080005venus" annotationSelect={() => openNote("080005venus")} activeAnnotationId={currentNoteId}>that lovely little statue he
+        bought</Annotation> I <span data-edition="ed1932" data-page="675"></span>could look at him all day long curly head and his shoulders
         his finger up for you to listen theres real beauty and poetry for you
         I <span data-edition="ed1961" data-page="775"></span>often felt I wanted to kiss him all over also his lovely young cock
         there so simple I wouldnt mind taking him in my mouth if nobody was
         looking as if it was asking you to suck it so clean and white he looks
         with his boyish face I would too in ½ a minute even if some of it went
-        down what its only <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180010dewy")}>like gruel or the dew</button> theres no danger besides hed
+        down what its only <Annotation annotationId="180010dewy" annotationSelect={() => openNote("180010dewy")} activeAnnotationId={currentNoteId}>like gruel or the dew</Annotation> theres no danger besides hed
         be so clean compared with those pigs of men I suppose never dream of
         washing it from 1 years end to the other the most of them only thats
         what gives the women the moustaches Im sure itll be grand if I can only
@@ -1561,8 +1564,8 @@ const Penelope = ({openNote}) => {
         I going to do about him though
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180009nornonothing")}>no thats no way for him has he no manners nor no refinement nor no
-        nothing</button> in his nature slapping us behind like that on my bottom because
+        <Annotation annotationId="180009nornonothing" annotationSelect={() => openNote("180009nornonothing")} activeAnnotationId={currentNoteId}>no thats no way for him has he no manners nor no refinement nor no
+        nothing</Annotation> in his nature slapping us behind like that on my bottom because
         I didnt call him Hugh the ignoramus that doesnt know poetry from a
         cabbage thats what you get for not keeping them in their proper place
         pulling off his shoes and trousers there on the chair before me so
@@ -1604,9 +1607,9 @@ const Penelope = ({openNote}) => {
         him after that hed kiss anything unnatural where we havent 1 atom of any
         kind of expression in us all of us the same 2 lumps of lard before ever
         Id do that to a man pfooh the dirty brutes the mere thought is enough
-        I kiss the feet of you señorita theres some sense in that <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040047potato")}>didnt he kiss
+        I kiss the feet of you señorita theres some sense in that <Annotation annotationId="040047potato" annotationSelect={() => openNote("040047potato")} activeAnnotationId={currentNoteId}>didnt he kiss
         our halldoor yes he did what a madman nobody understands his cracked
-        ideas but me</button> still of course a woman wants to be embraced 20 times a day
+        ideas but me</Annotation> still of course a woman wants to be embraced 20 times a day
         almost to make her look young no matter by who so long as to be in love
         or loved by somebody if the fellow you want isnt there sometimes by the
         Lord God I was thinking would I go around by the quays there some dark
@@ -1652,8 +1655,8 @@ const Penelope = ({openNote}) => {
         theyre not satisfied and I none was he not able to make one it wasnt my
         fault we came together when I was watching the two dogs up in her behind
         in the middle of the naked street that disheartened me altogether I
-        suppose I oughtnt to have buried him in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030091ruddywool")}>that little woolly jacket I
-        knitted</button> crying as I was but give it to some poor child but I knew well
+        suppose I oughtnt to have buried him in <Annotation annotationId="030091ruddywool" annotationSelect={() => openNote("030091ruddywool")} activeAnnotationId={currentNoteId}>that little woolly jacket I
+        knitted</Annotation> crying as I was but give it to some poor child but I knew well
         Id never have another our 1st death too it was we were never the same
         since O Im not going to think myself into the glooms about that any
         more I wonder why he wouldnt stay the night I felt all the time it was
@@ -1719,8 +1722,8 @@ const Penelope = ({openNote}) => {
         longing way then Ill throw him up his eggs and tea in the moustachecup
         she gave him to make his mouth bigger I suppose hed like my nice cream
         too I know what Ill do Ill go about rather gay not too much singing a
-        bit now and then <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040025lacidarem")}>mi fa pietà Masetto</button> then Ill start dressing myself to
-        go out <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040025lacidarem")}>presto non son più forte</button> Ill put on my best shift and drawers let
+        bit now and then <Annotation annotationId="040025lacidarem" annotationSelect={() => openNote("040025lacidarem")} activeAnnotationId={currentNoteId}>mi fa pietà Masetto</Annotation> then Ill start dressing myself to
+        go out <Annotation annotationId="040025lacidarem" annotationSelect={() => openNote("040025lacidarem")} activeAnnotationId={currentNoteId}>presto non son più forte</Annotation> Ill put on my best shift and drawers let
         him have a good eyeful out of that to make his micky stand for him Ill
         let him know if thats what he wanted that his wife is fucked 
         <span data-edition="ed1922" data-page="729"></span>
@@ -1796,8 +1799,8 @@ const Penelope = ({openNote}) => {
         Howth head in the grey tweed suit and his straw hat the day I got him to
         propose to me yes first I gave him the bit of seedcake out of my mouth
         and it was leapyear like now yes 16 years ago my God after that long
-        kiss I near lost my breath yes <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050026henryflower")}>he said I was a flower of the mountain
-        yes so we are flowers all a womans body</button> yes that <span data-edition="ed1932" data-page="681"></span>was one true thing he
+        kiss I near lost my breath yes <Annotation annotationId="050026henryflower" annotationSelect={() => openNote("050026henryflower")} activeAnnotationId={currentNoteId}>he said I was a flower of the mountain
+        yes so we are flowers all a womans body</Annotation> yes that <span data-edition="ed1932" data-page="681"></span>was one true thing he
         said in his life and the sun shines for you today yes that was why I
         liked him because I saw he understood or felt what a woman is and I knew
         I could always get round him and I gave him all the pleasure I could
@@ -1834,7 +1837,7 @@ const Penelope = ({openNote}) => {
         him with my eyes to ask again yes and then he asked me would I yes to
         say yes my mountain flower and first I put my arms around him yes and
         drew him down to me so he could feel my breasts all perfume yes and his
-        heart was going like mad and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("180005yesyes")}>yes I said yes I will Yes</button>.
+        heart was going like mad and <Annotation annotationId="180005yesyes" annotationSelect={() => openNote("180005yesyes")} activeAnnotationId={currentNoteId}>yes I said yes I will Yes</Annotation>.
       </p>
       <br/><br/><br/>
       <span data-edition="ed1922" data-page="732"></span>

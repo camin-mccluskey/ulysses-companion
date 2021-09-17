@@ -1,23 +1,26 @@
-const Aeolus = ({openNote}) => {
+import Annotation from "../../components/Annotation";
+
+
+const Aeolus = ({openNote, currentNoteId}) => {
   return (
     <div>
       <p className="text-center uppercase font-bold">
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070000aeolus")}><font size="+2">[7]</font></button>
+        <Annotation annotationId="070000aeolus" annotationSelect={() => openNote("070000aeolus")} activeAnnotationId={currentNoteId}><font size="+2">[7]</font></Annotation>
         <br/>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070008intheheart")}>IN THE HEART</button> OF THE <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070007hibernianmetropolis")}>HIBERNIAN METROPOLIS</button>
+        <Annotation annotationId="070008intheheart" annotationSelect={() => openNote("070008intheheart")} activeAnnotationId={currentNoteId}>IN THE HEART</Annotation> OF THE <Annotation annotationId="070007hibernianmetropolis" annotationSelect={() => openNote("070007hibernianmetropolis")} activeAnnotationId={currentNoteId}>HIBERNIAN METROPOLIS</Annotation>
       </p>
       <p>
-        Before <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070006nelsonspillar")}>Nelson's pillar</button> trams slowed, shunted, changed trolley, started
-        for Blackrock, Kingstown and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070004dalkeytram")}>Dalkey</button>, Clonskea, Rathgar and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070001terenure")}>Terenure</button>,
-        Palmerston Park and upper Rathmines, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070002sandymounttrams")}>Sandymount Green</button>, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070009rathminestram")}>Rathmines</button>,
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030099ringsend")}>Ringsend</button> and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070002sandymounttrams")}>Sandymount Tower</button>, Harold's Cross. The hoarse <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070003tramwaycompany")}>Dublin United
-        Tramway Company</button>'s timekeeper bawled them off:
+        Before <Annotation annotationId="070006nelsonspillar" annotationSelect={() => openNote("070006nelsonspillar")} activeAnnotationId={currentNoteId}>Nelson's pillar</Annotation> trams slowed, shunted, changed trolley, started
+        for Blackrock, Kingstown and <Annotation annotationId="070004dalkeytram" annotationSelect={() => openNote("070004dalkeytram")} activeAnnotationId={currentNoteId}>Dalkey</Annotation>, Clonskea, Rathgar and <Annotation annotationId="070001terenure" annotationSelect={() => openNote("070001terenure")} activeAnnotationId={currentNoteId}>Terenure</Annotation>,
+        Palmerston Park and upper Rathmines, <Annotation annotationId="070002sandymounttrams" annotationSelect={() => openNote("070002sandymounttrams")} activeAnnotationId={currentNoteId}>Sandymount Green</Annotation>, <Annotation annotationId="070009rathminestram" annotationSelect={() => openNote("070009rathminestram")} activeAnnotationId={currentNoteId}>Rathmines</Annotation>,
+        <Annotation annotationId="030099ringsend" annotationSelect={() => openNote("030099ringsend")} activeAnnotationId={currentNoteId}>Ringsend</Annotation> and <Annotation annotationId="070002sandymounttrams" annotationSelect={() => openNote("070002sandymounttrams")} activeAnnotationId={currentNoteId}>Sandymount Tower</Annotation>, Harold's Cross. The hoarse <Annotation annotationId="070003tramwaycompany" annotationSelect={() => openNote("070003tramwaycompany")} activeAnnotationId={currentNoteId}>Dublin United
+        Tramway Company</Annotation>'s timekeeper bawled them off:
       </p>
       <p>
         —{" "}Rathgar and Terenure!
       </p>
       <p>
-        —{" "}<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070011comeon")}>Come on, Sandymount Green!</button>
+        —{" "}<Annotation annotationId="070011comeon" annotationSelect={() => openNote("070011comeon")} activeAnnotationId={currentNoteId}>Come on, Sandymount Green!</Annotation>
       </p>
       <p>
         Right and left parallel clanging ringing a doubledecker and a singledeck
@@ -51,11 +54,11 @@ const Aeolus = ({openNote}) => {
       <span data-edition="ed1922" data-page="112"></span>
       <p>
         —{" "}Just cut it out, will you? Mr Bloom said, and I'll take it round to
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020064telegraph")}>the <i>Telegraph</i> office</button>.
+        <Annotation annotationId="020064telegraph" annotationSelect={() => openNote("020064telegraph")} activeAnnotationId={currentNoteId}>the <i>Telegraph</i> office</Annotation>.
       </p>
       <span data-edition="ed1932" data-page="104"></span>
       <p>
-        The door of Ruttledge's office creaked again. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070013davystephens")}>Davy Stephens</button>, minute in a
+        The door of Ruttledge's office creaked again. <Annotation annotationId="070013davystephens" annotationSelect={() => openNote("070013davystephens")} activeAnnotationId={currentNoteId}>Davy Stephens</Annotation>, minute in a
         large capecoat, a small felt hat crowning his ringlets, passed out with
         a roll of papers under his cape, a king's courier.
       </p>
@@ -92,13 +95,13 @@ const Aeolus = ({openNote}) => {
       </p>
       <p>
         Mr Bloom turned and saw the liveried porter raise his lettered cap as a
-        stately figure entered between the newsboards of the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("160004newspapers")}><i>Weekly Freeman</i></button><i>
-        and National Press</i> and the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050021freeman")}><i>Freeman's Journal and National Press</i></button>.
+        stately figure entered between the newsboards of the <Annotation annotationId="160004newspapers" annotationSelect={() => openNote("160004newspapers")} activeAnnotationId={currentNoteId}><i>Weekly Freeman</i></Annotation><i>
+        and National Press</i> and the <Annotation annotationId="050021freeman" annotationSelect={() => openNote("050021freeman")} activeAnnotationId={currentNoteId}><i>Freeman's Journal and National Press</i></Annotation>.
         Dullthudding Guinness's barrels. It passed statelily up the staircase,
         steered by an umbrella, a solemn beardframed face. The broadcloth back
         ascended each step: back. All his brains are in the nape of his neck,
-        Simon Dedalus says. Welts of flesh behind on him. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070012neckfatneck")}>Fat folds of neck,
-        fat, neck, fat, neck.</button>
+        Simon Dedalus says. Welts of flesh behind on him. <Annotation annotationId="070012neckfatneck" annotationSelect={() => openNote("070012neckfatneck")} activeAnnotationId={currentNoteId}>Fat folds of neck,
+        fat, neck, fat, neck.</Annotation>
       </p>
       <p>
         —{" "}Don't you think his face is like Our Saviour? Red Murray whispered.
@@ -108,7 +111,7 @@ const Aeolus = ({openNote}) => {
         one door opposite another for the wind to. Way in. Way out.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050027marthamary")}>Our Saviour: beardframed oval face: talking in the dusk. Mary, Martha.</button>
+        <Annotation annotationId="050027marthamary" annotationSelect={() => openNote("050027marthamary")} activeAnnotationId={currentNoteId}>Our Saviour: beardframed oval face: talking in the dusk. Mary, Martha.</Annotation>
         Steered by an umbrella sword to the footlights: Mario the tenor.
       </p>
       <p>
@@ -153,13 +156,13 @@ const Aeolus = ({openNote}) => {
       <p>
         A meek smile accompanied him as he lifted the counterflap, as he passed
         in through the sidedoor and along the warm dark stairs and passage,<span data-edition="ed1986" data-page="97"></span>
-        along the now reverberating boards. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070014circulation")}>But will he save the circulation?
-        Thumping. Thumping.</button>
+        along the now reverberating boards. <Annotation annotationId="070014circulation" annotationSelect={() => openNote("070014circulation")} activeAnnotationId={currentNoteId}>But will he save the circulation?
+        Thumping. Thumping.</Annotation>
       </p>
       <p>
         He pushed in the glass swingdoor and entered, stepping over strewn
         packing paper. Through a lane of clanking drums he made his way towards
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070019nannetti")}>Nannetti's</button> reading closet.
+        <Annotation annotationId="070019nannetti" annotationSelect={() => openNote("070019nannetti")} activeAnnotationId={currentNoteId}>Nannetti's</Annotation> reading closet.
       </p>
       <p className="text-center uppercase font-bold">
         WITH UNFEIGNED REGRET IT IS WE ANNOUNCE <br/>
@@ -176,7 +179,7 @@ const Aeolus = ({openNote}) => {
         away, tearing away. And that old grey rat tearing to get in.
       </p>
       <p className="text-center uppercase font-bold">
-        HOW A GREAT DAILY <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070014circulation")}>ORGAN</button> IS TURNED OUT
+        HOW A GREAT DAILY <Annotation annotationId="070014circulation" annotationSelect={() => openNote("070014circulation")} activeAnnotationId={currentNoteId}>ORGAN</Annotation> IS TURNED OUT
       </p>
       <p>
         Mr Bloom halted behind the foreman's spare body, admiring a glossy
@@ -209,10 +212,10 @@ const Aeolus = ({openNote}) => {
         whole thing. Want a cool head.
       </p>
       <p>
-        —{" "}Well, get it into the evening edition, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060033corporation")}>councillor</button>, Hynes said.
+        —{" "}Well, get it into the evening edition, <Annotation annotationId="060033corporation" annotationSelect={() => openNote("060033corporation")} activeAnnotationId={currentNoteId}>councillor</Annotation>, Hynes said.
       </p>
       <p>
-        Soon be calling him my <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060033corporation")}>lord mayor</button>. Long John is backing him, they say.
+        Soon be calling him my <Annotation annotationId="060033corporation" annotationSelect={() => openNote("060033corporation")} activeAnnotationId={currentNoteId}>lord mayor</Annotation>. Long John is backing him, they say.
       </p>
       <p>
         The foreman, without answering, scribbled press on a corner of the sheet
@@ -261,7 +264,7 @@ const Aeolus = ({openNote}) => {
         —{" "}He wants it in for July, Mr Bloom said.
       </p>
       <span data-edition="ed1961" data-page="119"></span>
-      <p>He doesn't hear it. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070019nannetti")}>Nannan</button>. Iron nerves.</p>
+      <p>He doesn't hear it. <Annotation annotationId="070019nannetti" annotationSelect={() => openNote("070019nannetti")} activeAnnotationId={currentNoteId}>Nannan</Annotation>. Iron nerves.</p>
       <p>The foreman moved his pencil towards it.</p>
       <p>
         —{" "}But wait, Mr Bloom said. He wants it changed. Keyes, you see. He wants
@@ -313,8 +316,8 @@ const Aeolus = ({openNote}) => {
         there quietly.
       </p>
       <p>
-        —{" "}The idea, Mr Bloom said, is the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010146hugekey")}>house of keys. You know, councillor,
-        the Manx parliament.</button> Innuendo of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020037oldtory")}>home rule</button>. Tourists, you know, from the
+        —{" "}The idea, Mr Bloom said, is the <Annotation annotationId="010146hugekey" annotationSelect={() => openNote("010146hugekey")} activeAnnotationId={currentNoteId}>house of keys. You know, councillor,
+        the Manx parliament.</Annotation> Innuendo of <Annotation annotationId="020037oldtory" annotationSelect={() => openNote("020037oldtory")} activeAnnotationId={currentNoteId}>home rule</Annotation>. Tourists, you know, from the
         isle of Man. Catches the eye, you see. Can you do that?
       </p>
       <span data-edition="ed1986" data-page="99"></span>
@@ -328,7 +331,7 @@ const Aeolus = ({openNote}) => {
       <p>
         —{" "}I can get it, Mr Bloom said. It was in a Kilkenny paper. He has a
         house there too. I'll just run out and ask him. Well,<span data-edition="ed1961" data-page="120"></span> you can do that
-        and just <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040082highgradeha")}>a little par</button> calling attention. You know the usual. Highclass
+        and just <Annotation annotationId="040082highgradeha" annotationSelect={() => openNote("040082highgradeha")} activeAnnotationId={currentNoteId}>a little par</Annotation> calling attention. You know the usual. Highclass
         licensed premises. Longfelt want. So on.
       </p>
       <p>
@@ -347,7 +350,7 @@ const Aeolus = ({openNote}) => {
         ORTHOGRAPHICAL
       </p>
       <p>
-        Want to be sure of his spelling. Proof fever. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060034martincunningham")}>Martin Cunningham</button> forgot
+        Want to be sure of his spelling. Proof fever. <Annotation annotationId="060034martincunningham" annotationSelect={() => openNote("060034martincunningham")} activeAnnotationId={currentNoteId}>Martin Cunningham</Annotation> forgot
         to give us his spellingbee conundrum this morning. It is amusing to view
         the unpar one ar alleled embarra two ars is it? double ess ment of a
         harassed pedlar while gauging au the symmetry of a peeled pear
@@ -361,8 +364,8 @@ const Aeolus = ({openNote}) => {
       </p>
       <p>
         Sllt. The nethermost deck of the first machine jogged forward its
-        flyboard with sllt the first batch of quirefolded papers. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070014circulation")}>Sllt. Almost</button><span data-edition="ed1932" data-page="108"></span>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070014circulation")}>human the way it sllt to call attention. Doing its level best to speak.</button>
+        flyboard with sllt the first batch of quirefolded papers. <Annotation annotationId="070014circulation" annotationSelect={() => openNote("070014circulation")} activeAnnotationId={currentNoteId}>Sllt. Almost</Annotation><span data-edition="ed1932" data-page="108"></span>
+        <Annotation annotationId="070014circulation" annotationSelect={() => openNote("070014circulation")} activeAnnotationId={currentNoteId}>human the way it sllt to call attention. Doing its level best to speak.</Annotation>
         That door too sllt creaking, asking to be shut. Everything speaks in its
         own way. Sllt.
       </p>
@@ -417,26 +420,26 @@ const Aeolus = ({openNote}) => {
         He walked on through the caseroom passing an old man, bowed, spectacled,
         aproned. Old Monks, the dayfather. Queer lot of stuff he must have put
         through his hands in his time: obituary notices, pubs' ads, speeches,
-        divorce suits, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030069founddrowned")}>found drowned</button>. Nearing the end of his tether now. Sober
+        divorce suits, <Annotation annotationId="030069founddrowned" annotationSelect={() => openNote("030069founddrowned")} activeAnnotationId={currentNoteId}>found drowned</Annotation>. Nearing the end of his tether now. Sober
         serious man with a bit in the savingsbank I'd say. Wife a good cook and
         washer. Daughter working the machine in the parlour. Plain Jane, no damn
         nonsense. 
       </p>
       <p className="text-center uppercase font-bold">
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060043passover")}>AND IT WAS THE FEAST OF THE PASSOVER</button>
+        <Annotation annotationId="060043passover" annotationSelect={() => openNote("060043passover")} activeAnnotationId={currentNoteId}>AND IT WAS THE FEAST OF THE PASSOVER</Annotation>
       </p>
       <p>
         He stayed in his walk to watch a typesetter neatly distributing type.
         Reads it backwards first. Quickly he does it. Must require some practice
-        that. mangiD. kcirtaP. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060043passover")}>Poor papa with his hagadah book, reading backwards
+        that. mangiD. kcirtaP. <Annotation annotationId="060043passover" annotationSelect={() => openNote("060043passover")} activeAnnotationId={currentNoteId}>Poor papa with his hagadah book, reading backwards
         with his finger to me. Pessach. Next year in Jerusalem. Dear, O dear!
         All that long business about that brought us out of the land of Egypt
         and into the house of bondage <i>Alleluia. Shema Israel Adonai Elohenu</i>.
         No, that's the other. Then the twelve brothers, Jacob's sons. And then
         the lamb and the cat and the dog and the stick and the water and the
-        butcher. And then the angel of death kills the butcher and he</button><span data-edition="ed1932" data-page="109"></span> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060043passover")}>kills the
+        butcher. And then the angel of death kills the butcher and he</Annotation><span data-edition="ed1932" data-page="109"></span> <Annotation annotationId="060043passover" annotationSelect={() => openNote("060043passover")} activeAnnotationId={currentNoteId}>kills the
         ox and the dog kills the cat. Sounds a bit silly till you come to look
-        into it well. Justice it means but it's everybody eating everyone else.</button>
+        into it well. Justice it means but it's everybody eating everyone else.</Annotation>
         That's what life is after all. How quickly he does that job. Practice
         makes perfect. Seems to see with his fingers.
       </p>
@@ -451,8 +454,8 @@ const Aeolus = ({openNote}) => {
         ONLY ONCE MORE THAT SOAP
       </p>
       <p>
-        He went down the house staircase. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150016writingonthewall")}>Who the deuce scrawled all over these
-        walls with matches? Looks as if they did it for a bet.</button> Heavy greasy
+        He went down the house staircase. <Annotation annotationId="150016writingonthewall" annotationSelect={() => openNote("150016writingonthewall")} activeAnnotationId={currentNoteId}>Who the deuce scrawled all over these
+        walls with matches? Looks as if they did it for a bet.</Annotation> Heavy greasy
         smell there always is in those works. Lukewarm glue in Thom's next door
         when I was there.
       </p>
@@ -559,7 +562,7 @@ const Aeolus = ({openNote}) => {
         accent on the whose.
       </p>
       <p>
-        —{" "}<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060037dandawson")}>Dan Dawson's land</button> Mr Dedalus said.
+        —{" "}<Annotation annotationId="060037dandawson" annotationSelect={() => openNote("060037dandawson")} activeAnnotationId={currentNoteId}>Dan Dawson's land</Annotation> Mr Dedalus said.
       </p>
       <span data-edition="ed1939" data-page="93"> </span>
       <p>
@@ -629,16 +632,16 @@ const Aeolus = ({openNote}) => {
       <span data-edition="ed1922" data-page="120"></span>
       <p>
         J. J. O'Molloy strolled to the sloping desk and began to turn back the
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020064telegraph")}>pink pages</button> of the file.
+        <Annotation annotationId="020064telegraph" annotationSelect={() => openNote("020064telegraph")} activeAnnotationId={currentNoteId}>pink pages</Annotation> of the file.
       </p>
       <p>
         Practice dwindling. A mighthavebeen. Losing heart. Gambling. Debts of
         honour. Reaping the whirlwind. Used to get good retainers from D. and T.
         Fitzgerald. Their wigs to show their grey matter. Brains on their sleeve
-        like the statue in Glasnevin. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070017dailyexpress")}>Believe he does some literary work for the
-        <i>Express</i></button> with <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040027conroy")}>Gabriel Conroy</button>. Wellread fellow. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("120009irishindependent")}>Myles Crawford began
+        like the statue in Glasnevin. <Annotation annotationId="070017dailyexpress" annotationSelect={() => openNote("070017dailyexpress")} activeAnnotationId={currentNoteId}>Believe he does some literary work for the
+        <i>Express</i></Annotation> with <Annotation annotationId="040027conroy" annotationSelect={() => openNote("040027conroy")} activeAnnotationId={currentNoteId}>Gabriel Conroy</Annotation>. Wellread fellow. <Annotation annotationId="120009irishindependent" annotationSelect={() => openNote("120009irishindependent")} activeAnnotationId={currentNoteId}>Myles Crawford began
         on the <i>Independent.</i> Funny the way those newspaper men veer about when
-        they get wind of a new opening.</button> Weathercocks. Hot and cold in the same
+        they get wind of a new opening.</Annotation> Weathercocks. Hot and cold in the same
         breath. Wouldn't know which to believe. One story good till you hear
         the next. Go for one another baldheaded in the papers and then all blows
         over. Hail fellow well met the next moment.
@@ -717,7 +720,7 @@ const Aeolus = ({openNote}) => {
         —{" "}What is it?
       </p>
       <p>
-        —{" "}And here comes <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070018shamsquire")}>the sham squire</button> himself! professor MacHugh said
+        —{" "}And here comes <Annotation annotationId="070018shamsquire" annotationSelect={() => openNote("070018shamsquire")} activeAnnotationId={currentNoteId}>the sham squire</Annotation> himself! professor MacHugh said
         grandly.
       </p>
       <p>
@@ -818,7 +821,7 @@ const Aeolus = ({openNote}) => {
         SPOT THE WINNER
       </p>
       <p>
-        Lenehan came out of the inner office with <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("160004newspapers")}><i>Sport's</i> tissues</button>.
+        Lenehan came out of the inner office with <Annotation annotationId="160004newspapers" annotationSelect={() => openNote("160004newspapers")} activeAnnotationId={currentNoteId}><i>Sport's</i> tissues</Annotation>.
       </p>
       <p>
         —{" "}Who wants a dead cert for the Gold cup? he asked. Sceptre with O.
@@ -994,7 +997,7 @@ const Aeolus = ({openNote}) => {
       <p>
         —{" "}Seems to be, J. J. O'Molloy said, taking out a cigarettecase in
         murmuring meditation, but it is not always as it seems. Who has the most
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("150013matches")}>matches</button>?
+        <Annotation annotationId="150013matches" annotationSelect={() => openNote("150013matches")} activeAnnotationId={currentNoteId}>matches</Annotation>?
       </p>
       <p className="text-center uppercase font-bold">
         THE CALUMET OF PEACE
@@ -1059,13 +1062,13 @@ const Aeolus = ({openNote}) => {
         The Jews in the wilderness and on the mountaintop said: <i>It is meet
         to be here. Let us build an altar to Jehovah</i>. The Roman, like the
         Englishman who follows in his footsteps, brought to every new shore on
-        which he set his foot (on our shore he never set it) only his <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070020cloacalobsession")}>cloacal
-        obsession</button>. He gazed about him in his toga and he said: <i>It is meet to be
+        which he set his foot (on our shore he never set it) only his <Annotation annotationId="070020cloacalobsession" annotationSelect={() => openNote("070020cloacalobsession")} activeAnnotationId={currentNoteId}>cloacal
+        obsession</Annotation>. He gazed about him in his toga and he said: <i>It is meet to be
         here. Let us construct a watercloset.</i>
       </p>
       <p>
         —{" "}Which they accordingly did do, Lenehan said. Our old ancient
-        ancestors, as we read in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010106sacredpint")}>the first chapter of Guinness's</button>, were partial
+        ancestors, as we read in <Annotation annotationId="010106sacredpint" annotationSelect={() => openNote("010106sacredpint")} activeAnnotationId={currentNoteId}>the first chapter of Guinness's</Annotation>, were partial
         to the running stream.
       </p>
       <p>
@@ -1120,7 +1123,7 @@ const Aeolus = ({openNote}) => {
         —{" "}Who? the editor asked.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020064telegraph")}>Bit torn off.</button>
+        <Annotation annotationId="020064telegraph" annotationSelect={() => openNote("020064telegraph")} activeAnnotationId={currentNoteId}>Bit torn off.</Annotation>
       </p>
       <p>
         —{" "}Mr Garrett Deasy, Stephen said.
@@ -1128,17 +1131,17 @@ const Aeolus = ({openNote}) => {
       <p>
         —{" "}That old pelters, the editor said. Who tore it? Was he short taken?
       </p>
-      <p>   <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030149vampire")}><i>On swift sail flaming <br/>
+      <p>   <Annotation annotationId="030149vampire" annotationSelect={() => openNote("030149vampire")} activeAnnotationId={currentNoteId}><i>On swift sail flaming <br/>
         From storm and south  <br/>
-        He comes, pale vampire,  <br/></i></button><i>
+        He comes, pale vampire,  <br/></i></Annotation><i>
         Mouth to my mouth.</i>  
       </p>
       <p>
         —{" "}Good day, Stephen, the professor said, coming to peer over their
-        shoulders. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020054footandmouth")}>Foot and mouth?</button> Are you turned...?
+        shoulders. <Annotation annotationId="020054footandmouth" annotationSelect={() => openNote("020054footandmouth")} activeAnnotationId={currentNoteId}>Foot and mouth?</Annotation> Are you turned...?
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020065bullockbefriending")}>Bullockbefriending bard.</button>
+        <Annotation annotationId="020065bullockbefriending" annotationSelect={() => openNote("020065bullockbefriending")} activeAnnotationId={currentNoteId}>Bullockbefriending bard.</Annotation>
       </p>
       <p className="text-center uppercase font-bold">
         SHINDY IN WELLKNOWN RESTAURANT
@@ -1148,7 +1151,7 @@ const Aeolus = ({openNote}) => {
         Garrett Deasy asked me to...
       </p>
       <p>
-        —{" "}O, I know him, Myles Crawford said, and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020017deasy")}>knew his wife too</button>. The
+        —{" "}O, I know him, Myles Crawford said, and <Annotation annotationId="020017deasy" annotationSelect={() => openNote("020017deasy")} activeAnnotationId={currentNoteId}>knew his wife too</Annotation>. The
         bloodiest old tartar God ever made. By Jesus, she had the foot and mouth 
         <span data-edition="ed1922" data-page="127"></span>
         
@@ -1156,19 +1159,19 @@ const Aeolus = ({openNote}) => {
         face in the Star and Garter. Oho!
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020070womansin")}>A woman brought sin into the world. For Helen, the runaway wife of
-        Menelaus, ten years the Greeks. O'Rourke, prince of Breffni.</button>
+        <Annotation annotationId="020070womansin" annotationSelect={() => openNote("020070womansin")} activeAnnotationId={currentNoteId}>A woman brought sin into the world. For Helen, the runaway wife of
+        Menelaus, ten years the Greeks. O'Rourke, prince of Breffni.</Annotation>
       </p>
       <p>
         —{" "}Is he a widower? Stephen asked.
       </p>
       <p>
         —{" "}Ay, a grass one, Myles Crawford said, his eye running down the
-        typescript. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020055serumandvirus")}>Emperor's horses. Habsburg.</button> An Irishman saved his life on
+        typescript. <Annotation annotationId="020055serumandvirus" annotationSelect={() => openNote("020055serumandvirus")} activeAnnotationId={currentNoteId}>Emperor's horses. Habsburg.</Annotation> An Irishman saved his life on
         the ramparts of Vienna. Don't you forget! Maximilian Karl O'Donnell,
         graf von Tirconnell in Ireland. Sent his heir over to make the king
-        an Austrian fieldmarshal now. Going to be trouble there one day. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030027wildgoose")}>Wild
-        geese.</button> O yes, every time. Don't you forget that!
+        an Austrian fieldmarshal now. Going to be trouble there one day. <Annotation annotationId="030027wildgoose" annotationSelect={() => openNote("030027wildgoose")} activeAnnotationId={currentNoteId}>Wild
+        geese.</Annotation> O yes, every time. Don't you forget that!
       </p>
       <span data-edition="ed1932" data-page="118"></span>
       <span data-edition="ed1961" data-page="132"></span>
@@ -1333,7 +1336,7 @@ const Aeolus = ({openNote}) => {
         «{" "}{" "}YOU CAN DO IT!{" "}{" "}»
       </p>
       <p>
-        The editor <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010152linkedarm")}>laid a nervous hand on Stephen's shoulder</button>.
+        The editor <Annotation annotationId="010152linkedarm" annotationSelect={() => openNote("010152linkedarm")} activeAnnotationId={currentNoteId}>laid a nervous hand on Stephen's shoulder</Annotation>.
       </p>
       <p>
         —{" "}I want you to write something for me, he said. Something with a bite
@@ -1341,14 +1344,14 @@ const Aeolus = ({openNote}) => {
         ...
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070010seeitin")}>See it in your face.</button> See it in your eye. Lazy idle little schemer.
+        <Annotation annotationId="070010seeitin" annotationSelect={() => openNote("070010seeitin")} activeAnnotationId={currentNoteId}>See it in your face.</Annotation> See it in your eye. Lazy idle little schemer.
       </p>
       <span data-edition="ed1932" data-page="120"></span>
       <p>
         —{" "}Foot and mouth disease! the editor cried in scornful invective. Great
         nationalist meeting in Borris-in-Ossory. All balls! Bulldosing the
-        public! Give them something with a bite in it. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070021putusall")}>Put us all into it, damn
-        its soul.</button> Father, Son and Holy Ghost and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070022jakesmcarthy")}>Jakes M'Carthy</button>.
+        public! Give them something with a bite in it. <Annotation annotationId="070021putusall" annotationSelect={() => openNote("070021putusall")} activeAnnotationId={currentNoteId}>Put us all into it, damn
+        its soul.</Annotation> Father, Son and Holy Ghost and <Annotation annotationId="070022jakesmcarthy" annotationSelect={() => openNote("070022jakesmcarthy")} activeAnnotationId={currentNoteId}>Jakes M'Carthy</Annotation>.
       </p>
       <p>
         —{" "}We can all supply mental pabulum, Mr O'Madden Burke said.
@@ -1390,15 +1393,15 @@ const Aeolus = ({openNote}) => {
       </p>
       <p>
         —{" "}Skin-the-goat, Mr O'Madden Burke said. Fitzharris. He has that
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050012cabstands")}>cabman's shelter</button>, they say, down there at <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070015buttbridge")}>Butt bridge</button>. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050028hoppy")}>Holohan told me.
-        You know Holohan?</button>
+        <Annotation annotationId="050012cabstands" annotationSelect={() => openNote("050012cabstands")} activeAnnotationId={currentNoteId}>cabman's shelter</Annotation>, they say, down there at <Annotation annotationId="070015buttbridge" annotationSelect={() => openNote("070015buttbridge")} activeAnnotationId={currentNoteId}>Butt bridge</Annotation>. <Annotation annotationId="050028hoppy" annotationSelect={() => openNote("050028hoppy")} activeAnnotationId={currentNoteId}>Holohan told me.
+        You know Holohan?</Annotation>
       </p>
       <p>
         —{" "}Hop and carry one, is it? Myles Crawford said.
       </p>
       <p>
         —{" "}And poor Gumley is down there too, so he told me, minding stones for
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060033corporation")}>the corporation</button>. A night watchman.
+        <Annotation annotationId="060033corporation" annotationSelect={() => openNote("060033corporation")} activeAnnotationId={currentNoteId}>the corporation</Annotation>. A night watchman.
       </p>
       <p>
         Stephen turned in surprise.
@@ -1477,7 +1480,7 @@ const Aeolus = ({openNote}) => {
         history.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020063niare")}>Niare from which you will never awake.</button>
+        <Annotation annotationId="020063niare" annotationSelect={() => openNote("020063niare")} activeAnnotationId={currentNoteId}>Niare from which you will never awake.</Annotation>
       </p>
       <p>
         —{" "}I saw it, the editor said proudly. I was present. Dick Adams, the
@@ -1491,7 +1494,7 @@ const Aeolus = ({openNote}) => {
         —{" "}Madam, I'm Adam. And Able was I ere I saw Elba.
       </p>
       <p>
-        —{" "}History! Myles Crawford cried. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040006homerulesun")}>The Old Woman of Prince's street</button> was
+        —{" "}History! Myles Crawford cried. <Annotation annotationId="040006homerulesun" annotationSelect={() => openNote("040006homerulesun")} activeAnnotationId={currentNoteId}>The Old Woman of Prince's street</Annotation> was
         there first. There was weeping and gnashing of teeth over that. Out of
         an advertisement. Gregor Grey made the design for it. That gave him the
         leg up. Then Paddy Hooper worked Tay Pay who took him on to the <i>Star.</i>
@@ -1535,7 +1538,7 @@ const Aeolus = ({openNote}) => {
       <p>
         —{" "}They're only in the hook and eye department, Myles Crawford said. Psha! Press and the bar! Where have you a man now at the bar like those
         fellows, like Whiteside, like Isaac Butt, like silvertongued O'Hagan.
-        Eh? Ah, bloody nonsense. Only in the <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010019money")}>halfpenny</button> place.
+        Eh? Ah, bloody nonsense. Only in the <Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}>halfpenny</Annotation> place.
       </p>
       <p></p>
       <span data-edition="ed1939" data-page="102"> </span>
@@ -1582,7 +1585,7 @@ const Aeolus = ({openNote}) => {
         the third profession qua profession but your Cork legs are running<span data-edition="ed1932" data-page="123"></span> away
         with you. Why not bring in Henry Grattan and Flood and Demosthenes and
         Edmund Burke? Ignatius Gallaher we all know and his Chapelizod boss,
-        Harmsworth of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010019money")}>the farthing press</button>, and his American cousin of the Bowery
+        Harmsworth of <Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}>the farthing press</Annotation>, and his American cousin of the Bowery
         guttersheet not to mention <i>Paddy Kelly's Budget, Pue's Occurrences</i>
         and our watchful friend <i>The Skibereen Eagle</i>. Why bring in a master
         of forensic eloquence like Whiteside? Sufficient for the day is the
@@ -1654,9 +1657,9 @@ const Aeolus = ({openNote}) => {
         Messenger took out his matchbox thoughtfully and lit his cigar.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070005trivial")}>I have often thought since on looking back over that strange time that
+        <Annotation annotationId="070005trivial" annotationSelect={() => openNote("070005trivial")} activeAnnotationId={currentNoteId}>I have often thought since on looking back over that strange time that
         it was that small act, trivial in itself, that striking of that match,
-        that determined the whole aftercourse of both our lives.</button> 
+        that determined the whole aftercourse of both our lives.</Annotation> 
       </p>
       <span data-edition="ed1932" data-page="124"></span>
       <p className="text-center uppercase font-bold">
@@ -1885,12 +1888,12 @@ const Aeolus = ({openNote}) => {
       </p>
       <p>
         Gone with the
-        wind. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020038oconnell")}>Hosts at Mullaghmast and Tara of the kings.</button> 
+        wind. <Annotation annotationId="020038oconnell" annotationSelect={() => openNote("020038oconnell")} activeAnnotationId={currentNoteId}>Hosts at Mullaghmast and Tara of the kings.</Annotation> 
         <span data-edition="ed1922" data-page="137"></span>
         Miles of ears of 
         porches. The tribune's words, howled and scattered to the four winds.
-        A people sheltered within his voice. Dead noise. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010079akasicrecords")}>Akasic records of all
-        that ever anywhere wherever was.</button> Love and laud him: me no more.
+        A people sheltered within his voice. Dead noise. <Annotation annotationId="010079akasicrecords" annotationSelect={() => openNote("010079akasicrecords")} activeAnnotationId={currentNoteId}>Akasic records of all
+        that ever anywhere wherever was.</Annotation> Love and laud him: me no more.
       </p>
       <p>
         I have money.
@@ -1994,17 +1997,17 @@ const Aeolus = ({openNote}) => {
       </p>
       <p>
         —{" "}Two Dublin vestals, Stephen said, elderly and pious, have lived fifty
-        and fiftythree years in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030059blackpitts")}>Fumbally's lane</button>.
+        and fiftythree years in <Annotation annotationId="030059blackpitts" annotationSelect={() => openNote("030059blackpitts")} activeAnnotationId={currentNoteId}>Fumbally's lane</Annotation>.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030059blackpitts")}>—{" "}Where is that? the professor asked.</button>
+        <Annotation annotationId="030059blackpitts" annotationSelect={() => openNote("030059blackpitts")} activeAnnotationId={currentNoteId}>—{" "}Where is that? the professor asked.</Annotation>
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030059blackpitts")}>—{" "}Off Blackpitts</button>.
+        <Annotation annotationId="030059blackpitts" annotationSelect={() => openNote("030059blackpitts")} activeAnnotationId={currentNoteId}>—{" "}Off Blackpitts</Annotation>.
       </p>
       <p>
         Damp night reeking of hungry dough. Against the wall. Face glistening
-        tallow under her fustian shawl. Frantic hearts. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010079akasicrecords")}>Akasic records.</button> Quicker,
+        tallow under her fustian shawl. Frantic hearts. <Annotation annotationId="010079akasicrecords" annotationSelect={() => openNote("010079akasicrecords")} activeAnnotationId={currentNoteId}>Akasic records.</Annotation> Quicker,
         darlint!
       </p>
       <p>
@@ -2014,8 +2017,8 @@ const Aeolus = ({openNote}) => {
         —{" "}They want to see the views of Dublin from the top of Nelson's pillar.
         They save up three and tenpence in a red tin letterbox moneybox. They
         shake out the threepenny bits and a sixpence and coax out the pennies
-        with <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010007kinch")}> the blade of a knife</button>. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010019money")}>Two and three in silver and one and seven
-        in coppers.</button> They put on their bonnets and best clothes and take their
+        with <Annotation annotationId="010007kinch" annotationSelect={() => openNote("010007kinch")} activeAnnotationId={currentNoteId}> the blade of a knife</Annotation>. <Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}>Two and three in silver and one and seven
+        in coppers.</Annotation> They put on their bonnets and best clothes and take their
         umbrellas for fear it may come on to rain.
       </p>
       <p>
@@ -2039,7 +2042,7 @@ const Aeolus = ({openNote}) => {
         high.
       </p>
       <p>
-        Their names are <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030054swunglourdily")}>Anne Kearns and Florence MacCabe</button>. Anne Kearns has the
+        Their names are <Annotation annotationId="030054swunglourdily" annotationSelect={() => openNote("030054swunglourdily")} activeAnnotationId={currentNoteId}>Anne Kearns and Florence MacCabe</Annotation>. Anne Kearns has the
         lumbago for which she rubs on Lourdes water, given her by a lady who got a 
         <span data-edition="ed1922" data-page="139"></span>
         
@@ -2105,11 +2108,11 @@ const Aeolus = ({openNote}) => {
         councillor Nannetti from the <i>Kilkenny People</i>. I can have access to
         it in the national library. House of keys, don't you see? His name is
         Keyes. It's a play on the name. But he practically promised he'd give
-        the renewal. But he wants <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070016littlepuff")}>just a little puff</button>. What will I tell him, Mr
+        the renewal. But he wants <Annotation annotationId="070016littlepuff" annotationSelect={() => openNote("070016littlepuff")} activeAnnotationId={currentNoteId}>just a little puff</Annotation>. What will I tell him, Mr
         Crawford? 
       </p>
       <p className="text-center uppercase font-bold">
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040082highgradeha")}>K.{" "}M.{" "}A.</button>
+        <Annotation annotationId="040082highgradeha" annotationSelect={() => openNote("040082highgradeha")} activeAnnotationId={currentNoteId}>K.{" "}M.{" "}A.</Annotation>
       </p>
       <p>
         —{" "}Will you tell him he can kiss my arse? Myles Crawford said throwing
@@ -2122,7 +2125,7 @@ const Aeolus = ({openNote}) => {
         Lenehan's yachting cap on the cadge beyond. Usual blarney. Wonder is
         that young Dedalus the moving spirit. Has a good pair of boots on him
         today. Last time I saw him he had his heels on view. Been walking in
-        muck somewhere. Careless chap. What was he doing in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030015irishtown")}>Irishtown</button>?
+        muck somewhere. Careless chap. What was he doing in <Annotation annotationId="030015irishtown" annotationSelect={() => openNote("030015irishtown")} activeAnnotationId={currentNoteId}>Irishtown</Annotation>?
       </p>
       <span data-edition="ed1932" data-page="130"></span>
       <p>
@@ -2159,8 +2162,8 @@ const Aeolus = ({openNote}) => {
       </p>
       <p>
         —{" "}When they have eaten the brawn and the bread and wiped their twenty
-        fingers in the paper the bread was wrapped in they go nearer to <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070023giddytolook")}>the
-        railings</button>.
+        fingers in the paper the bread was wrapped in they go nearer to <Annotation annotationId="070023giddytolook" annotationSelect={() => openNote("070023giddytolook")} activeAnnotationId={currentNoteId}>the
+        railings</Annotation>.
       </p>
       <p>
         —{" "}Something for you, the professor explained to Myles Crawford. Two old
@@ -2176,9 +2179,9 @@ const Aeolus = ({openNote}) => {
       </p>
       <p>
         —{" "}But they are afraid the pillar will fall, Stephen went on. They see
-        the roofs and argue about <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070024differentchurches")}>where the different</button><span data-edition="ed1961" data-page="147"></span> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070024differentchurches")}>churches are: Rathmines'
-        blue dome, Adam and Eve's, saint Laurence O'Toole's</button>. But <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070023giddytolook")}>it makes them
-        giddy to look</button> so they pull up their skirts...
+        the roofs and argue about <Annotation annotationId="070024differentchurches" annotationSelect={() => openNote("070024differentchurches")} activeAnnotationId={currentNoteId}>where the different</Annotation><span data-edition="ed1961" data-page="147"></span> <Annotation annotationId="070024differentchurches" annotationSelect={() => openNote("070024differentchurches")} activeAnnotationId={currentNoteId}>churches are: Rathmines'
+        blue dome, Adam and Eve's, saint Laurence O'Toole's</Annotation>. But <Annotation annotationId="070023giddytolook" annotationSelect={() => openNote("070023giddytolook")} activeAnnotationId={currentNoteId}>it makes them
+        giddy to look</Annotation> so they pull up their skirts...
       </p>
       <span data-edition="ed1922" data-page="141"></span>
       <div>
@@ -2233,7 +2236,7 @@ const Aeolus = ({openNote}) => {
           Poor Penelope. Penelope Rich.
         </p>
         <p>
-          They made ready to cross <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060012liberatorsform")}>O'Connell street</button>.
+          They made ready to cross <Annotation annotationId="060012liberatorsform" annotationSelect={() => openNote("060012liberatorsform")} activeAnnotationId={currentNoteId}>O'Connell street</Annotation>.
         </p>
         <p className="text-center uppercase font-bold">
           HELLO THERE, CENTRAL!
@@ -2245,7 +2248,7 @@ const Aeolus = ({openNote}) => {
           <span data-edition="ed1922" data-page="142"></span>
           
           Blackrock and Dalkey, Sandymount Green, Ringsend
-          and Sandymount Tower, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050022donnybrook")}>Donnybrook</button>, Palmerston Park and Upper Rathmines,
+          and Sandymount Tower, <Annotation annotationId="050022donnybrook" annotationSelect={() => openNote("050022donnybrook")} activeAnnotationId={currentNoteId}>Donnybrook</Annotation>, Palmerston Park and Upper Rathmines,
           all still, becalmed in short circuit. Hackney cars, cabs, delivery
           waggons, mailvans, private broughams, aerated mineral water floats with
           rattling crates of bottles, rattled, rolled, horsedrawn, rapidly.
@@ -2293,7 +2296,7 @@ const Aeolus = ({openNote}) => {
           —{" "}I see, the professor said.
         </p>
         <p>
-          He halted on <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060008sirjohngray")}>sir John Gray's pavement island</button> and peered aloft at Nelson
+          He halted on <Annotation annotationId="060008sirjohngray" annotationSelect={() => openNote("060008sirjohngray")} activeAnnotationId={currentNoteId}>sir John Gray's pavement island</Annotation> and peered aloft at Nelson
           through the meshes of his wry smile.
         </p>
         <p className="text-center uppercase font-bold">

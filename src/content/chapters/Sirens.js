@@ -1,10 +1,13 @@
-const Sirens = ({openNote}) => {
+import Annotation from "../../components/Annotation";
+
+
+const Sirens = ({openNote, currentNoteId}) => {
   return (
     <div>
       <p></p>
       <center><font size="+2">[11]</font></center>
       <br/>
-      <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110009bronzegold")}>Bronze by gold heard the hoofirons, steelyringing.</button>
+      <Annotation annotationId="110009bronzegold" annotationSelect={() => openNote("110009bronzegold")} activeAnnotationId={currentNoteId}>Bronze by gold heard the hoofirons, steelyringing.</Annotation>
       <p></p>
       <p>
         Imperthnthn thnthnthn.
@@ -41,19 +44,19 @@ const Sirens = ({openNote}) => {
         And a call, pure, long and throbbing. Longindying call.
       </p>
       <p>
-        Decoy. Soft word. But look! <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110006goodbyesweetheart")}>The bright stars fade.</button> O rose! Notes chirruping
+        Decoy. Soft word. But look! <Annotation annotationId="110006goodbyesweetheart" annotationSelect={() => openNote("110006goodbyesweetheart")} activeAnnotationId={currentNoteId}>The bright stars fade.</Annotation> O rose! Notes chirruping
         answer.
-        Castile. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110006goodbyesweetheart")}>The morn is breaking.</button>
+        Castile. <Annotation annotationId="110006goodbyesweetheart" annotationSelect={() => openNote("110006goodbyesweetheart")} activeAnnotationId={currentNoteId}>The morn is breaking.</Annotation>
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040091jingle")}>Jingle jingle jaunted jingling.</button>
+        <Annotation annotationId="040091jingle" annotationSelect={() => openNote("040091jingle")} activeAnnotationId={currentNoteId}>Jingle jingle jaunted jingling.</Annotation>
       </p>
       <p>
         Coin rang. Clock clacked.
       </p>
       <p>
-        Avowal. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040091jingle")}><i>Sonnez.</i></button> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110006goodbyesweetheart")}>I could.</button> Rebound of garter. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110006goodbyesweetheart")}>Not leave thee.</button> <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040091jingle")}>Smack. <i>La
-        cloche!</i> Thigh smack.</button> Avowal. Warm. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110006goodbyesweetheart")}>Sweetheart, goodbye!</button>
+        Avowal. <Annotation annotationId="040091jingle" annotationSelect={() => openNote("040091jingle")} activeAnnotationId={currentNoteId}><i>Sonnez.</i></Annotation> <Annotation annotationId="110006goodbyesweetheart" annotationSelect={() => openNote("110006goodbyesweetheart")} activeAnnotationId={currentNoteId}>I could.</Annotation> Rebound of garter. <Annotation annotationId="110006goodbyesweetheart" annotationSelect={() => openNote("110006goodbyesweetheart")} activeAnnotationId={currentNoteId}>Not leave thee.</Annotation> <Annotation annotationId="040091jingle" annotationSelect={() => openNote("040091jingle")} activeAnnotationId={currentNoteId}>Smack. <i>La
+        cloche!</i> Thigh smack.</Annotation> Avowal. Warm. <Annotation annotationId="110006goodbyesweetheart" annotationSelect={() => openNote("110006goodbyesweetheart")} activeAnnotationId={currentNoteId}>Sweetheart, goodbye!</Annotation>
       </p>
       <p>
         Jingle. Bloo.
@@ -96,7 +99,7 @@ const Sirens = ({openNote}) => {
         A moonlit nightcall: far, far.
       </p>
       <p>
-        I feel so sad. P. S. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050026henryflower")}>So lonely blooming.</button>
+        I feel so sad. P. S. <Annotation annotationId="050026henryflower" annotationSelect={() => openNote("050026henryflower")} activeAnnotationId={currentNoteId}>So lonely blooming.</Annotation>
       </p>
       <p>
         Listen!
@@ -131,13 +134,13 @@ const Sirens = ({openNote}) => {
         Low in dark middle earth. Embedded ore.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>Naminedamine. All gone. All fallen.</button>
+        <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>Naminedamine. All gone. All fallen.</Annotation>
       </p>
       <p>
         Tiny, her tremulous fernfoils of maidenhair.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>Amen! He gnashed in fury.</button>
+        <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>Amen! He gnashed in fury.</Annotation>
       </p>
       <p>
         Fro. To, fro. A baton cool protruding.
@@ -146,7 +149,7 @@ const Sirens = ({openNote}) => {
         Bronzelydia by Minagold.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110009bronzegold")}>By bronze, by gold, in oceangreen of shadow.</button> Bloom. Old Bloom.
+        <Annotation annotationId="110009bronzegold" annotationSelect={() => openNote("110009bronzegold")} activeAnnotationId={currentNoteId}>By bronze, by gold, in oceangreen of shadow.</Annotation> Bloom. Old Bloom.
       </p>
       <p>
         One rapped, one tapped, with a carra, with a cock.
@@ -193,14 +196,14 @@ const Sirens = ({openNote}) => {
       <p>
         Bronze by gold, Miss Douce's head by Miss Kennedy's head, over the 
         <span data-edition="ed1922" data-page="246"> </span>
-        crossblind of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110010ormondbar")}>the Ormond bar</button> heard the viceregal hoofs go by, ringing
+        crossblind of <Annotation annotationId="110010ormondbar" annotationSelect={() => openNote("110010ormondbar")} activeAnnotationId={currentNoteId}>the Ormond bar</Annotation> heard the viceregal hoofs go by, ringing
         steel.
       </p>
       <p>
         —{" "}Is that her? asked Miss Kennedy.
       </p>
       <p>
-        Miss Douce said yes, sitting with his ex, pearl grey and <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110009bronzegold")}><i>eau de Nil.</i></button>
+        Miss Douce said yes, sitting with his ex, pearl grey and <Annotation annotationId="110009bronzegold" annotationSelect={() => openNote("110009bronzegold")} activeAnnotationId={currentNoteId}><i>eau de Nil.</i></Annotation>
       </p>
       <p>
         —{" "}Exquisite contrast, Miss Kennedy said.
@@ -223,7 +226,7 @@ const Sirens = ({openNote}) => {
       </p>
       <p>
         She darted, bronze, to the backmost corner, flattening her face against
-        the pane in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110009bronzegold")}>a halo</button> of hurried breath.
+        the pane in <Annotation annotationId="110009bronzegold" annotationSelect={() => openNote("110009bronzegold")} activeAnnotationId={currentNoteId}>a halo</Annotation> of hurried breath.
       </p>
       <p>
         Her wet lips tittered:
@@ -245,7 +248,7 @@ const Sirens = ({openNote}) => {
       </p>
       <p>
         Miss Kennedy sauntered sadly from bright light, twining a loose hair
-        behind an ear. Sauntering sadly, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110009bronzegold")}>gold no more</button>, she twisted twined a
+        behind an ear. Sauntering sadly, <Annotation annotationId="110009bronzegold" annotationSelect={() => openNote("110009bronzegold")} activeAnnotationId={currentNoteId}>gold no more</Annotation>, she twisted twined a
         hair.
       </p>
       <p>
@@ -253,7 +256,7 @@ const Sirens = ({openNote}) => {
       </p>
       <span data-edition="ed1939" data-page="188"> </span>
       <p>
-        —{" "}<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050049comehometoma")}>It's them has the fine times, sadly then she said.</button>
+        —{" "}<Annotation annotationId="050049comehometoma" annotationSelect={() => openNote("050049comehometoma")} activeAnnotationId={currentNoteId}>It's them has the fine times, sadly then she said.</Annotation>
       </p>
       <p>
         A man.
@@ -273,7 +276,7 @@ const Sirens = ({openNote}) => {
       </p>
       <p>
         Miss Kennedy with manners transposed the teatray down to an upturned
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030063lithiawater")}>lithia crate</button>, safe from eyes, low.
+        <Annotation annotationId="030063lithiawater" annotationSelect={() => openNote("030063lithiawater")} activeAnnotationId={currentNoteId}>lithia crate</Annotation>, safe from eyes, low.
       </p>
       <p>
         —{" "}What is it? loud boots unmannerly asked.
@@ -341,7 +344,7 @@ const Sirens = ({openNote}) => {
         midst a shell.
       </p>
       <p>
-        —{" "}<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110008leavetohands")}>And leave it to my hands</button>, she said.
+        —{" "}<Annotation annotationId="110008leavetohands" annotationSelect={() => openNote("110008leavetohands")} activeAnnotationId={currentNoteId}>And leave it to my hands</Annotation>, she said.
       </p>
       <p>
         —{" "}Try it with the glycerine, Miss Kennedy advised.
@@ -390,7 +393,7 @@ const Sirens = ({openNote}) => {
       </p>
       <p>
         —{" "}Don't let me think of him or I'll expire. The hideous old wretch! That
-        night in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060021concertrooms")}>the Antient Concert Rooms</button>.
+        night in <Annotation annotationId="060021concertrooms" annotationSelect={() => openNote("060021concertrooms")} activeAnnotationId={currentNoteId}>the Antient Concert Rooms</Annotation>.
       </p>
       <span data-edition="ed1922" data-page="248"> </span>
       <p>
@@ -466,7 +469,7 @@ const Sirens = ({openNote}) => {
         panting, sweating (O!), all breathless.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060006toadeyes")}>Married to Bloom, to greaseaseabloom.</button>
+        <Annotation annotationId="060006toadeyes" annotationSelect={() => openNote("060006toadeyes")} activeAnnotationId={currentNoteId}>Married to Bloom, to greaseaseabloom.</Annotation>
       </p>
       <span data-edition="ed1922" data-page="249"> </span>
       <p>
@@ -481,12 +484,12 @@ const Sirens = ({openNote}) => {
       </p>
       <span data-edition="ed1939" data-page="190"> </span>
       <p>
-        By Cantwell's offices roved Greaseabloom, by <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("070019nannetti")}>Ceppi's virgins, bright of
+        By Cantwell's offices roved Greaseabloom, by <Annotation annotationId="070019nannetti" annotationSelect={() => openNote("070019nannetti")} activeAnnotationId={currentNoteId}>Ceppi's virgins, bright of
         their oils. Nannetti's father hawked those things about, wheedling at
-        doors as I.</button> Religion pays. Must see him about Keyes's par. Eat first. I want.
-        Not yet. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110002atfourshe")}>At four, she said.</button> Time ever passing. Clockhands turning. On.
+        doors as I.</Annotation> Religion pays. Must see him about Keyes's par. Eat first. I want.
+        Not yet. <Annotation annotationId="110002atfourshe" annotationSelect={() => openNote("110002atfourshe")} activeAnnotationId={currentNoteId}>At four, she said.</Annotation> Time ever passing. Clockhands turning. On.
         Where eat? The Clarence, Dolphin. On. For Raoul. Eat. If I net five
-        guineas <span data-edition="ed1961" data-page="260"> </span>with those ads. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("020080mauve")}>The violet silk petticoats.</button> Not yet. The sweets
+        guineas <span data-edition="ed1961" data-page="260"> </span>with those ads. <Annotation annotationId="020080mauve" annotationSelect={() => openNote("020080mauve")} activeAnnotationId={currentNoteId}>The violet silk petticoats.</Annotation> Not yet. The sweets
         of sin.
       </p>
       <p>
@@ -549,7 +552,7 @@ const Sirens = ({openNote}) => {
         —{" "}With the greatest alacrity, Miss Douce agreed.
       </p>
       <p>
-        With grace of alacrity towards <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050030cantrellcochrane")}>the mirror gilt Cantrell and Cochrane's</button>
+        With grace of alacrity towards <Annotation annotationId="050030cantrellcochrane" annotationSelect={() => openNote("050030cantrellcochrane")} activeAnnotationId={currentNoteId}>the mirror gilt Cantrell and Cochrane's</Annotation>
         she turned herself. With grace she tapped a measure of gold whisky from
         her crystal keg. Forth from the skirt of his coat Mr Dedalus brought
         pouch and pipe. Alacrity she served. He blew through the flue two husky
@@ -694,7 +697,7 @@ const Sirens = ({openNote}) => {
         glass.
       </p>
       <p>
-        He looked towards <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110010ormondbar")}>the saloon door</button>.
+        He looked towards <Annotation annotationId="110010ormondbar" annotationSelect={() => openNote("110010ormondbar")} activeAnnotationId={currentNoteId}>the saloon door</Annotation>.
       </p>
       <p>
         —{" "}I see you have moved the piano.
@@ -725,8 +728,8 @@ const Sirens = ({openNote}) => {
         God's curse on bitch's bastard.
       </p>
       <p>
-        Tink to her pity cried a diner's bell. To <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110010ormondbar")}>the door of the
-        diningroom</button> came bald Pat, came bothered Pat, came Pat, waiter of Ormond.
+        Tink to her pity cried a diner's bell. To <Annotation annotationId="110010ormondbar" annotationSelect={() => openNote("110010ormondbar")} activeAnnotationId={currentNoteId}>the door of the
+        diningroom</Annotation> came bald Pat, came bothered Pat, came Pat, waiter of Ormond.
         Lager for diner. Lager without alacrity she served.
       </p>
       <p>
@@ -748,7 +751,7 @@ const Sirens = ({openNote}) => {
         Respectable girl meet after mass. Thanks awfully muchly. Wise Bloom eyed
         on the door a poster, a swaying mermaid smoking mid nice waves. Smoke
         mermaids, <span data-edition="ed1986" data-page="216"> </span>coolest whiff of all. Hair streaming: lovelorn. For some man.
-        For Raoul. He eyed and saw afar on Essex bridge a gay hat riding on a <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050013jauntingcar")}>jaunting car</button>. It is. Third time. Coincidence.
+        For Raoul. He eyed and saw afar on Essex bridge a gay hat riding on a <Annotation annotationId="050013jauntingcar" annotationSelect={() => openNote("050013jauntingcar")} activeAnnotationId={currentNoteId}>jaunting car</Annotation>. It is. Third time. Coincidence.
       </p>
       <span data-edition="ed1961" data-page="263"> </span>
       <p>
@@ -782,13 +785,13 @@ const Sirens = ({openNote}) => {
         popcorked bottle ere he went he whispered, bald and bothered, with Miss Douce.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110006goodbyesweetheart")}>—{" "}<i>The bright stars fade</i>...</button>
+        <Annotation annotationId="110006goodbyesweetheart" annotationSelect={() => openNote("110006goodbyesweetheart")} activeAnnotationId={currentNoteId}>—{" "}<i>The bright stars fade</i>...</Annotation>
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110006goodbyesweetheart")}>A voiceless song sang from within, singing:</button>
+        <Annotation annotationId="110006goodbyesweetheart" annotationSelect={() => openNote("110006goodbyesweetheart")} activeAnnotationId={currentNoteId}>A voiceless song sang from within, singing:</Annotation>
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110006goodbyesweetheart")}>—{" "}... <i>the morn is breaking.</i></button>
+        <Annotation annotationId="110006goodbyesweetheart" annotationSelect={() => openNote("110006goodbyesweetheart")} activeAnnotationId={currentNoteId}>—{" "}... <i>the morn is breaking.</i></Annotation>
       </p>
       <p>
         A duodene of birdnotes chirruped bright treble answer under sensitive <span data-edition="ed1932" data-page="237"> </span>hands. Brightly the keys, all twinkling, linked, all harpsichording,
@@ -796,7 +799,7 @@ const Sirens = ({openNote}) => {
         leavetaking, life's, love's morn.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110006goodbyesweetheart")}>—{" "}<i>The dewdrops pearl</i>...</button>
+        <Annotation annotationId="110006goodbyesweetheart" annotationSelect={() => openNote("110006goodbyesweetheart")} activeAnnotationId={currentNoteId}>—{" "}<i>The dewdrops pearl</i>...</Annotation>
       </p>
       <p>
         Lenehan's lips over the counter lisped a low whistle of decoy.
@@ -836,10 +839,10 @@ const Sirens = ({openNote}) => {
       <p>
         Between the car and window, warily walking, went Bloom, unconquered
         hero. See me he might. The seat he sat on: warm. <span data-edition="ed1961" data-page="264"> </span>Black wary hecat walked
-        towards <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030113richiegoulding")}>Richie Goulding's legal bag</button>, lifted aloft, saluting.
+        towards <Annotation annotationId="030113richiegoulding" annotationSelect={() => openNote("030113richiegoulding")} activeAnnotationId={currentNoteId}>Richie Goulding's legal bag</Annotation>, lifted aloft, saluting.
       </p>
       <p>
-        —{" "}<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110006goodbyesweetheart")}><i>And I from thee</i></button>...
+        —{" "}<Annotation annotationId="110006goodbyesweetheart" annotationSelect={() => openNote("110006goodbyesweetheart")} activeAnnotationId={currentNoteId}><i>And I from thee</i></Annotation>...
       </p>
       <p>
         —{" "}I heard you were round, said Blazes Boylan.
@@ -868,8 +871,8 @@ const Sirens = ({openNote}) => {
       </p>
       <p>
         Hello. Where off to? Something to eat? I too was just. In here. What,
-        Ormond? <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110001bestvalue")}>Best value in Dublin</button>. Is that so? <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110010ormondbar")}>Diningroom. Sit tight there.
-        See, not be seen.</button> I think I'll join you. Come on. Richie led on. Bloom
+        Ormond? <Annotation annotationId="110001bestvalue" annotationSelect={() => openNote("110001bestvalue")} activeAnnotationId={currentNoteId}>Best value in Dublin</Annotation>. Is that so? <Annotation annotationId="110010ormondbar" annotationSelect={() => openNote("110010ormondbar")} activeAnnotationId={currentNoteId}>Diningroom. Sit tight there.
+        See, not be seen.</Annotation> I think I'll join you. Come on. Richie led on. Bloom
         followed bag. Dinner fit for a prince.
       </p>
       <p>
@@ -951,9 +954,9 @@ const Sirens = ({openNote}) => {
       </p>
       <span data-edition="ed1986" data-page="218"> </span>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110010ormondbar")}>The bag of Goulding, Collis, Ward led Bloom by ryebloom flowered tables.
+        <Annotation annotationId="110010ormondbar" annotationSelect={() => openNote("110010ormondbar")} activeAnnotationId={currentNoteId}>The bag of Goulding, Collis, Ward led Bloom by ryebloom flowered tables.
         Aimless he chose with agitated aim, bald Pat attending, a table near
-        the door. Be near.</button> At four. Has he forgotten? Perhaps a trick. Not come:
+        the door. Be near.</Annotation> At four. Has he forgotten? Perhaps a trick. Not come:
         whet appetite. I couldn't do. Wait, wait. Pat, waiter, waited.
       </p>
       <p>
@@ -963,7 +966,7 @@ const Sirens = ({openNote}) => {
         —{" "}Go on, pressed Lenehan. There's no-one. He never heard.
       </p>
       <p>
-        —{" "}... <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110006goodbyesweetheart")}><i>Flora's lips did hie.</i></button>
+        —{" "}... <Annotation annotationId="110006goodbyesweetheart" annotationSelect={() => openNote("110006goodbyesweetheart")} activeAnnotationId={currentNoteId}><i>Flora's lips did hie.</i></Annotation>
       </p>
       <p>
         High, a high note pealed in the treble clear.
@@ -979,14 +982,14 @@ const Sirens = ({openNote}) => {
         He pleaded over returning phrases of avowal.
       </p>
       <p>
-        —{" "}<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110006goodbyesweetheart")}><i>I could not leave thee</i></button>...
+        —{" "}<Annotation annotationId="110006goodbyesweetheart" annotationSelect={() => openNote("110006goodbyesweetheart")} activeAnnotationId={currentNoteId}><i>I could not leave thee</i></Annotation>...
       </p>
       <span data-edition="ed1932" data-page="239"> </span>
       <p>
         —{" "}Afterwits, Miss Douce promised coyly.
       </p>
       <p>
-        —{" "}No, now, urged Lenehan. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040091jingle")}><i>Sonnez la cloche!</i></button> O do! There's no-one.
+        —{" "}No, now, urged Lenehan. <Annotation annotationId="040091jingle" annotationSelect={() => openNote("040091jingle")} activeAnnotationId={currentNoteId}><i>Sonnez la cloche!</i></Annotation> O do! There's no-one.
       </p>
       <p>
         She looked. Quick. Miss Kenn out of earshot. Sudden bent. Two kindling
@@ -1034,7 +1037,7 @@ const Sirens = ({openNote}) => {
         Yes, bronze from anearby.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110006goodbyesweetheart")}>—{" "}... <i>Sweetheart, goodbye!</i></button>
+        <Annotation annotationId="110006goodbyesweetheart" annotationSelect={() => openNote("110006goodbyesweetheart")} activeAnnotationId={currentNoteId}>—{" "}... <i>Sweetheart, goodbye!</i></Annotation>
       </p>
       <p>
         —{" "}I'm off, said Boylan with impatience.
@@ -1122,7 +1125,7 @@ const Sirens = ({openNote}) => {
         Nil.</i>
       </p>
       <p>
-        —{" "}<button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040092professorgoodwin")}>Poor old Goodwin was the pianist that night</button>, Father Cowley reminded
+        —{" "}<Annotation annotationId="040092professorgoodwin" annotationSelect={() => openNote("040092professorgoodwin")} activeAnnotationId={currentNoteId}>Poor old Goodwin was the pianist that night</Annotation>, Father Cowley reminded
         them. There was a slight difference of opinion between himself and the
         Collard grand.
       </p>
@@ -1197,8 +1200,8 @@ const Sirens = ({openNote}) => {
         Liver and bacon. Steak and kidney pie. Right, sir. Right, Pat.
       </p>
       <p>
-        Mrs Marion <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030087pastlife")}>met him pike hoses</button>. Smell of burn. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040003nicename")}>Of Paul de Kock. Nice
-        name he.</button>
+        Mrs Marion <Annotation annotationId="030087pastlife" annotationSelect={() => openNote("030087pastlife")} activeAnnotationId={currentNoteId}>met him pike hoses</Annotation>. Smell of burn. <Annotation annotationId="040003nicename" annotationSelect={() => openNote("040003nicename")} activeAnnotationId={currentNoteId}>Of Paul de Kock. Nice
+        name he.</Annotation>
       </p>
       <p>
         —{" "}What's this her name was? A buxom lassy. Marion...
@@ -1270,7 +1273,7 @@ const Sirens = ({openNote}) => {
         —{" "}<i>When love absorbs my ardent soul</i>...
       </p>
       <p>
-        Roll of Bensoulbenjamin rolled to the quivery loveshivery <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110010ormondbar")}>roofpanes</button>.
+        Roll of Bensoulbenjamin rolled to the quivery loveshivery <Annotation annotationId="110010ormondbar" annotationSelect={() => openNote("110010ormondbar")} activeAnnotationId={currentNoteId}>roofpanes</Annotation>.
       </p>
       <p>
         —{" "}War! War! cried Father Cowley. You're the warrior.
@@ -1300,7 +1303,7 @@ const Sirens = ({openNote}) => {
         They drank cool stout. Did she know where the lord lieutenant was going?
         And heard steelhoofs ringhoof ring. No, she couldn't say. But it would
         be in the paper. O, she needn't trouble. No trouble. She waved about
-        her outspread <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("120009irishindependent")}><i>Independent</i></button>, searching, the lord lieutenant, her
+        her outspread <Annotation annotationId="120009irishindependent" annotationSelect={() => openNote("120009irishindependent")} activeAnnotationId={currentNoteId}><i>Independent</i></Annotation>, searching, the lord lieutenant, her
         pinnacles of hair slowmoving, lord lieuten. Too much trouble,
         first gentleman said. O, not in the least. Way he looked that. Lord
         lieutenant. Gold by bronze heard iron steel.
@@ -1314,7 +1317,7 @@ const Sirens = ({openNote}) => {
         Ben Dollard's famous. Night he ran round to us to borrow a dress suit
         for that concert. Trousers tight as a drum on him. Musical porkers.
         Molly did laugh when he went out. Threw herself back across the bed,
-        screaming, kicking. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>With all his belongings on show.</button> O saints above,
+        screaming, kicking. <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>With all his belongings on show.</Annotation> O saints above,
         I'm drenched! O, the women in the front row! O, I never laughed so <span data-edition="ed1932" data-page="243"> </span>many!
         Well, of course that's what gives him the base barreltone. For instance
         eunuchs. Wonder who's playing. Nice touch. Must be Cowley. Musical.
@@ -1370,9 +1373,9 @@ const Sirens = ({openNote}) => {
         —{" "}<i>M'appari,</i> Simon, Father Cowley said.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110010ormondbar")}>Down stage</button> he strode some paces, grave, tall in affliction, his long
+        <Annotation annotationId="110010ormondbar" annotationSelect={() => openNote("110010ormondbar")} activeAnnotationId={currentNoteId}>Down stage</Annotation> he strode some paces, grave, tall in affliction, his long
         arms outheld. Hoarsely the apple of his throat hoarsed softly. Softly he
-        sang to <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110010ormondbar")}>a dusty seascape there</button>: <i>A Last Farewell.</i> A headland, a ship, a
+        sang to <Annotation annotationId="110010ormondbar" annotationSelect={() => openNote("110010ormondbar")} activeAnnotationId={currentNoteId}>a dusty seascape there</Annotation>: <i>A Last Farewell.</i> A headland, a ship, a
         sail upon the billows. Farewell. A lovely girl, her veil awave upon the
         wind upon the headland, wind aroundfr her.
       </p>
@@ -1413,7 +1416,7 @@ const Sirens = ({openNote}) => {
         —{" "}Here, Simon, I'll accompany you, he said. Get up.
       </p>
       <p>
-        By Graham Lemon's pineapple rock, by <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060009elveryselephant")}>Elvery's elephant</button> jingle jogged.
+        By Graham Lemon's pineapple rock, by <Annotation annotationId="060009elveryselephant" annotationSelect={() => openNote("060009elveryselephant")} activeAnnotationId={currentNoteId}>Elvery's elephant</Annotation> jingle jogged.
       </p>
       <p>
         Steak, kidney, liver, mashed, at meat fit for princes sat princes Bloom
@@ -1428,18 +1431,18 @@ const Sirens = ({openNote}) => {
       <span data-edition="ed1986" data-page="223"> </span>
       <p>
         Tenderly Bloom over liverless bacon saw the tightened features strain.
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("030076backachepills")}>Backache he. Bright's bright eye. Next item on the programme. Paying the
-        piper. Pills, pounded bread, worth a guinea a box. Stave it off awhile.</button>
+        <Annotation annotationId="030076backachepills" annotationSelect={() => openNote("030076backachepills")} activeAnnotationId={currentNoteId}>Backache he. Bright's bright eye. Next item on the programme. Paying the
+        piper. Pills, pounded bread, worth a guinea a box. Stave it off awhile.</Annotation>
         Sings too: <i>Down among the dead men.</i> Appropriate. Kidney pie. Sweets to
         the. Not making much hand of it. Best value in. Characteristic of him.
-        Power. Particular about his drink. Flaw in the glass, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010010mountains")}>fresh Vartry
-        water</button>. Fecking matches from counters to save. Then squander a sovereign
-        in dribs and drabs. And when he's wanted <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010019money")}>not a farthing</button>. Screwed
+        Power. Particular about his drink. Flaw in the glass, <Annotation annotationId="010010mountains" annotationSelect={() => openNote("010010mountains")} activeAnnotationId={currentNoteId}>fresh Vartry
+        water</Annotation>. Fecking matches from counters to save. Then squander a sovereign
+        in dribs and drabs. And when he's wanted <Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}>not a farthing</Annotation>. Screwed
         refusing to pay his fare. Curious types.
       </p>
       <p>
-        Never would Richie forget that night. As long as he lived: never. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110005theatreroyal")}>In the
-        gods of the old Royal</button> with little Peake. And when the first note.
+        Never would Richie forget that night. As long as he lived: never. <Annotation annotationId="110005theatreroyal" annotationSelect={() => openNote("110005theatreroyal")} activeAnnotationId={currentNoteId}>In the
+        gods of the old Royal</Annotation> with little Peake. And when the first note.
       </p>
       <p>
         Speech paused on Richie's lips.
@@ -1536,8 +1539,8 @@ const Sirens = ({openNote}) => {
       <p>
         Braintipped, cheek touched with flame, they listened feeling that flow
         endearing flow over skin limbs human heart soul spine. Bloom signed to
-        Pat, bald Pat is a waiter hard of hearing, to set ajar <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110010ormondbar")}>the door of the
-        bar</button>. The door of the bar. So. That will do. Pat, waiter, waited, waiting
+        Pat, bald Pat is a waiter hard of hearing, to set ajar <Annotation annotationId="110010ormondbar" annotationSelect={() => openNote("110010ormondbar")} activeAnnotationId={currentNoteId}>the door of the
+        bar</Annotation>. The door of the bar. So. That will do. Pat, waiter, waited, waiting
         to hear, for he was hard of hear by the door.
       </p>
       <p>
@@ -1554,7 +1557,7 @@ const Sirens = ({openNote}) => {
         it in the least, her first merciful lovesoft oftloved word.
       </p>
       <p>
-        Love that is singing: <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040035oldsweetsong")}>love's old sweet song</button>. Bloom unwound slowly the
+        Love that is singing: <Annotation annotationId="040035oldsweetsong" annotationSelect={() => openNote("040035oldsweetsong")} activeAnnotationId={currentNoteId}>love's old sweet song</Annotation>. Bloom unwound slowly the
         elastic band of his packet. Love's old sweet <i>sonnez la</i> gold. Bloom
         wound a skein round four forkfingers, stretched it, relaxed, and wound
         it round his troubled double, fourfold, in octave, gyved them fast.
@@ -1564,7 +1567,7 @@ const Sirens = ({openNote}) => {
       </p>
       <p>
         Tenors get women by the score. Increase their flow. Throw flower at his
-        feet. When will we meet? <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040069seasidegirls")}>My head it simply.</button> Jingle all delighted. He
+        feet. When will we meet? <Annotation annotationId="040069seasidegirls" annotationSelect={() => openNote("040069seasidegirls")} activeAnnotationId={currentNoteId}>My head it simply.</Annotation> Jingle all delighted. He
         can't sing for tall hats. Your head it simply swurls. Perfumed for him.
         What perfume does your wife? I want to know. Jing. Stop. Knock. Last
         look at mirror always before she answers the door. The hall. There? How
@@ -1599,7 +1602,7 @@ const Sirens = ({openNote}) => {
         Bloom looped, unlooped, noded, disnoded.
       </p>
       <p>
-        Bloom. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040063happywarmth")}>Flood of warm jimjam lickitup secretness</button> flowed to flow in music
+        Bloom. <Annotation annotationId="040063happywarmth" annotationSelect={() => openNote("040063happywarmth")} activeAnnotationId={currentNoteId}>Flood of warm jimjam lickitup secretness</Annotation> flowed to flow in music
         out, in desire, dark to lick flow invading. Tipping her tepping her
         tapping her topping her. Tup. Pores to dilate dilating. Tup. The joy
         the feel the warm the. Tup. To pour o'er sluices pouring gushes. Flood,
@@ -1703,10 +1706,10 @@ const Sirens = ({openNote}) => {
       </p>
       <p>
         Blazes Boylan's smart tan shoes creaked on the barfloor, said before.
-        Jingle by monuments of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060008sirjohngray")}>sir John Gray</button>, Horatio onehandled Nelson,
-        reverend <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060010fathermathew")}>father Theobald Mathew</button>, jaunted, as said before just now.
+        Jingle by monuments of <Annotation annotationId="060008sirjohngray" annotationSelect={() => openNote("060008sirjohngray")} activeAnnotationId={currentNoteId}>sir John Gray</Annotation>, Horatio onehandled Nelson,
+        reverend <Annotation annotationId="060010fathermathew" annotationSelect={() => openNote("060010fathermathew")} activeAnnotationId={currentNoteId}>father Theobald Mathew</Annotation>, jaunted, as said before just now.
         Atrot, in heat, heatseated. <i>Cloche. Sonnez la. Cloche. Sonnez la.</i>
-        Slower the mare went up the hill by <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060011therotunda")}>the Rotunda, Rutland square</button>. Too
+        Slower the mare went up the hill by <Annotation annotationId="060011therotunda" annotationSelect={() => openNote("060011therotunda")} activeAnnotationId={currentNoteId}>the Rotunda, Rutland square</Annotation>. Too
         slow for Boylan, blazes Boylan, impatience Boylan, joggled the mare.
       </p>
       <p>
@@ -1764,8 +1767,8 @@ const Sirens = ({openNote}) => {
         slender catgut thong. He drew and plucked. It buzzed, it twanged. 
         <span data-edition="ed1939" data-page="202"> </span>
         While
-        Goulding talked of Barraclough's voice production, while <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("060030retrospective")}>Tom Kernan,
-        harking back in a retrospective sort of arrangement</button> talked to listening
+        Goulding talked of Barraclough's voice production, while <Annotation annotationId="060030retrospective" annotationSelect={() => openNote("060030retrospective")} activeAnnotationId={currentNoteId}>Tom Kernan,
+        harking back in a retrospective sort of arrangement</Annotation> talked to listening
         Father Cowley, who played a voluntary, who nodded as he played. While
         big Ben Dollard talked with Simon Dedalus, lighting, who nodded as he
         smoked, who smoked.
@@ -1785,7 +1788,7 @@ const Sirens = ({openNote}) => {
         your? Twang. It snapped.
       </p>
       <p>
-        Jingle into <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040007dorsetstreet")}>Dorset street</button>.
+        Jingle into <Annotation annotationId="040007dorsetstreet" annotationSelect={() => openNote("040007dorsetstreet")} activeAnnotationId={currentNoteId}>Dorset street</Annotation>.
       </p>
       <p>
         Miss Douce withdrew her satiny arm, reproachful, pleased.
@@ -1866,7 +1869,7 @@ const Sirens = ({openNote}) => {
         moonlight nightcall, clear from anear, a call from afar, replying.
       </p>
       <p>
-        Down the edge of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050021freeman")}>his <i>Freeman</i> baton</button> ranged Bloom's, your other eye,
+        Down the edge of <Annotation annotationId="050021freeman" annotationSelect={() => openNote("050021freeman")} activeAnnotationId={currentNoteId}>his <i>Freeman</i> baton</Annotation> ranged Bloom's, your other eye,
         scanning for where did I see that. Callan, Coleman, Dignam Patrick.
         Heigho! Heigho! Fawcett. Aha! Just I was looking...
       </p>
@@ -1885,7 +1888,7 @@ const Sirens = ({openNote}) => {
       <p>
         On. Know what I mean. No, change that ee. Accept my poor little pres
         enclos. Ask her no answ. Hold on. Five Dig. Two about here. Penny the
-        gulls. Elijah is com. Seven <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080024davybyrnes")}>Davy Byrne's</button>. Is eight about. Say half a
+        gulls. Elijah is com. Seven <Annotation annotationId="080024davybyrnes" annotationSelect={() => openNote("080024davybyrnes")} activeAnnotationId={currentNoteId}>Davy Byrne's</Annotation>. Is eight about. Say half a
         crown. My poor little pres: p. o. two and six. Write me a long. Do you
         despise? Jingle, have you the? So excited. Why do you call me naught?
         You naughty too? O, Mairy lost the pin of her. Bye for today. <span data-edition="ed1932" data-page="251"> </span>Yes,
@@ -1900,13 +1903,13 @@ const Sirens = ({openNote}) => {
         they don't see. Woman. Sauce for the gander.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050013jauntingcar")}>A hackney car, number three hundred and twentyfour</button>, driver Barton James
-        of number one Harmony avenue, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050022donnybrook")}>Donnybrook</button>, on which sat a fare, a young
+        <Annotation annotationId="050013jauntingcar" annotationSelect={() => openNote("050013jauntingcar")} activeAnnotationId={currentNoteId}>A hackney car, number three hundred and twentyfour</Annotation>, driver Barton James
+        of number one Harmony avenue, <Annotation annotationId="050022donnybrook" annotationSelect={() => openNote("050022donnybrook")} activeAnnotationId={currentNoteId}>Donnybrook</Annotation>, on which sat a fare, a young
         gentleman, stylishly dressed in an indigoblue serge suit made by George
         Robert Mesias, tailor and cutter, of number five Eden quay, and wearing
-        a straw hat very dressy, bought of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040062bolandsbread")}>John Plasto of number one</button> <span data-edition="ed1986" data-page="229"> </span><button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040062bolandsbread")}>Great
-        Brunswick street, hatter</button>. Eh? This is the jingle that joggled and
-        jingled. By <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040060dlugacz")}>Dlugacz' porkshop</button> bright tubes of <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040061agendath")}>Agendath</button> trotted a
+        a straw hat very dressy, bought of <Annotation annotationId="040062bolandsbread" annotationSelect={() => openNote("040062bolandsbread")} activeAnnotationId={currentNoteId}>John Plasto of number one</Annotation> <span data-edition="ed1986" data-page="229"> </span><Annotation annotationId="040062bolandsbread" annotationSelect={() => openNote("040062bolandsbread")} activeAnnotationId={currentNoteId}>Great
+        Brunswick street, hatter</Annotation>. Eh? This is the jingle that joggled and
+        jingled. By <Annotation annotationId="040060dlugacz" annotationSelect={() => openNote("040060dlugacz")} activeAnnotationId={currentNoteId}>Dlugacz' porkshop</Annotation> bright tubes of <Annotation annotationId="040061agendath" annotationSelect={() => openNote("040061agendath")} activeAnnotationId={currentNoteId}>Agendath</Annotation> trotted a
         gallantbuttocked mare.
       </p>
       <p>
@@ -1919,8 +1922,8 @@ const Sirens = ({openNote}) => {
       <p>
         Bloom mur: best references. But Henry wrote: it will excite me. You
         know how. In haste. Henry. Greek ee. Better add postscript. What is he
-        playing now? Improvising. Intermezzo. P. S. The rum tum tum. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040017seemtolikeit")}>How will
-        you pun? You punish me? Crooked skirt swinging, whack by.</button> Tell me I want
+        playing now? Improvising. Intermezzo. P. S. The rum tum tum. <Annotation annotationId="040017seemtolikeit" annotationSelect={() => openNote("040017seemtolikeit")} activeAnnotationId={currentNoteId}>How will
+        you pun? You punish me? Crooked skirt swinging, whack by.</Annotation> Tell me I want
         to. Know. O. Course if I didn't I wouldn't ask. La la la ree. Trails off
         there sad in minor. Why minor sad? Sign H. They like sad tail at end. P.
         P. S. La la la ree. I feel so sad today. La ree. So lonely. Dee.
@@ -1933,7 +1936,7 @@ const Sirens = ({openNote}) => {
       <p style={{textIndent:"0cm", textAlign:"center", marginTop:".5cm", marginBottom:".5cm"}}>
         Miss Martha Clifford<br/>
         c/o P. O. <br/>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040041dolphinsbarn")}>Dolphin's barn lane</button><br/>
+        <Annotation annotationId="040041dolphinsbarn" annotationSelect={() => openNote("040041dolphinsbarn")} activeAnnotationId={currentNoteId}>Dolphin's barn lane</Annotation><br/>
         {" "}{" "}{" "}{" "}{" "}{" "}{" "}{" "}{" "}
         {" "}{" "}{" "}{" "}{" "}{" "}{" "}{" "}Dublin.
       </p>
@@ -1941,8 +1944,8 @@ const Sirens = ({openNote}) => {
       <p>
         Blot over the other so he can't read. Right. Idea prize titbit.
         Something detective read off blottingpad. Payment at the rate of guinea
-        per col. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040065matcham")}>Matcham often thinks the laughing witch.</button> Poor Mrs Purefoy. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080010upup")}>U.
-        P.: up.</button>
+        per col. <Annotation annotationId="040065matcham" annotationSelect={() => openNote("040065matcham")} activeAnnotationId={currentNoteId}>Matcham often thinks the laughing witch.</Annotation> Poor Mrs Purefoy. <Annotation annotationId="080010upup" annotationSelect={() => openNote("080010upup")} activeAnnotationId={currentNoteId}>U.
+        P.: up.</Annotation>
       </p>
       <p>
         Too poetical that about the sad. Music did that. Music hath charms.
@@ -1988,7 +1991,7 @@ const Sirens = ({openNote}) => {
       </p>
       <span data-edition="ed1986" data-page="230"> </span>
       <p>
-        Under <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050037tomkernan")}>Tom Kernan's ginhot words</button> the accompanist wove music slow.
+        Under <Annotation annotationId="050037tomkernan" annotationSelect={() => openNote("050037tomkernan")} activeAnnotationId={currentNoteId}>Tom Kernan's ginhot words</Annotation> the accompanist wove music slow.
         Authentic fact. How Walter Bapty lost his voice. Well, sir, the husband
         took him by the throat. <i>Scoundrel,</i> said he, <i>You'll sing no more
         lovesongs.</i> He did, sir Tom. Bob Cowley wove. Tenors get wom.
@@ -2013,7 +2016,7 @@ const Sirens = ({openNote}) => {
       <span data-edition="ed1922" data-page="269"> </span>
       <p>
         Her ear too is a shell, the peeping lobe there. Been to the seaside.
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040069seasidegirls")}>Lovely seaside girls.</button> Skin tanned raw. Should have put on coldcream
+        <Annotation annotationId="040069seasidegirls" annotationSelect={() => openNote("040069seasidegirls")} activeAnnotationId={currentNoteId}>Lovely seaside girls.</Annotation> Skin tanned raw. Should have put on coldcream
         first make it brown. Buttered toast. O and that lotion mustn't forget.
         Fever near her mouth. Your head it simply. Hair braided over: shell with
         seaweed. Why do they hide their ears with seaweed hair? And Turks their
@@ -2040,7 +2043,7 @@ const Sirens = ({openNote}) => {
         Tap.
       </p>
       <p>
-        By Larry O'Rourke's, by Larry, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040081boldlarry")}>bold Larry O'</button>, Boylan swayed and Boylan
+        By Larry O'Rourke's, by Larry, <Annotation annotationId="040081boldlarry" annotationSelect={() => openNote("040081boldlarry")} activeAnnotationId={currentNoteId}>bold Larry O'</Annotation>, Boylan swayed and Boylan
         turned.
       </p>
       <p>
@@ -2057,11 +2060,11 @@ const Sirens = ({openNote}) => {
         two, one, three, four.
       </p>
       <p>
-        Sea, wind, leaves, thunder, waters, cows lowing, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040037cattlemarket")}>the cattlemarket</button>,
+        Sea, wind, leaves, thunder, waters, cows lowing, <Annotation annotationId="040037cattlemarket" annotationSelect={() => openNote("040037cattlemarket")} activeAnnotationId={currentNoteId}>the cattlemarket</Annotation>,
         cocks, hens don't crow, snakes hissss. There's music everywhere.
-        Ruttledge's door: ee creaking. No, that's noise. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("080030cenarteco")}>Minuet of <i>Don
+        Ruttledge's door: ee creaking. No, that's noise. <Annotation annotationId="080030cenarteco" annotationSelect={() => openNote("080030cenarteco")} activeAnnotationId={currentNoteId}>Minuet of <i>Don
         Giovanni</i> he's playing now. Court dresses of all descriptions in castle
-        chambers dancing.</button> Misery. Peasants outside. Green starving faces eating
+        chambers dancing.</Annotation> Misery. Peasants outside. Green starving faces eating
         dockleaves. Nice that is. Look: look, look, look, look, look: you look
         at us.
       </p>
@@ -2085,9 +2088,9 @@ const Sirens = ({openNote}) => {
         clocks came light to earth.
       </p>
       <p>
-        O, look we are so! <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110003chambermusic")}>Chamber music. Could make a kind of pun on that.
+        O, look we are so! <Annotation annotationId="110003chambermusic" annotationSelect={() => openNote("110003chambermusic")} activeAnnotationId={currentNoteId}>Chamber music. Could make a kind of pun on that.
         It is a kind of music I often thought when she. Acoustics that is.
-        Tinkling. Empty vessels make most noise.</button> Because the acoustics, the
+        Tinkling. Empty vessels make most noise.</Annotation> Because the acoustics, the
         resonance changes according as the weight of the water is equal to
         the law of falling water. Like those rhapsodies of Liszt's, Hungarian,
         gipsyeyed. Pearls. Drops. Rain. Diddle iddle addle addle ooddle ooddle.
@@ -2095,7 +2098,7 @@ const Sirens = ({openNote}) => {
       </p>
       <span data-edition="ed1932" data-page="254"> </span>
       <p>
-        One rapped on a door, one tapped with a knock, did he knock <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040003nicename")}>Paul de Kock</button>
+        One rapped on a door, one tapped with a knock, did he knock <Annotation annotationId="040003nicename" annotationSelect={() => openNote("040003nicename")} activeAnnotationId={currentNoteId}>Paul de Kock</Annotation>
         with a loud proud knocker with a cock carracarracarra cock. Cockcock.
       </p>
       <p>
@@ -2105,10 +2108,10 @@ const Sirens = ({openNote}) => {
         —{" "}<i>Qui sdegno,</i> Ben, said Father Cowley.
       </p>
       <p>
-        —{" "}No, Ben, Tom Kernan interfered. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}><i>The Croppy Boy.</i></button> Our native Doric.
+        —{" "}No, Ben, Tom Kernan interfered. <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}><i>The Croppy Boy.</i></Annotation> Our native Doric.
       </p>
       <p>
-        —{" "}Ay do, Ben, Mr Dedalus said.  <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>Good men and true.</button>
+        —{" "}Ay do, Ben, Mr Dedalus said.  <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>Good men and true.</Annotation>
       </p>
       <span data-edition="ed1961" data-page="282"> </span>
       <p>
@@ -2141,8 +2144,8 @@ const Sirens = ({openNote}) => {
       </p>
       <p>
         The voice of dark age, of unlove, earth's fatigue made grave approach
-        and painful, come from afar, from hoary mountains, called on <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>good men
-        and true. The priest he sought. With him would he speak a word.</button>
+        and painful, come from afar, from hoary mountains, called on <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>good men
+        and true. The priest he sought. With him would he speak a word.</Annotation>
       </p>
       <p>
         Tap.
@@ -2156,21 +2159,21 @@ const Sirens = ({openNote}) => {
       </p>
       <span data-edition="ed1922" data-page="271"> </span><span data-edition="ed1986" data-page="232"> </span>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>The priest's at home. A false priest's servant bade him welcome. Step
-        in. The holy father.</button> Curlycues of chords.
+        <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>The priest's at home. A false priest's servant bade him welcome. Step
+        in. The holy father.</Annotation> Curlycues of chords.
       </p>
       <p>
         Ruin them. Wreck their lives. Then build them cubicles to end their days
         in. Hushaby. Lullaby. Die, dog. Little dog, die.
       </p>
       <p>
-        The voice of warning, solemn warning, told them <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>the youth had entered
+        The voice of warning, solemn warning, told them <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>the youth had entered
         a lonely hall, told them how solemn fell his footstep there, told them
-        the gloomy chamber, the vested priest sitting to shrive.</button>
+        the gloomy chamber, the vested priest sitting to shrive.</Annotation>
       </p>
       <p>
         Decent soul. Bit addled now. Thinks he'll win in <i>Answers</i> poets'
-        <span data-edition="ed1932" data-page="255"> </span>picture puzzle. We hand you crisp <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("010019money")}>five pound note</button>. Bird sitting hatching
+        <span data-edition="ed1932" data-page="255"> </span>picture puzzle. We hand you crisp <Annotation annotationId="010019money" annotationSelect={() => openNote("010019money")} activeAnnotationId={currentNoteId}>five pound note</Annotation>. Bird sitting hatching
         in a nest. Lay of the last minstrel he thought it was. See blank tee
         what domestic animal? Tee dash ar most courageous mariner. Good voice he
         has still. No eunuch yet with all his belongings.
@@ -2185,8 +2188,8 @@ const Sirens = ({openNote}) => {
       </p>
       <p>
         The voice of penance and of grief came slow, embellished, tremulous.
-        Ben's contrite beard confessed: <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}> <i>in nomine Domini,</i> in God's name. He
-        knelt. He beat his hand upon his breast, confessing: <i>mea culpa.</i></button>
+        Ben's contrite beard confessed: <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}> <i>in nomine Domini,</i> in God's name. He
+        knelt. He beat his hand upon his breast, confessing: <i>mea culpa.</i></Annotation>
       </p>
       <p>
         Latin again. That holds them like birdlime. Priest with the communion
@@ -2201,10 +2204,10 @@ const Sirens = ({openNote}) => {
         expressive, fullbusted satin. Kernan. Si.
       </p>
       <p>
-        The sighing voice of sorrow sang. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>His sins. Since Easter he had cursed
-        three times.</button> You bitch's bast. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>And once at masstime he had gone to play.
+        The sighing voice of sorrow sang. <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>His sins. Since Easter he had cursed
+        three times.</Annotation> You bitch's bast. <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>And once at masstime he had gone to play.
         Once by the churchyard he had passed and for his mother's rest he had
-        not prayed.</button> A boy. A croppy boy.
+        not prayed.</Annotation> A boy. A croppy boy.
       </p>
       <p>
         Bronze, listening, by the beerpull gazed far away. Soulfully. Doesn't
@@ -2233,23 +2236,23 @@ const Sirens = ({openNote}) => {
         She looked fine. Her crocus dress she wore lowcut, belongings on show.
         Clove her breath was always in theatre when she bent to ask a question.
         Told her what Spinoza says in that book of poor papa's. Hypnotised,
-        listening. Eyes like that. She bent. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>Chap in dresscircle staring down
-        into her with his operaglass for all he was worth.</button> Beauty of music <span data-edition="ed1986" data-page="233"> </span>you
+        listening. Eyes like that. She bent. <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>Chap in dresscircle staring down
+        into her with his operaglass for all he was worth.</Annotation> Beauty of music <span data-edition="ed1986" data-page="233"> </span>you
         must hear twice. Nature woman half a look. God made the country man the
         tune. Met him pike hoses. Philosophy. O rocks!
       </p>
       <span data-edition="ed1932" data-page="256"> </span><span data-edition="ed1961" data-page="284"> </span>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>All gone. All fallen. At the siege of Ross his father, at Gorey all his
-        brothers fell. To Wexford</button>, we are the boys of Wexford, <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>he would. Last of
-        his name and race.</button>
+        <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>All gone. All fallen. At the siege of Ross his father, at Gorey all his
+        brothers fell. To Wexford</Annotation>, we are the boys of Wexford, <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>he would. Last of
+        his name and race.</Annotation>
       </p>
       <p>
-        I too. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040054saltcloak")}>Last of my race.</button> Milly young student. Well, my fault perhaps. No
+        I too. <Annotation annotationId="040054saltcloak" annotationSelect={() => openNote("040054saltcloak")} activeAnnotationId={currentNoteId}>Last of my race.</Annotation> Milly young student. Well, my fault perhaps. No
         son. Rudy. Too late now. Or if not? If not? If still?
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>He bore no hate.</button>
+        <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>He bore no hate.</Annotation>
       </p>
       <p>
         Hate. Love. Those are names. Rudy. Soon I am old. 
@@ -2259,12 +2262,12 @@ const Sirens = ({openNote}) => {
         pale, to Bloom soon old. But when was young?
       </p>
       <p>
-        Ireland comes now. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>My country above the king.</button> She listens. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("100012evildays")}>Who fears to
-        speak of nineteen four?</button> Time to be shoving. Looked enough.
+        Ireland comes now. <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>My country above the king.</Annotation> She listens. <Annotation annotationId="100012evildays" annotationSelect={() => openNote("100012evildays")} activeAnnotationId={currentNoteId}>Who fears to
+        speak of nineteen four?</Annotation> Time to be shoving. Looked enough.
       </p>
       <p>
-        —{" "} <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}> <i>Bless me, father,</i> Dollard the croppy cried. <i>Bless me and let me
-        go.</i></button>
+        —{" "} <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}> <i>Bless me, father,</i> Dollard the croppy cried. <i>Bless me and let me
+        go.</i></Annotation>
       </p>
       <p>
         Tap.
@@ -2277,8 +2280,8 @@ const Sirens = ({openNote}) => {
         Laughter in court. Henry. I never signed it. The lovely name you.
       </p>
       <p>
-        Low sank the music, air and words. Then hastened. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>The false priest
-        rustling soldier from his cassock. A yeoman captain.</button> They know it all by
+        Low sank the music, air and words. Then hastened. <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>The false priest
+        rustling soldier from his cassock. A yeoman captain.</Annotation> They know it all by
         heart. The thrill they itch for. Yeoman cap.
       </p>
       <p>
@@ -2295,7 +2298,7 @@ const Sirens = ({openNote}) => {
         didn't see. 
         <span data-edition="ed1922" data-page="273"> </span>
         They want it. Not too much polite. That's why he gets them.
-        Gold in your pocket, brass in your face. With look to look. Songs without words. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("170008precedingseries")}>Molly, that hurdygurdy boy.</button>
+        Gold in your pocket, brass in your face. With look to look. Songs without words. <Annotation annotationId="170008precedingseries" annotationSelect={() => openNote("170008precedingseries")} activeAnnotationId={currentNoteId}>Molly, that hurdygurdy boy.</Annotation>
         She knew he meant the monkey was sick. Or because so like the Spanish.
         Understand animals too that way. Solomon did. Gift of nature.
       </p>
@@ -2308,9 +2311,9 @@ const Sirens = ({openNote}) => {
       <span data-edition="ed1939" data-page="208"> </span>
       <span data-edition="ed1961" data-page="285"> </span>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>With hoarse rude fury the yeoman cursed</button>, swelling in apoplectic bitch's
-        bastard. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>A good thought, boy, to come. One hour's your time to live,
-        your last.</button>
+        <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>With hoarse rude fury the yeoman cursed</Annotation>, swelling in apoplectic bitch's
+        bastard. <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>A good thought, boy, to come. One hour's your time to live,
+        your last.</Annotation>
       </p>
       <p>
         Tap. Tap.
@@ -2332,12 +2335,12 @@ const Sirens = ({openNote}) => {
         Popped corks, splashes of beerfroth, stacks of empties.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110008leavetohands")}>On the smooth jutting beerpull laid Lydia hand, lightly, plumply, leave
+        <Annotation annotationId="110008leavetohands" annotationSelect={() => openNote("110008leavetohands")} activeAnnotationId={currentNoteId}>On the smooth jutting beerpull laid Lydia hand, lightly, plumply, leave
         it to my hands. All lost in pity for croppy. Fro, to: to, fro: over
         the polished knob (she knows his eyes, my eyes, her eyes) her thumb and
         finger passed in pity: passed, repassed and, gently touching, then slid
         so smoothly, slowly down, a cool firm white enamel baton protruding
-        through their sliding ring.</button>
+        through their sliding ring.</Annotation>
       </p>
       <p>
         With a cock with a carra.
@@ -2346,14 +2349,14 @@ const Sirens = ({openNote}) => {
         Tap. Tap. Tap.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>I hold this house. Amen. He gnashed in fury. Traitors swing.</button>
+        <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>I hold this house. Amen. He gnashed in fury. Traitors swing.</Annotation>
       </p>
       <p>
         The chords consented. Very sad thing. But had to be. 
       </p>
       <p>
         Get out before the end. Thanks, that was heavenly. Where's my hat. Pass by her. 
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("050021freeman")}>Can leave that Freeman.</button> Letter I have. Suppose she were the? No. Walk, walk,
+        <Annotation annotationId="050021freeman" annotationSelect={() => openNote("050021freeman")} activeAnnotationId={currentNoteId}>Can leave that Freeman.</Annotation> Letter I have. Suppose she were the? No. Walk, walk,
         walk. Like Cashel Boylo Connoro Coylo Tisdall Maurice Tisntdall Farrell.
         Waaaaaaalk.
       </p>
@@ -2368,7 +2371,7 @@ const Sirens = ({openNote}) => {
         By deaf Pat in the doorway straining ear Bloom passed.
       </p>
       <p>
-        <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>At Geneva barrack that young man died. At Passage was his body laid.</button>
+        <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>At Geneva barrack that young man died. At Passage was his body laid.</Annotation>
         Dolor! O, he dolores! The voice of the mournful chanter called to
         dolorous prayer.
       </p>
@@ -2383,12 +2386,12 @@ const Sirens = ({openNote}) => {
         Tap. Tap. Tap.
       </p>
       <p>
-        Pray for him, prayed the bass of Dollard. <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110007croppyboy")}>You who hear in peace. Breathe
-        a prayer, drop a tear, good men, good people. He was the croppy boy.</button>
+        Pray for him, prayed the bass of Dollard. <Annotation annotationId="110007croppyboy" annotationSelect={() => openNote("110007croppyboy")} activeAnnotationId={currentNoteId}>You who hear in peace. Breathe
+        a prayer, drop a tear, good men, good people. He was the croppy boy.</Annotation>
       </p>
       <span data-edition="ed1932" data-page="258"> </span>
       <p>
-        Scaring eavesdropping boots croppy bootsboy Bloom in <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("110010ormondbar")}>the Ormond hallway</button>
+        Scaring eavesdropping boots croppy bootsboy Bloom in <Annotation annotationId="110010ormondbar" annotationSelect={() => openNote("110010ormondbar")} activeAnnotationId={currentNoteId}>the Ormond hallway</Annotation>
         heard growls and roars of bravo, fat backslapping, their boots all
         treading, boots not the boots the boy. General chorus off for a swill to
         wash it down. Glad I avoided.
@@ -2593,8 +2596,8 @@ const Sirens = ({openNote}) => {
       </p>
       <p>
         Instruments. A blade of grass, shell of her hands, then blow. Even
-        comb and tissuepaper you can knock a tune out of. Molly in her shift <button className="bg-gray-300 bg-center bg-cover hover:bg-green-300" onClick={() => openNote("040049pleasantoldtimes")}>in
-        Lombard street west</button>, hair down. I suppose each kind of trade made its
+        comb and tissuepaper you can knock a tune out of. Molly in her shift <Annotation annotationId="040049pleasantoldtimes" annotationSelect={() => openNote("040049pleasantoldtimes")} activeAnnotationId={currentNoteId}>in
+        Lombard street west</Annotation>, hair down. I suppose each kind of trade made its
         own, don't you see? Hunter with a horn. Haw. Have you the? <i>Cloche.
         Sonnez la.</i> <span data-edition="ed1986" data-page="237"> </span>Shepherd his pipe. Policeman a whistle.
         Locks and keys! Sweep! Four o'clock's all's well! Sleep! All is lost
