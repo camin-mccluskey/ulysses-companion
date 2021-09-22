@@ -1,6 +1,6 @@
 # Ulysses Companion
 
-[Ulysses Companion](wwww.camin.xyz/ulysses-companion) is an interactive ebook, with reading notes for Jame Joyce's modern classic Ulysses. This site is a port of www.joyceproject.com that improves on the UX by allowing users to open annotations while reading the text and tracks which notes have already been read (as the notes are often repeated where relevant in the text).
+[Ulysses Companion](https://camin.xyz/ulysses-companion) is an interactive ebook, with reading notes for Jame Joyce's modern classic Ulysses. This site is a port of www.joyceproject.com that improves on the UX by allowing users to open annotations while reading the text and tracks which notes have already been read (as the notes are often repeated where relevant in the text).
 
 PRs are welcome to extend the notes - a contribution guide is coming soon.
 
