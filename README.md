@@ -32,6 +32,7 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## Future Features
+- [ ] Migrate the annotation visit logic to Redux
 - [ ] Store opened note history in browser storage to allow users to close tab and return later
 - [ ] Add user generated content - voting on notes, adding new notes
 - [ ] Allow users to persist their reading history between browser data deletion with accounts
