@@ -1,0 +1,13 @@
+Application state:
+
+state = {
+  chapter: {
+    current_chapter: String
+  },
+  note: {
+    current_note_id: String,
+    note_panel_open: Boolean,
+    note_expanded: Boolean,
+    visited_notes: Set<String>
+  },
+}

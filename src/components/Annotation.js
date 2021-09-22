@@ -6,7 +6,6 @@ const Annotation = ({
   visited
 }) => {
   const isActive = annotationId === activeAnnotationId;
-  console.log(annotationId + ": active = " + isActive);
   const color = isActive ? "bg-green-300" : visited ? "bg-purple-100" : "bg-gray-200";
   return (
     <button 
