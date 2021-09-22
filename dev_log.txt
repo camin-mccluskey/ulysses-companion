@@ -6,8 +6,20 @@ state = {
   },
   note: {
     current_note_id: String,
-    note_panel_open: Boolean,
     note_expanded: Boolean,
     visited_notes: Set<String>
   },
 }
+
+State which can be handled inside components/with calculated props:
+- About panel open/closed state (handle inside SideBar)
+- Is note panel open (yes if current_note_id not null)
+- Is note expanded (handle inside DetailBar)
+
+Slices (features):
+- chapter
+  - reducers: setCurrentChapter
+  - selectors: selectChapter
+- note
+  - reducers:
+  - selectors:
