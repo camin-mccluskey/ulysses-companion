@@ -1,6 +1,6 @@
 # Ulysses Companion
 
-[Ulysses Companion](https://camin.xyz/ulysses-companion) is an interactive ebook, with reading notes for Jame Joyce's modern classic Ulysses. This site is a port of www.joyceproject.com that improves on the UX by allowing users to open annotations while reading the text and tracks which notes have already been read (as the notes are often repeated where relevant in the text).
+[Ulysses Companion](https://camin.xyz/ulysses-companion) is an interactive ebook, with reading notes for James Joyce's modern classic Ulysses. This site is a port of www.joyceproject.com that improves on the UX by allowing users to open annotations while reading the text and tracks which notes have already been read (as the notes are often repeated where relevant in the text).
 
 PRs are welcome to extend the notes - a contribution guide is coming soon.
 
@@ -32,7 +32,7 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## Future Features
-- [ ] Migrate the annotation visit logic to Redux
+- [x] Migrate the annotation visit logic to Redux
 - [ ] Store opened note history in browser storage to allow users to close tab and return later
 - [ ] Add user generated content - voting on notes, adding new notes
 - [ ] Allow users to persist their reading history between browser data deletion with accounts
