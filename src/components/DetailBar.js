@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import notes from '../content/notes/notes.json';
+import { useSelector, useDispatch } from 'react-redux';
+import { setCurrentNoteId } from '../app/notesSlice';
 
-const DetailBar = ({noteId, closeNote}) => {
+
+const DetailBar = () => {
   const [expandedNote, setExpandedNote] = useState(null);
+  const noteId = useSelector(state => state.notes.current_note_id);
   const isOpen = !!noteId;
+  const dispatch = useDispatch();
 
   // when noteId changes, reset expanded note
   useEffect(() => {
@@ -20,6 +25,10 @@ const DetailBar = ({noteId, closeNote}) => {
     } else {
       setExpandedNote(notes[noteId].expandedNote);
     }
+  }
+
+  const closeNote = () => {
+    dispatch(setCurrentNoteId(null));
   }
 
   return (
@@ -52,3 +61,4 @@ const DetailBar = ({noteId, closeNote}) => {
 }
 
 export default DetailBar;
+

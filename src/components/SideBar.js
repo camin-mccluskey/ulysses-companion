@@ -1,7 +1,13 @@
 import { useState } from "react";
+import { useSelector, useDispatch } from 'react-redux'
+import { setCurrentChapter } from '../app/chaptersSlice';
 
-const SideBar = ({chapters, currentChapter, selectChapter}) => {
+
+const SideBar = ({chapters}) => {
   const [aboutOpen, setAboutOpen] = useState(false);
+  const currentChapter = useSelector(state => state.chapters.current_chapter);
+  const dispatch = useDispatch();
+
 
   return (
     <div className="flex flex-col w-1/5 items-start pl-2">
@@ -10,7 +16,7 @@ const SideBar = ({chapters, currentChapter, selectChapter}) => {
         {chapters.map(chapter => {
           return (
             <button 
-              onClick={() => selectChapter(chapter)}
+              onClick={() => dispatch(setCurrentChapter(chapter))}
             >
               <p className={`text-lg ${chapter === currentChapter ? "text-green-500" : "text-gray-500"}`}>
                 {chapter.name}

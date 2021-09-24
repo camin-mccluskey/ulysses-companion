@@ -1,12 +1,25 @@
+import { useSelector, useDispatch } from 'react-redux'
+import { setCurrentNoteId, addNoteToVisited } from '../app/notesSlice';
+
+
 const Annotation = ({
   annotationId,
-  annotationSelect,
-  activeAnnotationId,
   children,
-  visited
 }) => {
+  const dispatch = useDispatch();
+  const activeAnnotationId = useSelector(state => state.notes.current_note_id);
   const isActive = annotationId === activeAnnotationId;
+
+  const visitedNotes  = useSelector(state => state.notes.visited_notes);
+  const visited = visitedNotes.has(annotationId);
+
   const color = isActive ? "bg-green-300" : visited ? "bg-purple-100" : "bg-gray-200";
+
+  const annotationSelect = (annotationId) => {
+    dispatch(setCurrentNoteId(annotationId));
+    dispatch(addNoteToVisited(annotationId));
+  } 
+
   return (
     <button 
     // color precedence least to most - visited, active, hover
@@ -18,3 +31,4 @@ const Annotation = ({
 }
 
 export default Annotation;
+
