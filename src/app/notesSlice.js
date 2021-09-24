@@ -20,4 +20,3 @@ const notesSlice = createSlice({
 export const { setCurrentNoteId, addNoteToVisited } = notesSlice.actions;
 
 export default notesSlice.reducer;
-
