@@ -1,16 +1,16 @@
 import Annotation from "../../components/Annotation";
 
 
-const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
+const Cyclops = () => {
   return (
     <div>
       <p></p>
       <center><font size="+2">[12]</font></center>
       <br/>
-      <Annotation annotationId="120006iwasjust" visited={visitedNotes.has("120006iwasjust")} annotationSelect={() => {openNote("120006iwasjust"); addToVisited("120006iwasjust")}} activeAnnotationId={currentNoteId}>I was just</Annotation> passing the time of day with <Annotation annotationId="120012denistroy" visited={visitedNotes.has("120012denistroy")} annotationSelect={() => {openNote("120012denistroy"); addToVisited("120012denistroy")}} activeAnnotationId={currentNoteId}>old Troy of the D. M. P.</Annotation> at <Annotation annotationId="120011arbourhill" visited={visitedNotes.has("120011arbourhill")} annotationSelect={() => {openNote("120011arbourhill"); addToVisited("120011arbourhill")}} activeAnnotationId={currentNoteId}>the
+      <Annotation annotationId="120006iwasjust">I was just</Annotation> passing the time of day with <Annotation annotationId="120012denistroy">old Troy of the D. M. P.</Annotation> at <Annotation annotationId="120011arbourhill">the
       corner of Arbour hill there</Annotation> and be damned but a bloody sweep came along
-      and <Annotation annotationId="120003intomyeye" visited={visitedNotes.has("120003intomyeye")} annotationSelect={() => {openNote("120003intomyeye"); addToVisited("120003intomyeye")}} activeAnnotationId={currentNoteId}>he near drove his gear into my eye</Annotation>. I turned around to let him have
-      the weight of my tongue when who should I see dodging along <Annotation annotationId="120011arbourhill" visited={visitedNotes.has("120011arbourhill")} annotationSelect={() => {openNote("120011arbourhill"); addToVisited("120011arbourhill")}} activeAnnotationId={currentNoteId}>Stony Batter</Annotation>
+      and <Annotation annotationId="120003intomyeye">he near drove his gear into my eye</Annotation>. I turned around to let him have
+      the weight of my tongue when who should I see dodging along <Annotation annotationId="120011arbourhill">Stony Batter</Annotation>
       only Joe Hynes. 
       <p></p>
       <p>
@@ -60,10 +60,10 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         teas. He eat me my sugars. Because he no pay me my moneys?</i>
       </p>
       <p>
-        For nonperishable goods bought of Moses Herzog, of 13 <Annotation annotationId="040049pleasantoldtimes" visited={visitedNotes.has("040049pleasantoldtimes")} annotationSelect={() => {openNote("040049pleasantoldtimes"); addToVisited("040049pleasantoldtimes")}} activeAnnotationId={currentNoteId}>Saint Kevin's
+        For nonperishable goods bought of Moses Herzog, of 13 <Annotation annotationId="040049pleasantoldtimes">Saint Kevin's
         parade</Annotation> in the city of Dublin, Wood quay ward, merchant, hereinafter
         called the vendor, and sold and delivered to Michael E. <span data-edition="ed1986" data-page="240"> </span>Geraghty,
-        esquire, of <Annotation annotationId="120011arbourhill" visited={visitedNotes.has("120011arbourhill")} annotationSelect={() => {openNote("120011arbourhill"); addToVisited("120011arbourhill")}} activeAnnotationId={currentNoteId}>29 Arbour hill</Annotation> in the city of Dublin, Arran quay ward,
+        esquire, of <Annotation annotationId="120011arbourhill">29 Arbour hill</Annotation> in the city of Dublin, Arran quay ward,
         gentleman, hereinafter called the purchaser, videlicet, five pounds
         avoirdupois of first choice tea at three 
         <span data-edition="ed1961" data-page="292"> </span>shillings per
@@ -94,7 +94,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         —{" "}What about paying our respects to our friend? says Joe.
       </p>
       <p>
-        —{" "}Who? says I. Sure, he's <Annotation annotationId="120004kiernans" visited={visitedNotes.has("120004kiernans")} annotationSelect={() => {openNote("120004kiernans"); addToVisited("120004kiernans")}} activeAnnotationId={currentNoteId}>out in John of God's off his head</Annotation>, poor man.
+        —{" "}Who? says I. Sure, he's <Annotation annotationId="120004kiernans">out in John of God's off his head</Annotation>, poor man.
       </p>
       <p>
         —{" "}Drinking his own stuff? says Joe.
@@ -103,23 +103,23 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         —{" "}Ay, says I. Whisky and water on the brain.
       </p>
       <p>
-        —{" "}Come around to <Annotation annotationId="120004kiernans" visited={visitedNotes.has("120004kiernans")} annotationSelect={() => {openNote("120004kiernans"); addToVisited("120004kiernans")}} activeAnnotationId={currentNoteId}>Barney Kiernan's</Annotation>, says Joe. I want to see the citizen.
+        —{" "}Come around to <Annotation annotationId="120004kiernans">Barney Kiernan's</Annotation>, says Joe. I want to see the citizen.
       </p>
       <p>
         —{" "}Barney mavourneen's be it, says I. Anything strange or wonderful, Joe?
       </p>
       <p>
-        —{" "}Not a word, says Joe. I was up at that meeting in the <Annotation annotationId="020066cityarms" visited={visitedNotes.has("020066cityarms")} annotationSelect={() => {openNote("020066cityarms"); addToVisited("020066cityarms")}} activeAnnotationId={currentNoteId}>City Arms</Annotation>.
+        —{" "}Not a word, says Joe. I was up at that meeting in the <Annotation annotationId="020066cityarms">City Arms</Annotation>.
       </p>
       <p>
         —{" "}What was that, Joe? says I.
       </p>
       <p>
-        —{" "}Cattle traders, says Joe, about the <Annotation annotationId="020054footandmouth" visited={visitedNotes.has("020054footandmouth")} annotationSelect={() => {openNote("020054footandmouth"); addToVisited("020054footandmouth")}} activeAnnotationId={currentNoteId}>foot and mouth disease</Annotation>. I want to
+        —{" "}Cattle traders, says Joe, about the <Annotation annotationId="020054footandmouth">foot and mouth disease</Annotation>. I want to
         give the citizen the hard word about it.
       </p>
       <p>
-        So we went around by the <Annotation annotationId="010013barracks" visited={visitedNotes.has("010013barracks")} annotationSelect={() => {openNote("010013barracks"); addToVisited("010013barracks")}} activeAnnotationId={currentNoteId}>Linenhall barracks</Annotation> and the back of the
+        So we went around by the <Annotation annotationId="010013barracks">Linenhall barracks</Annotation> and the back of the
         courthouse talking of one thing or another. Decent fellow Joe when he
         has it but sure like that he never has it. Jesus, I couldn't get over
         that bloody foxy Geraghty, the daylight robber. For trading without a
@@ -181,7 +181,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         premiated milchcows and beeves: and there is ever heard a <span data-edition="ed1961" data-page="294"> </span>trampling,
         cackling, roaring, lowing, bleating, bellowing, rumbling, grunting,
         champing, chewing, of sheep and pigs and heavyhooved kine from
-        pasturelands of Lusk and Rush and Carrickmines and from <Annotation annotationId="030086dalcassians" visited={visitedNotes.has("030086dalcassians")} annotationSelect={() => {openNote("030086dalcassians"); addToVisited("030086dalcassians")}} activeAnnotationId={currentNoteId}>the streamy
+        pasturelands of Lusk and Rush and Carrickmines and from <Annotation annotationId="030086dalcassians">the streamy
         vales of Thomond</Annotation>, from the M'Gillicuddy's reeks the inaccessible and
         lordly Shannon the unfathomable, and from the gentle declivities of the
         place of the race of Kiar, their udders distended with superabundance of
@@ -266,7 +266,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       </p>
       <span data-edition="ed1961" data-page="295"> </span>
       <p>
-        —{" "}Never better, <Annotation annotationId="120015pishogue" visited={visitedNotes.has("120015pishogue")} annotationSelect={() => {openNote("120015pishogue"); addToVisited("120015pishogue")}} activeAnnotationId={currentNoteId}><i>a chara</i></Annotation>, says he. What Garry? Are we going to win? Eh?
+        —{" "}Never better, <Annotation annotationId="120015pishogue"><i>a chara</i></Annotation>, says he. What Garry? Are we going to win? Eh?
       </p>
       <p>
         And with that he took the bloody old towser by the scruff of the neck
@@ -280,7 +280,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         hero. From shoulder to shoulder he measured several ells <span data-edition="ed1932" data-page="266"> </span>and his
         rocklike mountainous knees were covered, as was likewise the rest of his
         body wherever visible, with a strong growth of tawny prickly hair in
-        hue and toughness similar to <Annotation annotationId="120008gorse" visited={visitedNotes.has("120008gorse")} annotationSelect={() => {openNote("120008gorse"); addToVisited("120008gorse")}} activeAnnotationId={currentNoteId}>the mountain gorse (<i>Ulex Europeus</i>)</Annotation>.
+        hue and toughness similar to <Annotation annotationId="120008gorse">the mountain gorse (<i>Ulex Europeus</i>)</Annotation>.
         The widewinged nostrils, from which bristles of the same tawny hue
         projected, were of such capaciousness that within their cavernous
         obscurity the fieldlark might easily have lodged her nest. The eyes
@@ -297,8 +297,8 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         to the knees in a loose kilt and this was bound about his middle by
         a girdle of plaited straw and rushes. Beneath this he wore trews of
         deerskin, roughly <span data-edition="ed1986" data-page="243"> </span>stitched with gut. His nether extremities were encased
-        in high Balbriggan buskins dyed in  <Annotation annotationId="020080mauve" visited={visitedNotes.has("020080mauve")} annotationSelect={() => {openNote("020080mauve"); addToVisited("020080mauve")}} activeAnnotationId={currentNoteId}>lichen purple</Annotation>, the feet being shod
-        with <Annotation annotationId="020076brogues" visited={visitedNotes.has("020076brogues")} annotationSelect={() => {openNote("020076brogues"); addToVisited("020076brogues")}} activeAnnotationId={currentNoteId}>brogues</Annotation> of salted cowhide laced with the windpipe of the same
+        in high Balbriggan buskins dyed in  <Annotation annotationId="020080mauve">lichen purple</Annotation>, the feet being shod
+        with <Annotation annotationId="020076brogues">brogues</Annotation> of salted cowhide laced with the windpipe of the same
         beast. From his girdle hung a row of seastones which jangled at every
         movement of his portentous frame and on these were graven with rude
         yet striking art the tribal images of many Irish heroes and heroines of
@@ -323,7 +323,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         Beethoven, the <span data-edition="ed1932" data-page="267"> </span>Colleen Bawn, Waddler Healy, Angus the Culdee, Dolly
         Mount, Sidney Parade, Ben Howth, Valentine Greatrakes, Adam and Eve,
         Arthur Wellesley, Boss Croker, Herodotus, Jack the Giantkiller, Gautama
-        Buddha, Lady Godiva, The Lily of Killarney, <Annotation annotationId="120007balor" visited={visitedNotes.has("120007balor")} annotationSelect={() => {openNote("120007balor"); addToVisited("120007balor")}} activeAnnotationId={currentNoteId}>Balor of the Evil Eye</Annotation>,
+        Buddha, Lady Godiva, The Lily of Killarney, <Annotation annotationId="120007balor">Balor of the Evil Eye</Annotation>,
         the Queen of Sheba, Acky Nagle, Joe 
         <span data-edition="ed1939" data-page="216"> </span>
         Nagle, Alessandro Volta, Jeremiah
@@ -361,9 +361,9 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         prudent soul.
       </p>
       <p>
-        —{" "}For <Annotation annotationId="040006homerulesun" visited={visitedNotes.has("040006homerulesun")} annotationSelect={() => {openNote("040006homerulesun"); addToVisited("040006homerulesun")}} activeAnnotationId={currentNoteId}>the old woman of Prince's street</Annotation>, says the citizen, the <span data-edition="ed1961" data-page="297"> </span>subsidised
+        —{" "}For <Annotation annotationId="040006homerulesun">the old woman of Prince's street</Annotation>, says the citizen, the <span data-edition="ed1961" data-page="297"> </span>subsidised
         organ. The pledgebound party on the floor of the house. And look at this
-        blasted rag, says he. Look at this, says he. <Annotation annotationId="120009irishindependent" visited={visitedNotes.has("120009irishindependent")} annotationSelect={() => {openNote("120009irishindependent"); addToVisited("120009irishindependent")}} activeAnnotationId={currentNoteId}><i>The Irish Independent,</i> if
+        blasted rag, says he. Look at this, says he. <Annotation annotationId="120009irishindependent"><i>The Irish Independent,</i> if
         you please, founded by Parnell to be the workingman's friend. Listen to
         the births and deaths in the <i>Irish all for Ireland Independent,</i> and
         I'll thank you and the marriages.</Annotation>
@@ -379,7 +379,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         late George Alfred Gillett, 179 Clapham road, Stockwell, Playwood and
         Ridsdale at Saint Jude's, Kensington by the very reverend Dr Forrest,
         dean of Worcester. Eh? Deaths. Bristow, at Whitehall lane, London: Carr,
-        Stoke Newington, of gastritis and heart disease: <Annotation annotationId="120014cockburn" visited={visitedNotes.has("120014cockburn")} annotationSelect={() => {openNote("120014cockburn"); addToVisited("120014cockburn")}} activeAnnotationId={currentNoteId}>Cockburn</Annotation>, at the Moat
+        Stoke Newington, of gastritis and heart disease: <Annotation annotationId="120014cockburn">Cockburn</Annotation>, at the Moat
         house, Chepstow...
       </p>
       <p>
@@ -390,7 +390,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         —{" "}Cockburn. Dimsey, wife of David Dimsey, late of the admiralty: Miller,
         Tottenham, aged eightyfive: Welsh, June 12, at 35 Canning street,
         Liverpool, Isabella Helen. How's that for a national press, eh, my brown
-        son! How's that for <Annotation annotationId="120002martinmurphy" visited={visitedNotes.has("120002martinmurphy")} annotationSelect={() => {openNote("120002martinmurphy"); addToVisited("120002martinmurphy")}} activeAnnotationId={currentNoteId}>Martin Murphy, the Bantry jobber</Annotation>?
+        son! How's that for <Annotation annotationId="120002martinmurphy">Martin Murphy, the Bantry jobber</Annotation>?
       </p>
       <p>
         —{" "}Ah, well, says Joe, handing round the boose. Thanks be to God they had
@@ -415,7 +415,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       </p>
       <p>
         Little Alf Bergan popped in round the door and hid behind Barney's
-        snug, squeezed up with the laughing. <Annotation annotationId="050038bobdoran" visited={visitedNotes.has("050038bobdoran")} annotationSelect={() => {openNote("050038bobdoran"); addToVisited("050038bobdoran")}} activeAnnotationId={currentNoteId}>And who was sitting up there in
+        snug, squeezed up with the laughing. <Annotation annotationId="050038bobdoran">And who was sitting up there in
         the corner that I hadn't seen snoring drunk blind to the world only Bob
         Doran.</Annotation> I didn't know what 
         <span data-edition="ed1939" data-page="217"> </span>
@@ -426,7 +426,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         poodle. I thought Alf would split.
       </p>
       <p>
-        —{" "}Look at him, says he. Breen. He's traipsing all round Dublin with <Annotation annotationId="080010upup" visited={visitedNotes.has("080010upup")} annotationSelect={() => {openNote("080010upup"); addToVisited("080010upup")}} activeAnnotationId={currentNoteId}>a
+        —{" "}Look at him, says he. Breen. He's traipsing all round Dublin with <Annotation annotationId="080010upup">a
         postcard someone sent him with u. p.: up on it</Annotation> to take a li...
       </p>
       <p>
@@ -448,7 +448,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         seeing something was up but the citizen gave him a kick in the ribs.
       </p>
       <p>
-        —{" "}<Annotation annotationId="120015pishogue" visited={visitedNotes.has("120015pishogue")} annotationSelect={() => {openNote("120015pishogue"); addToVisited("120015pishogue")}} activeAnnotationId={currentNoteId}><i>Bi i dho husht,</i></Annotation> says he.
+        —{" "}<Annotation annotationId="120015pishogue"><i>Bi i dho husht,</i></Annotation> says he.
       </p>
       <p>
         —{" "}Who? says Joe.
@@ -546,7 +546,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       </p>
       <span data-edition="ed1932" data-page="270"> </span>
       <p>
-        —{" "}I don't know, says Alf I saw him just now in <Annotation annotationId="040043capelstreet" visited={visitedNotes.has("040043capelstreet")} annotationSelect={() => {openNote("040043capelstreet"); addToVisited("040043capelstreet")}} activeAnnotationId={currentNoteId}>Capel street</Annotation> with Paddy
+        —{" "}I don't know, says Alf I saw him just now in <Annotation annotationId="040043capelstreet">Capel street</Annotation> with Paddy
         Dignam. Only I was running after that...
       </p>
       <p>
@@ -714,7 +714,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       <p>
         The tear is bloody near your eye. Talking through his bloody hat. Fitter
         for him go home to the little sleepwalking bitch he married, Mooney, the
-        bumbailiff's daughter, mother kept <Annotation annotationId="160005dosshouse" visited={visitedNotes.has("160005dosshouse")} annotationSelect={() => {openNote("160005dosshouse"); addToVisited("160005dosshouse")}} activeAnnotationId={currentNoteId}>a kip in Hardwicke street</Annotation>, that
+        bumbailiff's daughter, mother kept <Annotation annotationId="160005dosshouse">a kip in Hardwicke street</Annotation>, that
         used to be stravaging about the landings Bantam Lyons told me that was
         stopping there at two in the morning without a stitch on her, exposing
         her person, open to all comers, fair field and no favour.
@@ -737,7 +737,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       </p>
       <p>
         So Bloom slopes in with his cod's eye on the dog and he asks Terry was
-        <Annotation annotationId="060034martincunningham" visited={visitedNotes.has("060034martincunningham")} annotationSelect={() => {openNote("060034martincunningham"); addToVisited("060034martincunningham")}} activeAnnotationId={currentNoteId}>Martin Cunningham</Annotation> there.
+        <Annotation annotationId="060034martincunningham">Martin Cunningham</Annotation> there.
       </p>
       <p>
         —{" "}O, Christ M'Keown, says Joe, reading one of the letters. Listen to
@@ -903,17 +903,17 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         mongrel.
       </p>
       <p>
-        And the citizen and Bloom having an argument about the point, <Annotation annotationId="120011arbourhill" visited={visitedNotes.has("120011arbourhill")} annotationSelect={() => {openNote("120011arbourhill"); addToVisited("120011arbourhill")}} activeAnnotationId={currentNoteId}>the
+        And the citizen and Bloom having an argument about the point, <Annotation annotationId="120011arbourhill">the
         brothers Sheares and Wolfe Tone beyond on Arbour Hill</Annotation> and Robert Emmet
         and die for your country, the Tommy Moore touch about Sara Curran and
-        she's far from the land. And Bloom, of course, with his <Annotation annotationId="120003intomyeye" visited={visitedNotes.has("120003intomyeye")} annotationSelect={() => {openNote("120003intomyeye"); addToVisited("120003intomyeye")}} activeAnnotationId={currentNoteId}>knockmedown
+        she's far from the land. And Bloom, of course, with his <Annotation annotationId="120003intomyeye">knockmedown
         cigar</Annotation> putting on swank with his lardy face. Phenomenon! The fat heap he
         married is a nice old phenomenon with a back on her like a ballalley.
-        Time they were stopping up in the <Annotation annotationId="020066cityarms" visited={visitedNotes.has("020066cityarms")} annotationSelect={() => {openNote("020066cityarms"); addToVisited("020066cityarms")}} activeAnnotationId={currentNoteId}><i>City Arms</i></Annotation> pisser Burke told me there
+        Time they were stopping up in the <Annotation annotationId="020066cityarms"><i>City Arms</i></Annotation> pisser Burke told me there
         was an old one there with a cracked loodheramaun 
         <span data-edition="ed1939" data-page="222"> </span>
         of a nephew and Bloom
-        trying to get the soft side <span data-edition="ed1961" data-page="305"> </span>of her <Annotation annotationId="060015riordan" visited={visitedNotes.has("060015riordan")} annotationSelect={() => {openNote("060015riordan"); addToVisited("060015riordan")}} activeAnnotationId={currentNoteId}>doing the mollycoddle playing bézique to come in for a bit of the wampum in her will and not eating meat of a</Annotation>
+        trying to get the soft side <span data-edition="ed1961" data-page="305"> </span>of her <Annotation annotationId="060015riordan">doing the mollycoddle playing bézique to come in for a bit of the wampum in her will and not eating meat of a</Annotation>
         Friday because the old one was always thumping her craw and taking the
         lout out for a walk. And one time he <span data-edition="ed1932" data-page="275"> </span>led him the rounds of Dublin and,
         by the holy farmer, he never cried crack till he brought him home as
@@ -938,7 +938,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         —{" "}You don't grasp my point, says Bloom. What I mean is...
       </p>
       <p>
-        —{" "}<i>Sinn Fein!</i> says the citizen. <Annotation annotationId="120015pishogue" visited={visitedNotes.has("120015pishogue")} annotationSelect={() => {openNote("120015pishogue"); addToVisited("120015pishogue")}} activeAnnotationId={currentNoteId}><i>Sinn Fein amhain!</i></Annotation> The friends we love
+        —{" "}<i>Sinn Fein!</i> says the citizen. <Annotation annotationId="120015pishogue"><i>Sinn Fein amhain!</i></Annotation> The friends we love
         are by our side and the foes we hate before us.
       </p>
       <p>
@@ -962,7 +962,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         and upholstered charabancs had been provided for the comfort of our
         country <span data-edition="ed1961" data-page="306"> </span>cousins of whom there were large contingents. Considerable
         amusement was caused by the favourite Dublin streetsingers L-n-h-n and
-        M-ll-g-n who sang <Annotation annotationId="040081boldlarry" visited={visitedNotes.has("040081boldlarry")} annotationSelect={() => {openNote("040081boldlarry"); addToVisited("040081boldlarry")}} activeAnnotationId={currentNoteId}><i>The Night before Larry was stretched</i></Annotation> in their usual
+        M-ll-g-n who sang <Annotation annotationId="040081boldlarry"><i>The Night before Larry was stretched</i></Annotation> in their usual
         mirth-provoking fashion. Our two inimitable drolls did a roaring trade
         with their broadsheets among lovers of the comedy element and nobody
         who has a corner in his heart for real Irish fun without vulgarity
@@ -1003,7 +1003,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         MacFadden, summoned by special courier from Booterstown, quickly
         restored order and with lightning promptitude proposed the seventeenth
         of the month as a solution equally honourable for both contending
-        parties. The readywitted <Annotation annotationId="040084sizeable" visited={visitedNotes.has("040084sizeable")} annotationSelect={() => {openNote("040084sizeable"); addToVisited("040084sizeable")}} activeAnnotationId={currentNoteId}>ninefooter</Annotation>'s suggestion at once appealed to all
+        parties. The readywitted <Annotation annotationId="040084sizeable">ninefooter</Annotation>'s suggestion at once appealed to all
         and was unanimously accepted. Constable MacFadden was heartily
         congratulated by all the F. O. T. E. I., several of whom were bleeding
         profusely. Commendatore Beninobenone having been extricated from
@@ -1119,7 +1119,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         I thinks of my old mashtub what's waiting for me down Limehouse way.
       </p>
       <p>
-        So then the citizen begins talking about the Irish language and <Annotation annotationId="060033corporation" visited={visitedNotes.has("060033corporation")} annotationSelect={() => {openNote("060033corporation"); addToVisited("060033corporation")}} activeAnnotationId={currentNoteId}>the
+        So then the citizen begins talking about the Irish language and <Annotation annotationId="060033corporation">the
         corporation meeting</Annotation> and all to that and the shoneens that can't speak
         their own language and Joe chipping in because he stuck someone for a
         quid and Bloom putting in his <span data-edition="ed1961" data-page="310"> </span>old goo with his twopenny stump that
@@ -1185,7 +1185,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         the verse recited and has found it bears a <i>striking</i> resemblance 
         <span data-edition="ed1922" data-page="298"> </span>
         (the italics are ours) to the ranns of ancient Celtic bards. We are not
-        speaking so much of <Annotation annotationId="090003hyde" visited={visitedNotes.has("090003hyde")} annotationSelect={() => {openNote("090003hyde"); addToVisited("090003hyde")}} activeAnnotationId={currentNoteId}>those delightful lovesongs with which the writer who
+        speaking so much of <Annotation annotationId="090003hyde">those delightful lovesongs with which the writer who
         conceals his identity under the graceful pseudonym of the Little
         Sweet Branch has familiarised the bookloving world</Annotation> but rather (as
         a contributor D. O. C. points out in an interesting communication
@@ -1242,7 +1242,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       </p>
       <p>
         —{" "}Thank you, no, says Bloom. As a matter of fact I just wanted to meet
-        Martin Cunningham, don't you see, about <Annotation annotationId="130007scottishwidows" visited={visitedNotes.has("130007scottishwidows")} annotationSelect={() => {openNote("130007scottishwidows"); addToVisited("130007scottishwidows")}} activeAnnotationId={currentNoteId}>this insurance of poor Dignam's</Annotation>.
+        Martin Cunningham, don't you see, about <Annotation annotationId="130007scottishwidows">this insurance of poor Dignam's</Annotation>.
         Martin asked me to go to the house. You see, he, Dignam, I mean, didn't
         serve any notice of the assignment on the company at the time and
         nominally under the act the mortgagee can't recover on the policy.
@@ -1306,11 +1306,11 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       <p>
         And off with him and out trying to walk straight. Boosed at five
         o'clock. Night he was near being lagged only Paddy Leonard knew the
-        bobby, 14A. Blind to the world up in a shebeen in <Annotation annotationId="030023bridestreet" visited={visitedNotes.has("030023bridestreet")} annotationSelect={() => {openNote("030023bridestreet"); addToVisited("030023bridestreet")}} activeAnnotationId={currentNoteId}>Bride street</Annotation> after
+        bobby, 14A. Blind to the world up in a shebeen in <Annotation annotationId="030023bridestreet">Bride street</Annotation> after
         closing time, fornicating with two shawls and a bully on guard, drinking
         porter out of teacups. And calling himself a Frenchy for the shawls,
         Joseph Manuo, and talking against the Catholic religion, and he serving
-        <Annotation annotationId="070024differentchurches" visited={visitedNotes.has("070024differentchurches")} annotationSelect={() => {openNote("070024differentchurches"); addToVisited("070024differentchurches")}} activeAnnotationId={currentNoteId}>mass in Adam and Eve's</Annotation> when he was young with his eyes shut, who wrote
+        <Annotation annotationId="070024differentchurches">mass in Adam and Eve's</Annotation> when he was young with his eyes shut, who wrote
         the new testament, and the old testament, and hugging and smugging. And
         the two shawls killed with the laughing, picking his pockets, the bloody
         fool and he spilling the porter all over the bed and the two shawls
@@ -1332,7 +1332,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         —{" "}Here, says Joe, doing the honours. Here, citizen.
       </p>
       <p>
-        —{" "}<Annotation annotationId="120015pishogue" visited={visitedNotes.has("120015pishogue")} annotationSelect={() => {openNote("120015pishogue"); addToVisited("120015pishogue")}} activeAnnotationId={currentNoteId}><i>Slan leat</i></Annotation>, says he.
+        —{" "}<Annotation annotationId="120015pishogue"><i>Slan leat</i></Annotation>, says he.
       </p>
       <p>
         —{" "}Fortune, Joe, says I. Good health, citizen.
@@ -1342,19 +1342,19 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         fortune to keep him in drinks.
       </p>
       <p>
-        —{" "}Who is the long fellow <Annotation annotationId="070019nannetti" visited={visitedNotes.has("070019nannetti")} annotationSelect={() => {openNote("070019nannetti"); addToVisited("070019nannetti")}} activeAnnotationId={currentNoteId}>running for the mayoralty</Annotation>, Alf? says Joe.
+        —{" "}Who is the long fellow <Annotation annotationId="070019nannetti">running for the mayoralty</Annotation>, Alf? says Joe.
       </p>
       <p>
         —{" "}Friend of yours, says Alf.
       </p>
       <p>
-        —{" "}Nannan? says Joe. The <Annotation annotationId="070019nannetti" visited={visitedNotes.has("070019nannetti")} annotationSelect={() => {openNote("070019nannetti"); addToVisited("070019nannetti")}} activeAnnotationId={currentNoteId}>mimber</Annotation>?
+        —{" "}Nannan? says Joe. The <Annotation annotationId="070019nannetti">mimber</Annotation>?
       </p>
       <p>
         —{" "}I won't mention any names, says Alf.
       </p>
       <p>
-        —{" "}I thought so, says Joe. I saw him up at that meeting now with <Annotation annotationId="020074blackwoodprice" visited={visitedNotes.has("020074blackwoodprice")} annotationSelect={() => {openNote("020074blackwoodprice"); addToVisited("020074blackwoodprice")}} activeAnnotationId={currentNoteId}>William
+        —{" "}I thought so, says Joe. I saw him up at that meeting now with <Annotation annotationId="020074blackwoodprice">William
         Field, M. P.</Annotation>, the cattle traders.
       </p>
       <span data-edition="ed1961" data-page="314"> </span>
@@ -1369,7 +1369,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         <span data-edition="ed1922" data-page="301"> </span>
         to the rightabout and Bloom coming out with his
         sheepdip for the scab and a hoose drench for coughing calves and the
-        guaranteed remedy for timber tongue. Because he was up one time <Annotation annotationId="040037cattlemarket" visited={visitedNotes.has("040037cattlemarket")} annotationSelect={() => {openNote("040037cattlemarket"); addToVisited("040037cattlemarket")}} activeAnnotationId={currentNoteId}>in a
+        guaranteed remedy for timber tongue. Because he was up one time <Annotation annotationId="040037cattlemarket">in a
         knacker's yard. Walking about with his book and pencil</Annotation> here's my head
         and my heels are coming till Joe Cuffe gave him the order of the boot
         for giving lip to a grazier. Mister Knowall. Teach your grandmother how
@@ -1398,14 +1398,14 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       </p>
       <span data-edition="ed1932" data-page="284"> </span>
       <p>
-        —{" "}Well, he's going off <Annotation annotationId="010036mailboat" visited={visitedNotes.has("010036mailboat")} annotationSelect={() => {openNote("010036mailboat"); addToVisited("010036mailboat")}} activeAnnotationId={currentNoteId}>by the mailboat</Annotation>, says Joe, tonight.
+        —{" "}Well, he's going off <Annotation annotationId="010036mailboat">by the mailboat</Annotation>, says Joe, tonight.
       </p>
       <p>
         —{" "}That's too bad, says Bloom. I wanted particularly. Perhaps only Mr
         Field is going. I couldn't phone. No. You're sure?
       </p>
       <p>
-        —{" "}<Annotation annotationId="070019nannetti" visited={visitedNotes.has("070019nannetti")} annotationSelect={() => {openNote("070019nannetti"); addToVisited("070019nannetti")}} activeAnnotationId={currentNoteId}>Nannan</Annotation>'s going too, says Joe. The league told him to ask a question
+        —{" "}<Annotation annotationId="070019nannetti">Nannan</Annotation>'s going too, says Joe. The league told him to ask a question
         tomorrow about the commissioner of police forbidding Irish games in the
         park. What do you think of that, citizen? <i>The Sluagh na h-Eireann</i>.
       </p>
@@ -1455,12 +1455,12 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       </p>
       <p>
         —{" "}There's the man, says Joe, that made the Gaelic sports revival. There
-        he is sitting there. <Annotation annotationId="020073fenians" visited={visitedNotes.has("020073fenians")} annotationSelect={() => {openNote("020073fenians"); addToVisited("020073fenians")}} activeAnnotationId={currentNoteId}>The man that got away James Stephens.</Annotation> The champion
+        he is sitting there. <Annotation annotationId="020073fenians">The man that got away James Stephens.</Annotation> The champion
         of all Ireland at putting the sixteen pound shot. What was your best
         throw, citizen?
       </p>
       <p>
-        —{" "}<Annotation annotationId="120015pishogue" visited={visitedNotes.has("120015pishogue")} annotationSelect={() => {openNote("120015pishogue"); addToVisited("120015pishogue")}} activeAnnotationId={currentNoteId}><i>Na bacleis</i></Annotation>, says the citizen, letting on to be modest. There was a
+        —{" "}<Annotation annotationId="120015pishogue"><i>Na bacleis</i></Annotation>, says the citizen, letting on to be modest. There was a
         time I was as good as the next fellow anyhow.
       </p>
       <p>
@@ -1478,9 +1478,9 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         lawn tennis and about hurley and putting the stone and racy of the soil
         and building up a nation once again and all to that. And of course Bloom
         had to have his say too about if a fellow had a rower's heart <span data-edition="ed1932" data-page="285"> </span>violent
-        exercise was bad. I declare to my antimacassar if you took up <Annotation annotationId="080022sawdust" visited={visitedNotes.has("080022sawdust")} annotationSelect={() => {openNote("080022sawdust"); addToVisited("080022sawdust")}} activeAnnotationId={currentNoteId}>a straw
-        from the bloody floor</Annotation> and if you said to Bloom: <i>Look at, Bloom. <Annotation annotationId="080008parallax" visited={visitedNotes.has("080008parallax")} annotationSelect={() => {openNote("080008parallax"); addToVisited("080008parallax")}} activeAnnotationId={currentNoteId}>Do you
-        see that straw? That's a straw.</Annotation></i><Annotation annotationId="080008parallax" visited={visitedNotes.has("080008parallax")} annotationSelect={() => {openNote("080008parallax"); addToVisited("080008parallax")}} activeAnnotationId={currentNoteId}> Declare to my aunt he'd talk about it
+        exercise was bad. I declare to my antimacassar if you took up <Annotation annotationId="080022sawdust">a straw
+        from the bloody floor</Annotation> and if you said to Bloom: <i>Look at, Bloom. <Annotation annotationId="080008parallax">Do you
+        see that straw? That's a straw.</Annotation></i><Annotation annotationId="080008parallax"> Declare to my aunt he'd talk about it
         for an hour so he would and talk steady.</Annotation>
       </p>
       <p>
@@ -1608,7 +1608,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         lamb suddenly waded in all over his man and landed a terrific left to
         Battling Bennett's stomach, flooring him flat. It was a knockout clean and 
         <span data-edition="ed1922" data-page="305"> </span>
-        clever. Amid tense expectation the <Annotation annotationId="010013barracks" visited={visitedNotes.has("010013barracks")} annotationSelect={() => {openNote("010013barracks"); addToVisited("010013barracks")}} activeAnnotationId={currentNoteId}>Portobello</Annotation> bruiser was being
+        clever. Amid tense expectation the <Annotation annotationId="010013barracks">Portobello</Annotation> bruiser was being
         counted out when Bennett's second Ole Pfotts Wettstein threw in the
         towel and the Santry boy was declared victor to the frenzied cheers of
         the public who broke through the ringropes and fairly mobbed him with
@@ -1639,7 +1639,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         Hoho begob says I to myself says I. That explains the milk in the
         cocoanut and absence of hair on the animal's chest. Blazes doing the
         tootle on the flute. Concert tour. Dirty Dan the dodger's son off Island
-        bridge that <Annotation annotationId="010058bloodyswindle" visited={visitedNotes.has("010058bloodyswindle")} annotationSelect={() => {openNote("010058bloodyswindle"); addToVisited("010058bloodyswindle")}} activeAnnotationId={currentNoteId}>sold the same horses twice over to the government to fight
+        bridge that <Annotation annotationId="010058bloodyswindle">sold the same horses twice over to the government to fight
         the Boers</Annotation>. Old Whatwhat. I called about the poor and water rate, Mr
         Boylan. You what? The water rate, Mr Boylan. You whatwhat? That's the
         bucko that'll organise her, take my tip. 'Twixt me and you Caddareesh.
@@ -1764,7 +1764,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         —{" "}Nor good red herring, says Joe.
       </p>
       <p>
-        —{" "}That what's I mean, says the citizen. A <Annotation annotationId="120015pishogue" visited={visitedNotes.has("120015pishogue")} annotationSelect={() => {openNote("120015pishogue"); addToVisited("120015pishogue")}} activeAnnotationId={currentNoteId}>pishogue</Annotation>, if you know what
+        —{" "}That what's I mean, says the citizen. A <Annotation annotationId="120015pishogue">pishogue</Annotation>, if you know what
         that is.
       </p>
       <p>
@@ -1833,7 +1833,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         —{" "}Recorder, says Ned.
       </p>
       <p>
-        —{" "}<Annotation annotationId="080002sirfrederick" visited={visitedNotes.has("080002sirfrederick")} annotationSelect={() => {openNote("080002sirfrederick"); addToVisited("080002sirfrederick")}} activeAnnotationId={currentNoteId}>Poor old sir Frederick</Annotation>, says Alf, you can cod him <Annotation annotationId="080008parallax" visited={visitedNotes.has("080008parallax")} annotationSelect={() => {openNote("080008parallax"); addToVisited("080008parallax")}} activeAnnotationId={currentNoteId}>up to the two eyes</Annotation>.
+        —{" "}<Annotation annotationId="080002sirfrederick">Poor old sir Frederick</Annotation>, says Alf, you can cod him <Annotation annotationId="080008parallax">up to the two eyes</Annotation>.
       </p>
       <p>
         —{" "}Heart as big as a lion, says Ned. Tell him a tale of woe about arrears 
@@ -1844,7 +1844,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       <p>
         —{" "}Ay, says Alf. Reuben J. was bloody lucky he didn't clap him in the dock
         the other day for suing poor little Gumley that's minding stones, for
-        <Annotation annotationId="060033corporation" visited={visitedNotes.has("060033corporation")} annotationSelect={() => {openNote("060033corporation"); addToVisited("060033corporation")}} activeAnnotationId={currentNoteId}>the corporation</Annotation> there near <Annotation annotationId="070015buttbridge" visited={visitedNotes.has("070015buttbridge")} annotationSelect={() => {openNote("070015buttbridge"); addToVisited("070015buttbridge")}} activeAnnotationId={currentNoteId}>Butt bridge</Annotation>.
+        <Annotation annotationId="060033corporation">the corporation</Annotation> there near <Annotation annotationId="070015buttbridge">Butt bridge</Annotation>.
       </p>
       <p>
         And he starts taking off the old recorder letting on to cry:
@@ -1902,7 +1902,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         against him for he was a malefactor.
       </p>
       <p>
-        —{" "}Those are nice things, says the citizen, <Annotation annotationId="120013whiteeyedkaffir" visited={visitedNotes.has("120013whiteeyedkaffir")} annotationSelect={() => {openNote("120013whiteeyedkaffir"); addToVisited("120013whiteeyedkaffir")}} activeAnnotationId={currentNoteId}>coming over here to Ireland
+        —{" "}Those are nice things, says the citizen, <Annotation annotationId="120013whiteeyedkaffir">coming over here to Ireland
         filling the country with bugs</Annotation>.
       </p>
       <p>
@@ -1920,7 +1920,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       </p>
       <p>
         —{" "}Swindling the peasants, says the citizen, and the poor of Ireland. We
-        want no more <Annotation annotationId="010024stranger" visited={visitedNotes.has("010024stranger")} annotationSelect={() => {openNote("010024stranger"); addToVisited("010024stranger")}} activeAnnotationId={currentNoteId}>strangers</Annotation> in our house.
+        want no more <Annotation annotationId="010024stranger">strangers</Annotation> in our house.
       </p>
       <p>
         —{" "}O, I'm sure that will be all right, Hynes, says Bloom. It's just that
@@ -1936,7 +1936,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       </p>
       <p>
         —{" "}The strangers, says the citizen. Our own fault. We let them come in.
-        We brought them in. <Annotation annotationId="020070womansin" visited={visitedNotes.has("020070womansin")} annotationSelect={() => {openNote("020070womansin"); addToVisited("020070womansin")}} activeAnnotationId={currentNoteId}>The adulteress and her paramour brought the Saxon
+        We brought them in. <Annotation annotationId="020070womansin">The adulteress and her paramour brought the Saxon
         robbers here.</Annotation>
       </p>
       <p>
@@ -1985,7 +1985,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       </p>
       <p>
         —{" "}Well, says the citizen, what's the latest from the scene of action?
-        What did those <Annotation annotationId="030078tinkers" visited={visitedNotes.has("030078tinkers")} annotationSelect={() => {openNote("030078tinkers"); addToVisited("030078tinkers")}} activeAnnotationId={currentNoteId}>tinkers</Annotation> in the <Annotation annotationId="060033corporation" visited={visitedNotes.has("060033corporation")} annotationSelect={() => {openNote("060033corporation"); addToVisited("060033corporation")}} activeAnnotationId={currentNoteId}>city hall</Annotation> at their caucus meeting decide
+        What did those <Annotation annotationId="030078tinkers">tinkers</Annotation> in the <Annotation annotationId="060033corporation">city hall</Annotation> at their caucus meeting decide
         about the Irish language?
       </p>
       <p>
@@ -1999,7 +1999,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       </p>
       <p>
         —{" "}It's on the march, says the citizen. To hell with the bloody brutal
-        <Annotation annotationId="010024stranger" visited={visitedNotes.has("010024stranger")} annotationSelect={() => {openNote("010024stranger"); addToVisited("010024stranger")}} activeAnnotationId={currentNoteId}>Sassenachs</Annotation> and their <i>patois.</i>
+        <Annotation annotationId="010024stranger">Sassenachs</Annotation> and their <i>patois.</i>
       </p>
       <span data-edition="ed1961" data-page="324"> </span>
       <p>
@@ -2010,7 +2010,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         their colonies and their civilisation.
       </p>
       <p>
-        —{" "}<Annotation annotationId="120014cockburn" visited={visitedNotes.has("120014cockburn")} annotationSelect={() => {openNote("120014cockburn"); addToVisited("120014cockburn")}} activeAnnotationId={currentNoteId}>Their syphilisation</Annotation>, you mean, says the citizen. To hell with
+        —{" "}<Annotation annotationId="120014cockburn">Their syphilisation</Annotation>, you mean, says the citizen. To hell with
         them! The curse of a goodfornothing God light sideways on the bloody
         thicklugged <span data-edition="ed1986" data-page="266"> </span>sons of whores' gets! No music and no art and no literature
         worthy of the name. Any civilisation they have they stole from us.
@@ -2020,15 +2020,15 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         —{" "}The European family, says J. J....
       </p>
       <p>
-        —{" "}They're not European, says the citizen. I was in Europe with <Annotation annotationId="030051kevinegan" visited={visitedNotes.has("030051kevinegan")} annotationSelect={() => {openNote("030051kevinegan"); addToVisited("030051kevinegan")}} activeAnnotationId={currentNoteId}>Kevin</Annotation>
-        <span data-edition="ed1932" data-page="293"> </span><Annotation annotationId="030051kevinegan" visited={visitedNotes.has("030051kevinegan")} annotationSelect={() => {openNote("030051kevinegan"); addToVisited("030051kevinegan")}} activeAnnotationId={currentNoteId}>Egan of Paris</Annotation>. You wouldn't see a trace of them or their language
+        —{" "}They're not European, says the citizen. I was in Europe with <Annotation annotationId="030051kevinegan">Kevin</Annotation>
+        <span data-edition="ed1932" data-page="293"> </span><Annotation annotationId="030051kevinegan">Egan of Paris</Annotation>. You wouldn't see a trace of them or their language
         anywhere in Europe except in a <i>cabinet d'aisance.</i>
       </p>
       <p>
         And says John Wyse:
       </p>
       <p>
-        —{" "}<Annotation annotationId="060005churchyard" visited={visitedNotes.has("060005churchyard")} annotationSelect={() => {openNote("060005churchyard"); addToVisited("060005churchyard")}} activeAnnotationId={currentNoteId}>Full many a flower is born to blush unseen.</Annotation>
+        —{" "}<Annotation annotationId="060005churchyard">Full many a flower is born to blush unseen.</Annotation>
       </p>
       <p>
         And says Lenehan that knows a bit of the lingo:
@@ -2041,7 +2041,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         He said and then lifted he in his rude great brawny strengthy hands the
         medher of dark strong foamy ale and, uttering his tribal slogan <i>Lamh
         Dearg Abu</i>, he drank to the undoing of his foes, a race of mighty
-        valorous heroes, <Annotation annotationId="010107seasruler" visited={visitedNotes.has("010107seasruler")} annotationSelect={() => {openNote("010107seasruler"); addToVisited("010107seasruler")}} activeAnnotationId={currentNoteId}>rulers of the waves</Annotation>, who sit on thrones of alabaster
+        valorous heroes, <Annotation annotationId="010107seasruler">rulers of the waves</Annotation>, who sit on thrones of alabaster
         silent as the deathless gods.
       </p>
       <p>
@@ -2089,14 +2089,14 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       </p>
       <p>
         And J. J. and the citizen arguing about law and history with Bloom
-        <Annotation annotationId="120003intomyeye" visited={visitedNotes.has("120003intomyeye")} annotationSelect={() => {openNote("120003intomyeye"); addToVisited("120003intomyeye")}} activeAnnotationId={currentNoteId}>sticking in an odd word</Annotation>.
+        <Annotation annotationId="120003intomyeye">sticking in an odd word</Annotation>.
       </p>
       <p>
         —{" "}Some people, says Bloom, can see the mote in others' eyes but they
         can't see the beam in their own.
       </p>
       <p>
-        —{" "}<Annotation annotationId="120015pishogue" visited={visitedNotes.has("120015pishogue")} annotationSelect={() => {openNote("120015pishogue"); addToVisited("120015pishogue")}} activeAnnotationId={currentNoteId}><i>Raimeis</i></Annotation>, says the citizen. There's no-one as blind as the fellow
+        —{" "}<Annotation annotationId="120015pishogue"><i>Raimeis</i></Annotation>, says the citizen. There's no-one as blind as the fellow
         that won't see, if you know what that means. Where are our missing
         twenty millions of Irish should be here today instead of four, our lost
         tribes? And our potteries and textiles, the finest in the whole world!
@@ -2109,13 +2109,13 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         Greek merchants that came through the pillars of Hercules, 
         <span data-edition="ed1922" data-page="312"> </span>
         the Gibraltar
-        now grabbed by the foe of mankind, with gold and <Annotation annotationId="020080mauve" visited={visitedNotes.has("020080mauve")} annotationSelect={() => {openNote("020080mauve"); addToVisited("020080mauve")}} activeAnnotationId={currentNoteId}>Tyrian purple</Annotation> to
+        now grabbed by the foe of mankind, with gold and <Annotation annotationId="020080mauve">Tyrian purple</Annotation> to
         sell in Wexford at the fair of Carmen? Read Tacitus and Ptolemy, even
-        Giraldus Cambrensis. Wine, peltries, <Annotation annotationId="170019localities" visited={visitedNotes.has("170019localities")} annotationSelect={() => {openNote("170019localities"); addToVisited("170019localities")}} activeAnnotationId={currentNoteId}>Connemara marble</Annotation>, silver from
+        Giraldus Cambrensis. Wine, peltries, <Annotation annotationId="170019localities">Connemara marble</Annotation>, silver from
         Tipperary, second to none, our farfamed horses even today, the Irish
         hobbies, with king Philip of Spain offering to pay customs duties for
         the right to fish in our waters. What do the yellowjohns of Anglia owe
-        us for our ruined trade and our ruined hearths? <Annotation annotationId="060036bogs" visited={visitedNotes.has("060036bogs")} annotationSelect={() => {openNote("060036bogs"); addToVisited("060036bogs")}} activeAnnotationId={currentNoteId}>And the beds of the
+        us for our ruined trade and our ruined hearths? <Annotation annotationId="060036bogs">And the beds of the
         Barrow and Shannon they won't deepen with millions of acres of marsh and
         bog to make us all die of consumption?</Annotation>
       </p>
@@ -2126,7 +2126,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         reading a report of lord Castletown's...
       </p>
       <p>
-        —{" "}Save them, says the citizen, the giant ash of Galway and <Annotation annotationId="170019localities" visited={visitedNotes.has("170019localities")} annotationSelect={() => {openNote("170019localities"); addToVisited("170019localities")}} activeAnnotationId={currentNoteId}>the chieftain
+        —{" "}Save them, says the citizen, the giant ash of Galway and <Annotation annotationId="170019localities">the chieftain
         elm of Kildare with a fortyfoot bole and an acre of foliage</Annotation>. Save the
         trees of Ireland for the future men of Ireland on the fair hills of
         Eire, O.
@@ -2141,7 +2141,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         ranger of the Irish National Foresters, with Miss Fir Conifer of Pine
         Valley. Lady Sylvester Elmshade, Mrs Barbara Lovebirch, Mrs Poll Ash,
         Mrs Holly Hazeleyes, Miss Daphne Bays, Miss Dorothy Canebrake, Mrs Clyde
-        Twelvetrees, Mrs Rowan Greene, Mrs Helen  <Annotation annotationId="020010lycidas" visited={visitedNotes.has("020010lycidas")} annotationSelect={() => {openNote("020010lycidas"); addToVisited("020010lycidas")}} activeAnnotationId={currentNoteId}>Vinegadding</Annotation>, Miss Virginia
+        Twelvetrees, Mrs Rowan Greene, Mrs Helen  <Annotation annotationId="020010lycidas">Vinegadding</Annotation>, Miss Virginia
         Creeper, Miss Gladys Beech, Miss Olive Garth, Miss Blanche Maple, Mrs
         Maud Mahogany, Miss Myra Myrtle, Miss Priscilla Elderflower, Miss
         Bee Honeysuckle, Miss Grace Poplar, Miss O Mimosa San, Miss Rachel
@@ -2155,7 +2155,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         green mercerised silk, moulded on an underslip
         of gloaming grey, sashed with a yoke of broad emerald and finished <span data-edition="ed1932" data-page="295"> </span>with
         a triple flounce of darkerhued fringe, the scheme being relieved by
-        <Annotation annotationId="120016bretelles" visited={visitedNotes.has("120016bretelles")} annotationSelect={() => {openNote("120016bretelles"); addToVisited("120016bretelles")}} activeAnnotationId={currentNoteId}>bretelles and hip insertions of acorn bronze</Annotation>. The maids of honour, Miss
+        <Annotation annotationId="120016bretelles">bretelles and hip insertions of acorn bronze</Annotation>. The maids of honour, Miss
         Larch Conifer and Miss Spruce Conifer, sisters of the bride, wore very
         becoming costumes in the same tone, a dainty <i>motif</i> of plume rose being
         worked into the pleats in a pinstripe and repeated capriciously 
@@ -2173,7 +2173,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       <p>
         —{" "}And our eyes are on Europe, says the citizen. We had our trade with
         Spain and the French and with the Flemings before those mongrels were
-        pupped, Spanish ale in Galway, the winebark on <Annotation annotationId="010033epioinopaponton" visited={visitedNotes.has("010033epioinopaponton")} annotationSelect={() => {openNote("010033epioinopaponton"); addToVisited("010033epioinopaponton")}} activeAnnotationId={currentNoteId}>the winedark waterway</Annotation>.
+        pupped, Spanish ale in Galway, the winebark on <Annotation annotationId="010033epioinopaponton">the winedark waterway</Annotation>.
       </p>
       <p>
         —{" "}And will again, says Joe.
@@ -2188,7 +2188,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         the emperor Charles the Fifth himself. And will again, says he, when the
         first Irish battleship is seen breasting the waves with our own flag to
         the fore, none of your Henry Tudor's harps, no, the oldest flag afloat,
-        the flag of <Annotation annotationId="030086dalcassians" visited={visitedNotes.has("030086dalcassians")} annotationSelect={() => {openNote("030086dalcassians"); addToVisited("030086dalcassians")}} activeAnnotationId={currentNoteId}>the province of Desmond and Thomond, three crowns on a blue
+        the flag of <Annotation annotationId="030086dalcassians">the province of Desmond and Thomond, three crowns on a blue
         field</Annotation>, the three sons of Milesius.
       </p>
       <p>
@@ -2245,7 +2245,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         a gun.
       </p>
       <p>
-        —{" "}A rump and dozen, says the citizen, was what that old ruffian <Annotation annotationId="160007shipofthestreet" visited={visitedNotes.has("160007shipofthestreet")} annotationSelect={() => {openNote("160007shipofthestreet"); addToVisited("160007shipofthestreet")}} activeAnnotationId={currentNoteId}>sir John
+        —{" "}A rump and dozen, says the citizen, was what that old ruffian <Annotation annotationId="160007shipofthestreet">sir John
         Beresford</Annotation> called it but the modern God's Englishman calls it caning on
         the breech.
       </p>
@@ -2262,7 +2262,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       </p>
       <p>
         —{" "}That's your glorious British navy, says the citizen, that bosses the
-        earth. The fellows that <Annotation annotationId="010107seasruler" visited={visitedNotes.has("010107seasruler")} annotationSelect={() => {openNote("010107seasruler"); addToVisited("010107seasruler")}} activeAnnotationId={currentNoteId}>never will be slaves</Annotation>, with the only hereditary chamber
+        earth. The fellows that <Annotation annotationId="010107seasruler">never will be slaves</Annotation>, with the only hereditary chamber
         on the face of God's earth and their land in the hands of a dozen
         gamehogs and cottonball barons. That's the great empire they boast about
         of drudges and whipped serfs.
@@ -2283,17 +2283,17 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         further orders whence he shall come to drudge for a living and be paid.
       </p>
       <p>
-        —{" "}But, says Bloom, isn't discipline the same everywhere. <Annotation annotationId="120013whiteeyedkaffir" visited={visitedNotes.has("120013whiteeyedkaffir")} annotationSelect={() => {openNote("120013whiteeyedkaffir"); addToVisited("120013whiteeyedkaffir")}} activeAnnotationId={currentNoteId}>I mean wouldn't
+        —{" "}But, says Bloom, isn't discipline the same everywhere. <Annotation annotationId="120013whiteeyedkaffir">I mean wouldn't
         it be the same here if you put force against force?
         <span data-edition="ed1922" data-page="315"> </span>
         </Annotation>
       </p>
-      <p><Annotation annotationId="120013whiteeyedkaffir" visited={visitedNotes.has("120013whiteeyedkaffir")} annotationSelect={() => {openNote("120013whiteeyedkaffir"); addToVisited("120013whiteeyedkaffir")}} activeAnnotationId={currentNoteId}>
+      <p><Annotation annotationId="120013whiteeyedkaffir">
         Didn't I tell you? As true as I'm drinking this porter if he was at his
         last gasp he'd try to downface you that dying was living.
         </Annotation>
       </p>
-      <Annotation annotationId="120013whiteeyedkaffir" visited={visitedNotes.has("120013whiteeyedkaffir")} annotationSelect={() => {openNote("120013whiteeyedkaffir"); addToVisited("120013whiteeyedkaffir")}} activeAnnotationId={currentNoteId}>
+      <Annotation annotationId="120013whiteeyedkaffir">
         <p>
           —{" "}We'll put force against force, says the citizen. We have our greater
           Ireland beyond the sea. They were driven out of house and home in the
@@ -2313,15 +2313,15 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         </p>
         <span data-edition="ed1986" data-page="270"> </span>
       </Annotation>
-      <p><Annotation annotationId="120013whiteeyedkaffir" visited={visitedNotes.has("120013whiteeyedkaffir")} annotationSelect={() => {openNote("120013whiteeyedkaffir"); addToVisited("120013whiteeyedkaffir")}} activeAnnotationId={currentNoteId}>
-        —{" "}We are a long time waiting for that day, citizen, says Ned. </Annotation><Annotation annotationId="010101frenchonsea" visited={visitedNotes.has("010101frenchonsea")} annotationSelect={() => {openNote("010101frenchonsea"); addToVisited("010101frenchonsea")}} activeAnnotationId={currentNoteId}>Since the
+      <p><Annotation annotationId="120013whiteeyedkaffir">
+        —{" "}We are a long time waiting for that day, citizen, says Ned. </Annotation><Annotation annotationId="010101frenchonsea">Since the
         poor old woman told us that the French were on the sea</Annotation> and landed at
         Killala.
       </p>
       <p>
         —{" "}Ay, says John Wyse. We fought for the royal Stuarts that reneged us
         against the Williamites and they betrayed us. Remember Limerick and the
-        broken treatystone. <Annotation annotationId="030027wildgoose" visited={visitedNotes.has("030027wildgoose")} annotationSelect={() => {openNote("030027wildgoose"); addToVisited("030027wildgoose")}} activeAnnotationId={currentNoteId}>We gave our best blood to France and Spain, the
+        broken treatystone. <Annotation annotationId="030027wildgoose">We gave our best blood to France and Spain, the
         wild geese.</Annotation> Fontenoy, eh? And Sarsfield and O'Donnell, duke of Tetuan
         in Spain, and Ulysses Browne of Camus that was fieldmarshal to Maria
         Teresa. But what did we ever get for it?
@@ -2351,10 +2351,10 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       </p>
       <span data-edition="ed1922" data-page="316"> </span>
       <p>
-        —{" "}Well, says J. J. We have <Annotation annotationId="020079kingedward" visited={visitedNotes.has("020079kingedward")} annotationSelect={() => {openNote("020079kingedward"); addToVisited("020079kingedward")}} activeAnnotationId={currentNoteId}>Edward the peacemaker</Annotation> now.
+        —{" "}Well, says J. J. We have <Annotation annotationId="020079kingedward">Edward the peacemaker</Annotation> now.
       </p>
       <p>
-        —{" "}Tell that to a fool, says the citizen. There's a bloody sight <Annotation annotationId="120014cockburn" visited={visitedNotes.has("120014cockburn")} annotationSelect={() => {openNote("120014cockburn"); addToVisited("120014cockburn")}} activeAnnotationId={currentNoteId}>more pox
+        —{" "}Tell that to a fool, says the citizen. There's a bloody sight <Annotation annotationId="120014cockburn">more pox
         than pax</Annotation> about that boyo. Edward Guelph-Wettin!
       </p>
       <p>
@@ -2426,14 +2426,14 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         —{" "}That covers my case, says Joe.
       </p>
       <p>
-        —{" "}<Annotation annotationId="010122germanjews" visited={visitedNotes.has("010122germanjews")} annotationSelect={() => {openNote("010122germanjews"); addToVisited("010122germanjews")}} activeAnnotationId={currentNoteId}>What is your nation if I may ask?</Annotation> says the citizen.
+        —{" "}<Annotation annotationId="010122germanjews">What is your nation if I may ask?</Annotation> says the citizen.
       </p>
       <p>
         —{" "}Ireland, says Bloom. I was born here. Ireland.
       </p>
       <p>
         The citizen said nothing only cleared the spit out of his gullet and,
-        gob, he spat a <Annotation annotationId="060020redbank" visited={visitedNotes.has("060020redbank")} annotationSelect={() => {openNote("060020redbank"); addToVisited("060020redbank")}} activeAnnotationId={currentNoteId}>Red bank oyster</Annotation> out of him <Annotation annotationId="080022sawdust" visited={visitedNotes.has("080022sawdust")} annotationSelect={() => {openNote("080022sawdust"); addToVisited("080022sawdust")}} activeAnnotationId={currentNoteId}>right in the corner</Annotation>.
+        gob, he spat a <Annotation annotationId="060020redbank">Red bank oyster</Annotation> out of him <Annotation annotationId="080022sawdust">right in the corner</Annotation>.
       </p>
       <span data-edition="ed1932" data-page="299"> </span>
       <p>
@@ -2453,22 +2453,22 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         prolonged <span data-edition="ed1961" data-page="331"> </span>admiration. No need to dwell on the legendary beauty of the
         cornerpieces, the acme of art, wherein one can distinctly discern each
         of the four evangelists in turn presenting to each of the four masters
-        his evangelical symbol, a <Annotation annotationId="030062bogoak" visited={visitedNotes.has("030062bogoak")} annotationSelect={() => {openNote("030062bogoak"); addToVisited("030062bogoak")}} activeAnnotationId={currentNoteId}>bogoak</Annotation> sceptre, a North American puma (a far
+        his evangelical symbol, a <Annotation annotationId="030062bogoak">bogoak</Annotation> sceptre, a North American puma (a far
         nobler king of beasts than the British article, be it said in passing),
         a Kerry calf and a golden eagle from Carrantuohill. The scenes depicted
         on the emunctory field, showing our ancient duns and raths and cromlechs
         and grianauns and seats of learning and maledictive stones, are as
         wonderfully beautiful and the pigments as delicate as when the Sligo
         illuminators gave free rein to their artistic fantasy long long ago in
-        the time of the Barmecides. <Annotation annotationId="010010mountains" visited={visitedNotes.has("010010mountains")} annotationSelect={() => {openNote("010010mountains"); addToVisited("010010mountains")}} activeAnnotationId={currentNoteId}>Glendalough</Annotation>, <Annotation annotationId="170019localities" visited={visitedNotes.has("170019localities")} annotationSelect={() => {openNote("170019localities"); addToVisited("170019localities")}} activeAnnotationId={currentNoteId}>the lovely lakes of Killarney</Annotation>,
+        the time of the Barmecides. <Annotation annotationId="010010mountains">Glendalough</Annotation>, <Annotation annotationId="170019localities">the lovely lakes of Killarney</Annotation>,
         the ruins of Clonmacnois, Cong Abbey, Glen Inagh and the Twelve Pins,
-        Ireland's Eye, the Green Hills of Tallaght, <Annotation annotationId="050036saintpatrick" visited={visitedNotes.has("050036saintpatrick")} annotationSelect={() => {openNote("050036saintpatrick"); addToVisited("050036saintpatrick")}} activeAnnotationId={currentNoteId}>Croagh Patrick</Annotation>, the brewery
-        of Messrs Arthur Guinness, Son and Company (Limited), <Annotation annotationId="170019localities" visited={visitedNotes.has("170019localities")} annotationSelect={() => {openNote("170019localities"); addToVisited("170019localities")}} activeAnnotationId={currentNoteId}>Lough Neagh's
+        Ireland's Eye, the Green Hills of Tallaght, <Annotation annotationId="050036saintpatrick">Croagh Patrick</Annotation>, the brewery
+        of Messrs Arthur Guinness, Son and Company (Limited), <Annotation annotationId="170019localities">Lough Neagh's
         banks</Annotation>, the vale of Ovoca, Isolde's tower, the Mapas obelisk, Sir Patrick
         Dun's hospital, Cape Clear, the glen of Aherlow, Lynch's castle, the
         Scotch house, Rathdown Union Workhouse at Loughlinstown, Tullamore jail,
         Castleconnel rapids, Kilballymacshonakill, the cross at Monasterboice,
-        Jury's Hotel, <Annotation annotationId="050036saintpatrick" visited={visitedNotes.has("050036saintpatrick")} annotationSelect={() => {openNote("050036saintpatrick"); addToVisited("050036saintpatrick")}} activeAnnotationId={currentNoteId}>S. Patrick's Purgatory</Annotation>, the <Annotation annotationId="170019localities" visited={visitedNotes.has("170019localities")} annotationSelect={() => {openNote("170019localities"); addToVisited("170019localities")}} activeAnnotationId={currentNoteId}>Salmon Leap</Annotation>, Maynooth college
+        Jury's Hotel, <Annotation annotationId="050036saintpatrick">S. Patrick's Purgatory</Annotation>, the <Annotation annotationId="170019localities">Salmon Leap</Annotation>, Maynooth college
         refectory, Curley's hole, the three birthplaces of the first duke of
         Wellington, the rock of Cashel, the bog of Allen, the Henry Street
         Warehouse, Fingal's Cave—all these moving scenes are still there for us
@@ -2484,7 +2484,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         —{" "}That's mine, says Joe, as the devil said to the dead policeman.
       </p>
       <p>
-        —{" "}And <Annotation annotationId="040083hewasajew" visited={visitedNotes.has("040083hewasajew")} annotationSelect={() => {openNote("040083hewasajew"); addToVisited("040083hewasajew")}} activeAnnotationId={currentNoteId}>I belong to a race</Annotation> too, says Bloom, that is hated and persecuted.
+        —{" "}And <Annotation annotationId="040083hewasajew">I belong to a race</Annotation> too, says Bloom, that is hated and persecuted.
         Also now. This very moment. This very instant.
       </p>
       <p>
@@ -2492,12 +2492,12 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       </p>
       <p>
         —{" "}Robbed, says he. Plundered. Insulted. Persecuted. Taking what belongs
-        to us by right. <Annotation annotationId="020061wanderers" visited={visitedNotes.has("020061wanderers")} annotationSelect={() => {openNote("020061wanderers"); addToVisited("020061wanderers")}} activeAnnotationId={currentNoteId}>At this very moment, says he, putting up his fist, sold
+        to us by right. <Annotation annotationId="020061wanderers">At this very moment, says he, putting up his fist, sold
         by auction in Morocco like slaves or cattle.</Annotation>
       </p>
       <span data-edition="ed1932" data-page="300"> </span>
       <p>
-        —{" "}<Annotation annotationId="120001jewishstate" visited={visitedNotes.has("120001jewishstate")} annotationSelect={() => {openNote("120001jewishstate"); addToVisited("120001jewishstate")}} activeAnnotationId={currentNoteId}>Are you talking about the new Jerusalem?</Annotation> says the citizen.
+        —{" "}<Annotation annotationId="120001jewishstate">Are you talking about the new Jerusalem?</Annotation> says the citizen.
       </p>
       <p>
         —{" "}I'm talking about injustice, says Bloom.
@@ -2516,7 +2516,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       </p>
       <p>
         —{" "}But it's no use, says he. Force, hatred, history, all that. That's not
-        life for men and women, insult and hatred. And everybody knows that <Annotation annotationId="010044painfretted" visited={visitedNotes.has("010044painfretted")} annotationSelect={() => {openNote("010044painfretted"); addToVisited("010044painfretted")}} activeAnnotationId={currentNoteId}>it's
+        life for men and women, insult and hatred. And everybody knows that <Annotation annotationId="010044painfretted">it's
         the very opposite of that that is really life</Annotation>.
       </p>
       <p>
@@ -2550,7 +2550,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         brown macintosh loves a lady who is dead. His Majesty the King loves Her
         Majesty the Queen. Mrs Norman W. Tupper loves officer Taylor. You love
         a certain person. And this person loves that other person because
-        <Annotation annotationId="010044painfretted" visited={visitedNotes.has("010044painfretted")} annotationSelect={() => {openNote("010044painfretted"); addToVisited("010044painfretted")}} activeAnnotationId={currentNoteId}>everybody loves somebody but God loves everybody</Annotation>.
+        <Annotation annotationId="010044painfretted">everybody loves somebody but God loves everybody</Annotation>.
       </p>
       <p>
         —{" "}Well, Joe, says I, your very good health and song. More power,
@@ -2571,7 +2571,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         What about sanctimonious Cromwell and his ironsides that put the women
         and children of Drogheda to the sword with the bible text <i>God is love</i>
         <span data-edition="ed1986" data-page="273"> </span>pasted round the mouth of his cannon? The bible! Did you read <span data-edition="ed1932" data-page="301"> </span>that skit
-        in the <Annotation annotationId="120010unitedirishman" visited={visitedNotes.has("120010unitedirishman")} annotationSelect={() => {openNote("120010unitedirishman"); addToVisited("120010unitedirishman")}} activeAnnotationId={currentNoteId}><i>United Irishman</i></Annotation> today about that Zulu chief that's visiting
+        in the <Annotation annotationId="120010unitedirishman"><i>United Irishman</i></Annotation> today about that Zulu chief that's visiting
         England?
       </p>
       <span data-edition="ed1922" data-page="319"> </span>
@@ -2614,7 +2614,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         the broadleaved mango flourished exceedingly.
       </p>
       <p>
-        —{" "}Is that by <Annotation annotationId="030037griffith" visited={visitedNotes.has("030037griffith")} annotationSelect={() => {openNote("030037griffith"); addToVisited("030037griffith")}} activeAnnotationId={currentNoteId}>Griffith</Annotation>? says John Wyse.
+        —{" "}Is that by <Annotation annotationId="030037griffith">Griffith</Annotation>? says John Wyse.
       </p>
       <p>
         —{" "}No, says the citizen. It's not signed Shanganagh. It's only
@@ -2653,7 +2653,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         <i>Throwaway</i> and he's gone to gather in the shekels.
       </p>
       <p>
-        —{" "}Is it <Annotation annotationId="120013whiteeyedkaffir" visited={visitedNotes.has("120013whiteeyedkaffir")} annotationSelect={() => {openNote("120013whiteeyedkaffir"); addToVisited("120013whiteeyedkaffir")}} activeAnnotationId={currentNoteId}>that whiteeyed kaffir</Annotation>? says the citizen, that never backed a
+        —{" "}Is it <Annotation annotationId="120013whiteeyedkaffir">that whiteeyed kaffir</Annotation>? says the citizen, that never backed a
         horse in anger in his life?
       </p>
       <p></p>
@@ -2688,10 +2688,10 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         the last of it) Jerusalem (ah!) cuckoos.
       </p>
       <p>
-        So anyhow when I got back they were at it dingdong, John Wyse saying <Annotation annotationId="080015nolanswife" visited={visitedNotes.has("080015nolanswife")} annotationSelect={() => {openNote("080015nolanswife"); addToVisited("080015nolanswife")}} activeAnnotationId={currentNoteId}>it
+        So anyhow when I got back they were at it dingdong, John Wyse saying <Annotation annotationId="080015nolanswife">it
         was Bloom gave the ideas for Sinn Fein to Griffith to put in his paper
         all kinds of jerrymandering, packed juries and swindling the taxes off
-        of the Government and</Annotation> <span data-edition="ed1961" data-page="335"> </span><Annotation annotationId="080015nolanswife" visited={visitedNotes.has("080015nolanswife")} annotationSelect={() => {openNote("080015nolanswife"); addToVisited("080015nolanswife")}} activeAnnotationId={currentNoteId}>appointing consuls all over the world to walk
+        of the Government and</Annotation> <span data-edition="ed1961" data-page="335"> </span><Annotation annotationId="080015nolanswife">appointing consuls all over the world to walk
         about selling Irish industries</Annotation>. Robbing Peter to pay Paul. Gob, that
         puts the bloody kybosh on it if old sloppy eyes is mucking up the show.
         Give us a bloody chance. God save Ireland from the likes of that bloody
@@ -2711,7 +2711,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       <span data-edition="ed1932" data-page="303"> </span>
       <span data-edition="ed1922" data-page="321"> </span>
       <p>
-        Sure enough <Annotation annotationId="080013dublincastle" visited={visitedNotes.has("080013dublincastle")} annotationSelect={() => {openNote("080013dublincastle"); addToVisited("080013dublincastle")}} activeAnnotationId={currentNoteId}>the castle car</Annotation> drove up with Martin on it and Jack Power
+        Sure enough <Annotation annotationId="080013dublincastle">the castle car</Annotation> drove up with Martin on it and Jack Power
         with him and a fellow named Crofter or Crofton, pensioner out of
         the collector general's, an orangeman Blackburn does have on the
         registration and he drawing his pay or Crawford gallivanting around the
@@ -2815,8 +2815,8 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         —{" "}We don't want him, says Crofter the Orangeman or presbyterian.
       </p>
       <p>
-        —{" "}<Annotation annotationId="060034martincunningham" visited={visitedNotes.has("060034martincunningham")} annotationSelect={() => {openNote("060034martincunningham"); addToVisited("060034martincunningham")}} activeAnnotationId={currentNoteId}>He's a perverted jew, says Martin</Annotation>, from a place in Hungary and it was
-        he drew up all the plans according to the Hungarian system. <Annotation annotationId="080013dublincastle" visited={visitedNotes.has("080013dublincastle")} annotationSelect={() => {openNote("080013dublincastle"); addToVisited("080013dublincastle")}} activeAnnotationId={currentNoteId}>We know that
+        —{" "}<Annotation annotationId="060034martincunningham">He's a perverted jew, says Martin</Annotation>, from a place in Hungary and it was
+        he drew up all the plans according to the Hungarian system. <Annotation annotationId="080013dublincastle">We know that
         in the castle.</Annotation>
       </p>
       <span data-edition="ed1939" data-page="244"> </span>
@@ -2824,14 +2824,14 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         —{" "}Isn't he a cousin of Bloom the dentist? says Jack Power.
       </p>
       <p>
-        —{" "}Not at all, says Martin. Only namesakes. <Annotation annotationId="050026henryflower" visited={visitedNotes.has("050026henryflower")} annotationSelect={() => {openNote("050026henryflower"); addToVisited("050026henryflower")}} activeAnnotationId={currentNoteId}>His name was Virag</Annotation>, the
+        —{" "}Not at all, says Martin. Only namesakes. <Annotation annotationId="050026henryflower">His name was Virag</Annotation>, the
         father's name that poisoned himself. He changed it by deedpoll, the
         father did.
       </p>
       <p></p>
       <span data-edition="ed1986" data-page="276"> </span>
       <p>
-        —{" "}That's the new Messiah for Ireland! says the citizen. <Annotation annotationId="030085isleofsaints" visited={visitedNotes.has("030085isleofsaints")} annotationSelect={() => {openNote("030085isleofsaints"); addToVisited("030085isleofsaints")}} activeAnnotationId={currentNoteId}>Island of saints
+        —{" "}That's the new Messiah for Ireland! says the citizen. <Annotation annotationId="030085isleofsaints">Island of saints
         and sages!</Annotation>
       </p>
       <p>
@@ -2884,7 +2884,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       <span data-edition="ed1932" data-page="305"> </span>
       <p>
         —{" "}A wolf in sheep's clothing, says the citizen. That's what he is. Virag
-        from Hungary! <Annotation annotationId="020061wanderers" visited={visitedNotes.has("020061wanderers")} annotationSelect={() => {openNote("020061wanderers"); addToVisited("020061wanderers")}} activeAnnotationId={currentNoteId}>Ahasuerus I call him. Cursed by God.</Annotation>
+        from Hungary! <Annotation annotationId="020061wanderers">Ahasuerus I call him. Cursed by God.</Annotation>
       </p>
       <p>
         —{" "}Have you time for a brief libation, Martin? says Ned.
@@ -2896,7 +2896,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         —{" "}You, Jack? Crofton? Three half ones, Terry.
       </p>
       <p>
-        —{" "}<Annotation annotationId="050036saintpatrick" visited={visitedNotes.has("050036saintpatrick")} annotationSelect={() => {openNote("050036saintpatrick"); addToVisited("050036saintpatrick")}} activeAnnotationId={currentNoteId}>Saint Patrick would want to land again at Ballykinlar and convert us,
+        —{" "}<Annotation annotationId="050036saintpatrick">Saint Patrick would want to land again at Ballykinlar and convert us,
         says the citizen, after allowing things like that to contaminate our
         shores.</Annotation>
       </p>
@@ -2911,7 +2911,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         —{" "}And I'm sure He will, says Joe.
       </p>
       <p>
-        And at the sound of the <Annotation annotationId="030018dringdring" visited={visitedNotes.has("030018dringdring")} annotationSelect={() => {openNote("030018dringdring"); addToVisited("030018dringdring")}} activeAnnotationId={currentNoteId}>sacring bell</Annotation>, headed by a crucifer with
+        And at the sound of the <Annotation annotationId="030018dringdring">sacring bell</Annotation>, headed by a crucifer with
         acolytes, thurifers, boatbearers, readers, ostiarii, deacons and
         subdeacons, the blessed company drew nigh of mitred abbots and priors
         and guardians and monks and friars: the <span data-edition="ed1961" data-page="338"> </span>monks of Benedict of Spoleto,
@@ -2941,20 +2941,20 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       Synonymous and S. Laurence O'Toole and S. James of Dingle and
       Compostella and S. Columcille and S. Columba and S. Celestine and S.
       Colman and S. Kevin and S. Brendan and S. Frigidian and S. Senan and S.
-      Fachtna and <Annotation annotationId="020018columbanus" visited={visitedNotes.has("020018columbanus")} annotationSelect={() => {openNote("020018columbanus"); addToVisited("020018columbanus")}} activeAnnotationId={currentNoteId}>S. Columbanus</Annotation> and S. Gall and S. Fursey and 
+      Fachtna and <Annotation annotationId="020018columbanus">S. Columbanus</Annotation> and S. Gall and S. Fursey and 
       <span data-edition="ed1922" data-page="324"> </span>
-      S. Fintan and <Annotation annotationId="020018columbanus" visited={visitedNotes.has("020018columbanus")} annotationSelect={() => {openNote("020018columbanus"); addToVisited("020018columbanus")}} activeAnnotationId={currentNoteId}>S.
+      S. Fintan and <Annotation annotationId="020018columbanus">S.
       Fiacre</Annotation> and S. John Nepomuc and S. <span data-edition="ed1932" data-page="306"> </span>Thomas Aquinas and S. Ives of Brittany
       and S. Michan and S. Herman-Joseph and the three patrons of holy youth
       S. Aloysius Gonzaga and S. Stanislaus Kostka and S. John Berchmans
       and the saints Gervasius, Servasius and Bonifacius and S. Bride and S.
-      Kieran and <Annotation annotationId="030067oldkilkenny" visited={visitedNotes.has("030067oldkilkenny")} annotationSelect={() => {openNote("030067oldkilkenny"); addToVisited("030067oldkilkenny")}} activeAnnotationId={currentNoteId}>S. Canice of Kilkenny</Annotation> and S. Jarlath of Tuam and S. Finbarr
+      Kieran and <Annotation annotationId="030067oldkilkenny">S. Canice of Kilkenny</Annotation> and S. Jarlath of Tuam and S. Finbarr
       and S. Pappin of Ballymun and Brother Aloysius Pacificus and Brother
-      Louis Bellicosus and the saints Rose of Lima and of Viterbo and <Annotation annotationId="050027marthamary" visited={visitedNotes.has("050027marthamary")} annotationSelect={() => {openNote("050027marthamary"); addToVisited("050027marthamary")}} activeAnnotationId={currentNoteId}>S.
+      Louis Bellicosus and the saints Rose of Lima and of Viterbo and <Annotation annotationId="050027marthamary">S.
       Martha of Bethany</Annotation> and S. Mary of Egypt and S. Lucy and S. Brigid and
       S. Attracta and S. Dympna and S. Ita and S. Marion Calpensis and
       the Blessed Sister Teresa of the Child Jesus and S. Barbara and S.
-      Scholastica and <Annotation annotationId="010054ursula" visited={visitedNotes.has("010054ursula")} annotationSelect={() => {openNote("010054ursula"); addToVisited("010054ursula")}} activeAnnotationId={currentNoteId}>S. Ursula with eleven thousand virgins</Annotation>. And all came
+      Scholastica and <Annotation annotationId="010054ursula">S. Ursula with eleven thousand virgins</Annotation>. And all came
       with nimbi and aureoles and gloriae, bearing palms and harps and swords
       and olive crowns, in robes <span data-edition="ed1961" data-page="339"> </span>whereon were woven the blessed symbols of
       their efficacies, inkhorns, arrows, loaves, cruses, fetters, axes,
@@ -2963,7 +2963,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       soupladles, stars, snakes, anvils, boxes of vaseline, bells, crutches,
       forceps, stags' horns, watertight boots, hawks, millstones, eyes on a
       dish, wax candles, aspergills, unicorns. And as they wended their way by
-      <Annotation annotationId="070006nelsonspillar" visited={visitedNotes.has("070006nelsonspillar")} annotationSelect={() => {openNote("070006nelsonspillar"); addToVisited("070006nelsonspillar")}} activeAnnotationId={currentNoteId}>Nelson's Pillar</Annotation>, Henry street, Mary street, Capel street, Little Britain
+      <Annotation annotationId="070006nelsonspillar">Nelson's Pillar</Annotation>, Henry street, Mary street, Capel street, Little Britain
       street chanting the introit in <i>Epiphania Domini</i> which beginneth
       <i>Surge, illuminare</i> and thereafter most sweetly the gradual <i>Omnes</i>
       which saith <i>de Saba venient</i> they did divers wonders such as casting
@@ -2972,7 +2972,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
       interpreting and fulfilling the scriptures, blessing and prophesying.
       And last, beneath a canopy of cloth of gold came the reverend Father
       O'Flynn attended by Malachi and Patrick. And when the good fathers
-      had reached the appointed place, <Annotation annotationId="120004kiernans" visited={visitedNotes.has("120004kiernans")} annotationSelect={() => {openNote("120004kiernans"); addToVisited("120004kiernans")}} activeAnnotationId={currentNoteId}>the house of Bernard Kiernan and Co,
+      had reached the appointed place, <Annotation annotationId="120004kiernans">the house of Bernard Kiernan and Co,
       limited, 8, 9 and 10 little Britain street,</Annotation> wholesale grocers, wine
       and brandy shippers, licensed for the sale of beer, wine and spirits for
       consumption on the premises, the celebrant 
@@ -3114,7 +3114,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         And all the ragamuffins and sluts of the nation round the door and
         Martin telling the jarvey to drive ahead and the citizen bawling and Alf
         and Joe at him to whisht and he on his high horse about the jews and
-        the loafers calling for a speech and Jack Power <Annotation annotationId="050013jauntingcar" visited={visitedNotes.has("050013jauntingcar")} annotationSelect={() => {openNote("050013jauntingcar"); addToVisited("050013jauntingcar")}} activeAnnotationId={currentNoteId}>trying to get him to sit
+        the loafers calling for a speech and Jack Power <Annotation annotationId="050013jauntingcar">trying to get him to sit
         down on the car</Annotation> and hold his bloody jaw and a loafer with a patch over
         his eye starts singing <i>If the man in the moon was a jew, jew, jew</i> and
         a slut shouts out of her:
@@ -3169,24 +3169,24 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         struck up the wellknown strains of <i>Come back to Erin</i>, followed
         immediately by <i>Rakoczsy's March</i>. Tarbarrels and bonfires were lighted
         along the coastline of the four seas on the summits of the Hill of
-        Howth, Three Rock Mountain, <Annotation annotationId="010010mountains" visited={visitedNotes.has("010010mountains")} annotationSelect={() => {openNote("010010mountains"); addToVisited("010010mountains")}} activeAnnotationId={currentNoteId}>Sugarloaf</Annotation>, <Annotation annotationId="010066brayhead" visited={visitedNotes.has("010066brayhead")} annotationSelect={() => {openNote("010066brayhead"); addToVisited("010066brayhead")}} activeAnnotationId={currentNoteId}>Bray Head</Annotation>, the mountains of
+        Howth, Three Rock Mountain, <Annotation annotationId="010010mountains">Sugarloaf</Annotation>, <Annotation annotationId="010066brayhead">Bray Head</Annotation>, the mountains of
         Mourne, the Galtees, the Ox and Donegal and Sperrin peaks, the Nagles
-        and the Bograghs, <Annotation annotationId="170019localities" visited={visitedNotes.has("170019localities")} annotationSelect={() => {openNote("170019localities"); addToVisited("170019localities")}} activeAnnotationId={currentNoteId}>the Connemara hills</Annotation>, the reeks of M Gillicuddy, <Annotation annotationId="040073slieve" visited={visitedNotes.has("040073slieve")} annotationSelect={() => {openNote("040073slieve"); addToVisited("040073slieve")}} activeAnnotationId={currentNoteId}>Slieve
+        and the Bograghs, <Annotation annotationId="170019localities">the Connemara hills</Annotation>, the reeks of M Gillicuddy, <Annotation annotationId="040073slieve">Slieve
         Aughty, Slieve Bernagh and Slieve Bloom</Annotation>. Amid cheers that rent the
         welkin, responded to by answering cheers from a big muster of
         henchmen on the distant Cambrian and Caledonian hills, the mastodontic
         pleasureship slowly moved away saluted by a final floral tribute from
         the representatives of the fair sex who were present in large numbers
         while, as it proceeded down the river, escorted by a flotilla of barges,
-        the flags of the <Annotation annotationId="080007ballastoffice" visited={visitedNotes.has("080007ballastoffice")} annotationSelect={() => {openNote("080007ballastoffice"); addToVisited("080007ballastoffice")}} activeAnnotationId={currentNoteId}>Ballast office</Annotation> and Custom House were dipped in salute
-        as were also those of <Annotation annotationId="030004pigeonhouse" visited={visitedNotes.has("030004pigeonhouse")} annotationSelect={() => {openNote("030004pigeonhouse"); addToVisited("030004pigeonhouse")}} activeAnnotationId={currentNoteId}>the electrical power station at the
+        the flags of the <Annotation annotationId="080007ballastoffice">Ballast office</Annotation> and Custom House were dipped in salute
+        as were also those of <Annotation annotationId="030004pigeonhouse">the electrical power station at the
         Pigeonhouse and the Poolbeg Light</Annotation>. <i>Visszontlátásra, kedvès baráton!
         Visszontlátásra!</i> Gone but not forgotten.
       </p>
       <p>
         Gob, the devil wouldn't stop him till he got hold of the bloody tin
         anyhow and out with him and little Alf hanging on to his elbow and he
-        <Annotation annotationId="060032queenstheatre" visited={visitedNotes.has("060032queenstheatre")} annotationSelect={() => {openNote("060032queenstheatre"); addToVisited("060032queenstheatre")}} activeAnnotationId={currentNoteId}>shouting like a stuck pig, as good as any bloody play in the Queen's
+        <Annotation annotationId="060032queenstheatre">shouting like a stuck pig, as good as any bloody play in the Queen's
         royal theatre</Annotation>:
       </p>
       <span data-edition="ed1939" data-page="248"> </span>
@@ -3219,7 +3219,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         observatory of Dunsink registered in all eleven shocks, all of the fifth
         grade of Mercalli's scale, and there is no record extant of a similar
         seismic disturbance in our island since the earthquake of 1534, the year
-        of <Annotation annotationId="030058pretenders" visited={visitedNotes.has("030058pretenders")} annotationSelect={() => {openNote("030058pretenders"); addToVisited("030058pretenders")}} activeAnnotationId={currentNoteId}>the rebellion of Silken Thomas</Annotation>. The epicentre appears to have been
+        of <Annotation annotationId="030058pretenders">the rebellion of Silken Thomas</Annotation>. The epicentre appears to have been
         that part of the metropolis which constitutes the Inn's Quay ward and
         parish of Saint Michan covering a surface of fortyone acres, two roods
         and one square pole or perch. All the lordly residences in the vicinity
@@ -3232,7 +3232,7 @@ const Cyclops = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
         headgear since ascertained to belong to the much respected clerk of the
         crown and peace Mr George Fottrell and a silk umbrella with gold handle
         with the engraved initials, crest, coat of arms and house number of
-        the erudite and worshipful chairman of quarter sessions <Annotation annotationId="080002sirfrederick" visited={visitedNotes.has("080002sirfrederick")} annotationSelect={() => {openNote("080002sirfrederick"); addToVisited("080002sirfrederick")}} activeAnnotationId={currentNoteId}>sir Frederick
+        the erudite and worshipful chairman of quarter sessions <Annotation annotationId="080002sirfrederick">sir Frederick
         Falkiner, recorder of Dublin</Annotation>, have been discovered by search parties
         in remote parts of the island respectively, the former on the third
         basaltic ridge of the giant's causeway, the latter embedded to the

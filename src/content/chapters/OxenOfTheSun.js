@@ -1,24 +1,24 @@
 import Annotation from "../../components/Annotation";
 
 
-const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
+const OxenOfTheSun = () => {
   return (
     <div>
       <p></p>
       <center><font size="+2">[14]</font></center>
       <br/>
-      <Annotation annotationId="140032deshileamus" visited={visitedNotes.has("140032deshileamus")} annotationSelect={() => {openNote("140032deshileamus"); addToVisited("140032deshileamus")}} activeAnnotationId={currentNoteId}>Deshil Holles Eamus.</Annotation> Deshil <Annotation annotationId="140035holles" visited={visitedNotes.has("140035holles")} annotationSelect={() => {openNote("140035holles"); addToVisited("140035holles")}} activeAnnotationId={currentNoteId}>Holles</Annotation> Eamus. Deshil Holles Eamus.
+      <Annotation annotationId="140032deshileamus">Deshil Holles Eamus.</Annotation> Deshil <Annotation annotationId="140035holles">Holles</Annotation> Eamus. Deshil Holles Eamus.
       <p></p>
       <p>
-        Send us <Annotation annotationId="140037brightone" visited={visitedNotes.has("140037brightone")} annotationSelect={() => {openNote("140037brightone"); addToVisited("140037brightone")}} activeAnnotationId={currentNoteId}>bright one, light one, Horhorn</Annotation>, quickening and wombfruit. Send
+        Send us <Annotation annotationId="140037brightone">bright one, light one, Horhorn</Annotation>, quickening and wombfruit. Send
         us bright one, light one, Horhorn, quickening and wombfruit. Send us
         bright one, light one, Horhorn, quickening and wombfruit.
       </p>
       <p>
-        <Annotation annotationId="140036hoopsaboyaboy" visited={visitedNotes.has("140036hoopsaboyaboy")} annotationSelect={() => {openNote("140036hoopsaboyaboy"); addToVisited("140036hoopsaboyaboy")}} activeAnnotationId={currentNoteId}>Hoopsa boyaboy hoopsa!</Annotation> Hoopsa boyaboy hoopsa! Hoopsa boyaboy hoopsa!
+        <Annotation annotationId="140036hoopsaboyaboy">Hoopsa boyaboy hoopsa!</Annotation> Hoopsa boyaboy hoopsa! Hoopsa boyaboy hoopsa!
       </p>
       <p>
-        <Annotation annotationId="140033universally" visited={visitedNotes.has("140033universally")} annotationSelect={() => {openNote("140033universally"); addToVisited("140033universally")}} activeAnnotationId={currentNoteId}>Universally that person's acumen is esteemed very little perceptive</Annotation>
+        <Annotation annotationId="140033universally">Universally that person's acumen is esteemed very little perceptive</Annotation>
         concerning whatsoever matters are being held as most profitably by
         mortals with sapience endowed to be studied who is ignorant of that
         which the most in doctrine erudite and certainly by reason of that in
@@ -33,7 +33,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         apprehended but is conscious that that exterior splendour may be the
         surface of a downwardtending lutulent reality or on the contrary anyone
         so is there inilluminated as not to perceive that as no nature's boon
-        can contend against <Annotation annotationId="080028multiply" visited={visitedNotes.has("080028multiply")} annotationSelect={() => {openNote("080028multiply"); addToVisited("080028multiply")}} activeAnnotationId={currentNoteId}> the bounty of increase</Annotation> so it behoves every most just
+        can contend against <Annotation annotationId="080028multiply"> the bounty of increase</Annotation> so it behoves every most just
         citizen to become the exhortator and admonisher of his semblables and
         to tremble lest what had in the past been by the nation excellently
         commenced might be in the future not with similar excellence
@@ -48,7 +48,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         function ever irrevocably enjoined?
       </p>
       <p>
-        <Annotation annotationId="140031historians" visited={visitedNotes.has("140031historians")} annotationSelect={() => {openNote("140031historians"); addToVisited("140031historians")}} activeAnnotationId={currentNoteId}>It is not why therefore we shall wonder if, as the best historians
+        <Annotation annotationId="140031historians">It is not why therefore we shall wonder if, as the best historians
         relate,</Annotation> among the Celts, who nothing that was not in its nature
         admirable admired, the art of medicine shall have <span data-edition="ed1961" data-page="383"> </span>been highly honoured.
         Not to speak of <span data-edition="ed1986" data-page="314"> </span>hostels, leperyards, sweating chambers, plaguegraves,
@@ -83,7 +83,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         to be about to be cherished had been begun she felt!
       </p>
       <p>
-        <Annotation annotationId="140040beforeborn" visited={visitedNotes.has("140040beforeborn")} annotationSelect={() => {openNote("140040beforeborn"); addToVisited("140040beforeborn")}} activeAnnotationId={currentNoteId}>Before born bliss babe had. Within womb won he worship.</Annotation> Whatever in that
+        <Annotation annotationId="140040beforeborn">Before born bliss babe had. Within womb won he worship.</Annotation> Whatever in that
         one case done commodiously done was. A couch by midwives attended with
         wholesome food reposeful, cleanest swaddles as though forthbringing were
         now done and by wise foresight set: but to this no less of what drugs
@@ -98,15 +98,15 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         thereto to lie in, her term up.
       </p>
       <p>
-        Some man that wayfaring was stood by housedoor at night's oncoming. <Annotation annotationId="020061wanderers" visited={visitedNotes.has("020061wanderers")} annotationSelect={() => {openNote("020061wanderers"); addToVisited("020061wanderers")}} activeAnnotationId={currentNoteId}>Of
+        Some man that wayfaring was stood by housedoor at night's oncoming. <Annotation annotationId="020061wanderers">Of
         Israel's folk was that man that on earth wandering far had fared.</Annotation> Stark
         ruth of man his errand that him lone led till that house.
       </p>
       <p>
-        Of that house <Annotation annotationId="140038drhorne" visited={visitedNotes.has("140038drhorne")} annotationSelect={() => {openNote("140038drhorne"); addToVisited("140038drhorne")}} activeAnnotationId={currentNoteId}>A. Horne</Annotation> is lord. <Annotation annotationId="140035holles" visited={visitedNotes.has("140035holles")} annotationSelect={() => {openNote("140035holles"); addToVisited("140035holles")}} activeAnnotationId={currentNoteId}>Seventy beds</Annotation> keeps he there teeming
+        Of that house <Annotation annotationId="140038drhorne">A. Horne</Annotation> is lord. <Annotation annotationId="140035holles">Seventy beds</Annotation> keeps he there teeming
         mothers are wont that they lie for to thole and bring forth bairns hale
         so God's angel to Mary quoth. Watchers twey there walk, white sisters
-        in ward sleepless. Smarts they still, sickness soothing: <Annotation annotationId="140035holles" visited={visitedNotes.has("140035holles")} annotationSelect={() => {openNote("140035holles"); addToVisited("140035holles")}} activeAnnotationId={currentNoteId}>in twelve moons
+        in ward sleepless. Smarts they still, sickness soothing: <Annotation annotationId="140035holles">in twelve moons
         thrice an hundred</Annotation>. Truest bedthanes they twain are, for Horne holding
         wariest ward.
       </p>
@@ -147,7 +147,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         wanhope sorrowing one with other.
       </p>
       <p>
-        <Annotation annotationId="140030everyman" visited={visitedNotes.has("140030everyman")} annotationSelect={() => {openNote("140030everyman"); addToVisited("140030everyman")}} activeAnnotationId={currentNoteId}>Therefore, everyman, look to that last end that is thy death</Annotation> and the dust 
+        <Annotation annotationId="140030everyman">Therefore, everyman, look to that last end that is thy death</Annotation> and the dust 
         <span data-edition="ed1922" data-page="368"> </span>
         that gripeth on every man that is born of woman for as he came
         naked forth from his mother's womb so naked shall he wend him at the
@@ -168,13 +168,13 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         twelve bloodflows chiding her childless.
       </p>
       <p>
-        <Annotation annotationId="140029thecastle" visited={visitedNotes.has("140029thecastle")} annotationSelect={() => {openNote("140029thecastle"); addToVisited("140029thecastle")}} activeAnnotationId={currentNoteId}>And whiles they spake the door of the castle was opened</Annotation> and there nighed
+        <Annotation annotationId="140029thecastle">And whiles they spake the door of the castle was opened</Annotation> and there nighed
         them a mickle noise as of many that sat there at meat. And there <span data-edition="ed1986" data-page="316"> </span>came
         against the place as they stood a young learningknight yclept Dixon. And
         the traveller Leopold was couth to him sithen it had happed that they
-        had had ado each with other in <Annotation annotationId="010068themater" visited={visitedNotes.has("010068themater")} annotationSelect={() => {openNote("010068themater"); addToVisited("010068themater")}} activeAnnotationId={currentNoteId}>the house of misericord</Annotation> where this
+        had had ado each with other in <Annotation annotationId="010068themater">the house of misericord</Annotation> where this
         learningknight lay by cause the traveller Leopold came there to be
-        <span data-edition="ed1932" data-page="349"> </span>healed for <Annotation annotationId="040040bluebottle" visited={visitedNotes.has("040040bluebottle")} annotationSelect={() => {openNote("040040bluebottle"); addToVisited("040040bluebottle")}} activeAnnotationId={currentNoteId}>he was sore wounded in his breast by a spear wherewith a
+        <span data-edition="ed1932" data-page="349"> </span>healed for <Annotation annotationId="040040bluebottle">he was sore wounded in his breast by a spear wherewith a
         horrible and dreadful dragon was smitten him</Annotation> for which he did do make
         a salve of volatile salt and chrism as much as he might suffice. And he
         said now that he should go into that castle for to make merry with
@@ -202,13 +202,13 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         his breath that he
         blares into them like to bubbles. And full fair cheer and rich was on
         the board that no wight could devise a fuller ne richer. And there was
-        a vat of silver that was moved by craft to open in the which lay <Annotation annotationId="180008sardines" visited={visitedNotes.has("180008sardines")} annotationSelect={() => {openNote("180008sardines"); addToVisited("180008sardines")}} activeAnnotationId={currentNoteId}>strange
+        a vat of silver that was moved by craft to open in the which lay <Annotation annotationId="180008sardines">strange
         fishes withouten heads</Annotation> though misbelieving men nie that this be possible
         thing without they see it natheless they are so. And these fishes lie
         in an oily water brought there from Portugal land because of the fatness
         that therein is like to the juices of the olivepress. And also it was
         a marvel to see in that castle how by magic they make a compost out of
-        fecund <Annotation annotationId="030019kidneysofwheat" visited={visitedNotes.has("030019kidneysofwheat")} annotationSelect={() => {openNote("030019kidneysofwheat"); addToVisited("030019kidneysofwheat")}} activeAnnotationId={currentNoteId}>wheatkidneys</Annotation> out of Chaldee that by aid of certain angry spirits
+        fecund <Annotation annotationId="030019kidneysofwheat">wheatkidneys</Annotation> out of Chaldee that by aid of certain angry spirits
         that they do into it swells up wondrously like to a vast mountain. And
         they teach the serpents there to entwine themselves up on long sticks
         out of the ground and of the scales of these serpents they brew out a
@@ -225,7 +225,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
       </p>
       <span data-edition="ed1932" data-page="350"> </span>
       <p>
-        <Annotation annotationId="140028goodsister" visited={visitedNotes.has("140028goodsister")} annotationSelect={() => {openNote("140028goodsister"); addToVisited("140028goodsister")}} activeAnnotationId={currentNoteId}>This meanwhile this good sister stood by the door</Annotation> and begged them at the
+        <Annotation annotationId="140028goodsister">This meanwhile this good sister stood by the door</Annotation> and begged them at the
         reverence of Jesu our alther liege Lord to leave their wassailing for
         there was above one quick with child, a gentle dame, whose time hied
         fast. Sir <span data-edition="ed1986" data-page="317"> </span>Leopold heard on the upfloor cry on high and he wondered what
@@ -254,7 +254,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         the board, that is to wit, Dixon yclept junior of saint Mary Merciable's
         with other his fellows Lynch and Madden, scholars of medicine, and the
         franklin that hight Lenehan and one from Alba Longa, one Crotthers, and
-        young Stephen that had <Annotation annotationId="010097latinquarterhat" visited={visitedNotes.has("010097latinquarterhat")} annotationSelect={() => {openNote("010097latinquarterhat"); addToVisited("010097latinquarterhat")}} activeAnnotationId={currentNoteId}>mien of a frere</Annotation> that was at head of the board
+        young Stephen that had <Annotation annotationId="010097latinquarterhat">mien of a frere</Annotation> that was at head of the board
         and Costello that men clepen Punch Costello all long of a mastery of
         him erewhile gested (and of all them, reserved young Stephen, he was the
         most drunken that demanded still of more mead) and beside the meek sir
@@ -295,7 +295,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         had these words following:
         Murmur, sirs, is eke oft among lay folk. Both babe and parent now
         glorify their Maker, the one in limbo gloom, the other in purgefire.
-        But, gramercy, what of <Annotation annotationId="020008infinitepossibilities" visited={visitedNotes.has("020008infinitepossibilities")} annotationSelect={() => {openNote("020008infinitepossibilities"); addToVisited("020008infinitepossibilities")}} activeAnnotationId={currentNoteId}>those Godpossibled souls that we nightly
+        But, gramercy, what of <Annotation annotationId="020008infinitepossibilities">those Godpossibled souls that we nightly
         impossibilise</Annotation>, which is the sin against the Holy Ghost, Very God, Lord
         and Giver of Life? For, sirs, he said, our lust is brief. We are means
         to those small creatures within us and nature has other ends than we.
@@ -314,7 +314,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         be or wheresoever. Then spoke young Stephen orgulous of mother Church
         that <span data-edition="ed1961" data-page="389"> </span>would cast him out of her bosom, of law of canons, of Lilith,
         patron of abortions, <span data-edition="ed1932" data-page="352"> </span>of bigness wrought by wind of seeds of brightness
-        or by <Annotation annotationId="030149vampire" visited={visitedNotes.has("030149vampire")} annotationSelect={() => {openNote("030149vampire"); addToVisited("030149vampire")}} activeAnnotationId={currentNoteId}>potency of vampires</Annotation> <Annotation annotationId="090003hyde" visited={visitedNotes.has("090003hyde")} annotationSelect={() => {openNote("090003hyde"); addToVisited("090003hyde")}} activeAnnotationId={currentNoteId}>mouth to mouth</Annotation> or, as Virgilius saith, by the
+        or by <Annotation annotationId="030149vampire">potency of vampires</Annotation> <Annotation annotationId="090003hyde">mouth to mouth</Annotation> or, as Virgilius saith, by the
         influence of the occident or by the reek of moonflower or an she lie
         with a woman which her man has but lain with, <i>effectu secuto</i>, or
         peradventure in her bath according to the opinions of Averroes and Moses
@@ -334,10 +334,10 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         Church belike at one blow had birth and death pence and in such sort
         deliverly he scaped their questions. That is truth, pardy, said Dixon,
         and, or I err, a pregnant word. <span data-edition="ed1986" data-page="319"> </span>Which hearing young Stephen was a
-        marvellous glad man and he averred that <Annotation annotationId="010129ubermensch" visited={visitedNotes.has("010129ubermensch")} annotationSelect={() => {openNote("010129ubermensch"); addToVisited("010129ubermensch")}} activeAnnotationId={currentNoteId}>he who stealeth from the poor
+        marvellous glad man and he averred that <Annotation annotationId="010129ubermensch">he who stealeth from the poor
         lendeth</Annotation> 
         <span data-edition="ed1922" data-page="372"> </span>
-        <Annotation annotationId="010129ubermensch" visited={visitedNotes.has("010129ubermensch")} annotationSelect={() => {openNote("010129ubermensch"); addToVisited("010129ubermensch")}} activeAnnotationId={currentNoteId}>to the Lord</Annotation> for he was of a wild manner when he was drunken and
+        <Annotation annotationId="010129ubermensch">to the Lord</Annotation> for he was of a wild manner when he was drunken and
         that he was now in that taking it appeared eftsoons.
       </p>
       <p>
@@ -346,7 +346,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         and as he was minded of his good lady Marion that had borne him an only
         manchild which on his eleventh day on live had died and no man of art
         could save so dark is destiny. And she was wondrous stricken of heart
-        for that evil hap and for his burial did him on a fair <Annotation annotationId="030091ruddywool" visited={visitedNotes.has("030091ruddywool")} annotationSelect={() => {openNote("030091ruddywool"); addToVisited("030091ruddywool")}} activeAnnotationId={currentNoteId}>corselet of
+        for that evil hap and for his burial did him on a fair <Annotation annotationId="030091ruddywool">corselet of
         lamb's wool</Annotation>, the flower of the flock, lest he might perish utterly and
         lie akeled (for it was then about the midst of the winter) and now Sir
         Leopold that had of his body no manchild for an heir looked upon him his
@@ -362,11 +362,11 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         their approach from him that still plied it very busily who, praying for
         the intentions of the sovereign pontiff, he gave them for a<span data-edition="ed1932" data-page="353"> </span>pledge the
         vicar of Christ which also as he said is vicar of Bray. Now drink we,
-        quod he, of this mazer and quaff ye this mead which is <Annotation annotationId="010106sacredpint" visited={visitedNotes.has("010106sacredpint")} annotationSelect={() => {openNote("010106sacredpint"); addToVisited("010106sacredpint")}} activeAnnotationId={currentNoteId}>not indeed parcel
+        quod he, of this mazer and quaff ye this mead which is <Annotation annotationId="010106sacredpint">not indeed parcel
         of my body but my soul's bodiment. Leave ye fraction of bread to them
         that live by bread alone.</Annotation> Be not afeard neither for any want for this
         will comfort more than the other will dismay. See ye here. And he showed
-        them glistering <Annotation annotationId="020014coinoftribute" visited={visitedNotes.has("020014coinoftribute")} annotationSelect={() => {openNote("020014coinoftribute"); addToVisited("020014coinoftribute")}} activeAnnotationId={currentNoteId}>coins of the tribute</Annotation> and goldsmiths' <Annotation annotationId="020035owenothing" visited={visitedNotes.has("020035owenothing")} annotationSelect={() => {openNote("020035owenothing"); addToVisited("020035owenothing")}} activeAnnotationId={currentNoteId}>notes the worth of
+        them glistering <Annotation annotationId="020014coinoftribute">coins of the tribute</Annotation> and goldsmiths' <Annotation annotationId="020035owenothing">notes the worth of
         two pound nineteen shilling that he had, he said, for a song which he
         writ</Annotation>. They all admired to see the foresaid riches in such dearth of
         money as was herebefore. His words were then these as followeth: Know
@@ -375,27 +375,27 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         bramblebush to be a rose upon the rood of time. Mark me now. In woman's
         womb word is made flesh but in the spirit of the maker all flesh
         that passes becomes the word that shall not pass away. This is the
-        postcreation. <Annotation annotationId="030102viditdeus" visited={visitedNotes.has("030102viditdeus")} annotationSelect={() => {openNote("030102viditdeus"); addToVisited("030102viditdeus")}} activeAnnotationId={currentNoteId}><i>Omnis caro ad te veniet</i>.</Annotation> No question but her name is
+        postcreation. <Annotation annotationId="030102viditdeus"><i>Omnis caro ad te veniet</i>.</Annotation> No question but her name is
         puissant who aventried the dear corse of our Agenbuyer, Healer and Herd,
         our mighty mother and mother most venerable and Bernardus saith aptly
         that She hath an <i>omnipotentiam deiparae supplicem</i>, that is to wit, an
         almightiness of petition because she is the second Eve and she won
         us, saith Augustine too, whereas that other, our grandam, which we are linked
         <span data-edition="ed1922" data-page="373"> </span>
-        up with by successive <Annotation annotationId="140004anastomosis" visited={visitedNotes.has("140004anastomosis")} annotationSelect={() => {openNote("140004anastomosis"); addToVisited("140004anastomosis")}} activeAnnotationId={currentNoteId}>anastomosis of navelcords</Annotation> sold us all,
+        up with by successive <Annotation annotationId="140004anastomosis">anastomosis of navelcords</Annotation> sold us all,
         seed, breed and generation, for a penny pippin. But here is the matter
         now. Or she knew him, 
         <span data-edition="ed1939" data-page="282"> </span>
         that second I say, and was but creature of her
         creature, <i>vergine madre figlia di tuo figlio</i> or she knew him not and
-        then stands she in the one denial or ignorancy with <Annotation annotationId="140039jackbuilt" visited={visitedNotes.has("140039jackbuilt")} annotationSelect={() => {openNote("140039jackbuilt"); addToVisited("140039jackbuilt")}} activeAnnotationId={currentNoteId}>Peter Piscator who
-        lives in the house</Annotation> <span data-edition="ed1986" data-page="320"> </span><Annotation annotationId="140039jackbuilt" visited={visitedNotes.has("140039jackbuilt")} annotationSelect={() => {openNote("140039jackbuilt"); addToVisited("140039jackbuilt")}} activeAnnotationId={currentNoteId}>that Jack built</Annotation> and with Joseph the joiner patron of
-        the happy demise of all unhappy marriages, <i><Annotation annotationId="010150fatherbird" visited={visitedNotes.has("010150fatherbird")} annotationSelect={() => {openNote("010150fatherbird"); addToVisited("010150fatherbird")}} activeAnnotationId={currentNoteId}>parceque M. Léo Taxil nous
+        then stands she in the one denial or ignorancy with <Annotation annotationId="140039jackbuilt">Peter Piscator who
+        lives in the house</Annotation> <span data-edition="ed1986" data-page="320"> </span><Annotation annotationId="140039jackbuilt">that Jack built</Annotation> and with Joseph the joiner patron of
+        the happy demise of all unhappy marriages, <i><Annotation annotationId="010150fatherbird">parceque M. Léo Taxil nous
         a dit que qui l'avait mise dans cette fichue position c'était le
         sacré pigeon</Annotation></i>, <i>ventre de Dieu! Entweder</i> transubstantiality <i>oder</i>
         consubstantiality but in no case subsubstantiality. And all cried out
         upon it for a very scurvy word. A pregnancy without joy, <span data-edition="ed1961" data-page="391"> </span>he said, a
-        birth without pangs, <Annotation annotationId="030083nakedeve" visited={visitedNotes.has("030083nakedeve")} annotationSelect={() => {openNote("030083nakedeve"); addToVisited("030083nakedeve")}} activeAnnotationId={currentNoteId}>a body without blemish, a belly without bigness</Annotation>.
+        birth without pangs, <Annotation annotationId="030083nakedeve">a body without blemish, a belly without bigness</Annotation>.
         Let the lewd with faith and fervour worship. With will will we
         withstand, withsay.
       </p>
@@ -455,14 +455,14 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         very high in those days and the custom of the country approved with it.
         Greater love than this, he said, no man hath that a man lay down his
         wife for his friend. Go thou and do likewise. Thus, or words to that
-        effect, saith <Annotation annotationId="010129ubermensch" visited={visitedNotes.has("010129ubermensch")} annotationSelect={() => {openNote("010129ubermensch"); addToVisited("010129ubermensch")}} activeAnnotationId={currentNoteId}>Zarathustra, sometime regius professor of French letters</Annotation>
+        effect, saith <Annotation annotationId="010129ubermensch">Zarathustra, sometime regius professor of French letters</Annotation>
         to the university of Oxtail nor breathed there ever that man to whom
         mankind was more beholden. Bring a stranger within thy tower it will
         go hard but thou wilt have the secondbest bed. <i>Orate, fratres, pro
         memetipso</i>. And all the people shall say, Amen. Remember, Erin, thy
         generations and thy days of old, how thou settedst little by me and by
         my word and broughtest in a stranger to my gates to commit fornication
-        in my sight and to wax fat and kick like Jeshurum. <Annotation annotationId="020060jewmerchants" visited={visitedNotes.has("020060jewmerchants")} annotationSelect={() => {openNote("020060jewmerchants"); addToVisited("020060jewmerchants")}} activeAnnotationId={currentNoteId}>Therefore hast thou
+        in my sight and to wax fat and kick like Jeshurum. <Annotation annotationId="020060jewmerchants">Therefore hast thou
         sinned against the light</Annotation> and hast made me, thy lord, to be the slave of
         servants. Return, return, Clan Milly: forget me not, O Milesian. Why
         hast thou done this abomination before me that thou didst spurn me for
@@ -487,13 +487,13 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         originals, that same multiplicit concordance which leads forth growth
         from birth accomplishing by a retrogressive metamorphosis that minishing
         and ablation towards the final which is agreeable unto nature so is it
-        with our subsolar being. <Annotation annotationId="030093twomaries" visited={visitedNotes.has("030093twomaries")} annotationSelect={() => {openNote("030093twomaries"); addToVisited("030093twomaries")}} activeAnnotationId={currentNoteId}>The aged sisters draw us into life: we wail,
+        with our subsolar being. <Annotation annotationId="030093twomaries">The aged sisters draw us into life: we wail,
         batten, sport, clip, clasp, sunder, dwindle, die: over us dead they
         bend. First, saved from water of old Nile, among bulrushes, a bed
-        of fasciated</Annotation> <span data-edition="ed1986" data-page="322"> </span><Annotation annotationId="030093twomaries" visited={visitedNotes.has("030093twomaries")} annotationSelect={() => {openNote("030093twomaries"); addToVisited("030093twomaries")}} activeAnnotationId={currentNoteId}>wattles: at last the cavity of a mountain</Annotation>, an occulted
+        of fasciated</Annotation> <span data-edition="ed1986" data-page="322"> </span><Annotation annotationId="030093twomaries">wattles: at last the cavity of a mountain</Annotation>, an occulted
         sepulchre amid the conclamation of the hillcat and the ossifrage. And as
         no man <span data-edition="ed1932" data-page="356"> </span>knows the ubicity of his tumulus nor to what processes we shall
-        thereby be ushered nor whether to Tophet or to <Annotation annotationId="030008edenville" visited={visitedNotes.has("030008edenville")} annotationSelect={() => {openNote("030008edenville"); addToVisited("030008edenville")}} activeAnnotationId={currentNoteId}>Edenville</Annotation> in the like way
+        thereby be ushered nor whether to Tophet or to <Annotation annotationId="030008edenville">Edenville</Annotation> in the like way
         is all hidden when we would backward see from what region of remoteness
         the whatness of our whoness hath fetched his whenceness.
       </p>
@@ -509,7 +509,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
       </p>
       <span data-edition="ed1939" data-page="284"> </span>
       <p>
-        A black crack of <Annotation annotationId="020069streetshout" visited={visitedNotes.has("020069streetshout")} annotationSelect={() => {openNote("020069streetshout"); addToVisited("020069streetshout")}} activeAnnotationId={currentNoteId}>noise in the street</Annotation> here, alack, bawled back. Loud on
+        A black crack of <Annotation annotationId="020069streetshout">noise in the street</Annotation> here, alack, bawled back. Loud on
         left Thor thundered: in anger awful the hammerhurler. Came now the storm
         that hist his heart. And Master Lynch bade him have a care to flout and
         witwanton as the god self was angered for his hellprate and paganry. And
@@ -523,7 +523,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         Lenehan vowed he would do after and he was indeed but a word and
         a blow on any the least colour. But the braggart boaster cried that an
         old Nobodaddy was in his cups it was muchwhat indifferent and he would
-        not lag behind his lead. But this was only to dye his desperation <Annotation annotationId="030153crouched" visited={visitedNotes.has("030153crouched")} annotationSelect={() => {openNote("030153crouched"); addToVisited("030153crouched")}} activeAnnotationId={currentNoteId}>as
+        not lag behind his lead. But this was only to dye his desperation <Annotation annotationId="030153crouched">as
         cowed he crouched</Annotation> in Horne's hall. He drank indeed at one draught to
         pluck up a heart of any grace for it thundered long rumblingly over all
         the heavens so that Master Madden, being godly certain whiles, knocked
@@ -542,7 +542,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         bottle Holiness that then he lived withal? Indeed not for <span data-edition="ed1932" data-page="357"> </span>Grace was not
         there to find that bottle. Heard he then in that clap the voice of the
         god Bringforth or, what Calmer said, a hubbub of Phenomenon? Heard?
-        Why, he could not but hear unless he had plugged up <Annotation annotationId="140004anastomosis" visited={visitedNotes.has("140004anastomosis")} annotationSelect={() => {openNote("140004anastomosis"); addToVisited("140004anastomosis")}} activeAnnotationId={currentNoteId}>the tube
+        Why, he could not but hear unless he had plugged up <Annotation annotationId="140004anastomosis">the tube
         Understanding</Annotation> (which he had not done). For through that tube he saw that
         he was in the land of Phenomenon where he must for a certain one day die
         as he was like <span data-edition="ed1986" data-page="323"> </span>the rest too a passing show. And would he not accept to
@@ -588,7 +588,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
       </p>
       <span data-edition="ed1932" data-page="358"> </span>
       <p>
-        So Thursday sixteenth June Patk. Dignam laid in clay <Annotation annotationId="040067poordignam" visited={visitedNotes.has("040067poordignam")} annotationSelect={() => {openNote("040067poordignam"); addToVisited("040067poordignam")}} activeAnnotationId={currentNoteId}>of an apoplexy</Annotation> and
+        So Thursday sixteenth June Patk. Dignam laid in clay <Annotation annotationId="040067poordignam">of an apoplexy</Annotation> and
         after hard drought, please God, rained, a bargeman coming in by water a
         fifty mile or thereabout with turf saying the seed won't sprout, fields
         athirst, very sadcoloured and stunk mightily, the quags and tofts too.
@@ -596,7 +596,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         this long while back as no man remembered to be without. The rosy buds
         all gone brown and spread out blobs and on the hills nought but dry flag
         and faggots that would catch at first fire. All the world saying, for
-        aught they knew, <Annotation annotationId="010064dundrum" visited={visitedNotes.has("010064dundrum")} annotationSelect={() => {openNote("010064dundrum"); addToVisited("010064dundrum")}} activeAnnotationId={currentNoteId}>the big wind of last February</Annotation> a year that did havoc the
+        aught they knew, <Annotation annotationId="010064dundrum">the big wind of last February</Annotation> a year that did havoc the
         land so pitifully a small thing beside this barrenness. But by and
         by, as said, this evening after sundown, the wind sitting in the
         west, biggish swollen clouds <span data-edition="ed1986" data-page="324"> </span>to be seen as the night increased and the
@@ -605,7 +605,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         in a brace of shakes all scamper pellmell within door for the smoking
         shower, the men making shelter for their straws with a clout or
         kerchief, womenfolk skipping off with kirtles catched up soon as the
-        pour came. <Annotation annotationId="140035holles" visited={visitedNotes.has("140035holles")} annotationSelect={() => {openNote("140035holles"); addToVisited("140035holles")}} activeAnnotationId={currentNoteId}>In Ely place, Baggot street, Duke's lawn, thence through
+        pour came. <Annotation annotationId="140035holles">In Ely place, Baggot street, Duke's lawn, thence through
         Merrion green up to Holles street</Annotation> a swash of water running that was
         before bonedry and not one chair or coach or fiacre seen about but
         no more crack after that first. Over against the Rt. Hon. Mr Justice
@@ -619,7 +619,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         month yet till Saint Swithin and asks what in the earth he does there,
         he bound home and he to Andrew Horne's being stayed for to crush a cup
         of wine, so he said, but would tell him of a skittish heifer, big of
-        her age and <Annotation annotationId="040004beefheels" visited={visitedNotes.has("040004beefheels")} annotationSelect={() => {openNote("040004beefheels"); addToVisited("040004beefheels")}} activeAnnotationId={currentNoteId}>beef to the heel</Annotation>, and all this while poured with rain and
+        her age and <Annotation annotationId="040004beefheels">beef to the heel</Annotation>, and all this while poured with rain and
         so both together on to Horne's. There Leop. Bloom of Crawford's journal
         sitting snug with a covey of wags, likely brangling fellows, Dixon jun.,
         scholar of my lady of Mercy, Vin. Lynch, a Scots fellow, Will. Madden,
@@ -638,7 +638,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         her last chick's nails that was then a twelvemonth and with other three
         all breastfed that died written out in a fair hand in the king's bible.
         Her hub fifty odd and a methodist but takes the sacrament and is to
-        be seen any fair sabbath with a pair of his boys off <Annotation annotationId="010135bullockharbour" visited={visitedNotes.has("010135bullockharbour")} annotationSelect={() => {openNote("010135bullockharbour"); addToVisited("010135bullockharbour")}} activeAnnotationId={currentNoteId}>Bullock harbour</Annotation>
+        be seen any fair sabbath with a pair of his boys off <Annotation annotationId="010135bullockharbour">Bullock harbour</Annotation>
         dapping on the sound with a heavybraked reel or in a punt he has
         trailing <span data-edition="ed1961" data-page="397"> </span>for flounder and pollock and catches a fine bag, I hear. In sum
         an infinite great fall of rain and all refreshed and will much increase
@@ -651,7 +651,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
       </p>
       <span data-edition="ed1986" data-page="325"> </span>
       <p>
-        With this came up Lenehan to the feet of the table to say how <Annotation annotationId="020064telegraph" visited={visitedNotes.has("020064telegraph")} annotationSelect={() => {openNote("020064telegraph"); addToVisited("020064telegraph")}} activeAnnotationId={currentNoteId}>the letter
+        With this came up Lenehan to the feet of the table to say how <Annotation annotationId="020064telegraph">the letter
         was in that night's gazette</Annotation> and he made a show to find it about him
         (for he swore with an oath that he had been at pains about it) but on
         Stephen's persuasion he gave over the search and was bidden to sit near
@@ -671,7 +671,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         some randy quip he had from a punk or whatnot that every mother's son of
         them would burst their sides. The other, Costello that is, hearing this
         talk asked was it poetry or a tale. Faith, no, he says, Frank (that was
-        his name), 'tis all about <Annotation annotationId="020054footandmouth" visited={visitedNotes.has("020054footandmouth")} annotationSelect={() => {openNote("020054footandmouth"); addToVisited("020054footandmouth")}} activeAnnotationId={currentNoteId}>Kerry cows that are to be butchered along of
+        his name), 'tis all about <Annotation annotationId="020054footandmouth">Kerry cows that are to be butchered along of
         the plague</Annotation>. But they can go hang, says he with a wink, for me with their
         bully beef, a pox on it. There's as good fish in this tin as ever came
         out of it and very friendly he offered to take of some salty sprats that
@@ -687,7 +687,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         parish beadle than with his volumes. One time he would be a playactor,
         then a sutler or a welsher, then nought would keep him from the bearpit
         and the cocking main, then he was for the ocean sea or to foot it on
-        the roads with <Annotation annotationId="030078tinkers" visited={visitedNotes.has("030078tinkers")} annotationSelect={() => {openNote("030078tinkers"); addToVisited("030078tinkers")}} activeAnnotationId={currentNoteId}>the Romany folk</Annotation>, kidnapping a squire's heir by favour of
+        the roads with <Annotation annotationId="030078tinkers">the Romany folk</Annotation>, kidnapping a squire's heir by favour of
         moonlight or fecking maids' linen or choking chickens behind a hedge. He
         had been off as many times as a cat has lives and back again with naked
         pockets as many more to his father the headborough who shed 
@@ -705,7 +705,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         <span data-edition="ed1922" data-page="380"> </span>
         like 'tis the hoose or the timber tongue. Mr
         <span data-edition="ed1986" data-page="326"> </span>Stephen, a little moved but very handsomely told him no such matter and
-        that <Annotation annotationId="020055serumandvirus" visited={visitedNotes.has("020055serumandvirus")} annotationSelect={() => {openNote("020055serumandvirus"); addToVisited("020055serumandvirus")}} activeAnnotationId={currentNoteId}>he had dispatches from the emperor's chief tailtickler thanking
+        that <Annotation annotationId="020055serumandvirus">he had dispatches from the emperor's chief tailtickler thanking
         him for the hospitality, that was sending over Doctor Rinderpest, the
         bestquoted cowcatcher in all Muscovy, with a bolus or two of physic</Annotation> to
         take the bull by the horns. Come, come, says Mr Vincent, plain dealing.
@@ -713,7 +713,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         bull that's Irish, says he. Irish by name and irish by nature, says Mr
         Stephen, and he sent the ale purling about, an Irish bull in an English
         chinashop. I conceive you, says Mr Dixon. It is that same bull that was
-        <Annotation annotationId="010142greenstone" visited={visitedNotes.has("010142greenstone")} annotationSelect={() => {openNote("010142greenstone"); addToVisited("010142greenstone")}} activeAnnotationId={currentNoteId}>sent to our island by farmer Nicholas, the bravest cattlebreeder of them
+        <Annotation annotationId="010142greenstone">sent to our island by farmer Nicholas, the bravest cattlebreeder of them
         all, with an emerald ring in his nose</Annotation>. True for you, says Mr Vincent
         cross the table, and a bullseye into the bargain, says he, and a plumper
         and a portlier bull, says he, never shit on shamrock. He had horns
@@ -727,7 +727,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         with that he slapped his posteriors very soundly. But the slap and the
         blessing stood him friend, says Mr Vincent, for to make up he taught him
         a trick worth two of the other so that maid, wife, abbess and widow to
-        this day affirm that they would rather any time of the month <Annotation annotationId="010020ancientgreek" visited={visitedNotes.has("010020ancientgreek")} annotationSelect={() => {openNote("010020ancientgreek"); addToVisited("010020ancientgreek")}} activeAnnotationId={currentNoteId}>whisper
+        this day affirm that they would rather any time of the month <Annotation annotationId="010020ancientgreek">whisper
         in his ear in the dark of a cowhouse</Annotation> or get a lick on the nape from his
         long holy tongue than lie with the finest strapping young ravisher in
         the four fields of all Ireland. Another then put in his word: And they
@@ -749,7 +749,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         island with a printed notice, saying:
         By the Lord Harry, Green is the grass that grows on the ground. And,
         says Mr Dixon, if ever he got scent of a cattleraider in Roscommon or
-        <Annotation annotationId="170019localities" visited={visitedNotes.has("170019localities")} annotationSelect={() => {openNote("170019localities"); addToVisited("170019localities")}} activeAnnotationId={currentNoteId}>the wilds of Connemara</Annotation> or a husbandman in Sligo that was sowing as much
+        <Annotation annotationId="170019localities">the wilds of Connemara</Annotation> or a husbandman in Sligo that was sowing as much
         as a handful of mustard or a bag of rapeseed out he run amok over half
         the countryside rooting 
         <span data-edition="ed1939" data-page="288"> </span>
@@ -826,15 +826,15 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         females with rich jointures, a prey for the vilest bonzes, who hide their
         flambeau under a bushel in an uncongenial cloister or lose their womanly
         bloom in the embraces of some unaccountable muskin when they might
-        <Annotation annotationId="080028multiply" visited={visitedNotes.has("080028multiply")} annotationSelect={() => {openNote("080028multiply"); addToVisited("080028multiply")}} activeAnnotationId={currentNoteId}>multiply the inlets of happiness</Annotation>, sacrificing the inestimable jewel of
+        <Annotation annotationId="080028multiply">multiply the inlets of happiness</Annotation>, sacrificing the inestimable jewel of
         their sex when a hundred pretty fellows were at hand to caress, this, he
         assured them, made his heart weep. To curb this inconvenient (which
         he concluded due to a suppression of latent heat), having advised with
         certain counsellors of worth and inspected into this matter, he had
         resolved to purchase in fee simple for ever the freehold of Lambay
-        island from its holder, <Annotation annotationId="030150malahide" visited={visitedNotes.has("030150malahide")} annotationSelect={() => {openNote("030150malahide"); addToVisited("030150malahide")}} activeAnnotationId={currentNoteId}>lord Talbot de Malahide, a Tory gentleman of
+        island from its holder, <Annotation annotationId="030150malahide">lord Talbot de Malahide, a Tory gentleman of
         note much in favour with our ascendancy party</Annotation>. He proposed to set up
-        there a national fertilising farm to be named <Annotation annotationId="010065omphalos" visited={visitedNotes.has("010065omphalos")} annotationSelect={() => {openNote("010065omphalos"); addToVisited("010065omphalos")}} activeAnnotationId={currentNoteId}><i>Omphalos</i></Annotation> with an obelisk
+        there a national fertilising farm to be named <Annotation annotationId="010065omphalos"><i>Omphalos</i></Annotation> with an obelisk
         hewn and erected after the fashion of Egypt and to offer his dutiful
         yeoman services for the fecundation of any female of what grade of life
         soever who should there direct to him with the desire of fulfilling the
@@ -891,7 +891,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         <span data-edition="ed1922" data-page="384"> </span>
         smalls, smote
         himself bravely below the diaphragm, exclaiming with an admirable droll
-        mimic of <Annotation annotationId="010134mothergrogan" visited={visitedNotes.has("010134mothergrogan")} annotationSelect={() => {openNote("010134mothergrogan"); addToVisited("010134mothergrogan")}} activeAnnotationId={currentNoteId}>Mother Grogan</Annotation> (the most excellent creature of her sex though
+        mimic of <Annotation annotationId="010134mothergrogan">Mother Grogan</Annotation> (the most excellent creature of her sex though
         'tis pity she's a trollop): There's a belly that never bore a bastard.
         This was so happy a conceit that it renewed the storms of mirth and threw
         the whole room into the most violent agitations of delight. The spry
@@ -981,11 +981,11 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         you. What, you dog? Have you a way with them? Gad's bud, immensely
         so, said Mr Lynch. The bedside manner it 
         <span data-edition="ed1922" data-page="386"> </span>
-        is that they use in <Annotation annotationId="010068themater" visited={visitedNotes.has("010068themater")} annotationSelect={() => {openNote("010068themater"); addToVisited("010068themater")}} activeAnnotationId={currentNoteId}>the Mater
+        is that they use in <Annotation annotationId="010068themater">the Mater
         hospice</Annotation>. Demme, does not Doctor O'Gargle chuck the nuns there under the
         chin. As I look to be saved I had it from my Kitty who has been wardmaid
         there any time these seven months. Lawksamercy, doctor, cried the young
-        blood in the <Annotation annotationId="010103waistcoat" visited={visitedNotes.has("010103waistcoat")} annotationSelect={() => {openNote("010103waistcoat"); addToVisited("010103waistcoat")}} activeAnnotationId={currentNoteId}>primrose vest</Annotation>, feigning a womanish simper and immodest
+        blood in the <Annotation annotationId="010103waistcoat">primrose vest</Annotation>, feigning a womanish simper and immodest
         squirmings of his body, how you do tease a body! Drat the man! Bless
         me, I'm all of a wibbly wobbly. Why, you're as bad as dear little Father
         Cantekissem, that you are! May this pot of four half choke me, cried
@@ -1086,7 +1086,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         been the man in the gap, a clerk in orders, a linkboy (virtuous) or
         an itinerant vendor of articles needed in every household. Singular,
         communed the guest with himself, the wonderfully unequal faculty of
-        <span data-edition="ed1932" data-page="369"> </span><Annotation annotationId="030087pastlife" visited={visitedNotes.has("030087pastlife")} annotationSelect={() => {openNote("030087pastlife"); addToVisited("030087pastlife")}} activeAnnotationId={currentNoteId}>metempsychosis</Annotation> possessed by them, that the puerperal dormitory and the
+        <span data-edition="ed1932" data-page="369"> </span><Annotation annotationId="030087pastlife">metempsychosis</Annotation> possessed by them, that the puerperal dormitory and the
         dissecting theatre should be the seminaries of such frivolity, that the
         mere acquisition of academic titles should suffice to transform in a
         pinch of time these votaries of levity into exemplary practitioners of
@@ -1108,7 +1108,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         being a deluder of others he has become at last his own dupe as he is,
         if report belie him not, his own and his only enjoyer? Far be it from
         candour to violate the bedchamber of a respectable lady, the daughter of
-        <Annotation annotationId="030118royaldublins" visited={visitedNotes.has("030118royaldublins")} annotationSelect={() => {openNote("030118royaldublins"); addToVisited("030118royaldublins")}} activeAnnotationId={currentNoteId}>a gallant major</Annotation>, or to cast the most distant reflections upon her
+        <Annotation annotationId="030118royaldublins">a gallant major</Annotation>, or to cast the most distant reflections upon her
         virtue but if he challenges attention there (as it was indeed highly his
         interest not to have done) then be it so. Unhappy woman, she has been
         too long and too persistently denied her legitimate prerogative to
@@ -1128,7 +1128,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         becomes him to preach that gospel. Has he not nearer home a seedfield
         that lies fallow for the want of a ploughshare? A habit reprehensible
         at puberty is second nature and an opprobrium in middle life. If he must
-        dispense his <Annotation annotationId="140003balmofgilead" visited={visitedNotes.has("140003balmofgilead")} annotationSelect={() => {openNote("140003balmofgilead"); addToVisited("140003balmofgilead")}} activeAnnotationId={currentNoteId}>balm of Gilead</Annotation> in <span data-edition="ed1986" data-page="334"> </span>nostrums and apothegms of dubious taste
+        dispense his <Annotation annotationId="140003balmofgilead">balm of Gilead</Annotation> in <span data-edition="ed1986" data-page="334"> </span>nostrums and apothegms of dubious taste
         to restore to health a generation of unfledged profligates let his
         practice consist better with the doctrines that now engross him. His
         marital breast is the repository of secrets which decorum is reluctant
@@ -1194,13 +1194,13 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         inkle, strawberry mark and portwine stain were alleged by one as a
         <i>primafacie</i> and natural hypothetical explanation of swineheaded
         (the case of Madame Grissel Steevens was not forgotten) or doghaired
-        infants occasionally born. The hypothesis of a <Annotation annotationId="010079akasicrecords" visited={visitedNotes.has("010079akasicrecords")} annotationSelect={() => {openNote("010079akasicrecords"); addToVisited("010079akasicrecords")}} activeAnnotationId={currentNoteId}>plasmic memory</Annotation>, advanced
+        infants occasionally born. The hypothesis of a <Annotation annotationId="010079akasicrecords">plasmic memory</Annotation>, advanced
         by the Caledonian envoy and worthy of the metaphysical traditions of
         the land he stood for, envisaged in such cases an arrest of embryonic
         development at some stage antecedent to the human. An outlandish
         delegate sustained against both these views, with such heat as almost
         carried conviction, the theory of copulation between women and the males
-        of brutes, his authority being his own avouchment in support of <Annotation annotationId="010020ancientgreek" visited={visitedNotes.has("010020ancientgreek")} annotationSelect={() => {openNote("010020ancientgreek"); addToVisited("010020ancientgreek")}} activeAnnotationId={currentNoteId}>fables
+        of brutes, his authority being his own avouchment in support of <Annotation annotationId="010020ancientgreek">fables
         such as that of the Minotaur which the genius of the elegant Latin poet
         has handed down to us in the pages of his Metamorphoses</Annotation>. The impression
         made by his words was immediate but shortlived. It was effaced as easily
@@ -1220,22 +1220,22 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         joined.
       </p>
       <p>
-        <Annotation annotationId="140020talebegan" visited={visitedNotes.has("140020talebegan")} annotationSelect={() => {openNote("140020talebegan"); addToVisited("140020talebegan")}} activeAnnotationId={currentNoteId}>But Malachias' tale began to freeze them with horror.</Annotation> He conjured up the
+        <Annotation annotationId="140020talebegan">But Malachias' tale began to freeze them with horror.</Annotation> He conjured up the
         scene before them. The secret panel beside the chimney slid back and
-        in the recess appeared... <Annotation annotationId="010023haines" visited={visitedNotes.has("010023haines")} annotationSelect={() => {openNote("010023haines"); addToVisited("010023haines")}} activeAnnotationId={currentNoteId}>Haines!</Annotation> Which of us did not feel his <span data-edition="ed1932" data-page="372"> </span>flesh
+        in the recess appeared... <Annotation annotationId="010023haines">Haines!</Annotation> Which of us did not feel his <span data-edition="ed1932" data-page="372"> </span>flesh
         creep! He had a portfolio full of Celtic literature in one hand, in the
         other a phial marked <i>Poison.</i> Surprise, horror, loathing were depicted
         on all faces while he eyed them with a ghastly grin. I anticipated some
         such reception, he began with an eldritch laugh, for which, it seems,
-        <Annotation annotationId="010141blamehistory" visited={visitedNotes.has("010141blamehistory")} annotationSelect={() => {openNote("010141blamehistory"); addToVisited("010141blamehistory")}} activeAnnotationId={currentNoteId}>history is to blame</Annotation>. Yes, it is true. I am the murderer of Samuel
+        <Annotation annotationId="010141blamehistory">history is to blame</Annotation>. Yes, it is true. I am the murderer of Samuel
         Childs. And how I am punished! The inferno has no terrors for me. This
         is the appearance is on me. Tare and ages, what way would I be resting
         at all, he muttered thickly, and I tramping Dublin this while back
         with my share of songs and himself after me the like of a soulth or a
         bullawurrus? My hell, and Ireland's, is in this <span data-edition="ed1986" data-page="336"> </span>life. It is what I tried
         to obliterate my crime. Distractions, rookshooting, the Erse language
-        (<Annotation annotationId="010091speakirish" visited={visitedNotes.has("010091speakirish")} annotationSelect={() => {openNote("010091speakirish"); addToVisited("010091speakirish")}} activeAnnotationId={currentNoteId}>he recited some</Annotation>), laudanum (he raised the phial to his lips), camping
-        out. In vain! His spectre stalks me. Dope is my only hope... Ah! (<Annotation annotationId="010025blackpanther" visited={visitedNotes.has("010025blackpanther")} annotationSelect={() => {openNote("010025blackpanther"); addToVisited("010025blackpanther")}} activeAnnotationId={currentNoteId}>The black panther!</Annotation> With a cry he suddenly vanished and the
+        (<Annotation annotationId="010091speakirish">he recited some</Annotation>), laudanum (he raised the phial to his lips), camping
+        out. In vain! His spectre stalks me. Dope is my only hope... Ah! (<Annotation annotationId="010025blackpanther">The black panther!</Annotation> With a cry he suddenly vanished and the
         panel slid back. An instant later his head appeared in the door opposite
         and said: Meet me at Westland Row station at ten past eleven. He was
         gone. Tears gushed from the eyes of the dissipated host. The seer
@@ -1261,10 +1261,10 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         <span data-edition="ed1922" data-page="392"> </span>
         reminiscence, that staid agent of publicity and holder of a
         modest substance in the funds. He is
-        young Leopold, as in <Annotation annotationId="060030retrospective" visited={visitedNotes.has("060030retrospective")} annotationSelect={() => {openNote("060030retrospective"); addToVisited("060030retrospective")}} activeAnnotationId={currentNoteId}>a retrospective arrangement</Annotation>, a mirror within
+        young Leopold, as in <Annotation annotationId="060030retrospective">a retrospective arrangement</Annotation>, a mirror within
         a mirror (hey, presto!), he beholdeth himself. That young figure of then
         is seen, precociously manly, walking on a nipping morning from the old
-        house in Clanbrassil street to <Annotation annotationId="050020highschool" visited={visitedNotes.has("050020highschool")} annotationSelect={() => {openNote("050020highschool"); addToVisited("050020highschool")}} activeAnnotationId={currentNoteId}>the high school</Annotation>, his booksatchel on
+        house in Clanbrassil street to <Annotation annotationId="050020highschool">the high school</Annotation>, his booksatchel on
         him bandolierwise, and in it a goodly hunk of wheaten loaf, a mother's
         thought. Or it is the same figure, a year or so gone over, in his first
         hard hat (ah, that was a day!), already on the road, a fullfledged
@@ -1311,13 +1311,13 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         haunches, a supple tendonous neck, the meek apprehensive skull. They
         fade, sad 
         <span data-edition="ed1939" data-page="297"> </span>
-        phantoms: all is gone. <Annotation annotationId="040061agendath" visited={visitedNotes.has("040061agendath")} annotationSelect={() => {openNote("040061agendath"); addToVisited("040061agendath")}} activeAnnotationId={currentNoteId}>Agendath</Annotation> is a waste land, a home of
-        screechowls and the sandblind upupa. Netaim, the golden, is no more. <Annotation annotationId="080008parallax" visited={visitedNotes.has("080008parallax")} annotationSelect={() => {openNote("080008parallax"); addToVisited("080008parallax")}} activeAnnotationId={currentNoteId}>And
+        phantoms: all is gone. <Annotation annotationId="040061agendath">Agendath</Annotation> is a waste land, a home of
+        screechowls and the sandblind upupa. Netaim, the golden, is no more. <Annotation annotationId="080008parallax">And
         on the highway of the clouds they come, muttering thunder of rebellion,
         the ghosts of beasts. Huuh! Hark! Huuh! Parallax stalks behind and goads
         them</Annotation>, the lancinating lightnings of whose brow <span data-edition="ed1932" data-page="374"> </span>are scorpions. Elk and
         yak, the bulls of Bashan and of Babylon, mammoth and mastodon, they come
-        trooping to <Annotation annotationId="040053deadsea" visited={visitedNotes.has("040053deadsea")} annotationSelect={() => {openNote("040053deadsea"); addToVisited("040053deadsea")}} activeAnnotationId={currentNoteId}>the sunken sea, <i>Lacus Mortis</i></Annotation>. Ominous revengeful zodiacal
+        trooping to <Annotation annotationId="040053deadsea">the sunken sea, <i>Lacus Mortis</i></Annotation>. Ominous revengeful zodiacal
         host! They moan, passing upon the clouds, horned and capricorned, the
         trumpeted with the tusked, the lionmaned, the giantantlered, snouter
         and crawler, rodent, ruminant and pachyderm, all their moving moaning
@@ -1328,7 +1328,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         gulpings, the salt somnolent inexhaustible flood. And the equine portent
         grows again, magnified in the deserted heavens, nay to heaven's own
         magnitude, till it looms, vast, over the house of Virgo. And lo, wonder
-        of <Annotation annotationId="030087pastlife" visited={visitedNotes.has("030087pastlife")} annotationSelect={() => {openNote("030087pastlife"); addToVisited("030087pastlife")}} activeAnnotationId={currentNoteId}>metempsychosis</Annotation>, it is she, the everlasting bride, harbinger of the
+        of <Annotation annotationId="030087pastlife">metempsychosis</Annotation>, it is she, the everlasting bride, harbinger of the
         daystar, the bride, ever virgin. It is she, Martha, thou lost one,
         Millicent, the young, the dear, the radiant. How serene does she now
         arise, a queen among the Pleiades, in the penultimate antelucan hour,
@@ -1341,13 +1341,13 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         upon the forehead of Taurus.
       </p>
       <p>
-        Francis was reminding Stephen of years before when they <span data-edition="ed1961" data-page="414"> </span>had been <Annotation annotationId="050052conmee" visited={visitedNotes.has("050052conmee")} annotationSelect={() => {openNote("050052conmee"); addToVisited("050052conmee")}} activeAnnotationId={currentNoteId}>at
+        Francis was reminding Stephen of years before when they <span data-edition="ed1961" data-page="414"> </span>had been <Annotation annotationId="050052conmee">at
         school together in Conmee's time</Annotation>. He asked about Glaucon, Alcibiades,
         <span data-edition="ed1986" data-page="338"> </span>Pisistratus. Where were they now? Neither knew. You have spoken of the
         past and its phantoms, Stephen said. Why think of them? If I call them
         into life across the waters of Lethe will not the poor ghosts troop to
-        my call? Who supposes it? I, Bous Stephanoumenos, <Annotation annotationId="020065bullockbefriending" visited={visitedNotes.has("020065bullockbefriending")} annotationSelect={() => {openNote("020065bullockbefriending"); addToVisited("020065bullockbefriending")}} activeAnnotationId={currentNoteId}>bullockbefriending
-        bard</Annotation>, am lord and giver of their life. <Annotation annotationId="010020ancientgreek" visited={visitedNotes.has("010020ancientgreek")} annotationSelect={() => {openNote("010020ancientgreek"); addToVisited("010020ancientgreek")}} activeAnnotationId={currentNoteId}>He encircled his gadding hair
+        my call? Who supposes it? I, Bous Stephanoumenos, <Annotation annotationId="020065bullockbefriending">bullockbefriending
+        bard</Annotation>, am lord and giver of their life. <Annotation annotationId="010020ancientgreek">He encircled his gadding hair
         with a coronal of vineleaves</Annotation>, smiling at Vincent. That answer and those
         leaves, Vincent said to him, will adorn you more fitly when something
         more, and greatly more, than a capful of light odes can call your genius
@@ -1404,7 +1404,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         poor luck with Bass's mare perhaps this draught of his may serve me more
         propensely. He was laying his hand upon a winejar: Malachi saw it and
         withheld his act, pointing to the stranger and to the scarlet label.
-        Warily, Malachi whispered, preserve a <Annotation annotationId="010018druids" visited={visitedNotes.has("010018druids")} annotationSelect={() => {openNote("010018druids"); addToVisited("010018druids")}} activeAnnotationId={currentNoteId}>druid</Annotation> silence. His soul is far
+        Warily, Malachi whispered, preserve a <Annotation annotationId="010018druids">druid</Annotation> silence. His soul is far
         away. It is as painful perhaps to be awakened from a vision as to be
         born. Any object, intensely regarded, may be a gate of access to the
         incorruptible eon of <span data-edition="ed1932" data-page="376"> </span>the gods. Do you not think it, Stephen? Theosophos
@@ -1431,9 +1431,9 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         scarlet appearance. He was simply and solely, as it subsequently
         transpired for reasons best known to himself, which put quite an
         altogether different complexion on the proceedings, after the moment
-        before's observations about boyhood days and the turf, <Annotation annotationId="160008littlepills" visited={visitedNotes.has("160008littlepills")} annotationSelect={() => {openNote("160008littlepills"); addToVisited("160008littlepills")}} activeAnnotationId={currentNoteId}>recollecting two</Annotation>
+        before's observations about boyhood days and the turf, <Annotation annotationId="160008littlepills">recollecting two</Annotation>
         <span data-edition="ed1939" data-page="299"> </span>
-        <Annotation annotationId="160008littlepills" visited={visitedNotes.has("160008littlepills")} annotationSelect={() => {openNote("160008littlepills"); addToVisited("160008littlepills")}} activeAnnotationId={currentNoteId}>or three private transactions of his own</Annotation> which the other two were as
+        <Annotation annotationId="160008littlepills">or three private transactions of his own</Annotation> which the other two were as
         mutually innocent of as the babe unborn. Eventually, however, both
         their eyes met and as soon as it began to dawn on him that the other was
         endeavouring to help himself to the thing he involuntarily determined
@@ -1459,7 +1459,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         Costello, the eccentric, while at his side was seated in stolid repose
         the squat form of Madden. The chair of the resident indeed stood vacant
         before the hearth but on either flank of it the figure of Bannon in
-        explorer's kit of tweed shorts and salted cowhide <Annotation annotationId="020076brogues" visited={visitedNotes.has("020076brogues")} annotationSelect={() => {openNote("020076brogues"); addToVisited("020076brogues")}} activeAnnotationId={currentNoteId}>brogues</Annotation> contrasted
+        explorer's kit of tweed shorts and salted cowhide <Annotation annotationId="020076brogues">brogues</Annotation> contrasted
         sharply with the primrose elegance and townbred manners of Malachi
         Roland St John Mulligan. Lastly at the head of the board was the young
         poet who found a refuge from his labours of pedagogy and metaphysical
@@ -1473,7 +1473,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         yet to come.
       </p>
       <p>
-        It had better be stated here and now at the outset that the <Annotation annotationId="010041killergod" visited={visitedNotes.has("010041killergod")} annotationSelect={() => {openNote("010041killergod"); addToVisited("010041killergod")}} activeAnnotationId={currentNoteId}>perverted
+        It had better be stated here and now at the outset that the <Annotation annotationId="010041killergod">perverted
         transcendentalism</Annotation> to which Mr S. Dedalus' (Div. Scep.) contentions
         would appear to prove him pretty badly addicted runs directly counter to
         accepted scientific methods. Science, it cannot be too often repeated,
@@ -1509,7 +1509,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         said, were accountable for any and every fallingoff in the calibre of
         the race. Kalipedia, he prophesied, would soon be <span data-edition="ed1961" data-page="418"> </span>generally adopted
         and all the graces of life, genuinely good music, agreeable literature,
-        light philosophy, instructive pictures, <Annotation annotationId="080005venus" visited={visitedNotes.has("080005venus")} annotationSelect={() => {openNote("080005venus"); addToVisited("080005venus")}} activeAnnotationId={currentNoteId}>plastercast reproductions of
+        light philosophy, instructive pictures, <Annotation annotationId="080005venus">plastercast reproductions of
         the classical statues such as Venus and Apollo</Annotation>, artistic coloured
         photographs of prize babies, all these little attentions would enable
         ladies who were in a particular condition to pass the intervening months
@@ -1539,14 +1539,14 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         Nature, we may rest assured, has her own good and cogent reasons for
         whatever she does and in all probability such deaths are due to some law
         of anticipation by which organisms in which morbous germs have taken
-        up their residence (modern science has conclusively shown that <Annotation annotationId="010079akasicrecords" visited={visitedNotes.has("010079akasicrecords")} annotationSelect={() => {openNote("010079akasicrecords"); addToVisited("010079akasicrecords")}} activeAnnotationId={currentNoteId}>only the
+        up their residence (modern science has conclusively shown that <Annotation annotationId="010079akasicrecords">only the
         plasmic substance can be said to be immortal</Annotation>) tend to disappear at an
         increasingly earlier stage of development, an arrangement which, though
         productive of <span data-edition="ed1932" data-page="379"> </span>pain to some of our feelings (notably the maternal), is
         nevertheless, some of us think, in the long run beneficial to the
         race in general in securing thereby the survival of the fittest. Mr S.
         Dedalus' (Div. Scep.) remark <span data-edition="ed1961" data-page="419"> </span>(or should it be called an interruption?)
-        that <Annotation annotationId="010041killergod" visited={visitedNotes.has("010041killergod")} annotationSelect={() => {openNote("010041killergod"); addToVisited("010041killergod")}} activeAnnotationId={currentNoteId}>an omnivorous being which can masticate, deglute, digest and
+        that <Annotation annotationId="010041killergod">an omnivorous being which can masticate, deglute, digest and
         apparently pass through the ordinary channel with pluterperfect
         imperturbability</Annotation> such multifarious aliments as cancrenous females
         emaciated by parturition, corpulent professional gentlemen, not to speak
@@ -1564,7 +1564,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         cookable and eatable flesh of a calf newly dropped from its mother. In
         a recent public controversy with Mr L. Bloom (Pubb. Canv.) which took
         place in the commons' hall of the National Maternity Hospital, 29, 30
-        and 31 Holles street, of which, as is well known, <Annotation annotationId="140038drhorne" visited={visitedNotes.has("140038drhorne")} annotationSelect={() => {openNote("140038drhorne"); addToVisited("140038drhorne")}} activeAnnotationId={currentNoteId}>Dr A. Horne (Lic. in
+        and 31 Holles street, of which, as is well known, <Annotation annotationId="140038drhorne">Dr A. Horne (Lic. in
         Midw., F. K. Q. C. P. I.) is the able and popular master</Annotation>, he is reported
         by eyewitnesses as having stated that once a woman has let the cat
         into the bag (an esthetic allusion, presumably, to one of the most
@@ -1603,7 +1603,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         of Waterford and Candahar) and now this last pledge of their union, a
         Purefoy if ever there was one, with the true Purefoy nose. Young hopeful
         will be christened Mortimer Edward after the influential third cousin of
-        Mr Purefoy in <Annotation annotationId="080013dublincastle" visited={visitedNotes.has("080013dublincastle")} annotationSelect={() => {openNote("080013dublincastle"); addToVisited("080013dublincastle")}} activeAnnotationId={currentNoteId}>the Treasury Remembrancer's office, Dublin Castle</Annotation>. And so
+        Mr Purefoy in <Annotation annotationId="080013dublincastle">the Treasury Remembrancer's office, Dublin Castle</Annotation>. And so
         time wags on: but father Cronion has dealt lightly here. No, <span data-edition="ed1986" data-page="343"> </span>let no sigh
         break from that bosom, dear gentle Mina. And Doady, knock the ashes from
         your pipe, the seasoned briar you still fancy when the curfew rings for
@@ -1646,7 +1646,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         in thoughtful irrigation you saw another as fragrant sisterhood, Floey,
         Atty, Tiny and their darker friend with I know not what of arresting in
         her pose then, Our Lady of the Cherries, a comely brace of them pendent
-        from an ear, bringing out <Annotation annotationId="040063happywarmth" visited={visitedNotes.has("040063happywarmth")} annotationSelect={() => {openNote("040063happywarmth"); addToVisited("040063happywarmth")}} activeAnnotationId={currentNoteId}>the foreign warmth of the skin</Annotation> so daintily
+        from an ear, bringing out <Annotation annotationId="040063happywarmth">the foreign warmth of the skin</Annotation> so daintily
         against the cool ardent fruit. A lad of four or five in linseywoolsey
         (blossomtime but there will be cheer in the kindly hearth when ere long
         the bowls are gathered and hutched) is standing on the urn secured by
@@ -1685,7 +1685,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         Callan taken aback in the hallway cannot stay them nor smiling surgeon
         coming downstairs with news of placentation ended, a full pound if a
         milligramme. They hark him on. The door! It is open? Ha! They are <span data-edition="ed1932" data-page="382"> </span>out
-        tumultuously, off for a minute's race, all bravely legging it, <Annotation annotationId="040089denzille" visited={visitedNotes.has("040089denzille")} annotationSelect={() => {openNote("040089denzille"); addToVisited("040089denzille")}} activeAnnotationId={currentNoteId}>Burke's
+        tumultuously, off for a minute's race, all bravely legging it, <Annotation annotationId="040089denzille">Burke's
         of Denzille and Holles</Annotation> their ulterior goal. Dixon follows giving them
         sharp language but raps out an oath, he too, and on. Bloom stays with
         nurse a thought to send a kind word to happy mother and nurseling up
@@ -1695,7 +1695,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         going: Madam, when comes the storkbird for thee?
       </p>
       <p>
-        The air without is <Annotation annotationId="180010dewy" visited={visitedNotes.has("180010dewy")} annotationSelect={() => {openNote("180010dewy"); addToVisited("180010dewy")}} activeAnnotationId={currentNoteId}>impregnated with raindew moisture</Annotation>, life essence
+        The air without is <Annotation annotationId="180010dewy">impregnated with raindew moisture</Annotation>, life essence
         celestial, glistering on Dublin stone there under starshiny <i>coelum.</i>
         God's air, the Allfather's air, scintillant circumambient cessile air.
         Breathe it deep into thee. By heaven, Theodore Purefoy, thou hast done a
@@ -1706,7 +1706,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         Serve! Toil on, labour like a very bandog and let scholarment and all
         Malthusiasts go hang. Thou art all their daddies, Theodore. Art drooping
         under thy load, bemoiled with butcher's bills at home and ingots (not
-        thine!) in the countinghouse? Head up! <Annotation annotationId="180010dewy" visited={visitedNotes.has("180010dewy")} annotationSelect={() => {openNote("180010dewy"); addToVisited("180010dewy")}} activeAnnotationId={currentNoteId}> For every newbegotten thou shalt
+        thine!) in the countinghouse? Head up! <Annotation annotationId="180010dewy"> For every newbegotten thou shalt
         gather thy homer of ripe wheat. See, thy fleece is drenched</Annotation>. Dost envy
         Darby Dullman there with his Joan? A canting jay and a rheumeyed
         curdog is all their progeny. Pshaw, I tell thee! He is a mule, a dead
@@ -1735,22 +1735,22 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
       </p>
       <p>
         All off for a buster, armstrong, hollering down the street. Bonafides.
-        Where you slep las nigh? <Annotation annotationId="040090naggin" visited={visitedNotes.has("040090naggin")} annotationSelect={() => {openNote("040090naggin"); addToVisited("040090naggin")}} activeAnnotationId={currentNoteId}>Timothy of the battered naggin.</Annotation> Like ole
+        Where you slep las nigh? <Annotation annotationId="040090naggin">Timothy of the battered naggin.</Annotation> Like ole
         Billyo. Any brollies or gumboots in the fambly? Where the Henry Nevil's
         sawbones and ole clo? Sorra one o' me knows. Hurrah there, Dix! Forward the ribbon counter. Where's Punch? All serene. Jay, look at the
-        drunken <Annotation annotationId="010097latinquarterhat" visited={visitedNotes.has("010097latinquarterhat")} annotationSelect={() => {openNote("010097latinquarterhat"); addToVisited("010097latinquarterhat")}} activeAnnotationId={currentNoteId}>minister</Annotation> coming out of the maternity hospal! <i>Benedicat vos
-        omnipotens Deus, Pater et Filius</i>. A make, mister. <Annotation annotationId="040089denzille" visited={visitedNotes.has("040089denzille")} annotationSelect={() => {openNote("040089denzille"); addToVisited("040089denzille")}} activeAnnotationId={currentNoteId}>The Denzille lane
+        drunken <Annotation annotationId="010097latinquarterhat">minister</Annotation> coming out of the maternity hospal! <i>Benedicat vos
+        omnipotens Deus, Pater et Filius</i>. A make, mister. <Annotation annotationId="040089denzille">The Denzille lane
         boys.</Annotation> Hell, blast ye! Scoot. Righto, Isaacs, shove em out of the
         bleeding limelight. 
         <span data-edition="ed1939" data-page="304"> </span>
         Yous join uz, dear sir? No hentrusion in life. Lou
         heap good man. Allee samee this bunch. <i>En avant, mes enfants!</i> Fire
         away number one on the gun. Burke's! Burke's! Thence they advanced five
-        parasangs. Slattery's mounted foot. Where's that bleeding awfur? <Annotation annotationId="010097latinquarterhat" visited={visitedNotes.has("010097latinquarterhat")} annotationSelect={() => {openNote("010097latinquarterhat"); addToVisited("010097latinquarterhat")}} activeAnnotationId={currentNoteId}>Parson
+        parasangs. Slattery's mounted foot. Where's that bleeding awfur? <Annotation annotationId="010097latinquarterhat">Parson
         Steve</Annotation>, apostates' creed! No, no, Mulligan! Abaft there! Shove ahead.
         Keep a watch on the clock. Chuckingout time. Mullee! What's on you? <i>Ma
         mère m'a mariée.</i> British Beatitudes! <i>Retamplan Digidi Boum Boum</i>.
-        Ayes have it. <Annotation annotationId="010064dundrum" visited={visitedNotes.has("010064dundrum")} annotationSelect={() => {openNote("010064dundrum"); addToVisited("010064dundrum")}} activeAnnotationId={currentNoteId}>To be printed and bound at the </Annotation><Annotation annotationId="010018druids" visited={visitedNotes.has("010018druids")} annotationSelect={() => {openNote("010018druids"); addToVisited("010018druids")}} activeAnnotationId={currentNoteId}>Druiddrum</Annotation> press by two
+        Ayes have it. <Annotation annotationId="010064dundrum">To be printed and bound at the </Annotation><Annotation annotationId="010018druids">Druiddrum</Annotation> press by two
         designing females. Calf covers of pissedon green. Last word in art
         shades. Most beautiful book come out of Ireland my time. <i>Silentium!</i>
         Get a spurt on. Tention. Proceed to nearest canteen and there annex
@@ -1765,12 +1765,12 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
       <p>
         Query. Who's astanding this here do? Proud possessor of damnall. Declare
         misery. Bet to the ropes. Me nantee saltee. Not a red at me this week
-        gone. Yours? Mead of our fathers for <Annotation annotationId="010129ubermensch" visited={visitedNotes.has("010129ubermensch")} annotationSelect={() => {openNote("010129ubermensch"); addToVisited("010129ubermensch")}} activeAnnotationId={currentNoteId}>the <i>Uebermensch</i></Annotation>. Dittoh. Five
+        gone. Yours? Mead of our fathers for <Annotation annotationId="010129ubermensch">the <i>Uebermensch</i></Annotation>. Dittoh. Five
         number ones. You, sir? Ginger cordial. Chase me, the cabby's caudle.
         Stimulate the 
         <span data-edition="ed1922" data-page="403"> </span>
         caloric. Winding of his ticker. Stopped short never to go
-        again when the old. <Annotation annotationId="030045absinthe" visited={visitedNotes.has("030045absinthe")} annotationSelect={() => {openNote("030045absinthe"); addToVisited("030045absinthe")}} activeAnnotationId={currentNoteId}>Absinthe</Annotation> for me, savvy? <i>Caramba!</i> Have an eggnog or
+        again when the old. <Annotation annotationId="030045absinthe">Absinthe</Annotation> for me, savvy? <i>Caramba!</i> Have an eggnog or
         a prairie oyster. Enemy? Avuncular's got my timepiece. Ten to. Obligated
         <span data-edition="ed1986" data-page="346"> </span>awful. Don't mention it. Got a pectoral trauma, eh, Dix? Pos fact. Got
         bet be a boomblebee whenever he wus settin sleepin in hes bit garten.
@@ -1781,14 +1781,14 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         up. Five, seven, nine. Fine! Got a prime pair of mincepies, no kid. And
         her take me to rests and her anker of rum. Must be seen to be believed.
         Your starving eyes and allbeplastered neck you stole my heart, O
-        gluepot. Sir? <Annotation annotationId="040047potato" visited={visitedNotes.has("040047potato")} annotationSelect={() => {openNote("040047potato"); addToVisited("040047potato")}} activeAnnotationId={currentNoteId}>Spud again the rheumatiz?</Annotation> All poppycock, you'll scuse me
+        gluepot. Sir? <Annotation annotationId="040047potato">Spud again the rheumatiz?</Annotation> All poppycock, you'll scuse me
         saying. For the hoi polloi. I vear thee beest a gert vool. Well, doc?
         Back fro Lapland? Your corporosity sagaciating O K? How's the squaws
         and papooses? Womanbody after going on the straw? Stand and deliver.
         Password. There's hair. Ours the white death and the ruddy birth. Hi!
-        Spit in your own eye, boss! <Annotation annotationId="010043mummer" visited={visitedNotes.has("010043mummer")} annotationSelect={() => {openNote("010043mummer"); addToVisited("010043mummer")}} activeAnnotationId={currentNoteId}>Mummer</Annotation>'s wire. Cribbed out of Meredith.
-        Jesified orchidised polycimical <Annotation annotationId="010008jesuit" visited={visitedNotes.has("010008jesuit")} annotationSelect={() => {openNote("010008jesuit"); addToVisited("010008jesuit")}} activeAnnotationId={currentNoteId}>jesuit</Annotation>! Aunty mine's writing Pa Kinch.
-        <Annotation annotationId="010001buckmulligan" visited={visitedNotes.has("010001buckmulligan")} annotationSelect={() => {openNote("010001buckmulligan"); addToVisited("010001buckmulligan")}} activeAnnotationId={currentNoteId}>Baddybad Stephen lead astray goodygood Malachi.</Annotation>
+        Spit in your own eye, boss! <Annotation annotationId="010043mummer">Mummer</Annotation>'s wire. Cribbed out of Meredith.
+        Jesified orchidised polycimical <Annotation annotationId="010008jesuit">jesuit</Annotation>! Aunty mine's writing Pa Kinch.
+        <Annotation annotationId="010001buckmulligan">Baddybad Stephen lead astray goodygood Malachi.</Annotation>
       </p>
       <p>
         Hurroo! Collar the leather, youngun. Roun wi the nappy. Here, Jock braw
@@ -1796,9 +1796,9 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         boil! My tipple. <i>Merci.</i> Here's to us. How's that? Leg before wicket.
         Don't stain my brandnew sitinems. Give's a shake of pepper, you there.
         Catch aholt. Caraway seed to carry away. Twig? Shrieks of silence. Every
-        cove to his gentry mort. <Annotation annotationId="080005venus" visited={visitedNotes.has("080005venus")} annotationSelect={() => {openNote("080005venus"); addToVisited("080005venus")}} activeAnnotationId={currentNoteId}>Venus Pandemos.</Annotation> <i>Les petites femmes</i>. <Annotation annotationId="010127photogirl" visited={visitedNotes.has("010127photogirl")} annotationSelect={() => {openNote("010127photogirl"); addToVisited("010127photogirl")}} activeAnnotationId={currentNoteId}>Bold bad
+        cove to his gentry mort. <Annotation annotationId="080005venus">Venus Pandemos.</Annotation> <i>Les petites femmes</i>. <Annotation annotationId="010127photogirl">Bold bad
         girl from the town of Mullingar.</Annotation> Tell her I was axing at her. Hauding
-        Sara by the wame. On the road to <Annotation annotationId="030150malahide" visited={visitedNotes.has("030150malahide")} annotationSelect={() => {openNote("030150malahide"); addToVisited("030150malahide")}} activeAnnotationId={currentNoteId}>Malahide</Annotation>. Me? <span data-edition="ed1961" data-page="425"> </span>If she who seduced me had
+        Sara by the wame. On the road to <Annotation annotationId="030150malahide">Malahide</Annotation>. Me? <span data-edition="ed1961" data-page="425"> </span>If she who seduced me had
         left but the name. What do you want for ninepence? Machree, macruiskeen.
         Smutty Moll for a mattress jig. And a pull all together. <i>Ex!</i>
       </p>
@@ -1825,10 +1825,10 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         cheese it! Shut his blurry Dutch oven with a firm hand. Had the winner
         today till I tipped him a dead cert. The ruffin cly the nab of Stephen
         Hand as give me the jady coppaleen. He strike a <span data-edition="ed1932" data-page="385"> </span>telegramboy paddock wire
-        big bug Bass to the depot. Shove him <Annotation annotationId="010019money" visited={visitedNotes.has("010019money")} annotationSelect={() => {openNote("010019money"); addToVisited("010019money")}} activeAnnotationId={currentNoteId}>a joey</Annotation> and grahamise. Mare on form hot 
+        big bug Bass to the depot. Shove him <Annotation annotationId="010019money">a joey</Annotation> and grahamise. Mare on form hot 
         <span data-edition="ed1986" data-page="347"> </span>order. Guinea to a goosegog. Tell a cram, that. Gospeltrue. Criminal
         diversion? I think that yes. Sure thing. Land him in chokeechokee if the
-        harman beck copped the game. Madden back Madden's a maddening back. <Annotation annotationId="010088archangelmichael" visited={visitedNotes.has("010088archangelmichael")} annotationSelect={() => {openNote("010088archangelmichael"); addToVisited("010088archangelmichael")}} activeAnnotationId={currentNoteId}>O,
+        harman beck copped the game. Madden back Madden's a maddening back. <Annotation annotationId="010088archangelmichael">O,
         lust, our refuge and our strength.</Annotation> Decamping. Must you go? Off to mammy.
         Stand by. Hide my blushes someone. All in if he spots me. Comeahome,
         our Bantam. Horryvar, mong vioo. Dinna forget the cowslips for hersel.
@@ -1844,7 +1844,7 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         most extreme poverty and one largesize grandacious thirst to terminate
         one expensive inaugurated libation? Give's a breather. Landlord,
         landlord, have you good <span data-edition="ed1961" data-page="426"> </span>wine, staboo? Hoots, mon, a wee drap to pree.
-        Cut and come again. Right Boniface! <Annotation annotationId="030045absinthe" visited={visitedNotes.has("030045absinthe")} annotationSelect={() => {openNote("030045absinthe"); addToVisited("030045absinthe")}} activeAnnotationId={currentNoteId}>Absinthe the lot. <i>Nos omnes
+        Cut and come again. Right Boniface! <Annotation annotationId="030045absinthe">Absinthe the lot. <i>Nos omnes
         biberimus viridum toxicum diabolus capiat posterioria nostria</i>.</Annotation>
         Closingtime, gents. Eh? Rome boose for the Bloom toff. I hear you say
         onions? Bloo? Cadges ads. Photo's papli, by all that's gorgeous. Play
@@ -1863,10 +1863,10 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
       <p>
         Golly, whatten tunket's yon guy in the mackintosh? Dusty Rhodes. Peep
         at his wearables. By mighty! What's he got? Jubilee mutton. Bovril,
-        by James. Wants it real bad. D'ye ken bare socks? Seedy cuss in <Annotation annotationId="010050dottyville" visited={visitedNotes.has("010050dottyville")} annotationSelect={() => {openNote("010050dottyville"); addToVisited("010050dottyville")}} activeAnnotationId={currentNoteId}>the
+        by James. Wants it real bad. D'ye ken bare socks? Seedy cuss in <Annotation annotationId="010050dottyville">the
         Richmond</Annotation>? Rawthere! Thought he had a deposit of lead in his penis.
         Trumpery insanity. Bartle the Bread we calls him. That, sir, was once
-        a prosperous cit. <Annotation annotationId="140039jackbuilt" visited={visitedNotes.has("140039jackbuilt")} annotationSelect={() => {openNote("140039jackbuilt"); addToVisited("140039jackbuilt")}} activeAnnotationId={currentNoteId}>Man all tattered and torn that married a maiden all
+        a prosperous cit. <Annotation annotationId="140039jackbuilt">Man all tattered and torn that married a maiden all
         forlorn.</Annotation> Slung her hook, she did. Here see lost love. Walking Mackintosh
         of lonely canyon. Tuck and turn in. Schedule time. Nix for the hornies.
         Pardon? 
@@ -1895,10 +1895,10 @@ const OxenOfTheSun = ({openNote, currentNoteId, visitedNotes, addToVisited}) => 
         come? Run, skelter, race. Pflaaaap!
       </p>
       <p>
-        Lynch! Hey? Sign on long o me. <Annotation annotationId="040089denzille" visited={visitedNotes.has("040089denzille")} annotationSelect={() => {openNote("040089denzille"); addToVisited("040089denzille")}} activeAnnotationId={currentNoteId}>Denzille lane this way. Change here for
+        Lynch! Hey? Sign on long o me. <Annotation annotationId="040089denzille">Denzille lane this way. Change here for
         Bawdyhouse.</Annotation> We two, she said, will seek the kips where shady Mary is.
         Righto, any old time. <i>Laetabuntur in cubilibus suis</i>. You coming long?
-        Whisper, who the sooty hell's the johnny in the black duds? Hush! <Annotation annotationId="020060jewmerchants" visited={visitedNotes.has("020060jewmerchants")} annotationSelect={() => {openNote("020060jewmerchants"); addToVisited("020060jewmerchants")}} activeAnnotationId={currentNoteId}>Sinned
+        Whisper, who the sooty hell's the johnny in the black duds? Hush! <Annotation annotationId="020060jewmerchants">Sinned
         against the light</Annotation> and even now that day is at hand when he shall come to
         judge the world by fire. Pflaap! <i>Ut implerentur scripturae</i>. Strike
         up a ballad. Then outspake medical Dick to his comrade medical Davy.

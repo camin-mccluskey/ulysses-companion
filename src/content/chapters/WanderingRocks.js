@@ -1,32 +1,32 @@
 import Annotation from "../../components/Annotation";
 
 
-const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) => {
+const WanderingRocks = () => {
   return (
     <div>
       <p></p>
       <center><font size="+2">[10]</font></center>
       <br/>
-      The superior, the very reverend  <Annotation annotationId="050052conmee" visited={visitedNotes.has("050052conmee")} annotationSelect={() => {openNote("050052conmee"); addToVisited("050052conmee")}} activeAnnotationId={currentNoteId}>John Conmee S.J.</Annotation> reset his smooth watch
-      in his interior pocket as he came <Annotation annotationId="100010xavier" visited={visitedNotes.has("100010xavier")} annotationSelect={() => {openNote("100010xavier"); addToVisited("100010xavier")}} activeAnnotationId={currentNoteId}>down the presbytery steps</Annotation>. Five to
-      three. Just nice time to <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>walk to Artane</Annotation>. What was that boy's name again?
-      Dignam. Yes. <i>Vere dignum et iustum est.</i>  <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>Brother Swan</Annotation> was the person
+      The superior, the very reverend  <Annotation annotationId="050052conmee">John Conmee S.J.</Annotation> reset his smooth watch
+      in his interior pocket as he came <Annotation annotationId="100010xavier">down the presbytery steps</Annotation>. Five to
+      three. Just nice time to <Annotation annotationId="100011toartane">walk to Artane</Annotation>. What was that boy's name again?
+      Dignam. Yes. <i>Vere dignum et iustum est.</i>  <Annotation annotationId="100011toartane">Brother Swan</Annotation> was the person
       to see. Mr Cunningham's letter. Yes. Oblige him, if possible. Good
       practical catholic: useful at mission time.
       <p></p>
       <p>
         A onelegged sailor, swinging himself onward by lazy jerks of his
-        crutches, growled some notes. He jerked short before <Annotation annotationId="100010xavier" visited={visitedNotes.has("100010xavier")} annotationSelect={() => {openNote("100010xavier"); addToVisited("100010xavier")}} activeAnnotationId={currentNoteId}>the convent of the
+        crutches, growled some notes. He jerked short before <Annotation annotationId="100010xavier">the convent of the
         sisters of charity</Annotation> and held out a peaked cap for alms towards the very
         reverend John Conmee S. J. Father Conmee blessed him in the sun for his
         purse held, he knew, one silver crown.
       </p>
       <p>
-        Father Conmee crossed to <Annotation annotationId="100010xavier" visited={visitedNotes.has("100010xavier")} annotationSelect={() => {openNote("100010xavier"); addToVisited("100010xavier")}} activeAnnotationId={currentNoteId}>Mountjoy square</Annotation>. He thought, but not for long,
+        Father Conmee crossed to <Annotation annotationId="100010xavier">Mountjoy square</Annotation>. He thought, but not for long,
         of soldiers and sailors, whose legs had been shot off by cannonballs,
         ending their days in some pauper ward, and of cardinal <span data-edition="ed1932" data-page="196"></span>Wolsey's words:
         <i>If I had served my God as I have served my king He would not have
-        abandoned me in my old days.</i> He  <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>walked by the treeshade of sunnywinking
+        abandoned me in my old days.</i> He  <Annotation annotationId="100011toartane">walked by the treeshade of sunnywinking
         leaves</Annotation>: and towards him came the wife of Mr David Sheehy M.P.
       </p>
       <p>
@@ -73,7 +73,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <span data-edition="ed1939" data-page="161"> </span>
       <p>
-        Father Conmee stopped three little schoolboys at <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>the corner of Mountjoy
+        Father Conmee stopped three little schoolboys at <Annotation annotationId="100011toartane">the corner of Mountjoy
         square</Annotation>. Yes: they were from Belvedere. The little house. Aha. And were
         they good boys at school? O. That was very good now. And what was his
         name? Jack Sohan. And his name? Ger. Gallaher. And the other little man?
@@ -81,7 +81,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <p>
         Father Conmee gave a letter from his breast to Master Brunny Lynam and
-        pointed to <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>the red pillarbox at the corner of Fitzgibbon street</Annotation>.
+        pointed to <Annotation annotationId="100011toartane">the red pillarbox at the corner of Fitzgibbon street</Annotation>.
       </p>
       <p>
         —{" "}But mind you don't post yourself into the box, little man, he said.
@@ -98,7 +98,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       <p>
         Master Brunny Lynam ran across the road and put Father Conmee's <span data-edition="ed1932" data-page="197"></span>letter
         to father provincial into the mouth of the bright red letterbox. Father
-        Conmee smiled and nodded and smiled and walked along <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>Mountjoy square
+        Conmee smiled and nodded and smiled and walked along <Annotation annotationId="100011toartane">Mountjoy square
         east</Annotation>.
       </p>
       <p>
@@ -123,7 +123,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         say?... such a queenly mien.
       </p>
       <p>
-        Father Conmee <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>walked down Great Charles street and glanced at the shutup
+        Father Conmee <Annotation annotationId="100011toartane">walked down Great Charles street and glanced at the shutup
         free church</Annotation> on his left. The reverend T. R. Greene B.A. will (D.V.)
         speak. The incumbent they called him. He felt it incumbent on him to say
         a few words. But one should be charitable. Invincible ignorance. They
@@ -131,31 +131,31 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <span data-edition="ed1961" data-page="220"></span>
       <p>
-        Father Conmee <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>turned the corner and walked along the North Circular
+        Father Conmee <Annotation annotationId="100011toartane">turned the corner and walked along the North Circular
         road</Annotation>. It was a wonder that there was not a tramline in such an important
         thoroughfare. Surely, there ought to be.
       </p>
       <p>
-        A band of satchelled schoolboys crossed from <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>Richmond street</Annotation>. All
+        A band of satchelled schoolboys crossed from <Annotation annotationId="100011toartane">Richmond street</Annotation>. All
         raised untidy caps. Father Conmee greeted them more than once benignly.
-        <Annotation annotationId="100013christianbrother" visited={visitedNotes.has("100013christianbrother")} annotationSelect={() => {openNote("100013christianbrother"); addToVisited("100013christianbrother")}} activeAnnotationId={currentNoteId}>Christian brother boys.</Annotation>
+        <Annotation annotationId="100013christianbrother">Christian brother boys.</Annotation>
       </p>
       <p>
-        Father Conmee smelt incense on his right hand as he walked. <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>Saint
+        Father Conmee smelt incense on his right hand as he walked. <Annotation annotationId="100011toartane">Saint
         Joseph's church, Portland row. For aged and virtuous females.</Annotation>
         Father <span data-edition="ed1986" data-page="181"></span>Conmee raised his hat to the Blessed Sacrament. Virtuous: but
         occasionally they were also badtempered.
       </p>
       <p>
-        <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>Near Aldborough house Father Conmee thought of that spendthrift
+        <Annotation annotationId="100011toartane">Near Aldborough house Father Conmee thought of that spendthrift
         nobleman. And now it was an office or something.</Annotation>
       </p>
       <p>
-        Father Conmee began to walk along <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>the North Strand road</Annotation> and was saluted
+        Father Conmee began to walk along <Annotation annotationId="100011toartane">the North Strand road</Annotation> and was saluted
         by Mr William Gallagher who stood in the doorway of his shop. Father
         Conmee saluted Mr William Gallagher and perceived the odours that came
-        from baconflitches and ample cools of butter. He passed <Annotation annotationId="100002tobacco" visited={visitedNotes.has("100002tobacco")} annotationSelect={() => {openNote("100002tobacco"); addToVisited("100002tobacco")}} activeAnnotationId={currentNoteId}>Grogan's the
-        Tobacconist</Annotation> against which newsboards leaned and told of <Annotation annotationId="100008generalslocum" visited={visitedNotes.has("100008generalslocum")} annotationSelect={() => {openNote("100008generalslocum"); addToVisited("100008generalslocum")}} activeAnnotationId={currentNoteId}>a dreadful
+        from baconflitches and ample cools of butter. He passed <Annotation annotationId="100002tobacco">Grogan's the
+        Tobacconist</Annotation> against which newsboards leaned and told of <Annotation annotationId="100008generalslocum">a dreadful
         catastrophe in New York. In America those things were continually
         happening. Unfortunate people to die like that, unprepared. Still, an
         act of perfect contrition.</Annotation>
@@ -175,7 +175,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         tubes.
       </p>
       <p>
-        Moored under the trees of <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>Charleville Mall</Annotation> Father Conmee saw <Annotation annotationId="060036bogs" visited={visitedNotes.has("060036bogs")} annotationSelect={() => {openNote("060036bogs"); addToVisited("060036bogs")}} activeAnnotationId={currentNoteId}>a
+        Moored under the trees of <Annotation annotationId="100011toartane">Charleville Mall</Annotation> Father Conmee saw <Annotation annotationId="060036bogs">a
         turfbarge, a towhorse with pendent head, a bargeman with a hat of dirty
         straw seated amidships</Annotation>, smoking and staring at a branch of poplar above
         him. It was idyllic: and Father Conmee reflected on the providence of
@@ -186,7 +186,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         people.
       </p>
       <p>
-        On <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>Newcomen bridge</Annotation> the very reverend John Conmee S.J. <span data-edition="ed1961" data-page="221"></span>of <Annotation annotationId="100010xavier" visited={visitedNotes.has("100010xavier")} annotationSelect={() => {openNote("100010xavier"); addToVisited("100010xavier")}} activeAnnotationId={currentNoteId}>saint Francis
+        On <Annotation annotationId="100011toartane">Newcomen bridge</Annotation> the very reverend John Conmee S.J. <span data-edition="ed1961" data-page="221"></span>of <Annotation annotationId="100010xavier">saint Francis
         Xavier's church, upper Gardiner street</Annotation>, stepped on to an outward bound
         tram.
       </p>
@@ -196,7 +196,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <p>
         At Newcomen bridge Father Conmee stepped into an outward bound tram for
-        he disliked to traverse on foot the dingy way past <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>Mud Island</Annotation>.
+        he disliked to traverse on foot the dingy way past <Annotation annotationId="100011toartane">Mud Island</Annotation>.
       </p>
       <p>
         Father Conmee sat in a corner of the tramcar, a blue ticket tucked with
@@ -226,7 +226,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         mouth of the awkward old man who had the shaky head.
       </p>
       <p>
-        At <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>Annesley bridge</Annotation> the tram halted and, when it was about to go, an old
+        At <Annotation annotationId="100011toartane">Annesley bridge</Annotation> the tram halted and, when it was about to go, an old
         woman rose suddenly from her place to alight. The conductor pulled the
         bellstrap to stay the car for her. She passed out with her basket and
         a marketnet: and Father Conmee saw the conductor help her and net and
@@ -237,7 +237,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         cares, poor creatures.
       </p>
       <p>
-        From the hoardings <Annotation annotationId="060003eugenestratton" visited={visitedNotes.has("060003eugenestratton")} annotationSelect={() => {openNote("060003eugenestratton"); addToVisited("060003eugenestratton")}} activeAnnotationId={currentNoteId}>Mr Eugene Stratton</Annotation> grimaced with thick niggerlips at
+        From the hoardings <Annotation annotationId="060003eugenestratton">Mr Eugene Stratton</Annotation> grimaced with thick niggerlips at
         Father Conmee.
       </p>
       <span data-edition="ed1961" data-page="222"></span>
@@ -249,7 +249,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         <span data-edition="ed1939" data-page="163"> </span>
         of the faith and of the millions of black and brown and
         yellow souls that had not received the baptism of water when their last
-        hour came like a thief in the night. <Annotation annotationId="010008jesuit" visited={visitedNotes.has("010008jesuit")} annotationSelect={() => {openNote("010008jesuit"); addToVisited("010008jesuit")}} activeAnnotationId={currentNoteId}>That book by the Belgian jesuit,
+        hour came like a thief in the night. <Annotation annotationId="010008jesuit">That book by the Belgian jesuit,
         <i>Le Nombre des Élus,</i></Annotation> seemed to Father Conmee a reasonable plea. Those
         were millions of human souls created by God in His Own likeness to
         whom the faith had not (D.V.) been brought. But they were God's souls,
@@ -257,12 +257,12 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         be lost, a waste, if one might say.
       </p>
       <p>
-        At <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>the Howth road stop</Annotation> Father Conmee alighted, was saluted by the
+        At <Annotation annotationId="100011toartane">the Howth road stop</Annotation> Father Conmee alighted, was saluted by the
         conductor and saluted in his turn.
       </p>
       <p>
-        <Annotation annotationId="100011toartane" visited={visitedNotes.has("100011toartane")} annotationSelect={() => {openNote("100011toartane"); addToVisited("100011toartane")}} activeAnnotationId={currentNoteId}>The Malahide road</Annotation> was quiet. It pleased Father Conmee, road and name.
-        The joybells were ringing in gay Malahide. <Annotation annotationId="030150malahide" visited={visitedNotes.has("030150malahide")} annotationSelect={() => {openNote("030150malahide"); addToVisited("030150malahide")}} activeAnnotationId={currentNoteId}>Lord Talbot de Malahide,
+        <Annotation annotationId="100011toartane">The Malahide road</Annotation> was quiet. It pleased Father Conmee, road and name.
+        The joybells were ringing in gay Malahide. <Annotation annotationId="030150malahide">Lord Talbot de Malahide,
         immediate hereditary lord admiral of Malahide and the seas adjoining.
         Then came the call to arms and she was maid, wife and widow in one day.</Annotation>
         Those were old worldish days, loyal times in joyous townlands, old times
@@ -306,7 +306,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       <p>
         Father Conmee, reading his office, watched a flock of muttoning clouds
         over Rathcoffey. His thinsocked ankles were tickled by the stubble of
-        <Annotation annotationId="010157clongowes" visited={visitedNotes.has("010157clongowes")} annotationSelect={() => {openNote("010157clongowes"); addToVisited("010157clongowes")}} activeAnnotationId={currentNoteId}>Clongowes field</Annotation>. He walked there, reading in the evening, and heard
+        <Annotation annotationId="010157clongowes">Clongowes field</Annotation>. He walked there, reading in the evening, and heard
         the cries of the boys' lines at their play, young cries in the quiet
         evening. He was their rector: his reign was mild.
       </p>
@@ -318,7 +318,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         Nones. He should have read that before lunch. But lady Maxwell had come.
       </p>
       <p>
-        Father Conmee read in secret <i>Pater</i> and <i>Ave</i> and <Annotation annotationId="010057crossed" visited={visitedNotes.has("010057crossed")} annotationSelect={() => {openNote("010057crossed"); addToVisited("010057crossed")}} activeAnnotationId={currentNoteId}>crossed his breast</Annotation>.
+        Father Conmee read in secret <i>Pater</i> and <i>Ave</i> and <Annotation annotationId="010057crossed">crossed his breast</Annotation>.
         <i>Deus in adiutorium.</i>
       </p>
       <p>
@@ -374,7 +374,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       <span data-edition="ed1922" data-page="215"> </span>
       <p>
         Corny Kelleher sped a silent jet of hayjuice arching from his mouth
-        while a generous white arm from <Annotation annotationId="040005seveneccles" visited={visitedNotes.has("040005seveneccles")} annotationSelect={() => {openNote("040005seveneccles"); addToVisited("040005seveneccles")}} activeAnnotationId={currentNoteId}>a window in Eccles street</Annotation> flung forth a
+        while a generous white arm from <Annotation annotationId="040005seveneccles">a window in Eccles street</Annotation> flung forth a
         coin.
       </p>
       <p>
@@ -390,7 +390,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <p>
         A onelegged sailor crutched himself round MacConnell's corner, skirting
-        <Annotation annotationId="050047hokypoky" visited={visitedNotes.has("050047hokypoky")} annotationSelect={() => {openNote("050047hokypoky"); addToVisited("050047hokypoky")}} activeAnnotationId={currentNoteId}>Rabaiotti's icecream car</Annotation>, and jerked himself up Eccles street. Towards
+        <Annotation annotationId="050047hokypoky">Rabaiotti's icecream car</Annotation>, and jerked himself up Eccles street. Towards
         Larry O'Rourke, in shirtsleeves in his doorway, he growled unamiably:
       </p>
       <p>
@@ -433,7 +433,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <p>
         The gay sweet chirping whistling within went on a bar or two, ceased.
-        The blind of the window was drawn aside. <Annotation annotationId="040005seveneccles" visited={visitedNotes.has("040005seveneccles")} annotationSelect={() => {openNote("040005seveneccles"); addToVisited("040005seveneccles")}} activeAnnotationId={currentNoteId}>A card <i>Unfurnished Apartments</i>
+        The blind of the window was drawn aside. <Annotation annotationId="040005seveneccles">A card <i>Unfurnished Apartments</i>
         slipped from the sash</Annotation> and fell. <span data-edition="ed1961" data-page="225"></span>A plump bare generous arm shone, was
         seen, held forth from a white 
         <span data-edition="ed1939" data-page="165"> </span>
@@ -544,7 +544,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         Boody, breaking big chunks of bread into the yellow soup, added:
       </p>
       <p>
-        —{" "}<Annotation annotationId="040077ourfather" visited={visitedNotes.has("040077ourfather")} annotationSelect={() => {openNote("040077ourfather"); addToVisited("040077ourfather")}} activeAnnotationId={currentNoteId}>Our father who art not in heaven.</Annotation>
+        —{" "}<Annotation annotationId="040077ourfather">Our father who art not in heaven.</Annotation>
       </p>
       <p>
         Maggy, pouring yellow soup in Katey's bowl, exclaimed:
@@ -555,7 +555,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <p>
         A skiff, a crumpled throwaway, Elijah is coming, rode lightly down the
-        Liffey, under <Annotation annotationId="050006looplinebridge" visited={visitedNotes.has("050006looplinebridge")} annotationSelect={() => {openNote("050006looplinebridge"); addToVisited("050006looplinebridge")}} activeAnnotationId={currentNoteId}>Loopline bridge</Annotation>, shooting the rapids where water chafed
+        Liffey, under <Annotation annotationId="050006looplinebridge">Loopline bridge</Annotation>, shooting the rapids where water chafed
         <span data-edition="ed1986" data-page="186"></span>around the bridgepiers, sailing eastward past hulls and anchorchains,
         between the Customhouse old dock and George's quay.
       </p>
@@ -672,7 +672,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <p>
         Two carfuls of tourists passed slowly, their women sitting fore,
-        gripping the handrests. <Annotation annotationId="010024stranger" visited={visitedNotes.has("010024stranger")} annotationSelect={() => {openNote("010024stranger"); addToVisited("010024stranger")}} activeAnnotationId={currentNoteId}>Palefaces.</Annotation> Men's arms frankly round their
+        gripping the handrests. <Annotation annotationId="010024stranger">Palefaces.</Annotation> Men's arms frankly round their
         stunted forms. They looked from Trinity to the blind columned porch of
         the bank of Ireland where pigeons roocoocooed.
       </p>
@@ -702,7 +702,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         —{" "}<i>Ma, sul serio, eh?</i> Almidano Artifoni said.
       </p>
       <p>
-        <Annotation annotationId="010152linkedarm" visited={visitedNotes.has("010152linkedarm")} annotationSelect={() => {openNote("010152linkedarm"); addToVisited("010152linkedarm")}} activeAnnotationId={currentNoteId}>His heavy hand took Stephen's firmly. Human eyes.</Annotation> They gazed curiously
+        <Annotation annotationId="010152linkedarm">His heavy hand took Stephen's firmly. Human eyes.</Annotation> They gazed curiously
         an instant and turned quickly towards a Dalkey tram.
       </p>
       <p>
@@ -729,7 +729,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         *{" "}*
       </p>
       <p>
-        Miss Dunne hid the <Annotation annotationId="040043capelstreet" visited={visitedNotes.has("040043capelstreet")} annotationSelect={() => {openNote("040043capelstreet"); addToVisited("040043capelstreet")}} activeAnnotationId={currentNoteId}>Capel street library</Annotation> copy of <i>The Woman in White</i>
+        Miss Dunne hid the <Annotation annotationId="040043capelstreet">Capel street library</Annotation> copy of <i>The Woman in White</i>
         far back in her drawer and rolled a sheet of gaudy notepaper into her
         typewriter.
       </p>
@@ -801,7 +801,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <span data-edition="ed1932" data-page="206"></span>
       <p>
-        The <Annotation annotationId="150013matches" visited={visitedNotes.has("150013matches")} annotationSelect={() => {openNote("150013matches"); addToVisited("150013matches")}} activeAnnotationId={currentNoteId}>vesta</Annotation> in the clergyman's uplifted hand consumed itself in a long
+        The <Annotation annotationId="150013matches">vesta</Annotation> in the clergyman's uplifted hand consumed itself in a long
         soft flame and was let fall. At their feet its red speck died: and
         mouldy air closed round them.
       </p>
@@ -809,11 +809,11 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         —{" "}How interesting! a refined accent said in the gloom.
       </p>
       <p>
-        —{" "}Yes, sir, Ned Lambert said heartily. We are standing in <Annotation annotationId="100006marysabbey" visited={visitedNotes.has("100006marysabbey")} annotationSelect={() => {openNote("100006marysabbey"); addToVisited("100006marysabbey")}} activeAnnotationId={currentNoteId}>the historic
-        council chamber of saint Mary's abbey</Annotation> where <Annotation annotationId="030058pretenders" visited={visitedNotes.has("030058pretenders")} annotationSelect={() => {openNote("030058pretenders"); addToVisited("030058pretenders")}} activeAnnotationId={currentNoteId}>silken Thomas proclaimed
+        —{" "}Yes, sir, Ned Lambert said heartily. We are standing in <Annotation annotationId="100006marysabbey">the historic
+        council chamber of saint Mary's abbey</Annotation> where <Annotation annotationId="030058pretenders">silken Thomas proclaimed
         himself a rebel in 1534</Annotation>. This is the most historic spot in all Dublin.
         O'Madden Burke is going to write something about it one of these days.
-        <Annotation annotationId="020032theunion" visited={visitedNotes.has("020032theunion")} annotationSelect={() => {openNote("020032theunion"); addToVisited("020032theunion")}} activeAnnotationId={currentNoteId}>The old bank of Ireland was over the way till the time of the union</Annotation> and
+        <Annotation annotationId="020032theunion">The old bank of Ireland was over the way till the time of the union</Annotation> and
         the original jews' temple was here too before they built their synagogue
         over in Adelaide road. You were never here before, Jack, were you?
       </p>
@@ -871,7 +871,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <p>
         —{" "}The reverend Hugh C. Love, Rathcoffey. Present address: Saint
-        Michael's, Sallins. Nice young chap he is. He's writing a book about <Annotation annotationId="100003fitzgeralds" visited={visitedNotes.has("100003fitzgeralds")} annotationSelect={() => {openNote("100003fitzgeralds"); addToVisited("100003fitzgeralds")}} activeAnnotationId={currentNoteId}>the
+        Michael's, Sallins. Nice young chap he is. He's writing a book about <Annotation annotationId="100003fitzgeralds">the
         Fitzgeralds</Annotation> he told me. He's well up in history, faith.
       </p>
       <p>
@@ -886,7 +886,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         Ned Lambert cracked his fingers in the air.
       </p>
       <p>
-        —{" "}God! he cried. I forgot to tell him that one about <Annotation annotationId="100003fitzgeralds" visited={visitedNotes.has("100003fitzgeralds")} annotationSelect={() => {openNote("100003fitzgeralds"); addToVisited("100003fitzgeralds")}} activeAnnotationId={currentNoteId}>the earl of Kildare</Annotation>
+        —{" "}God! he cried. I forgot to tell him that one about <Annotation annotationId="100003fitzgeralds">the earl of Kildare</Annotation>
         after he set fire to Cashel cathedral. You know that one? <i>I'm bloody
         sorry I did it,</i> says he, <i>but I declare to God I thought the archbishop
         was inside.</i> He mightn't like it, though. What? God, I'll tell him
@@ -950,7 +950,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       <p>
         Lawyers of the past, haughty, pleading, beheld pass from the
         consolidated taxing office to Nisi Prius court Richie Goulding carrying
-        the <Annotation annotationId="030113richiegoulding" visited={visitedNotes.has("030113richiegoulding")} annotationSelect={() => {openNote("030113richiegoulding"); addToVisited("030113richiegoulding")}} activeAnnotationId={currentNoteId}>costbag of Goulding, Collis and Ward</Annotation> and heard rustling from the
+        the <Annotation annotationId="030113richiegoulding">costbag of Goulding, Collis and Ward</Annotation> and heard rustling from the
         admiralty division of king's bench to the court of appeal an elderly
         female with false teeth smiling incredulously and a black silk skirt of
         great amplitude.
@@ -1006,7 +1006,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         —{" "}Drain? Lenehan said. It was down a manhole.
       </p>
       <p>
-        They passed <Annotation annotationId="040076musichall" visited={visitedNotes.has("040076musichall")} annotationSelect={() => {openNote("040076musichall"); addToVisited("040076musichall")}} activeAnnotationId={currentNoteId}>Dan Lowry's musichall</Annotation> where Marie Kendall, charming
+        They passed <Annotation annotationId="040076musichall">Dan Lowry's musichall</Annotation> where Marie Kendall, charming
         soubrette, smiled on them from a poster a dauby smile.
       </p>
       <span data-edition="ed1939" data-page="170"> </span>
@@ -1072,7 +1072,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <p>
         —{" "}He's dead nuts on sales, M'Coy said. I was with him one day and he
-        bought a book from an old one in Liffey street for <Annotation annotationId="010019money" visited={visitedNotes.has("010019money")} annotationSelect={() => {openNote("010019money"); addToVisited("010019money")}} activeAnnotationId={currentNoteId}>two bob</Annotation>. There were
+        bought a book from an old one in Liffey street for <Annotation annotationId="010019money">two bob</Annotation>. There were
         fine plates in it worth double the money, the stars and the moon and
         comets with long tails. Astronomy it was about.
       </p>
@@ -1094,8 +1094,8 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <p>
         —{" "}There was a big spread out at Glencree reformatory, Lenehan said
-        eagerly. The annual dinner, you know. Boiled shirt affair. <Annotation annotationId="060033corporation" visited={visitedNotes.has("060033corporation")} annotationSelect={() => {openNote("060033corporation"); addToVisited("060033corporation")}} activeAnnotationId={currentNoteId}>The lord
-        mayor was there, Val Dillon it was</Annotation>, and sir Charles Cameron and <Annotation annotationId="060037dandawson" visited={visitedNotes.has("060037dandawson")} annotationSelect={() => {openNote("060037dandawson"); addToVisited("060037dandawson")}} activeAnnotationId={currentNoteId}>Dan
+        eagerly. The annual dinner, you know. Boiled shirt affair. <Annotation annotationId="060033corporation">The lord
+        mayor was there, Val Dillon it was</Annotation>, and sir Charles Cameron and <Annotation annotationId="060037dandawson">Dan
         Dawson spoke</Annotation> and there was music. Bartell d'Arcy sang and Benjamin
         Dollard...
       </p>
@@ -1106,7 +1106,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         —{" "}Did she? Lenehan said.
       </p>
       <p>
-        A card <i>Unfurnished Apartments</i> reappeared on the windowsash of <Annotation annotationId="040005seveneccles" visited={visitedNotes.has("040005seveneccles")} annotationSelect={() => {openNote("040005seveneccles"); addToVisited("040005seveneccles")}} activeAnnotationId={currentNoteId}>number 7
+        A card <i>Unfurnished Apartments</i> reappeared on the windowsash of <Annotation annotationId="040005seveneccles">number 7
         Eccles street</Annotation>.
       </p>
       <span data-edition="ed1922" data-page="224"> </span>
@@ -1130,10 +1130,10 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         —{" "}But wait till I tell you, he said. We had a midnight lunch too after
         all the jollification and when we sallied forth it was blue o'clock the
         morning after the night before. Coming home it was a gorgeous winter's
-        night on the <span data-edition="ed1986" data-page="192"></span><Annotation annotationId="010010mountains" visited={visitedNotes.has("010010mountains")} annotationSelect={() => {openNote("010010mountains"); addToVisited("010010mountains")}} activeAnnotationId={currentNoteId}>Featherbed Mountain</Annotation>. Bloom and Chris Callinan were <Annotation annotationId="050013jauntingcar" visited={visitedNotes.has("050013jauntingcar")} annotationSelect={() => {openNote("050013jauntingcar"); addToVisited("050013jauntingcar")}} activeAnnotationId={currentNoteId}>on one
+        night on the <span data-edition="ed1986" data-page="192"></span><Annotation annotationId="010010mountains">Featherbed Mountain</Annotation>. Bloom and Chris Callinan were <Annotation annotationId="050013jauntingcar">on one
         side of the car and I was with the wife on the other</Annotation>. We started singing
         glees <span data-edition="ed1932" data-page="210"></span>and duets: <i>Lo, the early beam of morning</i>. She was well primed
-        with a good load of Delahunt's port under her bellyband. <Annotation annotationId="170008precedingseries" visited={visitedNotes.has("170008precedingseries")} annotationSelect={() => {openNote("170008precedingseries"); addToVisited("170008precedingseries")}} activeAnnotationId={currentNoteId}>Every jolt the
+        with a good load of Delahunt's port under her bellyband. <Annotation annotationId="170008precedingseries">Every jolt the
         bloody car gave I had her bumping up against me. Hell's delights! She
         has a fine pair, God bless her.</Annotation> Like that.
       </p>
@@ -1171,7 +1171,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         rapidly. He glanced sideways in the sunlight at M'Coy.
       </p>
       <p>
-        —{" "}He's a cultured allroundman, Bloom is, he said seriously. <Annotation annotationId="040083hewasajew" visited={visitedNotes.has("040083hewasajew")} annotationSelect={() => {openNote("040083hewasajew"); addToVisited("040083hewasajew")}} activeAnnotationId={currentNoteId}>He's not one
+        —{" "}He's a cultured allroundman, Bloom is, he said seriously. <Annotation annotationId="040083hewasajew">He's not one
         of your common or garden... you know...</Annotation> There's a touch of the artist
         about old Bloom.
       </p>
@@ -1259,7 +1259,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         Mr Bloom read again: <i>The beautiful woman.</i>
       </p>
       <p>
-        <Annotation annotationId="040063happywarmth" visited={visitedNotes.has("040063happywarmth")} annotationSelect={() => {openNote("040063happywarmth"); addToVisited("040063happywarmth")}} activeAnnotationId={currentNoteId}>Warmth showered gently over him</Annotation>, cowing his flesh. Flesh yielded 
+        <Annotation annotationId="040063happywarmth">Warmth showered gently over him</Annotation>, cowing his flesh. Flesh yielded 
         <span data-edition="ed1922" data-page="226"> </span>
         amid rumpled clothes: whites of eyes swooning up. His nostrils arched
         themselves for prey. Melting breast ointments (<i>for him! For Raoul!</i>).
@@ -1453,7 +1453,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         Mr Dedalus thought and nodded.
       </p>
       <p>
-        —{" "}I will, he said gravely. I looked all along the gutter in <Annotation annotationId="060012liberatorsform" visited={visitedNotes.has("060012liberatorsform")} annotationSelect={() => {openNote("060012liberatorsform"); addToVisited("060012liberatorsform")}} activeAnnotationId={currentNoteId}>O'Connell
+        —{" "}I will, he said gravely. I looked all along the gutter in <Annotation annotationId="060012liberatorsform">O'Connell
         street</Annotation>. I'll try this one now.
       </p>
       <p>
@@ -1461,7 +1461,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <p>
         —{" "}Here, Mr Dedalus said, handing her two pennies. Get a <span data-edition="ed1961" data-page="238"></span>glass of milk
-        for yourself and a bun or a something. <Annotation annotationId="050049comehometoma" visited={visitedNotes.has("050049comehometoma")} annotationSelect={() => {openNote("050049comehometoma"); addToVisited("050049comehometoma")}} activeAnnotationId={currentNoteId}>I'll be home shortly.</Annotation>
+        for yourself and a bun or a something. <Annotation annotationId="050049comehometoma">I'll be home shortly.</Annotation>
       </p>
       <p>
         He put the other coins in his pocket and started to walk on.
@@ -1490,14 +1490,14 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         *{" "}*
       </p>
       <p>
-        <Annotation annotationId="100009jamessgate" visited={visitedNotes.has("100009jamessgate")} annotationSelect={() => {openNote("100009jamessgate"); addToVisited("100009jamessgate")}} activeAnnotationId={currentNoteId}>From the sundial towards James's gate</Annotation> walked <Annotation annotationId="050037tomkernan" visited={visitedNotes.has("050037tomkernan")} annotationSelect={() => {openNote("050037tomkernan"); addToVisited("050037tomkernan")}} activeAnnotationId={currentNoteId}>Mr Kernan, pleased with the
+        <Annotation annotationId="100009jamessgate">From the sundial towards James's gate</Annotation> walked <Annotation annotationId="050037tomkernan">Mr Kernan, pleased with the
         order he had booked for Pulbrook Robertson</Annotation>, boldly along James's street,
-        past Shackleton's offices. Got round him all right. How do you do, <Annotation annotationId="100009jamessgate" visited={visitedNotes.has("100009jamessgate")} annotationSelect={() => {openNote("100009jamessgate"); addToVisited("100009jamessgate")}} activeAnnotationId={currentNoteId}>Mr
+        past Shackleton's offices. Got round him all right. How do you do, <Annotation annotationId="100009jamessgate">Mr
         Crimmins</Annotation>? First rate, sir. I was afraid you might be up in your other
         establishment in Pimlico. How are things going? Just keeping alive.
         Lovely weather we're having. Yes, indeed. Good for the country. Those
         farmers are always grumbling. I'll just take a thimbleful of your best
-        gin, Mr Crimmins. A small gin, sir. Yes, sir. <Annotation annotationId="100008generalslocum" visited={visitedNotes.has("100008generalslocum")} annotationSelect={() => {openNote("100008generalslocum"); addToVisited("100008generalslocum")}} activeAnnotationId={currentNoteId}>Terrible affair that
+        gin, Mr Crimmins. A small gin, sir. Yes, sir. <Annotation annotationId="100008generalslocum">Terrible affair that
         General Slocum explosion. Terrible, 
         <span data-edition="ed1922" data-page="229"> </span>
         terrible! A thousand casualties. And
@@ -1536,7 +1536,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         street. Well 
         <span data-edition="ed1939" data-page="175"> </span>
         worth the half sovereign I gave Neary for it. Never built
-        under three guineas. Fits me down to the ground. Some <Annotation annotationId="050042kildareclub" visited={visitedNotes.has("050042kildareclub")} annotationSelect={() => {openNote("050042kildareclub"); addToVisited("050042kildareclub")}} activeAnnotationId={currentNoteId}>Kildare street
+        under three guineas. Fits me down to the ground. Some <Annotation annotationId="050042kildareclub">Kildare street
         club toff</Annotation> had it probably. John Mulligan, the manager of the Hibernian
         bank, gave me a very sharp eye yesterday on Carlisle bridge as if he
         remembered me.
@@ -1583,15 +1583,15 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <span data-edition="ed1986" data-page="197"></span>
       <p>
-        Mr Kernan turned and walked <Annotation annotationId="100009jamessgate" visited={visitedNotes.has("100009jamessgate")} annotationSelect={() => {openNote("100009jamessgate"); addToVisited("100009jamessgate")}} activeAnnotationId={currentNoteId}> down the slope of Watling street by
+        Mr Kernan turned and walked <Annotation annotationId="100009jamessgate"> down the slope of Watling street by
         the corner of Guinness's visitors' waitingroom. Outside the Dublin
-        Distillers Company's stores</Annotation> <Annotation annotationId="050013jauntingcar" visited={visitedNotes.has("050013jauntingcar")} annotationSelect={() => {openNote("050013jauntingcar"); addToVisited("050013jauntingcar")}} activeAnnotationId={currentNoteId}>an outside car</Annotation> without fare or jarvey stood,
+        Distillers Company's stores</Annotation> <Annotation annotationId="050013jauntingcar">an outside car</Annotation> without fare or jarvey stood,
         the reins knotted to the wheel. Damn dangerous thing. Some Tipperary
         bosthoon endangering the lives of the citizens. Runaway horse.
       </p>
       <p>
         Denis Breen with his tomes, weary of having waited an hour in John
-        Henry Menton's office, led his wife over O'Connell bridge, <Annotation annotationId="030113richiegoulding" visited={visitedNotes.has("030113richiegoulding")} annotationSelect={() => {openNote("030113richiegoulding"); addToVisited("030113richiegoulding")}} activeAnnotationId={currentNoteId}>bound for the
+        Henry Menton's office, led his wife over O'Connell bridge, <Annotation annotationId="030113richiegoulding">bound for the
         office of Messrs Collis and Ward</Annotation>.
       </p>
       <span data-edition="ed1961" data-page="240"></span>
@@ -1601,7 +1601,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       <p>
         Times of the troubles. Must ask Ned Lambert to lend me those
         reminiscences of sir Jonah Barrington. When you look back on it all
-        now in <Annotation annotationId="060030retrospective" visited={visitedNotes.has("060030retrospective")} annotationSelect={() => {openNote("060030retrospective"); addToVisited("060030retrospective")}} activeAnnotationId={currentNoteId}>a kind of retrospective arrangement</Annotation>. Gaming at Daly's. No
+        now in <Annotation annotationId="060030retrospective">a kind of retrospective arrangement</Annotation>. Gaming at Daly's. No
         cardsharping then. One of those fellows got his hand nailed to the table
         by a dagger. Somewhere here lord Edward Fitzgerald escaped from major
         Sirr. Stables behind Moira house.
@@ -1610,17 +1610,17 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         Damn good gin that was.
       </p>
       <p>
-        Fine dashing young nobleman. Good stock, of course. <Annotation annotationId="070018shamsquire" visited={visitedNotes.has("070018shamsquire")} annotationSelect={() => {openNote("070018shamsquire"); addToVisited("070018shamsquire")}} activeAnnotationId={currentNoteId}>That ruffian, that
+        Fine dashing young nobleman. Good stock, of course. <Annotation annotationId="070018shamsquire">That ruffian, that
         sham squire, with his violet gloves gave him away. Course they were
-        on the wrong side.</Annotation> <Annotation annotationId="100012evildays" visited={visitedNotes.has("100012evildays")} annotationSelect={() => {openNote("100012evildays"); addToVisited("100012evildays")}} activeAnnotationId={currentNoteId}>They rose in dark and evil days. Fine poem</Annotation> <span data-edition="ed1932" data-page="216"></span> <Annotation annotationId="100012evildays" visited={visitedNotes.has("100012evildays")} annotationSelect={() => {openNote("100012evildays"); addToVisited("100012evildays")}} activeAnnotationId={currentNoteId}> that
-        is: Ingram. They were gentlemen.</Annotation>  <Annotation annotationId="110007croppyboy" visited={visitedNotes.has("110007croppyboy")} annotationSelect={() => {openNote("110007croppyboy"); addToVisited("110007croppyboy")}} activeAnnotationId={currentNoteId}>Ben Dollard does sing that ballad
+        on the wrong side.</Annotation> <Annotation annotationId="100012evildays">They rose in dark and evil days. Fine poem</Annotation> <span data-edition="ed1932" data-page="216"></span> <Annotation annotationId="100012evildays"> that
+        is: Ingram. They were gentlemen.</Annotation>  <Annotation annotationId="110007croppyboy">Ben Dollard does sing that ballad
         touchingly. Masterly rendition.</Annotation>
       </p>
       <p>
-        <Annotation annotationId="110007croppyboy" visited={visitedNotes.has("110007croppyboy")} annotationSelect={() => {openNote("110007croppyboy"); addToVisited("110007croppyboy")}} activeAnnotationId={currentNoteId}><i>At the siege of Ross did my father fall.</i></Annotation>
+        <Annotation annotationId="110007croppyboy"><i>At the siege of Ross did my father fall.</i></Annotation>
       </p>
       <p>
-        A cavalcade in easy trot along <Annotation annotationId="100009jamessgate" visited={visitedNotes.has("100009jamessgate")} annotationSelect={() => {openNote("100009jamessgate"); addToVisited("100009jamessgate")}} activeAnnotationId={currentNoteId}>Pembroke quay</Annotation> passed, outriders leaping,
+        A cavalcade in easy trot along <Annotation annotationId="100009jamessgate">Pembroke quay</Annotation> passed, outriders leaping,
         leaping in their, in their saddles. Frockcoats. Cream sunshades.
       </p>
       <p>
@@ -1642,7 +1642,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         on dull 
         <span data-edition="ed1922" data-page="231"> </span>
         coils of bronze and silver, lozenges of cinnabar, on rubies,
-        leprous and <Annotation annotationId="010033epioinopaponton" visited={visitedNotes.has("010033epioinopaponton")} annotationSelect={() => {openNote("010033epioinopaponton"); addToVisited("010033epioinopaponton")}} activeAnnotationId={currentNoteId}>winedark stones</Annotation>.
+        leprous and <Annotation annotationId="010033epioinopaponton">winedark stones</Annotation>.
       </p>
       <p>
         Born all in the dark wormy earth, cold specks of fire, evil, lights
@@ -1664,13 +1664,13 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       <span data-edition="ed1986" data-page="198"></span>
       <p>
         And you who wrest old images from the burial earth? The brainsick words
-        of sophists: Antisthenes. A lore of drugs. <Annotation annotationId="030083nakedeve" visited={visitedNotes.has("030083nakedeve")} annotationSelect={() => {openNote("030083nakedeve"); addToVisited("030083nakedeve")}} activeAnnotationId={currentNoteId}>Orient and immortal wheat
+        of sophists: Antisthenes. A lore of drugs. <Annotation annotationId="030083nakedeve">Orient and immortal wheat
         standing from everlasting to everlasting.</Annotation>
       </p>
       <p>
-        Two old women fresh from their whiff of the briny trudged <Annotation annotationId="030015irishtown" visited={visitedNotes.has("030015irishtown")} annotationSelect={() => {openNote("030015irishtown"); addToVisited("030015irishtown")}} activeAnnotationId={currentNoteId}>through
-        Irishtown along London bridge road</Annotation>, <Annotation annotationId="030054swunglourdily" visited={visitedNotes.has("030054swunglourdily")} annotationSelect={() => {openNote("030054swunglourdily"); addToVisited("030054swunglourdily")}} activeAnnotationId={currentNoteId}>one with a sanded tired umbrella,
-        one with a midwife's bag</Annotation> in which eleven <Annotation annotationId="030080cockles" visited={visitedNotes.has("030080cockles")} annotationSelect={() => {openNote("030080cockles"); addToVisited("030080cockles")}} activeAnnotationId={currentNoteId}>cockles</Annotation> rolled.
+        Two old women fresh from their whiff of the briny trudged <Annotation annotationId="030015irishtown">through
+        Irishtown along London bridge road</Annotation>, <Annotation annotationId="030054swunglourdily">one with a sanded tired umbrella,
+        one with a midwife's bag</Annotation> in which eleven <Annotation annotationId="030080cockles">cockles</Annotation> rolled.
       </p>
       <p>
         The whirr of flapping leathern bands and hum of dynamos from the
@@ -1702,7 +1702,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <p>
         Tattered pages. <i>The Irish Beekeeper. Life and Miracles of the Curé of
-        Ars.  <Annotation annotationId="170019localities" visited={visitedNotes.has("170019localities")} annotationSelect={() => {openNote("170019localities"); addToVisited("170019localities")}} activeAnnotationId={currentNoteId}> Pocket Guide to Killarney.</Annotation></i>
+        Ars.  <Annotation annotationId="170019localities"> Pocket Guide to Killarney.</Annotation></i>
       </p>
       <p>
         I might find here one of my pawned schoolprizes. <i>Stephano Dedalo,
@@ -1728,7 +1728,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       <p>
         Who wrote this? Charms and invocations of the most blessed abbot Peter
         Salanka to all true believers divulged. As good as any other abbot's
-        charms, as <Annotation annotationId="030101calve" visited={visitedNotes.has("030101calve")} annotationSelect={() => {openNote("030101calve"); addToVisited("030101calve")}} activeAnnotationId={currentNoteId}>mumbling Joachim's. Down, baldynoddle, or we'll wool your
+        charms, as <Annotation annotationId="030101calve">mumbling Joachim's. Down, baldynoddle, or we'll wool your
         wool.</Annotation>
       </p>
       <p>
@@ -1782,7 +1782,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         —{" "}Some, Dilly said. We had to.
       </p>
       <p>
-        She is drowning. <Annotation annotationId="010094agenbite" visited={visitedNotes.has("010094agenbite")} annotationSelect={() => {openNote("010094agenbite"); addToVisited("010094agenbite")}} activeAnnotationId={currentNoteId}>Agenbite.</Annotation> Save her. Agenbite. All against us. She will
+        She is drowning. <Annotation annotationId="010094agenbite">Agenbite.</Annotation> Save her. Agenbite. All against us. She will
         drown me with her, eyes and hair. Lank coils of seaweed hair around me,
         my heart, my soul. Salt green death.
       </p>
@@ -1891,7 +1891,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <p>
         Cashel Boyle O'Connor Fitzmaurice Tisdall Farrell, murmuring,
-        glassyeyed, strode past <Annotation annotationId="050042kildareclub" visited={visitedNotes.has("050042kildareclub")} annotationSelect={() => {openNote("050042kildareclub"); addToVisited("050042kildareclub")}} activeAnnotationId={currentNoteId}>the Kildare street club</Annotation>.
+        glassyeyed, strode past <Annotation annotationId="050042kildareclub">the Kildare street club</Annotation>.
       </p>
       <span data-edition="ed1961" data-page="244"></span>
       <p>
@@ -1975,8 +1975,8 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <span data-edition="ed1961" data-page="245"></span>
       <p>
-        —{" "}The youngster will be all right, <Annotation annotationId="060034martincunningham" visited={visitedNotes.has("060034martincunningham")} annotationSelect={() => {openNote("060034martincunningham"); addToVisited("060034martincunningham")}} activeAnnotationId={currentNoteId}>Martin Cunningham</Annotation> said, as they
-        passed out of <Annotation annotationId="080013dublincastle" visited={visitedNotes.has("080013dublincastle")} annotationSelect={() => {openNote("080013dublincastle"); addToVisited("080013dublincastle")}} activeAnnotationId={currentNoteId}>the Castleyard gate</Annotation>.
+        —{" "}The youngster will be all right, <Annotation annotationId="060034martincunningham">Martin Cunningham</Annotation> said, as they
+        passed out of <Annotation annotationId="080013dublincastle">the Castleyard gate</Annotation>.
       </p>
       <p>
         The policeman touched his forehead.
@@ -1989,7 +1989,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         towards Lord Edward street.
       </p>
       <p>
-        <Annotation annotationId="110009bronzegold" visited={visitedNotes.has("110009bronzegold")} annotationSelect={() => {openNote("110009bronzegold"); addToVisited("110009bronzegold")}} activeAnnotationId={currentNoteId}>Bronze by gold, Miss Kennedy's head by Miss Douce's head, appeared above
+        <Annotation annotationId="110009bronzegold">Bronze by gold, Miss Kennedy's head by Miss Douce's head, appeared above
         the crossblind of the Ormond hotel.</Annotation>
       </p>
       <p>
@@ -2007,14 +2007,14 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         quickly down Cork hill.
       </p>
       <p>
-        <Annotation annotationId="060033corporation" visited={visitedNotes.has("060033corporation")} annotationSelect={() => {openNote("060033corporation"); addToVisited("060033corporation")}} activeAnnotationId={currentNoteId}>On the steps of the City hall Councillor Nannetti, descending, hailed
+        <Annotation annotationId="060033corporation">On the steps of the City hall Councillor Nannetti, descending, hailed
         Alderman Cowley and Councillor Abraham Lyon ascending.</Annotation>
       </p>
       <p>
-        <Annotation annotationId="080013dublincastle" visited={visitedNotes.has("080013dublincastle")} annotationSelect={() => {openNote("080013dublincastle"); addToVisited("080013dublincastle")}} activeAnnotationId={currentNoteId}>The castle car</Annotation> wheeled empty into upper Exchange street.
+        <Annotation annotationId="080013dublincastle">The castle car</Annotation> wheeled empty into upper Exchange street.
       </p>
       <p>
-        —{" "}Look here, Martin, John Wyse Nolan said, overtaking them at <Annotation annotationId="100007themail" visited={visitedNotes.has("100007themail")} annotationSelect={() => {openNote("100007themail"); addToVisited("100007themail")}} activeAnnotationId={currentNoteId}>the <i>Mail</i>
+        —{" "}Look here, Martin, John Wyse Nolan said, overtaking them at <Annotation annotationId="100007themail">the <i>Mail</i>
         office</Annotation>. I see Bloom put his name down for five shillings.
       </p>
       <p>
@@ -2043,8 +2043,8 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         —{" "}Righto, Martin Cunningham said. Here goes.
       </p>
       <p>
-        Outside <i>la Maison Claire</i> Blazes Boylan waylaid <Annotation annotationId="050038bobdoran" visited={visitedNotes.has("050038bobdoran")} annotationSelect={() => {openNote("050038bobdoran"); addToVisited("050038bobdoran")}} activeAnnotationId={currentNoteId}>Jack Mooney's
-        brother-in-law, humpy, tight</Annotation>, making for <Annotation annotationId="030060theliberties" visited={visitedNotes.has("030060theliberties")} annotationSelect={() => {openNote("030060theliberties"); addToVisited("030060theliberties")}} activeAnnotationId={currentNoteId}>the liberties</Annotation>.
+        Outside <i>la Maison Claire</i> Blazes Boylan waylaid <Annotation annotationId="050038bobdoran">Jack Mooney's
+        brother-in-law, humpy, tight</Annotation>, making for <Annotation annotationId="030060theliberties">the liberties</Annotation>.
       </p>
       <p>
         John Wyse Nolan fell back with Mr Power, while Martin Cunningham 
@@ -2086,7 +2086,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <p>
         Hell open to christians they were having, Jimmy Henry said pettishly,
-        about their damned Irish language. <Annotation annotationId="060033corporation" visited={visitedNotes.has("060033corporation")} annotationSelect={() => {openNote("060033corporation"); addToVisited("060033corporation")}} activeAnnotationId={currentNoteId}>Where was the marshal, he wanted
+        about their damned Irish language. <Annotation annotationId="060033corporation">Where was the marshal, he wanted
         to know, to keep order in the council chamber. And old Barlow the
         macebearer laid up with asthma, no mace on the table, nothing in order,
         no quorum even, and Hutchinson, the lord mayor, in Llandudno and little
@@ -2203,7 +2203,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         Dedalus on <i>Hamlet.</i>
       </p>
       <p>
-        Haines opened his <Annotation annotationId="090003hyde" visited={visitedNotes.has("090003hyde")} annotationSelect={() => {openNote("090003hyde"); addToVisited("090003hyde")}} activeAnnotationId={currentNoteId}>newbought book</Annotation>.
+        Haines opened his <Annotation annotationId="090003hyde">newbought book</Annotation>.
       </p>
       <span data-edition="ed1922" data-page="238"> </span>
       <p>
@@ -2282,7 +2282,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         street past 
         <span data-edition="ed1939" data-page="182"> </span>
         <span data-edition="ed1922" data-page="239"> </span>
-        Benson's ferry, and by <Annotation annotationId="030071threemaster" visited={visitedNotes.has("030071threemaster")} annotationSelect={() => {openNote("030071threemaster"); addToVisited("030071threemaster")}} activeAnnotationId={currentNoteId}>the threemasted schooner <i>Rosevean</i>
+        Benson's ferry, and by <Annotation annotationId="030071threemaster">the threemasted schooner <i>Rosevean</i>
         from Bridgwater with bricks</Annotation>.
       </p>
       <p>
@@ -2345,7 +2345,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         <span data-edition="ed1922" data-page="240"> </span>
         and putting up their props. From the sidemirrors two mourning
         Masters Dignam gaped silently. Myler Keogh, Dublin's pet lamb, will
-        meet sergeantmajor Bennett, the <Annotation annotationId="010013barracks" visited={visitedNotes.has("010013barracks")} annotationSelect={() => {openNote("010013barracks"); addToVisited("010013barracks")}} activeAnnotationId={currentNoteId}>Portobello</Annotation> bruiser, for a purse of fifty
+        meet sergeantmajor Bennett, the <Annotation annotationId="010013barracks">Portobello</Annotation> bruiser, for a purse of fifty
         sovereigns. Gob, that'd be a good pucking match to see. Myler Keogh,
         that's the chap sparring out to him with the green sash. Two bar
         entrance, soldiers half price. I could easy do a bunk on ma. Master
@@ -2354,7 +2354,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         turned to the right and on his right Master Dignam turned, his cap awry,
         his collar sticking up. Buttoning it down, his chin lifted, he saw the
         image of Marie Kendall, charming soubrette, beside the two puckers. <span data-edition="ed1932" data-page="225"></span>One
-        of them mots <Annotation annotationId="090012brogue" visited={visitedNotes.has("090012brogue")} annotationSelect={() => {openNote("090012brogue"); addToVisited("090012brogue")}} activeAnnotationId={currentNoteId}>that do be</Annotation> in the packets of fags Stoer smokes that his old
+        of them mots <Annotation annotationId="090012brogue">that do be</Annotation> in the packets of fags Stoer smokes that his old
         fellow welted hell out of him for one time he found out.
       </p>
       <p>
@@ -2395,7 +2395,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         Pa was inside it and ma crying in the parlour and uncle Barney telling
         the men how to get it round the bend. A big coffin it was, and high and
         heavylooking. How was that? The last night pa was boosed he was standing
-        on the landing there <Annotation annotationId="050049comehometoma" visited={visitedNotes.has("050049comehometoma")} annotationSelect={() => {openNote("050049comehometoma"); addToVisited("050049comehometoma")}} activeAnnotationId={currentNoteId}>bawling out for his boots to go out to Tunney's for
+        on the landing there <Annotation annotationId="050049comehometoma">bawling out for his boots to go out to Tunney's for
         to boose more</Annotation> and he looked butty and short in his shirt. Never see him
         again. Death, that is. Pa is dead. My father is dead. He told me to be
         a good son to ma. I couldn't hear the other things he said but I saw
@@ -2403,7 +2403,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         <span data-edition="ed1922" data-page="241"> </span>
         trying to say it better. Poor pa. That was
         Mr Dignam, my father. I hope he is in <span data-edition="ed1961" data-page="251"></span>purgatory now because he went to
-        confession to <Annotation annotationId="040027conroy" visited={visitedNotes.has("040027conroy")} annotationSelect={() => {openNote("040027conroy"); addToVisited("040027conroy")}} activeAnnotationId={currentNoteId}>Father Conroy</Annotation> on Saturday night.
+        confession to <Annotation annotationId="040027conroy">Father Conroy</Annotation> on Saturday night.
       </p>
       <p>
         *<br/>
@@ -2417,7 +2417,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
       </p>
       <p>
         The cavalcade passed out by the lower gate of Phoenix park saluted <span data-edition="ed1932" data-page="226"></span>by
-        obsequious policemen and proceeded <Annotation annotationId="180007kingsbridge" visited={visitedNotes.has("180007kingsbridge")} annotationSelect={() => {openNote("180007kingsbridge"); addToVisited("180007kingsbridge")}} activeAnnotationId={currentNoteId}>past Kingsbridge</Annotation> along the northern
+        obsequious policemen and proceeded <Annotation annotationId="180007kingsbridge">past Kingsbridge</Annotation> along the northern
         quays. The viceroy was most cordially greeted on his way through the
         metropolis. At Bloody bridge Mr Thomas Kernan beyond the river greeted
         him vainly from afar Between Queen's and Whitworth bridges lord Dudley's
@@ -2425,19 +2425,19 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         L., M. A., who stood on Arran quay outside Mrs M. E. White's, the
         pawnbroker's, at the corner of Arran street west stroking his nose with
         his forefinger, undecided whether he should arrive at Phibsborough
-        more quickly by a triple change of tram or by <Annotation annotationId="050013jauntingcar" visited={visitedNotes.has("050013jauntingcar")} annotationSelect={() => {openNote("050013jauntingcar"); addToVisited("050013jauntingcar")}} activeAnnotationId={currentNoteId}>hailing a car</Annotation> or on foot
+        more quickly by a triple change of tram or by <Annotation annotationId="050013jauntingcar">hailing a car</Annotation> or on foot
         through Smithfield, Constitution hill and Broadstone terminus. In the
         porch of Four Courts Richie Goulding with the costsbag of Goulding,
         Collis and Ward saw him with surprise. Past Richmond bridge at the
         doorstep of the office of Reuben J Dodd, solicitor, agent for the
         Patriotic Insurance Company, an elderly female about to enter changed
         her plan and retracing her steps by King's windows smiled credulously
-        on the representative of His Majesty. <Annotation annotationId="030039sewage" visited={visitedNotes.has("030039sewage")} annotationSelect={() => {openNote("030039sewage"); addToVisited("030039sewage")}} activeAnnotationId={currentNoteId}>From its sluice in Wood quay wall
+        on the representative of His Majesty. <Annotation annotationId="030039sewage">From its sluice in Wood quay wall
         under Tom Devan's office Poddle river hung out in </Annotation>
         <span data-edition="ed1939" data-page="184"> </span>
-        <Annotation annotationId="030039sewage" visited={visitedNotes.has("030039sewage")} annotationSelect={() => {openNote("030039sewage"); addToVisited("030039sewage")}} activeAnnotationId={currentNoteId}>fealty a tongue of
+        <Annotation annotationId="030039sewage">fealty a tongue of
         liquid sewage.</Annotation> Above the crossblind of the Ormond hotel, gold by bronze,
-        Miss Kennedy's head by Miss Douce's head watched and admired. <Annotation annotationId="080027greenhouses" visited={visitedNotes.has("080027greenhouses")} annotationSelect={() => {openNote("080027greenhouses"); addToVisited("080027greenhouses")}} activeAnnotationId={currentNoteId}>On Ormond
+        Miss Kennedy's head by Miss Douce's head watched and admired. <Annotation annotationId="080027greenhouses">On Ormond
         quay Mr Simon Dedalus, steering his way from the greenhouse for the
         subsheriff's office, stood still in midstreet and brought his hat low.
         His Excellency graciously returned Mr Dedalus' greeting.</Annotation> From Cahill's
@@ -2471,7 +2471,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         French primer, saw sunshades spanned and wheelspokes spinning in the
         glare. John Henry Menton, filling the doorway of Commercial Buildings,
         stared from winebig oyster eyes, holding a fat gold hunter watch not
-        looked at in his fat left hand not feeling it. <Annotation annotationId="100001kingbilly" visited={visitedNotes.has("100001kingbilly")} annotationSelect={() => {openNote("100001kingbilly"); addToVisited("100001kingbilly")}} activeAnnotationId={currentNoteId}>Where the foreleg of King
+        looked at in his fat left hand not feeling it. <Annotation annotationId="100001kingbilly">Where the foreleg of King
         Billy's horse pawed the air Mrs Breen plucked her hastening husband
         back from under the hoofs of the outriders.</Annotation> She shouted in his ear the
         tidings. Understanding, he shifted his tomes to his left breast
@@ -2482,7 +2482,7 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         Pigott's music warerooms Mr Denis J Maginni, professor of dancing &amp;c,
         gaily apparelled, gravely walked, outpassed by a viceroy and unobserved.
         By the provost's wall came jauntily Blazes Boylan, stepping in tan <span data-edition="ed1961" data-page="253"></span>shoes
-        and <Annotation annotationId="100005skyblueclocks" visited={visitedNotes.has("100005skyblueclocks")} annotationSelect={() => {openNote("100005skyblueclocks"); addToVisited("100005skyblueclocks")}} activeAnnotationId={currentNoteId}>socks with skyblue clocks</Annotation> to the refrain of <Annotation annotationId="100004yorkshiregirl" visited={visitedNotes.has("100004yorkshiregirl")} annotationSelect={() => {openNote("100004yorkshiregirl"); addToVisited("100004yorkshiregirl")}} activeAnnotationId={currentNoteId}><i>My girl's a Yorkshire
+        and <Annotation annotationId="100005skyblueclocks">socks with skyblue clocks</Annotation> to the refrain of <Annotation annotationId="100004yorkshiregirl"><i>My girl's a Yorkshire
         girl</i></Annotation>.
       </p>
       <p>
@@ -2524,11 +2524,11 @@ const WanderingRocks = ({openNote, currentNoteId, visitedNotes, addToVisited}) =
         drove with his following towards Lower Mount street. He passed a blind
         stripling opposite Broadbent's. In Lower Mount street a pedestrian in a
         brown macintosh, eating dry bread, passed swiftly and unscathed across
-        the viceroy's path. At <Annotation annotationId="060016canals" visited={visitedNotes.has("060016canals")} annotationSelect={() => {openNote("060016canals"); addToVisited("060016canals")}} activeAnnotationId={currentNoteId}>the Royal Canal bridge</Annotation>, <Annotation annotationId="060003eugenestratton" visited={visitedNotes.has("060003eugenestratton")} annotationSelect={() => {openNote("060003eugenestratton"); addToVisited("060003eugenestratton")}} activeAnnotationId={currentNoteId}>from his hoarding,
+        the viceroy's path. At <Annotation annotationId="060016canals">the Royal Canal bridge</Annotation>, <Annotation annotationId="060003eugenestratton">from his hoarding,
         Mr Eugene Stratton</Annotation>, his blub lips agrin, bade all comers welcome to
         Pembroke township. At Haddington road corner two sanded women halted
-        themselves, <Annotation annotationId="030054swunglourdily" visited={visitedNotes.has("030054swunglourdily")} annotationSelect={() => {openNote("030054swunglourdily"); addToVisited("030054swunglourdily")}} activeAnnotationId={currentNoteId}>an umbrella and a bag in which eleven cockles rolled to view
-        with wonder the lord mayor</Annotation> and lady <span data-edition="ed1961" data-page="254"></span>mayoress <Annotation annotationId="060033corporation" visited={visitedNotes.has("060033corporation")} annotationSelect={() => {openNote("060033corporation"); addToVisited("060033corporation")}} activeAnnotationId={currentNoteId}>without his golden chain</Annotation>.
+        themselves, <Annotation annotationId="030054swunglourdily">an umbrella and a bag in which eleven cockles rolled to view
+        with wonder the lord mayor</Annotation> and lady <span data-edition="ed1961" data-page="254"></span>mayoress <Annotation annotationId="060033corporation">without his golden chain</Annotation>.
         On Northumberland and Landsdowne roads His Excellency acknowledged
         punctually salutes from rare male walkers, the salute of two small
         schoolboys at the garden gate of the house said to have been admired
