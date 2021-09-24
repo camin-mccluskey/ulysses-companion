@@ -7,15 +7,14 @@ import DetailBar from './components/DetailBar';
 
 
 function App() {
-  // look into presistng state between reloads - https://blog.bitsrc.io/5-methods-to-persisting-state-between-page-reloads-in-react-8fc9abd3fa2f
-  const [currentChapter, setChapter] = useState(data.chapters[0]);
-  const [noteId, setNoteId] = useState(null);
+  // const [currentChapter, setChapter] = useState(data.chapters[0]);
+  // const [noteId, setNoteId] = useState(null);
 
   return (
     <div className="flex w-screen h-screen p-2 gap-x-4">
-      <SideBar chapters={data.chapters} selectChapter={(e) => setChapter(e)} currentChapter={currentChapter}/>
-      <ContentWindow chapter={currentChapter} openNote={setNoteId} currentNoteId={noteId}/>
-      <DetailBar noteId={noteId} closeNote={() => setNoteId(null)}/>
+      <SideBar chapters={data.chapters} />
+      <ContentWindow />
+      <DetailBar />
     </div>
   );
 }
