@@ -33,6 +33,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Future Features
 - [x] Migrate the annotation visit logic to Redux
+- [ ] Create responsive mobile design
 - [ ] Store opened note history in browser storage to allow users to close tab and return later
 - [ ] Add user generated content - voting on notes, adding new notes
 - [ ] Allow users to persist their reading history between browser data deletion with accounts
